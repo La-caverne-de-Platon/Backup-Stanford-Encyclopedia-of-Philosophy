@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 ie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 ie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 ie"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 ie"> <![endif]-->
+<!--[if !IE]> --> <html> <!-- <![endif]-->
+
+<!-- Mirrored from seop.illc.uva.nl/entries/counterfactuals/similarity.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 20:10:00 GMT -->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>
+Counterfactuals &gt; B. Formal Constraints on Similarity (Stanford Encyclopedia of Philosophy)
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive, noodp" />
+<meta name="DCTERMS.ispartof" content="https://plato.stanford.edu/entries/counterfactuals/" />
+
+<!-- NOTE: Import webfonts using this link: -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,200&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" href="../../css/font-awesome-ie7.min.css"> <![endif]-->
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../css/print.css" />
+<link rel="stylesheet" type="text/css" href="../../css/entry.css" />
+<!--[if IE]> <link rel="stylesheet" type="text/css" href="../../css/ie.css" /> <![endif]-->
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+
+<!-- NOTE: Javascript for sticky behavior needed on article and ToC pages -->
+<script type="text/javascript" src="../../js/jquery-scrolltofixed-min.js"></script>
+<script type="text/javascript" src="../../js/entry.js"></script>
+
+<!-- SEP custom script -->
+<script type="text/javascript" src="../../js/sep.js"></script>
+</head>
+
+<!-- NOTE: The nojs class is removed from the page if javascript is enabled. Otherwise, it drives the display when there is no javascript. -->
+<body class="nojs article" id="pagetopright">
+<div id="container">
+<div id="header-wrapper">
+  <div id="header">
+    <div id="branding">
+      <div id="site-logo"><a href="../../index.html"><img src="../../symbols/sep-man-red.png" alt="SEP logo" /></a></div>
+      <div id="site-title"><a href="../../index.html">Stanford Encyclopedia of Philosophy</a></div>
+    </div>
+    <div id="navigation">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <button class="btn btn-navbar collapsed" data-target=".collapse-main-menu" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Menu </button>
+            <div class="nav-collapse collapse-main-menu in collapse">
+              <ul class="nav">
+                <li class="dropdown open"><a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-book"></i> Browse</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                    <li><a href="../../contents.html">Table of Contents</a></li>
+                    <li><a href="../../new.html">What's New</a></li>
+                    <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+                    <li><a href="../../published.html">Chronological</a></li>
+                    <li><a href="../../archives/index.html">Archives</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-info-sign"></i> About</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                    <li><a href="../../info.html">Editorial Information</a></li>
+                    <li><a href="../../about.html">About the SEP</a></li>
+                    <li><a href="../../board.html">Editorial Board</a></li>
+                    <li><a href="../../cite.html">How to Cite the SEP</a></li>
+                    <li><a href="../../special-characters.html">Special Characters</a></li>
+                    <li><a href="../../tools/index.html">Advanced Tools</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-leaf"></i> Support SEP</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                    <li><a href="../../support/index.html">Support the SEP</a></li>
+                    <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+                    <li><a href="../../support/donate.html">Make a Donation</a></li>
+                    <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End navigation -->
+    
+    <div id="search">
+      <form id="search-form" method="get" action="https://seop.illc.uva.nl/search/searcher.py">
+        <input type="search" name="query" placeholder="Search SEP" />
+        <div class="search-btn-wrapper"><button class="btn search-btn" type="submit"><i class="icon-search"></i></button></div>
+      </form>
+    </div>
+    <!-- End search --> 
+    
+  </div>
+  <!-- End header --> 
+</div>
+<!-- End header wrapper -->
+
+<div id="content">
+
+<!-- Begin article sidebar -->
+<div id="article-sidebar" class="sticky">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <button class="btn btn-navbar" data-target=".collapse-sidebar" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Entry Navigation </button>
+        <div id="article-nav" class="nav-collapse collapse-sidebar in collapse">
+          <ul class="nav">
+            <li><a href="index.html">Back to Entry <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#toc">Entry Contents <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#Bib">Entry Bibliography <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#Aca">Academic Tools <i class="icon-external-link"></i></a></li>
+            <li><a href="https://leibniz.stanford.edu/friends/preview/counterfactuals/">Friends PDF Preview <i class="icon-external-link"></i></a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=counterfactuals">Author and Citation Info <i class="icon-external-link"></i></a> </li>
+            <li><a href="#pagetopright" class="back-to-top">Back to Top <i class="icon-angle-up icon2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End article sidebar --> 
+
+<!-- NOTE: Article content must have two wrapper divs: id="article" and id="article-content" -->
+<div id="article">
+<div id="article-content">
+
+<!-- BEGIN ARTICLE HTML -->
+<h4 id="supphead">Supplement to <a href="index-2.html">Counterfactuals</a></h4>
+
+<div id="aueditable">
+<!--DO NOT MODIFY THIS LINE AND ABOVE--> 
+<h2>B. Formal Constraints on Similarity</h2>
+
+<p>
+In addition to the limit assumption, here is a list of the formal
+constraints on similarity that have been proposed, where
+\(p,q\subseteq W\) and \(w\in W\):</p>
+
+<div class="figure center" id="ta:selection">
+
+<table class="cellpad-small-dense cell-rl">
+<tbody>
+<tr id="success">
+  <td>(a)</td>
+  <td>\(f(w,p)\subseteq p\)</td>
+  <td><strong>success</strong></td> </tr>
+<tr id="strong-centering">
+  <td>(b)</td>
+  <td>\(f(w,p)=\{w\}\), if \(w\in p\)</td>
+  <td><strong>strong centering</strong></td> </tr>
+<tr id="uniformity">
+  <td>(c)</td>
+  <td>\(f(w,p)\subseteq q\) &amp; \(f(w,q)\subseteq p \;
+{\Longrightarrow}\; f(w,p)=f(w,q)\)</td>
+  <td><strong>uniformity</strong></td> </tr>
+<tr id="uniqueness">
+  <td>(d)</td>
+  <td>\(f(w,p)\) contains <em>at most</em> one world</td>
+  <td><strong>uniqueness</strong></td> </tr> </tbody>
+</table>
+
+<p>
+<span class="figlabel">Table 5:</span> Candidate Constraints on
+Selection Functions</p>
+</div>
+
+<p>
+While success is discussed in the main entry, (b)&ndash;(d) are
+discussed below, followed by the
+ <a href="#limit">limit assumption</a>.</p>
+ 
+<h3 id="a-strong-centering">B.1 Strong Centering</h3>
+
+<p>
+
+ <a href="#strong-centering">Strong centering</a>
+ is motivated, in part, by the intuitive concept of similarity: if
+<i>w</i> is already a <i>p</i>-world, then the <i>p</i>-world most
+similar to <i>w</i> is <i>w</i> itself. But logical concerns also
+motivate its inclusion. Something in the vicinity of strong centering
+is needed to validate <em>modus ponens</em>
+\((\phi&gt;\psi,\phi\vDash\psi)\), which underwrites reasoning like
+ <a href="#e-mp">(59)</a>.</p>
+ 
+<dl class="sentag tag3em">
+<dt id="e-mp">(59)</dt>
+<dd>
+  <dl class="sentag tag15em">
+  <dt>a.</dt>
+  <dd>If George were caught, he would face years of prison.</dd>
+
+  <dt>b.</dt>
+  <dd>Actually, George did get caught.</dd>
+
+  <dt>c.</dt>
+  <dd>In that case, he must be facing years of prison.</dd>
+  </dl></dd>
+</dl>
+
+<p>
+Similarly,
+ <a href="#strong-centering">strong centering</a>
+ validates the principle that a subjunctive conditional is false if
+its antecedent is true and consequent false:
+\(\phi\land\neg\psi\vDash\neg(\phi&gt;\psi)\). However, <strong>weak
+centering</strong> would suffice for both: \(w\in f(w,p)\) if \(w\in
+p\). The difference is that strong centering, but not weak centering,
+validates:</p>
+
+<ul class="hanging">
+
+<li id="and-to-if"><strong>Conjunction Conditionalization</strong>
+\(\phi\land\psi\vDash\phi&gt;\psi\)</li>
+</ul>
+
+<p>
+This principle was only meekly promoted by <span class="citation">D.
+Lewis (1973b: &sect;1.7</span>, and has attracted objections leading
+some to adopt a similarity analysis with only weak centering (e.g.,
+<span class="citation">J. Bennett 1974: 387&ndash;8</span>). However,
+<span class="citation">Walters and Williams (2013)</span> provide a
+very thorough defense of Conjunction Conditionalization and offer a
+helpful survey of the objections to it.</p>
+
+<h3 id="a-uniformity">B.2 Uniformity</h3>
+
+<p>
+The constraint
+ <a href="#uniformity">uniformity</a>
+ is somewhat more difficult to state
+ intuitively.<sup>[<a href="notes.html#note-52" id="ref-52">52</a>]</sup>
+ But its primary purpose is to validate
+ <a href="#SSE">SSE</a>
+ <span class="citation">(Stalnaker 1984: 130)</span>, which allows one
+to substitute subjunctive equivalents in the antecedent position. It
+also bears noting that <em>limited</em> forms of
+ <a href="index-2.html#d-Transitivity">Transitivity</a>
+ and
+ <a href="index-2.html#d-AS">Antecedent Strengthening</a>
+ follow directly from
+ <a href="#SSE">SSE</a>:<sup>[<a href="notes.html#note-53" id="ref-53">53</a>]</sup></p>
+ 
+<ul class="hanging">
+
+<li id="SSE"><strong>Substitution of Subjunctive Equivalents
+(SSE)</strong>
+\(\phi_1&gt;\phi_2,\phi_2&gt;\phi_1,\phi_1&gt;\psi\vDash
+\phi_2&gt;\psi\)</li>
+</ul>
+
+<ul class="hanging">
+
+<li id="LT"><strong>Limited Transitivity (LT)</strong>
+\(\phi_1&gt;\phi_2,(\phi_1\land\phi_2)&gt;\psi\vDash
+\phi_1&gt;\psi\)</li>
+</ul>
+
+<ul class="hanging">
+
+<li id="LAS"><strong>Limited Antecedent Strengthening (LAS)</strong>
+\(\phi_1&gt;\phi_2,\neg(\phi_1&gt;\neg\psi)\vDash(\phi_1\land\phi_2)&gt;\psi\)</li>
+</ul>
+
+<p>
+The intuitive appeal of
+ <a href="#SSE">SSE</a>
+ is fairly clear: </p>
+
+<dl class="sentag tag3em">
+<dt>(60)</dt>
+<dd><dl class="sentag tag15em">
+  <dt>a.</dt>
+  <dd>If Simone had drummed, Jean-Paul would have danced.</dd>
+  <dt>b.</dt>
+  <dd>If Jean-Paul had danced, Simone would have drummed.</dd>
+  <dt>c.</dt>
+  <dd>If Simone had drummed, Claude would have stayed for another drink.</dd>
+  <dt>d.</dt>
+  <dd>So, if Jean-Paul had danced, Claude would have stayed for another drink.</dd>
+  </dl></dd>
+</dl>
+
+
+<p>
+
+ <a href="#LT">LT</a>
+ and
+ <a href="#LAS">LAS</a>
+ are also important since they provide one way the similarity analysis
+could explain the fact that some instances of
+ <a href="index-2.html#d-Transitivity">Transitivity</a>
+ and
+ <a href="index-2.html#d-AS">Antecedent Strengthening</a>
+ sound compelling. If the similarity theorist can motivate the claim
+that the premises of these instances are being interpreted in the
+manner of
+ <a href="#LAS">LAS</a>
+ rather than
+ <a href="index-2.html#d-AS">Antecedent Strengthening</a>,
+ then these cases can be explained.</p>
+
+<p>
+<span class="citation">Pollock (1976, 1981: 254)</span> rejects
+ <a href="#uniformity">uniformity</a>
+ and endorses an even weaker logic. <span class="citation">Pollock
+(1981: 254)</span> does so on the basis of a counterexample to
+ <a href="#LAS">LAS</a>.
+ In the example, there is a circuit where three switches
+(\(S_1,S_2,S_3\)) control two lights (\(L_1,L_2\)). \(L_1\) comes on
+either when \(S_1\) is up or when \(S_2\) and \(S_3\) are both up.
+\(L_2\) comes on when \(S_1\) is up or when \(S_2\) is up. (\(S_3\) is
+not connected to \(L_2\) in any way.) Now suppose that all three
+switches are down and both lights are off. Both
+ <a href="#e-L2-then-notS3">(61a)</a>
+ and
+ <a href="#e-not-L2-then-notL1">(61b)</a>
+ are intuitively true. What about
+ <a href="#e-L2andnotS3-then-L1">(61c)</a>?
+ </p>
+
+<dl class="sentag tag3em">
+<dt>(61)</dt>
+<dd><dl class="sentag tag15em">
+  <dt id="e-L2-then-notS3">a.</dt>
+  <dd>\(S_3\) would (still) be down if \(L_2\) were on.
+      <br/>
+      \(\mathsf{L_2>\neg S_3}\)</dd>
+  <dt id="e-not-L2-then-notL1">b.</dt>
+  <dd>It's not true that if \(L_2\) were on, \(L_1\) would be off. (\(L_2\) might be on because \(S_1\) is up.)
+     <br/>
+     \(\mathsf{\neg(L_2>\neg L_1)}\)</dd>
+  <dt id="e-L2andnotS3-then-L1">c.</dt>
+  <dd>\(L_1\) would be on if \(L_2\) were on and \(S_3\) were down.
+      <br/>
+      \(\mathsf{(L_2\land \neg S_3)>L_1}\) </dd>
+  </dl></dd>
+</dl>
+
+<p>
+\(S_3\) would (still) be down if \(L_2\) and \(L_1\) were on. <span class="citation">Pollock
+(1981)</span> contends that
+ <a href="#e-L2andnotS3-then-L1">(61c)</a>
+ makes the wrong prediction in a scenario where \(S_1\) and \(S_3\)
+stay down but \(S_2\) is flipped up. Then \(L_2\) will be on and
+\(S_3\) will be down, but \(L_1\) will be off. <span class="citation">Pollock
+(1981: &sect;2)</span> maintains that this
+failure of
+ <a href="#uniformity">uniformity</a>
+ motivates an account in terms of minimal change instead of one in
+terms of maximal similarity. This counterexample has received little
+attention, perhaps because it is sufficiently complex to make
+intuitions less clear. It is also worth noting that rejecting
+uniformity makes it harder to explain why some instances of antecedent
+monotonic patterns sound compelling.</p>
+
+<h3 id="a-uniqueness">B.3 Uniqueness</h3>
+
+<p>
+According to
+ <a href="#uniqueness">uniqueness</a>,
+ there is always a unique most similar \(\phi\)-world when evaluating
+\(\phi&gt;\psi\). For such a simple principle, uniqueness has
+stimulated a surprisingly complex debate, beginning with
+Stalnaker&rsquo;s (<span class="citation">1968: 46</span>) endorsement
+and Lewis&rsquo; (<span class="citation">1973b: &sect;3.4</span>)
+rejection of it. This debate centers on two issues: the fact that
+ <a href="#uniqueness">uniqueness</a>
+ (together with the
+ <a href="#limit">limit assumption</a>
+ discussed below) entails
+ <a href="#CEM">Conditional Excluded Middle</a>
+ and the fact that uniqueness impacts one&rsquo;s analysis of
+subjunctive conditionals containing <em>might</em> in the consequent.
+Consider first
+ <a href="#CEM">Conditional Excluded Middle</a>
+ and two consequences,
+ <a href="#CN">CN</a>
+ and
+ <a href="#CD">CD</a>:<sup>[<a href="notes.html#note-54" id="ref-54">54</a>]</sup></p>
+ 
+<ul class="hanging">
+
+<li id="CEM"><strong>Conditional Excluded Middle (CEM)</strong>
+<br/>
+\(\vDash (\phi&gt;\psi)\lor(\phi&gt;\neg\psi)\)</li>
+</ul>
+
+<ul class="hanging">
+
+<li id="CN"><strong>Conditional Negation (CN)</strong>
+<br/>
+\({\Diamond}\phi\land\neg(\phi&gt;\psi)\,\leftmodels\vDash
+{\Diamond}\phi\land\phi&gt;\neg\psi\)</li>
+</ul>
+
+<ul class="hanging">
+
+<li id="CD"><strong>Consequent Distribution (CD)</strong>
+<br/>
+\(\phi&gt;(\psi_1\lor\psi_2)\vDash(\phi&gt;\psi_1)\lor(\phi&gt;\psi_2)\)</li>
+</ul>
+
+<p>
+
+ <a href="#uniqueness">Uniqueness</a>
+ leads to
+ <a href="#CEM">CEM</a>,
+ since if there is a unique most similar \(\phi\)-world it is either a
+\(\psi\)-world&mdash;in which case the left disjunct is true&mdash;or
+it is a \(\neg\psi\)-world&mdash;in which case the right disjunct is
+true. A natural concern, voiced by <span class="citation">D. Lewis
+(1973b: &sect;3.4)</span>, is that there might be a tie among a
+\(\psi\)-world and a \(\neg\psi\)-world for being the most similar
+\(\phi\)-world.</p>
+
+<p>
+Consider the antecedent <em>If I were older...</em> What is my age in
+the unique most similar world where I am older? One might be tempted
+to deny both
+ <a href="#e-35-a">(62a)</a>
+ and
+ <a href="#e-35-b">(62b)</a>,
+ instead affirming
+ <a href="#e-35-c">(62c)</a>.</p>
+ 
+<dl class="sentag tag3em">
+<dt>(62)</dt>
+<dd><dl class="sentag tag15em">
+  <dt id="e-35-a">a.</dt>
+  <dd>If I were older, I would be 35. </dd>
+  <dt id="e-35-b">b.</dt>
+  <dd>If I were older, I wouldn't be 35. </dd>
+  <dt id="e-35-c">c.</dt>
+  <dd>If I were older, I might be 35. And, if I were older, I might not be 35.</dd>
+  </dl></dd>
+</dl>
+
+<p>
+It seems appealing that all worlds where I am older than my present
+age, say 32, are tied. The advocate of
+ <a href="#uniqueness">uniqueness</a>
+ has two problems here. First, they cannot deny both
+ <a href="#e-35-a">(62a)</a>
+ and
+ <a href="#e-35-b">(62b)</a>,
+ since by
+ <a href="#CEM">CEM</a>
+ at least one of them is true. Second, it is unclear what they can say
+about the meaning of
+ <a href="#e-35-c">(62c)</a>.
+ It is tempting to say, as <span class="citation">D. Lewis (1973b:
+&sect;1.5)</span> does, that a <em>might</em> subjunctive is true when
+<em>some</em> of the most similar antecedent worlds are consequent
+worlds. But if there is a unique most similar antecedent world, the
+difference between requiring <em>all</em> for <em>would</em>
+subjunctives and <em>some</em> for <em>might</em> subjunctives
+collapses.</p>
+
+<p>
+<span class="citation">Stalnaker (1980, 1984: Ch.7)</span> responds to
+both challenges. He begins by highlighting favorable data for
+ <a href="#CEM">CEM</a>,
+ contending, as <span class="citation">D. Lewis (1973b:
+&sect;3.4)</span> grants, that
+ <a href="#e-pro-cem-c">(63c)</a>
+ sounds inconsistent with
+ <a href="#e-pro-cem-a">(63a)</a>
+ and
+ <a href="#e-pro-cem-b">(63b)</a>.</p>
+ 
+<dl class="sentag tag3em">
+<dt>(63)</dt>
+<dd><dl class="sentag tag15em">
+  <dt id="e-pro-cem-a">a.</dt>
+  <dd>It's not true that if I were older, I would be 35.
+      <br/>
+      \(\mathsf{\neg(O>T)}\) </dd>
+  <dt id="e-pro-cem-b">b.</dt>
+  <dd>And, it's not true that if I were older, I wouldn't be 35.
+      <br/>
+      \(\mathsf{\neg(O>\neg T)}\) </dd>
+  <dt id="e-pro-cem-c">c.</dt>
+  <dd>But, if I were older, I either would or would not be 35.
+      <br/>
+      \(\mathsf{\neg(O>(T\lor\neg T))}\) </dd>
+  </dl></dd>
+</dl>
+
+<p>
+But
+ <a href="#e-pro-cem-c">(63c)</a>
+ is only inconsistent with
+ <a href="#e-pro-cem-a">(63a)</a>
+ and
+ <a href="#e-pro-cem-b">(63b)</a>
+ when
+ <a href="#CEM">CEM</a>
+ is assumed. This is easy to see from the fact that CEM entails
+ <a href="#CD">CD</a>,
+ and by CD
+ <a href="#e-pro-cem-c">(63c)</a>
+ entails \(\mathsf{(O&gt;T)\lor(O&gt;\neg T)}\), which is clearly
+inconsistent with
+ <a href="#e-pro-cem-a">(63a)</a>
+ and
+ <a href="#e-pro-cem-b">(63b)</a>.
+ And, yet, CEM also conflicts with our intuition that
+ <a href="#e-pro-cem-a">(63a)</a>
+ and
+ <a href="#e-pro-cem-b">(63b)</a>
+ are consistent with each other. <span class="citation">Stalnaker
+(1980, 1984: Ch. 7)</span> proposes to treat such cases as vagueness
+in the similarity of worlds, on par with the vagueness of color
+gradients where one might be tempted to deny both that a certain patch
+is red and that it is not red. The basic idea is that there is
+indeterminacy in the selection function being used and under one
+resolution
+ <a href="#e-pro-cem-a">(63a)</a>
+ is true while under another
+ <a href="#e-pro-cem-b">(63b)</a>
+ is true. <span class="citation">Stalnaker (1980, 1984: Ch.7)</span>
+sketches a view along these lines using the supervaluational <span class="citation">Fraassen
+(1966)</span> approach to vagueness. The
+remaining challenge, then, is to formulate an approach to
+<em>might</em> subjunctives like
+ <a href="#e-35-c">(62c)</a>
+ which is compatible with
+ <a href="#uniqueness">uniqueness</a>.
+ <span class="citation">Stalnaker (1980, 1984: Ch.7)</span> develops
+just such an account.</p>
+
+<p>
+For the advocate of
+ <a href="#uniqueness">uniqueness</a>,
+ it is difficult to treat <em>might</em> subjunctives as involving a
+subjunctive conditional whose consequent is an existentially
+quantified modal. Since the antecedent delivers a single most similar
+world, it is not possible to truth-conditionally distinguish a
+universal from an existential quantifier over the antecedent worlds.
+Thus, a <em>might</em> or <em>could</em> and a <em>would</em> will
+come to the same
+ thing.<sup>[<a href="notes.html#note-55" id="ref-55">55</a>]</sup>
+ As a result, <span class="citation">Stalnaker (1980, 1984:
+Ch.7)</span> pursues an analysis where <em>might</em> takes scope over
+the entire subjunctive conditional and expresses a kind of epistemic
+possibility. <span class="citation">Stalnaker (1984:
+43&ndash;44)</span> motivates this by observing that
+ <a href="#e-stalnaker-might-b">(64b)</a>
+ seems equivalent to
+ <a href="#e-stalnaker-might-a">(64a)</a>.</p>
+ 
+<dl class="sentag tag3em">
+<dt>(64)</dt>
+<dd><dl class="sentag tag15em">
+    <dt id="e-stalnaker-might-a">a.</dt>
+    <dd>If John had been invited, he might have come to the party.</dd>
+    <dt id="e-stalnaker-might-b">b.</dt>
+    <dd>It might be that if John had been invited, he would have come to the
+party. </dd>
+     </dl></dd>
+</dl>
+
+<p>
+<span class="citation">Stalnaker (1984: 144&ndash;146)</span> goes on
+to present examples to support this analysis and compare it favorably
+with Lewis&rsquo; (<span class="citation">1973b:
+&sect;1.5</span>).</p>
+
+<p>
+The debate regarding
+ <a href="#CEM">CEM</a>
+ has continued to attract arguments on each side. <span class="citation">Bennett
+(2003: &sect;&sect;72,73,76)</span> presents
+a sustained critique of CEM, while <span class="citation">Williams
+(2010)</span> responds on its behalf. <span class="citation">Fintel
+and Iatridou (2002)</span> examine quantified conditionals and suggest
+that a semantics which validates CEM is needed. <span class="citation">Klinedinst
+(2011)</span> develops this argument
+further against intervening disputes. <span class="citation">Swanson
+(2012)</span> shows that the supervaluationist approach can also be
+applied to handle failures of the limit assumption, thereby allowing
+for a theory that validates CEM despite having mechanisms for treating
+failures of both
+ <a href="#uniqueness">uniqueness</a>
+ and the
+ <a href="#limit">limit assumption</a>.</p>
+ 
+<p>
+There is another issue raised by the discussion of <em>might</em>
+conditionals which has attracted much attention. There is an imperfect
+match between the representation language being used and English. The
+connective &ldquo;\(&gt;\)&rdquo; builds in <em>would</em>, and
+<em>might</em> subjunctives contain no <em>would</em>. Rather than
+being analyzed as a <em>might</em> scoping over a <em>would</em>
+conditional <span class="citation">Stalnaker 1980, 1984: Ch.7)</span>
+or a distinct conditional connective <span class="citation">(D. Lewis
+1973b: &sect;1.5)</span>, it would be more accurate to have an
+analysis that separates the contribution of conditionals in general
+from the modals that interact with them. This is not an idle
+linguistic issue. Neither <span class="citation">(Stalnaker 1984:
+Ch.7)</span> nor <span class="citation">(D. Lewis 1973b:
+&sect;1.5)</span> can capture examples like
+ <a href="#e-mixed">(65)</a>.</p>
+ 
+<dl class="sentag tag3em">
+<dt id="e-mixed">(65)</dt>
+<dd>If John had come to the party, he would have had a drink and he might
+have liked it.</dd>
+</dl>
+
+<p>
+Scoping the <em>might</em> over the conditional would erase the
+crucial distinction made in the consequent: John definitely would have
+had a drink, but there&rsquo;s only a chance that he would have liked
+ it.<sup>[<a href="notes.html#note-56" id="ref-56">56</a>]</sup>
+ These issues can only be addressed by a more serious engagement with
+the research discussed in the supplement
+ <a href="conditionals.html">Indicative and Subjunctive Conditionals</a>,
+ especially Kratzer&rsquo;s (<span class="citation">1981a,
+1991</span>) general approach to modality and conditionals.</p>
+
+<h3 id="a-limit-assumption">B.4 The Limit Assumption</h3>
+
+<p>
+The basic idea of the
+ <a href="#limit">limit assumption</a>
+ is that there is are most similar antecedent worlds:</p>
+
+<ul class="hanging">
+
+<li id="limit"><strong>Limit Assumption</strong> As one proceeds to
+\(\phi\)-worlds more and more similar to <i>w</i>, one hits a limit
+and cannot get to a \(\phi\)-world any more similar to <i>w</i>.</li>
+</ul>
+
+<p>
+While <span class="citation">Stalnaker (1968, 1980)</span> accepts
+this assumption, <span class="citation">D. Lewis (1973b: 20)</span>
+rejects it. <span class="citation">D. Lewis (1973b: 20)</span>
+provides the following rationale. Consider this 1 inch line:</p>
+
+\[\rule{1in}{.3ex}\]
+
+<p>
+Suppose, counterfactually, that this line were more than an inch long.
+How long is it in the world most similar to our own? For any length of
+line and corresponding world \(1+x\), there is a real number
+\(y&lt;x\) such that the line is \(1+y\) in some other world. This
+other world is yet more similar to our own, since the line is closer
+to its actual length. <span class="citation">D. Lewis (1973b:
+20)</span> grants that this is not a decisive objection, but suggests
+that it is better to formulate a theory of counterfactuals which does
+not essentially depend on the limit assumption to operate. <span class="citation">D.
+Lewis (1973c: 423&ndash;4)</span> prefers an
+analysis according to which \(\phi&gt;\psi\) is true in <i>w</i> just
+in case some \(\phi\land\psi\)-world is more similar to <i>w</i> than
+any \(\phi\land\neg\psi\)-world, if there are any \(\phi\)-worlds.
+This analysis can be formalized in terms of a three-place comparative
+similarity relation over worlds that is subject to constraints
+analogous to those devised for selection functions <span class="citation">(D.
+Lewis 1973b: &sect;2.3)</span>.</p>
+
+<p>
+<span class="citation">Stalnaker (1980, 1984: 141&ndash;142)</span>
+replies that in most contexts not every minute difference will count
+towards the similarity of antecedent worlds. <span class="citation">Stalnaker
+(1968)</span> and <span class="citation">D.
+Lewis (1973b)</span> share the commitment that the respects which
+matter for similarity are radically context-sensitive. Thus, in cases
+like the line, they both seem to agree that there will be a threshold
+below which differences don&rsquo;t matter. <span class="citation">Stalnaker
+1980, 1984: 141&ndash;142)</span> contends
+that this threshold provides the limit needed to safely make the
+ <a href="#limit">limit assumption</a>.
+ In the context of the line, the threshold is likely the smallest unit
+of measure which people can be assumed to care about, e.g., a
+millimeter. As for contexts where <em>every</em> difference matters,
+<span class="citation">Stalnaker (1984: 141&ndash;142)</span> says
+that it is inappropriate to use imprecise antecedents like <em>if this
+line were more than an inch long</em>, much as it is inappropriate to
+use a definite description like <em>the shortest lines longer than an
+inch</em>. If correct, this response eliminates the need to
+countenance failures of the
+ <a href="#limit">limit assumption</a>.
+ However, <span class="citation">Swanson (2012)</span> shows that even
+if one must countenance such failures, there is a supervaluationist
+method&mdash;extending considerably Stalnaker&rsquo;s (<span class="citation">1980</span>)&mdash;for
+treating them within a theory
+that makes the
+ <a href="#limit">limit assumption</a>.</p>
+ 
+<p>
+<span class="citation">Pollock (1976: 20)</span> and <span class="citation">Herzberger
+(1979)</span> also highlight one advantage
+of making the
+ <a href="#limit">limit assumption</a>.
+ All theories on offer agree that if \(\phi_1&gt;\phi_2\) is true and
+\(\phi_2\vDash\psi\) then \(\phi_1&gt;\psi\) is true. And, they agree
+that if \(\phi_1&gt;\phi_2,{\ldots},\phi_1&gt;\phi_n\) are true and
+\(\phi_2,{\ldots},\phi_n\vDash\psi\) then \(\phi_1&gt;\psi\) is true.
+But what about the more general version: where
+\(\Gamma={\{\phi_2,\phi_3,{\ldots}\}}\), if
+\(\phi_1&gt;\phi_2,\phi_1&gt;\phi_3,{\ldots}\) are true and
+\(\Gamma\vDash\psi\) then \(\phi_1&gt;\psi\) is true? The more general
+version only holds when the
+ <a href="#limit">limit assumption</a>
+ is made. The appeal of this general consequence principle, plus the
+above resources, mean that the
+ <a href="#limit">limit assumption</a>
+ is often safely made in discussion of counterfactuals. If for nothing
+else, this assumption often simplifies already complex formal
+definitions. However, <span class="citation">Kaufmann (2017)</span>
+demonstrated a rather important caveat: formalizing the Limit
+Assumption reveals it to be not one assumption, but a family of
+assumptions which must be stated differently depending on other
+features of the formalization. While the formulations of it given in
+<span class="citation">D. Lewis (1973b)</span> are accurate given
+certain assumptions about the underlying ordering relations, different
+formulations are required when those assumptions are changed.</p>
+
+<script type="text/javascript" src="local.js"></script>
+<script type="text/javascript" src="../../MathJax/MathJaxb198.js?config=TeX-MML-AM_CHTML"></script>
+
+</div><!-- #aueditable --><!--DO NOT MODIFY THIS LINE AND BELOW-->
+
+<!-- END ARTICLE HTML -->
+
+</div> <!-- End article-content -->
+
+  <div id="article-copyright">
+    <p>
+ <a href="../../info.html#c">Copyright &copy; 2019</a> by
+
+<br />
+<a href="http://williamstarr.net/" target="other">William Starr</a>
+&lt;<a href="m&#97;ilto:will&#37;2estarr&#37;40cornell&#37;2eedu"><em>will<abbr title=" dot ">&#46;</abbr>starr<abbr title=" at ">&#64;</abbr>cornell<abbr title=" dot ">&#46;</abbr>edu</em></a>&gt;
+    </p>
+  </div>
+
+</div> <!-- End article -->
+
+<!-- NOTE: article banner is outside of the id="article" div. -->
+<div id="article-banner" class="scroll-block">
+  <div id="article-banner-content">
+    <a href="../../fundraising/index.html">
+    Open access to the SEP is made possible by a world-wide funding initiative.<br />
+    The Encyclopedia Now Needs Your Support<br />
+    Please Read How You Can Help Keep the Encyclopedia Free</a>
+  </div>
+</div> <!-- End article-banner -->
+
+    </div> <!-- End content -->
+
+    <div id="footer">
+
+      <div id="footer-menu">
+        <div class="menu-block">
+          <h4><i class="icon-book"></i> Browse</h4>
+          <ul role="menu">
+            <li><a href="../../contents.html">Table of Contents</a></li>
+            <li><a href="../../new.html">What's New</a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+            <li><a href="../../published.html">Chronological</a></li>
+            <li><a href="../../archives/index.html">Archives</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-info-sign"></i> About</h4>
+          <ul role="menu">
+            <li><a href="../../info.html">Editorial Information</a></li>
+            <li><a href="../../about.html">About the SEP</a></li>
+            <li><a href="../../board.html">Editorial Board</a></li>
+            <li><a href="../../cite.html">How to Cite the SEP</a></li>
+            <li><a href="../../special-characters.html">Special Characters</a></li>
+            <li><a href="../../tools/index.html">Advanced Tools</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-leaf"></i> Support SEP</h4>
+          <ul role="menu">
+            <li><a href="../../support/index.html">Support the SEP</a></li>
+            <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+            <li><a href="../../support/donate.html">Make a Donation</a></li>
+            <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+          </ul>
+        </div>
+      </div> <!-- End footer menu -->
+
+      <div id="mirrors">
+        <div id="mirror-info">
+          <h4><i class="icon-globe"></i> Mirror Sites</h4>
+          <p>View this site from another server:</p>
+        </div>
+        <div class="btn-group open">
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="https://plato.stanford.edu/">
+            <span class="flag flag-usa"></span> USA (Main Site) <span class="caret"></span>
+            <span class="mirror-source">Philosophy, Stanford University</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../mirrors.html">Info about mirror sites</a></li>
+          </ul>
+        </div>
+      </div> <!-- End mirrors -->
+      
+      <div id="site-credits">
+        <p>The Stanford Encyclopedia of Philosophy is <a href="../../info.html#c">copyright &copy; 2021</a> by <a href="http://mally.stanford.edu/">The Metaphysics Research Lab</a>, Department of Philosophy, Stanford University</p>
+        <p>Library of Congress Catalog Data: ISSN 1095-5054</p>
+      </div> <!-- End site credits -->
+
+    </div> <!-- End footer -->
+
+  </div> <!-- End container -->
+
+   <!-- NOTE: Script required for drop-down button to work (mirrors). -->
+  <script>
+    $('.dropdown-toggle').dropdown();
+  </script>
+
+</body>
+
+<!-- Mirrored from seop.illc.uva.nl/entries/counterfactuals/similarity.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 20:10:00 GMT -->
+</html>

@@ -1,0 +1,1951 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 ie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 ie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 ie"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 ie"> <![endif]-->
+<!--[if !IE]> --> <html> <!-- <![endif]-->
+
+<!-- Mirrored from seop.illc.uva.nl/entries/logic-inductive/notes.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 20:12:27 GMT -->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>
+Inductive Logic &gt; Notes (Stanford Encyclopedia of Philosophy)
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive, noodp" />
+<meta name="DCTERMS.ispartof" content="https://plato.stanford.edu/entries/logic-inductive/" />
+
+<!-- NOTE: Import webfonts using this link: -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,200&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" href="../../css/font-awesome-ie7.min.css"> <![endif]-->
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../css/print.css" />
+<link rel="stylesheet" type="text/css" href="../../css/entry.css" />
+<!--[if IE]> <link rel="stylesheet" type="text/css" href="../../css/ie.css" /> <![endif]-->
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+
+<!-- NOTE: Javascript for sticky behavior needed on article and ToC pages -->
+<script type="text/javascript" src="../../js/jquery-scrolltofixed-min.js"></script>
+<script type="text/javascript" src="../../js/entry.js"></script>
+
+<!-- SEP custom script -->
+<script type="text/javascript" src="../../js/sep.js"></script>
+</head>
+
+<!-- NOTE: The nojs class is removed from the page if javascript is enabled. Otherwise, it drives the display when there is no javascript. -->
+<body class="nojs article" id="pagetopright">
+<div id="container">
+<div id="header-wrapper">
+  <div id="header">
+    <div id="branding">
+      <div id="site-logo"><a href="../../index.html"><img src="../../symbols/sep-man-red.png" alt="SEP logo" /></a></div>
+      <div id="site-title"><a href="../../index.html">Stanford Encyclopedia of Philosophy</a></div>
+    </div>
+    <div id="navigation">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <button class="btn btn-navbar collapsed" data-target=".collapse-main-menu" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Menu </button>
+            <div class="nav-collapse collapse-main-menu in collapse">
+              <ul class="nav">
+                <li class="dropdown open"><a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-book"></i> Browse</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                    <li><a href="../../contents.html">Table of Contents</a></li>
+                    <li><a href="../../new.html">What's New</a></li>
+                    <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+                    <li><a href="../../published.html">Chronological</a></li>
+                    <li><a href="../../archives/index.html">Archives</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-info-sign"></i> About</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                    <li><a href="../../info.html">Editorial Information</a></li>
+                    <li><a href="../../about.html">About the SEP</a></li>
+                    <li><a href="../../board.html">Editorial Board</a></li>
+                    <li><a href="../../cite.html">How to Cite the SEP</a></li>
+                    <li><a href="../../special-characters.html">Special Characters</a></li>
+                    <li><a href="../../tools/index.html">Advanced Tools</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-leaf"></i> Support SEP</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                    <li><a href="../../support/index.html">Support the SEP</a></li>
+                    <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+                    <li><a href="../../support/donate.html">Make a Donation</a></li>
+                    <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End navigation -->
+    
+    <div id="search">
+      <form id="search-form" method="get" action="https://seop.illc.uva.nl/search/searcher.py">
+        <input type="search" name="query" placeholder="Search SEP" />
+        <div class="search-btn-wrapper"><button class="btn search-btn" type="submit"><i class="icon-search"></i></button></div>
+      </form>
+    </div>
+    <!-- End search --> 
+    
+  </div>
+  <!-- End header --> 
+</div>
+<!-- End header wrapper -->
+
+<div id="content">
+
+<!-- Begin article sidebar -->
+<div id="article-sidebar" class="sticky">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <button class="btn btn-navbar" data-target=".collapse-sidebar" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Entry Navigation </button>
+        <div id="article-nav" class="nav-collapse collapse-sidebar in collapse">
+          <ul class="nav">
+            <li><a href="index.html">Back to Entry <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#toc">Entry Contents <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#Bib">Entry Bibliography <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#Aca">Academic Tools <i class="icon-external-link"></i></a></li>
+            <li><a href="https://leibniz.stanford.edu/friends/preview/logic-inductive/">Friends PDF Preview <i class="icon-external-link"></i></a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=logic-inductive">Author and Citation Info <i class="icon-external-link"></i></a> </li>
+            <li><a href="#pagetopright" class="back-to-top">Back to Top <i class="icon-angle-up icon2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End article sidebar --> 
+
+<!-- NOTE: Article content must have two wrapper divs: id="article" and id="article-content" -->
+<div id="article">
+<div id="article-content">
+
+<!-- BEGIN ARTICLE HTML -->
+<h4 id="supphead"></h4>
+
+<div id="aueditable">
+<!--DO NOT MODIFY THIS LINE AND ABOVE--> 
+<h2>Notes to <a href="index-2.html">Inductive Logic</a></h2>
+
+<div id="note-1">
+
+<p>
+
+ <a href="index-2.html#ref-1">1.</a>
+ Although enumerative inductive arguments may seem to be similar to what
+classical statisticians call <em>estimation</em>, it is not really
+the same thing. As classical statisticians are quick to point out,
+<em>estimation</em> does not use the sample to <em>inductively
+support</em> a conclusion about the whole population.
+<em>Estimation</em> is not supposed to be a kind of inductive
+inference. Rather, <em>estimation</em> is a decision strategy. The
+sample frequency will be within two standard deviations of the
+population frequency in about 95% of all samples. So, if one adopts
+the strategy of <em>accepting as true</em> the claim that the
+population frequency is within two standard deviations of the sample
+frequency, and if one uses this strategy repeatedly for various
+samples, one should be right about 95% of the time. I discuss
+enumerative induction in much more detail in the
+ <a href="sup-enum-induc.html">supplement on Enumerative Inductions: Bayesian Estimation and Convergence</a>,
+ which treats Bayesian convergence and the satisfaction of the CoA for
+the special case of enumerative inductions. </p>
+</div>
+
+<div id="note-2">
+
+<p>
+
+ <a href="index-2.html#ref-2">2.</a>
+ Here are the more usual axioms for conditional probability functions.
+These axioms are provably equivalent to the axioms presented in the main
+text.</p>
+
+<blockquote>
+A support function is a function \(P_{\alpha}\) from pairs of
+sentences of <i>L</i> to real numbers between 0 and 1 (inclusive) that
+satisfies the following axioms:
+
+<ul class="sentag tag2em">
+
+<li><span class="tag">(1)</span><span class="sen">\(P_{\alpha}[D \pmid
+E] \ne 1\) for at least one pair of sentences <i>D</i> and <i>E</i>.
+</span></li>
+</ul>
+
+<p>
+For all sentence \(A, B\), and <i>C</i>, </p>
+
+<ul class="sentag tag2em">
+
+<li><span class="tag">(2)</span><span class="sen">If \(B \vDash A\),
+then \(P_{\alpha}[A \pmid B] = 1\); </span></li>
+
+<li><span class="tag">(3)</span><span class="sen"> If \(B \vDash C\)
+and \(C \vDash B\), then \(P_{\alpha}[A \pmid B] = P_{\alpha}[A \pmid
+C]\);</span></li>
+
+<li><span class="tag">(4)</span><span class="sen"> If \(C
+\vDash{\nsim}(B\cdot A)\), then either 
+
+\[P_{\alpha}[(A \vee B) \pmid  C] = P_{\alpha}[A \pmid  C] + P_{\alpha}[B \pmid  C]\] or else \(P_{\alpha}[D \pmid  C] = 1\) for every <i>D</i>; </span></li>
+
+<li><span class="tag">(5)</span><span class="sen">\(P_{\alpha}[(A\cdot
+B) \pmid C] = P_{\alpha}[A \pmid (B\cdot C)] \times P_{\alpha}[B \pmid
+C]\).</span></li>
+</ul>
+</blockquote>
+
+<p>
+The results stated in the main text derive from the axioms in the main text as follows:</p>
+
+<ol type="a">
+
+<li> If \(B \vDash A\), then \(P_{\alpha}[A \pmid B] = 1\).
+
+<div>
+
+<p>
+<strong>Proof:</strong> First notice that (by axiom 2) all logical
+entailments must have the same support value: for, when \(B \vDash A\)
+and \(D \vDash C\) we have \(P_{\alpha}[A \pmid B] \ge P_{\alpha}[C
+\pmid D] \ge P_{\alpha}[A \pmid B]\); so \(P_{\alpha}[C \pmid D] =
+P_{\alpha}[A \pmid B]\). Thus, all logical entailments \(B \vDash A\)
+must have the same real number support value \(r: P_{\alpha}[A \pmid
+B] = r\) whenever \(B \vDash A\). To see that <i>r</i> must equal
+either 1 or 0, use axiom 5 as follows (employing the various logical
+entailments involved): </p> 
+
+\[r = P_{\alpha}[A\cdot A \pmid  A] = P_{\alpha}[A \pmid  A\cdot A] \times P_{\alpha}[A \pmid  A] = r \times r;\]
+
+<p>
+so \(r = r \times r\); so \(r = 1\) or \(r = 0\). To see that \(r \ne
+0\), let us suppose \(r = 0\) and derive a contradiction. Axiom 1
+together with axiom 2 requires that for some <i>A</i> and <i>B</i>,
+\(P_{\alpha}[A \pmid B] \lt P_{\alpha}[A \pmid A] = r = 0\). Then, for
+this <i>A</i> and <i>B</i>, since \(B \vDash(A \vee{\nsim}A)\) and \(B
+\vDash{\nsim}(A \cdot{\nsim}A)\), from axiom 4 we have </p>
+
+\[0 = r = P_{\alpha}[(A \vee{\nsim}A) \pmid  B] = P_{\alpha}[A \pmid  B] + P_{\alpha}[{\nsim}A \pmid  B]\] 
+
+<p>
+(or else \(P_{\alpha}[C \pmid B] = P_{\alpha}[B \pmid B] = 0\) for
+every sentence <i>C</i>, which contradicts our supposition that
+\(P_{\alpha}[A \pmid B] \lt 0\)). But then we must have
+\(P_{\alpha}[{\nsim}A \pmid B] \gt 0 = r = P_{\alpha}[A \pmid A]\),
+which contradicts axiom 2.</p>
+</div></li>
+
+<li>
+
+<p>
+If \(C \vDash{\nsim}(B\cdot A)\), then either</p> 
+
+ \[P_{\alpha}[(A \vee B) \pmid  C] = P_{\alpha}[A \pmid  C] + P_{\alpha}[B \pmid  C]\] 
+
+<p>
+or else \(P_{\alpha}[E \pmid C] = 1\) for every sentence <i>E</i>.</p>
+
+<div>
+
+<p>
+<strong>Proof:</strong> Since \(E \vDash E\), \(P_{\alpha}[E \pmid E]
+= 1\). Thus, axiom 4 becomes: If \(C \vDash{\nsim}(B\cdot A)\), then
+either </p> 
+
+\[P_{\alpha}[(A \vee B) \pmid  C] = P_{\alpha}[A \pmid  C] + P_{\alpha}[B \pmid  C]\]
+
+<p>
+or else \(P_{\alpha}[E \pmid C] = 1\) for every sentence <i>E</i>.</p>
+</div></li>
+
+<li>\(P_{\alpha}[{\nsim}A \pmid B] = 1 - P_{\alpha}[A \pmid B]\) or
+else \(P_{\alpha}[C \pmid B] = 1\) for every sentence <i>C</i>.
+
+<div>
+
+<p>
+<strong>Proof:</strong> \(B \vDash(A \vee{\nsim}A)\) and \(B
+\vDash{\nsim}(A \cdot{\nsim}A)\), so </p> 
+
+\[1 = P_{\alpha}[(A \vee{\nsim}A) \pmid  B] = P_{\alpha}[A \pmid  B] + P_{\alpha}[{\nsim}A \pmid  B]\]
+
+<p>
+or else \(P_{\alpha}[C \pmid B] = 1\) for every sentence <i>C</i>.
+Thus, \(P_{\alpha}[{\nsim}A \pmid B] = 1 - P_{\alpha}[A \pmid B]\) or
+else \(P_{\alpha}[C \pmid B] = 1\) for every sentence <i>C</i>. </p>
+</div></li>
+
+<li>\(1 \ge P_{\alpha}[A \pmid B] \ge 0\).
+
+<div>
+
+<p>
+<strong>Proof:</strong> Result 1 (above) together with axiom 2 implies
+that \(1 \ge P_{\alpha}[A \pmid B]\), for all \(A, B\). Suppose that
+for some <i>A</i> and <i>B</i>, \(P_{\alpha}[A \pmid B] \lt 0\);
+then</p> 
+
+ \[P_{\alpha}[{\nsim}A \pmid  B] = 1 - P_{\alpha}[A \pmid  B] \gt 1,\]
+
+<p>
+contradiction! So we must have \(P_{\alpha}[A \pmid B] \ge 0\). Thus,
+for all sentences <i>A</i> and <i>B</i>, \(1 \ge P_{\alpha}[A \pmid B]
+\ge 0\).</p>
+</div></li>
+
+<li>If \(B \vDash A\), then \(P_{\alpha}[A \pmid C] \ge P_{\alpha}[B
+\pmid C]\).
+
+<div>
+
+<p>
+<strong>Proof:</strong> Suppose \(B \vDash A\). Then \(\vDash{\nsim}(B
+\cdot{\nsim}A)\), so </p> 
+
+\[\begin{align}
+1 &amp; \ge P_{\alpha}[(B \vee{\nsim}A) \pmid  C] \\
+&amp; = P_{\alpha}[B \pmid  C] + P_{\alpha}[{\nsim}A \pmid  C] \\
+&amp; = P_{\alpha}[B \pmid  C] + 1 - P_{\alpha}[A \pmid  C].
+\end{align}
+\]
+
+<p>
+Thus, \(P_{\alpha}[A \pmid C] \ge P_{\alpha}[B \pmid C]\). </p>
+</div></li>
+
+<li>If \(B \vDash A\) and \(A \vDash B\), then \(P_{\alpha}[A \pmid C]
+= P_{\alpha}[B \pmid C]\).
+
+<div>
+
+<p>
+<strong>Proof:</strong> Suppose \(B \vDash A\) and \(A \vDash B\).
+Then, from the previous result we have \(P_{\alpha}[A \pmid C] =
+P_{\alpha}[B \pmid C]\). </p>
+</div></li>
+
+<li>If \(C \vDash B\), then \(P_{\alpha}[(A\cdot B) \pmid C] =
+P_{\alpha}[(B\cdot A) \pmid C] = P_{\alpha}[A \pmid C]\).
+
+<div>
+
+<p>
+<strong>Proof:</strong> Suppose \(C \vDash B\). Then, \((A\cdot C)
+\vDash B\), so \(P_{\alpha}[B \pmid (A\cdot C)] = 1\), by result 1
+above. Then, by axiom 5,</p> 
+
+ \[\begin{align}
+P_{\alpha}[(B\cdot A) \pmid  C] &amp; = P_{\alpha}[B \pmid  (A\cdot C)] \times P_{\alpha}[A \pmid  C] \\
+&amp;= P_{\alpha}[A \pmid  C].
+\end{align}\]
+
+<p>
+Thus, since \((A\cdot B) \vDash(B\cdot A)\) and \((B\cdot A)
+\vDash(A\cdot B)\), result 6 above yields</p> 
+
+\[\begin{align}
+P_{\alpha}[(A\cdot B) \pmid  C] &amp; = P_{\alpha}[(B\cdot A) \pmid  C] \\
+&amp;= P_{\alpha}[A \pmid  C].\end{align}\]
+
+</div></li>
+
+<li>If \(C \vDash B\) and \(B \vDash C\), then \(P_{\alpha}[A \pmid B]
+= P_{\alpha}[A \pmid C]\).
+
+<div>
+
+<p>
+<strong>Proof:</strong> Suppose \(C \vDash B\) and \(B \vDash C\).
+Then, from previous results together with axioms 5 and 3 we have </p>
+
+\[
+\begin{align}
+P_{\alpha}[A \pmid  B] &amp; = P_{\alpha}[(A\cdot C) \pmid  B] \\
+&amp; = P_{\alpha}[A \pmid  (C\cdot B)] \times P_{\alpha}[C \pmid  B] \\
+&amp; = P_{\alpha}[A \pmid  (C\cdot B)]\\
+&amp; = P_{\alpha}[A \pmid  (B\cdot C)] \\
+&amp; = P_{\alpha}[A \pmid  (B\cdot C)] \times P_{\alpha}[B \pmid  C] \\
+&amp; = P_{\alpha}[(A\cdot B) \pmid  C] \\
+&amp; = P_{\alpha}[A \pmid  C]
+\end{align}
+\] 
+
+</div></li>
+
+<li>If \(P_{\alpha}[B \pmid C] \gt 0\), then 
+
+\[
+P_{\alpha}[A \pmid  (B\cdot C)]  = P_{\alpha}[B \pmid  (A\cdot C)] \times \frac{P_{\alpha}[A \pmid  C]}{P_{\alpha}[B \pmid  C]}
+\]
+
+ (simple form
+of Bayes&rsquo; theorem).
+
+<div>
+
+<p>
+<strong>Proof:</strong> Axioms 5 together with result 6 yields </p>
+
+\[
+\begin{align}
+P_{\alpha}[A \pmid  (B\cdot C)] \times P_{\alpha}[B \pmid  C] &amp; = P_{\alpha}[(A\cdot B) \pmid  C] \\
+&amp; = P_{\alpha}[(B\cdot A) \pmid  C] \\
+&amp; = P_{\alpha}[B \pmid  (A\cdot C)] \times P_{\alpha}[A \pmid  C].
+\end{align}
+\]
+
+<p>
+Thus, if \(P_{\alpha}[B \pmid C] \gt 0\), then</p> 
+
+ \[
+P_{\alpha}[A \pmid  (B\cdot C)] = P_{\alpha}[B \pmid  (A\cdot C)] \times \frac{P_{\alpha}[A \pmid  C]}{P_{\alpha}[B \pmid  C]}.
+\] </div></li>
+
+<li>\(P_{\alpha}[(A\vee B) \pmid C] = P_{\alpha}[A \pmid C] +
+P_{\alpha}[B \pmid C] - P_{\alpha}[(A\cdot B) \pmid C]\).
+
+<div>
+
+<p>
+<strong>Proof:</strong> If \(P_{\alpha}[D \pmid C] = 1\) for every
+<i>D</i>, then each term in the result is 1, so the result holds. So,
+let&rsquo;s suppose that \(P_{\alpha}[D \pmid C] \ne 1\) for some
+<i>D</i>. Notice that </p> 
+
+\[(A \vee B) \vDash(A \vee({\nsim}A \cdot B))\]
+
+<p>
+and </p> 
+
+\[(A \vee({\nsim}A \cdot B)) \vDash(A \vee B),\]
+
+<p>
+and also</p> 
+
+\[C \vDash{\nsim}(A \cdot({\nsim}A \cdot B)).\]
+
+<p>
+We&rsquo;ll also be using the fact that </p> 
+
+\[B \vDash((A \cdot B)\vee({\nsim}A \cdot B))\]
+
+<p>
+and</p> 
+
+ \[((A \cdot B)\vee({\nsim}A \cdot B)) \vDash B,\] 
+
+<p>
+and also</p> 
+
+\[C \vDash{\nsim}((A \cdot B)\cdot({\nsim}A \cdot B)).\]
+
+<p>
+Then </p> 
+
+\[
+\begin{align}
+P_{\alpha}[(A \vee B) \pmid  C] &amp; = P_{\alpha}[(A \vee({\nsim}A\cdot B)) \pmid  C]\\
+&amp; = P_{\alpha}[A \pmid  C] + P_{\alpha}[({\nsim}A\cdot B) \pmid  C]\\
+&amp; = P_{\alpha}[A \pmid  C] + P_{\alpha}[({\nsim}A\cdot B) \pmid  C] + P_{\alpha}[B \pmid  C] \\
+&amp;\qquad - P_{\alpha}[B \pmid  C]\\
+&amp; = P_{\alpha}[A \pmid  C] + P_{\alpha}[({\nsim}A\cdot B) \pmid  C] + P_{\alpha}[B \pmid  C] \\
+&amp;\qquad - P_{\alpha}[(A\cdot B)\vee({\nsim}A\cdot B) \pmid  C]\\
+&amp; = P_{\alpha}[A \pmid  C] + P_{\alpha}[({\nsim}A\cdot B) \pmid  C] + P_{\alpha}[B \pmid  C] \\
+&amp;\qquad - P_{\alpha}[(A\cdot B) \pmid  C] - P_{\alpha}[({\nsim}A\cdot B) \pmid  C]\\
+&amp; = P_{\alpha}[A \pmid  C] + P_{\alpha}[B \pmid  C] - P_{\alpha}[(A\cdot B) \pmid  C].
+\end{align}
+\]
+
+</div></li>
+
+<li>If \(\{B_1 , \ldots ,B_n\}\) is any finite set of sentences such
+that for each pair \(B_i\) and \(B_j, C \vDash{\nsim}(B_{i}\cdot
+B_{j})\) (i.e., the members of the set are mutually exclusive, given
+<i>C</i>), then either \(P_{\alpha}[D \pmid C] = 1\) for every
+sentence <i>D</i>, or 
+
+\[
+P_{\alpha}[((B_1\vee B_2)\vee \ldots \vee B_n) \pmid  C] = 
+\sum^{n}_{i=1}     P_{\alpha}[B_i \pmid  C]. 
+\]
+
+<div>
+
+<p>
+<strong>Proof:</strong> For each distinct <i>i</i> and <i>j</i>, let
+\(C \vDash{\nsim}(B_{i}\cdot B_{j})\); and suppose that \(P_{\alpha}[D
+\pmid C] \lt 1\) for at least one sentence <i>D</i>. First notice that
+we have, for each <i>i</i> greater than 1 and less than <i>n</i>, </p>
+
+\[C \vDash({\nsim}(B_1\cdot B_{i+1})\cdot \ldots \cdot{\nsim}(B_{i}\cdot B_{i+1}));\]
+
+<p>
+so</p> 
+
+\[C \vDash{\nsim}(((B_1\vee B_2)\vee \ldots \vee B_i)\cdot B_{i+1}).\]
+
+<p>
+Then, for any finite list of the first <i>n</i> of the \(B_i\) (for
+each value of <i>n</i>),</p> 
+
+\[
+\begin{align}
+P_{\alpha}&amp;[(((B_1\vee B_2)\vee \ldots \vee B_{n-1})\vee B_n) \pmid  C]\\
+&amp;\qquad    =    P_{\alpha}[((B_1\vee B_2)\vee \ldots \vee B_{n-1}) \pmid  C] + P_{\alpha}[B_n \pmid  C] \\
+&amp;\qquad    = \ldots \\
+&amp;\qquad    = \sum^{n}_{i=1}  P_{\alpha}[B_i \pmid  C].\\
+\end{align}
+\] </div></li>
+
+</ol>
+
+</div>
+
+<div id="note-3">
+
+<p>
+
+ <a href="index-2.html#ref-3">3.</a>
+ This result is not the rule commonly known as <em>countable
+additivity</em>. Countable additivity requires a language in which
+infinite disjunctions are defined.</p>
+
+<p>
+The present result follows directly from the previous result (without
+appealing to <em>countable additivity</em>), since, by definition</p>
+
+\[
+\sum^{\infty}_{i=1} P_{\alpha}[B_i \pmid  C]
+   = 
+  \lim_n
+\sum^{n}_{i=1} P_{\alpha}[B_i \pmid  C].
+\]
+
+ So, under the conditions stated in the main text,
+
+\[
+\lim_n P_{\alpha}[((B_1\vee B_2)\vee \ldots \vee B_n) \pmid  C] 
+   =  \sum^{\infty}_{i=1} P_{\alpha}[B_i \pmid  C].
+\]
+
+<p>Given a language in which infinite disjunction is defined, countable additivity would then result from the following rule (or axiom):
+</p> 
+
+\[P_{\alpha}[((B_1\vee B_2)\vee \ldots) \pmid  C] = lim_n P_{\alpha}[((B_1\vee B_2)\vee \ldots \vee B_n) \pmid  C].
+\]
+
+</div>
+
+<div id="note-4">
+
+<p>
+
+ <a href="index-2.html#ref-4">4.</a>
+ Here are the usual axioms when <em>unconditional probability</em> is
+taken as basic:</p>
+
+<div class="indent">
+
+<p>
+\(P_{\alpha}\) is a function from statements to real numbers between 0
+and 1 that satisfies the following rules:</p>
+
+<ol type="i">
+
+<li>if \(\vDash\)A (i.e., if <i>A</i> is a logical truth), then
+\(P_{\alpha}[A] = 1\);</li>
+
+<li>if \(\vDash{\nsim}(A\cdot B)\) (i.e., if <i>A</i> and <i>B</i> are
+logically incompatible), then \(P_{\alpha}[(A\vee B)] = P_{\alpha}[A]
++ P_{\alpha}[B]\);</li>
+</ol>
+
+<p>
+Definition: if \(P_{\alpha}[B] \gt 0\), then </p> 
+
+\[P_{\alpha}[A \pmid  B] = \frac{P_{\alpha}[(A\cdot B)]}{P_{\alpha}[B]}.\]
+
+</div>
+</div>
+
+<div id="note-5">
+
+<p>
+
+ <a href="index-2.html#ref-5">5.</a>
+ Bayesians often refer to the probability of an evidence statement on
+a hypothesis, \(P[e \pmid h\cdot b\cdot c]\), as the <em>likelihood of
+the hypothesis</em>. This can be a somewhat confusing convention since
+it is clearly the evidence that is made likely to whatever degree by
+the hypothesis. So, I will disregard the usual convention here. Also,
+presentations of probabilistic inductive logic often suppress <i>c</i>
+and <i>b</i>, and simply write &lsquo;\(P[e \pmid h]\)&rsquo;. But
+<i>c</i> and <i>b</i> are important parts of the logic of the
+likelihoods. So I will continue to make them explicit.</p>
+</div>
+
+<div id="note-6">
+
+<p>
+
+ <a href="index-2.html#ref-6">6.</a>
+ These attempts have not been wholly satisfactory thus far, but
+research continues. For an illuminating discussion of the logic of
+direct inference and the difficulties involved in providing a formal
+account, see the series of papers: Levi 1977; Kyburg 1978; Levi 1978. Levi 1980
+develops a very sophisticated approach. </p>
+
+<p>
+Kyburg has developed a logic of statistical inference based solely on
+logical direct inference probabilities (Kyburg 1974). Kyburg&rsquo;s
+logical probabilities do not satisfy the usual axioms of probability
+theory. The series of papers cited above compares Kyburg&rsquo;s
+approach to a kind of Bayesian inductive logic championed by Levi
+(e.g., in Levi 1967).</p>
+</div>
+
+<div id="note-7">
+
+<p>
+
+ <a href="index-2.html#ref-7">7.</a>
+ This idea should not be confused with <em>logical positivism</em> or
+<em>logical empiricism</em>. A version of <em>logical positivism</em>
+applied to likelihoods would hold that if two theories assign the same
+likelihood values to all possible evidence claims, then they are
+essentially the same theory, though they may be couched in different
+words. In short: <em>same likelihoods</em> implies <em>same
+theory</em>. The view suggested here, however, is not
+<em>positivism</em>, but its inverse, which should be much less
+controversial: <em>different likelihoods</em> implies <em>different
+theories</em>. That is, given that all of the relevant background and
+auxiliaries are made explicit (represented in &lsquo;<i>b</i>&rsquo;),
+if two scientists disagree significantly about the likelihoods of
+important evidence claims on a given hypothesis, they must understand
+the empirical content of that hypothesis quite differently. To that
+extent, though they may employ the same syntactic expressions, they
+use them to express empirically distinct hypotheses.</p>
+</div>
+
+<div id="note-8">
+
+<p>
+
+ <a href="index-2.html#ref-8">8.</a>
+ Call an object <em>grue</em> at a given time <em>just in case</em>
+either the time is earlier than the first second of the year 2030 and
+the object is green or the time is not earlier than the first second
+of 2030 and the object is blue. Now the statement &lsquo;All emeralds
+are green (at all times)&rsquo; has the same syntactic structure as
+&lsquo;All emeralds are grue (at all times)&rsquo;. So, if syntactic
+structure determines priors, then these two hypotheses should have the
+same prior probabilities. Indeed, both should have prior probabilities
+approaching 0. For, there are an infinite number of competitors of
+these two hypotheses, each sharing the same syntactic structure:
+consider the hypotheses &lsquo;All emeralds are grue\(_n\) (at all
+times)&rsquo;, where an object is grue\(_n\) at a given time <em>just
+in case</em> either the time is earlier than the first second of the
+<i>n</i><sup>th</sup> day after January 1, 2030, and the object is
+green <em>or</em> the time is not earlier than the first second of the
+<i>n</i><sup>th</sup> day after January 1, 2030, and the object is
+blue. A purely syntactic specification of the priors should assign all
+of these hypotheses the same prior probability. But these are mutually
+exclusive hypotheses; so their prior probabilities must sum to a value
+no greater than 1. The only way this can happen is for &lsquo;All
+emeralds are green&rsquo; and each of its grue\(_n\) competitors to
+have prior probability values either equal to 0 or infinitesimally
+close to it.</p>
+</div>
+
+<div id="note-9">
+
+<p>
+
+ <a href="index-2.html#ref-9">9.</a>
+ This assumption may be substantially relaxed without affecting the
+analysis below; we might instead only suppose that the ratios
+\(P_{\alpha}[c^n \pmid h_j\cdot b]/P_{\alpha}[c^n \pmid h_i\cdot b]\)
+are bounded so as not to get exceptionally far from 1. If
+<em>that</em> supposition were to fail, then the mere occurrence of
+the experimental conditions would count as very strong evidence for or
+against hypotheses&mdash;a highly implausible effect. Our analysis
+could include such bounded condition-ratios, but this would only add
+inessential complexity to our treatment.</p>
+</div>
+
+<div id="note-10">
+
+<p>
+
+ <a href="index-2.html#ref-10">10.</a>
+ For example, when a new disease is discovered, a new hypothesis
+\(h_{u+1}\) about that disease being a possible cause of
+patients&rsquo; symptoms is made explicit. The old catch-all was,
+&ldquo;the symptoms are caused by some unknown disease&mdash;some
+disease other than \(h_1 ,\ldots ,h_u\)&rdquo;. So the new catch-all
+hypothesis must now state that &ldquo;the symptoms are caused by one
+of the remaining unknown diseases&mdash;some disease other than \(h_1
+,\ldots ,h_u, h_{u+1}\)&rdquo;. And, clearly, </p> 
+
+\[
+\begin{align}
+P_{\alpha}[h_K \pmid  b] &amp; = P_{\alpha}[{\nsim}h_1\cdot \ldots \cdot{\nsim}h_u \pmid  b]\\
+&amp; = P_{\alpha}[{\nsim}h_1\cdot \ldots \cdot{\nsim}h_u\cdot(h_{u+1}\vee{\nsim}h_{u+1}) \pmid  b]\\
+&amp; = P_{\alpha}[{\nsim}h_1\cdot \ldots \cdot{\nsim}h_{u}\cdot{\nsim}h_{u+1} \pmid  b] + P_{\alpha}[h_{u+1} \pmid  b]\\
+&amp; = P_{\alpha}[h_{K*} \pmid  b] + P_{\alpha}[h_{u+1} \pmid  b].
+\end{align}
+\]
+
+<p>
+Thus, the new hypothesis \(h_{u+1}\) is &ldquo;peeled off&rdquo; of
+the old catch-all hypothesis \(h_K\), leaving a new catch-all
+hypothesis \(h_{K*}\) with a prior probability value equal to that of
+the old catch-all minus the prior of the new hypothesis.</p>
+</div>
+
+<div id="note-11">
+
+<p>
+
+ <a href="index-2.html#ref-11">11.</a>
+ This claim depends, of course, on \(h_i\) being evidentially distinct
+from each alternative \(h_j\). I.e., there must be conditions c\(_k\)
+with possible outcomes o\(_{ku}\) on which the likelihoods differ:</p>
+
+ \[
+P[o_{ku} \pmid  h_{i}\cdot b\cdot c_{k}]  \ne P[o_{ku} \pmid  h_{j}\cdot b\cdot c_{k}].
+\]
+
+<p>
+Otherwise \(h_i\) and \(h_j\) are empirically equivalent, and no
+amount of evidence can support one over the other. (Did you think a
+confirmation theory could possibly do better?&mdash;could somehow
+employ evidence to confirm the true hypothesis over <em>evidentially
+equivalent</em> rivals?) If the true hypothesis has evidentially
+equivalent rivals, then the convergence result implies that the odds
+against <em>the disjunction</em> of the true hypothesis with these
+rivals very probably goes to 0, so the posterior probability of this
+<em>disjunction</em> goes to 1. Among evidentially equivalent
+hypotheses the ratio of their posterior probabilities equals the ratio
+of their priors: </p> 
+
+\[
+\frac{P_{\alpha}[h_j \pmid  b\cdot c^n\cdot e^n]}{P_{\alpha}[h_i \pmid  b\cdot c^n\cdot e^n]}  = \frac{P_{\alpha}[h_j \pmid  b]}{P_{\alpha}[h_i \pmid  b]}.
+\]
+
+<p>
+So the true hypothesis will have a posterior probability near 1 (after
+evidence drives the posteriors of evidentially distinguishable rivals
+near to 0) <em>just in case</em> plausibility arguments and
+considerations (expressed in <i>b</i>) make each evidentially
+indistinguishable rival so much less plausible by comparison that the
+sum of each of their comparative plausibilities (as compared to the
+true hypothesis) remains very small.</p>
+
+<p>
+One more comment about this. It is tempting to identify <em>evidential
+distinguishability</em> (via the <em>evidential likelihoods</em>) with
+<em>empirical distinguishability</em>. But many plausibility arguments
+in the sciences, such as <em>thought experiments</em>, draw on broadly
+empirical considerations, on what we know or strongly suspect about
+how the world works based on our experience of the world. Although
+this kind of &ldquo;evidence&rdquo; may not be representable via
+<em>evidential likelihoods</em> (because the hypotheses it bears on
+don&rsquo;t deductively or probabilistically imply it), it often plays
+an important role in scientific assessments of hypotheses&mdash;in
+assessments of whether a hypothesis is so extraordinary that only
+really extraordinary likelihood evidence could rescue it. It is
+(arguably) a distinct virtue of the Bayesian logic of evidential
+support that it permits such considerations to be figured into the net
+support for hypotheses.</p>
+</div>
+
+<div id="note-12">
+
+<p>
+
+ <a href="index-2.html#ref-12">12.</a>
+ This is a good place to describe one reason for thinking that
+<em>inductive support functions</em> must be distinct from
+subjectivist or personalist <em>degree-of-belief functions</em>.
+Although likelihoods have a high degree of objectivity in many
+scientific contexts, it is difficult for <em>belief functions</em> to
+properly represent objective likelihoods. This is an aspect of the
+<em>problem of old evidence</em>.</p>
+
+<p>
+<em>Belief functions</em> are supposed to provide an idealized model
+of belief strengths for agents. They extend the notion of ideally
+consistent belief to a probabilistic notion of ideally coherent belief
+strengths. There is no harm in this kind of idealization. It is
+supposed to supply a normative guide for real decision making. An
+agent is supposed to make decisions based on her belief-strengths
+about the state of the world, her belief strengths about possible
+consequences of actions, and her assessment of the desirability (or
+<em>utility</em>) of these consequences. But the very role that
+<em>belief functions</em> are supposed to play in decision making
+makes them ill-suited to inductive inferences where the
+<em>likelihoods</em> are often supposed to be objective, or at least
+possess inter-subjectively agreed values that represent the empirical
+import of hypotheses. For the purposes of decision making,
+degree-of-belief functions <em>should</em> represent the agent&rsquo;s
+belief strengths <em>based on everything she presently knows</em>. So,
+degree-of-belief likelihoods must represent how strongly the agent
+would believe the evidence if the hypothesis were added to
+<em>everything else she presently knows</em>. However,
+support-function likelihoods are supposed to represent what the
+hypothesis (together with explicit background and experimental
+conditions) <em>says</em> or <em>implies</em> about the evidence. As a
+result, <em>degree-of-belief</em> likelihoods are saddled with a
+version of the <em>problem of old evidence</em>, a problem not shared
+by support function likelihoods. Furthermore, it turns out that the
+old evidence problem for likelihoods is much worse than is usually
+recognized.</p>
+
+<p>
+Here is the problem. If the agent is already certain of an evidence
+statement <i>e</i>, then her <em>belief-function</em> likelihoods for
+that statement must be 1 on every hypothesis. I.e., if \(Q_{\gamma}\)
+is her <em>belief function</em> and \(Q_{\gamma}[e] = 1\), then it
+follows from the axioms of probability theory that \(Q_{\gamma}[e
+\pmid h_i\cdot b\cdot c] = 1\), regardless of what \(h_i\)
+says&mdash;even if \(h_i\) implies that <i>e</i> is quite unlikely
+(given \(b\cdot c)\). But the problem goes even deeper. It not only
+applies to evidence that the agent <em>knows with certainty</em>. It
+turns out that almost anything the agent learns that can change how
+strongly she believes <i>e</i> will also influence the value of her
+<em>belief-function</em> likelihood for <i>e</i>, because
+\(Q_{\gamma}[e \pmid h_i\cdot b\cdot c]\) represents the agent&rsquo;s
+belief strength given <em>everything she knows</em>.</p>
+
+<p>
+To see the difficulty with less-than-certain evidence, consider the
+following example. Let <i>e</i> be any statement that is statistically
+implied to degree <i>r</i> by a hypothesis <i>h</i> together with
+experimental conditions <i>c</i> (e.g., <i>e</i> says &ldquo;the coin
+lands <em>heads</em> on the next toss&rdquo; and \(h\cdot c\) says
+&ldquo;the coin is fair and is tossed in the usual way on the next
+toss&rdquo;). Then the correct objective likelihood value is just
+\(P[e \pmid h\cdot c] = r\) (e.g., for \(r = 1/2)\). Let <i>d</i> be a
+statement that is intuitively not relevant in any way to how likely
+<i>e</i> should be on \(h\cdot c\) (e.g., let <i>d</i> say &ldquo;Jim
+will be really pleased with the outcome of that next toss&rdquo;).
+Suppose some rational agent has a degree-of-belief function <i>Q</i>
+for which the likelihood for <i>e</i> due to \(h\cdot c\) agrees with
+the objective value: \(Q[e \pmid h\cdot c] = r\) (e.g., with \(r =
+1/2)\).</p>
+
+<p>
+Our analysis will show that this agent&rsquo;s belief-strength for
+<i>d</i> given \({\nsim}e\cdot h\cdot c\) will be a relevant factor;
+so suppose that her degree-of-belief in that regard has any value
+<i>s</i> other than 1: \(Q[d \pmid {\nsim}e\cdot h\cdot c] = s \lt 1\)
+(e.g., suppose \(s = 1/2)\). This is a very weak supposition. It only
+says that adding \({\nsim}e\cdot h\cdot c\) to everything else the
+agent currently knows leaves her less than certain that <i>d</i> is
+true.</p>
+
+<p>
+Now, suppose this agent learns the following bit of new information in
+a completely convincing way (e.g., I seriously tell her so, and she
+believes me completely): \((d\vee e)\) (i.e., Jim will be really
+pleased with the outcome of the next toss unless it comes up
+<em>heads</em>).</p>
+
+<p>
+Thus, on the usual Bayesian degree-of-belief account the agent is
+supposed to update her belief function <i>Q</i> to arrive at a new
+belief function \(Q_{\textit{new}}\) by the updating rule:</p>
+
+<blockquote>
+\(Q_{\textit{new}} [S] = Q[S \pmid (d\vee e)]\), for each statement
+<i>S</i>.
+</blockquote>
+
+<p>
+However, this update of the agent&rsquo;s belief function <em>has to
+screw up</em> the objectivity of her new belief-function likelihood
+for <i>e</i> on \(h\cdot c\), because she now should have:</p>
+
+\[
+\begin{align}
+Q_{new}[e \pmid  h\cdot c] &amp; = \frac{Q_{new}[e\cdot h\cdot c]}{Q_{new}[h\cdot c]}\\[1ex]
+&amp; = \frac{Q[e\cdot h\cdot c \pmid  (d\vee e)]}{Q[h\cdot c \pmid  (d\vee e)]}\\[1ex]
+&amp; = \frac{Q[(d\vee e)\cdot(e\cdot h\cdot c)]}{Q[(d\vee e)\cdot(h\cdot c)]}\\[1ex]
+&amp; = \frac{Q[(d\vee e)\cdot e \pmid  h\cdot c]}{Q[(d\vee e) \pmid  h\cdot c]}\\[1ex]
+&amp; = \frac{Q[e \pmid  h\cdot c]}{Q[((d\cdot{\nsim}e)\vee e) \pmid  h\cdot c]}\\[1ex]
+&amp; = \frac{Q[e \pmid  h\cdot c]}{Q[e \pmid  h\cdot c] + Q[d\cdot{\nsim}e \pmid  h\cdot c]]}\\[1ex]
+&amp; = \frac{Q[e \pmid  h\cdot c]}{[Q[e \pmid  h\cdot c] + Q[d \pmid  {\nsim}e \cdot h\cdot c] \times Q[{\nsim}e \pmid  h\cdot c]]}\\[1ex]
+&amp; = \frac{r}{[r + s\times(1- r)]}\\[1ex]
+&amp; = \frac{1}{[1 + s\times\frac{(1- r)}{r}]}.
+\end{align}
+\]
+
+<p>
+Thus, the updated belief function likelihood must have value</p>
+
+ \[Q_{new}[e \pmid  h\cdot c] =  \frac{1}{1 + s\times \frac{(1- r)}{r}}.\]
+
+<p>
+This factor can be equal to the correct likelihood value <i>r</i> just
+in case <span class="nobr">\(s = 1\).</span> For example, for \(r =
+1/2\) and \(s = 1/2\) we get \(Q_{new}[e \pmid h\cdot c] = 2/3\). </p>
+
+<p>
+The point is that even the most trivial knowledge of disjunctive
+claims involving <i>e</i> may completely upset the value of the
+likelihood for an agent&rsquo;s belief function. And an agent will
+almost always have some such trivial knowledge. Updating on such
+conditionals can force the agent&rsquo;s <em>belief functions</em> to
+deviate widely from the evidentially relevant objective values of
+likelihoods on which scientific hypotheses should be tested.</p>
+
+<p>
+More generally, it can be shown that the incorporation into a belief
+function <i>Q</i> of almost any kind of evidence for or against the
+truth of a prospective evidence claim <i>e</i>&mdash;even uncertain
+evidence for <i>e</i>, as may come through Jeffrey
+updating&mdash;completely undermines the objective or
+inter-subjectively agreed likelihoods that a belief function might
+have expressed before updating. This should be no surprise. The
+agent&rsquo;s belief function likelihoods reflect her <em>total
+degree-of-belief</em> in <i>e</i>, based on a hypothesis <i>h</i>
+together with <em>everything else she knows</em> about <i>e</i>. So
+the agent&rsquo;s present belief function may capture appropriate
+public likelihoods for <i>e</i> only if <i>e</i> is completely
+isolated from the agents other beliefs. And this will rarely be the
+case.</p>
+
+<p>
+One Bayesian subjectivist response to this kind of problem is that the
+<em>belief functions</em> employed in scientific inductive inferences
+should often be &ldquo;counterfactual&rdquo; belief functions, which
+represent what the agent <em>would believe</em> if <i>e</i> were
+subtracted (in some suitable way) from everything else she knows (see,
+e.g., Howson &amp; Urbach 1993). However, our examples show that merely subtracting
+<i>e</i> won&rsquo;t do. One must also subtract any disjunctive
+statements containing <i>e</i>. And it can be shown that one must
+subtract any uncertain evidence for or against <i>e</i> as well. So
+the counterfactual belief function idea needs a lot of working out if
+it is to rescue the idea that <em>subjectivist Bayesian belief
+functions</em> can provide a viable account of the likelihoods
+employed by the sciences in inductive inferences.</p>
+</div>
+
+<div id="note-13">
+
+<p>
+
+ <a href="index-2.html#ref-13">13.</a>
+ That is, for each inductive support function \(P_{\alpha}\), the
+posterior \(P_{\alpha}[h_j \pmid b\cdot c^n\cdot e^n]\) must go to 0
+as the ratio </p> 
+
+\[\frac{P_{\alpha}[h_j \pmid  b\cdot c^n\cdot e^n]}{P_{\alpha}[h_i \pmid  b\cdot c^n\cdot e^n]}\] 
+
+<p>
+goes to 0; and that must occur if the likelihood ratios</p>
+
+ \[\frac{P[e^n \pmid  h_{j}\cdot b\cdot c^{n}]}{P[e^n \pmid  h_{i}\cdot b\cdot c^{n}]}\]
+
+<p>
+approach 0, provided that and the prior probability \(P_{\alpha}[h_i
+\pmid b]\) is greater than 0. The Likelihood Ratio Convergence Theorem
+will show that when \(h_i\cdot b\) is true, it is very likely that the
+evidence will indeed be such as to drive the likelihood ratios as near
+to 0 as you please, for a long enough (or strong enough) evidence
+stream. (If the stream is <em>strong</em> in that the likelihood
+ratios of individual bits of evidence are small, then to bring about a
+very small cumulative likelihood ratio, the evidence stream need not
+be as long.) As likelihood ratios head towards 0, the only way a
+Bayesian agent can avoid having her inductive support function(s)
+yield posterior probabilities for \(h_j\) that approach 0 (as <i>n</i>
+gets large) is to continually change her prior probability
+assessments. That means either continually finding and adding new
+plausibility arguments (i.e., adding to or modifying <i>b</i>) that on
+balance favor \(h_j\) over \(h_i\), or continually reassessing the
+support strength due to plausibility arguments already available, or
+both. </p>
+
+<p>
+Technically, continual reassessments of support strengths that favor
+\(h_j\) over \(h_i\) based on already extant arguments (in <i>b</i>)
+means switching to new support functions (or new <em>vagueness
+sets</em> of them) that assign \(h_j\) ever higher prior probabilities
+as compared to \(h_i\) based on the same arguments in <i>b</i>. In any
+case, such revisions of argument strengths may avoid the convergence
+towards 0 of the posterior probability of \(h_j\) only if it proceeds
+at a rate that keeps ahead of the rate at which the evidence drives
+the likelihood ratios towards 0.</p>
+
+<p>
+For a thorough presentation of the most prominent Bayesian convergence
+results and a discussion of their weaknesses see Earman 1992: Ch. 6.
+However, Earman does not discuss the convergence theorems under
+consideration here (due to the fact that the convergence results
+discussed here first appeared in Hawthorne 1993, just after
+Earman&rsquo;s book came out).</p>
+</div>
+
+<div id="note-14">
+
+<p>
+
+ <a href="index-2.html#ref-14">14.</a>
+ In scientific contexts all of the most important kinds of cases where
+large components of the evidence fail to be
+<em>result-independent</em> of one another are cases where some part
+of the total evidence helps to tie down the numerical value of a
+parameter that plays an important role in the likelihood values the
+hypothesis specifies for other large parts of the total evidence. In
+cases where this only happens rather <em>locally</em>, where the
+evidence for a parameter value influences the likelihoods of only a
+very small part of the total evidence that bears on the hypothesis, we
+can treat the conjunction of <em>the evidence for the parameter
+value</em> with <em>the evidential outcomes whose likelihood the
+parameter value influences</em> as a single <em>chunk of
+evidence</em>, which is then <em>result-independent</em> of the rest
+of the evidence (on each alternative hypothesis). This is the sort of
+<em>chuncking of the evidence</em> into <em>result-independent
+parts</em> suggested in the main text. </p>
+
+<p>
+However, in cases where the value of a parameter left unspecified by
+the hypothesis has a wide-ranging influence on many of the likelihood
+values the hypothesis specifies, another strategy for obtaining
+<em>result-independence</em> among these components of the evidence
+will do the job. A hypothesis that has an unspecified parameter value
+is in effect equivalent to a <em>disjunction of more specific
+hypotheses</em>, where each disjunct consists of a more precise
+version of the original hypothesis, a version in which the value for
+the parameter has been &ldquo;filled in&rdquo;. Relative to each of
+these more precise hypotheses, any evidence for or against the
+parameter value that hypothesis specifies is evidence for or against
+that more precise hypothesis itself. Furthermore, the evidence whose
+likelihood values depend on the parameter value (and because of that,
+failed to be <em>result-independent</em> of the parameter value
+evidence relative to the original hypothesis) is
+<em>result-independent</em> of the parameter value evidence relative
+to each of these more precise hypotheses&mdash;because each of the
+precise hypotheses already identifies precisely what (it claims) the
+value of the parameter is. Thus, wherever the workings of the logic of
+evidential support is made more perspicuous by treating evidence as
+composed of <em>result-independent chunks</em>, one may treat
+hypotheses whose unspecified parameter values interfere with
+<em>result-independence</em> as <em>disjunctively composite
+hypotheses</em>, and apply the evidential logic to these more specific
+disjuncts, and thereby regain <em>result-independence</em>.</p>
+</div>
+
+<div id="note-15">
+
+<p>
+
+ <a href="index-2.html#ref-15">15.</a>
+ Technically, suppose that \(O_k\) can be further
+&ldquo;subdivided&rdquo; into more outcome-descriptions by replacing
+\(o_{kv}\) with two mutually exclusive parts, \(o_{kv}^*\) and
+\(o_{kv}^\#\), to produce new outcome space</p> 
+
+\[
+O_{k}^$ = \{o_{k1},\ldots, o_{kv}^*, o_{kv}^\#,\ldots , o_{kw}\},\]
+
+<p>
+where </p> 
+
+\[P[o_{kv}^*\cdot o_{kv}^\# \pmid  h_{i}\cdot b\cdot c_{k}] = 0\] 
+
+<p>
+and</p> 
+
+ \[P[o_{kv}^{* } \pmid  h_{i}\cdot b\cdot c_{k}] + P[o_{kv}^\# \pmid  h_{i}\cdot b\cdot c_{k}] = P[o_{kv} \pmid  h_{i}\cdot b\cdot c_{k}];\]
+
+<p>
+and suppose similar relationships hold for \(h_j\). Then the new EQI*
+(based on \(O_{k}^*)\) is greater than or equal to EQI (based on
+\(O_k)\); and \(\EQI^* \gt \EQI\) <em>just in case</em> at least one
+of the new likelihood ratios, e.g., </p> 
+
+\[\frac{P[o_{kv}^{*} \pmid  h_{i}\cdot b\cdot c_{k}]}{P[o_{kv}^* \pmid  h_{j}\cdot b\cdot c_{k}]},\]
+
+<p>
+differs in value from the &ldquo;undivided&rdquo; outcome&rsquo;s
+likelihood ratio,</p> 
+
+ \[\frac{P[o_{kv} \pmid  h_{i}\cdot b\cdot c_{k}] }{P[o_{kv} \pmid  h_{i}\cdot b\cdot c_{k}]}.\]
+
+<p>
+The
+ <a href="sup-eqi-effect.html">supplement on the effect on EQI of partitioning the outcome space</a>
+ proves this claim.</p>
+</div>
+
+<div id="note-16">
+
+<p>
+
+ <a href="index-2.html#ref-16">16.</a>
+ The likely rate of convergence will almost always be much faster than
+the worst case bound provided by
+ <a href="index-2.html#LRC-T2">Theorem 2</a>.
+ To see the point more clearly, let&rsquo;s look at a very simple
+example. Suppose \(h_i\) says that a certain bent coin has a
+propensity for &ldquo;heads&rdquo; of 2/3 and \(h_j\) says the
+propensity is 1/3. Let the evidence stream consist of outcomes of
+tosses. In this case the average EQI equals the EQI of each toss,
+which is 1/3; and the smallest possible likelihood ratio occurs for
+&ldquo;heads&rdquo;, which yields the value \(\gamma = \frac{1}{2}\).
+So, the value of the lower bound given by Theorem 2 for the likelihood
+of getting an outcome sequences with a likelihood ratio below
+\(\varepsilon\) (for \(h_j\) over \(h_i)\) is</p> 
+
+\[
+1 -\frac{ (1/n)(\log \tfrac{1}{2})^2}{((1/3) + (\log \varepsilon)/n)^2}
+= 1 - \frac{9}{(n\times(1 + 3(\log \varepsilon)/n)^2}.
+\]
+
+<p>
+Thus, according to the theorem, the likelihood of getting an outcome
+sequence with a likelihood ratio less than \(\varepsilon = 1/16\)
+(=.06) when \(h_i\) is true and the number of tosses is \(n = 52\) is
+<em>at least</em> .70; and for \(n = 204\) tosses the likelihood is
+<em>at least</em> .95.</p>
+
+<p>
+To see the amount by which the lower bound provided by the theorem is
+in fact <em>overly cautious</em>, consider what the usual binomial
+distribution for the coin tosses in this example implies about the
+likely values of the likelihood ratios. The likelihood ratio for
+exactly <i>k</i> &ldquo;heads&rdquo; in <i>n</i> tosses is </p>
+
+\[\frac{((1/3)^k (2/3)^{n-k})}{((2/3)^k (1/3)^{n-k})} = 2^{n-2k};\]
+
+<p>
+and we want this likelihood ratio to have a value less than
+\(\varepsilon\). A bit of algebraic manipulation shows that to get
+this likelihood ratio value to be below \(\varepsilon\), the
+percentage of &ldquo;heads&rdquo; needs to be \(k/n \gt \frac{1}{2} -
+\frac{1}{2}(\log \varepsilon)/n\). Using the normal approximation to
+the binomial distribution (with mean \(= 2/3\) and variance =
+\((2/3)(1/3)/n)\) the actual likelihood of obtaining an outcome
+sequence having more than \(\frac{1}{2} - \frac{1}{2}(\log
+\varepsilon)/n\) &ldquo;heads&rdquo; (which we just saw corresponds to
+getting a likelihood ratio less than \(\varepsilon\), thus disfavoring
+the 1/3 propensity hypothesis as compared to the 2/3 propensity
+hypothesis by that much) when the true propensity for
+&ldquo;heads&rdquo; is 2/3 is given by the formula</p> 
+
+\[
+\begin{align}
+\Phi\left[\frac{\left(\textrm{mean} - \left(\frac{1}{2} - \frac{1}{2}\frac{(\log \varepsilon)}{n}\right)\right)}{(\textrm{variance})^{\frac{1}{2}}}\right]
+= \Phi\left[(1/8)^{\frac{1}{2}}n^{\frac{1}{2}}\left(1 + \frac{3(\log \varepsilon)}{n}\right)\right]
+\end{align}
+\]
+
+<p>
+(where \(\Phi[x]\) gives the value of the standard normal distribution
+from \(-\infty\) to <i>x</i>). Now let \(\varepsilon = 1/16\) (=
+.0625), as before. So the actual likelihood of obtaining a stream of
+outcomes with likelihood ratio this small when \(h_i\) is true and the
+number of tosses is \(n = 52\) is \(\Phi[1.96] \gt .975\), whereas the
+lower bound given by
+ <a href="index-2.html#LRC-T2">Theorem 2</a>
+ was .70. And if the number of tosses is increased to \(n = 204\), the
+likelihood of obtaining an outcome sequence with a likelihood ratio
+this small (i.e., \(\varepsilon = 1/16)\) is \(\Phi[4.75] \gt
+.999999\), whereas the lower bound from Theorem 2 for this likelihood
+is .95. Indeed, to actually get a likelihood of .95 that the evidence
+stream will produce a likelihood ratio less than \(\varepsilon
+\gt\).06, the number of tosses needed is only \(n = 43\), rather than
+the 204 tosses the bound given by the theorem requires in order to get
+up to the value .95. (Note: These examples employ &ldquo;identically
+distributed&rdquo; trials&mdash;repeated tosses of a coin&mdash;as an
+illustration. But Convergence Theorem 2 applies much more generally.
+It applies to any evidence sequence, no matter how diverse the
+probability distributions for the various experiments or observations
+in the sequence.)</p>
+</div>
+
+<div id="note-17">
+
+<p>
+
+ <a href="index-2.html#ref-17">17.</a>
+ It should now be clear why the boundedness of EQI above 0 is
+important. Convergence
+ <a href="index-2.html#LRC-T2">Theorem 2</a>
+ applies only when</p> 
+
+\[\bEQI[c^{n} \pmid  h_i /h_j \pmid  b] \gt \frac{-(\log \varepsilon)}{n}.\]
+
+<p>
+But this requirement is not a strong assumption. For, the
+<strong>Nonnegativity of EQI Theorem</strong> shows that the empirical
+distinctness of two hypotheses on a single possible outcome
+<em>suffices</em> to make the average EQI positive for the whole
+sequence of experiments. So, given any small fraction \(\varepsilon
+\gt 0\), the value of \(-(\log \varepsilon)/n\) (which is always
+greater than 0 when \(\varepsilon \lt 0)\) will eventually become
+smaller than \(\bEQI\), provided that the degree to which the
+hypotheses are empirical distinct for the various observations \(c_k\)
+does not on average degrade too much as the length <i>n</i> of the
+evidence stream increases.</p>
+
+<p>
+When the possible outcomes for the sequence of observations are
+independent and identically distributed, Theorems 1 and 2 effectively
+reduce to L. J. Savage&rsquo;s Bayesian Convergence Theorem [Savage,
+pg. 52&ndash;54], although Savage&rsquo;s theorem doesn&rsquo;t supply
+explicit lower bounds on the probability that the likelihood ratio
+will be small. Independent, identically distributed outcomes most
+commonly result from the repetition of identical statistical
+experiments (e.g., repeated tosses of a coin, or repeated measurements
+of quantum systems prepared in identical states). In such experiments
+a hypothesis will specify the same likelihoods for the same kinds of
+outcomes from one observation to the next. So \(\bEQI\) will remain
+constant as the number of experiments, <i>n</i>, increases. However,
+Theorems 1 and 2 are much more general. They continue to hold when the
+sequence of observations encompasses completely unrelated experiments
+that have different distributions on outcomes&mdash;experiments that
+have nothing in common but their connection to the hypotheses they
+test.</p>
+</div>
+
+<div id="note-18">
+
+<p>
+
+ <a href="index-2.html#ref-18">18.</a>
+ In many scientific contexts this is the best we can hope for. But it
+still provides a very reasonable representation of inductive support.
+Consider, for example, the hypothesis that the land masses of Africa
+and South America separated and drifted apart over the eons, the
+<em>drift hypothesis</em>, as opposed to the hypothesis that the
+continents have fixed positions acquired when the earth first formed
+and cooled and contracted, the <em>contraction hypothesis</em>. One
+may not be able to determine anything like precise likelihoods, on
+each hypothesis, for the evidence that: (1) the shape of the east
+coast of South America matches the shape of the west coast of Africa
+as closely as it in fact does; (2) the geology of the two coasts match
+up so closely when they are &ldquo;fitted together&rdquo; in the
+obvious way; (3) the plant and animal species on these distant
+continents should be as similar as they are, as compared to how
+similar species are among other distant continents. Although neither
+the <em>drift hypothesis</em> nor the <em>contraction hypothesis</em>
+supplies anything like precise likelihoods for these evidential
+claims, experts readily agree that each of these observations is
+<em>much more likely</em> on the <em>drift hypothesis</em> than on the
+<em>contraction hypothesis</em>. That is, the likelihood ratio for
+this evidence on the <em>contraction hypothesis</em> as compared to
+the <em>drift hypothesis</em> is very small. Thus, jointly these
+observations constitute very strong evidence for <em>drift</em> over
+<em>contraction</em>. </p>
+
+<p>
+Historically, the case of continental drift is more complicated.
+Geologists tended to largely dismiss this evidence until the 1960s.
+This was not because the evidence wasn&rsquo;t strong in its own
+right. Rather, this evidence was found unconvincing because it was not
+sufficient to overcome prior plausibility considerations that made the
+<em>drift hypothesis</em> extremely implausible&mdash;much less
+plausible than the <em>contraction hypothesis</em>. The problem was
+that there seemed to be no plausible mechanism by which <em>drift</em>
+might occur. It was argued, quite plausibly, that no known force could
+push or pull the continents apart, and that the less dense continental
+material could not push through the denser material that makes up the
+ocean floor. These plausibility objections were overcome when a
+plausible mechanism was articulated&mdash;i.e., the continental crust
+floats atop molten material and moves apart as convection currents in
+the molten material carry it along. The case was pretty well clinched
+when evidence for this mechanism was found in the form of
+&ldquo;spreading zones&rdquo; containing alternating strips of
+magnetized material at regular distances from mid-ocean ridges. The
+magnetic alignments of materials in these strips correspond closely to
+the magnetic alignments found in magnetic materials in dateable
+sedimentary layers at other locations on the earth. These magnetic
+alignments indicate time periods when the direction of earth&rsquo;s
+magnetic field has reversed. And this gave geologists a way of
+measuring the rate at which the sea floor might spread and the
+continents move apart. Although geologists may not be able to
+determine anything like precise values for the likelihoods of any of
+this evidence on each of the alternative hypotheses, the evidence is
+universally agreed to be <em>much more likely</em> on the <em>drift
+hypothesis</em> than on the alternative <em>contraction
+hypothesis</em>. The <em>likelihood ratio</em> for this evidence on
+the <em>contraction hypothesis</em> as compared to the <em>drift
+hypothesis</em> is somewhat vague, but extremely small. The vagueness
+is only in regard how extremely small the likelihood ratio is.
+Furthermore, with the emergence of a plausible mechanism, the
+<em>drift hypothesis</em> is no longer so overwhelmingly implausible
+<em>(logically) prior</em> to taking the likelihood evidence into
+account. Thus, even when precise values for individual likelihoods are
+not available, the value of <em>a likelihood ratio range</em> may be
+<em>objective enough</em> to strongly refute one hypothesis as
+compared to another. Indeed, the <em>drift hypothesis</em> is itself
+strongly supported by the evidence; for, no alternative hypothesis
+that has the slightest amount of comparative plausibility can account
+for the available evidence nearly so well. That is, no plausible
+alternative makes the evidence anywhere near so likely. Given the
+currently available evidence, the only issues left open (for now)
+involve comparing various alternative versions of the drift hypothesis
+(involving differences of detail) against one another. </p>
+</div>
+
+<div id="note-19">
+
+<p>
+
+ <a href="index-2.html#ref-19">19.</a>
+ To see the point of the third clause, suppose it were violated. That
+is, suppose there are possible outcomes for which the likelihood ratio
+is very near 1 for just one of the two support functions. Then, even a
+very long sequence of such outcomes might leave the likelihood ratio
+for one support function almost equal to 1, while the likelihood ratio
+for the other support function goes to an extreme value. If that can
+happen for support functions in a class that represent likelihoods for
+various scientists in the community, then the empirical contents of
+the hypotheses are either too vague or too much in dispute for
+meaningful empirical evaluation to occur.</p>
+</div>
+
+<div id="note-20">
+
+<p>
+
+ <a href="index-2.html#ref-20">20.</a>
+ If there are a few directionally controversial likelihood ratios,
+where \(P_{\alpha}\) says the ratio is somewhat greater than 1, while
+and \(P_{\beta}\) assigns a value somewhat less than 1, these may not
+greatly effect the trend of \(P_{\alpha}\) and \(P_{\beta}\) towards
+agreement on the refutation and support of hypotheses <em>provided
+that</em> the controversial ratios are not so extreme as to overwhelm
+the stream of other evidence on which the likelihood ratios do
+directionally agree. Even so, researches will want to get straight on
+what each hypothesis <em>says</em> or <em>implies</em> about such
+cases. While that remains in dispute, the empirical content of each
+hypothesis remains unsettlingly vague. </p>
+</div>
+
+<h2>Notes to Supplement on <a href="sup-enum-induc.html">Enumerative Inductions: Bayesian Estimation and Convergence</a></h2>
+
+<div id="note-21">
+
+<p>
+
+ <a href="sup-enum-induc.html#ref-21">21.</a>
+ What it means for a sample to be <em>randomly selected</em> from a
+population is philosophically controversial. Various analyses of the
+concept have been proposed, and disputed. For our purposes an account
+of the following sort will suffice. To say </p>
+
+<div class="indent">
+
+<p>
+<i>S</i> is a random sample of population <i>B</i> with respect to
+attribute <i>A</i></p>
+</div>
+
+<p>
+means that</p>
+
+<div class="indent">
+
+<p>
+the selection set <i>S</i> is generated by a process that has an
+objective chance (or propensity) <i>r</i> of choosing individual
+objects that have attribute <i>A</i> from among the objects in
+population <i>B</i>, where on each selection the chance value <i>r</i>
+agrees with the value <i>r</i> of the frequency of <i>A</i>s among the
+<i>B</i>s, \(F[A,B]\).</p>
+</div>
+
+<p>
+Defined this way, randomness implies probabilistic independence among
+the outcomes of selections with regard to whether they exhibit
+attribute <i>A</i>, on any given hypothesis about the true value of
+the frequency <i>r</i> of <i>A</i>s among the <i>B</i>s.</p>
+
+<p>
+The tricky part of generating a randomly selected set from the
+population is to find a selection process for which the chance of
+selecting an <i>A</i> each time matches the true frequency without
+already knowing what the true frequency value is&mdash;i.e., without
+already knowing what the value of <i>r</i> is. However, there clearly
+are ways to do this. Here is one way:</p>
+
+<div class="indent">
+
+<p>
+the sample <i>S</i> is generated by a process that on each selection
+gives each member of <i>B</i> an equal chance of being selected into
+<i>S</i> (like drawing balls from a well-shaken urn).</p>
+</div>
+
+<p>
+Here, schematically, is another way:</p>
+
+<div class="indent">
+
+<p>
+find a subclass of <i>B</i>, call it <i>C</i>, from which <i>S</i> can
+be generated by a process that gives every member of <i>C</i> an equal
+chance of being selected into <i>S</i>, where <i>C</i> is
+<em>representative</em> of <i>B</i> with respect to <i>A</i> in the
+sense that the frequency of <i>A</i> in <i>C</i> is almost precisely
+the same as the frequency of <i>A</i> in <i>B</i>.</p>
+</div>
+
+<p>
+Pollsters use a process of this kind. Ideally a poll of registered
+voters, population <i>B</i>, should select a sample <i>S</i> in a way
+that gives every registered voter the same chance of getting selected
+into <i>S</i>. But that may be impractical. However, it suffices if
+the sample is selected from a representative subpopulation <i>C</i> of
+<i>B</i>&mdash;e.g., from registered voters who answered the telephone
+between the hours of 7 PM and 9 PM in the middle of the week. Of
+course, the claim that a given subpopulation <i>C</i> is
+<em>representative</em> is itself a hypothesis that is open to
+inductive support by evidence. Professional polling organizations do a
+lot of research to calibrate their sampling technique, to find out
+what sort of subpopulations <i>C</i> they may draw on as highly
+representative. For example, one way to see if registered voters who
+answer the phone during the evening, mid-week, are likely to
+constitute a representative sample is to conduct a large poll of such
+voters immediately after an election, when the result is known, to see
+how representative of the actual vote count the count from of the
+subpopulation turns out to be.</p>
+
+<p>
+Notice that although the selection set <i>S</i> is <em>selected from
+B</em>, <i>S</i> cannot be a subset of <i>B</i>, not if <i>S</i> can
+be generated by <em>sampling with replacement</em>. For, a specific
+member of <i>B</i> may be randomly selected into <i>S</i> more than
+once. If <i>S</i> were a subset of <i>B</i>, any specific member of
+<i>B</i> could only occur once in <i>S</i>. That is, consider the case
+where <i>S</i> consists of <i>n</i> selections from <i>B</i>, but
+where the process happens to select the same member <i>b</i> of
+<i>B</i> twice. Then, were <i>S</i> a subset of <i>B</i>, although
+<i>b</i> is selected into <i>S</i> twice, <i>S</i> can only possess
+<i>b</i> as a member once, so <i>S</i> has at most \(n-1\) members
+after all (even fewer if other members of <i>B</i> are selected more
+than once). So, rather than being members of <i>B</i>, the members of
+<i>S</i> must be <em>representations of members of B</em>, like names,
+where the same member of <i>B</i> may be represented by different
+names. However, the representations (or names) in <i>S</i> technically
+may not be the sorts of things that can possess attribute <i>A</i>.
+So, technically, on this way of handling the problem, when we say that
+a member of <em>S exhibits A</em>, this is shorthand for <em>the
+referent of S in B possesses attribute A</em>.</p>
+</div>
+
+<div id="note-22">
+
+<p>
+
+ <a href="sup-enum-induc.html#ref-22">22.</a>
+ This is closely analogous to the Stable-Estimation Theorem of
+Edwards, Lindman, &amp; Savage (1993). Here is a proof of Case 1,
+i.e., where the number of members of the reference class <i>B</i> is
+finite and where for some integer <i>u</i> at least as large as the
+size of <i>B</i> there is a specific (perhaps very large) integer
+<i>K</i> such that the prior probability of a hypothesis stating a
+frequency outside region <i>R</i> is never more than <i>K</i> times as
+large as a hypothesis stating a frequency within region <i>R</i>. (The
+proof is Case 2 is almost exactly the same, but draws on integrals
+wherever the present proof draws on sums using the
+&lsquo;\(\sum\)&rsquo; expression.)</p>
+
+<p>
+A few observations before proceeding to the main derivation:</p>
+
+<ol type="i">
+
+<li>The hypotheses under consideration consist of all expressions of
+form \(F[A,B] = k/u\), where <i>u</i> is as described above and
+<i>k</i> is a non-negative integer between 0 and <i>u</i>. </li>
+
+<li><i>R</i> is some set of fractions of form \(k/u\) for a contiguous
+sequence of non-negative integers <i>k</i> that includes the sample
+frequency \(m/n\).</li>
+
+<li>In the following derivation all sums over values <i>r</i> in
+<i>R</i> are abbreviations for sums over integers <i>k</i> such that
+\(k/u\) is in <i>R</i>; similarly, all sums over values <i>s</i> not
+in <i>R</i> are abbreviations for sums over integers <i>k</i> such
+that \(k/u\) is not in <i>R</i>. The sum over \(\{s \pmid s=k/u\}\)
+represents the sum over all integers <i>k</i> from 0 through
+<i>u</i>.</li>
+
+<li>
+
+<p>
+Define <i>L</i> to be the smallest value of a prior probability
+\(P_{\alpha}[F[A,B]=r \pmid b]\) for <i>r</i> a fraction in <i>R</i>.
+Notice that \(L \gt 0\) because, by supposition, finite </p>
+
+\[K \ge \frac{P_{\alpha}[F[A,B]=s \pmid  b] }{ P_{\alpha}[F[A,B]=r \pmid  b]}\]
+
+<p>
+for the largest value of \(P_{\alpha}[F[A,B]=s \pmid b]\) for which
+<i>s</i> is outside of <i>R</i> and the smallest value of
+\(P_{\alpha}[F[A,B]=r \pmid b]\) for which <i>r</i> is outside of
+region <i>R</i>.</p> </li>
+
+<li>Thus, from the definition of <i>L</i> and of <i>K</i>, it follows
+that: \(K \ge P_{\alpha}[F[A,B]=s \pmid b] / L\) for each value of
+\(P_{\alpha}[F[A,B]=s \pmid b]\) for which <i>s</i> is outside of
+<i>R</i>; and \(1 \le P_{\alpha}[F[A,B]=r \pmid b] / L\) for each
+value of \(P_{\alpha}[F[A,B]=r \pmid b]\) for which <i>r</i> is inside
+of <i>R</i>.</li>
+
+<li>It follows that: 
+
+\[
+\begin{multline}
+\sum_{s\not\in R} s^m\times(1-s)^{n-m}\times\left(\frac{P_{\alpha}[F[A,B]=s \pmid  b]}{L}\right)\\
+\le \sum_{s\not\in R} s^m \times(1-s)^{n-m}\times P_{\alpha}[F[A,B]=s \pmid  b] \times K
+\end{multline}
+\]
+
+<p>
+and</p> 
+
+\[
+\begin{multline}
+ \sum_{s\not\in R}  r^m \times(1-r)^{n-m} \times(P_{\alpha}[F[A,B]=r \pmid  b] / L) \\
+\ge  \sum_{r\in R}  r^m \times(1-r)^{n-m} \times P_{\alpha}[F[A,B]=r \pmid  b] .
+\end{multline}
+\]
+
+ </li>
+
+<li>For \(\beta[R, m+1, n-m+1]\) defined as 
+
+\[
+\frac{\int_{R} r^{m} (1-r)^{n-m} dr}{\int_{0}^1 r ^m (1-r)^{n-m} dr},
+  \]
+
+ when <i>u</i>
+is large, its an established mathematical fact that 
+
+\[
+\frac{\sum_{r\in R} r^m\times(1-r)^{n-m}}  
+   {\sum_{s\in \{s \pmid  s=k/u\}} s^m\times(1-s)^{n-m} } 
+\]  
+
+<p>
+is extremely close to the value of \(\beta[R, m+1, n-m+1]\).</p> </li>
+</ol>
+
+<p>
+We now proceed to the main part of the derivation. </p>
+
+<p>
+From the Odds Form of Bayes&rsquo; Theorem (Equation 10) we have,</p>
+
+<p>
+\( \begin{align} &amp;\Omega_{\alpha}\left[\begin{aligned}
+&amp;F[A,B]\not\in R \\ &amp; \begin{split}{} \pmid F[A,S] =m/n &amp;
+\cdot \Rnd[S,B,A] \\ &amp; \cdot \Size[S] =n \\ &amp; \cdot b
+\end{split} 
+
+\end{aligned}\right] \\[1ex]
+
+\end{align}\)</p><p>\(\begin{align}
+
+&amp;  =
+\frac{\sum_{s\not\in R}    P_{\alpha}\left[\begin{aligned}
+&amp; F[A,B]=s \\
+&amp;\begin{split}
+{} \pmid  F[A,S] =m/n &amp; \cdot \Rnd[S,B,A] \\
+&amp; \cdot \Size[S] =n \\
+&amp; \cdot b
+\end{split}
+\end{aligned}\right]}
+{\sum_{r\in R} P_{\alpha}\left[\begin{aligned}
+&amp; F[A,B] =r \\
+&amp;\begin{split}
+{} \pmid  F[A,S] =m/n &amp; \cdot \Rnd[S,B,A] \\
+&amp; \cdot \Size[S]=n \\
+&amp;\cdot b
+\end{split}
+\end{aligned}\right]}\\[1ex]
+
+\end{align}\)</p><p>\(\begin{align}
+
+&amp; =
+\frac{\sum_{s\not\in R}   P\left[\begin{aligned}
+&amp; F[A,S]=m/n \\
+&amp;\begin{split}
+{} \pmid  F[A,B] =s &amp; \cdot \Rnd[S,B,A] \\
+&amp; \cdot \Size[S]=n \\
+&amp; \cdot b
+\end{split}
+\end{aligned}\right] 
+\times P_{\alpha}[F[A,B]  =s \pmid  b]}
+{\sum_{r\in R}   P\left[\begin{aligned}
+&amp; F[A,S] =m/n \\
+&amp; \begin{split}
+{} \pmid  F[A,B] =r &amp; \cdot \Rnd[S,B,A] \\
+&amp; \cdot \Size[S] =n \\
+&amp; \cdot b
+\end{split}
+\end{aligned}\right] 
+\times P_{\alpha}[F[A,B] =r \pmid  b]}\\[1ex]
+
+\end{align}\)</p><p>\(\begin{align}
+
+&amp;  =
+\frac{\sum_{s\not\in R} s^m \times(1-s)^{n-m} \times P_{\alpha}[F[A,B]=s \pmid  b]}
+{\sum_{r\in R}  r^m\times(1-r)^{n-m} \times P_{\alpha}[F[A,B]=r \pmid  b]}\\[1ex]
+
+\end{align}\)</p><p>\(\begin{align}
+
+&amp;  =
+\frac{\sum_{s\not\in R}   s^m\times(1-s)^{n-m} \times(P_{\alpha}[F[A,B]=s \pmid  b] / L)}
+{\sum_{r\in R}  r^m\times(1-r)^{n-m} \times(P_{\alpha}[F[A,B]=r \pmid  b] / L)}\\[1ex]
+
+\end{align}\)</p><p>\(\begin{align}
+
+&amp;  \le
+\frac{\sum_{s\not\in R}  s^m\times(1-s)^{n-m} \times K}
+{\sum_{r\in R}  r^m\times(1-r)^{n-m}}\\[1ex]
+
+\end{align}\)</p><p>\(\begin{align}
+
+&amp;= K \times
+\frac{\sum_{s\in \{s \pmid  s=k/u\}}  s^m\times(1-s)^{n-m} -  \sum_{r\in R}   r^m\times(1-r)^{n-m}}
+{\sum_{r\in R}   r^m\times(1-r)^{n-m}}\\[1ex]
+
+\end{align}\)</p><p>\(\begin{align}
+
+&amp;= K \times
+\frac{\sum_{s\in \{s \pmid  s=k/u\}}   s^m\times(1-s)^{n-m}}
+{\sum_{r\in R}  r^m\times(1-r)^{n-m}}
+   - 1\\[1ex]
+
+\end{align}\)</p><p>\(\begin{align}
+
+&amp;\approx K\times[(1/\beta[R, m+1, n-m+1]) - 1]. 
+\end{align} 
+\)</p>
+
+<p>Thus, </p>
+\[
+\begin{multline}
+\Omega_{\alpha}\left[\begin{aligned}
+&amp; F[A,B]\not\in R \\
+&amp;\begin{split}
+\pmid  F[A,S]  =m/n &amp; \cdot \Rnd[S,B,A] \\
+&amp; \cdot \Size[S]=n \\
+&amp; \cdot b
+\end{split}
+\end{aligned}\right]\\[1ex]
+\le K\times\left[\left(
+\frac{1}{\beta[R, m+1, n-m+1]}\right) - 1\right]. 
+\end{multline}
+\]
+
+ <p> Then by equation (11), which expresses
+the relationship between <em>posterior probability</em> and
+<em>posterior odds against</em>, </p> 
+
+\[
+\begin{multline}
+P_{\alpha}\left[\begin{aligned}
+&amp;F[A,B]\in R \\
+&amp; \begin{split}
+{}  \pmid  F[A,S] =m/n &amp; \cdot \Rnd[S,B,A] \\
+&amp; \cdot \Size[S] =n \\
+\cdot b
+\end{split}
+\end{aligned}\right]
+\\
+= 1 / \left(
+1 + \Omega_{\alpha}
+\left[\begin{aligned}
+&amp;F[A,B]\not\in R \\
+&amp;\begin{split}
+{}\pmid  F[A,S] =m/n &amp; \cdot \Rnd[S,B,A] \\
+&amp; \cdot \Size[S] =n \\
+&amp; \cdot b
+\end{split}
+\end{aligned}\right]\right)\\
+\ge \frac{1}{\left(1 + K\times\left[\left(\frac{1}{\beta[R, m+1, n-m+1]}\right) - 1\right]\right)}. 
+\end{multline}
+\]
+
+ </div> 
+
+<div id="note-23">
+<p>
+ <a href="sup-enum-induc.html#ref-23">23.</a>
+ To get a better idea of the import of this theorem, let&rsquo;s
+consider some specific values. First notice that the factor
+\(r\times(1-r)\) can never be larger than (1/2)\(\times\)(1/2) \(=
+1/4\); and the closer <i>r</i> is to 1 or 0, the smaller
+\(r\times(1-r)\) becomes. So, whatever the value of <i>r</i>, the
+factor q/\(((r\times(1-r)/n)^{\frac{1}{2}} \le 2\times\)q\(\times
+n^{\frac{1}{2}}\). Thus, for any chosen value of <i>q</i>,</p>
+
+\[
+\begin{multline}
+P\left[\begin{aligned}
+&amp; r-q \lt F[A,S]  \lt r+q \\
+&amp; \begin{split}
+{} \pmid  F[A,B] = r &amp; \cdot\Rnd[S,B,A]\\
+&amp; \cdot\Size[S] = n
+\end{split}
+\end{aligned}\right]
+\ge 1 - 2\times \Phi[-2\times q\times n^{\frac{1}{2}}].
+\end{multline}
+\]
+
+<p>
+For example, if \(q =\) .05 and \(n = 400\), then we have (for any
+value of <i>r</i>),</p> 
+
+\[
+\begin{multline}
+P\left[\begin{aligned}
+&amp; r-.05  \lt F[A,S]  \lt r+.05\\
+&amp;\begin{split}
+{} \pmid  F[A,B]  = r &amp; \cdot\Rnd[S,B,A]\\
+&amp; \cdot\Size[S]  = 400
+\end{split}
+\end{aligned}\right]
+\ge .95.
+\end{multline}
+\]
+
+<p>
+For \(n = 900\) (and margin \(q =\) .05) this lower bound raises to
+.997:</p> 
+
+\[
+\begin{multline}
+P\left[\begin{aligned}
+&amp; r-.05  \lt F[A,S] \lt r+.05 \\
+&amp;\begin{split}
+{} \pmid  F[A,B] = r &amp; \cdot\Rnd[S,B,A]\\
+&amp; \cdot\Size[S] = 900
+\end{split}
+\end{aligned}\right]
+\ge .997.
+\end{multline}
+\]
+
+<p>
+If we are interested in a smaller margin of error <i>q</i>, we can
+keep the same sample size and find the value of the lower bound for
+that value of <i>q</i>. For example,</p> 
+
+\[
+\begin{multline}
+P\left[\begin{aligned}
+&amp; r-.03  \lt F[A,S]  \lt r+.03 \\
+&amp; \begin{split}
+{} \pmid  F[A,B]  = r &amp; \cdot\Rnd[S,B,A]\\
+&amp; \cdot\Size[S]  = 900
+\end{split}
+\end{aligned}\right]
+\ge .928.
+\end{multline}
+\]
+
+<p>
+By increasing the sample size the bound on the likelihood can be made
+as close to 1 as we want, for any margin <i>q</i> we choose. For
+example:</p> 
+
+\[
+\begin{multline}
+P\left[\begin{aligned}
+&amp; r-.01 \lt F[A,S]  \lt r+.01 \\
+&amp; \begin{split}
+{} \pmid  F[A,B]  = r &amp; \cdot \Rnd[S,B,A]\\
+&amp; \cdot \Size[S] = 38000
+\end{split}
+\end{aligned}\right]
+ \ge .9999.
+\end{multline}
+\]
+
+<p>
+As the sample size <i>n</i> becomes larger, it becomes extremely
+likely that the sample frequency will come to within any specified
+region close to the true frequency <i>r</i>, as close as you wish.</p>
+</div>
+
+<h2>Notes to Supplement on <a href="sup-likelihood.html">Likelihood Ratios, Likelihoodism, and the Law of Likelihood</a></h2>
+
+<div id="note-24">
+
+<p>
+
+ <a href="sup-likelihood.html#ref-24">24.</a>
+ To see the point more clearly, consider an example. To keep things
+simple, let&rsquo;s suppose our background <i>b</i> says that the
+chances of <em>heads</em> for tosses of this coin is some whole
+percentage between 0% and 100%. Let <i>c</i> say that the coin is
+tossed in the usual random way; let <i>e</i> say that the coin comes
+up heads; and for each <i>r</i> that is a whole fraction of 100
+between 0 and 1, let \(h_{[r]}\) be the <em>simple statistical
+hypothesis</em> asserting that the chance of heads on each random toss
+of this coin is <i>r</i>. Now consider the <em>composite statistical
+hypothesis</em> \(h_{[\gt .65]}\), which asserts that the chance of
+heads on each random (independent) toss is greater than .65. From the
+axioms of probability we derive the following relationship: </p>
+
+\[
+\begin{align}
+P_{\alpha}[e \pmid  h_{[\gt .65]}\cdot c\cdot b]  = &amp; P[e \pmid  h_{[.66]}\cdot c\cdot b] 
+ \times P_{\alpha}[h_{[.66]} \pmid  h_{[\gt .65]}\cdot c\cdot b]  \\
+&amp; + P[e \pmid  h_{[.67]}\cdot c\cdot b]  \times P_{\alpha}[h_{[.67]} \pmid  h_{[\gt .65]}\cdot c\cdot b] \\
+&amp; + \ldots \\
+&amp; + P[e \pmid  h_{[1]}\cdot c\cdot b]  \times P_{\alpha}[h_{[1]} \pmid  h_{[\gt .65]}\cdot c\cdot b].
+\end{align}
+\]
+
+<p>
+The issue for the <em>likelihoodist</em> is that the values of the
+terms of form \(P_{\alpha}[h_{[r]} \pmid h_{[\gt .65]}\cdot c\cdot
+b]\) are not objectively specified by the composite hypothesis
+\(h_{[\gt .65]}\) (together with \(c\cdot b)\), but the value of the
+likelihood \(P_{\alpha}[e \pmid h_{[\gt .65]}\cdot c\cdot b]\) depends
+essentially on these non-objective factors. So, likelihoods based on
+composite statistical hypotheses fail to possess the kind of
+objectivity that <em>likelihoodists</em> require.</p>
+</div>
+
+<div id="note-25">
+
+<p>
+
+ <a href="sup-likelihood.html#ref-25">25.</a>
+ The <strong>Law of Likelihood</strong> and the <strong>Likelihood
+Principle</strong> have been formulated in slightly different ways by
+various logicians and statisticians. The <strong>Law of
+Likelihood</strong> was first identified by that name in Hacking 1965,
+and has been invoked more recently by the <em>likelihoodist</em>
+statisticians A.F.W. Edwards (1972) and R. Royall (1997). R.A. Fisher
+(1922) argued for the <strong>Likelihood Principle</strong> early in
+the 20<sup>th</sup> century, although he didn&rsquo;t call it that.
+One of the first places it is discussed under that name is Savage et
+al. 1962. </p>
+</div>
+<script type="text/javascript" src="local.js"></script>
+<script type="text/javascript" src="../../MathJax/MathJaxdda6.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+</div><!-- #aueditable --><!--DO NOT MODIFY THIS LINE AND BELOW-->
+
+<!-- END ARTICLE HTML -->
+
+</div> <!-- End article-content -->
+
+  <div id="article-copyright">
+    <p>
+ <a href="../../info.html#c">Copyright &copy; 2018</a> by
+
+<br />
+<a href="http://james-hawthorne.oucreate.com/" target="other">James Hawthorne</a>
+&lt;<a href="m&#97;ilto:hawthorne&#37;40ou&#37;2eedu"><em>hawthorne<abbr title=" at ">&#64;</abbr>ou<abbr title=" dot ">&#46;</abbr>edu</em></a>&gt;
+    </p>
+  </div>
+
+</div> <!-- End article -->
+
+<!-- NOTE: article banner is outside of the id="article" div. -->
+<div id="article-banner" class="scroll-block">
+  <div id="article-banner-content">
+    <a href="../../fundraising/index.html">
+    Open access to the SEP is made possible by a world-wide funding initiative.<br />
+    The Encyclopedia Now Needs Your Support<br />
+    Please Read How You Can Help Keep the Encyclopedia Free</a>
+  </div>
+</div> <!-- End article-banner -->
+
+    </div> <!-- End content -->
+
+    <div id="footer">
+
+      <div id="footer-menu">
+        <div class="menu-block">
+          <h4><i class="icon-book"></i> Browse</h4>
+          <ul role="menu">
+            <li><a href="../../contents.html">Table of Contents</a></li>
+            <li><a href="../../new.html">What's New</a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+            <li><a href="../../published.html">Chronological</a></li>
+            <li><a href="../../archives/index.html">Archives</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-info-sign"></i> About</h4>
+          <ul role="menu">
+            <li><a href="../../info.html">Editorial Information</a></li>
+            <li><a href="../../about.html">About the SEP</a></li>
+            <li><a href="../../board.html">Editorial Board</a></li>
+            <li><a href="../../cite.html">How to Cite the SEP</a></li>
+            <li><a href="../../special-characters.html">Special Characters</a></li>
+            <li><a href="../../tools/index.html">Advanced Tools</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-leaf"></i> Support SEP</h4>
+          <ul role="menu">
+            <li><a href="../../support/index.html">Support the SEP</a></li>
+            <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+            <li><a href="../../support/donate.html">Make a Donation</a></li>
+            <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+          </ul>
+        </div>
+      </div> <!-- End footer menu -->
+
+      <div id="mirrors">
+        <div id="mirror-info">
+          <h4><i class="icon-globe"></i> Mirror Sites</h4>
+          <p>View this site from another server:</p>
+        </div>
+        <div class="btn-group open">
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="https://plato.stanford.edu/">
+            <span class="flag flag-usa"></span> USA (Main Site) <span class="caret"></span>
+            <span class="mirror-source">Philosophy, Stanford University</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../mirrors.html">Info about mirror sites</a></li>
+          </ul>
+        </div>
+      </div> <!-- End mirrors -->
+      
+      <div id="site-credits">
+        <p>The Stanford Encyclopedia of Philosophy is <a href="../../info.html#c">copyright &copy; 2021</a> by <a href="http://mally.stanford.edu/">The Metaphysics Research Lab</a>, Department of Philosophy, Stanford University</p>
+        <p>Library of Congress Catalog Data: ISSN 1095-5054</p>
+      </div> <!-- End site credits -->
+
+    </div> <!-- End footer -->
+
+  </div> <!-- End container -->
+
+   <!-- NOTE: Script required for drop-down button to work (mirrors). -->
+  <script>
+    $('.dropdown-toggle').dropdown();
+  </script>
+
+</body>
+
+<!-- Mirrored from seop.illc.uva.nl/entries/logic-inductive/notes.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 20:12:27 GMT -->
+</html>

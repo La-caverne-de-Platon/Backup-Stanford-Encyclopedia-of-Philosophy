@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 ie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 ie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 ie"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 ie"> <![endif]-->
+<!--[if !IE]> --> <html> <!-- <![endif]-->
+
+<!-- Mirrored from seop.illc.uva.nl/entries/logic-inductive/sup-enum-induc.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 20:12:27 GMT -->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>
+Inductive Logic &gt; Enumerative Inductions: Bayesian Estimation and Convergence (Stanford Encyclopedia of Philosophy)
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive, noodp" />
+<meta name="DCTERMS.ispartof" content="https://plato.stanford.edu/entries/logic-inductive/" />
+
+<!-- NOTE: Import webfonts using this link: -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,200&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" href="../../css/font-awesome-ie7.min.css"> <![endif]-->
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../css/print.css" />
+<link rel="stylesheet" type="text/css" href="../../css/entry.css" />
+<!--[if IE]> <link rel="stylesheet" type="text/css" href="../../css/ie.css" /> <![endif]-->
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+
+<!-- NOTE: Javascript for sticky behavior needed on article and ToC pages -->
+<script type="text/javascript" src="../../js/jquery-scrolltofixed-min.js"></script>
+<script type="text/javascript" src="../../js/entry.js"></script>
+
+<!-- SEP custom script -->
+<script type="text/javascript" src="../../js/sep.js"></script>
+</head>
+
+<!-- NOTE: The nojs class is removed from the page if javascript is enabled. Otherwise, it drives the display when there is no javascript. -->
+<body class="nojs article" id="pagetopright">
+<div id="container">
+<div id="header-wrapper">
+  <div id="header">
+    <div id="branding">
+      <div id="site-logo"><a href="../../index.html"><img src="../../symbols/sep-man-red.png" alt="SEP logo" /></a></div>
+      <div id="site-title"><a href="../../index.html">Stanford Encyclopedia of Philosophy</a></div>
+    </div>
+    <div id="navigation">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <button class="btn btn-navbar collapsed" data-target=".collapse-main-menu" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Menu </button>
+            <div class="nav-collapse collapse-main-menu in collapse">
+              <ul class="nav">
+                <li class="dropdown open"><a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-book"></i> Browse</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                    <li><a href="../../contents.html">Table of Contents</a></li>
+                    <li><a href="../../new.html">What's New</a></li>
+                    <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+                    <li><a href="../../published.html">Chronological</a></li>
+                    <li><a href="../../archives/index.html">Archives</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-info-sign"></i> About</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                    <li><a href="../../info.html">Editorial Information</a></li>
+                    <li><a href="../../about.html">About the SEP</a></li>
+                    <li><a href="../../board.html">Editorial Board</a></li>
+                    <li><a href="../../cite.html">How to Cite the SEP</a></li>
+                    <li><a href="../../special-characters.html">Special Characters</a></li>
+                    <li><a href="../../tools/index.html">Advanced Tools</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-leaf"></i> Support SEP</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                    <li><a href="../../support/index.html">Support the SEP</a></li>
+                    <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+                    <li><a href="../../support/donate.html">Make a Donation</a></li>
+                    <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End navigation -->
+    
+    <div id="search">
+      <form id="search-form" method="get" action="https://seop.illc.uva.nl/search/searcher.py">
+        <input type="search" name="query" placeholder="Search SEP" />
+        <div class="search-btn-wrapper"><button class="btn search-btn" type="submit"><i class="icon-search"></i></button></div>
+      </form>
+    </div>
+    <!-- End search --> 
+    
+  </div>
+  <!-- End header --> 
+</div>
+<!-- End header wrapper -->
+
+<div id="content">
+
+<!-- Begin article sidebar -->
+<div id="article-sidebar" class="sticky">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <button class="btn btn-navbar" data-target=".collapse-sidebar" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Entry Navigation </button>
+        <div id="article-nav" class="nav-collapse collapse-sidebar in collapse">
+          <ul class="nav">
+            <li><a href="index.html">Back to Entry <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#toc">Entry Contents <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#Bib">Entry Bibliography <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#Aca">Academic Tools <i class="icon-external-link"></i></a></li>
+            <li><a href="https://leibniz.stanford.edu/friends/preview/logic-inductive/">Friends PDF Preview <i class="icon-external-link"></i></a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=logic-inductive">Author and Citation Info <i class="icon-external-link"></i></a> </li>
+            <li><a href="#pagetopright" class="back-to-top">Back to Top <i class="icon-angle-up icon2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End article sidebar --> 
+
+<!-- NOTE: Article content must have two wrapper divs: id="article" and id="article-content" -->
+<div id="article">
+<div id="article-content">
+
+<!-- BEGIN ARTICLE HTML -->
+<h4 id="supphead">Supplement to <a href="index-2.html">Inductive Logic</a></h4>
+
+<div id="aueditable">
+<!--DO NOT MODIFY THIS LINE AND ABOVE--> 
+<h2>Enumerative Inductions: Bayesian Estimation and Convergence</h2>
+
+<p>
+In this section we&rsquo;ll see that for the special case of
+enumerative inductions probabilistic inductive logic satisfies the
+Criterion of Adequacy (CoA) stated at the beginning of this article.
+That is, under some plausible conditions, given a reasonable amount of
+evidence, the <em>degree</em> to which that evidence comes to support
+a hypothesis through enumerative induction is very likely to approach
+1 for true hypotheses. We will now see precisely how this works.</p>
+
+<p>
+Recall that in enumerative inductions the idea is to infer the
+proportion, or <em>relative frequency</em>, of an attribute in a
+population from how frequently the attribute occurs in a sample of the
+population. Examples 1 and 2 at the beginning of the article describe
+two such inferences. Enumerative induction is only a rather special
+case of inductive inference. However, such inferences are very common,
+and so worthy of careful attention. They arise, for example, in the
+context of polling and in many other cases where a population
+frequency is estimated from a sample. We will establish conditions
+under which such inferences give rise to highly objective posterior
+probabilities, posterior probabilities that are extremely stable over
+a wide range of reasonable prior plausibility assessments. That is, we
+will consider all of the inductive support functions in an
+agent&rsquo;s <em>vagueness set</em> <i>V</i> or in a
+community&rsquo;s <em>diversity set D</em>. We will see that under
+some very weak suppositions about the make up of <i>V</i> or of
+<i>D</i>, a reasonable amount of data will bring all of the support
+functions in these sets to agree that the posterior degree of support
+for a particular frequency hypothesis is very close to 1. And, we will
+see, it is very likely these support functions will converge to
+agreement on a true hypothesis.</p>
+<!--Entry Contents-->
+
+<ul>
+
+ <li><a href="#ConvAgre">1. Convergence to Agreement</a></li>
+ 
+ <li><a href="#ConvTrut">2. Convergence to the Truth</a></li>
+ 
+ <li><a href="#TighBounMargErro">3 Tighter Bounds on the Margin of Error</a></li>
+ </ul>
+<!--Entry Contents-->
+
+<hr/>
+
+<h3 id="ConvAgre">1. Convergence to Agreement</h3>
+
+<p>
+Suppose we want to know the frequency with which attribute <i>A</i>
+occurs among members of population <span class="nobr"><i>B</i>.</span>
+We randomly select a sample <i>S</i> from <i>B</i> consisting of
+<i>n</i> members, and find that it contains <i>m</i> members that
+exhibit attribute
+ <i>A</i>.<sup>[<a href="notes.html#note-21" id="ref-21">21</a>]</sup>
+ On the basis of this evidence, what is the posterior probability
+<i>p</i> of the hypothesis that the true proportion (or frequency) of
+<i>A</i>s among <i>B</i>s is within a given region <i>R</i> around the
+sample proportion \(m/n\)? And to what extent does that bound depend
+on the prior probabilities of the various possible alternative
+frequency hypotheses. More generally, for a given <em>vagueness</em>
+or <em>diversity set</em>, what bounds can we place on the values of
+<i>p</i>. </p>
+
+<p>
+Put more formally, we are asking for what values of <i>p</i> and
+<i>q</i> does the following inequality hold:</p> 
+
+\[
+P_{\alpha}\left[ \begin{split}
+&amp; (m/n) - q  \lt F[A,B]  \lt(m/n)+q \\
+&amp; \begin{split}
+{} \pmid b &amp; \cdot F[A,S] =m/n \\
+&amp;\cdot \Rnd[S,B,A] \\
+&amp;\cdot \Size[S]  =n 
+\end{split}
+\end{split}
+\right] 
+\gt p?
+\]
+
+<p>
+It turns out that we need only a very weak supposition about the
+values of prior probabilities of support functions \(P_{\alpha}\) in
+<em>vagueness</em> or <em>diversity sets</em> to legitimize such
+inferences, an supposition that almost always holds in the context of
+enumerative inductions.</p>
+
+<div class="indent">
+
+<p>
+<strong>Boundedness Assumption for Estimation:</strong>
+<br />
+There is a region <i>R</i> of possible values near the sample
+frequency \(m/n\) (e.g., <i>R</i> is the region between \((m/n)-q\)
+and \((m/n)+q\) , for some <em>margin of error</em> <i>q</i> of
+interest) such that no frequency hypothesis outside of region <i>R</i>
+is overwhelmingly more initially plausible than those frequency
+hypotheses inside of region <i>R</i>.</p>
+</div>
+
+<p>
+What does it mean for <em>no frequency hypothesis outside of region R
+to be overwhelmingly more initially plausible than those frequency
+hypotheses inside of region R</em> (where <i>R</i> is some specific
+region in which the sample frequency, <span class="nobr">\(F[A,S]=m/n\),</span>
+lies)? The main idea is that there
+is some (perhaps very large) bound <i>K</i> on how much more plausible
+frequency hypotheses outside of region <i>R</i> may be than those
+frequency hypotheses inside of region <i>R</i>. We state this
+condition carefully by considering two kinds of cases, depending on
+whether or not the population <i>B</i> is known to be bounded in size
+by some specific (perhaps overly large) integer <i>u</i>. (The first
+case will be simpler because it doesn&rsquo;t suppose that the support
+functions involved may be characterized by probability density
+functions, while the second case does suppose this.)</p>
+
+<div class="indent">
+
+<p>
+<strong>Case 1.</strong> Suppose the size of the population <i>B</i>
+is finite. We need not know how big <i>B</i> is. We merely suppose
+that for some positive integer <i>u</i> that is at least as large as
+the size of <span class="nobr"><i>B</i>,</span> but might well be many
+times larger, the following condition holds for all support functions
+\(P_{\alpha}\) in the <em>vagueness</em> or <em>diversity set</em>
+under consideration.</p>
+
+<p>
+There is some specific positive factor <i>K</i> (possibly very large,
+perhaps as large as 1000, or larger) such that for any pair of
+hypotheses of form \(F[A,B] = v/u\) inside region <i>R</i> and of form
+\(F[A,B] = w/u\) outside of region <i>R</i> (where <span class="nobr">\(u,
+v\),</span> and <i>w</i> are non-negative integers),
+the hypothesis outside of region <i>R</i> is no more than <i>K</i>
+times more plausible than the hypothesis within region <i>R</i> (given
+plausibility consideration within <i>b</i>)&mdash;i.e., for all ratios
+\(v/u\) inside region <i>R</i> and all ratios \(v/u\) outside region
+<span class="nobr"><i>R</i>,</span></p> 
+
+ \[\frac{P_{\alpha}[F[A,B]=w/u \pmid b]}{P_{\alpha}[F[A,B]=v/u \pmid  b]} \le K.\]
+
+</div>
+
+<p>
+For Case 1 we also assume (as seems reasonable) that in the absence of
+information about the observed sample frequency, the claim <span class="nobr">&lsquo;\(\textrm{Random}[S,B,A]
+\cdot
+\Size[S]=n\)&rsquo;,</span> that the sample is randomly selected and
+of size <span class="nobr"><i>n</i>,</span> should be irrelevant to
+the initial plausibilities of possible population
+frequencies&mdash;i.e., we suppose that </p> 
+
+\[P_{\alpha}\left[\begin{split}
+&amp; F[A,B]  =k/u \\
+&amp; \begin{split}
+ {} \pmid  \Rnd[S,B,A] &amp; \cdot \Size[S] =n \\
+&amp; \cdot b
+\end{split}
+\end{split}
+\right] 
+= 
+P_{\alpha}\left[F[A,B] =k/u \pmid  b \right]
+\]
+
+<p>
+for each integer <i>k</i> from 0 through <i>u</i>.</p>
+
+<div class="indent">
+
+<p>
+<strong>Case 2.</strong> Alternatively, suppose that there is no
+positive integer <i>u</i> at least as large as the size of population
+<i>B</i> that satisfies the conditions of case 1. But suppose that the
+prior probabilities of the various competing hypotheses can be
+represented (at least very nearly) by a probability density function
+\(p_{\alpha}[F[A,B]=r \pmid b]\)&mdash;i.e., for any specific values
+<i>v</i> and <span class="nobr"><i>u</i>,</span> the value of </p>
+
+\[
+P_{\alpha}[ v \lt F[A,B] \lt u \pmid  b] = \int_{v}^u p_{\alpha}[F[A,B]=r \pmid  b] dr,\]
+
+<p>
+or at least very nearly so. Then we just need the following condition
+to be satisfied by all support functions \(P_{\alpha}\) in the
+<em>vagueness</em> or <em>diversity set</em> under consideration.</p>
+
+<p>
+There is some specific positive factor <i>K</i> (possibly very large,
+perhaps as large as 1000, or larger) such that for any pair of
+hypotheses of form \(F[A,B] = r\) inside region <i>R</i> and of form
+\(F[A,B] = s\) outside of region <i>R</i> (where <i>r</i> and <i>s</i>
+are non-negative real numbers no larger than 1), the value of the
+probability density function for the hypothesis outside of region
+<i>R</i> is no more than <i>K</i> times larger than the value of the
+probability density function for the hypothesis within region <i>R</i>
+(given plausibility consideration within <i>b</i>), where the density
+function within region <i>R</i> is never less than some (perhaps very
+tiny) positive lower bound&mdash;i.e., for all values <i>r</i> inside
+region <i>R</i> and all values <i>s</i> outside region <span class="nobr"><i>R</i>,</span>
+</p> 
+
+\[\frac{p_{\alpha}[F[A,B]=s \pmid  b]}{p_{\alpha}[F[A,B]=r \pmid  b]} \le K,\]
+
+<p>
+where for all <i>r</i> within region <i>R</i>, \(p_{\alpha}[F[A,B]=r
+\pmid b] \ge g\) for some small \(g \gt 0\). </p>
+</div>
+
+<p>
+For Case 2 we also assume (as seems reasonable) that in the absence of
+information about the observed sample frequency, the claim <span class="nobr">&lsquo;\(\textrm{Random}[S,B,A]
+\cdot
+\Size[S]=n\)&rsquo;,</span> that the sample is randomly selected and
+of size <i>n</i>, should be irrelevant to the initial plausibilities
+of possible population frequencies&mdash;i.e., in particular, we
+suppose that for each probability density function \(p_{\alpha}\)
+under consideration, </p> 
+
+\[
+p_{\alpha}\left[
+\begin{split}
+&amp; F[A,B] =q \\
+&amp; \begin{split}
+{} \pmid  \Rnd[S,B,A] &amp; \cdot \Size[S]  =n \\
+&amp; \cdot b
+\end{split}
+\end{split}
+\right] = p_{\alpha}\left[F[A,B]=q \pmid  b\right] 
+\]
+
+<p>
+for real numbers <i>q</i> from 0 through 1.</p>
+
+<p>
+When either of these two Cases hold, let us say that for the support
+functions \(P_{\alpha}\) in the <em>vagueness</em> or <em>diversity
+sets</em> under consideration, the prior probabilities are <em>K
+bounded with respect to region R</em>. Then we have the following
+theorem about enumerative inductions, which shows that the posterior
+probability that the true frequency must lie within a small region
+<i>R</i> around the sample frequency \(m/n\) quickly approaches 1 as
+the sample size <i>n</i> becomes large.</p>
+
+<div class="indent">
+
+<p>
+<strong>Theorem: Frequency Estimation
+ Theorem</strong>:<sup>[<a href="notes.html#note-22" id="ref-22">22</a>]</sup>
+ <br/>
+Suppose, for all support functions \(P_{\alpha}\) in the
+<em>vagueness</em> or <em>diversity</em> set under consideration, the
+prior probabilities are <em>K bounded with respect to region R</em>,
+where region <i>R</i> contains the fraction \(m/n\) (for positive
+integer <i>n</i> and non-negative integer \(m \le n)\). Then, for all
+support functions \(P_{\alpha}\) in the <em>vagueness</em> or
+<em>diversity set</em>, </p> 
+
+\[
+P_{\alpha}
+\left[\begin{split}
+&amp;F[A,B]\in R \\
+&amp;\begin{split}
+{}\pmid  b &amp; \cdot F[A,S]=m/n \\
+              &amp; \cdot \Rnd[S,B,A] \\
+             &amp; \cdot \Size[S]=n
+\end{split}
+\end{split}\right]
+
+ \ge \frac{1}{1 + K\times\left[\left(\frac{1}{\beta[R, m+1, n-m+1]}\right) - 1\right]}.
+
+\]
+
+<p>
+For any given region <i>R</i> containing sample frequencies \(m/n\),
+this lower bound approaches 1 rapidly as <i>n</i> increases.</p>
+</div>
+
+<p>
+The expression <span class="nobr">&lsquo;\(\beta[R, m+1,
+n-m+1]\)&rsquo;</span> represents the beta-distribution function with
+parameters \(m+1\) and \(n-m+1\) evaluated over region <i>R</i>. By
+definition</p> 
+
+ \[\beta[R, m+1, n-m+1] = \frac{\int_{R} r^{m} (1-r)^{n-m} dr}{\int_{0}^1 r ^m (1-r)^{n-m} dr}.\]
+
+<p>
+When region <i>R</i> contains an interval around \(m/n\), the value of
+this function is a fraction that approaches 1 for large <i>n</i>. In a
+moment we will see some concrete illustrations of the implications of
+this theorem for specific values of <i>m</i> and <i>n</i> and specific
+regions <i>R</i>.</p>
+
+<p>
+The values of the beta-distribution function may be easily computed
+using a version of the function supplied with most mathematics and
+spreadsheet programs. The version of the function supplied by such
+programs usually takes the form \(\BETADIST(x, y, z)\), which computes
+the value of the beta distribution from 0 up to to x, and where y and
+z are the &ldquo;parameters of the distribution&rdquo;. For our
+purposes, where the sample <i>S</i> of <i>n</i> selections from
+<i>B</i> yields <i>m</i> that exhibit <i>A</i>s, these parameters need
+to be \(m+1\) and \(n-m+1\). So if the region <i>R</i> of interest
+(wherein the sample frequency <em>m/n</em> lies) is between the values
+<i>v</i> and <i>u</i> (where <i>v</i> is the lower bound on region
+<i>R</i> and <i>u</i> is the upper bound on region <i>R</i>), then the
+program should be asked to compute the value of </p> 
+
+\[\beta[R, m+1, n-m+1] = \frac{\int_{v}^u r^{m} (1-r)^{n-m} dr}{\int_{0}^1 r ^m (1-r)^{n-m} dr}
+\]
+
+<p>
+by having it compute</p> 
+
+ \[\BETADIST[u, m+1, n-m+1]- \BETADIST[v, m+1, n-m+1].\] 
+
+<p>
+So, to have your mathematics or spreadsheet program compute a lower
+bound on the value of</p> 
+
+\[
+P_{\alpha}\left[\begin{aligned}
+&amp; v \le F[A,B] \le u \\
+&amp; \begin{split}
+{} \pmid  b &amp; \cdot F[A,S] =m/n \\
+&amp; \cdot \Rnd[S,B,A] \\
+&amp; \cdot \Size[S] =n
+\end{split}
+\end{aligned}
+\right] 
+\]
+
+<p>
+for a given upper bound <i>K</i> (on how much more initially plausible
+it is that the true population frequency lies <em>outside</em> the
+region between <i>v</i> and <i>u</i> than it is that the true
+population frequency lies inside that region), you may be able to
+simply paste the following expression into your program and then plug
+in desired values for <i>K, u, v, m, n</i> in this expression:</p>
+
+\[
+\frac{1}{1 + K*\left(\frac{1}{
+\BETADIST(u, m+1, n-m+1) -
+\BETADIST(v, m+1, n-m+1)} - 1\right)}
+\]
+
+<p>
+In many real cases it will <em>not be initially more plausible</em>
+that the true frequency value lies outside of the <em>region of
+interest</em> between <i>v</i> and <i>u</i> than that it lies inside
+that region. In such cases set the value of <i>K</i> to 1. However,
+you will find that for any moderately large sample size <i>n</i>, this
+function yields very similar values for all plausible values of
+<i>K</i> you might try out, even when the values of <i>K</i> are quite
+large. (We&rsquo;ll see examples of this fact in the computed tables
+below.)</p>
+
+<p>
+This theorem implies that for large samples the values of prior
+probabilities don&rsquo;t matter much. Given such evidence, a vary
+wide range of inductive support functions \(P_{\alpha}\) will come to
+agree on high posterior probabilities that the proportion of attribute
+<i>A</i> in population <i>B</i> is very close to the sample frequency.
+Thus, all support functions in such <em>vagueness</em> or
+<em>diversity</em> sets come to near agreement. Let us look at several
+numerical examples to make clear how strong this result really is.</p>
+
+<p>
+The first section of this article provided two examples of enumerative
+inductive inferences. Consider Example 1. Let &lsquo;<i>B</i>&rsquo;
+represent the population of all ravens. Let &lsquo;<i>A</i>&rsquo;
+represent the class of black ravens. Now consider those hypotheses of
+form <span class="nobr">&lsquo;\(F[A,B] = r\)&rsquo;</span> for
+<i>r</i> in the interval between .99 and 1. This collection of
+hypotheses includes the claim that &ldquo;all ravens are black&rdquo;
+together with those alternative hypotheses that claim the frequency of
+being black among ravens is within .01 of 1. The alternatives to these
+hypotheses are just those that assert <span class="nobr">&lsquo;\(F[A,B]
+= s\)&rsquo;</span> for values of
+<i>s</i> below .99.</p>
+
+<p>
+Suppose none of the support functions represented in the
+<em>vagueness</em> or <em>diversity</em> set under consideration rates
+the prior plausibility of any of the hypotheses <span class="nobr">&lsquo;\(F[A,B]
+= s\)&rsquo;</span> with <i>s</i> less
+than .99 to be <em>more than twice as plausible</em> as the hypotheses
+<span class="nobr">&lsquo;\(F[A,B] = r\)&rsquo;</span> for which
+<i>r</i> is between .99 and 1. That is, suppose, for each
+\(P_{\alpha}\) in the <em>vagueness</em> or <em>diversity</em> set
+under consideration, the prior plausibility \(P_{\alpha}[F[A,B] = s
+\pmid b]\) for hypotheses with <i>s</i> below .99 is never more than
+\(K = 2\) times greater than the prior plausibility
+\(P_{\alpha}[F[A,B] = r \pmid b]\) for hypotheses with <i>r</i>
+between .99 and 1. Then, on the evidence of 400 ravens selected
+randomly with respect to color, the theorem yields the following bound
+for all \(P_{\alpha}\) in the <em>vagueness</em> or <em>diversity</em>
+set:</p> 
+
+\[
+P_{\alpha}
+\left[
+\begin{aligned}
+&amp; F[A,B]  \gt .99 \\
+&amp; \begin{split}
+{} \pmid  b &amp; \cdot F[A,S]  = 1 \\
+&amp; \cdot \Rnd[S,B,A] \\
+&amp; \cdot \Size[S]  = 400
+\end{split}
+\end{aligned}
+\right] 
+\ge .9651. 
+\]
+
+<p>
+The following table describes similar results for other upper bounds
+<i>K</i> on values of prior probability ratios and other sample sizes
+<i>n</i>: </p>
+
+<div class="figure avoid-break">
+
+<p>
+<span class="figlabel">Table 1</span>: Values of lower bound <i>p</i>
+on the posterior probability </p>
+
+<div class="pdfsmall">
+
+<table class="center cellpad-small-dense cell-left all-rules vert-top small">
+<tr>
+  <td>\(m/n = 1\)
+<br />
+\(F[A,B] \gt .99\) </td>
+  <td></td>
+  <td colspan="4">Sample-Size \(= n\)
+<br />
+(number of <i>A</i>s in Sample of <i>B</i>s \(= m = n)\) </td> </tr>
+<tr>
+  <td><span style="white-space:nowrap">Prior Ratio <i>K</i></span>
+<br />
+\(\downarrow\)</td>
+  <td></td>
+  <td>400</td>
+  <td>800</td>
+  <td>1600</td>
+  <td>3200</td> </tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td> </tr>
+<tr>
+  <td>1</td>
+  <td></td>
+  <td>0.9822</td>
+  <td>0.9997</td>
+  <td>1.0000</td>
+  <td>1.0000</td> </tr>
+<tr>
+  <td>2</td>
+  <td></td>
+  <td>0.9651</td>
+  <td>0.9994</td>
+  <td>1.0000</td>
+  <td>1.0000</td> </tr>
+<tr>
+  <td>5</td>
+  <td></td>
+  <td>0.9170</td>
+  <td>0.9984</td>
+  <td>1.0000</td>
+  <td>1.0000</td> </tr>
+<tr>
+  <td>10</td>
+  <td></td>
+  <td>0.8468</td>
+  <td>0.9968</td>
+  <td>1.0000</td>
+  <td>1.0000</td> </tr>
+<tr>
+  <td>100</td>
+  <td></td>
+  <td>0.3560</td>
+  <td>0.9691</td>
+  <td>1.0000</td>
+  <td>1.0000</td> </tr>
+<tr>
+  <td>1,000</td>
+  <td></td>
+  <td>0.0524</td>
+  <td>0.7581</td>
+  <td>0.9999</td>
+  <td>1.0000</td> </tr>
+<tr>
+  <td>10,000</td>
+  <td></td>
+  <td>0.0055</td>
+  <td>0.2386</td>
+  <td>0.9990</td>
+  <td>1.0000</td> </tr>
+<tr>
+  <td>100,000</td>
+  <td></td>
+  <td>0.0006</td>
+  <td>0.0304</td>
+  <td>0.9898</td>
+  <td>1.0000</td> </tr>
+<tr>
+  <td>1,000,000</td>
+  <td></td>
+  <td>0.0001</td>
+  <td>0.0031</td>
+  <td>0.9068</td>
+  <td>1.0000</td> </tr>
+<tr>
+  <td>10,000,000</td>
+  <td></td>
+  <td>0.0000</td>
+  <td>0.0003</td>
+  <td>0.4931</td>
+  <td>1.0000</td> </tr>
+</table>
+</div>
+
+<div class="smaller">
+
+\[
+
+P_{\alpha}\left[\begin{aligned}
+&amp; F[A,B]\gt.99 \\
+&amp; \begin{split}
+{} \pmid  b &amp; \cdot F[A,S]=1 \\
+&amp; \cdot \Rnd[S,B,A] \\
+&amp; \cdot \Size[S]=n
+\end{split}
+\end{aligned}\right] 
+\ge p, 
+\]
+
+</div>
+
+<p>
+for a range of Sample-Sizes <i>n</i> (from 400 to 3200), when the
+prior probability of any specific frequency hypothesis outside the
+region between .99 and 1 is no more than <i>K</i> times more than the
+lowest prior probability for any specific frequency hypothesis inside
+of the region between .99 and 1.</p>
+</div>
+
+<p>
+(All probabilities with entries &lsquo;1.0000&rsquo; in this table and
+the next actually have values slightly less than one, but nearly equal
+1.0000 to four significant decimal places.)</p>
+
+<p>
+To see what the table tells us, consider the third to last row. It
+represents what happens when a <em>vagueness</em> or
+<em>diversity</em> set contains at least some support functions that
+assign prior probabilities (i.e., prior plausibilities) nearly <em>one
+hundred thousand</em> times higher to some hypotheses asserting
+frequencies <em>not</em> between .99 and 1 than it assigns to
+hypotheses asserting frequencies between .99 and 1. The table shows
+that even in such cases, a random sample of 1600 black ravens will,
+nevertheless, pull the posterior plausibility level that &ldquo;the
+true frequency is above .99&rdquo; to a value above .9898, for every
+support function in the set. And if the <em>vagueness</em> or
+<em>diversity</em> set contains support functions that assign even
+more extreme priors, say, priors that are nearly <em>ten million</em>
+times higher for some hypotheses asserting frequencies below .99 than
+for hypotheses within .99 of 1 (the table&rsquo;s last row), this
+poses no great problem for convergence-to-agreement. A random sample
+of 3200 black ravens will yield posterior probabilities (i.e.,
+posterior plausibilities) indistinguishable from 1 for the claim that
+&ldquo;more than 99% of all ravens are black&rdquo;.</p>
+
+<p>
+Strong support can be gotten for a narrower range of hypotheses about
+the percentage of black birds among the ravens, provided that the
+sample size is increased enough. We&rsquo;ll return to this in a later
+subsection.</p>
+
+<p>
+Now consider the second example of an enumerative induction provided
+at the beginning of this article, involving the poll about the
+presidential preferences of voters. The posterior probabilities for
+this example follow a pattern similar to that of the first example.
+Let &lsquo;<i>B</i>&rsquo; represent the class of all registered
+voters on February 20, 2004, and let &lsquo;<i>A</i>&rsquo; represent
+those who prefer Kerry to Bush. In sample <i>S</i> (randomly drawn
+from <i>B</i> with respect to <i>A</i>) consisting of 400 voters, 248
+report preference for Kerry over Bush&mdash;i.e., \(F[A,B] = 248/400 =
+.62\). Suppose, as seems reasonable, that none of the support
+functions in the <em>vagueness</em> or <em>diversity</em> set under
+consideration rates the hypotheses <span class="nobr">&lsquo;\(F[A,B]
+= r\)&rsquo;</span> for values of <i>r</i> outside the interval
+\(.62\pm.05\) as <em>more</em> initially plausible than they rate
+alternative frequency hypotheses having values of <i>r</i> inside this
+interval. That is, suppose, for each \(P_{\alpha}\) under
+consideration, the prior probabilities \(P_{\alpha}[F[A,B] = s \pmid
+b]\) when <i>s</i> is <em>not</em> within \(.62\pm.05\) is never more
+than \(K = 1\) times as great as the prior probabilities
+\(P_{\alpha}[F[A,B] = r \pmid b]\) for hypotheses having <i>r</i>
+within \(.62\pm.05\). Then, the theorem yields the following lower
+bound on the posterior plausibility ratings, for all \(P_{\alpha}\) in
+the <em>vagueness</em> or <em>diversity</em> set under
+consideration:</p> 
+
+\[
+P_{\alpha}\left[\begin{aligned}
+&amp; .57  \lt F[A,B] \lt .67 \\
+&amp; \begin{split}
+{} \pmid  b &amp; \cdot F[A,S] =.62 \\
+&amp; \cdot \Rnd[S,B,A] \\
+&amp; \cdot \Size[S] =400
+\end{split}
+\end{aligned}
+\right]
+ \ge .9614.
+\]
+
+<p>
+The following table gives similar results for other sample sizes, and
+for upper bounds on ratios of prior probabilities that may be much
+larger than 1. In addition, this table shows what happens when we
+tighten up the interval around the frequency hypotheses being
+supported to \(.62\pm.025\)&mdash;i.e., it shows the bounds <i>p</i>
+on support for the hypothesis \(.595 \lt F[A,B] \lt .645\) as
+well:</p>
+
+<div class="figure avoid-break">
+
+<p>
+<span class="figlabel">Table 2</span>: Values of lower bound <i>p</i>
+on the posterior probability </p>
+
+<div class="pdfsmall">
+
+<table class="center cellpad-small-dense cell-left all-rules vert-top small">
+<tr>
+  <td>\(m/n = .62\)</td>
+  <td>\(F[A,B] =\)
+<br />
+\(m/n \pm q\)</td>
+  <td></td>
+  <td colspan="6">Sample-Size \(= n\)
+<br />
+(number of <i>A</i>s in Sample of <i>B</i>s \(= m\):
+<br />
+where \(m/n = .62\)) </td> </tr>
+<tr>
+  <td><span style="white-space:nowrap">Prior Ratio <i>K</i></span>
+<br />
+\(\downarrow\)</td>
+  <td>\(q = .05\)
+<br />
+or .025</td>
+  <td></td>
+  <td>400
+<br />
+(248)</td>
+  <td>800
+<br />
+(496)</td>
+  <td>1600
+<br />
+(992)</td>
+  <td>3200
+<br />
+(1984)</td>
+  <td>6400
+<br />
+(3968)</td>
+  <td>12800
+<br />
+(7936)</td> </tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td> </tr>
+<tr>
+  <td>1</td>
+  <td>\(.05 \rightarrow\)
+<br />
+\(.025 \rightarrow\)</td>
+  <td></td>
+  <td>0.9614
+<br />
+0.6982</td>
+  <td>0.9965
+<br />
+0.8554</td>
+  <td>1.0000
+<br />
+0.9608</td>
+  <td>1.0000
+<br />
+0.9964</td>
+  <td>1.0000
+<br />
+1.0000</td>
+  <td>1.0000
+<br />
+1.0000</td> </tr>
+<tr>
+  <td>2</td>
+  <td>\(.05 \rightarrow\)
+<br />
+\(.025 \rightarrow\)</td>
+  <td></td>
+  <td>0.9256
+<br />
+0.5364</td>
+  <td>0.9930
+<br />
+0.7474</td>
+  <td>0.9999
+<br />
+0.9246</td>
+  <td>1.0000
+<br />
+0.9929</td>
+  <td>1.0000
+<br />
+0.9999</td>
+  <td>1.0000
+<br />
+1.0000</td> </tr>
+<tr>
+  <td>5</td>
+  <td>\(.05 \rightarrow\)
+<br />
+\(.025 \rightarrow\)</td>
+  <td></td>
+  <td>0.8327
+<br />
+0.3163</td>
+  <td>0.9827
+<br />
+0.5420</td>
+  <td>0.9998
+<br />
+0.8306</td>
+  <td>1.0000
+<br />
+0.9825</td>
+  <td>1.0000
+<br />
+0.9998</td>
+  <td>1.0000
+<br />
+1.0000</td> </tr>
+<tr>
+  <td>10</td>
+  <td>\(.05 \rightarrow\)
+<br />
+\(.025 \rightarrow\)</td>
+  <td></td>
+  <td>0.7133
+<br />
+0.1879</td>
+  <td>0.9661
+<br />
+0.3717</td>
+  <td>0.9996
+<br />
+0.7103</td>
+  <td>1.0000
+<br />
+0.9656</td>
+  <td>1.0000
+<br />
+0.9996</td>
+  <td>1.0000
+<br />
+1.0000</td> </tr>
+<tr>
+  <td>100</td>
+  <td>\(.05 \rightarrow\)
+<br />
+\(.025 \rightarrow\)</td>
+  <td></td>
+  <td>0.1992
+<br />
+0.0226</td>
+  <td>0.7402
+<br />
+0.0559</td>
+  <td>0.9963
+<br />
+0.1969</td>
+  <td>1.0000
+<br />
+0.7371</td>
+  <td>1.0000
+<br />
+0.9962</td>
+  <td>1.0000
+<br />
+1.0000</td> </tr>
+<tr>
+  <td>1,000</td>
+  <td>\(.05 \rightarrow\)
+<br />
+\(.025 \rightarrow\)</td>
+  <td></td>
+  <td>0.0243
+<br />
+0.0023</td>
+  <td>0.2217
+<br />
+0.0059</td>
+  <td>0.9639
+<br />
+0.0239</td>
+  <td>1.0000
+<br />
+0.2190</td>
+  <td>1.0000
+<br />
+0.9637</td>
+  <td>1.0000
+<br />
+1.0000</td> </tr>
+<tr>
+  <td>10,000</td>
+  <td>\(.05 \rightarrow\)
+<br />
+\(.025 \rightarrow\)</td>
+  <td></td>
+  <td>0.0025
+<br />
+0.0002</td>
+  <td>0.0277
+<br />
+0.0006</td>
+  <td>0.7277
+<br />
+0.0024</td>
+  <td>0.9999
+<br />
+0.0273</td>
+  <td>1.0000
+<br />
+0.7261</td>
+  <td>1.0000
+<br />
+0.9999</td> </tr>
+<tr>
+  <td>100,000</td>
+  <td>\(.05 \rightarrow\)
+<br />
+\(.025 \rightarrow\)</td>
+  <td></td>
+  <td>0.0002
+<br />
+0.0000</td>
+  <td>0.0028
+<br />
+0.0001</td>
+  <td>0.2109
+<br />
+0.0002</td>
+  <td>0.9994
+<br />
+0.0028</td>
+  <td>1.0000
+<br />
+0.2096</td>
+  <td>1.0000
+<br />
+0.9994</td> </tr>
+<tr>
+  <td>1,000,000</td>
+  <td>\(.05 \rightarrow\)
+<br />
+\(.025 \rightarrow\)</td>
+  <td></td>
+  <td>0.0000
+<br />
+0.0000</td>
+  <td>0.0003
+<br />
+0.0000</td>
+  <td>0.0260
+<br />
+0.0000</td>
+  <td>0.9940
+<br />
+0.0003</td>
+  <td>1.0000
+<br />
+0.0258</td>
+  <td>1.0000
+<br />
+0.9943</td> </tr>
+<tr>
+  <td>10,000,000</td>
+  <td>\(.05 \rightarrow\)
+<br />
+\(.025 \rightarrow\)</td>
+  <td></td>
+  <td>0.0000
+<br />
+0.0000</td>
+  <td>0.0000
+<br />
+0.0000</td>
+  <td>0.0027
+<br />
+0.0000</td>
+  <td>0.9433
+<br />
+0.0000</td>
+  <td>1.0000
+<br />
+0.0026</td>
+  <td>1.0000
+<br />
+0.9457</td> </tr>
+</table>
+</div>
+
+<div>
+
+<div class="smaller">
+
+  \[
+P_{\alpha} \left[\begin{aligned}
+&amp; .62-q  \lt F[A,B]  \lt .62+q \\
+&amp; \begin{split} {} \pmid  F[A,S] = .62 &amp; \cdot \Rnd[S,B,A] \\
+  &amp; \cdot \Size[S]  = n
+  \end{split}
+\end{aligned}\right] 
+\ge p,
+  \]
+
+</div>
+
+<p>
+for two values of <i>q</i> (.05 and .025) and a range of Sample-Sizes
+<i>n</i> (from 400 to 12800), when the prior probability of any
+specific frequency hypothesis outside of \(.62 \pm q\) is no more than
+<i>K</i> times more than the lowest prior probability for any specific
+frequency hypothesis inside of \(.62 \pm q\).</p>
+</div>
+</div>
+
+<p>
+Notice that even if the <em>vagueness</em> or <em>diversity</em> set
+includes prior plausibilities nearly <em>ten million</em> times higher
+for hypotheses asserting frequency values <em>outside of</em>
+\(.62\pm.025\) than for hypotheses asserting frequencies
+<em>within</em> \(.62\pm.025\), a random sample of 12800 registered
+voters will, nevertheless, bring about a posterior plausibility value
+greater than .9457 for the claim that &ldquo;the true frequency of
+preference for Kerry over Bush among all registered voters is within
+<span class="nobr">\(.62\pm.025\)&rdquo;,</span> for all support
+functions \(P_{\alpha}\) in the set.</p>
+
+<h3 id="ConvTrut">2. Convergence to the Truth</h3>
+
+<p>
+The Frequency Estimation Theorem is a Bayesian
+Convergence-to-Agreement result. It does not, on its own, show that
+the Criterion of Adequacy (CoA) is satisfied. The theorem shows, for
+enumerative inductions, that as evidence accumulates, diverse support
+functions will come to near agreement on high posterior support
+strengths for those hypotheses expressing population frequencies near
+the sample frequency. But, it does not show that the true hypothesis
+is among them&mdash;it does not show that the sample frequency is near
+the true population frequency. So, it does not show that these
+converging support functions converge on strong support for the true
+hypothesis, as a CoA result is supposed to do.</p>
+
+<p>
+However, there is such a CoA result close at hand. It is a <em>Weak
+Law of Large Numbers</em> result that establishes that <em>each</em>
+frequency hypothesis of form <span class="nobr">&lsquo;\(F[A,B] =
+r\)&rsquo;</span> implies, via <em>direct inference likelihoods</em>,
+that randomly selected sample data is highly likely to result in
+sample frequencies very close to the value <i>r</i> that <em>it</em>
+claims to be the <em>true frequency</em>. Of course <em>each</em>
+frequency hypothesis says that the sample frequency will be near
+<em>its own</em> frequency value; but only the true hypothesis says
+this truthfully. Add this result to the previous theorem and we get
+that, for large sample sizes, it is very likely that a sample
+frequency will occur that yields a very high degree of support for the
+true hypothesis. Thus the CoA is satisfied.</p>
+
+<p>
+Here is the needed result. </p>
+
+<div class="indent">
+
+<p>
+<strong>Theorem: Weak Law of Large Numbers for Enumerative
+Inductions</strong>.
+<br/>
+Let <i>r</i> be any frequency between 0 and 1.</p>
+
+<div class="indent">
+
+<p>
+For \(r = 0\),</p> 
+
+   \[
+P\left[\begin{aligned}
+&amp; F[A,S]  =0 \\
+&amp; \begin{split}
+{} \pmid  F[A,B] =0 &amp; \cdot \Rnd[S,B,A] \\
+&amp; \cdot \Size[S]=n
+\end{split}
+\end{aligned}
+\right] 
+= 1.
+\]
+
+<p>
+For \(r = 1\),</p> 
+
+   \[
+P\left[\begin{aligned}
+&amp; F[A,S]  =1 \\
+&amp; \begin{split}
+{} \pmid  F[A,B] =1 &amp; \cdot \Rnd[S,B,A] \\
+&amp; \cdot \Size[S] =n
+\end{split}
+\end{aligned}
+\right] 
+= 1. 
+\]
+
+<p>
+For \(0 \lt r \lt 1\), let <i>q</i> be any real number such that
+<i>r</i> is in the region,</p> 
+
+\[0 \lt (r-q) 
+\lt r 
+\lt (r+q) \lt 1.\]
+
+</div>
+
+<p>
+Given a specific <i>q</i> (which identifies a specific small region of
+interest around <i>r</i>), for each given positive integer <i>n</i>
+that&rsquo;s large enough to permit it, we define associated
+non-negative integers <i>v</i> and <i>u</i> such that \(v \lt u\),
+where by definition:</p>
+
+<div class="indent">
+
+<p>
+<i>v</i> is the non-negative integer for which \(v/n\) is the smallest
+fraction greater than \((r-q)\), and </p>
+
+<p>
+<i>u</i> is the non-negative integer for which \(u/n\) is the largest
+fraction less than \((r+q)\). </p>
+</div>
+
+<p>
+Then,</p> 
+
+\[
+\begin{align}
+P&amp;\left[\begin{aligned}
+&amp; r-q \lt F[A,S]  \lt r+q \\
+&amp; \begin{split}
+{} \pmid  F[A,B] =r &amp; \cdot \Rnd[S,B,A] \\
+&amp; \cdot \Size[S] =n
+\end{split}
+\end{aligned}
+\right]
+\\
+&amp; = \sum^{u}_{m=v}  \frac{n!}{m! \times(n-m)!}     \times r^m (1-r)^{n-m} \\
+&amp; \approx   1 - 2 \times \Phi\left[\frac{-q}{((r\times(1-r))/n)^{\tfrac{1}{2}}}\right] \\
+&amp;\ge  1 - 2 \times \Phi\left[-2\times q\times n^{\frac{1}{2}}\right],
+\end{align}
+\]
+
+<p>
+which goes to 1 quickly as <i>n</i> increases.</p>
+</div>
+
+<p>
+Here \(\Phi[x]\) is the area under the Standard Normal Distribution up
+to point <i>x</i>. The first equality is a version of the binomial
+theorem. The approximation of the binomial formula by the normal
+distribution is guaranteed by the Central Limit Theorem. This
+approximation is very close for <i>n</i> near 20, and gets extremely
+close as <i>n</i> gets larger. </p>
+
+<p>
+Notice that the degree of support probability in this theorem is a
+<em>direct inference likelihood</em>&mdash;all support functions
+should agree on these
+ values.<sup>[<a href="notes.html#note-23" id="ref-23">23</a>]</sup></p>
+ 
+<p>
+This Weak Law result together with the Simple Estimation Theorem
+yields the promised CoA result: for large sample sizes, it is very
+likely that a sample frequency will occur that has a value very near
+the true frequency; and whenever such a sample frequency does occur,
+it yields a very high degree of support for the true frequency
+hypothesis.</p>
+
+<p>
+This result only applies to enumerative inductions. In the next
+section of the main article we establish a CoA result that applies
+much more generally. It applies to the inductive support of hypotheses
+in any context where competing hypotheses are empirically distinct
+enough to disagree, at least a little, on the likelihoods of possible
+evidential outcomes.</p>
+
+<h3 id="TighBounMargErro">3. Tighter Bounds on the Margin of Error</h3>
+
+<p>
+If we want strong support for hypotheses claiming more than 99.9% of
+all ravens are black, the following extension of Table 1 applies.</p>
+
+<div class="figure avoid-break">
+
+<p>
+<span class="figlabel">Table 3:</span> Values of lower bound <i>p</i>
+on the posterior probability</p>
+
+<div class="pdfsmall">
+
+<table class="center cellpad-small-dense cell-left all-rules vert-top small">
+<tr>
+  <td>\(m/n = 1\)
+<br />
+\(F[A,B] \gt .999\)</td>
+  <td></td>
+  <td colspan="7">Sample-Size \(= n\)
+<br />
+(number of <i>A</i>s in Sample of <i>B</i>s \(= m = n)\)</td> </tr>
+<tr>
+  <td>Prior Ratio: <i>K</i>
+<br />
+\(\downarrow\)</td>
+  <td> </td>
+  <td>400</td>
+  <td>800</td>
+  <td>1600</td>
+  <td>3200</td>
+  <td>6400</td>
+  <td>12800</td>
+  <td>25600</td> </tr>
+<tr>
+  <td>1</td>
+  <td></td>
+  <td>0.3305</td>
+  <td>0.5513</td>
+  <td>0.7985</td>
+  <td>0.9593</td>
+  <td>0.9983</td>
+  <td>1.0000</td>
+  <td>1.0000</td> </tr>
+<tr>
+  <td>2</td>
+  <td></td>
+  <td>0.1980</td>
+  <td>0.3805</td>
+  <td>0.6645</td>
+  <td>0.9219</td>
+  <td>0.9967</td>
+  <td>1.0000</td>
+  <td>1.0000</td> </tr>
+<tr>
+  <td>5</td>
+  <td></td>
+  <td>0.0899</td>
+  <td>0.1973</td>
+  <td>0.4421</td>
+  <td>0.8252</td>
+  <td>0.9918</td>
+  <td>1.0000</td>
+  <td>1.0000</td> </tr>
+<tr>
+  <td>10</td>
+  <td></td>
+  <td>0.0470</td>
+  <td>0.1094</td>
+  <td>0.2838</td>
+  <td>0.7023</td>
+  <td>0.9837</td>
+  <td>1.0000</td>
+  <td>1.0000</td> </tr>
+<tr>
+  <td>100</td>
+  <td></td>
+  <td>0.0049</td>
+  <td>0.0121</td>
+  <td>0.0381</td>
+  <td>0.1909</td>
+  <td>0.8578</td>
+  <td>0.9997</td>
+  <td>1.0000</td> </tr>
+<tr>
+  <td>1,000</td>
+  <td></td>
+  <td>0.0005</td>
+  <td>0.0012</td>
+  <td>0.0039</td>
+  <td>0.0231</td>
+  <td>0.3763</td>
+  <td>0.9973</td>
+  <td>1.0000</td> </tr>
+<tr>
+  <td>10,000</td>
+  <td></td>
+  <td>0.0000</td>
+  <td>0.0001</td>
+  <td>0.0004</td>
+  <td>0.0024</td>
+  <td>0.0569</td>
+  <td>0.9733</td>
+  <td>1.0000</td> </tr>
+<tr>
+  <td>100,000</td>
+  <td></td>
+  <td>0.0000</td>
+  <td>0.0000</td>
+  <td>0.0000</td>
+  <td>0.0002</td>
+  <td>0.0060</td>
+  <td>0.7849</td>
+  <td>1.0000</td> </tr>
+<tr>
+  <td>1,000,000</td>
+  <td></td>
+  <td>0.0000</td>
+  <td>0.0000</td>
+  <td>0.0000</td>
+  <td>0.0000</td>
+  <td>0.0006</td>
+  <td>0.2674</td>
+  <td>1.0000</td> </tr>
+<tr>
+  <td>10,000,000</td>
+  <td></td>
+  <td>0.0000</td>
+  <td>0.0000</td>
+  <td>0.0000</td>
+  <td>0.0000</td>
+  <td>0.0001</td>
+  <td>0.0352</td>
+  <td>0.9999</td> </tr>
+</table>
+</div>
+
+<div class="smaller">
+
+\[
+P_{\alpha}\left[\begin{aligned}
+&amp; F[A,B] \gt .999 \\
+&amp; \begin{split}
+{} \pmid  b &amp; \cdot F[A,S] =1 \\
+&amp; \cdot \Rnd[S,B,A] \\
+&amp; \cdot \Size[S] =n
+\end{split}
+\end{aligned}\right]
+ \ge p,
+\]
+
+</div>
+
+<p>
+for a range of Sample-Sizes <i>n</i> (from 400 to 25600), when the
+prior probability of any specific frequency hypothesis outside the
+region between .999 and 1 is no more than <i>K</i> times more than the
+lowest prior probability for any specific frequency hypothesis inside
+of the region between .999 and 1.</p>
+</div>
+
+<p>
+The lower right corner of the table shows that even when the
+<em>vagueness</em> or <em>diversity</em> sets include support
+functions with prior plausibilities up to <em>ten million</em> times
+higher for hypotheses asserting frequency values below .999 than for
+hypotheses making frequency claims between .999 and 1, a sample of
+25600 black ravens will, nevertheless, pull the posterior plausibility
+above .9999 that &ldquo;the true frequency is over .999&rdquo; for
+every support function in the set.</p>
+
+<!--pdf exclude begin-->
+
+<p>
+ [<a href="index-2.html#s-2">Back to Text</a>]</p>
+ 
+<!--pdf exclude end-->
+<script type="text/javascript" src="local.js"></script>
+<script type="text/javascript" src="../../MathJax/MathJaxb198.js?config=TeX-MML-AM_CHTML"></script>
+
+
+</div><!-- #aueditable --><!--DO NOT MODIFY THIS LINE AND BELOW-->
+
+<!-- END ARTICLE HTML -->
+
+</div> <!-- End article-content -->
+
+  <div id="article-copyright">
+    <p>
+ <a href="../../info.html#c">Copyright &copy; 2018</a> by
+
+<br />
+<a href="http://james-hawthorne.oucreate.com/" target="other">James Hawthorne</a>
+&lt;<a href="m&#97;ilto:hawthorne&#37;40ou&#37;2eedu"><em>hawthorne<abbr title=" at ">&#64;</abbr>ou<abbr title=" dot ">&#46;</abbr>edu</em></a>&gt;
+    </p>
+  </div>
+
+</div> <!-- End article -->
+
+<!-- NOTE: article banner is outside of the id="article" div. -->
+<div id="article-banner" class="scroll-block">
+  <div id="article-banner-content">
+    <a href="../../fundraising/index.html">
+    Open access to the SEP is made possible by a world-wide funding initiative.<br />
+    The Encyclopedia Now Needs Your Support<br />
+    Please Read How You Can Help Keep the Encyclopedia Free</a>
+  </div>
+</div> <!-- End article-banner -->
+
+    </div> <!-- End content -->
+
+    <div id="footer">
+
+      <div id="footer-menu">
+        <div class="menu-block">
+          <h4><i class="icon-book"></i> Browse</h4>
+          <ul role="menu">
+            <li><a href="../../contents.html">Table of Contents</a></li>
+            <li><a href="../../new.html">What's New</a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+            <li><a href="../../published.html">Chronological</a></li>
+            <li><a href="../../archives/index.html">Archives</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-info-sign"></i> About</h4>
+          <ul role="menu">
+            <li><a href="../../info.html">Editorial Information</a></li>
+            <li><a href="../../about.html">About the SEP</a></li>
+            <li><a href="../../board.html">Editorial Board</a></li>
+            <li><a href="../../cite.html">How to Cite the SEP</a></li>
+            <li><a href="../../special-characters.html">Special Characters</a></li>
+            <li><a href="../../tools/index.html">Advanced Tools</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-leaf"></i> Support SEP</h4>
+          <ul role="menu">
+            <li><a href="../../support/index.html">Support the SEP</a></li>
+            <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+            <li><a href="../../support/donate.html">Make a Donation</a></li>
+            <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+          </ul>
+        </div>
+      </div> <!-- End footer menu -->
+
+      <div id="mirrors">
+        <div id="mirror-info">
+          <h4><i class="icon-globe"></i> Mirror Sites</h4>
+          <p>View this site from another server:</p>
+        </div>
+        <div class="btn-group open">
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="https://plato.stanford.edu/">
+            <span class="flag flag-usa"></span> USA (Main Site) <span class="caret"></span>
+            <span class="mirror-source">Philosophy, Stanford University</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../mirrors.html">Info about mirror sites</a></li>
+          </ul>
+        </div>
+      </div> <!-- End mirrors -->
+      
+      <div id="site-credits">
+        <p>The Stanford Encyclopedia of Philosophy is <a href="../../info.html#c">copyright &copy; 2021</a> by <a href="http://mally.stanford.edu/">The Metaphysics Research Lab</a>, Department of Philosophy, Stanford University</p>
+        <p>Library of Congress Catalog Data: ISSN 1095-5054</p>
+      </div> <!-- End site credits -->
+
+    </div> <!-- End footer -->
+
+  </div> <!-- End container -->
+
+   <!-- NOTE: Script required for drop-down button to work (mirrors). -->
+  <script>
+    $('.dropdown-toggle').dropdown();
+  </script>
+
+</body>
+
+<!-- Mirrored from seop.illc.uva.nl/entries/logic-inductive/sup-enum-induc.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 20:12:27 GMT -->
+</html>

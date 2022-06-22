@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 ie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 ie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 ie"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 ie"> <![endif]-->
+<!--[if !IE]> --> <html> <!-- <![endif]-->
+
+<!-- Mirrored from seop.illc.uva.nl/entries/compositionality/notes.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 20:09:56 GMT -->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>
+Compositionality &gt; Notes (Stanford Encyclopedia of Philosophy)
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive, noodp" />
+<meta name="DCTERMS.ispartof" content="https://plato.stanford.edu/entries/compositionality/" />
+
+<!-- NOTE: Import webfonts using this link: -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,200&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" href="../../css/font-awesome-ie7.min.css"> <![endif]-->
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../css/print.css" />
+<link rel="stylesheet" type="text/css" href="../../css/entry.css" />
+<!--[if IE]> <link rel="stylesheet" type="text/css" href="../../css/ie.css" /> <![endif]-->
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+
+<!-- NOTE: Javascript for sticky behavior needed on article and ToC pages -->
+<script type="text/javascript" src="../../js/jquery-scrolltofixed-min.js"></script>
+<script type="text/javascript" src="../../js/entry.js"></script>
+
+<!-- SEP custom script -->
+<script type="text/javascript" src="../../js/sep.js"></script>
+</head>
+
+<!-- NOTE: The nojs class is removed from the page if javascript is enabled. Otherwise, it drives the display when there is no javascript. -->
+<body class="nojs article" id="pagetopright">
+<div id="container">
+<div id="header-wrapper">
+  <div id="header">
+    <div id="branding">
+      <div id="site-logo"><a href="../../index.html"><img src="../../symbols/sep-man-red.png" alt="SEP logo" /></a></div>
+      <div id="site-title"><a href="../../index.html">Stanford Encyclopedia of Philosophy</a></div>
+    </div>
+    <div id="navigation">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <button class="btn btn-navbar collapsed" data-target=".collapse-main-menu" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Menu </button>
+            <div class="nav-collapse collapse-main-menu in collapse">
+              <ul class="nav">
+                <li class="dropdown open"><a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-book"></i> Browse</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                    <li><a href="../../contents.html">Table of Contents</a></li>
+                    <li><a href="../../new.html">What's New</a></li>
+                    <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+                    <li><a href="../../published.html">Chronological</a></li>
+                    <li><a href="../../archives/index.html">Archives</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-info-sign"></i> About</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                    <li><a href="../../info.html">Editorial Information</a></li>
+                    <li><a href="../../about.html">About the SEP</a></li>
+                    <li><a href="../../board.html">Editorial Board</a></li>
+                    <li><a href="../../cite.html">How to Cite the SEP</a></li>
+                    <li><a href="../../special-characters.html">Special Characters</a></li>
+                    <li><a href="../../tools/index.html">Advanced Tools</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-leaf"></i> Support SEP</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                    <li><a href="../../support/index.html">Support the SEP</a></li>
+                    <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+                    <li><a href="../../support/donate.html">Make a Donation</a></li>
+                    <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End navigation -->
+    
+    <div id="search">
+      <form id="search-form" method="get" action="https://seop.illc.uva.nl/search/searcher.py">
+        <input type="search" name="query" placeholder="Search SEP" />
+        <div class="search-btn-wrapper"><button class="btn search-btn" type="submit"><i class="icon-search"></i></button></div>
+      </form>
+    </div>
+    <!-- End search --> 
+    
+  </div>
+  <!-- End header --> 
+</div>
+<!-- End header wrapper -->
+
+<div id="content">
+
+<!-- Begin article sidebar -->
+<div id="article-sidebar" class="sticky">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <button class="btn btn-navbar" data-target=".collapse-sidebar" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Entry Navigation </button>
+        <div id="article-nav" class="nav-collapse collapse-sidebar in collapse">
+          <ul class="nav">
+            <li><a href="index.html">Back to Entry <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#toc">Entry Contents <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#Bib">Entry Bibliography <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#Aca">Academic Tools <i class="icon-external-link"></i></a></li>
+            <li><a href="https://leibniz.stanford.edu/friends/preview/compositionality/">Friends PDF Preview <i class="icon-external-link"></i></a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=compositionality">Author and Citation Info <i class="icon-external-link"></i></a> </li>
+            <li><a href="#pagetopright" class="back-to-top">Back to Top <i class="icon-angle-up icon2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End article sidebar --> 
+
+<!-- NOTE: Article content must have two wrapper divs: id="article" and id="article-content" -->
+<div id="article">
+<div id="article-content">
+
+<!-- BEGIN ARTICLE HTML -->
+<h4 id="supphead"></h4>
+
+<div id="aueditable">
+<!--DO NOT MODIFY THIS LINE AND ABOVE--> 
+<h2>Notes to <a href="index-2.html">Compositionality</a></h2>
+
+<div id="note-1">
+
+<p>
+
+ <a href="index-2.html#ref-1">1.</a>
+ There are some authors who call the following weaker thesis the
+principle of compositionality: The meaning of a complex expression is
+determined by <em>the meaning of its structure</em> and the meanings
+of its constituents. For example, Davis (2003) claims that the
+ambiguity of &lsquo;aardvark lover&rsquo;&mdash;it can mean either
+&lsquo;someone who loves aardvarks&rsquo; or &lsquo;aardvark that is a
+lover&rsquo; is neither lexical nor structural, but due to two
+different conventions associated with the single structure
+<em>NV-er</em>. (For an alternative take on &lsquo;aardvark
+lover&rsquo; that complies with (C), see Szab&oacute; 2008.) Since it
+is not clear that structure <em>itself</em> is the sort of thing that
+can represent (and hence can have meaning) I assume that
+compositionality should be interpreted as (C). The difference becomes
+important if proponents of the weaker principle also allow that
+syntactic rules may have context-dependent meanings. Here is an
+illustration. For the sake of argument assume that meaning is
+truth-conditional content, that &lsquo;every man&rsquo; has a single
+syntactic structure, that &lsquo;every&rsquo; and &lsquo;man&rsquo;
+each have a single determinate truth-conditional content, and that the
+truth-conditional content of &lsquo;every man&rsquo; includes some
+contextual restriction on the domain of quantification. Given (C), we
+have a violation of compositionality; cf. Stanley and Szab&oacute;
+(2000). Pelletier (2003) claims that the four assumptions are
+compatible with compositionality because the syntactic rule which
+combines the quantifier and the noun may be associated with a
+context-sensitive semantic rule. Pelletier is right only if we assume
+the weaker construal of compositionality. For a precise formulation of
+the weaker compositionality principle, see Pagin and Pelletier (2007).
+In
+ <a href="index-2.html#Stru">section 1.3</a>
+ I will introduce a weaker compositionality principle,
+(C\(_{\textit{coll}}\)), that is a generalization of the weak
+principle.</p>
+</div>
+
+<div id="note-2">
+
+<p>
+
+ <a href="index-2.html#ref-2">2.</a>
+ Here are a few hard questions we may not be able to settle right
+away. Would all the chatty words that appear on many US traffic signs
+but not on their European equivalents count as constituents? Is the
+size of the traffic sign a constituent? (Note that the minimum size of
+the No-Left-Turn sign in the US is \(24\times 24\) inches.) What
+exactly does it mean to compose a shape and a color pattern? What
+should we say about the fact that the meaning of one traffic sign can
+supplement the meaning of another? In spelling out the meanings of
+traffic signs should we include indexicals&mdash;e.g., &lsquo;No left
+turn <em>here</em>&rsquo;? Should we include the understood
+restrictions&mdash;e.g., &lsquo;If you are driving a vehicle, make no
+left turn here&rsquo;?</p>
+</div>
+
+<div id="note-3">
+
+<p>
+
+ <a href="index-2.html#ref-3">3.</a>
+ I think the answer is negative. Consider the following minimal
+pair:</p>
+
+<div class="center">
+<img src="noleftturn.jpg" alt="[road sign: a red circle with an upper left to lower right diagonal over a black arrow that goes up and then to the left; background is a white square]" />
+<img src="leftturn.jpg" alt="[road sign: a black arrow that goes up and then to the left; background is a yellow diamond]" />
+</div>
+
+<p>
+The meaning of the first is something like &lsquo;No left
+turn!&rsquo;; the meaning of the second is roughly &lsquo;Left turn;
+recommended speed 30mph or less&rsquo;. (If you didn&rsquo;t know that
+the second sign means this you can check the
+ <a href="http://www.trafficsign.us/" target="other">Manual of Traffic Signs</a>.)
+ Since on the basis of a large number of other signs we can be fairly
+sure that the shape and color pattern of these two signs indicates
+nothing beyond the fact that the first is a regulatory sign
+prohibiting something and the second is a warning sign recommending
+something, there is a problem for compositionality here. Whatever we
+take the contribution of the left arrow to be, it is hard to accept
+that the meanings of both these traffic signs are determined
+compositionally. (As always, there are all sorts of maneuvers that
+could save compositionality. They involve fiddling with what the
+meaningful constituents of these signs might be or with what exactly
+they might mean. I conjecture that all these moves would burden the
+syntax and/or the semantics of traffic signs with implausible
+features.) [Sign images are from the
+ <a href="http://www.trafficsign.us/" target="other">Manual of Traffic Signs</a>,
+ by
+ <a href="http://www.richardcmoeur.com/" target="other">Richard C. Moeur</a>.]</p>
+ </div>
+
+<div id="note-4">
+
+<p>
+
+ <a href="index-2.html#ref-4">4.</a>
+ This is not a substantive claim as long as we keep in mind the
+difference between <em>linguistic</em> understanding and
+<em>utterance</em> understanding. The claim that understanding an
+utterance amounts to nothing more than understanding the meaning of
+the expression uttered (perhaps relative to the context of utterance)
+is not only substantive but also false. (You cannot understand an
+ironical remark without recognizing the irony, but this is not
+required for understanding the expression uttered.)</p>
+</div>
+
+<div id="note-5">
+
+<p>
+
+ <a href="index-2.html#ref-5">5.</a>
+ On any conception of reference, a sentence like &lsquo;He is
+asleep&rsquo; refers only relative to a context of utterance. Thus,
+(C\(_{\textit{ref}}\)) must be relativized to, if <i>L</i> contains
+such a sentence. </p>
+</div>
+
+<div id="note-6">
+
+<p>
+
+ <a href="index-2.html#ref-6">6.</a>
+ More precisely, into one that is compositional given the usual weak
+understanding of determination in (C). See
+ <a href="index-2.html#Dete">section 1.4</a>.
+ for more detail about this matter.</p>
+</div>
+
+<div id="note-7">
+
+<p>
+
+ <a href="index-2.html#ref-7">7.</a>
+ The original meaning is uniformly recoverable <em>in principle</em>.
+There is no constraint here on how complex a calculation might be
+required to determine the value \(\mu(s)(s)\).</p>
+</div>
+
+<div id="note-8">
+
+<p>
+
+ <a href="index-2.html#ref-8">8.</a>
+ This assumes at least some level of autonomy for syntax. But it is
+overwhelmingly plausible that even if syntax is not fully independent
+of semantics, we cannot explain <em>all</em> syntactic regularities
+semantically.</p>
+</div>
+
+<div id="note-9">
+
+<p>
+
+ <a href="index-2.html#ref-9">9.</a>
+ Thus the proposal is that compositionality is a <em>contingent
+linguistic universal</em>. It has the same status as the syntactic
+hypothesis that in natural languages all branching in a phrase
+structure tree is binary or the semantic hypothesis that in natural
+languages all quantificational determiners are conservative. If true,
+such empirical hypotheses call out for deeper explanations. </p>
+</div>
+
+<div id="note-10">
+
+<p>
+
+ <a href="index-2.html#ref-10">10.</a>
+ As stated, (C\(_{\textit{occ}}\)) is oversimplified: it evaluates
+each constituent of a complex expression within the same context. A
+more adequate formulation would allow for context-shift within larger
+expressions. To formulate such a principle adequately one must take a
+stand on what contexts are&mdash;a question I am bypassing here. </p>
+</div>
+
+<div id="note-11">
+
+<p>
+
+ <a href="index-2.html#ref-11">11.</a>
+ Recanati (2012) distinguishes between the <em>content</em> and the
+<em>occasion meaning</em> of an expression. The former is supposed to
+be derived from the standing meaning via a mandatory process he calls
+<em>saturation</em>, while the latter is supposed to be arrived at
+employing the full array of contextual processes, including optional
+<em>modulation</em> as well. (For the distinction between saturation
+and modulation, see Recanati 2004.) He also suggests that the content
+of complex expressions is not compositionally determined, although it
+<em>is</em> determined by its structure and the occasion meanings of
+its constituents.</p>
+</div>
+
+<div id="note-12">
+
+<p>
+
+ <a href="index-2.html#ref-12">12.</a>
+ Higginbotham (1985, 2007) argues that questions of grammaticality
+must be kept separate from questions of meaningfulness. If so, we
+might say that despite its ungrammaticality &lsquo;John is probable to
+leave&rsquo; means (roughly) the same as &lsquo;John is likely to
+leave&rsquo;. </p>
+</div>
+
+<div id="note-13">
+
+<p>
+
+ <a href="index-2.html#ref-13">13.</a>The
+ translation in the standard English edition is misleading; the
+translation here is mine. </p>
+</div>
+
+<div id="note-14">
+
+<p>
+
+ <a href="index-2.html#ref-14">14.</a>
+ The second restriction is debatable. I tend to think that
+&lsquo;Vanda ordered a palacsinta&rsquo; is a meaningful sentence even
+though &lsquo;ordered&rsquo; is not a word of Hungarian and
+&lsquo;palacsinta&rsquo; is not a word of English, and consequently,
+the sentence is neither in English nor in Hungarian. The reason I
+think this sentence is meaningful is that any bi-lingual speaker of
+English and Hungarian would know what it means&mdash;the same as the
+English sentence &lsquo;Vanda ordered a cr&ecirc;pe&rsquo; or the
+Hungarian sentence &lsquo;Vanda egy palacsint&aacute;t
+rendelt&rsquo;.</p>
+</div>
+
+<div id="note-15">
+
+<p>
+
+ <a href="index-2.html#ref-15">15.</a>
+ It is a bit hard to define in full generality what it is for an
+expression to be a constituent of another. (This problem does not
+arise if we require the syntactic algebra to be a <em>term
+algebra</em>.) Let us say that \(e\) is a 1-constituent of \(e'\) just
+in case it is in the domain of some syntactic operation whose value is
+\(e'\). Let us say that \(e\) is an \(n+1\)-constituent of \(e'\) just
+in case it is in the domain of some syntactic operation whose value is
+an \(n\)-constituent of \(e'\). Finally, let us say that \(e\) is a
+constituent of \(e'\) just in case there is a natural number \(n\)
+such that \(e\) is an \(n\)-constituent of \(e'.\) Assuming that every
+expression can be generated from simple ones through a finite number
+of applications of the syntactic operations, this will do. \((e\) is
+simple iff it is not the value of any syntactic operation.) For an
+alternative abstract characterization of constituency, see Hodges
+(2012: 251&ndash;2).</p>
+</div>
+
+<div id="note-16">
+
+<p>
+
+ <a href="index-2.html#ref-16">16.</a>
+ Note that Frege&rsquo;s conclusion appears to be the building
+principle. Whether Frege believed in compositionality is a matter of
+much debate among scholars. One problem is that in the published
+writings we find appeals to a substitutivity principle about
+reference, but no analogous principle about sense. Another problem is
+that in the <em>Grundlagen</em> (1884) Frege announces his famous
+<em>context principle</em>, which on certain interpretations
+contradicts certain interpretations of compositionality; cf.
+ <a href="index-2.html#FregContPrin">section 1.6.4</a>
+ above. Finally, it is not even clear whether Fregean senses can be
+properly construed as linguistic meanings. For more on Frege and
+compositionality, see Janssen (2001) and Pelletier (2001). They also
+provide good bibliographies.</p>
+</div>
+
+<div id="note-17">
+
+<p>
+
+ <a href="index-2.html#ref-17">17.</a>
+ An example from Platts (1979): &lsquo;The horse behind Pegasus is
+bald&rsquo;, &lsquo;The horse behind the horse behind Pegasus is
+bald&rsquo;, &lsquo;The horse behind the horse behind the horse behind
+Pegasus is bald&rsquo;, &hellip;. Martin (1994: 7) appeals to numerals
+in trying to illustrate the same point. This I find less convincing.
+One can indeed say that English contains the sentences &lsquo;I have
+one kumquat&rsquo;, &lsquo;I have two kumquats&rsquo;, &lsquo;I have
+three kumquats&rsquo;, &hellip; but I don&rsquo;t think we could
+continue this series <em>ad infinitum</em> without recourse to
+elaborate mathematical notation. And the mathematical notion is
+arguably not part of English.</p>
+</div>
+
+<div id="note-18">
+
+<p>
+
+ <a href="index-2.html#ref-18">18.</a>
+ The Algebraic notation is the standard system for describing chess
+games. Its essentials go back to the Arabs of the 9<sup>th</sup>
+century. The example and the discussion is a slightly modified version
+of Szab&oacute; 2000a: 77&ndash;78.</p>
+</div>
+
+<div id="note-19">
+
+<p>
+
+ <a href="index-2.html#ref-19">19.</a>
+ The core idea is from Lewis (1975)&mdash;sometimes subordinate
+clauses restrict the domain of quantifiers. This idea has been
+generalized in Kratzer 1986.</p>
+</div>
+
+<div id="note-20">
+
+<p>
+
+ <a href="index-2.html#ref-20">20.</a>
+ Cf. For some of the main moves in the debate see Barker (1997), von
+Fintel (1998), Higginbotham (2003), von Fintel and Iatridou (2002 in
+ <a href="index-2.html#Oth">Other Internet Resources</a>),
+ and Guerts (2004, also in
+ <a href="index-2.html#Oth">Other Internet Resources</a>).</p>
+ </div>
+
+<div id="note-21">
+
+<p>
+
+ <a href="index-2.html#ref-21">21.</a>
+ Cf. Szab&oacute; 2000c. To defend compositionality along these lines
+it is by no means necessary to postulate a variable in the logical
+form of the sentence; cf. Szab&oacute; 2010</p>
+</div>
+
+<div id="note-22">
+
+<p>
+
+ <a href="index-2.html#ref-22">22.</a>
+ The explanation may follow the path of Salmon (1986). For a more
+recent proposal, see B&aring;ve (2008). </p>
+</div>
+
+<div id="note-23">
+
+<p>
+
+ <a href="index-2.html#ref-23">23.</a>
+ For example, one could take the clausal complement of
+&lsquo;believes&rsquo; to be an interpreted logical
+form&mdash;something which includes phonological information about the
+words employed in the clause; cf. Higginbotham (1986), Segal
+(1989), Larson and Ludlow (1993). Such theories
+violate compositionality because they maintain that the semantic value
+of a that-clause includes phonological information even though the
+semantic values of their constituents and their mode of combination do
+not. The fact that simple recursive semantic theories can violate
+compositionality should raise extra concerns about the strength of
+arguments from productivity and systematicity.</p>
+</div>
+
+<script type="text/javascript" src="local.js"></script>
+<script type="text/javascript" src="../../MathJax/MathJaxb198.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+
+
+
+</div><!-- #aueditable --><!--DO NOT MODIFY THIS LINE AND BELOW-->
+
+<!-- END ARTICLE HTML -->
+
+</div> <!-- End article-content -->
+
+  <div id="article-copyright">
+    <p>
+ <a href="../../info.html#c">Copyright &copy; 2020</a> by
+
+<br />
+<a href="http://campuspress.yale.edu/zoltanszabo/" target="other">Zolt&aacute;n Gendler Szab&oacute;</a>
+&lt;<a href="m&#97;ilto:zoltan&#37;2eszabo&#37;40yale&#37;2eedu"><em>zoltan<abbr title=" dot ">&#46;</abbr>szabo<abbr title=" at ">&#64;</abbr>yale<abbr title=" dot ">&#46;</abbr>edu</em></a>&gt;
+    </p>
+  </div>
+
+</div> <!-- End article -->
+
+<!-- NOTE: article banner is outside of the id="article" div. -->
+<div id="article-banner" class="scroll-block">
+  <div id="article-banner-content">
+    <a href="../../fundraising/index.html">
+    Open access to the SEP is made possible by a world-wide funding initiative.<br />
+    The Encyclopedia Now Needs Your Support<br />
+    Please Read How You Can Help Keep the Encyclopedia Free</a>
+  </div>
+</div> <!-- End article-banner -->
+
+    </div> <!-- End content -->
+
+    <div id="footer">
+
+      <div id="footer-menu">
+        <div class="menu-block">
+          <h4><i class="icon-book"></i> Browse</h4>
+          <ul role="menu">
+            <li><a href="../../contents.html">Table of Contents</a></li>
+            <li><a href="../../new.html">What's New</a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+            <li><a href="../../published.html">Chronological</a></li>
+            <li><a href="../../archives/index.html">Archives</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-info-sign"></i> About</h4>
+          <ul role="menu">
+            <li><a href="../../info.html">Editorial Information</a></li>
+            <li><a href="../../about.html">About the SEP</a></li>
+            <li><a href="../../board.html">Editorial Board</a></li>
+            <li><a href="../../cite.html">How to Cite the SEP</a></li>
+            <li><a href="../../special-characters.html">Special Characters</a></li>
+            <li><a href="../../tools/index.html">Advanced Tools</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-leaf"></i> Support SEP</h4>
+          <ul role="menu">
+            <li><a href="../../support/index.html">Support the SEP</a></li>
+            <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+            <li><a href="../../support/donate.html">Make a Donation</a></li>
+            <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+          </ul>
+        </div>
+      </div> <!-- End footer menu -->
+
+      <div id="mirrors">
+        <div id="mirror-info">
+          <h4><i class="icon-globe"></i> Mirror Sites</h4>
+          <p>View this site from another server:</p>
+        </div>
+        <div class="btn-group open">
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="https://plato.stanford.edu/">
+            <span class="flag flag-usa"></span> USA (Main Site) <span class="caret"></span>
+            <span class="mirror-source">Philosophy, Stanford University</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../mirrors.html">Info about mirror sites</a></li>
+          </ul>
+        </div>
+      </div> <!-- End mirrors -->
+      
+      <div id="site-credits">
+        <p>The Stanford Encyclopedia of Philosophy is <a href="../../info.html#c">copyright &copy; 2021</a> by <a href="http://mally.stanford.edu/">The Metaphysics Research Lab</a>, Department of Philosophy, Stanford University</p>
+        <p>Library of Congress Catalog Data: ISSN 1095-5054</p>
+      </div> <!-- End site credits -->
+
+    </div> <!-- End footer -->
+
+  </div> <!-- End container -->
+
+   <!-- NOTE: Script required for drop-down button to work (mirrors). -->
+  <script>
+    $('.dropdown-toggle').dropdown();
+  </script>
+
+</body>
+
+<!-- Mirrored from seop.illc.uva.nl/entries/compositionality/notes.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 20:09:56 GMT -->
+</html>

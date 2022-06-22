@@ -1,0 +1,2471 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 ie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 ie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 ie"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 ie"> <![endif]-->
+<!--[if !IE]> --> <html> <!-- <![endif]-->
+
+<!-- Mirrored from seop.illc.uva.nl/entries/proof-theoretic-semantics/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 19:55:15 GMT -->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>
+Proof-Theoretic Semantics (Stanford Encyclopedia of Philosophy)
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive, noodp" />
+<meta property="citation_title" content="Proof-Theoretic Semantics" />
+<meta property="citation_author" content="Schroeder-Heister, Peter" />
+<meta property="citation_publication_date" content="2012/12/05" />
+<meta name="DC.title" content="Proof-Theoretic Semantics" />
+<meta name="DC.creator" content="Schroeder-Heister, Peter" />
+<meta name="DCTERMS.issued" content="2012-12-05" />
+<meta name="DCTERMS.modified" content="2018-02-01" />
+
+<!-- NOTE: Import webfonts using this link: -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,200&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" href="../../css/font-awesome-ie7.min.css"> <![endif]-->
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../css/print.css" />
+<link rel="stylesheet" type="text/css" href="../../css/entry.css" />
+<!--[if IE]> <link rel="stylesheet" type="text/css" href="../../css/ie.css" /> <![endif]-->
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+
+<!-- NOTE: Javascript for sticky behavior needed on article and ToC pages -->
+<script type="text/javascript" src="../../js/jquery-scrolltofixed-min.js"></script>
+<script type="text/javascript" src="../../js/entry.js"></script>
+
+<!-- SEP custom script -->
+<script type="text/javascript" src="../../js/sep.js"></script>
+</head>
+
+<!-- NOTE: The nojs class is removed from the page if javascript is enabled. Otherwise, it drives the display when there is no javascript. -->
+<body class="nojs article" id="pagetopright">
+<div id="container">
+<div id="header-wrapper">
+  <div id="header">
+    <div id="branding">
+      <div id="site-logo"><a href="../../index.html"><img src="../../symbols/sep-man-red.png" alt="SEP logo" /></a></div>
+      <div id="site-title"><a href="../../index.html">Stanford Encyclopedia of Philosophy</a></div>
+    </div>
+    <div id="navigation">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <button class="btn btn-navbar collapsed" data-target=".collapse-main-menu" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Menu </button>
+            <div class="nav-collapse collapse-main-menu in collapse">
+              <ul class="nav">
+                <li class="dropdown open"><a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-book"></i> Browse</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                    <li><a href="../../contents.html">Table of Contents</a></li>
+                    <li><a href="../../new.html">What's New</a></li>
+                    <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+                    <li><a href="../../published.html">Chronological</a></li>
+                    <li><a href="../../archives/index.html">Archives</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-info-sign"></i> About</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                    <li><a href="../../info.html">Editorial Information</a></li>
+                    <li><a href="../../about.html">About the SEP</a></li>
+                    <li><a href="../../board.html">Editorial Board</a></li>
+                    <li><a href="../../cite.html">How to Cite the SEP</a></li>
+                    <li><a href="../../special-characters.html">Special Characters</a></li>
+                    <li><a href="../../tools/index.html">Advanced Tools</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-leaf"></i> Support SEP</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                    <li><a href="../../support/index.html">Support the SEP</a></li>
+                    <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+                    <li><a href="../../support/donate.html">Make a Donation</a></li>
+                    <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End navigation -->
+    
+    <div id="search">
+      <form id="search-form" method="get" action="https://seop.illc.uva.nl/search/searcher.py">
+        <input type="search" name="query" placeholder="Search SEP" />
+        <div class="search-btn-wrapper"><button class="btn search-btn" type="submit"><i class="icon-search"></i></button></div>
+      </form>
+    </div>
+    <!-- End search --> 
+    
+  </div>
+  <!-- End header --> 
+</div>
+<!-- End header wrapper -->
+
+<div id="content">
+
+<!-- Begin article sidebar -->
+<div id="article-sidebar" class="sticky">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <button class="btn btn-navbar" data-target=".collapse-sidebar" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Entry Navigation </button>
+        <div id="article-nav" class="nav-collapse collapse-sidebar in collapse">
+          <ul class="nav">
+            <li><a href="#toc">Entry Contents</a></li>
+            <li><a href="#Bib">Bibliography</a></li>
+            <li><a href="#Aca">Academic Tools</a></li>
+            <li><a href="https://leibniz.stanford.edu/friends/preview/proof-theoretic-semantics/">Friends PDF Preview <i class="icon-external-link"></i></a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=proof-theoretic-semantics">Author and Citation Info <i class="icon-external-link"></i></a> </li>
+            <li><a href="#pagetopright" class="back-to-top">Back to Top <i class="icon-angle-up icon2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End article sidebar --> 
+
+<!-- NOTE: Article content must have two wrapper divs: id="article" and id="article-content" -->
+<div id="article">
+<div id="article-content">
+
+<!-- BEGIN ARTICLE HTML -->
+
+
+<div id="aueditable"><!--DO NOT MODIFY THIS LINE AND ABOVE-->
+
+<h1>Proof-Theoretic Semantics</h1><div id="pubinfo"><em>First published Wed Dec 5, 2012; substantive revision Thu Feb 1, 2018</em></div>
+
+<div id="preamble">
+
+<p>
+
+Proof-theoretic semantics is an alternative to truth-condition
+semantics. It is based on the fundamental assumption that the central
+notion in terms of which meanings are assigned to certain expressions
+of our language, in particular to logical constants, is that of
+<em>proof</em> rather than <em>truth</em>. In this sense
+proof-theoretic semantics is <em>semantics in terms of proof</em> .
+Proof-theoretic semantics also means the <em>semantics of proofs</em>,
+i.e., the semantics of entities which describe how we arrive at certain
+assertions given certain assumptions. Both aspects of proof-theoretic
+semantics can be intertwined, i.e. the semantics of proofs is itself
+often given in terms of proofs.</p>
+<p>
+
+Proof-theoretic semantics has several roots, the most specific one
+being Gentzen&rsquo;s remarks that the introduction rules in his
+calculus of natural deduction define the meanings of logical constants,
+while the elimination rules can be obtained as a consequence of this
+definition (see section
+ <a href="#InvPriHar">2.2.1</a>).
+ More
+broadly, it belongs to what Prawitz called <em>general proof
+theory</em> (see section
+ <a href="#GenProTheConVsPro">1.1</a>).
+ Even more
+broadly, it is part of the tradition according to which the meaning of
+a term should be explained by reference to the way it is <em>used</em>
+in our language.</p>
+<p>
+
+Within philosophy, proof-theoretic semantics has mostly figured
+under the heading &ldquo;theory of meaning&rdquo;. This terminology
+follows Dummett, who claimed that the theory of meaning is the basis of
+theoretical philosophy, a view which he attributed to Frege. The term
+&ldquo;proof-theoretic semantics&rdquo; was proposed by
+Schroeder-Heister (1991; used already in 1987 lectures in Stockholm) in order not to leave the term
+&ldquo;semantics&rdquo; to denotationalism alone&mdash;after all,
+&ldquo;semantics&rdquo; is the standard term for investigations dealing
+with the meaning of linguistic expressions. Furthermore, unlike
+&ldquo;theory of meaning&rdquo;, the term &ldquo;proof-theoretic
+semantics&rdquo; covers philosophical and technical aspects likewise.
+In 1999, the first conference with this title took place in
+T&uuml;bingen, the second one in 2013. The first textbook with this title appeared in 2015. </p>
+
+</div>
+
+<div id="toc">
+<!--Entry Contents-->
+<ul>
+<li><a href="#Bac">1. Background</a>
+   <ul>
+   <li><a href="#GenProTheConVsPro">1.1 General proof theory: consequence vs. proofs</a></li>
+   <li><a href="#InfIntAntRea">1.2 Inferentialism, intuitionism, anti-realism</a></li>
+   <li><a href="#GenStyProTheRedNorCutEli">1.3 Gentzen-style proof theory: Reduction, normalization, cut elimination</a></li>
+   </ul></li>
+<li><a href="#SomVerProTheSem">2. Some versions of proof-theoretic semantics</a>
+   <ul>
+   <li><a href="#SemImpAdmDerRul">2.1 The semantics of implications: Admissibility, derivability, rules</a>
+      <ul>
+      <li><a href="#OpeLog">2.1.1 Operative logic</a></li>
+      <li><a href="#GenSem">2.1.2 Gentzen semantics</a></li>
+      <li><a href="#NatDedHigLevRul">2.1.3 Natural deduction with higher-level rules</a></li>
+      </ul></li>
+   <li><a href="#SemDerBasIntRul">2.2 The Semantics of derivations as based on introduction rules</a>
+      <ul>
+      <li><a href="#InvPriHar">2.2.1 Inversion principles and harmony</a></li>
+      <li><a href="#ProTheVal">2.2.2 Proof-theoretic validity</a></li>
+      <li><a href="#ConTypThe">2.2.3 Constructive type theory</a></li>
+      </ul></li>
+   <li><a href="#ClaDefDefRea">2.3 Clausal definitions and definitional reasoning</a>
+      <ul>
+      <li><a href="#ChaLogPro">2.3.1 The challenge from logic programming</a></li>
+      <li><a href="#DefRef">2.3.2 Definitional reflection</a></li>
+      </ul></li>
+   <li><a href="#StrChaLogCon">2.4 Structural characterization of logical constants</a></li>
+   <li><a href="#CatProThe">2.5 Categorial proof theory</a></li>
+   </ul>
+</li>
+
+<li><a href="#ExtAltStaProTheSem">3. Extensions and alternatives to standard proof-theoretic semantics</a>
+   <ul>
+   <li><a href="#EliRulBas">3.1 Elimination rules as basic</a></li>
+   <li><a href="#NegDen">3.2 Negation and denial</a></li>
+   <li><a href="#HarRefSeqCal">3.3 Harmony and reflection in the sequent calculus</a></li>
+   <li><a href="#SubStrNatLan">3.4 Subatomic structure and natural language</a></li>
+   <li><a href="#ClaLog">3.5 Classical logic</a></li>
+   <li><a href="#HypRea">3.6 Hypothetical reasoning</a></li>
+   <li><a href="#IntProTheSem">3.7 Intensional proof-theoretic semantics</a></li>
+   </ul></li>
+<li><a href="#ConOut">4. Conclusion and outlook</a></li>
+<li><a href="#Bib">Bibliography</a></li>
+<li><a href="#Aca">Academic Tools</a></li>
+<li><a href="#Oth">Other Internet Resources</a></li>
+<li><a href="#Rel">Related Entries</a></li>
+</ul>
+<!--Entry Contents-->
+
+<p>This entry also includes the following supplementary documents that
+are linked into the text:</p>
+
+<ul>
+<li><a href="examples.html">Examples of Proof-theoretic Validity</a></li>
+<li><a href="definitional-reflection.html">Definitional Reflection and Paradoxes</a></li>
+</ul>
+
+<hr />
+
+</div>
+
+<div id="main-text">
+
+<h2><a name="Bac">1. Background</a></h2>
+
+<h3><a name="GenProTheConVsPro">1.1 General proof theory: consequence vs. proofs</a></h3>
+
+<p>
+
+The term &ldquo;general proof theory&rdquo; was coined by Prawitz.
+In general proof theory, &ldquo;proofs are studied in their own right
+in the hope of understanding their nature&rdquo;, in contradistinction
+to Hilbert-style &ldquo;reductive proof theory&rdquo;, which is the
+&ldquo;attempt to analyze the proofs of mathematical theories with the
+intention of reducing them to some more elementary part of mathematics
+such as finitistic or constructive mathematics&rdquo; (Prawitz, 1972,
+p. 123). In a similar way, Kreisel (1971) asks for a re-orientation of
+proof theory. He wants to explain &ldquo;recent work in proof theory
+from a neglected point of view. Proofs and their representations by
+formal derivations are treated as principal objects of study, not as
+mere tools for analyzing the consequence relation.&rdquo; (Kreisel,
+1971, p. 109) Whereas Kreisel focuses on the dichotomy between a theory
+of proofs and a theory of provability, Prawitz concentrates on the
+different goals proof theory may pursue. However, both stress the
+necessity of studying proofs as fundamental entities by means of which
+we acquire demonstrative (especially mathematical) knowledge. This
+means in particular that proofs are epistemic entities which should not
+be conflated with formal proofs or derivations. They are rather what
+derivations denote when they are considered to be representations of
+arguments. (However, in the following we often use &ldquo;proof&rdquo;
+synonymously with &ldquo;derivation&rdquo;, leaving it to the reader to
+determine whether formal proofs or proofs as epistemic entities are
+meant.) In discussing Prawitz&rsquo;s (1971) survey, Kreisel (1971,
+p.&nbsp;111) explicitly speaks of a &ldquo;mapping&rdquo; between
+derivations and mental acts and considers it as a task of proof theory
+to elucidate this mapping, including the investigation of the identity
+of proofs, a topic that Prawitz and Martin-L&ouml;f had put on the
+agenda.</p>
+<p>
+
+This means that in general proof theory we are not solely interested
+in whether <em>B</em> follows from <em>A</em>, but in the way by means
+of which we arrive at <em>B</em> starting from <em>A</em>. In this
+sense general proof theory is intensional and epistemological in
+character, whereas model theory, which is interested in the consequence
+relation and not in the way of establishing it, is extensional and
+metaphysical.</p>
+
+<h3><a name="InfIntAntRea">1.2 Inferentialism, intuitionism, anti-realism</a></h3>
+
+<p>
+
+Proof-theoretic semantics is inherently inferential, as it is
+inferential activity which manifests itself in proofs. It thus belongs
+to <em>inferentialism</em> (see Brandom, 2000) according to which
+inferences and the rules of inference establish the meaning of
+expressions, in contradistinction to <em>denotationalism</em>,
+according to which denotations are the primary sort of meaning.
+Inferentialism and the &lsquo;meaning-as-use&rsquo; view of semantics
+is the broad philosophical framework of proof-theoretic semantics. This
+general philosophical and semantical perspective merged with
+constructive views which originated in the philosophy of mathematics,
+especially in mathematical intuitionism. Most forms of proof-theoretic
+semantics are intuitionistic in spirit, which means in particular that
+principles of classical logic such as the law of excluded middle or the
+double negation law are rejected or at least considered problematic.
+This is partly due to the fact that the main tool of proof-theoretic
+semantics, the calculus of natural deduction, is biased towards
+intuitionistic logic, in the sense that the straightforward formulation
+of its elimination rules is the intuitionistic one. There classical
+logic is only available by means of some rule of indirect proof, which,
+at least to some extent, destroys the symmetry of the reasoning
+principles (see section
+ <a href="#ClaLog">3.5</a>).
+ If one adopts
+the standpoint of natural deduction, then intuitionistic logic is a
+natural logical system. Also the BHK (Brouwer-Heyting-Kolmogorov)
+interpretation of the logical signs plays a significant role. This
+interpretation is not a unique approach to semantics, but comprises
+various ideas which are often more informally than formally described.
+Of particular importance is its functional view of implication,
+according to which a proof of <em>A</em> &rarr; <em>B</em> is a
+constructive function which, when applied to a proof of <em>A</em>
+yields a proof of <em>B</em>. This functional perspective underlies
+many conceptions of proof-theoretic semantics, in particular those of
+Lorenzen, Prawitz and Martin L&ouml;f (see sections
+ <a href="#OpeLog">2.1.1</a>,
+ <a href="#ProTheVal">2.2.2</a>,
+ <a href="#ConTypThe">2.2.3</a>).</p>
+<p>
+
+According to Dummett, the logical position of intuitionism
+corresponds to the philosophical position of anti-realism. The realist
+view of a recognition independent reality is the metaphysical
+counterpart of the view that all sentences are either true or false
+independent of our means of recognizing it. Following Dummett, major
+parts of proof-theoretic semantics are associated with
+anti-realism.</p>
+
+<h3><a name="GenStyProTheRedNorCutEli">1.3 Gentzen-style proof theory: Reduction, normalization, cut elimination</a></h3>
+
+<p>
+
+Gentzen&rsquo;s calculus of natural deduction and its rendering by
+Prawitz is the background to most approaches to proof-theoretic
+semantics. Natural deduction is based on at least three major
+ideas:</p>
+<ul>
+
+<li class="jfy"><em>Discharge of assumptions</em>: Assumptions can be
+&ldquo;discharged&rdquo; or &ldquo;eliminated&rdquo; in the course of a
+derivation, so the central notion of natural deduction is that of a
+derivation <em>depending on assumptions</em>.</li>
+
+<li class="jfy"><em>Separation</em>: Each primitive rule schema contains only a
+single logical constant.</li>
+
+<li class="jfy"><em>Introductions and eliminations</em>: The rules for logical
+constants come in pairs. The introduction rule(s) allow(s) one to infer
+a formula with the constant in question as its main operator, the
+elimination rule(s) permit(s) to draw consequences from such a
+formula.</li>
+</ul>
+
+<p>
+
+In Gentzen&rsquo;s natural deduction system for first-order logic
+derivations are written in tree form and based on the well-known rules.
+For example, implication has the following introduction and elimination
+rules</p>
+
+<blockquote>
+<table>
+<tr>
+<td>
+  <table cellpadding="0" cellspacing="0">
+  <tr>
+  <td style="text-align:center;">[<i>A</i>]</td>
+  <td></td>
+  </tr>
+  <tr>
+  <td style="padding:0px;border-bottom:1px solid black; text-align:center;"><i>B</i></td>
+  <td rowspan="2">&nbsp;&nbsp;&rarr;I</td>
+  </tr>
+  <tr>
+  <td><i>A</i>&rarr;<i>B</i></td>
+  </tr>
+  </table>
+</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+<td>
+  <table cellpadding="0" cellspacing="0">
+  <tr><td colspan="2">&nbsp;</td></tr>
+  <tr>
+  <td style="padding:0px;border-bottom:1px solid black; text-align:center;"><i>A</i>&rarr;<i>B</i>&nbsp;&nbsp;<i>A</i></td>
+  <td rowspan="2">&nbsp;&nbsp;&rarr;E</td>
+  </tr>
+  <tr>
+  <td style="text-align:center;"><i>B</i></td>
+  </tr>
+  </table>
+</td>
+</tr>
+</table>
+</blockquote>
+
+<p>
+
+where the brackets indicate the possibility to discharge occurrences
+of the assumption <em>A</em>. The <em>open assumptions</em> of a
+derivation are those assumptions on which the end-formula depends. A
+derivation is called <em>closed</em>, if it has no open assumption,
+otherwise it is called <em>open</em>. If we deal with quantifiers, we
+have to consider open individual variables (sometimes called
+&ldquo;parameters&rdquo;), too. Metalogical features crucial for
+proof-theoretic semantics and for the first time systematically
+investigated and published by Prawitz (1965) include:</p>
+<p>
+
+<em>Reduction</em>: For every detour consisting of an introduction
+immediately followed by an elimination there is a reduction step
+removing this detour.</p>
+<p>
+
+<em>Normalization</em>: By successive applications of reductions,
+derivations can be transformed into normal forms which contain no
+detours.</p>
+<p>
+
+For implication the standard reduction step removing detours is the
+following:</p>
+
+<blockquote>
+<table>
+<tr>
+<td>
+  <table cellpadding="0" cellspacing="0">
+  <tr><td style="text-align:center;">[<i>A</i>]</td> <td></td></tr>
+  <tr><td style="text-align:center;">&#8942;</td>    <td></td></tr>
+  <tr><td style="padding:0px;border-bottom:1px solid black; text-align:center;"><i>B</i></td>
+  <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+  <td style="text-align:center;">|</td></tr>
+  <tr>  <td style="padding:0px;border-bottom:1px solid black; text-align:center;"><i>A</i>&rarr;<i>B</i></td>
+  <td style="padding:0px;border-bottom:1px solid black; text-align:center;">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+  <td style="padding:0px;border-bottom:1px solid black; text-align:center;"><i>A</i></td></tr>
+  <tr><td colspan="2" style="text-align:center;"><i>B</i></td></tr>
+  </table>
+</td>
+
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reduces to&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+<td>
+  <table cellpadding="0" cellspacing="0">
+  <tr><td style="text-align:center;">|<br /><i>A</i><br />&#8942;<br /><i>B</i></td></tr>
+  </table>
+</td>
+</tr>
+</table>
+</blockquote>
+
+<p>
+
+A simple, but very important corollary of normalization is the
+following: <em>Every closed derivation in intuitionistic logic can be
+reduced to a derivation using an introduction rule in the last
+step.</em> We also say that intuitionistic natural deduction satisfies
+the &ldquo;<em>introduction form property</em>&rdquo;. In
+proof-theoretic semantics this result figures prominently under the
+heading &ldquo;fundamental assumption&rdquo; (Dummett, 1991,
+p.&nbsp;254). The &ldquo;fundamental assumption&rdquo; is a typical
+example of a philosophical re-interpretation of a technical
+proof-theoretic result.</p>
+
+<p><em>Further Reading:</em></p>
+
+<p>
+
+<em>For the general orientation of proof-theoretic semantics</em>
+the special issue of <em>Synthese</em> (Kahle and Schroeder-Heister,
+2006) the reader edited by Piecha and Schroeder-Heister (2016b), the textbook by Francez (2015), Schroeder-Heister (2008b, 2016a), and Wansing (2000).</p>
+
+<p>
+
+<em>For the philosophical position and development of proof
+theory</em> the entries on
+ <a href="../hilbert-program/index.html">Hilbert&rsquo;s program</a>
+and the
+ <a href="../proof-theory-development/index.html">development of proof theory</a>
+as well as Prawitz (1971).</p>
+
+<p>
+
+<em>For intuitionism</em> the entries on
+ <a href="../logic-intuitionistic/index.html">intuitionistic logic</a>,
+ <a href="../intuitionism/index.html">intuitionism in the philosophy of mathematics</a>
+and the
+ <a href="../intuitionistic-logic-development/index.html">development of intuitionistic logic</a>.</p>
+
+<p>
+
+<em>For anti-realism</em> the entry on 
+ <a href="../realism-sem-challenge/index.html">challenges to metaphysical realism</a>
+ as well as Tennant (1987); Tennant (1997), Tranchini (2010);
+Tranchini (2012a).</p>
+<p>
+
+<em>For Gentzen-style proof-theory and the theory of natural
+deduction</em>: besides Gentzen&rsquo;s (1934/35) original presentation,
+Ja&#347;kowski&rsquo;s (1934) theory of suppositions and Prawitz&rsquo;s (1965)
+classic monograph, Tennant (1978), Troelstra and Schwichtenberg
+(2000), and Negri and von Plato (2001).</p>
+
+<h2><a name="SomVerProTheSem">2. Some versions of proof-theoretic semantics</a></h2>
+
+<h3><a name="SemImpAdmDerRul">2.1 The semantics of implications: Admissibility, derivability, rules</a></h3>
+
+<p>
+
+The semantics of implication lies at the heart of proof-theoretic
+semantics. In contradistinction to classical truth-condition semantics,
+implication is a logical constant in its own right. It has also the
+characteristic feature that it is tied to the concept of consequence.
+It can be viewed as expressing consequence at the sentential level due
+to modus ponens and to what in Hilbert-style systems is called the
+deduction theorem, i.e. the equivalence of &Gamma;<em>,A</em> &#8866;
+<em>B</em> and &Gamma; &#8866; <em>A</em> &rarr; <em>B</em>.</p>
+<p>
+
+A very natural understanding of an implication <em>A</em> &rarr;
+<em>B</em> is reading it as expressing the inference rule which allows
+one to pass over from <em>A</em> to <em>B</em>. Licensing the step from
+<em>A</em> to <em>B</em> on the basis of <em>A</em> &rarr; <em>B</em>
+is exactly, what modus ponens says. And the deduction theorem can be
+viewed as the means of establishing a rule: Having shown that
+<em>B</em> can be deduced from <em>A</em> justifies the rule that from
+<em>A</em> we may pass over to <em>B</em>. A rule-based semantics of
+implication along such lines underlies several conceptions of
+proof-theoretic semantics, notably those by Lorenzen, von Kutschera and
+Schroeder-Heister.</p>
+
+<h4><a name="OpeLog">2.1.1 Operative logic</a></h4>
+
+<p>
+
+Lorenzen, in his <em>Introduction to Operative Logics and
+Mathematics</em> (1955) starts with logic-free (atomic) calculi, which
+correspond to production systems or grammars. He calls a rule
+<em>admissible</em> in such a system if it can be added to it without
+enlarging the set of its derivable atoms. The implication arrow &rarr;
+is interpreted as expressing admissibility. An implication <em>A</em>
+&rarr; <em>B</em> is considered to be valid, if, when read as a rule,
+it is admissible (with respect to the underlying calculus). For
+iterated implications (= rules) Lorenzen develops a theory of
+admissibility statements of higher levels. Certain statements such as
+<span class="nw"><em>A</em> &rarr;<em>A</em></span> or ((<em>A</em> &rarr;<em>B</em>)<em>,</em>
+(<em>B</em> &rarr;<em>C</em>)) &rarr; (<em>A</em> &rarr;<em>C</em>)
+hold independently of the underlying calculus. They are called
+<em>universally admissible</em>
+[&ldquo;allgemeinzul&auml;ssig&rdquo;]), and constitute a system of
+positive implicational logic. In a related way, laws for universal
+quantification &forall;&nbsp;are justified using admissibility
+statements for rules with schematic variables.</p>
+<p>
+
+For the justification of the laws for the logical constants &and;,
+&or;, &exist;&nbsp;and &perp;, Lorenzen uses an <em>inversion
+principle</em> (a term he coined). In a very simplified form, without
+taking variables in rules into account, the inversion principle says
+that everything that can be obtained from every defining condition of
+<em>A</em> can be obtained from <em>A</em> itself. For example, in the
+case of <em>disjunction</em>, let <em>A</em> and <em>B</em> each be a
+defining condition of <em>A</em>&or;<em>B</em> as expressed by the
+primitive rules <em>A</em> &rarr; <em>A</em>&or;<em>B</em> and
+<em>B</em> &rarr; <em>A</em>&or;<em>B</em>. Then the inversion
+principle says that <em>A</em>&or;<em>B</em> &rarr;<em>C</em> is
+admissible assuming <em>A</em> &rarr;<em>C</em> and <em>B</em>
+&rarr;<em>C</em>, which justifies the elimination rule for disjunction.
+The remaining connectives are dealt with in a similar way. In the case
+of &perp;, the absurdity rule &perp;&rarr; <em>A</em> is obtained from
+the fact that there is no defining condition for &perp;.</p>
+
+<h4><a name="GenSem">2.1.2 Gentzen semantics</a></h4>
+
+<p>
+
+In what he calls &ldquo;Gentzen semantics&rdquo;, von Kutschera
+(1968) gives, as Lorenzen, a semantics of logically complex
+implication-like statements
+<em>A</em><sub>1</sub><em>,&hellip;,</em><em>A</em><sub><em>n</em></sub>
+&rarr; <em>B</em> with respect to calculi <em>K</em> which govern the
+reasoning with atomic sentences. The fundamental difference to Lorenzen
+is the fact that
+<em>A</em><sub>1</sub><em>,</em><em>&hellip;</em><em>,A</em><sub><em>n</em></sub>
+&rarr; <em>B</em> now expresses a <em>derivability</em> rather than an
+<em>admissibility</em> statement.</p>
+<p>
+
+In order to turn this into a semantics of the logical constants of
+propositional logic, von Kutschera argues as follows: When giving up
+bivalence, we can no longer use classical truth-value assignments to
+atomic formulas. Instead we can use calculi which prove or refute
+atomic sentences. Moreover, since calculi not only generate proofs or
+refutations but arbitrary derivability relations, the idea is to start
+directly with derivability in an atomic system and extend it with rules
+that characterize the logical connectives. For that von Kutschera gives
+a sequent calculus with rules for the introduction of <em>n</em>-ary
+propositional connectives in the succedent and antecedent, yielding a
+sequent system for generalized propositional connectives. Von Kutschera
+then goes on to show that the generalized connectives so defined can
+all be expressed by the standard connectives of intuitionistic logic
+(conjunction, disjunction, implication, absurdity).</p>
+
+<h4><a name="NatDedHigLevRul">2.1.3 Natural deduction with higher-level rules</a></h4>
+
+<p>
+
+Within a programme of developing a general schema for rules for
+arbitrary logical constants, Schroeder-Heister (1984) proposed that a
+logically complex formula should express the content or <em>common
+content</em> of <em>systems of rules</em>. This means that not the
+introduction rules are considered basic but the consequences of
+defining conditions. A rule <em>R</em> is either a formula <em>A</em>
+or has the form
+<em>R</em><sub>1</sub><em>,</em><em>&hellip;</em><em>,R</em><sub><em>n</em></sub>
+&rArr; <em>A</em>, where
+<em>R</em><sub>1</sub><em>,</em><em>&hellip;</em><em>,R</em><sub><em>n</em></sub>
+are themselves rules. These so-called &ldquo;higher-level rules&rdquo;
+generalize the idea that rules may discharge assumptions to the case
+where these assumptions can themselves be rules. For the standard
+logical constants this means that <em>A</em>&and;<em>B</em> expresses
+the content of the pair (<em>A,B</em>); <em>A</em> &rarr; <em>B</em>
+expresses the content of the rule <em>A</em> &rArr; <em>B</em>;
+<em>A</em>&or;<em>B</em> expresses the common content of <em>A</em> and
+<em>B</em>; and absurdity &perp; expresses the common content of the
+empty family of rule systems. In the case of arbitrary <em>n</em>-ary
+propositional connectives this leads to a natural deduction system with
+generalized introduction and elimination rules. These general
+connectives are shown to be definable in terms of the standard ones,
+establishing the expressive completeness of the standard intuitionistic
+connectives.</p>
+<em>Further Reading:</em>
+<p>
+
+For Lorenzen&rsquo;s approach in relation to Prawitz-style
+proof-theoretic semantics: Schroeder-Heister (2008a). For extensions of
+expressive completeness in the style of von Kutschera: Wansing
+(1993a).</p>
+
+<h3><a name="SemDerBasIntRul">2.2 The Semantics of derivations as based on introduction rules</a></h3>
+
+<h4><a name="InvPriHar">2.2.1 Inversion principles and harmony</a></h4>
+
+<p>
+
+In his <em>Investigations into Logical Deduction</em>, Gentzen makes
+some, nowadays very frequently quoted, programmatic remarks on the
+semantic relationship between introduction and elimination inferences
+in natural deduction.</p>
+
+<blockquote>
+
+The introductions represent, as it were, the
+&lsquo;definitions&rsquo; of the symbols concerned, and the
+eliminations are no more, in the final analysis, than the consequences
+of these definitions. This fact may be expressed as follows: In
+eliminating a symbol, we may use the formula with whose terminal symbol
+we are dealing only &lsquo;in the sense afforded it by the introduction
+of that symbol&rsquo;. (Gentzen, 1934/35, p.&nbsp;80)</blockquote>
+
+<p>
+
+This cannot mean, of course, that the elimination rules are
+<em>deducible</em> from the introduction rules in the literal sense of
+the word; in fact, they are not. It can only mean that they can be
+<em>justified</em> by them in some way.</p>
+
+<blockquote>
+
+By making these ideas more precise it should be possible to display
+the E-inferences as unique functions of their corresponding
+I-inferences, on the basis of certain requirements. (ibid.,
+p.&nbsp;81)</blockquote>
+
+<p>
+
+So the idea underlying Gentzen&rsquo;s programme is that we have
+&ldquo;definitions&rdquo; in the form of introduction rules and some
+sort of semantic reasoning which, by using &ldquo;certain
+requirements&rdquo;, validate the elimination rules.</p>
+<p>
+
+By adopting Lorenzen&rsquo;s term and adapting its underlying idea
+to the context of natural deduction, Prawitz (1965) formulated an
+&ldquo;inversion principle&rdquo; to make Gentzen&rsquo;s remarks more
+precise:</p>
+
+<blockquote>
+
+Let <em>&alpha;</em> be an application of an elimination rule that
+has <em>B</em> as consequence. Then, deductions that satisfy the
+sufficient condition [&hellip;] for deriving the major premiss of
+<em>&alpha;</em>, when combined with deductions of the minor premisses
+of <em>&alpha;</em> (if any), already &ldquo;contain&rdquo; a deduction
+of <em>B</em>; the deduction of <em>B</em> is thus obtainable directly
+from the given deductions without the addition of <em>&alpha;</em>.
+(p.&nbsp;33)</blockquote>
+
+<p>
+
+Here the sufficient conditions are given by the premisses of the
+corresponding introduction rules. Thus the inversion principle says
+that a derivation of the conclusion of an elimination rule can be
+obtained without an application of the elimination rule if its major
+premiss has been derived using an introduction rule in the last step,
+which means that a combination</p>
+
+<blockquote>
+<table style="padding:0;">
+<tr>
+<td style="padding:0px;border-bottom:1px solid black; text-align:center;">
+  <table style="padding:0;margin:0;">
+  <tr><td style="padding:0px;border-bottom:1px solid black; text-align:center;">&#8942;</td>
+      <td rowspan="2" style="padding-left:.4em;">I-inference</td>
+  </tr>
+  <tr><td><i>A</i></td></tr>
+  </table>
+</td>
+<td style="vertical-align:bottom;padding-left:1em;">
+  {<span class="scriptuc">D</span><sub>i</sub>}
+</td>
+<td rowspan="2" style="padding-left:.4em;">&nbsp;<br />E-inference</td>
+</tr>
+
+<tr>
+<td colspan="2" style="text-align:center;"><i>B</i></td>
+</tr>
+</table>
+</blockquote>
+
+<p>
+
+of steps, where {<span class="scriptuc">D</span><sub><em>i</em></sub>} stands for a
+(possibly empty) list of deductions of minor premisses, can be
+avoided.</p>
+<p>
+
+The relationship between introduction and elimination rules is often
+described as &ldquo;harmony&rdquo;, or as governed by a
+&ldquo;principle of harmony&rdquo; (see, e.g. Tennant, 1978,
+p.&nbsp;74). This terminology is not uniform and sometimes not even
+fully clear. It essentially expresses what is also meant by
+&ldquo;inversion&rdquo;. Even if &ldquo;harmony&rdquo; is a term which
+suggests a symmetric relationship, it is frequently understood as
+expressing a conception based on introduction rules as, e.g., in
+Read&rsquo;s (2010) &ldquo;general elimination harmony&rdquo; (although
+occasionally one includes elimination based conceptions as well).
+Sometimes harmony is supposed to mean that connectives are strongest or
+weakest in a certain sense given their introduction or their
+elimination rules. This idea underlies Tennant&rsquo;s (1978) harmony
+principle, and also Popper&rsquo;s and Koslow&rsquo;s structural
+characterizations (see section
+ <a href="#StrChaLogCon">2.4</a>).
+ The
+specific relationship between introduction and elimination rules as
+formulated in an inversion principle excludes alleged inferential
+definitions such as that of the connective <em>tonk</em>, which
+combines an introduction rule for disjunction with an elimination rule
+for conjunction, and which has given rise to a still ongoing debate on
+the format of inferential definitions (see Humberstone, 2010).</p>
+
+<h4><a name="ProTheVal">2.2.2 Proof-theoretic validity</a></h4>
+
+<p>
+
+Proof-theoretic validity is the dominating approach to
+proof-theoretic semantics. As a technical concept it was developed by
+Prawitz (1971; 1973; 1974), by turning a proof-theoretic validity
+notion based on ideas by Tait (1967) and originally used to prove
+strong normalization, into a semantical concept. Dummett provided much
+philosophical underpinning to this notion (see Dummett, 1991). The
+objects which are primarily valid are proofs as representations of
+arguments. In a secondary sense, single rules can be valid if they lead
+from valid proofs to valid proofs. In this sense, validity is a global
+rather than a local notion. It applies to arbitrary derivations over a
+given atomic system, which defines derivability for atoms. Calling a
+proof which uses an introduction rule in the last step
+<em>canonical</em>, it is based on the following three ideas:</p>
+<ol>
+<li>The priority of closed canonical proofs.</li>
+<li>The reduction of closed non-canonical proofs to canonical
+ones.</li>
+<li>The substitutional view of open proofs.</li>
+</ol>
+<p>
+
+<em>Ad 1:</em> The definition of validity is based on
+Gentzen&rsquo;s idea that introduction rules are
+&lsquo;self-justifying&rsquo; and give the logical constants their
+meaning. This self-justifying feature is only used for closed proofs,
+which are considered primary over open ones.</p>
+<p>
+
+<em>Ad 2:</em> Noncanonical proofs are justified by reducing them to
+canonical ones. Thus reduction procedures (detour reductions) as used
+in normalization proofs play a crucial role. As they justify arguments,
+they are also called &ldquo;justifications&rdquo; by Prawitz. This
+definition again only applies to closed proofs, corresponding to the
+introduction form property of closed normal derivations in natural
+deduction (see section
+ <a href="#GenStyProTheRedNorCutEli">1.3</a>).</p>
+<p>
+
+<em>Ad 3:</em> Open proofs are justified by considering their closed
+instances. These closed instances are obtained by replacing their open
+assumptions with closed proofs of them, and their open variables with
+closed terms. For example, a proof of <em>B</em> from <em>A</em> is
+considered valid, if every closed proof, which is obtained by replacing
+the open assumption <em>A</em> with a closed proof of <em>A</em>, is
+valid. In this way, open assumptions are considered to be placeholders
+for closed proofs, for which reason we may speak of a substitutional
+interpretation of open proofs.</p>
+<p>
+
+This yields the following definition of proof-theoretic
+validity:</p>
+<ol>
+<li>Every closed proof in the underlying atomic system is
+valid.</li>
+<li>A closed canonical proof is considered valid, if its immediate
+subproofs are valid.</li>
+<li>A closed noncanonical proof is considered valid, if it reduces
+to a valid closed canonical proof or to a closed proof in the atomic
+system.</li>
+<li>An open proof is considered valid, if every closed proof
+obtained by replacing its open assumptions with closed proofs and its
+open variables with closed terms is valid.</li>
+</ol>
+
+<p>
+
+Formally, this definition has to be relativized to the atomic system
+considered, and to the set of justifications (proof reductions)
+considered. Furthermore, <em>proofs</em> are here understood as
+<em>candidates</em> of valid proofs, which means that the rules from
+which they are composed are not fixed. They look like proof trees, but
+their individual steps can have an arbitrary (finite) number of
+premisses and can eliminate arbitrary assumptions. The definition of
+validity singles out those proof structures which are
+&lsquo;real&rsquo; proofs on the basis of the given reduction
+procedures.</p>
+<p>
+
+Validity with respect to every choice of an atomic system can be
+viewed as a generalized notion of logical validity. In fact, if we
+consider the standard reductions of intuitionistic logic, then all
+derivations in intuitionistic logic are valid independent of the atomic
+system considered. This is semantical <em>correctness</em>. We may ask
+if the converse holds, viz. whether, given that a derivation is valid
+for every atomic system, there is a corresponding derivation in
+intuitionistic logic. That intuitionistic logic is complete in this
+sense is known as Prawitz&rsquo;s conjecture (see Prawitz, 1973;
+Prawitz, 2013). However, no satisfactory proof of it has been given.
+There are considerable doubts concerning the validity of this
+conjecture for systems that go beyond implicational logic. In any case
+it will depend on the precise formulation of the notion of validity, in
+particular on its handling of atomic systems.</p>
+<p>
+
+For a more formal definition and detailed examples demonstrating
+validity, as well as some remarks on Prawitz&rsquo;s conjecture
+ see the</p>
+
+<blockquote>
+ <a href="examples.html">Supplement on Examples of proof-theoretic validity</a>.
+</blockquote>
+
+<h4><a name="ConTypThe">2.2.3 Constructive type theory</a></h4>
+
+<p>
+
+Martin-L&ouml;f&rsquo;s type theory (Martin-L&ouml;f, 1984) is a
+leading approach in constructive logic and mathematics.
+Philosophically, it shares with Prawitz the three fundamental
+assumptions of standard proof-theoretic semantics, mentioned in
+ section
+ <a href="#ProTheVal">2.2.2</a>:
+ the priority of closed canonical
+proofs, the reduction of closed non-canonical proofs to canonical ones
+and the substitutional view of open proofs. However,
+Martin-L&ouml;f&rsquo;s type theory has at least two characteristic
+features which go beyond other approaches in proof-theoretic
+semantics:</p>
+<ol>
+<li>The consideration of proof objects and the corresponding
+distinction between proofs-as-objects and
+proofs-as-demonstrations.</li>
+<li>The view of formation rules as intrinsic to the proof system rather
+than as external rules.</li>
+</ol>
+<p>
+
+The first idea goes back to the Curry-Howard correspondence (see de
+Groote, 1995; S&oslash;rensen and Urzyczyn, 2006), according to which
+the fact that a formula <em>A</em> has a certain proof can be codified
+as the fact that a certain term <em>t</em> is of type <em>A</em>,
+whereby the formula <em>A</em> is identified with the type <em>A</em>.
+This can be formalized in a calculus for type assignment, whose
+statements are of the form <em>t</em> : <em>A</em>. A proof of
+<em>t</em> : <em>A</em> in this system can be read as showing that
+<em>t</em> is a proof of <em>A</em>. Martin-L&ouml;f (1995; 1998) has
+put this into a philosophical perspective by distinguishing this
+two-fold sense of proof in the following way. First we have proofs of
+statements of the form <em>t</em> : <em>A</em>. These statements are
+called <em>judgements</em>, their proofs are called
+<em>demonstrations</em>. <em>Within</em> such judgements the term
+<em>t</em> represents a <em>proof</em> of the <em>proposition</em>
+<em>A</em>. A proof in the latter sense is also called a <em>proof
+object</em>. When demonstrating a judgement <em>t</em> : <em>A</em>, we
+demonstrate that <em>t</em> is a proof (object) for the proposition
+<em>A</em>. Within this two-layer system the <em>demonstration</em>
+layer is the layer of argumentation. Unlike proof objects,
+demonstrations have epistemic significance; their judgements carry
+assertoric force. The proof layer is the layer at which meanings are
+explained: The meaning of a proposition <em>A</em> is explained by
+telling what counts as a proof (object) for <em>A</em>. The distinction
+made between canonical and non-canonical proofs is a distinction at the
+propositional and not at the judgement al layer. This implies a certain
+explicitness requirement. When I have proved something, I must not
+only have a justification for my proof <em>at my disposal</em> as in
+Prawitz&rsquo;s notion of validity, but at the same time have to be
+<em>certain</em> that this justification fulfills its purpose. This
+certainty is guaranteed by a demonstration. Mathematically, this
+two-fold sense of proof develops its real power only when types may
+themselves depend on terms. Dependent types are a basic ingredient of
+of Martin-L&ouml;f&rsquo;s type theory and related approaches.</p>
+
+<p>
+
+The second idea makes Martin-L&ouml;f&rsquo;s approach strongly
+differ from all other definitions of proof-theoretic validity. The
+crucial difference, for example, to Prawitz&rsquo;s procedure is that
+it is not <em>metalinguistic</em> in character, where
+&ldquo;metalinguistic&rdquo; means that propositions and candidates of
+proofs are specified first and then, by means of a definition in the
+metalanguage, it is fixed which of them are valid and which are not.
+Rather, propositions and proofs come into play only in the context of
+demonstrations. For example, if we assume that something is a proof of
+an implication <em>A</em> &rarr; <em>B</em>, we need not necessarily
+show that both <em>A</em> and <em>B</em> are well-formed propositions
+outright, but, in addition to knowing that <em>A</em> is a proposition,
+we only need to know that <em>B</em> is a proposition <em>provided
+that</em> <em>A</em> <em>has been proved</em>. Being a proposition is
+expressed by a specific form of judgement, which is established in the
+same system of demonstration which is used to establish that a proof of
+a proposition has been achieved.</p>
+<p>
+
+In Martin-L&ouml;f&rsquo;s theory, proof-theoretic semantics
+receives a strongly ontological component. A recent debate deals with
+the question of whether proof objects have a purely ontological status
+or whether they codify knowledge, even if they are not epistemic acts
+themselves.</p>
+<em>Further Reading:</em>
+<p>
+
+For <em>inversion principles</em> see Schroeder-Heister (2007).</p>
+<p>
+
+For <em>variants of proof-theoretic harmony</em> see Francez (2015) and Schroeder-Heister (2016a). 
+
+For Prawitz&rsquo;s definition of <em>proof-theoretic validity</em>
+see Schroeder-Heister (2006).</p>
+<p>
+
+For Matin-L&ouml;f&rsquo;s <em>type theory</em>, see the entry on
+ <a href="../type-theory/index.html">type theory</a>
+as well as Sommaruga (2000).</p>
+
+<h3><a name="ClaDefDefRea">2.3 Clausal definitions and definitional reasoning</a></h3>
+
+<p>
+
+Proof-theoretic semantics normally focuses on logical constants.
+This focus is practically never questioned, apparently because it is
+considered so obvious. In proof theory, little attention has been paid
+to atomic systems, although there has been Lorenzen&rsquo;s early work
+(see section
+ <a href="#OpeLog">2.1.1</a>),
+ where the
+justification of logical rules is embedded in a theory of arbitrary
+rules, and Martin-L&ouml;f&rsquo;s (1971) theory of iterated inductive
+definitions where introduction and elimination rules for atomic
+formulas are proposed. The rise of logic programming has widened this
+perspective. From the proof-theoretic point of view, logic programming
+is a theory of atomic reasoning with respect to clausal definitions of
+atoms. Definitional reflection is an approach to proof-theoretic
+semantics that takes up this challenge and attempts to build a theory
+whose range of application goes beyond logical constants.</p>
+
+<h4><a name="ChaLogPro">2.3.1 The challenge from logic programming</a></h4>
+
+<p>
+
+In logic programming we are dealing with program clauses of the
+form</p>
+
+<blockquote>
+  <i>A</i> &lArr; <i>B</i><sub>1</sub>, &hellip;, <i>B</i><sub><i>m</i></sub>
+</blockquote>
+
+<p>
+
+which <em>define</em> atomic formulas. Such clauses can naturally be
+interpreted as describing introduction rules for atoms. From the point
+of view of proof-theoretic semantics the following two points are
+essential:</p>
+<p>
+
+(1) &nbsp;Introduction rules (clauses) for logically compound
+formulas are not distinguished in principle from introduction rules
+(clauses) for atoms. Interpreting logic programming proof-theoretically
+motivates an extension of proof-theoretic semantics to arbitrary atoms,
+which yields a semantics with a much wider realm of applications.</p>
+<p>
+
+(2) &nbsp;Program clauses are not necessarily well-founded. For
+example, the head of a clause may occur in its body. Well-founded
+programs are just a particular sort of programs. The use of arbitrary
+clauses without further requirements in logic programming is a
+motivation to pursue the same idea in proof-theoretic semantics,
+admitting just any sort of introduction rules and not just those of a
+special form, and in particular not necessarily ones which are
+well-founded. This carries the idea of definitional freedom, which is a
+cornerstone of logic programming, over to semantics, again widening the
+realm of application of proof-theoretic semantics.</p>
+<p>
+
+The idea of considering introduction rules as meaning-giving rules
+for atoms is closely related to the theory of inductive definitions in
+its general form, according to which inductive definitions are systems
+of rules (see Aczel, 1977).</p>
+
+<h4><a name="DefRef">2.3.2 Definitional reflection</a></h4>
+
+<p>
+
+The theory of definitional reflection (Halln&auml;s, 1991;
+Halln&auml;s, 2006; Halln&auml;s and Schroeder-Heister, 1990/91;
+Schroeder-Heister, 1993) takes up the challenge from logic programming
+and gives a proof-theoretic semantics not just for logical constants
+but for arbitrary expressions, for which a clausal definition can be
+given. Formally, this approach starts with a list of clauses which is
+the <em>definition</em> considered. Each clause has the form</p>
+
+<blockquote>
+ <i>A</i> &lArr; &Delta;
+</blockquote>
+
+<p>
+
+where the head <em>A</em> is an atomic formula (atom). In the
+simplest case, the body &Delta; is a list of atoms
+<em>B</em><sub>1</sub><em>,</em><em>&hellip;</em>,<em>B</em><sub><em>m</em></sub>,
+in which case a definition looks like a definite logic program. We
+often consider an extended case where &Delta; may also contain some
+structural implication &lsquo;&rArr;&rsquo;, and sometimes even some
+structural universal implication, which essentially is handled by
+restricting substitution. If the definition of <em>A</em> has the
+form</p>
+
+<blockquote>
+ <img src="fig2.1.png" alt="D_A { A &lt;= Delta_i" width="141" />
+</blockquote>
+
+<p>
+
+then <em>A</em> has the following introduction and elimination
+rules</p>
+
+<blockquote>
+
+<table cellpadding="0" cellspacing="0">
+ <tr>
+  <td style="border-bottom:1px solid black;">&Delta;<sub>1</sub></td>
+  <td rowspan="2">&nbsp;&nbsp;&middot; &middot; &middot;&nbsp;&nbsp;</td>
+  <td style="border-bottom:1px solid black;">&Delta;<sub><i>n</i></sub></td>
+ </tr>
+ <tr><td style="text-align:center;"><i>A</i></td>
+     <td style="text-align:center;"><i>A</i></td></tr>
+</table>
+
+<br />
+
+<table cellpadding="0" cellspacing="0">
+ <tr><td></td>
+     <td>[&Delta;<sub>1</sub>]</td>
+     <td></td>
+     <td>[&Delta;<sub><i>n</i></sub>]</td>
+ </tr>
+ <tr>
+   <td style="border-bottom:1px solid black;"><i>A</i>&nbsp;&nbsp;</td>
+   <td style="border-bottom:1px solid black; text-align:center;"><i>C</i></td>
+   <td style="border-bottom:1px solid black;">&nbsp;&middot; &middot; &middot;&nbsp;</td>
+   <td style="border-bottom:1px solid black; text-align:center;"><i>C</i></td></tr>
+ <tr>
+   <td colspan="4" style="text-align:center;"><i>C</i></td>
+ </tr>    
+</table>
+
+</blockquote>
+
+<p>
+
+The introduction rules, also called rules of <em>definitional
+closure</em>, express reasoning &lsquo;along&rsquo; the clauses. The
+elimination rule is called the <em>principle of definitional
+reflection</em>, as it reflects upon the definition as a whole. If
+&Delta;<sub>1</sub><em>,</em><em>&hellip;</em><em>,</em>
+&Delta;<sub><em>n</em></sub> exhaust <em>all possible conditions</em>
+to generate <em>A</em> according to the given definition, and if each
+of these conditions entails the very same conclusion <em>C</em>, then
+<em>A</em> itself entails this conclusion. If the clausal definition 
+is viewed as an inductive definition, this principle can be viewed as
+expressing the extremal clause in inductive definitions: Nothing else
+beyond the clauses given defines <em>A</em>. Obviously, definitional
+reflection is a generalized form of the inversion principles discussed.
+It develops its genuine power in definitional contexts with free
+variables that go beyond purely propositional reasoning, and in
+contexts which are not well-founded. An example of a non-wellfounded
+definition is the definition of an atom <em>R</em> by its own
+negation:</p>
+
+<blockquote>
+ <img src="fig2.6.png" alt="D_R { R&lt;= (R =&gt; _|_)" width="159" />
+</blockquote>
+
+<p>
+
+This example is discussed in detail in the</p>
+
+<blockquote>
+ <a href="definitional-reflection.html">Supplement on Definitional reflection and paradoxes</a>.
+</blockquote>
+
+<em>Further Reading:</em>
+<p>
+
+For <em>non-wellfoundedness</em> and <em>paradoxes</em> see the entries
+on
+ <a href="../self-reference/index.html">self-reference</a> and
+ <a href="../russell-paradox/index.html">Russell&rsquo;s paradox</a>,
+as well as the references quoted in the supplement linked to.</p>
+
+<h3><a name="StrChaLogCon">2.4 Structural characterization of logical constants</a></h3>
+
+<p>
+
+There is a large field of ideas and results concerning what might be
+called the &ldquo;structural characterization&rdquo; of logical
+constants, where &ldquo;structural&rdquo; is here meant both in the
+proof-theoretic sense of &ldquo;structural rules&rdquo; and in the
+sense of a framework that bears a certain structure, where this
+framework is again proof-theoretically described. Some of its authors
+use a semantical vocabulary and at least implicitly suggest that their
+topic belongs to proof-theoretic semantics. Others explicitly deny
+these connotations, emphasizing that they are interested in a
+characterization which establishes the logicality of a constant. The
+question &ldquo;What is a logical constant?&rdquo; can be answered in
+proof-theoretic terms, even if the semantics of the constants
+themselves is truth-conditional: Namely by requiring that the (perhaps
+truth-conditionally defined) constants show a certain inferential
+behaviour that can be described in proof-theoretic terms. However, as
+some of the authors consider their characterization at the same time as
+a semantics, it is appropriate that we mention some of these approaches
+here.</p>
+<p>
+
+The most outspoken structuralist with respect to logical constants,
+who explicitly understands himself as such, is Koslow. In his
+<em>Structuralist Theory of Logic</em> (1992) he develops a theory of
+logical constants, in which he characterizes them by certain
+&ldquo;implication relations&rdquo;, where an implication relation
+roughly corresponds to a finite consequence relation in Tarski&rsquo;s
+sense (which again can be described by certain structural rules of a
+sequent-style system). Koslow develops a structural theory in the
+precise metamathematical sense, which does not specify the domain of
+objects in any way beyond the axioms given. If a language or any other
+domain of objects equipped with an implication relation is given, the
+structural approach can be used to single out logical compounds by
+checking their implicational properties.</p>
+<p>
+
+In his early papers on the foundations of logic, Popper (1947a;
+1947b) gives inferential characterizations of logical constants in
+proof-theoretic terms. He uses a calculus of sequents and characterizes
+logical constants by certain derivability conditions of such sequents.
+His terminology clearly suggests that he intends a proof-theoretic
+semantics of logical constants, as he speaks of &ldquo;inferential
+definitions&rdquo; and the &ldquo;trivialization of mathematical
+logic&rdquo; achieved by defining constants in the way described.
+Although his presentation is not free from conceptual imprecision and
+errors, he was the first to consider the sequent-style inferential
+behaviour of logical constants to characterize them. This is all the
+more remarkable as he was probably not at all, and definitely not fully
+aware of Gentzen&rsquo;s sequent calculus and Gentzen&rsquo;s further
+achievements (he was in correspondence with Bernays, though). However,
+against his own opinion, his work can better be understood as an
+attempt to define the logicality of constants and to structurally
+characterize them, than as a proof-theoretic semantics in the genuine
+sense. He nevertheless anticipated many ideas now common in
+proof-theoretic semantics, such as the characterization of logical
+constants by means of certain minimality or maximality conditions with
+respect to introduction or elimination rules.</p>
+
+<p>
+
+Important contributions to the logicality debate that characterize
+logical constants inferentially in terms of sequent calculus rules are
+those by Kneale (1956) and Hacking (1979). A thorough account of
+logicality is proposed by Do&scaron;en (1980; 1989) in
+his theory of logical constants as &ldquo;punctuation marks&rdquo;,
+expressing structural features at the logical level. He understands
+logical constants as being characterized by certain double-line rules
+for sequents which can be read in both directions. For example,
+conjunction and disjunction are (in classical logic, with
+multiple-formulae succedents) characterized by the double-line
+rules</p>
+
+<blockquote>
+<table style="border-spacing:0px;">
+<tr>
+<td>
+  <table style="border-spacing:0px;"> 
+  <tr> 
+  <td style="padding:0px;border-bottom:double;text-align:center;">&Gamma;&#8866;<i>A</i>, &Delta; &nbsp;&nbsp;&nbsp; &Gamma;&#8866;<i>B</i>, &Delta;</td> 
+  </tr> 
+
+  <tr> 
+  <td style="padding:0px; text-align:center;">&Gamma;&#8866; <i>A</i>&and;<i>B</i>, &Delta;</td>
+  </tr>
+  </table>
+</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+  <table style="border-spacing:0px;"> 
+  <tr> 
+  <td style="padding:0px;border-bottom:double;text-align:center;">&Gamma;, <i>A</i>&#8866; &Delta; &nbsp;&nbsp;&nbsp; &Gamma;, <i>B</i>&#8866; &Delta;</td> 
+  </tr> 
+
+  <tr> 
+  <td style="padding:0px; text-align:center;">&Gamma;&#8866; <i>A</i>&or;<i>B</i>, &Delta;</td>
+  </tr>
+  </table>
+</td></tr>
+</table>
+
+</blockquote>
+
+<p>
+
+Do&scaron;en is able to give characterizations which include systems
+of modal logic. He explicitly considers his work as a contribution to
+the logicality debate and not to any conception of proof-theoretic
+semantics. Sambin et al., in their Basic Logic (Sambin, Battilotti, and
+Faggian, 2000), explicitly understand what Do&scaron;en calls
+double-line rules as fundamental meaning giving rules. The double-line
+rules for conjunction and disjunction are read as implicit definitions
+of these constants, which by some procedure can be turned into the
+explicit sequent-style rules we are used to. So Sambin et al. use the
+same starting point as Do&scaron;en, but interpret it not as a
+structural description of the behaviour of constants, but semantically
+as their implicit definition (see Schroeder-Heister, 2013).</p>
+<p>
+
+There are several other approaches to a uniform proof-theoretic
+characterization of logical constants, all of whom at least touch upon
+issues of proof-theoretic semantics. Such theories are Belnap&rsquo;s
+Display Logic (Belnap, 1982), Wansing&rsquo;s Logic of Information
+Structures (Wansing, 1993b), generic proof editing systems and their
+implementations such as the Edinburgh logical framework (Harper,
+Honsell, and Plotkin, 1987) and many successors which allow the
+specification of a variety of logical systems. Since the rise of linear
+and, more generally, substructural logics (Di Cosmo and Miller, 2010;
+Restall, 2009) there are various approaches dealing with logics that
+differ with respect to restrictions on their structural rules. A
+recent movement away from singling out a particular logic as the true
+one towards a more pluralist stance (see, e.g., Beall and Restall,
+2006) which is interested in what different logics have in common
+without any preference for a particular logic can be seen as a shift
+away from semantical justification towards structural
+characterization.</p>
+
+<h3><a name="CatProThe">2.5 Categorial proof theory</a></h3>
+
+<p>
+
+
+There is a considerable literature on category theory in relation to
+proof theory, and, following seminal work by Lawvere, Lambek and others
+(see Lambek and Scott, 1986, and the references therein), category
+itself can be viewed as a kind of abstract proof theory. If one looks
+at an arrow <em>A</em> &rarr; <em>B</em> in a category as a kind of
+abstract proof of <em>B</em> from <em>A</em>, we have a representation
+which goes beyond pure derivability of <em>B</em> from <em>A</em> (as
+the arrow has its individuality), but does not deal with the particular
+syntactic structure of this proof. For intuitionistic systems,
+proof-theoretic semantics in categorial form comes probably closest to
+what denotational semantics is in the classical case.</p>
+
+<p>
+
+One of the most highly developed approaches to categorial proof theory is due to Do&scaron;en. He has not only advanced the application of categorial methods in proofs theory (e.g., Do&scaron;en and Petri&#263;, 2004), but also shown how proof-theoretic methods can be used in category theory itself (Do&scaron;en, 2000). Most important for categorial logic in relation to proof-theoretic semantics is that in categorial logic, arrows always come together with an identity relation, which in proof-theory corresponds to the identity of proofs. In this way, ideas and results of categorial proof theory pertain to what may be called intensional proof-theoretic semantics, that is, the study of proofs as entities in their own right, not just as vehicles to establish consequences (Do&scaron;en, 2006, 2016). Another feature of categorial proof-theory is that it is inherently hypothetical in character, which means that it starts from hypothetical entities. It this way it overcomes a paradigm of standard, in particular validity-based, proof-theoretic semantics (see section 3.6 below).</p>
+
+<p>
+<em>Further Reading:</em></p>
+
+<p>
+
+For <em>Popper&rsquo;s theory of logical constants</em> see
+Schroeder-Heister (2005).</p>
+
+<p>
+
+For <em>logical constants</em> and their <em>logicality</em> see the
+entry on
+ <a href="../logical-constants/index.html">logical constants</a>.</p>
+
+<p>
+
+For <em>categorial approaches</em> see  the entry on
+ <a href="../category-theory/index.html">category theory</a>.</p>
+
+<h2><a name="ExtAltStaProTheSem">3. Extensions and alternatives to standard proof-theoretic semantics</a></h2>
+
+<h3><a name="EliRulBas">3.1 Elimination rules as basic</a></h3>
+
+<p>
+
+Most approaches to proof-theoretic semantics consider introduction
+rules as basic, meaning giving, or self-justifying, whereas the
+elimination inferences are justified as valid with respect to the given
+introduction rules. This conception has at least three roots: The first
+is a verificationist theory of meaning according to which the
+assertibility conditions of a sentence constitute its meaning. The
+second is the idea that we must distinguish between what gives the
+meaning and what are the consequences of this meaning, as not all
+inferential knowledge can consist of applications of definitions. The
+third one is the primacy of assertion over other speech acts such as
+assuming or denying, which is implicit in all approaches considered so
+far.</p>
+<p>
+
+One might investigate how far one gets by considering elimination
+rules rather than introduction rules as a basis of proof-theoretic
+semantics. Some ideas towards a proof-theoretic semantics based on
+elimination rather than introduction rules have been sketched by
+Dummett (1991, Ch. 13), albeit in a very rudimentary form. A more
+precise definition of validity based on elimination inferences is due
+to Prawitz (1971; 2007; see also Schroeder-Heister 2015). Its essential idea is that a closed proof is
+considered valid, if the result of applying an elimination rule to its
+end formula is a valid proof or reduces to one. For example, a closed
+proof of an implication <em>A</em> &rarr; <em>B</em> is valid, if, for
+any given closed proof of <em>A</em>, the result of applying modus
+ponens</p>
+
+<blockquote>
+<table style="border-spacing:0px;">
+  <tr><td style="padding:0px; border-bottom:1px solid black"><i>A</i> &rarr; <i>B</i>&nbsp;&nbsp;&nbsp;<i>A</i></td></tr>
+  <tr><td style="padding:0px; text-align:center;"><i>B</i></td></tr>
+</table>
+
+</blockquote>
+
+<p>
+
+to these two proofs is a valid proof of <em>B</em>, or reduces to
+such a proof. This conception keeps two of the three basic ingredients
+of Prawitz-style proof-theoretic semantics (see section
+ <a href="#ProTheVal">2.2.2</a>):
+ the role of proof reduction and the
+substitutional view of assumptions. Only the canonicity of proofs
+ending with introductions is changed into the canonicity of proofs
+ending with eliminations.</p>
+
+<h3><a name="NegDen">3.2 Negation and denial</a></h3>
+
+<p>
+
+Standard proof-theoretic semantics is assertion-centred in that
+assertibility conditions determine the meaning of logical constants.
+Corresponding to the intuitionistic way of proceeding, the negation
+&not;<em>A</em> of a formula <em>A</em> is normally understood as
+implying absurdity <em>A</em> &rarr;&perp;, where &perp;&nbsp;is a
+constant which cannot be asserted, i.e., for which no assertibility
+condition is defined. This is an &lsquo;indirect&rsquo; way of
+understanding negation. In the literature there has been the discussion
+of what, following von Kutschera (1969), might be called
+&lsquo;direct&rsquo; negation. By that one understands a one-place
+primitive operator of negation, which cannot be, or at least is not,
+reduced to implying absurdity. It is not classical negation either. It
+rather obeys rules which dualize the usual rules for the logical
+constants. Sometimes it is called the &ldquo;denial&rdquo; of a
+sentence, sometimes also &ldquo;strong negation&rdquo; (see Odintsov,
+2008). Typical rules for the denial ~<em>A</em> of <em>A</em> are</p>
+
+<blockquote>
+<table style="border-spacing:0px;">
+  <tr>
+   <td style="padding:0px; border-bottom:1px solid black">~<i>A</i>&nbsp;&nbsp;&nbsp;~<i>B</i></td>
+   <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   <td style="padding:0px; border-bottom:1px solid black; text-align:center;">~<i>A</i></td>
+   <td>&nbsp;&nbsp;&nbsp;</td>
+   <td style="padding:0px; border-bottom:1px solid black; text-align:center;">~<i>B</i></td>
+  </tr>
+  <tr>
+   <td style="padding:0px; text-align:center;">~(<i>A</i>&or;<i>B</i>)</td>
+   <td></td>
+   <td style="padding:0px; text-align:center;">~(<i>A</i>&and;<i>B</i>)</td>
+   <td></td>
+   <td style="padding:0px; text-align:center;">~(<i>A</i>&and;<i>B</i>)</td>
+  </tr>
+</table>
+
+</blockquote>
+
+<p>
+
+Essentially, the denial rules for an operator correspond to the
+assertion rules for the dual operator. Several logics of denial have
+been investigated, in particular Nelson&rsquo;s logics of
+&ldquo;constructible falsity&rdquo; motivated first by Nelson (1949)
+with respect to a certain realizability semantics. The main focus has
+been on his systems later called N3 and N4 which differ with respect to
+the treatment of contradiction (N4 is N3 without <em>ex contradictione
+quodlibet</em>). Using denial any approach to proof-theoretic semantics
+can be dualized by just exchanging assertion and denial and turning
+from logical constants to their duals. In doing so, one obtains a
+system based on refutation (= proof of denial) rather than proof. It
+can be understood as applying a Popperian view to proof-theoretic
+semantics.</p>
+<p>
+
+Another approach would be to not just dualize assertion-centered
+proof-theoretic semantics in favour of a denial-centered
+refutation-theoretic semantics, but to see the relation between rules
+for assertion and for denial as governed by an inversion principle or
+principle of definitional reflection of its own. This would be a
+principle of what might be called
+&ldquo;assertion-denial-harmony&rdquo;. Whereas in standard
+proof-theoretic semantics, inversion principles control the
+relationship between assertions and assumptions (or consequences), such
+a principle would now govern the relationship between assertion and
+denial. Given certain defining conditions of <em>A</em>, it would say
+that the denial of every defining condition of <em>A</em> leads to the
+denial of <em>A</em> itself. For conjunction and disjunction it leads
+to the common pairs of assertion and denial rules</p>
+
+<blockquote>
+
+<table style="border-spacing:0px;">
+  <tr>
+   <td style="padding:0px; border-bottom:1px solid black; text-align:center;"><i>A</i></td>
+   <td>&nbsp;&nbsp;&nbsp;</td>
+   <td style="padding:0px; border-bottom:1px solid black; text-align:center;"><i>B</i></td>
+   <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   <td style="padding:0px; border-bottom:1px solid black; text-align:center;">~<i>A</i>&nbsp;&nbsp;&nbsp;~<i>B</i></td>
+  </tr>
+  <tr>
+   <td style="padding:0px; text-align:center;"><i>A</i>&or;<i>B</i></td>
+   <td></td>
+   <td style="padding:0px; text-align:center;"><i>A</i>&or;<i>B</i></td>
+   <td></td>
+   <td style="padding:0px; text-align:center;">~(<i>A</i>&or;<i>B</i>)</td>
+  </tr>
+</table>
+
+<br />
+
+<table style="border-spacing:0px;">
+  <tr>
+   <td style="padding:0px; border-bottom:1px solid black; text-align:center;"><i>A</i>&nbsp;&nbsp;&nbsp;<i>B</i></td>
+   <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   <td style="padding:0px; border-bottom:1px solid black; text-align:center;">~<i>A</i></td>
+   <td>&nbsp;&nbsp;&nbsp;</td>
+   <td style="padding:0px; border-bottom:1px solid black; text-align:center;">~<i>B</i></td>
+  </tr>
+  <tr>
+   <td style="padding:0px; text-align:center;"><i>A</i>&and;<i>B</i></td>
+   <td></td>
+   <td style="padding:0px; text-align:center;">~(<i>A</i>&and;<i>B</i>)</td>
+   <td></td>
+   <td style="padding:0px; text-align:center;">~(<i>A</i>&and;<i>B</i>)</td>
+  </tr>
+</table>
+
+</blockquote>
+
+<p>
+
+This idea can easily be generalized to definitional reflection,
+yielding a reasoning system in which assertion and denial are
+intertwined. It has parallels to the deductive relations between the
+forms of judgement studied in the traditional square of opposition
+(Schroeder-Heister, 2012a; Zeilberger, 2008). It should be emphasized
+that the denial operator is here an external sign indicating a form of
+judgement and not as a logical operator. This means in particular that
+it cannot be iterated.</p>
+
+<h3><a name="HarRefSeqCal">3.3 Harmony and reflection in the sequent calculus</a></h3>
+
+<p>
+
+Gentzen&rsquo;s sequent calculus exhibits a symmetry between right
+and left introduction rules which suggest to look for a harmony
+principle that makes this symmetry significant to proof-theoretic
+semantics. At least three lines have been pursued to deal with this
+phenomenon. (i) Either the right-introduction or or the
+left-introduction rules are considered to be introduction rules. The
+opposite rules (left-introductions and right-introductions,
+respectively) are then justified using the corresponding elimination
+rules. This means that the methods discussed before are applied to
+whole sequents rather than formulas within sequents. Unlike these
+formulas, the sequents are not logically structured. Therefore this
+approach builds on definitional reflection, which applies harmony and
+inversion to rules for arbitrarily structured entities rather than for
+logical composites only. It has been pursued by de Campos Sanz and
+Piecha (2009). (ii) The right- and left-introduction rules are derived
+from a characterization in the sense of Do&scaron;en&rsquo;s double
+line rules (section
+ <a href="#StrChaLogCon">2.4</a>),
+ which is then read
+as a definition of some sort. The top-down direction of a double-line
+rule is already a right- or a left-introduction rule. The other one can
+be derived from the bottom-up direction by means of certain principles.
+This is the basic meaning-theoretic ingredient of Sambin et al.&rsquo;s
+<em>Basic Logic</em> (Sambin, Battilotti, and Faggian, 2000). (iii) The
+right- and left-introduction rules are seen as expressing an
+interaction between sequents using the rule of cut. Given either the
+right- or the left-rules, the complementary rules express that
+everything that interacts with its premisses in a certain way so does
+with its conclusion. This idea of interaction is a generalized
+symmetric principle of definitional reflection. It can be considered to
+be a generalization of the inversion principle, using the notion of
+interaction rather than the derivability of consequences (see
+Schroeder-Heister, 2013). All three approaches apply to the sequent
+calculus in its classical form, with possibly more than one formula in
+the succedent of a sequent, including structurally restricted versions
+as investigated in linear and other logics.</p>
+
+<h3><a name="SubStrNatLan">3.4 Subatomic structure and natural language</a></h3>
+
+<p>
+
+Even if, as in definitional reflection, we are considering
+definitional rules for atoms, their defining conditions do not normally
+decompose these atoms. A proof-theoretic approach that takes the
+internal structure of atomic sentences into account, has been proposed
+by Wieckowski (2008; 2011; 2016). He uses introduction and elimination rules
+for atomic sentences, where these atomic sentences are not just reduced
+to other atomic sentences, but to subatomic expressions representing
+the meaning of predicates and individual names. This can be seen as a
+first step towards natural language applications of proof-theoretic
+semantics. A further step in this direction has been undertaken by
+Francez, who developed a proof-theoretic semantics for several
+fragments of English (see Francez, Dyckhoff, and Ben-Avi, 2010; Francez
+and Dyckhoff, 2010, Francez and Ben-Avi 2015).</p>
+
+<h3><a name="ClaLog">3.5 Classical logic</a></h3>
+
+<p>
+
+Proof-theoretic semantics is intuitionistically biased. This is due
+to the fact that natural deduction as its preferred framework has
+certain features which make it particularly suited for intuitionistic
+logic. In classical natural deduction the <em>ex falso
+quodlibet</em></p>
+
+<blockquote>
+<table style="border-spacing:0px;">
+  <tr><td style="padding:0px; border-bottom:1px solid black">&perp;</td></tr>
+  <tr><td style="padding:0px; text-align:center;"><i>A</i></td></tr>
+</table>
+
+</blockquote>
+
+<p>
+
+is replaced with the rule of <em>classical reductio ad
+absurdum</em></p>
+
+<blockquote>
+<table style="border-spacing:0px;">
+  <tr><td colspan="3">[<i>A</i> &rarr; &perp;]</td></tr>
+  <tr><td>
+
+<table style="border-spacing:0px; margin:auto;">
+  <tr><td style="padding:0px; border-bottom:1px solid black">&perp;</td></tr>
+  <tr><td style="padding:0px; text-align:center;"><i>A</i></td></tr>
+</table>
+
+  </td></tr>
+</table>
+
+</blockquote>
+
+<p>
+
+In allowing to discharge <em>A</em> &rarr;&perp; in order to infer
+<em>A</em>, this rule undermines the <em>subformula principle</em>.
+Furthermore, in containing both &perp;&nbsp;and <em>A</em>
+&rarr;&perp;, it refers to two different logical constants in a single
+rule, so there is no <em>separation</em> of logical constants any more.
+Finally, as an elimination rule for &perp;&nbsp;it does not follow the
+general pattern of introductions and eliminations. As a consequence, it
+destroys the <em>introduction form property</em> that every closed
+derivation can be reduced to one which uses an introduction rule in the
+last step.</p>
+<p>
+
+Classical logic fits very well with the multiple-succedent sequent
+calculus. There we do not need any additional principles beyond those
+assumed in the intuitionistic case. Just the structural feature of
+allowing for more than one formula in the succedent suffices to obtain
+classical logic. As there are plausible approaches to establish a
+harmony between right-introductions and left-introduction in the
+sequent calculus (see  section
+ <a href="#HarRefSeqCal">3.3</a>),
+ classical logic appears to be perfectly
+justified. However, this is only convincing if reasoning is
+appropriately framed as a multiple-conclusion process, even if this
+does not correspond to our standard practice where we focus on single
+conclusions. One could try to develop an appropriate intuition by
+arguing that reasoning towards multiple conclusions delineates the area
+in which truth lies rather than establishing a single proposition as
+true. However, this intuition is hard to maintain and cannot be
+formally captured without serious difficulties. Philosophical
+approaches such as those by Shoesmith and Smiley (1978) and
+proof-theoretic approaches such as proof-nets (see Girard, 1987; Di
+Cosmo and Miller, 2010) are attempts in this direction.</p>
+<p>
+
+A fundamental reason for the failure of the introduction form
+property in classical logic is the indeterminism inherent in the laws
+for disjunction. <em>A</em>&or;<em>B</em> can be inferred from 
+<em>A</em> as well as from <em>B</em>. Therefore, if the disjunction laws were the
+only way of inferring <em>A</em>&or;<em>B</em>, the derivability of
+<em>A</em>&or;&not;<em>A</em>, which is a key principle of classical
+logic, would entail that of either <em>A</em> or of &not;<em>A</em>,
+which is absurd. A way out of this difficulty is to abolish
+indeterministic disjunction and use instead its classical de Morgan
+equivalent &not;(&not;<em>A</em> &and;&not;<em>B</em>). This leads
+essentially to a logic without proper disjunction. In the quantifier
+case, there would be no proper existential quantifier either, as
+&exist;<em>xA</em> would be understood in the sense of
+&not;&forall;<em>x</em>&not;<em>A</em>. If one is prepared to accept
+this restriction, then certain harmony principles can be formulated for
+classical logic.</p>
+
+<h3><a name="HypRea">3.6 Hypothetical reasoning</a></h3>
+
+<p>
+
+Standard approaches to proof-theoretic semantics, especially Prawitz&rsquo;s
+validity-based approach (section 2.2.2), take closed derivations as
+basic. The validity of open derivations is defined as the transmission
+of validity from closed derivations of the assumptions to a closed
+derivation of the assertion, where the latter is obtained by
+substituting a closed derivation for an open assumption. Therefore, if
+one calls closed derivations &lsquo;categorical&rsquo; and open derivations
+&lsquo;hypothetical&rsquo;, one may characterize this approach as following two
+fundamental ideas: (I) The primacy of the categorical over the
+hypothetical, (II) the transmission view of consequence.  These two
+assumptions (I) and (II) may be viewed as dogmas of standard semantics
+(see Schroeder-Heister 2012c). &ldquo;Standard semantics&rdquo; here not only
+means standard proof-theoretic semantics, but also classical
+model-theoretic semantics, where these dogmas are assumed as
+well. There one starts with the definition of truth, which is the
+categorical concept, and defines consequence, the hypothetical
+concept, as the transmission of truth from conditions to
+consequent. From this point of view, constructive semantics, including
+proof-theoretic semantics, exchange the concept of truth with a
+concept of construction or proof, and interpret &ldquo;transmission&rdquo; in
+terms of a constructive function or procedure, but otherwise leave the
+framework untouched.</p>
+
+<p>
+
+There is nothing wrong in principle with these dogmas. However, there
+are phenomena that are difficult to deal with in the standard
+framework. Such a phenomenon is non-wellfoundedness, especially
+circularity, where we may have consequences without transmission of
+truth and provability. Another phenomenon are substructural
+distinctions, where it is crucial to include the structuring of
+assumptions from the very beginning. Moreover, and this is most
+crucial, we might define things in a certain way without knowing in
+advance of whether our definition or chain of definitions is
+well-founded or not. We do not first involve ourselves into the
+metalinguistic study of the definition we start with, but would like
+to start to reason immediately. This problem does not obtain if we
+restrict ourselves to the case of logical constants, where the
+defining rules are trivially well-founded.  But the problem arises
+immediately, when we consider more complicated cases that go beyond
+logical constants.</p>
+
+<p>
+
+This makes it worthwhile to proceed in the other direction and start with the hypothetical concept of consequence, i.e., characterize consequence directly without reducing
+it to the categorical case. Philosophically this means that the categorical concept is a
+limiting concept of the hypothetical one. In the classical case, truth would be a limiting case of consequence, namely consequence without hypotheses. This program is closely related to the approach of categorial proof theory (section 2.5), which is based on the primacy of hypothetical entities (&ldquo;arrows&rdquo;). Formally, it would give preference to the sequent calculus over natural deduction, since the sequent calculus  allows the manipulation of the assumption side of a sequence by means of left-introduction rules. </p>
+
+<h3><a name="IntProTheSem">3.7 Intensional proof-theoretic semantics</a></h3>
+
+As mentioned in the first section (1.1), proof-theoretic semantics is intensional in spirit, as it is interested in proofs and not just provability. For proof-theoretic semantics it is not only relevant, whether <em>B</em> follows from <em>A</em>, but also, in which way we can establish that <em>B</em> follows from <em>A</em>. In other words, the identity of proofs is an important issue. 
+However, though this is prima facie obvious and proof-theoretic semanticists would normally agree with this abstract claim, the practice in proof-theoretic semantics is often different, and the topic of the identity of proofs is a much neglected topic. It very frequently happens that rules which are equally powerful are identified. For example, when principles of harmony are discussed, and one considers the standard introduction rule for conjunction 
+
+<blockquote>
+<table style="border-spacing:0px;">
+  <tr><td style="padding:0px; border-bottom:1px solid black"><i>A</i> &nbsp;&nbsp;&nbsp;<i>B</i></td></tr>
+  <tr><td style="padding:0px; text-align:center;"><i>A</i>&and;<i>B</i></td></tr>
+</table>
+
+</blockquote>
+
+many proof-theoretic semanticists would consider it irrelevant whether one chooses the pair of projections 
+
+<blockquote>
+<table style="border-spacing:0px;">
+  <tr>
+   <td style="padding:0px; border-bottom:1px solid black"><i>A</i>&and;<i>B</i></td>
+   <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   <td style="padding:0px; border-bottom:1px solid black; text-align:center;"><i>A</i>&and;<i>B</i></td>
+   <td>&nbsp;&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+   <td style="padding:0px; text-align:center;"><i>A</i></td>
+   <td></td>
+   <td style="padding:0px; text-align:center;"><i>B</i></td>
+   <td></td>
+  </tr>
+</table>
+
+</blockquote>
+
+<p>
+
+or the pair</p>
+
+<blockquote>
+<table style="border-spacing:0px;">
+  <tr>
+   <td style="padding:0px; border-bottom:1px solid black"><i>A</i>&and;<i>B</i></td>
+   <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+   <td style="padding:0px; border-bottom:1px solid black; text-align:center;"><i>A</i>&and;<i>B</i>&nbsp;&nbsp;<i>A</i></td>
+   <td>&nbsp;&nbsp;&nbsp;</td>
+  </tr>
+  <tr>
+   <td style="padding:0px; text-align:center;"><i>A</i></td>
+   <td></td>
+   <td style="padding:0px; text-align:center;"><i>B</i></td>
+   <td></td>
+  </tr>
+</table>
+
+</blockquote>
+
+<p>
+
+as the elimination rules for conjunction. The second pair of rules would often be considered to be just a more complicated variant of the pair of projections. However, from an intensional point of view, these two pairs of rules are not identical. Identifying them corresponds to identifying <em>A</em> &and; <em>B</em> and <em>A</em> &and; (<em>A</em> &rarr; <em>B</em>), which is only extensionally, but not intensionally correct. As Do&scaron;en has frequently argued (e.g., Do&scaron;en 1997, 2006), formulas such as <em>A</em> &and; <em>B</em> and <em>A</em> &and; (<em>A</em> &rarr; <em>B</em>) are equivalent, but not isomorphic. Here &ldquo;isomorphic&rdquo; means that when proving one formula from the other and vice versa, we obtain, by combining these two proofs, the identity proof. This is not the case in this example. </p>
+
+<p> Pursuing this idea leads to principles of harmony and inversion which are different from the the standard ones. As harmony and inversion lie at the heart of proof-theoretic semantics, many of its issues are touched. Taking the topic of intensionality seriously may reshape many fields of proof-theoretic semantics. And since the identity of proofs is a basic topic of categorial proof theory, the latter will need to receive stronger attention in proof-theoretic semantics than is currently the case. </p>
+
+<p>
+
+<em>Further Reading</em></p>
+
+<p>
+
+For <em>negation and denial</em> see Tranchini (2012b); Wansing
+(2001).</p>
+
+<p>
+
+For <em>natural language semantics</em> see 
+ Francez (2015).</p>
+
+<p>
+
+For <em>classical logic</em> see the entry on
+ <a href="../logic-classical/index.html">classical logic</a>.</p>
+
+<p>
+
+For <em>hypothetical reasoning</em> and <em>intensional proof theoretic semantics</em> see 
+ Do&scaron;en (2003, 2016) and Schroeder-Heister (2016a).</p>
+
+<h2><a name="ConOut">4. Conclusion and outlook</a></h2>
+
+<p>
+
+Standard proof-theoretic semantics has practically exclusively been
+occupied with logical constants. Logical constants play a central role
+in reasoning and inference, but are definitely not the exclusive, and
+perhaps not even the most typical sort of entities that can be defined
+inferentially. A framework is needed that deals with inferential
+definitions in a wider sense and covers both logical and extra-logical
+inferential definitions alike. The idea of definitional reflection with
+respect to arbitrary definitional rules (see
+ <a href="#DefRef">2.3.2</a>)
+ and also natural language applications
+ (see
+ <a href="#SubStrNatLan">3.4</a>)
+ point in this direction, but farther
+reaching conceptions can be imagined. Furthermore, the concentration on
+harmony, inversion principles, definitional reflection and the like is
+somewhat misleading, as it might suggest that proof-theoretic semantics
+consists of only that. It should be emphasized that already when it
+comes to arithmetic, stronger principles are needed in addition to
+inversion. However, in spite of these limitations, proof-theoretic
+semantics has already gained very substantial achievements that can
+compete with more widespread approaches to semantics.</p>
+
+</div>
+
+<div id="bibliography">
+
+<h2><a name="Bib">Bibliography</a></h2>
+
+<ul class="hanging">
+
+<li>Aczel, Peter (1977). &ldquo;An Introduction to Inductive
+Definitions&rdquo;, in <em>Handbook of Mathematical Logic</em>,
+John Barwise (ed.), Amsterdam: North-Holland, pp. 739&ndash;782.</li>
+
+<li>Beall, J.C. and Greg Restall (2006). <em>Logical Pluralism</em>,
+Oxford: Oxford University Press.</li>
+
+<li>Belnap, Nuel D. (1982). &ldquo;Display Logic&rdquo;, <em>Journal
+of Philosophical Logic</em>, 11: 375&ndash;417.</li>
+
+<li>Brandom, Robert B. (2000). <em>Articulating Reasons: An Introduction
+to Inferentialism</em>, Cambridge Mass.: Harvard University Press.</li>
+
+<li>de Campos Sanz, Wagner and Thomas Piecha (2009). &ldquo;Inversion by
+Definitional Reflection and the Admissibility of Logical Rules&rdquo;,
+<em>Review of Symbolic Logic</em>, 2: 550&ndash;569.</li>
+
+<li>&ndash;&ndash;&ndash;, Thomas Piecha and Peter Schroeder-Heister (2014). &ldquo;Constructive semantics, admissibility
+of rules and the validity of Peirce&rsquo;s law&rdquo;,
+<em>Logic Journal of the IGPL</em>, 22: 297&ndash;308.</li>
+
+
+<li>de Groote, Philippe, ed. (1995). <em>The Curry-Howard
+Isomorphism</em>, Volume 8 of <em>Cahiers du Centre de Logique</em>, 
+Academia-Bruyland.</li>
+
+<li>Di Cosmo, Roberto and Dale Miller (2010). &ldquo;Linear
+Logic&rdquo;, <em>The Stanford Encyclopedia of Philosophy</em>
+(Fall 2010 Edition), Edward N. Zalta (ed.), URL = 
+&lt;<a href="https://plato.stanford.edu/archives/fall2010/entries/logic-linear/">https://plato.stanford.edu/archives/fall2010/entries/logic-linear/</a>&gt;</li>
+
+<li>Do&scaron;en, Kosta (1980). <em>Logical Constants: An Essay in
+Proof Theory</em>, D. Phil. Thesis, Philosophy Department, Oxford
+University.</li>
+
+<li>&ndash;&ndash;&ndash; (1989). &ldquo;Logical Constants as Punctuation
+Marks&rdquo;, <em>Notre Dame Journal of Formal Logic</em>, 30:
+362&ndash;381.</li>
+
+<li>&ndash;&ndash;&ndash; (1997). &ldquo;Logical Consequence: A Turn in Style&rdquo;, in: Dalla Chiara,M.L., K. Doets, D. Mundici,
+J. van Benthem (eds.), <em>Logic and Scientific Methods: Volume One of the Tenth International
+Congress of Logic, Methodology and Philosophy of Science, Florence, August 1995</em>, Dordrecht: Kluwer,  
+289&ndash;311.</li>
+
+<li>&ndash;&ndash;&ndash; (2000). <em>Cut Elimination in Categories</em>, Berlin: Springer.</li>
+
+<li>&ndash;&ndash;&ndash; (2003). &ldquo;Identity of proofs based on normalization and generality&rdquo;, <em>Bulletin of Symbolic Logic</em>, 9:
+477&ndash;503.</li>
+
+<li>&ndash;&ndash;&ndash; (2006). &ldquo;Models of deduction&rdquo;, in: Kahle and Schroeder-Heister, eds. (2006), pp. 
+639&ndash;657.</li>
+
+<li>&ndash;&ndash;&ndash; (2016). &ldquo;On the paths of categories&rdquo;, in: Piecha and Schroeder-Heister, eds. (2016b), pp. 
+65&ndash;77.</li>
+
+<li>&ndash;&ndash;&ndash; and Zoran Petri&#263; (2004). <em>Proof-Theoretical Coherence</em>, London: College Publications.</li>
+
+<li>Dummett, Michael (1991). <em>The Logical Basis of Metaphysics</em>,
+London: Duckworth.</li>
+
+<li>Francez, Nissim (2015). <em>Proof-theoretic Semantics</em>,
+London: College Publications.</li>
+
+<li>&ndash;&ndash;&ndash; and Gilad Ben-Avi (2015). &ldquo;A proof-theoretic reconstruction of generalized quantifiers&rdquo;, <em>Journal of Semantics</em>, 32: 313&ndash;371.</li>
+
+<li>&ndash;&ndash;&ndash; and Roy Dyckhoff (2010). &ldquo;Proof-theoretic
+Semantics for a Natural Language Fragment&rdquo;, <em>Linguistics
+and Philosophy</em>, 33: 447&ndash;477.</li>
+
+<li>&ndash;&ndash;&ndash;, Roy Dyckhoff, and Gilad Ben-Avi (2010).
+&ldquo;Proof-Theoretic Semantics for Subsentential Phrases&rdquo;,
+<em>Studia Logica</em>, 94: 381&ndash;401.</li>
+
+<li>Gentzen, Gerhard (1934/35). &ldquo;Untersuchungen &uuml;ber das
+logische Schlie&szlig;en&rdquo;, <em>Mathematische Zeitschrift</em>,
+39: 176&ndash;210, 405&ndash;431; English translation in <em>The
+Collected Papers of Gerhard Gentzen</em>, M. E. Szabo (ed.),
+Amsterdam: North Holland, 1969, pp. 68&ndash;131.</li>
+
+<li>Girard, Jean-Yves (1987). &ldquo;Linear Logic&rdquo;,
+<em>Theoretical Computer Science</em>,  50: 1&ndash;102.</li>
+
+<li>Hacking, Ian (1979). &ldquo;What is Logic?&rdquo;, <em>Journal of
+Philosophy</em>, 76: 285&ndash;319.</li>
+
+<li>Halln&auml;s, Lars (1991). &ldquo;Partial Inductive
+Definitions&rdquo;, <em>Theoretical Computer Science</em>, 87:
+115&ndash;142.</li>
+
+<li>&ndash;&ndash;&ndash; (2006). &ldquo;On the proof-theoretic foundation of general
+definition theory&rdquo;, <em>Synthese</em>, 148:
+589&ndash;602.</li>
+
+<li>Halln&auml;s, Lars and Peter Schroeder-Heister (1990/91). &ldquo;A
+proof-theoretic approach to logic programming: I. Clauses as rules. II.
+Programs as definitions&rdquo;, <em>Journal of Logic and
+Computation</em>, 1: 261&ndash;283, 635&ndash;660.</li>
+
+<li>Harper, Robert, Furio Honsell, and Gordon Plotkin (1987). &ldquo;A
+Framework for Defining Logics&rdquo;, <em>Journal of the
+Association for Computing Machinery</em>, 40: 194&ndash;204.</li>
+
+<li>Humberstone, Lloyd (2010). &ldquo;Sentence Connectives in Formal
+Logic&rdquo;, <em>The Stanford Encyclopedia of Philosophy</em> 
+(Summer 2010 Edition), Edward N. Zalta (ed.), URL = 
+&lt;<a href="https://plato.stanford.edu/archives/sum2010/entries/connectives-logic/">https://plato.stanford.edu/archives/sum2010/entries/connectives-logic/</a>&gt;</li>
+
+<li>Ja&#347;kowski, Stanis&#322;aw (1934). &ldquo;On the Rules of Suppositions in Formal Logic&rdquo;,
+<em>Studia Logica</em>, 1: 5&ndash;32 (reprinted in S. McCall (ed.), <em>Polish Logic 1920-1939</em>, Oxford 1967, pp. 232&ndash;258.</li>
+
+<li>J&auml;ger, Gerhard and Robert F. St&auml;rk (1998). &ldquo;A
+Proof-Theoretic Framework for Logic Programming&rdquo;, 
+<em>Handbook of Proof Theory</em>,  Samuel R. Buss (ed.),  Amsterdam:
+Elsevier, pp. 639&ndash;682.</li>
+
+<li>Kahle, Reinhard and Peter Schroeder-Heister, eds. (2006).
+<em>Proof-Theoretic Semantics</em>,  Special issue of <em>Synthese</em>,
+Volume 148.</li>
+
+<li>Kneale, William (1956). &ldquo;The Province of Logic&rdquo;,
+<em>Contemporary British Philosophy</em>, H. D. Lewis (ed.), London:
+Allen and Unwin, pp. 237&ndash;261.</li>
+
+<li>Koslow, Arnold (1992). <em>A Structuralist Theory of Logic</em>,
+Cambridge: Cambridge University Press.</li>
+
+<li>Kreisel, Georg (1971). &ldquo;A Survey of Proof Theory II&rdquo;,
+<em>Proceedings of the Second Scandinavian Logic Symposium</em>,
+J. E. Renstad (ed.), Amsterdam: North-Holland, pp. 109&ndash;170.</li>
+
+<li>Kremer, Philip (2009). &ldquo;The Revision Theory of Truth&rdquo;,
+<em>The Stanford Encyclopedia of Philosophy</em> (Spring 2009 Edition),
+Edward N. Zalta (ed.), URL =
+&lt;<a href="https://plato.stanford.edu/archives/spr2009/entries/truth-revision/">https://plato.stanford.edu/archives/spr2009/entries/truth-revision/</a>&gt;</li>
+
+<li>Kreuger, Per (1994). &ldquo;Axioms in Definitional Calculi&rdquo;,
+<em>Extensions of Logic Programming</em>: <em>Proceedings of the 4th
+International Workshop, ELP&rsquo;93, St. Andrews, U.K., March/April 1993</em>
+(Lecture Notes in Computer Science, Voluem 798), Roy
+Dyckhoff (ed.), Berlin: Springer, pp. 196&ndash;205.</li>
+
+<li>Lambek, J. and P.J. Scott (1986). <em>Introduction to Higher Order
+Categorical Logic</em>, Cambridge: Cambridge University Press.</li>
+
+<li>Lorenzen, Paul (1955). <em>Einf&uuml;hrung in die operative Logik
+und Mathematik</em>, Berlin: Springer; 2nd edition, 1969.</li>
+
+<li>Martin-L&ouml;f, Per (1971). &ldquo;Hauptsatz for the intuitionistic
+theory of iterated inductive definitions&rdquo;, <em>Proceedings of
+the Second Scandinavian Logic Symposium</em>,  J. E. Fenstad (ed.),
+Amsterdam: North-Holland, pp. 179&ndash;216.</li>
+
+<li>&ndash;&ndash;&ndash; (1984). <em>Intuitionistic Type Theory</em>,
+Napoli: Bibliopolis.</li>
+
+<li>&ndash;&ndash;&ndash; (1995). &ldquo;Verificationism Then and
+Now&rdquo;,  <em>The Foundational Debate: Complexity and
+Constructivity in Mathematics and Physics</em>, Werner
+DePauli-Schimanovich, Eckehart K&ouml;hler, and Friedrich Stadler (eds.),
+Dordrecht: Kluwer, pp. 187&ndash;196.</li>
+
+<li>&ndash;&ndash;&ndash; (1998). &ldquo;Truth and Knowability: On the
+Principles C and K of Michael Dummett&rdquo;, <em>Truth in
+Mathematics</em>, Harold G. Dales and Gianluigi
+Oliveri (eds.), Oxford: Clarendon Press, pp.  105&ndash;114.</li>
+
+<li>Negri, Sara and Jan von Plato (2001). <em>Structural Proof
+Theory</em>, Cambridge: Cambridge University Press.</li>
+
+<li>Nelson, David (1949). &ldquo;Constructible Falsity&rdquo;,
+<em>Journal of Symbolic Logic</em>, 14: 16&ndash;26.</li>
+
+<li>Odintsov, Sergei P. (2008). <em>Constructive Negations and
+Paraconsistency</em>, Berlin: Springer.</li>
+
+<li>Piecha, Thomas (2016). &ldquo;Completeness in Proof-Theoretic Semantics&rdquo;. In: Piecha and Schroeder-Heister, eds. (2016b),  pp. 231&ndash;251.</li>
+
+<li>&ndash;&ndash;&ndash;, Wagner de Campos Sanz and Peter Schroeder-Heister (2015). &ldquo;Failure of Completeness in Proof-Theoretic Semantics&rdquo;, <em>Journal of Philosophical Logic</em>,  44: 321&ndash;335.</li>
+
+<li>&ndash;&ndash;&ndash; and Peter Schroeder-Heister (2016a). &ldquo;Atomic Systems in Proof-Theoretic Semantics: Two Approaches&rdquo;, in: Redmond, J.,  O. P. Martins, &Aacute;.N. Fern&aacute;ndez <em>Epistemology, Knowledge and the Impact of Interaction</em>, Cham:
+Springer, pp.  47&ndash;62.</li>
+
+
+<li>&ndash;&ndash;&ndash; and Peter Schroeder-Heister, eds. (2016b).
+<em>Advances in Proof-Theoretic Semantics</em>, Cham: Springer (Open Access)</li>
+
+<li>Popper, Karl Raimund (1947a). &ldquo;Logic without
+Assumptions&rdquo;, <em>Proceedings of the Aristotelian
+Society</em>,  47: 251&ndash;292.</li>
+
+<li>&ndash;&ndash;&ndash; (1947b). &ldquo;New Foundations for Logic&rdquo;,
+<em>Mind</em>, 56: 193&ndash;235; corrections, <em>Mind</em>, 57:
+69&ndash;70.</li>
+
+<li>Prawitz, Dag (1965). <em>Natural Deduction: A Proof-Theoretical
+Study</em>, Stockholm: Almqvist &amp; Wiksell; reprinted
+Mineola, NY: Dover Publications, 2006.</li>
+
+<li>&ndash;&ndash;&ndash; (1971). &ldquo;Ideas and Results in Proof
+Theory&rdquo;, <em>Proceedings of the Second Scandinavian Logic
+Symposium</em> (Oslo 1970), Jens E. Fenstad (ed.), Amsterdam:
+North-Holland, pp.  235&ndash;308.</li>
+
+<li>&ndash;&ndash;&ndash; (1972). &ldquo;The Philosophical Position of Proof
+Theory&rdquo;, <em>Contemporary Philosophy in Scandinavia</em>,
+R. E. Olson and A. M. Paul (eds.), Baltimore, London: John Hopkins Press,
+pp. 123&ndash;134.</li>
+
+<li>&ndash;&ndash;&ndash; (1973). &ldquo;Towards a Foundation of a General Proof
+Theory&rdquo;, <em>Logic, Methodology and Philosophy of Science
+IV</em>, Patrick Suppes, et al. (eds.), Amsterdam: North-Holland, pp.
+225&ndash;250.</li>
+
+<li>&ndash;&ndash;&ndash; (1974). &ldquo;On the Idea of a General
+Proof Theory&rdquo;, <em>Synthese</em>, 27: 63&ndash;77.</li>
+
+<li>&ndash;&ndash;&ndash; (1985). &ldquo;Remarks on some Approaches to
+the Concept of Logical Consequence&rdquo;, <em>Synthese</em>, 62:
+152&ndash;171.</li>
+
+<li>&ndash;&ndash;&ndash; (2006). &ldquo;Meaning Approached via Proofs&rdquo;,
+<em>Synthese</em>, 148: 507&ndash;524.</li>
+
+<li>&ndash;&ndash;&ndash; (2007). &ldquo;Pragmatist and
+Verificationist Theories of Meaning&rdquo;, <em>The Philosophy of
+Michael Dummett</em>, Randall E. Auxier and Lewis Edwin Hahn (eds.),
+La Salle: Open Court, pp.  455&ndash;481.</li>
+
+<li>&ndash;&ndash;&ndash; (2013). &ldquo;An Approach to General Proof
+Theory and a Conjecture of a Kind of Completeness of Intuitionistic
+Logic Revisited&rdquo;, <em>Advances in Natural
+Deduction</em>, Edward Hermann Haeusler, Luiz Carlos Pereira,
+and Valeria de Paiva (eds.), Berlin: Springer.</li>
+
+<li>Read, Stephen (2010). &ldquo;General-Elimination Harmony and the
+Meaning of the Logical Constants&rdquo;,  <em>Journal of
+Philosophical Logic</em>, 39: 557&ndash;576.</li>
+
+<li>Restall, Greg (2009). &ldquo;Substructural Logics&rdquo;,
+<em>The Stanford Encyclopedia of Philosophy</em> (Summer 2009 Edition), 
+Edward N. Zalta (ed.), URL = 
+&lt;<a href="https://plato.stanford.edu/archives/sum2009/entries/logic-substructural/">https://plato.stanford.edu/archives/sum2009/entries/logic-substructural/</a>&gt;.</li>
+
+<li>Sambin, Giovanni, Giulia Battilotti, and Claudia Faggian (2000).
+&ldquo;Basic Logic: Reflection, Symmetry, Visibility&rdquo;,
+<em>Journal of Symbolic Logic</em>, 65: 979&ndash;1013.</li>
+
+<li>Sandqvist, Tor (2009).
+&ldquo;Classical Logic without Bivalence&rdquo;,
+<em>Analysis</em>, 69: 211&ndash;218.</li>
+
+<li>Schroeder-Heister, Peter (1984). &ldquo;A natural extension of
+natural deduction&rdquo;, <em>Journal of Symbolic Logic</em>, 49:
+1284&ndash;1300.</li>
+
+<li>&ndash;&ndash;&ndash; (1991). &ldquo;Uniform Proof-Theoretic
+Semantics for Logical Constants (Abstract)&rdquo;, <em>Journal of
+Symbolic Logic</em>, 56: 1142.</li>
+
+<li>&ndash;&ndash;&ndash; (1992). &ldquo;Cut Elimination in Logics
+with Definitional Reflection&rdquo;, <em>Nonclassical Logics and
+Information Processing: Proceedings of the International Workshop,
+Berlin, November 1990</em> (Lecture Notes in Computer Science:
+Volume 619).  David Pearce and Heinrich Wansing (eds.), Berlin:
+Springer, pp. 146&ndash;171.</li>
+
+<li>&ndash;&ndash;&ndash; (1993). &ldquo;Rules of Definitional
+Reflection&rdquo;, <em>Proceedings of the 8th Annual IEEE Symposium on
+Logic in Computer Science</em>, Los Alamitos: IEEE Press, pp.
+222&ndash;232.</li>
+
+<li>&ndash;&ndash;&ndash; (2004). &ldquo;On the notion of
+<em>assumption</em> in logical systems&rdquo;, <em>Selected Papers
+Contributed to the Sections of GAP5</em> (Fifth International Congress of
+the Society for Analytical Philosophy, Bielefeld, 22-26 September
+2003), R. Bluhm and C. Nimtz (eds.), Paderborn: mentis 
+ <a href="http://www.gap5.de/proceedings/" target="other">available
+online</a>), pp. 27&ndash;48.</li>
+
+<li>&ndash;&ndash;&ndash; (2005). &ldquo;Popper&rsquo;s Structuralist Theory of
+Logic&rdquo;, <em>Karl Popper: A Centenary Assessment. Vol. III:
+Science</em>, Ian Jarvie, Karl Milford, and David Miller (eds.),
+Aldershot: Ashgate, pp. 17&ndash;36.</li>
+
+<li>&ndash;&ndash;&ndash; (2006). &ldquo;Validity Concepts in Proof-Theoretic
+Semantics&rdquo;, <em>Synthese</em>, 148: 525&ndash;571.</li>
+
+<li>&ndash;&ndash;&ndash; (2007). &ldquo;Generalized Definitional
+Reflection and the Inversion Principle&rdquo;, <em>Logica
+Universalis</em>, 1: 355&ndash;376.</li>
+
+<li>&ndash;&ndash;&ndash; (2008a). &ldquo;Lorenzen&rsquo;s Operative Justification of
+Intuitionistic Logic&rdquo;,  <em>One Hundred Years of Intuitionism
+(1907-2007): The Cerisy Conference</em>, Mark van Atten, et al. (eds.),
+Basel: Birkh&auml;user, 214&ndash;240 [References for whole volume:
+391&ndash;416].</li>
+
+<li>&ndash;&ndash;&ndash; (2008b). &ldquo;Proof-Theoretic versus
+Model-Theoretic Consequence&rdquo;, <em>The Logica Yearbook
+2007</em>, M. Peli&scaron; (ed.), Prague: Filosofia, pp.
+187&ndash;200.</li>
+
+<li>&ndash;&ndash;&ndash; (2012a). &ldquo;Definitional Reasoning in
+Proof-Theoretic Semantics and the Square of Opposition&rdquo;,
+<em>The Square of Opposition: A General Framework for
+Cognition</em>,  Jean-Yves B&eacute;ziau and Gillman
+Payette (eds.), Bern: Peter Lang, pp. 323&ndash;349.</li>
+
+<li>&ndash;&ndash;&ndash; (2012b). &ldquo;Proof-Theoretic Semantics,
+Self-Contradiction, and the Format of Deductive Reasoning&rdquo;. In:
+<em>Topoi</em> 31, pp. 77&ndash;85.</li>
+
+<li>&ndash;&ndash;&ndash; (2012c). &ldquo;The Categorical and the Hypothetical: A Critique of some Fundamental Assumptions of Standard Semantics&rdquo;. In:
+<em>Synthese</em> 187, pp. 925&ndash;942.</li>
+
+<li>&ndash;&ndash;&ndash; (2012d). &ldquo;Paradoxes and Structural Rules&rdquo;. In: Dutilh Novaes, Catarina and Ole T. Hjortland, eds., <em>Insolubles and Consequences. 
+Essays in Honour of Stephen Read.</em> London: College Publications,  pp. 203&ndash;211.</li>
+
+
+<li>&ndash;&ndash;&ndash; (2013). &ldquo;Definitional Reflection and
+Basic Logic&rdquo;, <em>Annals of Pure and Applied Logic</em>, 164(4):
+491&ndash;501.</li>
+
+<li>&ndash;&ndash;&ndash; (2015). &ldquo;Proof-theeoretic validity based on elimination rules&rdquo;. In: Haeusler, Edward Hermann, Wagner de Campos Sanz and Bruno Lopes, eds., <em>Why is this a Proof?
+Festschrift for Luiz Carlos Pereira.</em> London: College Publications,  pp. 159&ndash;176.</li>
+
+<li>&ndash;&ndash;&ndash; (2016a). &ldquo;Open Problems in Proof-Theoretic Semantics&rdquo;. In: Piecha and Schroeder-Heister, eds. (2016b),  pp. 253&ndash;283.</li>
+
+
+<li>&ndash;&ndash;&ndash; (2016b). &ldquo;Restricting Initial Sequents: The Trade-Offs
+Between Identity, Contraction and Cut&rdquo;. In: Kahle, Reinhard, Thomas Strahm and Thomas Studer, eds., <em>Advances in Proof Theory</em> Basel: Birkh&auml;user,  pp. 339&ndash;351.</li>
+
+<li>Shoesmith, D. J. and Timothy J. Smiley (1978).
+<em>Multiple-Conclusion Logic</em>, Cambridge: Cambridge University
+Press.</li>
+
+<li>Sommaruga, Giovanni (2000). <em>History and Philosophy of
+Constructive Type Theory</em>, Dordrecht: Kluwer.</li>
+
+<li>S&oslash;rensen, Morten Heine B. and Pawel Urzyczyn (2006).
+<em>Lectures on the Curry-Howard Isomorphism</em>, Amsterdam:
+Elsevier.</li>
+
+<li>Tait, W. W: (1967). &ldquo;Intensional Interpretations of
+Functionals of Finite Type I&rdquo;, <em>Journal of Symbolic
+Logic</em>, 32: 198&ndash;212.</li>
+
+<li>Tennant, Neil (1978). <em>Natural Logic</em>, Edinburgh: Edinburgh
+University Press.</li>
+
+<li>&ndash;&ndash;&ndash; (1982). &ldquo;Proof and Paradox&rdquo;,
+<em>Dialectica</em>, 36: 265&ndash;296.</li>
+
+<li>&ndash;&ndash;&ndash; (1987). <em>Anti-Realism and Logic: Truth as
+Eternal</em>, Oxford: Clarendon Press.</li>
+
+<li>&ndash;&ndash;&ndash; (1997). <em>The Taming of the True</em>, Oxford: Clarendon
+Press.</li>
+
+<li>Tranchini, Luca (2010). <em>Proof and Truth: An Anti-Realist
+Perspective</em>, Milano: Edizioni ETS, 2013; reprint of
+Ph.D. dissertation, Department of Philosophy, University of
+Tuebingen, 2010,  
+<a href="http://nbn-resolving.de/urn:nbn:de:bsz:21-opus-54715" target="other">available online</a>.</li>
+
+<li>&ndash;&ndash;&ndash; (2012a). &ldquo;Truth from a Proof-Theoretic
+Perspective&rdquo;. In: <em>Topoi</em> 31, pp. 47&ndash;57.</li>
+
+<li>&ndash;&ndash;&ndash; (2012b). &ldquo;Natural Deduction for Dual
+Intuitionistic Logic&rdquo;, <em>Studia Logica</em>, 100:
+631&ndash;648.</li>
+
+<li>&ndash;&ndash;&ndash;
+ (2016).  
+&ldquo;Proof-Theoretic Semantics, Paradoxes, and the Distinction between Sense and Denotation&rdquo;,
+<em>Journal of Logic and Computation</em>, 26, pp. 495&ndash;512.</li>
+
+<li>Troelstra, Anne S. and Dirk van Dalen (1988). <em>Constructivism
+in Mathematics: An Introduction</em>, Amsterdam: North-Holland.</li>
+
+<li>Troelstra, A. S. and H. Schwichtenberg (2000). <em>Basic Proof
+Theory</em>, Cambridge University Press, second edition.</li>
+
+<li>von Kutschera, Franz (1968). &ldquo;Die Vollst&auml;ndigkeit des
+Operatorensystems {&not;, &and;, &or;, &sup;} f&uuml;r die
+intuitionistische Aussagenlogik im Rahmen der Gentzensemantik&rdquo;,
+<em>Archiv f&uuml;r mathematische Logik und
+Grundlagenforschung</em>, 11: 3&ndash;16.</li>
+
+<li>&ndash;&ndash;&ndash; (1969). &ldquo;Ein verallgemeinerter Widerlegungsbegrifff
+f&uuml;r Gentzenkalk&uuml;le&rdquo;, <em>Archiv f&uuml;r
+mathematische Logik und Grundlagenforschung</em>, 12:
+104&ndash;118.</li>
+
+<li>Wansing, Heinrich (1993a). &ldquo;Functional Completeness for
+Subsystems of Intuitionistic Propositional Logic&rdquo;,
+<em>Journal of Philosophical Logic</em>, 22: 303&ndash;321.</li>
+
+<li>&ndash;&ndash;&ndash; (1993b). <em>The Logic of Information
+Structures</em> (Lecture Notes in Artificial Intelligence, Volume
+681), Berlin: Springer Springer.</li>
+
+<li>&ndash;&ndash;&ndash; (2000). &ldquo;The Idea of a Proof-theoretic
+Semantics&rdquo;, <em>Studia Logica</em>, 64: 3&ndash;20.</li>
+
+<li>&ndash;&ndash;&ndash; (2001). &ldquo;Negation&rdquo;, <em>The
+Blackwell Guide to Philosophical Logic</em>, L. Goble (ed.),
+Cambridge, MA: Blackwell, pp. 415&ndash;436.</li>
+
+<li>Wieckowski, Bartosz (2008). &ldquo;Predication in Fiction&rdquo;,
+in <em>The Logica Yearbook 2007</em>, M. Peli&scaron; (ed.), Prague:
+Filosofia, pp. 267&ndash;285.</li>
+
+<li>&ndash;&ndash;&ndash; (2011). &ldquo;Rules for Subatomic Derivation&rdquo;, 
+<em>Review of Symbolic Logic</em>, 4: 219&ndash;236.</li>
+
+<li>&ndash;&ndash;&ndash; (2016). &ldquo;Subatomic Natural Deduction for a Naturalistic First-Order Language with Non-Primitive Identity&rdquo;, 
+<em>Journal of Logic, Language and Information</em>, 25: 215&ndash;268.</li>
+
+<li>Zeilberger, Noam (2008). &ldquo;On the Unity of Duality&rdquo;, 
+<em>Annals of Pure and Applied Logic</em>, 153: 66&ndash;96.</li>
+</ul>
+
+</div>
+
+<div id="academic-tools">
+
+<h2 id="Aca">Academic Tools</h2>
+
+<blockquote>
+<table class="vert-top">
+<tr>
+<td><img src="../../symbols/sepman-icon.jpg" alt="sep man icon" /></td>
+<td><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=proof-theoretic-semantics" target="other">How to cite this entry</a>.</td>
+</tr>
+
+<tr>
+<td><img src="../../symbols/sepman-icon.jpg" alt="sep man icon" /></td>
+<td><a href="https://leibniz.stanford.edu/friends/preview/proof-theoretic-semantics/" target="other">Preview the PDF version of this entry</a> at the
+ <a href="https://leibniz.stanford.edu/friends/" target="other">Friends of the SEP Society</a>.</td>
+</tr>
+
+<tr>
+<td><img src="../../symbols/inpho.png" alt="inpho icon" /></td>
+<td><a href="https://www.inphoproject.org/entity?sep=proof-theoretic-semantics&amp;redirect=True" target="other">Look up topics and thinkers related to this entry</a>
+ at the Internet Philosophy Ontology Project (InPhO).</td>
+</tr>
+
+<tr>
+<td><img src="../../symbols/pp.gif" alt="phil papers icon" /></td>
+<td><a href="http://philpapers.org/sep/proof-theoretic-semantics/" target="other">Enhanced bibliography for this entry</a>
+at <a href="http://philpapers.org/" target="other">PhilPapers</a>, with links to its database.</td>
+</tr>
+
+</table>
+</blockquote>
+
+</div>
+
+<div id="other-internet-resources">
+
+<h2><a name="Oth">Other Internet Resources</a></h2>
+
+<ul>
+
+<li>de Campos Sanz, Wagner and Thomas Piecha (2012). 
+&ldquo;<a href="http://ls.informatik.uni-tuebingen.de/hypotheses/publications/Critical-Remark-on-BHK_WdCS-TP.pdf" target="other">Remarks on Constructive Semantics for Classical and Intuitionistic Logic</a>,&rdquo;
+online manuscript.</li>
+
+<li>Tranchini, Luca (2012b). 
+&ldquo;<a href="https://31908d7e-a-62cb3a1a-s-sites.googlegroups.com/site/lucatranchini/publications/PTS_P_SD.pdf?attachauth=ANoY7cqbCWDRQTVNk4cDbxonUIZ7dOFCq3dtJ_KolM2YVLlY4GsoQ9DmlW4I3nlUTR2XkRgFgAXneKGqKSKeO7wyJK0y4MtnhJCgGirYAIQY57MQkzoGESh-ZjEbrExwpxSqWR30EHFif07pzth5eJ15uGeWgfFp0rlLbDxGiEk1tkrpj6-UoDmdDzFiec8eYuLWHfzMEjmGS-f6KrEPvTczF7MTftr6zJD8oxqyPJMEBcYkZ2d1tSI%3D&amp;attredirects=0" target="other">Proof-Theoretic Semantics, Paradoxes, and the Distinction between Sense and Denotation</a>,&rdquo;
+online manuscript.</li>
+
+</ul>
+
+</div>
+
+<div id="related-entries">
+
+<h2><a name="Rel">Related Entries</a></h2>
+
+<p>
+
+ <a href="../category-theory/index.html">category theory</a> |
+ <a href="../connectives-logic/index.html">connectives: sentence connectives in formal logic</a> |
+ <a href="../curry-paradox/index.html">Curry&rsquo;s paradox</a> |
+ <a href="../hilbert-program/index.html">Hilbert, David: program in the foundations of mathematics</a> |
+ <a href="../intuitionistic-logic-development/index.html">logic, history of: intuitionistic logic</a> |
+ <a href="../logic-classical/index.html">logic: classical</a> |
+ <a href="../logic-intuitionistic/index.html">logic: intuitionistic</a> |
+ <a href="../logic-linear/index.html">logic: linear</a> |
+ <a href="../logic-substructural/index.html">logic: substructural</a> |
+ <a href="../logical-constants/index.html">logical constants</a> |
+ <a href="../intuitionism/index.html">mathematics, philosophy of: intuitionism</a> |
+ <a href="../paradoxes-contemporary-logic/index.html">paradoxes: and contemporary logic</a> |
+ <a href="../proof-theory-development/index.html">proof theory: development of</a> |
+ <a href="../realism-sem-challenge/index.html">realism: challenges to metaphysical</a> |
+ <a href="../russell-paradox/index.html">Russell&rsquo;s paradox</a> |
+ <a href="../self-reference/index.html">self-reference</a> |
+ <a href="../truth-revision/index.html">truth: revision theory of</a> |
+ <a href="../type-theory/index.html">type theory</a>
+
+</p>
+
+</div>
+
+<div id="acknowledgments">
+
+<h3>Acknowledgments</h3>
+
+<p>
+
+Supported by DFG grants Schr 275/15-1 (ESF EUROCORES LogICCC project
+&ldquo;Dialogical Foundations of Semantics&rdquo; [DiFoS]) and Schr
+275/16-1, 16-2 and 17-1 (French-German ANR-DFG projects &ldquo;Hypothetical
+Reasoning&rdquo;
+[HYPOTHESES] and &rdquo;Beyond Logic&rdquo; [BEYONDLOGIC]). I would like to thank the editors, especially Ed Zalta,
+and an anonymous reviewer for their very detailed and helpful
+comments and suggestions.</p>
+
+</div>
+
+<script type="text/javascript" src="local.js"></script>
+<script type="text/javascript" src="../../MathJax/MathJaxb198.js?config=TeX-MML-AM_CHTML"></script>
+
+</div><!-- #aueditable --><!--DO NOT MODIFY THIS LINE AND BELOW-->
+
+<!-- END ARTICLE HTML -->
+
+</div> <!-- End article-content -->
+
+  <div id="article-copyright">
+    <p>
+ <a href="../../info.html#c">Copyright &copy; 2018</a> by
+
+<br />
+Peter Schroeder-Heister
+&lt;<a href="m&#97;ilto:psh&#37;40informatik&#37;2euni-tuebingen&#37;2ede"><em>psh<abbr title=" at ">&#64;</abbr>informatik<abbr title=" dot ">&#46;</abbr>uni-tuebingen<abbr title=" dot ">&#46;</abbr>de</em></a>&gt;
+    </p>
+  </div>
+
+</div> <!-- End article -->
+
+<!-- NOTE: article banner is outside of the id="article" div. -->
+<div id="article-banner" class="scroll-block">
+  <div id="article-banner-content">
+    <a href="../../fundraising/index.html">
+    Open access to the SEP is made possible by a world-wide funding initiative.<br />
+    The Encyclopedia Now Needs Your Support<br />
+    Please Read How You Can Help Keep the Encyclopedia Free</a>
+  </div>
+</div> <!-- End article-banner -->
+
+    </div> <!-- End content -->
+
+    <div id="footer">
+
+      <div id="footer-menu">
+        <div class="menu-block">
+          <h4><i class="icon-book"></i> Browse</h4>
+          <ul role="menu">
+            <li><a href="../../contents.html">Table of Contents</a></li>
+            <li><a href="../../new.html">What's New</a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+            <li><a href="../../published.html">Chronological</a></li>
+            <li><a href="../../archives/index.html">Archives</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-info-sign"></i> About</h4>
+          <ul role="menu">
+            <li><a href="../../info.html">Editorial Information</a></li>
+            <li><a href="../../about.html">About the SEP</a></li>
+            <li><a href="../../board.html">Editorial Board</a></li>
+            <li><a href="../../cite.html">How to Cite the SEP</a></li>
+            <li><a href="../../special-characters.html">Special Characters</a></li>
+            <li><a href="../../tools/index.html">Advanced Tools</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-leaf"></i> Support SEP</h4>
+          <ul role="menu">
+            <li><a href="../../support/index.html">Support the SEP</a></li>
+            <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+            <li><a href="../../support/donate.html">Make a Donation</a></li>
+            <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+          </ul>
+        </div>
+      </div> <!-- End footer menu -->
+
+      <div id="mirrors">
+        <div id="mirror-info">
+          <h4><i class="icon-globe"></i> Mirror Sites</h4>
+          <p>View this site from another server:</p>
+        </div>
+        <div class="btn-group open">
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="https://plato.stanford.edu/">
+            <span class="flag flag-usa"></span> USA (Main Site) <span class="caret"></span>
+            <span class="mirror-source">Philosophy, Stanford University</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../mirrors.html">Info about mirror sites</a></li>
+          </ul>
+        </div>
+      </div> <!-- End mirrors -->
+      
+      <div id="site-credits">
+        <p>The Stanford Encyclopedia of Philosophy is <a href="../../info.html#c">copyright &copy; 2021</a> by <a href="http://mally.stanford.edu/">The Metaphysics Research Lab</a>, Department of Philosophy, Stanford University</p>
+        <p>Library of Congress Catalog Data: ISSN 1095-5054</p>
+      </div> <!-- End site credits -->
+
+    </div> <!-- End footer -->
+
+  </div> <!-- End container -->
+
+   <!-- NOTE: Script required for drop-down button to work (mirrors). -->
+  <script>
+    $('.dropdown-toggle').dropdown();
+  </script>
+
+</body>
+
+<!-- Mirrored from seop.illc.uva.nl/entries/proof-theoretic-semantics/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 19:55:16 GMT -->
+</html>

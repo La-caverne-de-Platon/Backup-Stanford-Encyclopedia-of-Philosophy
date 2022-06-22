@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 ie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 ie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 ie"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 ie"> <![endif]-->
+<!--[if !IE]> --> <html> <!-- <![endif]-->
+
+<!-- Mirrored from seop.illc.uva.nl/entries/actualism/SQML.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 20:02:20 GMT -->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>
+Actualism &gt; The Simplest Quantified Modal Logic (SQML) (Stanford Encyclopedia of Philosophy)
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive, noodp" />
+<meta name="DCTERMS.ispartof" content="https://plato.stanford.edu/entries/actualism/" />
+
+<!-- NOTE: Import webfonts using this link: -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,200&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" href="../../css/font-awesome-ie7.min.css"> <![endif]-->
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../css/print.css" />
+<link rel="stylesheet" type="text/css" href="../../css/entry.css" />
+<!--[if IE]> <link rel="stylesheet" type="text/css" href="../../css/ie.css" /> <![endif]-->
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+
+<!-- NOTE: Javascript for sticky behavior needed on article and ToC pages -->
+<script type="text/javascript" src="../../js/jquery-scrolltofixed-min.js"></script>
+<script type="text/javascript" src="../../js/entry.js"></script>
+
+<!-- SEP custom script -->
+<script type="text/javascript" src="../../js/sep.js"></script>
+</head>
+
+<!-- NOTE: The nojs class is removed from the page if javascript is enabled. Otherwise, it drives the display when there is no javascript. -->
+<body class="nojs article" id="pagetopright">
+<div id="container">
+<div id="header-wrapper">
+  <div id="header">
+    <div id="branding">
+      <div id="site-logo"><a href="../../index.html"><img src="../../symbols/sep-man-red.png" alt="SEP home page" /></a></div>
+      <div id="site-title"><a href="../../index.html">Stanford Encyclopedia of Philosophy</a></div>
+    </div>
+    <div id="navigation">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <button class="btn btn-navbar collapsed" data-target=".collapse-main-menu" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Menu </button>
+            <div class="nav-collapse collapse-main-menu in collapse">
+              <ul class="nav">
+                <li class="dropdown open"><a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-book"></i> Browse</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                    <li><a href="../../contents.html">Table of Contents</a></li>
+                    <li><a href="../../new.html">What's New</a></li>
+                    <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+                    <li><a href="../../published.html">Chronological</a></li>
+                    <li><a href="../../archives/index.html">Archives</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-info-sign"></i> About</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                    <li><a href="../../info.html">Editorial Information</a></li>
+                    <li><a href="../../about.html">About the SEP</a></li>
+                    <li><a href="../../board.html">Editorial Board</a></li>
+                    <li><a href="../../cite.html">How to Cite the SEP</a></li>
+                    <li><a href="../../special-characters.html">Special Characters</a></li>
+                    <li><a href="../../tools/index.html">Advanced Tools</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-leaf"></i> Support SEP</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                    <li><a href="../../support/index.html">Support the SEP</a></li>
+                    <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+                    <li><a href="../../support/donate.html">Make a Donation</a></li>
+                    <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End navigation -->
+    
+    <div id="search">
+      <form id="search-form" method="get" action="https://seop.illc.uva.nl/search/searcher.py">
+        <input type="search" name="query" placeholder="Search SEP" />
+        <div class="search-btn-wrapper"><button class="btn search-btn" type="submit"><i class="icon-search"></i></button></div>
+      </form>
+    </div>
+    <!-- End search --> 
+    
+  </div>
+  <!-- End header --> 
+</div>
+<!-- End header wrapper -->
+
+<div id="content">
+
+<!-- Begin article sidebar -->
+<div id="article-sidebar" class="sticky">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <button class="btn btn-navbar" data-target=".collapse-sidebar" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Entry Navigation </button>
+        <div id="article-nav" class="nav-collapse collapse-sidebar in collapse">
+          <ul class="nav">
+            <li><a href="index.html">Back to Entry <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#toc">Entry Contents <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#Bib">Entry Bibliography <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#Aca">Academic Tools <i class="icon-external-link"></i></a></li>
+            <li><a href="https://leibniz.stanford.edu/friends/preview/actualism/">Friends PDF Preview <i class="icon-external-link"></i></a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=actualism">Author and Citation Info <i class="icon-external-link"></i></a> </li>
+            <li><a href="#pagetopright" class="back-to-top">Back to Top <i class="icon-angle-up icon2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End article sidebar --> 
+
+<!-- NOTE: Article content must have two wrapper divs: id="article" and id="article-content" -->
+<div id="article">
+<div id="article-content">
+
+<!-- BEGIN ARTICLE HTML -->
+<h4 id="supphead">Supplement to <a href="index-2.html">Actualism</a></h4>
+
+<div id="aueditable">
+<!--DO NOT MODIFY THIS LINE AND ABOVE--> 
+<h2>The Simplest Quantified Modal Logic (SQML)</h2>
+
+<p>
+
+The Simplest Quantified Modal Logic (SQML) defines a class of first-order
+modal languages, a semantic theory for those languages, and a complete
+system of axioms and rules of inference for the semantics.  We present
+each of these in turn.</p>
+
+<ul>
+<li><a href="#1">1. First-order Modal Languages for SQML</a></li>
+<li><a href="#2">2. The Semantic Theory of SQML</a></li>
+<li><a href="#3">3. A Complete Proof Theory for SQML</a></li>
+<li><a href="#4">4. The System <em>SQML</em></a></li>
+</ul>
+
+<hr />
+
+<h3><a name="1">1. First-order Modal Languages for SQML</a></h3>
+
+<p>
+
+A first-order modal language <b><em>L</em></b> consists of a lexicon of
+primitive syntactic items that are drawn from a large stock.  Given a
+lexicon, the grammar below generates the well-formed formulas
+of <b><em>L</em></b>.</p>
+
+<h4>1.1 The Lexical &ldquo;Stock&rdquo;</h4>
+
+<p>
+
+<b>Variables</b>:&nbsp;&nbsp;<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>,
+<em>z</em><sub>1</sub>,
+&hellip;, <em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>, <em>z</em><sub>2</sub>,
+&hellip;
+</p>
+
+<p>
+
+<b>Constants</b>:&nbsp;&nbsp;<em>a</em><sub>1</sub>, <em>b</em><sub>1</sub>,
+<em>c</em><sub>1</sub>,
+&hellip;, <em>a</em><sub>2</sub>, <em>b</em><sub>2</sub>, <em>c</em><sub>2</sub>,
+&hellip;
+</p>
+
+<p>
+
+<b>Predicates</b>:&nbsp;&nbsp;<em>P</em><sub><font size="-2">1,1</font></sub>,
+
+<em>Q</em><sub><font size="-2">1,1</font></sub>,
+<em>R</em><sub><font size="-2">1,1</font></sub>, 
+&hellip;,
+<em>P</em><sub><font size="-2">1,2</font></sub>,
+
+<em>Q</em><sub><font size="-2">1,2</font></sub>,
+<em>R</em><sub><font size="-2">1,2</font></sub>,
+&hellip;,
+
+<em>P</em><sub><font size="-2">2,1</font></sub>,
+<em>Q</em><sub><font size="-2">2,1</font></sub>,
+<em>R</em><sub><font size="-2">2,1</font></sub>,
+&hellip;,
+
+<em>P</em><sub><font size="-2">2,2</font></sub>,
+<em>Q</em><sub><font size="-2">2,2</font></sub>,
+<em>R</em><sub><font size="-2">2,2</font></sub>,
+&hellip;
+
+</p>
+
+<p>
+
+Variables and constants will usually be written without subscripts.  Aside
+from avoidance of clutter, the purpose of this, typically, will be to
+emphasize that our choice of this or that variable or constant typically
+does not matter for the purposes at hand.</p>
+
+<p>
+
+A predicate of the form
+&pi;<sub><font size="-2"><em>n</em>,<em>m</em></font></sub> is known as
+an <em>n</em>-place predicate.  As with terms, the double subscripts on
+predicates can typically be suppressed.</p>
+
+<h4>1.2 Lexicons</h4>
+
+<p>
+
+  A <em>lexicon</em> L is a (possibly empty) set of constants and predicates
+  from the lexical stock.
+
+</p>
+
+<h4>1.3 Languages</h4>
+
+<p>
+
+  Let L be a lexicon.  We define the <em>first-order modal
+  language</em> <b><em>L</em></b> <em>based on</em> L as follows.
+  </p>
+
+<h5>Constants, Predicates, and Terms of <em>L</em></h5>
+
+<p>
+
+The constants and predicates in L are known as the <em>constants</em>
+and <em>predicates of</em> <b><em>L</em></b>.  The variables and the
+constants of <b><em>L</em></b> are known collectively as the <em>terms
+of</em> <b><em>L</em></b>.  (Note that it follows that every variable is
+a term of every first-order modal language.)</p>
+
+<h5>Atomic Formulas of <em>L</em></h5>
+
+<ol>
+
+<li>If &tau;<sub>1</sub>, &hellip;, &tau;<sub><em>n</em></sub> are any
+terms of <b><em>L</em></b> and &pi; is any predicate of <b><em>L</em></b>,
+then &pi;&tau;<sub>1</sub>&hellip;&tau;<sub><em>n</em></sub> is an
+<em>atomic formula of</em> <b><em>L</em></b>.</li>
+
+<li>If &tau;<sub>1</sub> and &tau;<sub>2</sub> are any terms
+of <b><em>L</em></b>, then &tau;<sub>1</sub>=&tau;<sub>2</sub> is
+an <em>atomic formula of</em>
+<b><em>L</em></b>.</li>
+    
+  </ol>
+     
+<h5>Formulas of <em>L</em></h5>
+
+<ol>
+  <li>
+    Every atomic formula of <b><em>L</em></b> is a <em>formula of</em>
+    <b><em>L</em></b>.
+  </li>
+
+  <li>
+    If &phi; is a formula of <b><em>L</em></b>, then so is ~&phi;.
+  </li>
+
+  <li>
+    If &phi; and &psi; are formulas of <b><em>L</em></b>, then so is
+    (&phi; &rarr; &psi;).
+  </li>
+
+  <li>
+    If &phi; is a formula of <b><em>L</em></b> and &alpha; is any variable
+    of <b><em>L</em></b>, then &forall;&alpha;&phi; is a formula
+    of <b><em>L</em></b>.</li>
+  
+  <li>
+    If &phi; is a formula of <b><em>L</em></b>, then so is &#9633;&phi;.
+ 
+</li>
+
+  <li>
+    Nothing else is a formula of <b><em>L</em></b>.
+  </li>
+
+  </ol>
+
+<p>
+  By a <em>first-order modal language</em> <b><em>L</em></b>, then, we
+  mean the first-order modal language based on any arbitrary lexicon.</p>
+
+
+<h5><a name="SQMLDefs">Definitions</a></h5>
+
+<p>
+  Given any a first-order modal language, the usual defined formulas are
+  always permitted.
+</p>
+  
+<ul>
+  <li>
+    (&phi; &and; &psi;)
+    &nbsp;&nbsp;=<sub><em><font size="-2">df</font></em></sub>&nbsp;&nbsp;
+    ~(&phi; &rarr; ~&psi;)
+  </li>
+
+  <li>
+    (&phi; &or; &psi;)
+    &nbsp;&nbsp;=<sub><em><font size="-2">df</font></em></sub>&nbsp;&nbsp;
+    (~&phi; &rarr; &psi;)
+  </li>
+
+ 
+  <li>
+    (&phi; &harr; &psi;)
+    &nbsp;&nbsp;=<sub><em><font size="-2">df</font></em></sub>&nbsp;&nbsp;
+    (&phi; &rarr; &psi;) &and; (&psi; &rarr; &phi;)
+  </li>
+
+  <li>
+  &exist;&alpha;&phi;
+  &nbsp;&nbsp;=<sub><em><font size="-2">df</font></em></sub>&nbsp;&nbsp;
+  ~&forall;&alpha;~&phi;
+  </li>
+
+  <li>
+  &#9671;&phi;
+  &nbsp;&nbsp;=<sub><em><font size="-2">df</font></em></sub>&nbsp;&nbsp;
+  ~&#9633;~&phi;
+  </li>
+
+</ul>
+
+
+<h3><a name="2">2. The Semantic Theory of SQML</a></h3>
+
+<p>
+
+As indicated, a semantic theory for a class of languages
+defines a notion
+of an interpretation for those languages and, in particular, a definition
+of truth.  So let
+<b><em>L</em></b> be a first-order modal language in the
+sense just defined.</p>
+
+<h4>2.1 Interpretations</h4>
+
+<p>
+An <em>interpretation</em> <b>I</b> of <b><em>L</em></b> is a
+4-tuple
+&lang;<b>W</b>,<b>w<sub>0</sub></b>,<b>D</b>,<b>V</b>&rang; defined as
+follows: </p>
+
+<ol>
+ 
+<li><b>W</b> is a nonempty set.  Formally, this can be any nonempty
+set whatever but, intuitively, this is represents the set of possible
+worlds.</li>
+
+<li><b>w<sub>0</sub></b> is a distinguished member of <b>W</b>, the
+&ldquo;actual world&rdquo; of the interpretation.</li>
+
+<li><b>D</b> is a nonempty set.  Again, formally, this can be any
+nonempty set but, intuitively, it represents the set of
+individuals.</li>
+
+ 
+<li><b>V</b> is a function that assigns appropriate semantic values to
+the constants and predicates in the lexicon of <b><em>L</em></b>,
+specifically (a) for constants &kappa;, <b>V</b>(&kappa;)
+&isin; <b>D</b> and (b) for <em>n</em>-place predicates
+&pi;, <b>V</b>(&pi;) &isin; {<em>f</em> | <em>f</em> : <b>W</b> &rarr;
+&weierp;(<b>D</b><sup><em>n</em></sup>)}.  That is, <b>V</b> maps
+each <em>n</em>-place predicate to a function that, for each
+world <b>w</b> &isin; <b>W</b>, yields the set of <em>n</em>-tuples of
+individuals to which &pi; <em>applies</em> at <b>w</b>.
+Intuitively, <b>V</b> determines the <em>extension</em> of the
+predicate &pi; at each possible world, representing thereby the modal
+intuition that the things that exemplify a given property
+like <b>being a politician</b> can be different from world to
+world.</li>
+
+</ol>
+
+<p>
+Henceforth in this document, we let <b>I</b> =
+&lang;<b>W</b>,<b>w<sub>0</sub></b>,<b>D</b>,<b>V</b>&rang; be an
+ 
+arbitrary, fixed interpretation of <b><em>L</em></b>.</p>
+  
+<h4>2.2 Assignments and Denotation Functions</h4>
+
+<p>
+
+A <em>variable assignment</em>, or, more simply,
+an <em>assignment</em>, (relative to <b>I</b>) is any total function
+from the set of variables into <b>D</b>.  Given an
+assignment <b>f</b>, for any variable &alpha; and any
+individual <b>a</b> &isin; <b>D</b>,
+let <b>f</b>[&alpha;,<b>a</b>](&alpha;) =
+<b>a</b> and let <b>f</b>[&alpha;,<b>a</b>](&beta;) be the function
+that is exactly like <b>f</b> except that it assigns <b>a</b> to the
+variable &alpha; (that is, more
+exactly, <b>f</b>[&alpha;,<b>a</b>](&beta;) = <b>f</b>(&beta;) for
+variables &beta; other than &alpha;).  Given an assignment <b>f</b>,
+we define the
+<em>denotation function</em> <b>d</b><sub><b>I</b>,<b>f</b></sub>
+<em>determined by</em> <b>I</b> and
+<b>f</b> to be a function on the
+terms &tau; of <b><em>L</em></b> such that, if &tau; is a constant,
+then <b>d</b><sub><b>I</b>,<b>f</b></sub>(&tau;) = <b>V</b>(&tau;) and if
+&tau; is a variable, then
+<b>d</b><sub><b>I</b>,<b>f</b></sub>(&tau;) = <b>f</b>(&tau;).</p>
+
+<h4>2.3 Truth, Validity, and Entailment</h4>
+
+<p>
+Truth in our interpretation <b>I</b> is defined as a special case of
+truth at a world under a given variable assignment <b>f</b>, which is
+defined recursively as follows.  Let &phi; be a formula
+ of <b><em>L</em></b> and <b>w</b> a world in <b>W</b>:
+</p>
+
+<ul>
+ 
+<li>If &phi; is
+&pi;&tau;<sub>1</sub>&hellip;&tau;<sub><em>n</em></sub>, then &phi;
+is <em>true</em><sub><b>I</b>,<b>f</b></sub> <em>at</em> <b>w</b> iff
+&lang;<b>d</b><sub><b>I</b>,<b>f</b></sub>(&tau;<sub>1</sub>),
+&hellip;, <b>d</b><sub><b>I</b>,<b>f</b></sub>(&tau;<sub><em>n</em></sub>)&rang;
+&isin;
+<b>V</b>(&pi;)(<b>w</b>).</li>
+
+<li>If &phi; is &tau;<sub>1</sub>=&tau;<sub>2</sub>, then &phi; is
+true<sub><b>I</b>,<b>f</b></sub> at <b>w</b>
+iff <b>d</b><sub><b>I</b>,<b>f</b></sub>(&tau;<sub>1</sub>) =
+<b>d</b><sub><b>I</b>,<b>f</b></sub>(&tau;<sub>2</sub>).</li>
+
+<li>If &phi; is ~&psi;, then &phi; is
+true<sub><b>I</b>,<b>f</b></sub> at <b>w</b> iff &psi; is not
+true<sub><b>I</b>,<b>f</b></sub> at <b>w</b>.</li>
+
+<li>If &phi; is (&psi; &rarr; &theta;), then &phi; is
+true<sub><b>I</b>,<b>f</b></sub> at <b>w</b> iff either &psi; is not
+true<sub><b>I</b>,<b>f</b></sub> at
+<b>w</b> or &theta; is true<sub><b>I</b>,<b>f</b></sub>
+at <b>w</b>.</li>
+
+<li>If &phi; is &forall;&alpha;&psi;, then &phi;is
+true<sub><b>I</b>,<b>f</b></sub> at <b>w</b> iff, for every <b>a</b>
+&isin; <b>D</b>, &psi; is
+true<sub><b>I</b>,<b>f</b>[&alpha;,<b>a</b>]</sub> at <b>w</b>.</li>
+
+<li>If &phi; is &#9633;&psi;, then &phi; is
+true<sub><b>I</b>,<b>f</b></sub> at <b>w</b> iff, for every
+world <b>w</b>&prime; &isin; <b>W</b>, &psi; is
+true<sub><b>I</b>,<b>f</b></sub> at <b>w</b>&prime;</li>
+
+</ul>
+ 
+
+<p>
+&phi; is <em>true</em><sub><b>I</b></sub> <em>at</em> <b>w</b> iff
+&phi; is true<sub><b>I</b>,<b>f</b></sub> at <b>w</b> for every
+variable assignment <b>f</b>.</p>
+
+<p>
+&phi; is <em>true</em><sub><b>I</b></sub> iff
+&phi; is true<sub><b>I</b></sub> at the actual
+world <b>w</b><sub>0</sub> of <b>I</b>.</p>
+
+<p>
+&phi; is <em>logically true</em>, or <em>valid</em>, iff &phi; is
+true<sub><b>J</b></sub> for all interpretations <b>J</b>
+of <b><em>L</em></b>.  A set &Gamma; of formulas
+of <b><em>L</em></b> <em>entails</em> &phi; iff, for every
+interpretation <b>J</b> of <b><em>L</em></b>, &phi; is
+true<sub><b>J</b></sub> if every member of &Gamma; is
+true<sub><b>J</b></sub>.</p>
+
+
+<h3><a name="3">3. A Complete Proof Theory for SQML</a></h3>
+
+<p>
+
+Let
+<b><em>L</em></b> be an arbitrary first-order modal language.  The axioms
+and rules of inference of propositional logic, <em>S5</em> modal logic,
+classical quantification theory, and the logic of identity (relative
+to <b><em>L</em></b>) are as follows, where &phi;, &psi;, and &theta; are
+formulas, &alpha; and &beta; variables, and &tau; a term of
+<b><em>L</em></b>.  (&phi;<sub>&alpha;/&tau;</sub> signifies the result
+of substituting an occurrence of &tau; for
+every free occurrence of
+&alpha; in &phi;.)</p>
+
+<h4>3.1 Propositional Logic (<em>PL</em>)</h4>
+
+<ol>
+<li>&phi; &rarr; (&psi; &rarr; &phi;)</li>
+
+<li>&phi;
+&rarr; (&psi; &rarr; &theta;))
+&rarr; ((&phi; &rarr; &psi;)
+&rarr; (&phi;
+&rarr; &theta;))</li>
+
+<li>(~&phi; &rarr; &psi;) &rarr;
+((~&phi;
+&rarr; ~&psi;)
+&rarr; &phi;)</li>
+</ol>
+
+<p>
+
+Modus Ponens (MP):
+&psi; follows from &phi;
+&rarr; &psi; and
+&phi;</p>
+
+<h4>3.2 Classical (First-order) Quantification Theory (<em>CQT</em>)</h4>
+
+<ol start="4">
+
+<li>&forall;&alpha;&phi; &rarr; &phi;<sub>&alpha;/&tau;</sub>, where
+&tau; is substitutable 
+ for<sup>[<a href="notes.html#SQML-1" name="note-1">1</a>]</sup>
+ &alpha; in &phi; (&ldquo;Universal Instantiation&rdquo;)</li>
+
+<li>&forall;&alpha;(&phi; &rarr; &psi;) &rarr; (&phi; &rarr;
+&forall;&alpha;&psi;),
+where &alpha; does not occur free in &phi;</li>
+
+</ol>
+
+<p>
+
+Generalization (GEN): &forall;&alpha;&phi;
+follows from &phi;<sub>&alpha;/&tau;</sub></p>
+
+<p>
+The existential quantifier is defined
+in the usual way: &exist;&alpha;&phi;
+=<sub><em>df</em></sub> ~&forall;&alpha;~&phi;</p>
+
+
+<h4>3.3 Logic of Identity (<em>Id</em>)</h4>
+
+<ol start="6">
+
+<li><em>x = x</em></li>
+
+<li><em>x = y</em> &rarr; (&phi; &rarr; &phi;&prime;), where
+&phi;&prime; is the result of substituting <em>y</em> for some, but
+not necessarily all, occurrences of <em>x</em> in &phi;, provided that
+<em>y</em> is substitutable for <em>x</em> at
+those occurrences.</li>
+
+</ol>
+
+<h4>3.4 Propositional Modal Logic (<em>S5</em>)</h4>
+
+<ol start="8">
+
+<li>&#9633;(&phi; &rarr; &psi;)&rarr;
+(&#9633;&phi;
+&rarr; &#9633;&psi;)</li>
+
+<li>&#9633;&phi; &rarr;
+&phi;</li>
+
+<li>&#9671;&phi; &rarr;
+&#9633;&#9671;&phi;</li>
+
+</ol>
+
+<p>
+
+Rule of Necessitation (RN):
+&#9633;&phi; follows from
+&phi;</p>
+
+<p>
+The modal operator for possibility is defined as usual: &#9671;&phi;
+=<sub><em>df</em></sub>
+~&#9633;~&phi;.</p>
+
+<p>
+The structural similarity to the definition of the existential
+quantifier is of course no accident as, according to the semantics for
+SQML above, the modal operators are <em>literally</em> quantifiers
+over possible worlds.</p>
+
+<h3><a name="4">4. The System <em>SQML</em></a></h3>
+
+<p>
+
+The axiomatic system <em>SQML</em> can now be characterized succinctly
+by the &ldquo;equation&rdquo;: <em>SQML</em> = <em>PL</em>
++ <em>CQT</em> + <em>Id</em> + <em>S5</em>.</p>
+
+<p>
+
+<strong>Definition</strong>: &phi; is a <em>theorem
+of</em> <em>SQML</em> if it is an axiom of <em>SQML</em> or follows
+from other theorems of <em>SQML</em> by a rule of inference.</p>
+
+<p>
+
+<strong>Theorem</strong>: The system <em>SQML</em> is sound and
+complete relative to the semantic theory of SQML.  That is, for any
+formula &phi; of <b><em>L</em></b>, &phi; is valid if and only &phi;
+is a theorem of <em>SQML</em>.</p>
+
+<p>
+
+See, e.g., Hughes and Cresswell [1996], Ch. 14 for a proof of the
+theorem for SQML without the logic of identity.  The proof can be
+easily extended to full SQML by well known methods.</p>
+
+</div><!-- #aueditable --><!--DO NOT MODIFY THIS LINE AND BELOW-->
+
+<!-- END ARTICLE HTML -->
+
+</div> <!-- End article-content -->
+
+  <div id="article-copyright">
+    <p>
+ <a href="../../info.html#c">Copyright &copy; 2014</a> by
+
+<br />
+<a href="http://cmenzel.org/" target="other">Christopher Menzel</a>
+&lt;<a href="m&#97;ilto:cmenzel&#37;40tamu&#37;2eedu"><em>cmenzel<abbr title=" at ">&#64;</abbr>tamu<abbr title=" dot ">&#46;</abbr>edu</em></a>&gt;
+    </p>
+  </div>
+
+</div> <!-- End article -->
+
+<!-- NOTE: article banner is outside of the id="article" div. -->
+<div id="article-banner" class="scroll-block">
+  <div id="article-banner-content">
+    <a href="../../fundraising/index.html">
+    Open access to the SEP is made possible by a world-wide funding initiative.<br />
+    The Encyclopedia Now Needs Your Support<br />
+    Please Read How You Can Help Keep the Encyclopedia Free</a>
+  </div>
+</div> <!-- End article-banner -->
+
+    </div> <!-- End content -->
+
+    <div id="footer">
+
+      <div id="footer-menu">
+        <div class="menu-block">
+          <h4><i class="icon-book"></i> Browse</h4>
+          <ul role="menu">
+            <li><a href="../../contents.html">Table of Contents</a></li>
+            <li><a href="../../new.html">What's New</a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+            <li><a href="../../published.html">Chronological</a></li>
+            <li><a href="../../archives/index.html">Archives</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-info-sign"></i> About</h4>
+          <ul role="menu">
+            <li><a href="../../info.html">Editorial Information</a></li>
+            <li><a href="../../about.html">About the SEP</a></li>
+            <li><a href="../../board.html">Editorial Board</a></li>
+            <li><a href="../../cite.html">How to Cite the SEP</a></li>
+            <li><a href="../../special-characters.html">Special Characters</a></li>
+            <li><a href="../../tools/index.html">Advanced Tools</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-leaf"></i> Support SEP</h4>
+          <ul role="menu">
+            <li><a href="../../support/index.html">Support the SEP</a></li>
+            <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+            <li><a href="../../support/donate.html">Make a Donation</a></li>
+            <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+          </ul>
+        </div>
+      </div> <!-- End footer menu -->
+
+      <div id="mirrors">
+        <div id="mirror-info">
+          <h4><i class="icon-globe"></i> Mirror Sites</h4>
+          <p>View this site from another server:</p>
+        </div>
+        <div class="btn-group open">
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="https://plato.stanford.edu/">
+            <span class="flag flag-usa"></span> USA (Main Site) <span class="caret"></span>
+            <span class="mirror-source">Philosophy, Stanford University</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../mirrors.html">Info about mirror sites</a></li>
+          </ul>
+        </div>
+      </div> <!-- End mirrors -->
+      
+      <div id="site-credits">
+        <p>The Stanford Encyclopedia of Philosophy is <a href="../../info.html#c">copyright &copy; 2022</a> by <a href="http://mally.stanford.edu/">The Metaphysics Research Lab</a>, Department of Philosophy, Stanford University</p>
+        <p>Library of Congress Catalog Data: ISSN 1095-5054</p>
+      </div> <!-- End site credits -->
+
+    </div> <!-- End footer -->
+
+  </div> <!-- End container -->
+
+   <!-- NOTE: Script required for drop-down button to work (mirrors). -->
+  <script>
+    $('.dropdown-toggle').dropdown();
+  </script>
+
+</body>
+
+<!-- Mirrored from seop.illc.uva.nl/entries/actualism/SQML.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 20:02:20 GMT -->
+</html>

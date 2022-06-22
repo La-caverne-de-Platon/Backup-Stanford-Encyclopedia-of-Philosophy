@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="233 371 148 169" width="148" height="169">
+  <defs>
+    <font-face font-family="Palatino" font-size="16" units-per-em="1000" underline-position="-101.5625" underline-thickness="58.10547" slope="-750" x-height="476.5625" cap-height="692.8711" ascent="822.7539" descent="-277.34375" font-style="italic" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Palatino-Italic"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Palatino" font-size="12" units-per-em="1000" underline-position="-101.5625" underline-thickness="58.59375" slope="0" x-height="471.1914" cap-height="694.8242" ascent="822.7539" descent="-277.34375" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Palatino-Roman"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Palatino" font-size="18" units-per-em="1000" underline-position="-101.5625" underline-thickness="58.10547" slope="-666.6667" x-height="476.5625" cap-height="692.8711" ascent="822.7539" descent="-277.34375" font-style="italic" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Palatino-Italic"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Palatino" font-size="11" units-per-em="1000" underline-position="-101.5625" underline-thickness="58.59375" slope="0" x-height="471.1914" cap-height="694.8242" ascent="822.7539" descent="-277.34375" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Palatino-Roman"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="#7f8080">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2021-05-05 17:49:21 +0000</metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_2">
+        <text transform="translate(238.184 510)" fill="black">
+          <tspan font-family="Palatino" font-size="16" font-style="italic" font-weight="400" fill="black" x="0" y="16">p</tspan>
+          <tspan font-family="Palatino" font-size="12" font-weight="400" fill="black" y="22">1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(361.08 510)" fill="black">
+          <tspan font-family="Palatino" font-size="16" font-style="italic" font-weight="400" fill="black" x="0" y="16">p</tspan>
+          <tspan font-family="Palatino" font-size="12" font-weight="400" fill="black" y="22">2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <text transform="translate(238.93156 376)" fill="black">
+          <tspan font-family="Palatino" font-size="18" font-style="italic" font-weight="400" fill="black" x="0" y="19">s</tspan>
+          <tspan font-family="Palatino" font-size="11" font-weight="400" fill="black" y="24">1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(361.57756 376)" fill="black">
+          <tspan font-family="Palatino" font-size="18" font-style="italic" font-weight="400" fill="black" x="0" y="19">s</tspan>
+          <tspan font-family="Palatino" font-size="12" font-weight="400" fill="black" y="25">2</tspan>
+        </text>
+      </g>
+      <g id="Line_6">
+        <line x1="256.43644" y1="389.5458" x2="346.67764" y2="389.91292" marker-end="url(#FilledArrow_Marker)" stroke="#7f8080" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_8">
+        <line x1="257.184" y1="522.5" x2="346.18" y2="522.5" marker-end="url(#FilledArrow_Marker)" stroke="#7f8080" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_9">
+        <line x1="245.184" y1="505" x2="245.184" y2="408" stroke="#7f8080" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4.0,4.0" stroke-width="1"/>
+      </g>
+      <g id="Line_10">
+        <line x1="368.08" y1="409" x2="368.08" y2="505" stroke="#7f8080" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4.0,4.0" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

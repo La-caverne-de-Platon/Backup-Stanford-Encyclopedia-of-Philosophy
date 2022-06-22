@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 ie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 ie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 ie"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 ie"> <![endif]-->
+<!--[if !IE]> --> <html> <!-- <![endif]-->
+
+<!-- Mirrored from seop.illc.uva.nl/entries/logic-ai/notes.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 20:05:42 GMT -->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>
+Logic and Artificial Intelligence &gt; Notes (Stanford Encyclopedia of Philosophy)
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive, noodp" />
+<meta name="DCTERMS.ispartof" content="https://plato.stanford.edu/entries/logic-ai/" />
+
+<!-- NOTE: Import webfonts using this link: -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,200&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" href="../../css/font-awesome-ie7.min.css"> <![endif]-->
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../css/print.css" />
+<link rel="stylesheet" type="text/css" href="../../css/entry.css" />
+<!--[if IE]> <link rel="stylesheet" type="text/css" href="../../css/ie.css" /> <![endif]-->
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+
+<!-- NOTE: Javascript for sticky behavior needed on article and ToC pages -->
+<script type="text/javascript" src="../../js/jquery-scrolltofixed-min.js"></script>
+<script type="text/javascript" src="../../js/entry.js"></script>
+
+<!-- SEP custom script -->
+<script type="text/javascript" src="../../js/sep.js"></script>
+</head>
+
+<!-- NOTE: The nojs class is removed from the page if javascript is enabled. Otherwise, it drives the display when there is no javascript. -->
+<body class="nojs article" id="pagetopright">
+<div id="container">
+<div id="header-wrapper">
+  <div id="header">
+    <div id="branding">
+      <div id="site-logo"><a href="../../index.html"><img src="../../symbols/sep-man-red.png" alt="SEP logo" /></a></div>
+      <div id="site-title"><a href="../../index.html">Stanford Encyclopedia of Philosophy</a></div>
+    </div>
+    <div id="navigation">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <button class="btn btn-navbar collapsed" data-target=".collapse-main-menu" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Menu </button>
+            <div class="nav-collapse collapse-main-menu in collapse">
+              <ul class="nav">
+                <li class="dropdown open"><a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-book"></i> Browse</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                    <li><a href="../../contents.html">Table of Contents</a></li>
+                    <li><a href="../../new.html">What's New</a></li>
+                    <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+                    <li><a href="../../published.html">Chronological</a></li>
+                    <li><a href="../../archives/index.html">Archives</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-info-sign"></i> About</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                    <li><a href="../../info.html">Editorial Information</a></li>
+                    <li><a href="../../about.html">About the SEP</a></li>
+                    <li><a href="../../board.html">Editorial Board</a></li>
+                    <li><a href="../../cite.html">How to Cite the SEP</a></li>
+                    <li><a href="../../special-characters.html">Special Characters</a></li>
+                    <li><a href="../../tools/index.html">Advanced Tools</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-leaf"></i> Support SEP</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                    <li><a href="../../support/index.html">Support the SEP</a></li>
+                    <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+                    <li><a href="../../support/donate.html">Make a Donation</a></li>
+                    <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End navigation -->
+    
+    <div id="search">
+      <form id="search-form" method="get" action="https://seop.illc.uva.nl/search/searcher.py">
+        <input type="search" name="query" placeholder="Search SEP" />
+        <div class="search-btn-wrapper"><button class="btn search-btn" type="submit"><i class="icon-search"></i></button></div>
+      </form>
+    </div>
+    <!-- End search --> 
+    
+  </div>
+  <!-- End header --> 
+</div>
+<!-- End header wrapper -->
+
+<div id="content">
+
+<!-- Begin article sidebar -->
+<div id="article-sidebar" class="sticky">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <button class="btn btn-navbar" data-target=".collapse-sidebar" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Entry Navigation </button>
+        <div id="article-nav" class="nav-collapse collapse-sidebar in collapse">
+          <ul class="nav">
+            <li><a href="index.html">Back to Entry <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#toc">Entry Contents <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#Bib">Entry Bibliography <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#Aca">Academic Tools <i class="icon-external-link"></i></a></li>
+            <li><a href="https://leibniz.stanford.edu/friends/preview/logic-ai/">Friends PDF Preview <i class="icon-external-link"></i></a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=logic-ai">Author and Citation Info <i class="icon-external-link"></i></a> </li>
+            <li><a href="#pagetopright" class="back-to-top">Back to Top <i class="icon-angle-up icon2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End article sidebar --> 
+
+<!-- NOTE: Article content must have two wrapper divs: id="article" and id="article-content" -->
+<div id="article">
+<div id="article-content">
+
+<!-- BEGIN ARTICLE HTML -->
+<h4 id="supphead"></h4>
+
+<div id="aueditable">
+<!--DO NOT MODIFY THIS LINE AND ABOVE--> 
+<h2>Notes to <a href="index-2.html">Logic and Artificial Intelligence</a></h2>
+
+<div id="note-1">
+<p>
+
+<a href="index-2.html#ref-1">1.</a>
+ For readers who would like a better orientation to the field of AI, I
+recommend
+ <a href="index-2.html#russell_sj-norvig:2010a">Russell &amp; Norvig 2010</a>. 
+</p>
+</div>
+
+<div id="note-2">
+<p>
+
+ <a href="index-2.html#ref-2">2.</a>
+ See, for instance,
+ <a href="index-2.html#nilsson:1995a">Nilsson 1995</a>.</p>
+</div>
+
+<div id="note-3">
+<p>
+
+ <a href="index-2.html#ref-3">3.</a>
+ For two debates, see Volume 3, Number 3 of <em>Computational
+Intelligence</em>, devoted to
+ <a href="index-2.html#mcdermott_d:1987a">McDermott 1987</a>,
+ and the later exchange
+ <a href="index-2.html#nilsson_nj:1991a">Nilsson 1991</a>;
+ <a href="index-2.html#birnbaum:1991a">Birnbaum 1991</a>.</p>
+</div>
+
+<div id="note-4">
+<p>
+
+ <a href="index-2.html#ref-4">4.</a>
+ For some of the historical
+background, see
+ <a href="index-2.html#davis_m:1988a">Davis 1988</a>.</p>
+</div>
+
+<div id="note-5">
+<p>
+
+ <a href="index-2.html#ref-5">5.</a>
+ See
+ <a href="index-2.html#stefik:1995a">Stefik 1995</a>
+ for general background on expert
+systems. For information concerning explanation, see
+ <a href="index-2.html#moore_jd:1995a">Moore 1995a</a>;
+ <a href="index-2.html#clancey:1983a">Clancey 1983</a>.</p>
+</div>
+
+<div id="note-6">
+<p>
+
+ <a href="index-2.html#ref-6">6.</a>
+ For a good example of the use of these intuitions to motivate a
+system of logic, see the extended argument in
+ <a href="index-2.html#hintikka:1962a">Hintikka 1962</a>
+ that the modal logic <strong>S4</strong> is the correct logic of
+belief.</p>
+</div>
+
+<div id="note-7">
+<p>
+
+ <a href="index-2.html#ref-7">7.</a>
+ The submissions to the 1989 conference were unclassified as to topic;
+I sampled every other article, a total of 522. The 1998 conference
+divided its contributed articles into 26 topical sessions; I sampled
+the first paper in each of these sessions.</p>
+</div>
+
+<div id="note-8">
+<p>
+
+ <a href="index-2.html#ref-8">8.</a>
+ In the decade from 1990 to 1999 I counted one <em>JPL</em>
+publication by an AI researcher,
+ <a href="index-2.html#boutilier:1996a">Boutilier 1996</a>,
+ and five papers showing some AI influence; all of these dealt with
+nonmonotonic logic.</p>
+</div>
+
+<div id="note-9">
+<p>
+
+ <a href="index-2.html#ref-9">9.</a>
+ This includes robots (or &ldquo;softbots&rdquo;) that navigate artificial
+environments such as the Internet or virtual worlds as well as
+embodied robots that navigate the physical world.</p>
+</div>
+
+<div id="note-10">
+<p>
+
+ <a href="index-2.html#ref-10">10.</a>
+ I was surprised at first to hear the AI community refer to its
+logical advocates as logicists. On reflection, it seems to me much
+better to think of logicist projects in this general sense, as
+proposals to apply what Alonzo Church called &ldquo;the logistic method&rdquo; in
+seeking to understand reasoning in various domains. It is far too
+restrictive to narrowly associate logicism with Frege&rsquo;s program.</p>
+</div>
+
+<div id="note-11">
+<p>
+
+ <a href="index-2.html#ref-11">11.</a>
+ Data integration is one such area. See
+ <a href="index-2.html#levy_ay:2000a">Levy 2000</a>.
+ Large-scale knowledge representation is another. See
+ <a href="index-2.html#lenat-guha:1989a">Lenat &amp; Guha 1989</a>.</p>
+</div>
+
+<div id="note-12">
+<p>
+
+ <a href="index-2.html#ref-12">12.</a>
+ See
+ <a href="index-2.html#reiter_r:2001a">Reiter 2001</a>
+ for an extended contribution to <em>cognitive robotics</em>, with
+references to some of the other literature in this area. Reiter&rsquo;s book
+also contains self-contained chapters on the Situation Calculus and
+the problems of formalizing reasoning about action and change. I
+recommend these chapters to anyone wishing to follow up on the topics
+discussed in
+ Section&nbsp;<a href="index-2.html#ac">4</a>.
+ Another extended treatment of action formalisms and issues is
+ <a href="index-2.html#shanahan:1997a">Shanahan 1997</a></p>
+</div>
+
+<div id="note-13">
+<p>
+
+ <a href="index-2.html#ref-13">13.</a>
+ But much of the work in this last area has not made heavy use of
+logical techniques.  Qualitative physics and the formalization of
+other forms of qualitative reasoning is an independent specialty in
+AI, different in many ways from logical AI. But the two specialties
+have certainly influenced each other. For information concerning
+qualitative reasoning, consult
+ <a href="index-2.html#kuipers:1993a">Kuipers 1993</a>;
+ <a href="index-2.html#weld-dekleer:1990a">Weld &amp; de&nbsp;Kleer 1990</a>;
+ <a href="index-2.html#forbus:1988a">Forbus 1988</a>.</p>
+</div>
+
+<div id="note-14">
+<p>
+
+ <a href="index-2.html#ref-14">14.</a>
+ For further details concerning this approach, see
+ Section&nbsp;<a href="index-2.html#nmapproaches">3.4</a>,
+ below.</p>
+</div>
+
+<div id="note-15">
+<p>
+
+ <a href="index-2.html#ref-15">15.</a>
+ John McCarthy makes a similar point, illustrating it with an example,
+in
+ <a href="index-2.html#mccarthy_j1:1993a">McCarthy 1993a</a>.</p>
+</div>
+
+<div id="note-16">
+<p>
+
+ <a href="index-2.html#ref-16">16.</a>
+ This very difficult and not particularly well-defined problem was
+very much on the minds of many AI researchers in the area that later
+became knowledge representation, but it has not proved to be a
+productive focus for the field. Natural language interpretation has
+developed into a separate field, that is largely concerned with less
+sweeping problems, such as automated speech-to-speech discourse, data
+mining, and text summarization. Logical techniques have been used with
+some success in this area, but it is fair to say that natural language
+interpretation has not been the best showcase for logical ideas. Even
+the problem of providing an adequate semantic interpretation of
+generic constructions--a natural application of nonmonotonic
+logic--has turned out to be problematic. See
+ <a href="index-2.html#krifka-etal:1995a">Krifka et&nbsp;al. 1995</a>
+ for a general discussion of the issues.</p>
+</div>
+
+<div id="note-17">
+<p>
+
+ <a href="index-2.html#ref-17">17.</a>
+ This use of the word &lsquo;frame&rsquo; is unconnected to the use
+of the term in the &ldquo;frame problem,&rdquo; and is not to be confused with
+that problem.</p>
+</div>
+
+<div id="note-18">
+<p>
+
+ <a href="index-2.html#ref-18">18.</a>
+ This is a qualitative sense of inertia, meaning simply that the truth
+or falsity of an atomic formula persists across a change.</p>
+</div>
+
+<div id="note-19">
+<p>
+
+ <a href="index-2.html#ref-19">19.</a>
+ The analogy to modal logics of provability inspired by G&ouml;del&rsquo;s
+work
+ <a href="index-2.html#boolos:1993a">Boolos 1993</a>
+ has, of course, been recognized in later work in nonmonotonic
+logic. But it has not been a theme of major importance.</p>
+</div>
+
+<div id="note-20">
+<p>
+
+ <a href="index-2.html#ref-20">20.</a>
+ See
+ <a href="index-2.html#konolige:1988a">Konolige 1988</a>.</p>
+</div>
+
+<div id="note-21">
+<p>
+
+<a href="index-2.html#ref-21">21.</a>
+ Readers interested in the historical aspects of the material
+discussed in this section might wish to compare it to
+ <a href="index-2.html#ohrstrom-hasle:1995a">Ohrstrom &amp; Hasle 1995</a>.</p>
+</div>
+
+<div id="note-22">
+<p>
+
+ <a href="index-2.html#ref-22">22.</a>
+ For additional historical background on Prior&rsquo;s work, see
+ <a href="index-2.html#copeland:1997a">Copeland 1996</a>.</p>
+</div>
+
+<div id="note-23">
+<p>
+
+ <a href="index-2.html#ref-23">23.</a>
+ In retrospect, the term &ldquo;situation&rdquo; is not entirely fortunate, since
+it was later adopted independently and in quite a different sense by
+the situation semanticists. (See, for instance.
+ <a href="index-2.html#seligman-moss:1996a">Seligman &amp; Moss 1996</a>).
+ In the AI literature, the term &ldquo;state&rdquo; is often used interchangeably
+with &ldquo;situation&rdquo;, and as far as I can see, without causing any
+confusion: the connections with physical states, as well as with the
+more general states of any complex dynamic system are entirely
+appropriate.</p>
+</div>
+
+<div id="note-24">
+<p>
+
+ <a href="index-2.html#ref-24">24.</a>
+ The early versions of the Situation Calculus were meant to be
+compatible with concurrent cases, i.e., with cases in which there are
+multiple planning agents, possibly acting simultaneously. But most of
+the logical analyses have been devoted to the single-agent case.</p>
+</div>
+
+<div id="note-25">
+<p>
+
+ <a href="index-2.html#ref-25">25.</a>
+ Carnap&rsquo;s attempts to formalize dispositional terms and inductive
+methods are classical examples of the problems that emerge in the
+formalization of empirical science.</p>
+</div>
+
+<div id="note-26">
+<p>
+
+ <a href="index-2.html#ref-26">26.</a>
+ For information about planning under uncertainty, see, for instance,
+ <a href="index-2.html#dejong_g-bennett:1997a">DeJong &amp; Bennett 1989</a>;
+ <a href="index-2.html#bacchus-etal:1999a">Bacchus et&nbsp;al. 1999</a>;
+ <a href="index-2.html#boutilier-etal:1996a">Boutilier et&nbsp;al. 1996</a>.</p>
+</div>
+
+<div id="note-27">
+<p>
+
+ <a href="index-2.html#ref-27">27.</a>
+ Examples are
+ <a href="index-2.html#dennett:1987a">Dennett 1987</a>
+ and
+ <a href="index-2.html#fodor_ja:1987b">Fodor 1987</a>.</p>
+</div>
+
+<div id="note-28">
+<p>
+
+ <a href="index-2.html#ref-28">28.</a>
+ See
+ <a href="index-2.html#schubert:1990a">Schubert 1990</a>;
+ <a href="index-2.html#reiter_r:1993a">Reiter 1993</a>;
+ <a href="index-2.html#reiter_r:2001a">Reiter 2001</a>.</p>
+</div>
+
+<div id="note-29">
+<p>
+
+ <a href="index-2.html#ref-29">29.</a>
+ See
+ <a href="index-2.html#carlson_gn-pelletier:1995a">Carlson &amp; Pelletier 1995</a>.</p>
+</div>
+
+<div id="note-30">
+<p>
+
+ <a href="index-2.html#ref-30">30.</a>
+ This way of putting it is a little misleading for the Situation
+Calculus, since there is no robust notion of performing an action;
+instead, you consider the results of performing hypothetical action
+sequences. Even so, the point that the theory of unsuccessful actions
+has not been explored holds up.</p>
+</div>
+
+<div id="note-31">
+<p>
+
+ <a href="index-2.html#ref-31">31.</a>
+ Effects of actions that are delayed in time are a separate problem,
+which, as far as I know, no one has solved.</p>
+</div>
+
+<div id="note-32">
+<p>
+
+ <a href="index-2.html#ref-32">32.</a>
+ The relationship between an action and the occurrence of its
+conventional consequences is complicated, of course, by the
+&ldquo;imperfective paradox&rdquo; (see
+ <a href="index-2.html#lascarides:1992a">Lascarides 1992</a>;
+ <a href="index-2.html#dowty:1977a">Dowty 1977</a>.
+ Some of the work on AI theories of action and change is
+informed by these complexities; see
+ <a href="index-2.html#steedman:1995a">Steedman 1995</a>. 
+ <!-- <a href="index.html#steedman:1998a">1998</a> -->
+ But for the most part, they have not been taken into account in the
+AI literature.</p>
+</div>
+
+<div id="note-33">
+<p>
+
+ <a href="index-2.html#ref-33">33.</a>
+ Turner uses discrete temporal logic other than the Situation
+Calculus. But for uniformity of presentation I have used the Situation
+Calculus to present the ideas.</p>
+</div>
+
+<div id="note-34">
+<p>
+
+ <a href="index-2.html#ref-34">34.</a>
+ In explanation problems, one is reasoning backwards in time. Here,
+information is provided about a series of occurring states and the
+problem is to provide actions that account for the occurrences.</p>
+</div>
+
+<div id="note-35">
+<p>
+
+ <a href="index-2.html#ref-35">35.</a>
+ For information about the philosophical tradition, see
+ <a href="index-2.html#hintikka:1986a">Hintikka 1986</a>.
+ Also, see
+ <a href="index-2.html#laux-wansing:1995a">Laux &amp; Wansing 1995</a>.</p>
+</div>
+
+<div id="note-36">
+<p>
+
+ <a href="index-2.html#ref-36">36.</a>
+ A personal recollection: I was certainly aware of this case in the
+early 1970s, but did not devote much attention to it because it seemed
+to me that the generalization from the single-agent case was
+relatively trivial and did not pose any very interesting logical
+challenges.</p>
+</div>
+
+<div id="note-37">
+<p>
+
+ <a href="index-2.html#ref-37">37.</a>
+ See, for instance,
+ <a href="index-2.html#simon_ha:1982a">Simon 1982a</a>;
+ <a href="index-2.html#simon_ha:1982b">1982b</a>;
+ <a href="index-2.html#russell_sj-wefald:1991a">Russell &amp; Wefald 1991</a>.</p>
+</div>
+
+<div id="note-38">
+<p>
+
+ <a href="index-2.html#ref-38">38.</a>
+ Although this topic has received attention more recently in Situation
+Theory, the logical issues, in my opinion, have not been illuminated
+by this work.</p>
+</div>
+
+<div id="note-39">
+<p>
+
+ <a href="index-2.html#ref-39">39.</a>
+    For more information about qualitative physics, see
+ <a href="index-2.html#forbus:1988a">Forbus 1988</a>, 
+ <a href="index-2.html#kuipers:1993a">Kuipers 1993</a>, and 
+ <a href="index-2.html#forbus:1996a">Forbus:1996a</a>.
+</p>
+</div>
+
+<div id="note-40">
+<p>
+
+ <a href="index-2.html#ref-40">40.</a>
+ See
+ <a href="index-2.html#Morgenstern:CommonSensePage">
+  The Common Sense Problem Page</a> for this problem and others.</p>
+</div>
+
+<div id="note-41">
+<p>
+
+ <a href="index-2.html#ref-41">41.</a>
+ See
+ <a href="index-2.html#stefik:1995a">Stefik 1995</a>
+ for background on considerations having to do with knowledge
+engineering.</p>
+</div>
+	
+
+<div id="note-42">
+<p>
+ <a href="index-2.html#ref-42">42.</a>
+ For background on
+quantitative models of preference and decision, see
+ <a href="index-2.html#doyle-thomason_rh:1999a">Doyle &amp; Thomason 1999</a>.
+ For work in AI on intentions, see, for instance
+ <a href="index-2.html#konolige-pollack:1990a">Konolige &amp; Pollack 1993</a>;
+ <a href="index-2.html#cohen_pr1-levesque:1990a">Cohen &amp; Levesque 1990</a>;
+ <a href="index-2.html#sadek:1992a">Sadek 1992</a>;
+ <a href="index-2.html#pollack:1992a">Pollack 1992</a>.
+ </p>
+</div>
+
+
+</div><!-- #aueditable --><!--DO NOT MODIFY THIS LINE AND BELOW-->
+
+<!-- END ARTICLE HTML -->
+
+</div> <!-- End article-content -->
+
+  <div id="article-copyright">
+    <p>
+ <a href="../../info.html#c">Copyright &copy; 2018</a> by
+
+<br />
+Richmond Thomason
+&lt;<a href="m&#97;ilto:rthomaso&#37;40umich&#37;2eedu"><em>rthomaso<abbr title=" at ">&#64;</abbr>umich<abbr title=" dot ">&#46;</abbr>edu</em></a>&gt;
+    </p>
+  </div>
+
+</div> <!-- End article -->
+
+<!-- NOTE: article banner is outside of the id="article" div. -->
+<div id="article-banner" class="scroll-block">
+  <div id="article-banner-content">
+    <a href="../../fundraising/index.html">
+    Open access to the SEP is made possible by a world-wide funding initiative.<br />
+    The Encyclopedia Now Needs Your Support<br />
+    Please Read How You Can Help Keep the Encyclopedia Free</a>
+  </div>
+</div> <!-- End article-banner -->
+
+    </div> <!-- End content -->
+
+    <div id="footer">
+
+      <div id="footer-menu">
+        <div class="menu-block">
+          <h4><i class="icon-book"></i> Browse</h4>
+          <ul role="menu">
+            <li><a href="../../contents.html">Table of Contents</a></li>
+            <li><a href="../../new.html">What's New</a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+            <li><a href="../../published.html">Chronological</a></li>
+            <li><a href="../../archives/index.html">Archives</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-info-sign"></i> About</h4>
+          <ul role="menu">
+            <li><a href="../../info.html">Editorial Information</a></li>
+            <li><a href="../../about.html">About the SEP</a></li>
+            <li><a href="../../board.html">Editorial Board</a></li>
+            <li><a href="../../cite.html">How to Cite the SEP</a></li>
+            <li><a href="../../special-characters.html">Special Characters</a></li>
+            <li><a href="../../tools/index.html">Advanced Tools</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-leaf"></i> Support SEP</h4>
+          <ul role="menu">
+            <li><a href="../../support/index.html">Support the SEP</a></li>
+            <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+            <li><a href="../../support/donate.html">Make a Donation</a></li>
+            <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+          </ul>
+        </div>
+      </div> <!-- End footer menu -->
+
+      <div id="mirrors">
+        <div id="mirror-info">
+          <h4><i class="icon-globe"></i> Mirror Sites</h4>
+          <p>View this site from another server:</p>
+        </div>
+        <div class="btn-group open">
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="https://plato.stanford.edu/">
+            <span class="flag flag-usa"></span> USA (Main Site) <span class="caret"></span>
+            <span class="mirror-source">Philosophy, Stanford University</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../mirrors.html">Info about mirror sites</a></li>
+          </ul>
+        </div>
+      </div> <!-- End mirrors -->
+      
+      <div id="site-credits">
+        <p>The Stanford Encyclopedia of Philosophy is <a href="../../info.html#c">copyright &copy; 2021</a> by <a href="http://mally.stanford.edu/">The Metaphysics Research Lab</a>, Department of Philosophy, Stanford University</p>
+        <p>Library of Congress Catalog Data: ISSN 1095-5054</p>
+      </div> <!-- End site credits -->
+
+    </div> <!-- End footer -->
+
+  </div> <!-- End container -->
+
+   <!-- NOTE: Script required for drop-down button to work (mirrors). -->
+  <script>
+    $('.dropdown-toggle').dropdown();
+  </script>
+
+</body>
+
+<!-- Mirrored from seop.illc.uva.nl/entries/logic-ai/notes.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 20:05:42 GMT -->
+</html>

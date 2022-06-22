@@ -1,0 +1,2656 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 ie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 ie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 ie"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 ie"> <![endif]-->
+<!--[if !IE]> --> <html> <!-- <![endif]-->
+
+<!-- Mirrored from seop.illc.uva.nl/entries/church-turing/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 19:42:13 GMT -->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>
+The Church-Turing Thesis (Stanford Encyclopedia of Philosophy)
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive, noodp" />
+<meta property="citation_title" content="The Church-Turing Thesis" />
+<meta property="citation_author" content="Copeland, B. Jack" />
+<meta property="citation_publication_date" content="1997/01/08" />
+<meta name="DC.title" content="The Church-Turing Thesis" />
+<meta name="DC.creator" content="Copeland, B. Jack" />
+<meta name="DCTERMS.issued" content="1997-01-08" />
+<meta name="DCTERMS.modified" content="2017-11-10" />
+
+<!-- NOTE: Import webfonts using this link: -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,200&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" href="../../css/font-awesome-ie7.min.css"> <![endif]-->
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../css/print.css" />
+<link rel="stylesheet" type="text/css" href="../../css/entry.css" />
+<!--[if IE]> <link rel="stylesheet" type="text/css" href="../../css/ie.css" /> <![endif]-->
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+
+<!-- NOTE: Javascript for sticky behavior needed on article and ToC pages -->
+<script type="text/javascript" src="../../js/jquery-scrolltofixed-min.js"></script>
+<script type="text/javascript" src="../../js/entry.js"></script>
+
+<!-- SEP custom script -->
+<script type="text/javascript" src="../../js/sep.js"></script>
+</head>
+
+<!-- NOTE: The nojs class is removed from the page if javascript is enabled. Otherwise, it drives the display when there is no javascript. -->
+<body class="nojs article" id="pagetopright">
+<div id="container">
+<div id="header-wrapper">
+  <div id="header">
+    <div id="branding">
+      <div id="site-logo"><a href="../../index.html"><img src="../../symbols/sep-man-red.png" alt="SEP logo" /></a></div>
+      <div id="site-title"><a href="../../index.html">Stanford Encyclopedia of Philosophy</a></div>
+    </div>
+    <div id="navigation">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <button class="btn btn-navbar collapsed" data-target=".collapse-main-menu" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Menu </button>
+            <div class="nav-collapse collapse-main-menu in collapse">
+              <ul class="nav">
+                <li class="dropdown open"><a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-book"></i> Browse</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                    <li><a href="../../contents.html">Table of Contents</a></li>
+                    <li><a href="../../new.html">What's New</a></li>
+                    <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+                    <li><a href="../../published.html">Chronological</a></li>
+                    <li><a href="../../archives/index.html">Archives</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-info-sign"></i> About</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                    <li><a href="../../info.html">Editorial Information</a></li>
+                    <li><a href="../../about.html">About the SEP</a></li>
+                    <li><a href="../../board.html">Editorial Board</a></li>
+                    <li><a href="../../cite.html">How to Cite the SEP</a></li>
+                    <li><a href="../../special-characters.html">Special Characters</a></li>
+                    <li><a href="../../tools/index.html">Advanced Tools</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-leaf"></i> Support SEP</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                    <li><a href="../../support/index.html">Support the SEP</a></li>
+                    <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+                    <li><a href="../../support/donate.html">Make a Donation</a></li>
+                    <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End navigation -->
+    
+    <div id="search">
+      <form id="search-form" method="get" action="https://seop.illc.uva.nl/search/searcher.py">
+        <input type="search" name="query" placeholder="Search SEP" />
+        <div class="search-btn-wrapper"><button class="btn search-btn" type="submit"><i class="icon-search"></i></button></div>
+      </form>
+    </div>
+    <!-- End search --> 
+    
+  </div>
+  <!-- End header --> 
+</div>
+<!-- End header wrapper -->
+
+<div id="content">
+
+<!-- Begin article sidebar -->
+<div id="article-sidebar" class="sticky">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <button class="btn btn-navbar" data-target=".collapse-sidebar" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Entry Navigation </button>
+        <div id="article-nav" class="nav-collapse collapse-sidebar in collapse">
+          <ul class="nav">
+            <li><a href="#toc">Entry Contents</a></li>
+            <li><a href="#Bib">Bibliography</a></li>
+            <li><a href="#Aca">Academic Tools</a></li>
+            <li><a href="https://leibniz.stanford.edu/friends/preview/church-turing/">Friends PDF Preview <i class="icon-external-link"></i></a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=church-turing">Author and Citation Info <i class="icon-external-link"></i></a> </li>
+            <li><a href="#pagetopright" class="back-to-top">Back to Top <i class="icon-angle-up icon2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End article sidebar --> 
+
+<!-- NOTE: Article content must have two wrapper divs: id="article" and id="article-content" -->
+<div id="article">
+<div id="article-content">
+
+<!-- BEGIN ARTICLE HTML -->
+
+
+<div id="aueditable"><!--DO NOT MODIFY THIS LINE AND ABOVE-->
+
+<h1>The Church-Turing Thesis</h1><div id="pubinfo"><em>First published Wed Jan 8, 1997; substantive revision Fri Nov 10, 2017</em></div>
+
+
+<div id="preamble">
+
+<p>
+There are various equivalent formulations of the Church-Turing thesis.
+A common one is that every effective computation can be carried out by
+a Turing machine. The Church-Turing thesis is often misunderstood,
+particularly in recent writing in the philosophy of mind. </p>
+</div>
+
+<div id="toc">
+<!--Entry Contents-->
+
+<ul>
+
+ <li><a href="#ThesHist">1. The Thesis and its History</a>
+ 
+<ul>
+
+ <li><a href="#NoteTerm">Note on terminology</a></li>
+ 
+ <li><a href="#MakiInfoConcPrec">1.1 Making the informal concept of an effective method precise</a></li>
+ 
+ <li><a href="#FormTuriThesTermNumb">1.2 Formulations of Turing&rsquo;s thesis in terms of numbers</a></li>
+ 
+ <li><a href="#MeanCompCompTuriThes">1.3 The meaning of &lsquo;computable&rsquo; and &lsquo;computation&rsquo; in Turing&rsquo;s thesis</a></li>
+ 
+ <li><a href="#Ents">1.4 The <em>Entscheidungsproblem</em></a></li>
+
+ <li><a href="#CompTuriChurAppr">1.5 Comparing the Turing and Church approaches</a></li>
+ 
+ <li><a href="#ReasForAcceThes">1.6 Reasons for accepting the thesis</a></li>
+ 
+ <li><a href="#TuriArguForThes">1.7 Turing&rsquo;s arguments for the thesis</a></li>
+ 
+ <li><a href="#ModeVersTuriArgu">1.8 A modern version of Turing&rsquo;s argument II</a></li>
+ 
+ <li><a href="#TuriStatThes">1.9 Turing on the status of the thesis</a></li>
+ </ul></li>
+
+ <li><a href="#MisuThes">2. Misunderstandings of the Thesis</a>
+ 
+<ul>
+
+ <li><a href="#DistCousChurTuriThes">2.1 Distant cousins of the Church-Turing thesis</a></li>
+ 
+ <li><a href="#MaxiThes">2.2 The maximality thesis</a>
+ 
+<ul>
+
+ <li><a href="#AvoiConfTermComp">2.2.1 Avoiding confusion: the term &lsquo;computable&rsquo;</a></li>
+ 
+ <li><a href="#AnotSourPoteConfTermMech">2.2.2 Another source of potential confusions: the term &lsquo;mechanical&rsquo;</a></li>
+ 
+ <li><a href="#StroWeakFormMaxiThes">2.2.3 The stronger and weaker forms of the maximality thesis</a></li>
+ 
+ <li><a href="#WeakFormThesHype">2.2.4 The weaker form of the thesis and &lsquo;hypercomputation&rsquo;</a></li>
+ 
+ <li><a href="#EquiFall">2.2.5 The equivalence fallacy</a></li>
+ </ul></li>
+
+ <li><a href="#SomeConsMisuChurTuriThes">2.3 Some consequences of misunderstanding the Church-Turing thesis</a>
+ 
+<ul>
+
+ <li><a href="#SimuThes">2.3.1 The simulation thesis</a></li>
+ </ul></li>
+</ul></li>
+
+ <li><a href="#SomeKeyRemaTuri">3. Some Key Remarks by Turing</a>
+ 
+<ul>
+
+ <li><a href="#HumaCompMachComp">3.1 Human computation and machine computation</a></li>
+ 
+ <li><a href="#TuriUseMach">3.2 Turing&rsquo;s use of &lsquo;machine&rsquo;</a></li>
+ </ul></li>
+
+ <li><a href="#Bib">Bibliography</a></li>
+ 
+ <li><a href="#Aca">Academic Tools</a></li>
+ 
+ <li><a href="#Oth">Other Internet Resources</a></li>
+ 
+ <li><a href="#Rel">Related Entries</a></li>
+ </ul>
+<!--Entry Contents-->
+
+<hr />
+</div>
+
+<div id="main-text">
+
+<h2 id="ThesHist">1. The Thesis and its History</h2>
+
+<p>
+The Church-Turing thesis concerns the concept of an <em>effective</em>
+or <em>systematic</em> or <em>mechanical</em> method in logic,
+mathematics and computer science. &lsquo;Effective&rsquo; and its
+synonyms &lsquo;systematic&rsquo; and &lsquo;mechanical&rsquo; are
+terms of art in these disciplines: they do not carry their everyday
+meaning. A method, or procedure, <i>M</i>, for achieving some desired
+result is called &lsquo;effective&rsquo; (or &lsquo;systematic&rsquo;
+or &lsquo;mechanical&rsquo;) just in case: </p>
+
+<ol>
+
+<li><i>M</i> is set out in terms of a finite number of exact
+instructions (each instruction being expressed by means of a finite
+number of symbols);</li>
+
+<li><i>M</i> will, if carried out without error, produce the desired
+result in a finite number of steps;</li>
+
+<li><i>M</i> can (in practice or in principle) be carried out by a
+human being unaided by any machinery except paper and pencil;</li>
+
+<li><i>M</i> demands no insight, intuition, or ingenuity, on the part
+of the human being carrying out the method.</li>
+</ol>
+
+<p>
+A well-known example of an effective method is the truth table test
+for tautologousness. In principle, a human being who works by rote
+could apply this test successfully to any formula of the propositional
+calculus&mdash;given sufficient time, tenacity, paper, and pencils
+(although the test is unworkable in practice for any formula
+containing more than a few propositional variables). </p>
+
+<h4 id="NoteTerm">Note on terminology</h4>
+
+<p>
+Statements that there is an effective method for achieving
+such-and-such a result are commonly expressed by saying that there is
+an effective method for obtaining the values of such-and-such a
+mathematical <em>function</em>.</p>
+
+<p>
+For example, that there is an effective method for determining whether
+or not any given formula of the propositional calculus is a tautology
+(such as the truth table method) is expressed in function-speak by
+saying that there is an effective method for obtaining the values of a
+function, call it <i>T</i>, whose domain is the set of formulae of the
+propositional calculus and whose value for any given formula <i>x</i>,
+written \(T(x)\), is 1 or 0 according to whether <i>x</i> is, or is
+not, a tautology.</p>
+
+<h3 id="MakiInfoConcPrec">1.1 Making the informal concept of an effective method precise</h3>
+
+<p>
+The notion of an effective method is an informal one, and attempts to
+characterize effectiveness, such as the above, lack rigor, for the key
+requirement that the method must demand no insight, intuition or
+ingenuity is left unexplicated.</p>
+
+<p>
+One of Alan Turing&rsquo;s achievements, in his famous paper of 1936,
+was to present a formally exact predicate with which the informal
+predicate &ldquo;can be done by means of an effective method&rdquo;
+may be replaced (Turing 1936). Alonzo Church, working independently,
+did the same (Church 1936a).</p>
+
+<p>
+The replacement predicates that Turing and Church proposed were, on
+the face of it, very different from one another. However, these
+predicates turned out to be <em>equivalent</em>, in the sense that
+each picks out the same set, call it <i>S</i>, of mathematical
+functions. The Church-Turing thesis is the assertion that this set
+<i>S</i> contains <em>every</em> function whose values can be obtained
+by a method satisfying the above conditions for effectiveness.</p>
+
+<p>
+Since it can also be shown that there are no functions in <i>S</i>
+<em>other than</em> ones whose values can be obtained by a method
+satisfying the above conditions for effectiveness, the Church-Turing
+thesis licences replacing the informal claim &ldquo;There is an
+effective method for obtaining the values of function <i>f</i>&rdquo;
+by the formal claim &ldquo;<i>f</i> is a member of
+<i>S</i>&rdquo;&mdash;or by any other formal claim equivalent to this
+one.</p>
+
+<p>
+When the Church-Turing thesis is expressed in terms of the replacement
+concept proposed by Turing, it is appropriate to refer to the thesis
+also as &lsquo;Turing&rsquo;s thesis&rsquo;, and as
+&lsquo;Church&rsquo;s thesis&rsquo; when expressed in terms of one or
+another of the formal replacements proposed by Church.</p>
+
+<p>
+The formal concept proposed by Turing was that of <em>computability by
+Turing machine</em>. He argued for the claim&mdash;Turing&rsquo;s
+thesis&mdash;that whenever there is an effective method for obtaining
+the values of a mathematical function, the function can be computed by
+a Turing machine.</p>
+
+<p>
+The converse claim&mdash;amounting to the claim mentioned above, that
+there are no functions in <i>S</i> <em>other than</em> ones whose
+values can be obtained by an effective method&mdash;is easily
+established, since a Turing machine program is itself a specification
+of an effective method. Without exercising any insight, intuition, or
+ingenuity, a human being can work through the instructions in the
+program and carry out the required operations.</p>
+
+<p>
+If Turing&rsquo;s thesis is correct, then talk about the existence and
+non-existence of effective methods can be replaced throughout
+mathematics, logic and computer science by talk about the existence or
+non-existence of Turing machine programs.</p>
+
+<p>
+Turing stated his thesis in numerous places, with varying degrees of
+rigor. The following formulation is one of the most accessible:</p>
+
+<div class="indent">
+
+<p>
+<strong>Turing&rsquo;s thesis</strong>:
+<br />
+&ldquo;L.C.M.s [logical computing machines: Turing&rsquo;s expression
+for Turing machines] can do anything that could be described as
+&lsquo;rule of thumb&rsquo; or &lsquo;purely mechanical&rsquo;.&rdquo;
+(Turing 1948: 414) </p>
+</div>
+
+<p>
+He adds: </p>
+
+<blockquote>
+
+<p>
+This is sufficiently well established that it is now agreed amongst
+logicians that &ldquo;calculable by means of an L.C.M.&rdquo; is the
+correct accurate rendering of such phrases. (Ibid.)</p>
+</blockquote>
+
+<h3 id="FormTuriThesTermNumb">1.2 Formulations of Turing&rsquo;s thesis in terms of numbers</h3>
+
+<p>
+In his 1936 paper, titled &ldquo;On Computable Numbers, with an
+Application to the Entscheidungsproblem&rdquo;, Turing wrote:</p>
+
+<blockquote>
+
+<p>
+Although the subject of this paper is ostensibly the computable
+numbers, it is almost equally easy to define and investigate
+computable functions &hellip; I have chosen the computable numbers for
+explicit treatment as involving the least cumbrous technique. (1936:
+58)</p>
+</blockquote>
+
+<p>
+Computable numbers are (real) numbers whose decimal representation can
+be generated progressively, digit by digit, by a Turing machine.
+Examples are:</p>
+
+<ul>
+
+<li>any number whose decimal representation consists of a finite
+number of digits (e.g., 109, 1.142)</li>
+
+<li>all rational numbers, such as one-third, two-sevenths, etc.</li>
+
+<li>some irrational real numbers, such as &pi; and e.</li>
+</ul>
+
+<p>
+Some real numbers, though, are <em>un</em>computable, as Turing
+proved. Turing&rsquo;s proof pointed to specific examples of
+uncomputable real numbers, but it is easy to see in a general way that
+there <em>must</em> be real numbers that cannot be computed by any
+Turing machine, since there are <em>more</em> real numbers than there
+are Turing-machine programs. There can be no more Turing-machine
+programs than there are whole numbers, since the programs can be
+counted: 1<sup>st</sup> program, 2<sup>nd</sup> program, and so on;
+but, as Georg Cantor proved in 1874,there are vastly more real numbers than whole
+numbers (Cantor 1874).</p>
+
+<p>
+As Turing said, &ldquo;it is almost equally easy to define and
+investigate computable functions&rdquo;: there is, in a certain sense,
+little difference between a computable number and a computable
+function. For example, the computable number .14159&hellip; (formed of
+the digits following the decimal point in &pi;, 3.1419&hellip;)
+corresponds to the computable function: \(f(1) = 1\), \(f(2) = 4\),
+\(f(3) = 1\), \(f(4) = 5\), \(f(6) = 9\), &hellip; .</p>
+
+<p>
+As well as formulations of Turing&rsquo;s thesis like the one given
+above, Turing also formulated his thesis in terms of numbers:</p>
+
+<blockquote>
+
+<p>
+[T]he &ldquo;computable numbers&rdquo; include all numbers which would
+naturally be regarded as computable. (Turing 1936: 58)</p>
+
+<p>
+It is my contention that these operations [the operations of an
+L.C.M.] include all those which are used in the computation of a
+number. (Turing 1936: 60) </p>
+</blockquote>
+
+<p>
+In the first of these two formulations, Turing is stating that every
+number which is able to be calculated by an effective method (that is,
+&ldquo;all numbers which would naturally be regarded as
+computable&rdquo;) is included among the numbers whose decimal
+representations can be written out progressively by one or another
+Turing machine. In the second, Turing is saying that the operations of
+a Turing machine include all those that a human mathematician needs to
+use when calculating a number by means of an effective method.</p>
+
+<h3 id="MeanCompCompTuriThes">1.3 The meaning of &lsquo;computable&rsquo; and &lsquo;computation&rsquo; in Turing&rsquo;s thesis</h3>
+
+<p>
+Turing introduced his machines with the intention of providing an
+idealized description of a certain human activity, the tedious one of
+<em>numerical computation</em>. Until the advent of automatic
+computing machines, this was the occupation of many thousands of
+people in business, government, and research establishments. These
+human rote-workers were in fact called <em>computers</em>. Human
+computers used effective methods to carry out some aspects of the work
+nowadays done by electronic computers. The Church-Turing thesis is
+about computation <em>as this term was used in 1936</em>, viz. human
+computation (to read more on this, turn to the
+ <a href="#SomeKeyRemaTuri">section 3</a>).</p>
+
+<p>
+For instance, when Turing says that the operations of an L.C.M.
+include all those needed &ldquo;in the computation of a number&rdquo;,
+he means &ldquo;in the computation of a number by a human
+being&rdquo;, since that is what computation was in those days.
+Similarly &ldquo;numbers which would naturally be regarded as
+computable&rdquo; are numbers which would be regarded as computable by
+a human computer, a human being who is working solely in accordance
+with an effective method.</p>
+
+<h3 id="Ents">1.4 The <em>Entscheidungsproblem</em></h3>
+
+<p>
+Turing introduced his thesis in the course of arguing that the
+<em>Entscheidungsproblem</em>, or decision problem, for the functional
+calculus&mdash;also known as the first-order predicate
+calculus&mdash;is unsolvable. This problem was first posed by David
+Hilbert (Hilbert and Ackermann 1928). As explained by Turing (1936:
+84), Hilbert&rsquo;s <em>Entscheidungsproblem</em> is this: <em>Is
+there a general (effective) process for determining whether a given
+formula A of the functional calculus is provable?</em></p>
+
+<p>
+The truth table test is such a method for the propositional calculus.
+However, Turing showed that, given his thesis, there can be
+<em>no</em> effective method in the case of the full first-order
+predicate calculus.</p>
+
+<p>
+He proved formally that no Turing machine can tell, of each formula of the predicate
+calculus, whether or not the formula is a theorem of the calculus (provided the machine is limited to a finite number of steps when testing a formula for theoremhood). So, given his thesis
+that if an effective method exists then it can be carried out by one
+of his machines, it follows that there is no such method. </p>
+
+<h4 id="ChurCont">Church&rsquo;s contribution</h4>
+
+<p>
+Church stated the <em>Entscheidungsproblem</em> more generally: </p>
+
+<blockquote>
+By the Entscheidungsproblem of a system of symbolic logic is here
+understood the problem to find an effective method by which, given any
+expression <i>Q</i> in the notation of the system, it can be
+determined whether or not <i>Q</i> is provable in the system. (Church
+1936b: 41)
+</blockquote>
+
+<p>
+A few months before Turing, Church arrived at the same negative result
+concerning the decidability of the functional calculus. They
+discovered this result quite independently of one another. Church
+employed the concept of <em>lambda-definability</em>
+(&lambda;-definability) where Turing used computability by an
+L.C.M.</p>
+
+<p>
+The concept of a lambda-definable function is due to Church and his
+student Stephen Kleene (Church 1932, 1936a, 1941; Kleene 1935). A
+function is said to be lambda-definable if the values of the function
+can be obtained by a certain process of repeated substitution.</p>
+
+<p>
+Where Turing used the term &lsquo;purely mechanical&rsquo;, Church
+used &lsquo;effectively calculable&rsquo; to indicate that there is an
+effective method for obtaining the values of the function. He proposed
+that we</p>
+
+<blockquote>
+define the notion &hellip; of an effectively calculable function of
+positive integers by identifying it with the notion of a recursive
+function of positive integers (or of a &lambda;-definable function of
+positive integers). (Church 1936a: 356)
+</blockquote>
+
+<p>
+The concept of a recursive function is due to Kurt G&ouml;del and
+Jacques Herbrand (G&ouml;del 1934; Herbrand 1932). The class of
+lambda-definable functions (of positive integers) and the class of
+recursive functions (of positive integers) are identical. This was
+proved by Church and Kleene (Church 1936a; Kleene 1936).</p>
+
+<p>
+After learning of Church&rsquo;s 1936 proposal to identify
+effectiveness with lambda-definability (while preparing his own paper for publication) Turing quickly established that
+the concept of lambda-definability and his concept of
+computability are equivalent (by proving the &ldquo;theorem that all
+&hellip; &lambda;-definable sequences &hellip; are computable&rdquo;
+and its converse; 1936: 88ff). Thus, in Church&rsquo;s proposal, the
+words &ldquo;&lambda;-definable function of positive integers&rdquo;
+(and equally the words &ldquo;recursive function of positive
+integers&rdquo;) can be replaced by &ldquo;function of positive
+integers that is computable by Turing machine&rdquo;. </p>
+
+<p>
+Emil Post referred to Church&rsquo;s identification of effective
+calculability with recursiveness and lambda-definability as a
+&lsquo;working hypothesis&rsquo;, and he quite properly criticized
+Church for masking this hypothesis as a <em>definition</em>:</p>
+
+<blockquote>
+[T]o mask this identification under a definition &hellip; blinds us to
+the need of its continual verification. (Post 1936: 105)
+</blockquote>
+
+<p>
+This, then, is the &lsquo;working hypothesis&rsquo; that, in effect,
+Church proposed: </p>
+
+<p class="indent">
+<strong>Church&rsquo;s thesis</strong>:
+<br />
+A function of positive integers is effectively calculable only if
+lambda-definable (or, equivalently, recursive).
+</p>
+
+<p>
+The reverse implication, that every lambda-definable function of
+positive integers is effectively calculable, is commonly referred to
+as <em>the converse of Church&rsquo;s thesis,</em> although Church
+himself did not so distinguish (bundling both theses together in his
+&lsquo;definition&rsquo;).</p>
+
+<p>
+If attention is restricted to functions of positive integers,
+Church&rsquo;s thesis and Turing&rsquo;s thesis are
+<em>extensionally</em> equivalent. &lsquo;Extensionally
+equivalent&rsquo; means that the two theses are about one and the same
+class of functions: in view of the previously mentioned results by
+Church, Kleene and Turing, the class of lambda-definable functions (of
+positive integers) is identical to the class of recursive functions
+(of positive integers) and to the class of computable functions (of
+positive integers). Notice, though, that while the two theses are
+equivalent in this sense, they nevertheless have distinct meanings and
+so are two <em>different</em> theses. One important difference between
+the two is that Turing&rsquo;s thesis concerns <em>computing
+machines</em>, whereas Church&rsquo;s does not.</p>
+
+<p>
+Concerning the origin of the terms &lsquo;Church&rsquo;s thesis&rsquo;
+and &lsquo;Turing&rsquo;s thesis&rsquo;, Kleene seems to have been the
+first to use the word &lsquo;thesis&rsquo; in this connection: in
+1952, he introduced the name &lsquo;Church&rsquo;s thesis&rsquo; for
+the proposition that every effectively calculable function (on the
+natural numbers) is recursive (Kleene 1952: 300, 301, 317). The term
+&lsquo;Church-Turing thesis&rsquo; also seems to have originated with
+Kleene&mdash;with a flourish of bias in favour of his mentor
+Church:</p>
+
+<blockquote>
+
+<p>
+So Turing&rsquo;s and Church&rsquo;s theses are equivalent. We shall
+usually refer to them both as <em>Church&rsquo;s thesis</em>, or in
+connection with that one of its &hellip; versions which deals with
+&lsquo;Turing machines&rsquo; as the <em>Church-Turing thesis</em>.
+(Kleene 1967: 232)</p>
+</blockquote>
+
+<p>
+Some prefer the name <em>Turing-Church thesis</em>.</p>
+
+<h3 id="CompTuriChurAppr">1.5 Comparing the Turing and Church approaches</h3>
+
+<p>
+One way in which the two men&rsquo;s approaches differed was that
+Turing&rsquo;s concerns were rather more general than Church&rsquo;s,
+in that (as indicated previously) Church considered only functions of
+positive integers, whereas Turing described his work as encompassing
+&ldquo;computable functions of an integral variable or a real or
+computable variable, computable predicates, and so forth&rdquo; (1936:
+58). Turing intended to pursue the theory of computable functions of a
+real variable in a subsequent paper, but in fact did not do so.</p>
+
+<p>
+A greater difference lay in the profound significance of
+Turing&rsquo;s approach for the emerging science of automatic
+computation. Church&rsquo;s approach did not mention computing
+machinery, whereas Turing&rsquo;s introduced the &lsquo;Turing
+machine&rsquo;, as Church dubbed it in his 1937a review of
+Turing&rsquo;s paper&mdash;Turing&rsquo;s abstract computing machine
+that encapsulates the fundamental logical principles of the
+stored-program, all-purpose digital computer.</p>
+
+<p>
+In his review of Turing&rsquo;s work, Church himself acknowledged the
+superiority of Turing&rsquo;s analysis of effectiveness, saying:</p>
+
+<blockquote>
+
+<p>
+computability by a Turing machine &hellip; has the advantage of making
+the identification with effectiveness in the ordinary (not explicitly
+defined) sense evident immediately. (Church 1937a: 43)</p>
+</blockquote>
+
+<p>
+G&ouml;del also found Turing&rsquo;s analysis superior. Kleene related
+that G&ouml;del was unpersuaded by Church&rsquo;s thesis until he saw
+Turing&rsquo;s formulation: </p>
+
+<blockquote>
+
+<p>
+According to a November 29, 1935, letter from Church to me, G&ouml;del
+&ldquo;regarded as thoroughly unsatisfactory&rdquo; Church&rsquo;s
+proposal to use &lambda;-definability as a definition of effective
+calculability. &hellip; It seems that only after Turing&rsquo;s
+formulation appeared did G&ouml;del accept Church&rsquo;s thesis.
+(Kleene 1981: 59, 61)</p>
+</blockquote>
+
+<p>
+G&ouml;del described Turing&rsquo;s analysis of computability as
+&ldquo;most satisfactory&rdquo; and &ldquo;correct &hellip; beyond any
+doubt&rdquo; (G&ouml;del 1951: 304 and *193?: 168). He remarked: </p>
+
+<blockquote>
+
+<p>
+We had not perceived the sharp concept of mechanical procedures
+sharply before Turing, who brought us to the right perspective.
+(Quoted in Wang 1974: 85)</p>
+</blockquote>
+
+<p>
+G&ouml;del also said:</p>
+
+<blockquote>
+
+<p>
+The resulting definition of the concept of mechanical by the sharp
+concept of &ldquo;performable by a Turing machine&rdquo; is both
+correct and unique. &hellip; Moreover it is absolutely impossible that
+anybody who understands the question and knows Turing&rsquo;s
+definition should decide for a different concept. (Quoted in Wang
+1996: 203)</p>
+</blockquote>
+
+<p>
+It was Turing&rsquo;s work, G&ouml;del emphasized, that enabled him to
+generalize his incompleteness result of 1931 (originally directed
+specifically at the formal system set out by Whitehead and Russell in
+their <em>Principia Mathematica</em>) to &ldquo;<em>every</em>
+consistent formal system containing a certain amount of finitary
+number theory&rdquo; (G&ouml;del in Davis 1965: 71).</p>
+
+<p>
+Even the modest young Turing agreed that his analysis was
+&ldquo;possibly more convincing&rdquo; than Church&rsquo;s (Turing
+1937: 153).</p>
+
+<h3 id="ReasForAcceThes">1.6 Reasons for accepting the thesis</h3>
+
+<p>
+While there have from time to time been attempts to call the
+Church-Turing thesis into question (for example by
+L&aacute;szl&oacute; Kalm&aacute;r in his 1959; Elliot Mendelson
+replied in his 1963), the summary of the situation that Turing gave in
+1948 is no less true today: &ldquo;it is now agreed amongst logicians
+that &lsquo;calculable by L.C.M.&rsquo; is the correct accurate
+rendering&rdquo; of the informal concept of effectiveness.</p>
+
+<p>
+Much evidence has amassed for the &lsquo;working hypothesis&rsquo;
+proposed by Church and Turing in 1936. One of the fullest surveys is
+to be found in chapters 12 and 13 of Kleene&rsquo;s 1952. In
+summary:</p>
+
+<ul class="sentag tag2em">
+
+<li><span class="tag">(1)</span><span class="sen"> Every effectively
+calculable function that has been investigated in this respect has
+turned out to be computable by Turing machine.</span></li>
+
+<li><span class="tag">(2)</span><span class="sen"> All known methods
+or operations for obtaining new effectively calculable functions from
+given effectively calculable functions are paralleled by methods for
+constructing new Turing machines from given Turing
+machines.</span></li>
+
+<li><span class="tag">(3)</span><span class="sen"> All attempts to
+give an exact analysis of the intuitive notion of an effectively
+calculable function have turned out to be <em>equivalent</em>, in the
+sense that each analysis offered has been proved to pick out the same
+class of functions, namely those that are computable by Turing
+machine.</span></li>
+</ul>
+
+<p>
+(3) is often considered (although not in fact by Kleene himself) to be
+very strong evidence for the thesis, because of the <em>diversity</em>
+of the various formal analyses involved. For example, apart from the
+analyses already mentioned in terms of lambda-definability and
+recursiveness&mdash;and, of course, Turing-machine
+computability&mdash;there are analyses in terms of register machines
+(Shepherdson and Sturgis 1963), Post&rsquo;s canonical and normal
+systems (Post 1943, 1946), combinatory definability (Sch&ouml;nfinkel
+1924; Curry 1929, 1930, 1932), Markov algorithms (Markov 1960), and
+G&ouml;del&rsquo;s notion of reckonability (G&ouml;del 1936; Kleene
+1952).</p>
+
+<p>
+(3) may be summed up by saying that the concept of effective
+calculability&mdash;or the concept of computability
+simpliciter&mdash;has turned out to be <em>formalism-independent</em>,
+in that all these different formalisms pick out exactly the
+<em>same</em> class of functions. G&ouml;del emphasised the importance
+of formalism-independence in remarks he made in 1946 (Kennedy 2013
+gives a discussion of these remarks). G&ouml;del said that &ldquo;the
+great importance &hellip; [of] Turing&rsquo;s computability&rdquo;
+is</p>
+
+<blockquote>
+
+<p>
+largely due to the fact that with this concept one has for the first
+time succeeded in giving an absolute definition of an interesting
+epistemological notion, i.e., one not depending on the formalism
+chosen. (G&ouml;del 1946: 150)</p>
+</blockquote>
+
+<h3 id="TuriArguForThes">1.7 Turing&rsquo;s arguments for the thesis</h3>
+
+<p>
+Outstanding among the reasons for accepting the thesis are two
+arguments that Turing gave in Section 9 of &ldquo;On Computable
+Numbers&rdquo;. He referred to these arguments simply as
+&lsquo;I&rsquo; and &lsquo;II&rsquo;. Turing&rsquo;s argument I
+involves a number of plausible assumptions about human computers.
+These include the following (1936: 75&ndash;76):</p>
+
+<ol>
+
+<li>Instead of using two-dimensional sheets of paper, the computer can
+do his or her work on paper tape of the same kind that a Turing
+machine uses&mdash;a one-dimensional tape, divided into squares.</li>
+
+<li>The computer is not able to recognize more than a finite number of
+different types of symbol.</li>
+
+<li>The computer is not able to observe an unlimited number of
+tape-squares all at once&mdash;if he or she wishes to observe more
+squares than can be taken in at one time, then successive observations
+of the tape must be made.</li>
+
+<li>When the computer makes a successive observation in order to view
+more squares, none of the newly observed squares will be more than a
+certain fixed distance away from the nearest previously observed
+square. In other words, successive observations do not involve
+unbounded leaps along the tape.</li>
+
+<li>When the computer makes changes to the contents of the tape (e.g.,
+by deleting the symbol written in a particular square and replacing it
+by a different symbol), no more than one square can be altered at
+once. If the computer wishes to alter, say, 100 squares then he or she
+performs 100 successive operations.</li>
+
+<li>The computer&rsquo;s behavior at any moment is determined by the
+symbols that he or she is observing and his or her &lsquo;state of
+mind&rsquo; at that moment; and the number of &lsquo;states of mind&rsquo; that need to be taken
+into account when describing the computer&rsquo;s behavior is
+finite. (Turing noted that reference to the computer&rsquo;s states of mind can be avoided by talking instead about configurations of symbols, these being &ldquo;a more definite and physical counterpart&rdquo; of states of mind.)</li>
+
+</ol>
+
+<p>
+Turing argued that, given his various assumptions about human
+computers, the work of any human computer can be taken over by a
+Turing machine. Whatever sequence the human computer is computing, a
+Turing machine &ldquo;can be constructed to compute the same
+sequence&rdquo;, Turing said (1936: 77). Therefore (argument I
+concludes) any humanly computable number&mdash;or, more generally,
+sequence of symbols&mdash;is also computable by Turing machine.</p>
+
+<p>
+Turing&rsquo;s argument II hinges on a proposition we may call</p>
+
+<div class="indent">
+
+<p>
+<strong>Turing&rsquo;s provability theorem</strong>:
+<br />
+Every formula provable in Hilbert&rsquo;s first-order predicate
+calculus can be proved by the universal Turing machine. (See Turing
+1936: 77)</p>
+</div>
+
+<p>
+Argument II is the subject of the next section. </p>
+
+<h3 id="ModeVersTuriArgu">1.8 A modern version of Turing&rsquo;s argument II</h3>
+
+<p>
+A significant recent contribution to the area has been made by Kripke
+(2013). A conventional view of the status of the Church-Turing thesis
+is that, while &ldquo;very considerable intuitive evidence&rdquo; has
+amassed for the thesis, the thesis is &ldquo;not a precise enough
+issue to be itself susceptible to mathematical treatment&rdquo;, as
+Kripke puts it (2013: 77). Kleene gave an early expression of this now
+conventional view:</p>
+
+<blockquote>
+<p>
+Since our original notion of effective calculability of a function
+&hellip; is a somewhat vague intuitive one, the thesis cannot be
+proved. &hellip; While we cannot prove Church&rsquo;s thesis, since
+its role is to delimit precisely an hitherto vaguely conceived
+totality, we require evidence &hellip;. (Kleene 1952: 318)</p>
+</blockquote>
+
+<p>
+Rejecting the conventional view, Kripke suggests that, on the
+contrary, the Church-Turing thesis is susceptible to mathematical
+proof. Furthermore he canvasses the idea that Turing himself sketched
+an argument that serves to prove the thesis.</p>
+
+<p>
+As previously mentioned, Section 9 of Turing&rsquo;s 1936 paper
+offered a number of arguments for the thesis. Kripke attempts to build
+a mathematical demonstration of the Church-Turing thesis around the
+second of these, Turing&rsquo;s II, claiming that his demonstration is
+&ldquo;very close&rdquo; to Turing&rsquo;s (Kripke 2013: 80).
+(Although Kripke admits that he does &ldquo;not find [Turing&rsquo;s]
+argument II to be entirely clearly presented&rdquo; (2013: 81) and, in
+its detail, the Kripke argument differs from Turing&rsquo;s argument.)
+</p>
+
+<p>
+Kripke argues that the Church-Turing thesis is a corollary of
+G&ouml;del&rsquo;s completeness theorem for first-order predicate
+calculus with identity. Put somewhat crudely, the latter theorem
+states that every <em>valid</em> deduction (couched in the language of
+first-order predicate calculus with identity) is <em>provable</em> in
+the calculus. In other words, the deduction of <i>B</i> from premises
+\(A_{1}\), \(A_{2}\), &hellip; \(A_{n}\) (where statements \(A_{1}\),
+\(A_{2}\), &hellip; \(A_{n}\), <i>B</i> are all in the language of
+first-order predicate calculus with identity) is logically valid if
+and only if <i>B</i> can be proved from \(A_{1}\), \(A_{2}\), &hellip;
+\(A_{n}\) in the calculus.</p>
+
+<p>
+The first step of the Kripke argument is his claim that (error-free,
+human) computation is itself a form of deduction:</p>
+
+<blockquote>
+
+<p>
+[A] computation is a special form of mathematical argument. One is
+given a set of instructions, and the steps in the computation are
+supposed to follow&mdash;follow deductively&mdash;from the
+instructions as given. <em>So a computation is just another
+mathematical deduction, albeit one of a very specialized form</em>.
+(Kripke 2013: 80)</p>
+</blockquote>
+
+<p>
+The following two-line program in pseudo-code illustrates
+Kripke&rsquo;s claim. The symbol &lsquo;\(\rightarrow\)&rsquo; is read
+&lsquo;becomes&rsquo;, and &lsquo;=&rsquo; as usual means identity.
+The first instruction in the program is 
+
+\[r \rightarrow 2\]
+
+ This tells the
+computer to place the value 2 in storage location <i>r</i> (assumed to
+be initially empty). The second instruction 
+
+\[r \rightarrow r + 3\]
+
+ tells the
+computer to add 3 to the content of <i>r</i> and store the result in
+<i>r</i> (over-writing the previous content of <i>r</i>). The
+execution of this two-line program can be represented as a
+deduction:</p>
+
+<div class="indent">
+
+<p>
+[Execution of \(r \rightarrow 2\), followed immediately by execution
+of \(r \rightarrow r + 3\)] logically entails that \(r = 5\) in the
+immediately resulting state. </p>
+</div>
+
+<p>
+In the case of Turing-machine programs, Turing developed a detailed
+logical notation for expressing all such deductions (Turing 1936).</p>
+
+<p>
+(In fact, the successful execution of <em>any</em> string of
+instructions can be represented deductively in this
+fashion&mdash;Kripke has not drawn attention to a feature special to
+computation. The instructions do not need to be ones that a computer
+can carry out.)</p>
+
+<p>
+The second step of Kripke&rsquo;s argument is to appeal to what he
+calls <em>Hilbert&rsquo;s thesis</em> (attributing the name to Martin
+Davis): this is the thesis that the steps of any mathematical argument
+can be expressed &ldquo;in a language based on first-order logic (with
+identity)&rdquo; (Kripke 2013: 81).</p>
+
+<p>
+Applying Hilbert&rsquo;s thesis to Kripke&rsquo;s above quoted claim
+that &ldquo;a computation is just another mathematical
+deduction&rdquo; (2013: 80) yields: </p>
+
+<div class="indent">
+
+<p>
+every (human) computation can be formalized as a valid deduction
+couched in the language of first-order predicate calculus with
+identity.</p>
+</div>
+
+<p>
+Now, applying G&ouml;del&rsquo;s completeness theorem to this yields
+in turn: </p>
+
+<div class="indent">
+
+<p>
+every (human) computation is provable in first-order predicate
+calculus with identity, in the sense that, given an appropriate
+formalization, each step of the computation can be derived from the
+instructions (possibly in conjunction with ancillary premises, e.g., well-known
+mathematical premises, or premises concerning numbers that are
+supplied to the computer at the start of the computation).</p>
+</div>
+
+<p>
+Finally, applying Turing&rsquo;s provability theorem to this
+intermediate conclusion yields the Church-Turing thesis: </p>
+
+<div class="indent">
+
+<p>
+every (human) computation can be done by Turing machine.</p>
+</div>
+
+<p>
+Nachum Dershowitz and Yuri Gurevich and (independently) Wilfried Sieg
+have also argued that the Church-Turing thesis is susceptible to
+mathematical proof. Sieg focusses on Turing&rsquo;s argument I,
+offering an axiomatized version of it in his 2002 and 2008 (for a
+critique of Sieg&rsquo;s approach see Shagrir 2006). In their 2008
+Dershowitz and Gurevich offer &ldquo;a proof of Church&rsquo;s Thesis,
+as G&ouml;del and others suggested may be possible&rdquo; (2008, 299),
+adding:</p>
+
+<blockquote>
+
+<p>
+In a similar way, but with a different set of basic operations, one
+can prove Turing&rsquo;s Thesis, &hellip; . (Dershowitz and Gurevich
+2008: 299)</p>
+</blockquote>
+
+<h3 id="TuriStatThes">1.9 Turing on the status of the thesis</h3>
+
+<p>
+Turing&rsquo;s own view of the status of his thesis is very different
+from that expressed by Kripke, Sieg, and Dershowitz and Gurevich.
+According to Turing, his thesis is not susceptible to mathematical
+proof. He did not consider either argument I or argument II to be a
+mathematical demonstration of his thesis: he asserted that I and II,
+and indeed &ldquo;[a]ll arguments which can be given&rdquo; for the
+thesis, are</p>
+
+<blockquote>
+
+<p>
+fundamentally, appeals to intuition, and for this reason rather
+unsatisfactory mathematically. (Turing 1936: 74)</p>
+</blockquote>
+
+<p>
+Indeed, Turing might have regarded Hilbert&rsquo;s thesis as itself an
+example of a proposition that can be justified only by appeals to
+intuition.</p>
+
+<p>
+Turing discussed a thesis that is closely related to Turing&rsquo;s
+thesis, namely <em>for every systematic method there is a
+corresponding substitution-puzzle</em> (where
+&lsquo;substitution-puzzle&rsquo;, like &lsquo;computable by Turing
+machine&rsquo;, is a rigorously defined concept). He said:</p>
+
+<blockquote>
+
+<p>
+The statement is &hellip; one which one does not attempt to prove.
+Propaganda is more appropriate to it than proof, for its status is
+something between a theorem and a definition. (Turing 1954: 588)</p>
+</blockquote>
+
+<p>
+Probably Turing would have taken this remark to apply equally to the
+thesis (Turing&rsquo;s thesis) that <em>for every systematic method
+there is a corresponding Turing machine</em>. He also said (in
+handwritten material published in 2004) that the phrase
+&lsquo;systematic method&rsquo;</p>
+
+<blockquote>
+
+<p>
+is a phrase which, like many others e.g., &lsquo;vegetable&rsquo; one
+understands well enough in the ordinary way. But one can have
+difficulties when speaking to greengrocers or microbiologists or when
+playing &lsquo;twenty questions&rsquo;. Are rhubarb and tomatoes
+vegetables or fruits? Is coal vegetable or mineral? What about coal
+gas, marrow, fossilised trees, streptococci, viruses? Has the lettuce
+I ate at lunch yet become animal? &hellip; The same sort of difficulty
+arises about question c) above [<em>Is there a systematic method by
+which I can answer such-and-such questions</em>?]. An ordinary sort of
+acquaintance with the meaning of the phrase &lsquo;systematic
+method&rsquo; won&rsquo;t do, because one has got to be able to say
+quite clearly about any kind of method that might be proposed whether
+it is allowable or not. (Turing in Copeland 2004b: 590)</p>
+</blockquote>
+
+<p>
+Here Turing is emphasizing that the term &lsquo;systematic
+method&rsquo; is not exact, and so in that respect is like the term
+&lsquo;vegetable&rsquo; but unlike mathematically precise terms, such
+as &lsquo;&lambda;-definable&rsquo;, &lsquo;Turing-machine
+computable&rsquo;, and &lsquo;substitution-puzzle&rsquo;. Hence his
+claim that the appropriate way to support a statement that pairs
+systematic methods with items falling under a mathematically precise
+description is to offer &lsquo;propaganda&rsquo;, rather than to
+attempt to prove it.</p>
+
+
+
+<h2 id="MisuThes">2. Misunderstandings of the Thesis</h2>
+
+<p>
+Unfortunately a myth has arisen concerning Turing&rsquo;s paper of
+1936, namely that he there gave a treatment of the <em>limits of
+mechanism</em>, and established a fundamental result to the effect
+that the universal Turing machine can simulate the behaviour of
+<em>any</em> machine. This myth has passed into the philosophy of
+mind, theoretical psychology, cognitive science, computer science,
+Artificial Intelligence, Artificial Life, and
+elsewhere&mdash;generally to pernicious effect.</p>
+
+<p>
+For example, the <em>Oxford Companion to the Mind</em> states:</p>
+
+<blockquote>
+
+<p>
+Turing showed that his very simple machine &hellip; can specify the
+steps required for the solution of any problem that can be solved by
+instructions, explicitly stated rules, or procedures. (Richard Gregory
+writing in his 1987: 784)</p>
+</blockquote>
+
+<p>
+Daniel Dennett maintains that</p>
+
+<blockquote>
+
+<p>
+Turing had proven&mdash;and this is probably his greatest
+contribution&mdash;that his Universal Turing machine can compute any
+function that any computer, with any architecture, can compute
+(1991: 215)</p>
+</blockquote>
+
+<p>
+and also that <em>every</em></p>
+
+<blockquote>
+
+<p>
+task for which there is a clear recipe composed of simple steps can be
+performed by a very simple computer, a universal Turing machine, the
+universal recipe-follower. (1978: xviii)</p>
+</blockquote>
+
+<p>
+Paul and Patricia Churchland assert that Turing&rsquo;s</p>
+
+<blockquote>
+
+<p>
+results entail something remarkable, namely that a standard digital
+computer, given only the right program, a large enough memory and
+sufficient time, can compute <em>any</em> rule-governed input-output
+function. That is, it can display any systematic pattern of responses
+to the environment whatsoever. (1990: 26)</p>
+</blockquote>
+
+<p>
+These various quotations are typical of writing on the foundations of
+computer science and computational theories of mind. The claims made
+are true, however, only if the general terms &lsquo;explicitly stated
+rule&rsquo;, &lsquo;instruction&rsquo;, &lsquo;clear recipe composed
+of simple steps&rsquo;, and so forth, are <em>restricted</em> in such
+a way as to refer only to what can be done by means of effective
+methods. Turing did <em>not</em> show that his machines can solve any
+problem that can be solved &ldquo;by instructions, explicitly stated
+rules, or procedures&rdquo; (Gregory 1987), and nor did he prove that the universal
+Turing machine &ldquo;can compute any function that any computer, with
+any architecture, can compute&rdquo; (Dennett 1991). Nor do his results entail that a
+standard digital computer &ldquo;can compute <em>any</em>
+rule-governed input-output function&rdquo; (Churchland and Churchland 1990).</p>
+
+<p>
+In reality Turing proved that his universal machine can compute any
+function that any Turing machine can compute; and he put forward, and
+advanced philosophical arguments in support of, the thesis that
+effective methods are to be identified with methods that the universal
+Turing machine is able to carry out. The sweeping claims just quoted
+go far beyond Turing&rsquo;s own words.</p>
+
+<h3 id="DistCousChurTuriThes">2.1 Distant cousins of the Church-Turing thesis</h3>
+
+<p>
+The Church-Turing thesis is a thesis about the extent of effective
+methods, and therein lies its mathematical importance. Putting this
+another way, the thesis concerns what a <em>human being</em> can
+achieve when working by rote, with paper and pencil (ignoring
+contingencies such as boredom, death, or insufficiency of paper). The
+thesis carries no implication concerning the extent of what
+<em>machines</em> are capable of achieving (even digital machines
+acting in accordance with &ldquo;explicitly stated rules&rdquo; (Gregory 1987)).
+Because, among a machine&rsquo;s repertoire of basic operations, there
+may be operations that a human being working by rote with paper and
+pencil cannot perform.</p>
+
+<p>
+Essentially, then, the Church-Turing thesis says that no human
+computer, or machine that mimics a human computer, can out-compute the
+universal Turing machine. However, a variety of other propositions,
+very different from the Church-Turing thesis properly so called, are
+from time to time dubbed the Church-Turing thesis (or Church&rsquo;s
+thesis)&mdash;sometimes, but not always, with accompanying hedges,
+such as &lsquo;strong form&rsquo; and &lsquo;physical version&rsquo;.
+For instance, the claim that the universal Turing machine can do any
+mathematical task that can be done by <em>any</em> machine&mdash;a
+claim very different from Turing&rsquo;s&mdash;is sometimes referred
+to as the Church-Turing thesis.</p>
+
+<p>
+This loosening of established terminology is unfortunate, since it can
+easily lead to misunderstandings and confusion. Some examples from the
+literature of this loosening are:</p>
+
+<blockquote>
+
+<p>
+connectionist models &hellip; may possibly even challenge the strong
+construal of Church&rsquo;s Thesis as the claim that the class of
+well-defined computations is exhausted by those of Turing machines.
+(Smolensky 1988: 3)</p>
+
+<p>
+That there exists a most general formulation of machine and that it
+leads to a unique set of input-output functions has come to be called
+<em>Church&rsquo;s thesis</em>. (Newell 1980: 150)</p>
+
+<p>
+Church-Turing thesis: If there is a well defined procedure for
+manipulating symbols, then a Turing machine can be designed to do the
+procedure. (Henry 1993: 149)</p>
+
+<p>
+[I]t is difficult to see how any language that could actually be run
+on a physical computer could do more than Fortran can do. The idea
+that there is no such language is called Church&rsquo;s thesis.
+(Geroch and Hartle 1986: 539)</p>
+</blockquote>
+
+<p>
+Also, more distant still from anything that Church or Turing actually
+wrote:</p>
+
+<blockquote>
+
+<p>
+The first aspect that we examine of Church&rsquo;s Thesis &hellip;
+[w]e can formulate, more precisely: The behaviour of any discrete
+physical system evolving according to local mechanical laws is
+recursive. (Odifreddi 1989: 107)</p>
+
+<p>
+I can now state the physical version of the Church-Turing principle:
+&ldquo;Every finitely realizable physical system can be perfectly
+simulated by a universal model computing machine operating by finite
+means&rdquo;. This formulation is both better defined and more
+physical than Turing&rsquo;s own way of expressing it. (Deutsch 1985:
+99)</p>
+</blockquote>
+
+<p>
+The latter is indeed &ldquo;more physical&rdquo; than Turing&rsquo;s
+thesis. It is, though, a completely <em>different</em> claim from
+Turing&rsquo;s own, and so it is misleading to present it as a
+&ldquo;better defined&rdquo; version of what Turing said. Turing and
+Church were talking about effective methods, not finitely realizable
+physical systems. Although the phrase &ldquo;physical version of the
+Church-Turing thesis&rdquo; is reasonably common in the current
+literature, it is better avoided, since neither Church nor Turing
+endorsed, nor even formulated, any such proposition.</p>
+
+<p>
+Similarly:</p>
+
+<blockquote>
+
+<p>
+[T]he Physical Church-Turing Thesis &hellip; is the conjecture that
+whatever physical computing device (in the broader sense) or physical
+thought-experiment will be designed by any future civilization, it
+will always be simulateable by a Turing machine. (Andr&eacute;ka,
+N&eacute;meti, and N&eacute;meti 2009: 500) </p>
+</blockquote>
+
+<p>
+These writers go on to assert that what they call the &lsquo;Physical
+Church-Turing Thesis&rsquo;</p>
+
+<blockquote>
+
+<p>
+was formulated and generally accepted in the 1930s. (Ibid.)</p>
+</blockquote>
+
+<p>
+Yet it was <em>not</em> the conjecture that these writers set out in
+the quote, but Turing&rsquo;s and Church&rsquo;s theses properly so
+called, that were formulated and generally accepted in the 1930s and
+1940s.</p>
+
+<h3 id="MaxiThes">2.2 The maximality thesis</h3>
+
+<p>
+It is important to distinguish between the Church-Turing thesis
+properly so called and what I term the &lsquo;maximality thesis&rsquo;
+(Copeland 2000).</p>
+
+<p>
+First, some terminology. A machine <i>m</i> will be said to be able to
+<em>generate</em> a certain function (e.g., <i>x</i> squared) if
+<i>m</i> can be set up so that if <i>m</i> is presented with any of
+the function&rsquo;s arguments (e.g., 4), <i>m</i> will carry out some
+sequence of processing steps, at the end of which <i>m</i> produces
+the corresponding value of the function (16 in the example).
+<em>Mutatis mutandis</em> for functions that, like addition, demand
+more than one argument.</p>
+
+<div class="indent">
+
+<p>
+<strong>Maximality thesis</strong>:
+<br />
+All functions that can be generated by machines (working in accordance
+with a finite program of instructions) are computable by effective
+methods.</p>
+</div>
+
+<p>
+Robin Gandy is one of the few writers to have distinguished explicitly
+between Turing&rsquo;s thesis and the stronger proposition that
+<em>whatever can be calculated by a machine can be calculated by a
+Turing machine</em> (Gandy 1980). Gandy called his own formulation of
+the maximality thesis &lsquo;Thesis M&rsquo;. (Gandy&rsquo;s argument
+for his Thesis M is evaluated in Copeland and Shagrir 2007.)</p>
+
+<h4 id="AvoiConfTermComp">2.2.1 Avoiding confusion: the term &lsquo;computable&rsquo;</h4>
+
+<p>
+It is worth noting the existence in the literature of another practice
+with the potential to mislead the unwary. (Although, unlike the
+terminological practices complained about above, this one is in itself
+perfectly acceptable.) In technical material, including textbooks, the
+word &lsquo;computable&rsquo; is often tied by definition to
+effectiveness. Thus a function is said to be computable if and only if
+there is an effective method for obtaining its values. If
+&lsquo;computable&rsquo; is used in this way, then the maximality
+thesis can be stated more simply: All functions that can be generated
+by machines (working in accordance with a finite program of
+instructions) are computable.</p>
+
+<p>
+A common formulation of the Church-Turing thesis in the technical
+literature is the following, where &lsquo;computable&rsquo; is being
+used synonymously with &lsquo;effectively computable&rsquo;:</p>
+
+<blockquote>
+
+<p>
+All computable functions are computable by Turing machine.</p>
+</blockquote>
+
+<p>
+Turing himself uses &lsquo;computable&rsquo; in this way, for instance
+in the following formulation of his thesis, mentioned earlier:</p>
+
+<blockquote>
+
+<p>
+[T]he &lsquo;computable numbers&rsquo; include all numbers which would
+naturally be regarded as computable. (Turing 1936: 58)</p>
+</blockquote>
+
+<p>
+Entailments such as the following are sometimes offered in the
+literature:</p>
+
+<blockquote>
+
+<p>
+certain functions are uncomputable in an absolute sense: uncomputable
+even by [standard Turing machine], and, therefore, uncomputable by any
+past, present, or future real machine. (Boolos and Jeffrey 1980:
+55)</p>
+</blockquote>
+
+<p>
+Because the word &lsquo;computable&rsquo; is here being employed
+synonymously with &lsquo;computable by an effective method&rsquo;,
+this statement is entailed by the Church-Turing thesis, in conjunction
+with Turing&rsquo;s result that there exist functions uncomputable by
+any standard Turing machine. However, to a casual reader of the
+technical literature, this statement and others like it may appear to
+say more than they in fact do. That a function is
+<em>uncomputable</em>, in this sense, by any past, present, or future
+real machine, does <em>not</em> entail that the function in question
+cannot be <em>generated</em> by some real machine (past, present, or
+future).</p>
+
+<p>
+The terminological decision to tie the term
+&lsquo;computable&rsquo; (and its cognates) to the concept of
+effectiveness does lead to the truth of:</p>
+
+<p class="indent">
+No possible <em>computing machine</em> can generate a function that
+the universal Turing machine cannot.</p>
+
+<p>But the question of the truth or falsity of the maximality thesis
+itself remains open.  Although the terminological decision, if
+accepted, does prevent one from describing any machine putatively
+falsifying the maximality thesis as <em>computing</em> the function
+that it generates.</p>
+
+<p>
+Some authors use phrases such as &ldquo;computation in a broad
+sense&rdquo; to indicate that they mean computation in a form
+potentially transcending effective methods (e.g., Copeland 1997;
+Andr&eacute;ka, N&eacute;meti and N&eacute;meti 2009).</p>
+
+<h4 id="AnotSourPoteConfTermMech">2.2.2 Another source of potential confusions: the term &lsquo;mechanical&rsquo;</h4>
+
+<p>
+There is a world of difference between the technical and everyday
+meanings of the word &lsquo;mechanical&rsquo;. In technical usage, the
+term &lsquo;mechanical&rsquo;, like the term &lsquo;computable&rsquo;,
+is tied to effectiveness, and in the technical literature
+&lsquo;mechanical&rsquo; and &lsquo;effective&rsquo; are usually used
+interchangeably (Gandy 1988 outlines the history of this use of the
+word &lsquo;mechanical&rsquo;). For example, statements like the
+following are to be found:</p>
+
+<blockquote>
+
+<p>
+Turing proposed that a certain class of abstract machines could
+perform any &lsquo;mechanical&rsquo; computing procedure. (Mendelson
+1964: 229)</p>
+</blockquote>
+
+<p>
+Understood correctly, this remark attributes to Turing not the
+maximality thesis but Turing&rsquo;s thesis properly so-called.</p>
+
+<p>
+This technical usage of &lsquo;mechanical&rsquo; has a tendency to
+obscure the possibility of there being machines (or biological organs)
+that generate functions not able to be generated by standard Turing
+machines. The question &ldquo;Can a <em>machine</em> execute a
+procedure that is not mechanical?&rdquo; may appear
+self-answering&mdash;yet this is precisely what is asked if the
+maximality thesis is questioned.</p>
+
+<h4 id="StroWeakFormMaxiThes">2.2.3 The stronger and weaker forms of the maximality thesis</h4>
+
+<p>
+The maximality thesis admits of two interpretations, according to
+whether the phrase &ldquo;can be generated by machine&rdquo; is taken
+in the this-worldly sense of &ldquo;can be generated by a machine that
+conforms to the physical laws (if not perhaps to the resource
+constraints) of the actual world&rdquo; [the weaker form], or in a
+sense that abstracts from whether or not the envisaged machine could
+exist in the actual world [the stronger form]. The stronger-weaker
+terminology is intended to reflect the fact that the stronger form
+entails the weaker, but not vice versa.</p>
+
+<p>
+The stronger form of the maximality thesis is known to be false. This
+can be shown by providing an example of a machine that works in
+accordance with a finite program of instructions in order to generate
+a function that is not computable by any standard Turing machine; and
+so, by Turing&rsquo;s thesis, is not computable by an effective
+method. Although a single example suffices to show that the thesis is
+false, two examples are given here.</p>
+
+<h5>1<sup>st</sup> counterexample to the stronger form of the thesis: Extended Turing Machines</h5>
+
+<p>
+Extended Turing Machines (ETMs) were invented by Fred Abramson (1971).
+An ETM is exactly like a standard Turing machine except that, whereas
+a standard Turing machine stores only a single discrete symbol on each
+(non-blank) square of its tape (e.g., &lsquo;0&rsquo; or
+&lsquo;1&rsquo;), a single square of an ETM&rsquo;s tape can store any
+desired <em>real</em> number, for example &pi;, or even an
+uncomputable real number. (The method of storing real numbers on the
+tape is left unspecified in this purely logical model.)</p>
+
+<p>
+As previously explained, Turing established the existence of real
+numbers that cannot be computed by standard Turing machines (Turing
+1936). These numbers are usually called &lsquo;uncomputable
+numbers&rsquo;, but, in a broad sense of &lsquo;compute&rsquo;, ETMs
+can compute them. Abramson also proved that ETMs are able to generate
+functions not capable of being computed by any standard Turing
+machine. It follows, by Turing&rsquo;s thesis, that these functions
+are not computable by effective methods. Therefore, ETMs form
+counterexamples to the stronger form of the maximality thesis.</p>
+
+<h5>2<sup>nd</sup> counterexample to the stronger form of the thesis: Accelerating Turing Machines</h5>
+
+<p>
+Accelerating Turing machines (ATMs) are exactly like standard Turing
+machines except that their speed of operation accelerates as the
+computation proceeds (Stewart 1991; Copeland 1998a,b, 2002a; Copeland
+and Shagrir 2011): an ATM performs the second operation called for by
+its program in half the time taken to perform the first, the third in
+half the time taken to perform the second, and so on.</p>
+
+<p>
+If the time taken to perform the first operation is called one
+&lsquo;moment&rsquo;, then the second operation is performed in half a
+moment, the third operation in quarter of a moment, and so on. Since</p>
+
+\[
+ \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \ldots + \frac{1}{2n} +
+ \frac{1}{2n+1} + \ldots \le 1,
+\]
+
+<p>
+an ATM is able to perform infinitely many
+operations in 2 moments of operating time. This enables ATMs to
+generate functions that cannot be computed by any standard Turing
+machine.</p>
+
+<p>
+One example of such a function is the <em>halting function
+<i>h</i></em>. \(h(n) = 1\) if the <i>n</i>th (standard) Turing
+machine halts, and \(h(n) = 0\) if the <i>n</i>th (standard) Turing
+machine runs on endlessly. It is well known that no standard Turing
+machine can generate this function (Davis 1958); but an ATM can
+produce any of the function&rsquo;s values in a finite period of
+time.</p>
+
+<p>
+When computing \(h(n)\), the ATM&rsquo;s first step is write
+&lsquo;0&rsquo; on a square of the tape called the answer square
+(<i>A</i>). The ATM then proceeds to simulate the actions of the
+<i>n</i>th Turing machine. If the ATM finds that the <i>n</i>th
+machine halts, then the ATM goes on to erase the &lsquo;0&rsquo; that
+it previously wrote on <i>A</i>, replacing this by &lsquo;1&rsquo;.
+If, on the other hand, the <i>n</i>th machine does not halt, the ATM
+never returns to square <i>A</i> to erase the &lsquo;0&rsquo;
+originally written there. Either way, once two moments of operating
+time have elapsed, <i>A</i> contains the value \(h(n)\) (Copeland
+1998a).</p>
+
+<p>
+So, again, ATMs form counterexamples to the stronger form of the
+maximality thesis. </p>
+
+<h4 id="WeakFormThesHype">2.2.4 The weaker form of the thesis and &lsquo;hypercomputation&rsquo;</h4>
+
+<p>
+A <em>hypercomputer</em> is any information-processing machine
+(notional or real) that is able to achieve more than Turing&rsquo;s
+human rote-worker can in principle achieve (see the entry on
+ <a href="../computation-physicalsystems/index.html">computation in physical systems</a>).
+ The term &lsquo;hypercomputer&rsquo; was introduced in Copeland and
+Proudfoot 1999a. Hypercomputers compute (in a broad sense of
+&lsquo;compute&rsquo;) functions or numbers&mdash;or, more generally,
+solve problems or carry out information-processing tasks&mdash;that
+lie beyond the reach of the universal Turing machine (see Copeland
+2002b, 2004a; Copeland and Proudfoot 2012; Syropoulos 2008). ETMs and
+ATMs are examples of&mdash;notional&mdash;hypercomputers.</p>
+
+<p>
+The weaker form of the maximality thesis would be falsified by the
+actual existence of a physical hypercomputer. Speculation stretches
+back over at least five decades that there may be real physical
+processes&mdash;and so, potentially, real
+machine-operations&mdash;whose behaviour conforms to functions not
+computable by any standard Turing machine. See, for example,
+Scarpellini 1963; Kreisel 1967, 1974, 1982; Pour-El and Richards 1979,
+1981; Doyle 1982; Geroch and Hartle 1986; Pitowsky 1990; Stannett
+1990; da Costa and Doria 1991, 1994; Hogarth 1994; and Siegelmann and
+Sontag 1994. At the close of the 20<sup>th</sup> century Copeland and
+Sylvan gave an evangelical survey of the emerging field in their 1999.
+</p>
+
+<p>
+To summarize the situation with respect to the weaker form of the
+maximality thesis: At the present time, it remains unknown whether
+hypercomputation is permitted or excluded by the contingencies of the
+actual universe. It is, therefore, an open empirical question whether
+or not the weaker form of the maximality thesis is true.</p>
+
+<h4 id="EquiFall">2.2.5 The equivalence fallacy</h4>
+
+<p>
+A common but spurious argument for the maximality thesis, which we may
+call the &lsquo;equivalence fallacy&rsquo;, cites the fact, noted
+above, that many different attempts to analyze the informal notion of
+an effective method in precise terms&mdash;by Turing, Church, Post,
+Andrei Andreevich Markov, and others&mdash;turned out to be
+<em>equivalent</em> to one another, in the sense that each analysis
+provably picks out the same class of functions, namely those functions
+computable by (standard) Turing machines.</p>
+
+<p>
+As previously mentioned, this convergence of analyses is generally
+considered very strong evidence for the Church-Turing thesis, because
+of the diversity of the analyses. However, this convergence is
+sometimes taken to be evidence for the maximality thesis. Allen
+Newell, for example, cites the convergence as showing that </p>
+
+<blockquote>
+
+<p>
+all attempts to &hellip; formulate &hellip; general notions of
+mechanism &hellip; lead to classes of machines that are equivalent in
+that they encompass <em>in toto</em> exactly the same set of
+input-output functions; </p>
+</blockquote>
+
+<p>
+and, he says, the various equivalent analyses constitute a </p>
+
+<blockquote>
+
+<p>
+large zoo of different formulations of maximal classes of machines.
+(Newell 1980: 150) </p>
+</blockquote>
+
+<p>
+Yet the analyses Newell is discussing are of the concept of an
+effective method, not of the concept of a machine-generatable
+function. The equivalence of the analyses bears only on the question
+of the extent of what is humanly computable, not on the question of
+whether the functions generatable by machines could extend beyond the
+functions generatable by human computers (even human computers who
+work forever and have access to unlimited quantities of paper and
+pencils). Indeed, Newell&rsquo;s argument is undercut by the existence
+of (notional) machines capable of generating functions that, given
+Turing&rsquo;s thesis, cannot be generated by any effective
+method.</p>
+
+
+
+<h3 id="SomeConsMisuChurTuriThes">2.3 Some consequences of misunderstanding the Church-Turing thesis</h3>
+
+<p>
+The error of confusing the Church-Turing thesis properly so called
+with one or another form of the maximality thesis has led to some
+remarkable claims in the foundations of psychology. For example, one
+frequently encounters the view that psychology <em>must</em> be
+capable of being expressed ultimately in terms of the Turing machine
+(e.g., Fodor 1981: 130; Boden 1988: 259). To one who makes this error,
+conceptual space will seem to contain no room for mechanical models of
+the mind that are not equivalent to Turing machines. Yet it is
+certainly possible that psychology will find the need to employ models
+of human cognition transcending Turing machines.</p>
+
+<p>
+A similar confusion is found in Artificial Life. Christopher Langton,
+the leading pioneer of A-Life, said the following when writing about
+foundational matters:</p>
+
+<blockquote>
+
+<p>
+There are certain behaviours that are
+&lsquo;uncomputable&rsquo;&mdash;behaviours for which <em>no</em>
+formal specification can be given for a machine that will exhibit that
+behaviour. The classic example of this sort of limitation is
+Turing&rsquo;s famous <em>Halting Problem</em>: can we give a formal
+specification for a machine which, when provided with the description
+of <em>any</em> other machine together with its initial state, will
+&hellip; determine whether or not that machine will reach its halt
+state? Turing proved that no such machine can be specified. (Langton
+1989: 12)</p>
+</blockquote>
+
+<p>
+However, Turing certainly did <em>not</em> prove that no such machine
+can be specified. All that Turing&rsquo;s results tell us is that if
+there is such a machine, then it is not a Turing machine. It is also
+worth mentioning that, although the Halting Problem is very commonly
+attributed to Turing (as Langton does here), Turing did not in fact
+formulate it. The Halting Problem originated with Martin Davis,
+probably in 1952 (Davis 1958: 70).</p>
+
+<p>
+No doubt many have been misled by the practice in the literature of
+using the terms &lsquo;Church&rsquo;s thesis&rsquo; and
+&lsquo;Church-Turing thesis&rsquo; to refer indiscriminately not only
+to a thesis concerning which there is little real doubt, the
+Church-Turing thesis properly so called, but also a medley of
+different theses, of unknown truth-value.</p>
+
+<h4 id="SimuThes">2.3.1 The simulation thesis</h4>
+
+<p>
+The maximality thesis is by no means the only thesis commonly
+mislabelled as the &lsquo;Church-Turing thesis&rsquo;. Another example
+is the <em>simulation thesis</em>. A widespread mistake in modern
+writing on computability and the brain is to hold that Turing&rsquo;s
+results somehow entail that the brain, and indeed any biological or
+
+physical system whatever, can be <em>simulated</em> by a Turing
+machine.</p>
+
+<p>
+For example, the entry on Turing in the Blackwell <em>Companion to the
+Philosophy of Mind</em> contains the following claims: </p>
+
+<blockquote>
+
+<p>
+we can depend on there being a Turing machine that captures the
+functional relations of the brain, </p>
+</blockquote>
+
+<p>
+for so long as </p>
+
+<blockquote>
+
+<p>
+these relations between input and output are functionally well-behaved
+enough to be describable by &hellip; mathematical relationships
+&hellip; we know that some specific version of a Turing machine will
+be able to mimic them. (Sam Guttenplan writing in his 1994: 595)</p>
+</blockquote>
+
+<p>
+John Searle uses the name &lsquo;Church&rsquo;s thesis&rsquo; for a
+statement that bears very little relation to Church&rsquo;s thesis
+properly so called:</p>
+
+<blockquote>
+
+<p>
+Can the operations of the brain be simulated on a digital computer?
+&hellip; The answer seems to me &hellip; demonstrably
+&lsquo;Yes&rsquo; &hellip; That is, naturally interpreted, the
+question means: Is there some description of the brain such that under
+that description you could do a computational simulation of the
+operations of the brain. But given Church&rsquo;s thesis that anything
+that can be given a precise enough characterization as a set of steps
+can be simulated on a digital computer, it follows trivially that the
+question has an affirmative answer. (Searle 1992: 200)</p>
+</blockquote>
+
+<p>
+The thesis that Searle mislabels as &lsquo;Church&rsquo;s
+thesis&rsquo; is a version of what I call the simulation thesis:</p>
+
+<div class="indent">
+
+<p>
+<strong>Simulation thesis</strong>:
+<br />
+Any process that can be given a mathematical description (or that is
+scientifically describable or scientifically explicable) can be
+simulated by a Turing machine.</p>
+</div>
+
+<p>
+Paul and Patricia Churchland and Philip Johnson-Laird also assert
+versions of the simulation thesis, with a wave towards Church and
+Turing by way of justification: </p>
+
+<blockquote>
+
+<p>
+Church&rsquo;s Thesis says that whatever is computable is Turing
+computable. Assuming, with some safety, that what the mind-brain does
+is computable, then it can in principle be simulated by a computer.
+(Churchland and Churchland 1983: 6) </p>
+
+<p>
+If you assume that [consciousness] is scientifically explicable
+&hellip; [and] [g]ranted that the [Church-Turing] thesis is correct,
+then the final dichotomy rests on &hellip; functionalism. If you
+believe [functionalism] to be false &hellip; then &hellip; you hold
+that consciousness could be modelled in a computer program in the same
+way that, say, the weather can be modelled &hellip; If you accept
+functionalism, however, then you should believe that consciousness is
+a computational process. (Johnson-Laird 1987: 252)</p>
+</blockquote>
+
+<p>
+As previously mentioned, Churchland and Churchland say that
+Turing&rsquo;s </p>
+
+<blockquote>
+
+<p>
+results entail &hellip; that a standard digital computer, given only
+the right program, a large enough memory and sufficient time, can
+&hellip; display any systematic pattern of responses to the
+environment whatsoever. (1990: 26) </p>
+</blockquote>
+
+<p>
+Churchland and Churchland certainly do not restrict talk of &ldquo;systematic
+patterns&rdquo; to patterns generated by an effective method, and this
+no doubt explains why they think they can assume &ldquo;with some
+safety&rdquo; that what the mind-brain does is computable&mdash;since,
+on their understanding of matters, this is to assume only that the
+mind-brain exhibits a systematic pattern of responses, or is
+characterized by a &ldquo;rule-governed&rdquo; input-output function
+(1990: 26). But Turing had no result entailing what the Churchlands
+say. In fact, he had a result entailing that there are patterns of
+responses that <em>no</em> standard Turing machine is able to
+generate. One example of such a pattern is provided by the function
+<i>h</i>, described earlier.</p>
+
+<p>
+In reality the Church-Turing thesis does <em>not</em> entail that the
+brain (or the mind, or consciousness) can be modelled by a Turing
+machine program, not even in conjunction with the belief that the
+brain (or mind, or consciousness) is scientifically explicable, or
+rule-governed, or scientifically describable, or characterizable as a
+set of steps (Copeland 1998c). The simulation thesis is much stronger
+than the Church-Turing thesis: as with the maximality thesis, neither
+the Church-Turing thesis properly so called nor any result proved by
+Turing or Church entails the simulation thesis.</p>
+
+<p>
+This is equally so if the simulation thesis is taken narrowly, as
+concerning processes that conform to the physics of the real world.
+If, on the other hand, the thesis is taken as ranging over all
+processes, including merely possible or notional processes, then the
+thesis is known to be false, for exactly the same reasons that the
+stronger form of the maximality thesis is false.</p>
+
+<p>
+Any device or organ whose internal processes can be described
+completely by means of (what Church called) effectively calculable
+functions <em>can</em> be simulated exactly by a Turing machine
+(providing that the <em>input</em> into the device or organ is itself
+computable by Turing machine). But any device or organ whose
+mathematical description involves functions that are not effectively
+calculable cannot be so simulated. As Turing showed, there are
+uncountably many such functions. It is an open question whether a
+completed neuroscience will need to employ functions that are not
+effectively calculable.</p>
+
+<h2 id="SomeKeyRemaTuri">3. Some Key Remarks by Turing</h2>
+
+<p>
+Turing prefaced his first description of a Turing machine with the
+words: </p>
+
+<blockquote>
+
+<p>
+We may compare a man in the process of computing a &hellip; number to
+a machine. (Turing 1936: 59)</p>
+</blockquote>
+
+<p>
+The Turing machine is a model, idealized in certain respects, of a
+<em>human being</em> calculating in accordance with an effective
+method.</p>
+
+<p>
+Wittgenstein put this point in a striking way: </p>
+
+<blockquote>
+
+<p>
+Turing&rsquo;s &lsquo;Machines&rsquo;. These machines are
+<em>humans</em> who calculate. (Wittgenstein 1947 [1980]: 1096.)</p>
+</blockquote>
+
+<p>
+It is a point that Turing was to emphasize, in various forms, again
+and again. For example: </p>
+
+<blockquote>
+
+<p>
+A man provided with paper, pencil, and rubber, and subject to strict
+discipline, is in effect a universal machine. (Turing 1948: 416)</p>
+</blockquote>
+
+<p>
+In order to understand Turing&rsquo;s texts, and the logical claims
+contained in them, it is essential to keep in mind that when he used
+the words &lsquo;computer&rsquo;, &lsquo;computable&rsquo; and
+&lsquo;computation&rsquo;, he employed them not in their modern sense
+as pertaining to machines, but as pertaining to human calculators:</p>
+
+<blockquote>
+
+<p>
+Computers always spend just as long in writing numbers down and
+deciding what to do next as they do in actual multiplications, and it
+is just the same with ACE [the Automatic Computing Engine] &hellip; [T]he ACE will do the work of about
+10,000 computers &hellip; Computers will still be employed on small
+calculations &hellip; (Turing 1947: 387, 391)</p>
+</blockquote>
+
+<p>Turing&rsquo;s
+ACE, an early electronic stored-program digital computer, was built at
+the National Physical Laboratory, London; a pilot version&mdash;at the
+time the fastest functioning computer in the world&mdash;first ran in
+1950, and a commercial model, the DEUCE, was marketed very
+successfully by English Electric.</p>
+
+<h3 id="HumaCompMachComp">3.1 Human computation and machine computation</h3>
+
+<p>
+The electronic stored-program digital computers for which the
+universal Turing machine was a blueprint are, each of them,
+computationally equivalent to a Turing machine, and so they too are,
+in a sense, models of human beings engaged in computation. Turing
+chose to emphasise this when explaining these electronic machines in a
+manner suitable for an audience of uninitiates:</p>
+
+<blockquote>
+
+<p>
+The idea behind digital computers may be explained by saying that
+these machines are intended to carry out any operations which could be
+done by a human computer. (Turing 1950: 444)</p>
+</blockquote>
+
+<p>
+He made the point a little more precisely in the technical document
+containing his design for the ACE:</p>
+
+<blockquote>
+
+<p>
+The class of problems capable of solution by the machine [the ACE] can
+be defined fairly specifically. They are [a subset of] those problems
+which can be solved by human clerical labour, working to fixed rules,
+and without understanding. (Turing 1945: 386)</p>
+</blockquote>
+
+<p>
+Turing went on to <em>characterize</em> this subset in terms of the
+amount of paper and time available to the human clerk.</p>
+
+<p>
+It was presumably because he considered the point to be essential for
+understanding the nature of the new electronic machines that he chose
+to begin his <em>Programmers&rsquo; Handbook for Manchester Electronic
+Computer Mark II</em> with this explanation: </p>
+
+<blockquote>
+
+<p>
+Electronic computers are intended to carry out any definite rule of
+thumb process which could have been done by a human operator working
+in a disciplined but unintelligent manner. (Turing <i>c</i>1950:
+1)</p>
+</blockquote>
+
+<p>
+It was not some deficiency of imagination that led Turing to model his
+L.C.M.s on what could be achieved by a <em>human</em> computer. The
+purpose for which he invented the Turing machine demanded it. The
+<em>Entscheidungsproblem</em> is the problem of finding a <em>humanly
+executable</em> method of a certain sort, and, as was explained
+earlier, Turing&rsquo;s aim was to show that there is no such method
+in the case of the full first-order predicate calculus.</p>
+
+<h3 id="TuriUseMach">3.2 Turing&rsquo;s use of &lsquo;machine&rsquo;</h3>
+
+<p>
+It is also important to note that, when Turing uses the word
+&lsquo;machine&rsquo;, he often means not machine-in-general but, as
+we would now say, Turing machine. At one point he explicitly draws
+attention to this usage:</p>
+
+<blockquote>
+
+<p>
+The expression &lsquo;machine process&rsquo; of course means one which
+could be carried out by the type of machine I was considering [in
+&ldquo;On Computable Numbers&rdquo;]. (Turing 1947: 378&ndash;9)</p>
+</blockquote>
+
+<p>
+Thus when, a few pages later, Turing asserts that &ldquo;machine
+processes and rule of thumb processes are synonymous&rdquo; (1947:
+383), he is to be understood as advancing the Church-Turing thesis
+(and its converse), not a version of the maximality thesis. Unless his
+intended usage is borne in mind, misunderstanding is likely to ensue.
+Especially liable to mislead are statements like the following, which
+a casual reader might easily mistake for a formulation of the
+maximality thesis: </p>
+
+<blockquote>
+
+<p>
+The importance of the universal machine is clear. We do not need to
+have an infinity of different machines doing different jobs. A single
+one will suffice. The engineering problem of producing various
+machines for various jobs is replaced by the office work of
+&lsquo;programming&rsquo; the universal machine to do these jobs.
+(Turing 1948: 414)</p>
+</blockquote>
+
+<p>
+In context it is perfectly clear that these remarks concern machines
+equivalent to Turing machines; the passage is embedded in a discussion
+of L.C.M.s.</p>
+
+<p>
+Whether or not Turing would, if queried, have assented to the
+maximality thesis is unknown. There is certainly no textual evidence
+in favour of the common belief that he did so assent.</p>
+</div>
+
+<div id="bibliography">
+
+<h2 id="Bib">Bibliography</h2>
+
+<ul class="hanging">
+
+<li>Abramson, F.G., 1971, &ldquo;Effective Computation over the Real
+Numbers&rdquo;, <em>Twelfth Annual Symposium on Switching and Automata
+Theory</em>, Northridge, CA: Institute of Electrical and Electronics
+Engineers.</li>
+
+<li>Andr&eacute;ka, H., I. N&eacute;meti, and P. N&eacute;meti, 2009,
+&ldquo;General Relativistic Hypercomputing and Foundation of
+Mathematics&rdquo;, <em>Natural Computing</em>, 8: 499&ndash;516.
+</li>
+
+<li>Boden, M.A., 1988, <em>Computer Models of Mind</em>, Cambridge:
+Cambridge University Press.</li>
+
+<li>Boolos, G.S. and R.C. Jeffrey, 1980, <em>Computability and
+Logic</em>, 2<sup>nd</sup> edition, Cambridge: Cambridge University
+Press.</li>
+
+<li>Cantor, G., 1874, &ldquo;Ueber eine Eigenschaft des Inbegriffs aller reellen algebraischen Zahlen&rdquo;, <em>Journal f&uuml;r die reine und angewandte Mathematik</em>, 77: 258&ndash;262.</li>
+
+<li>Church, A., 1932, &ldquo;A Set of Postulates for the Foundation of
+Logic&rdquo;, <em>Annals of Mathematics</em> (Second Series), 33:
+346&ndash;366.</li>
+
+<li>&ndash;&ndash;&ndash;, 1936a, &ldquo;An Unsolvable Problem of
+Elementary Number Theory&rdquo;, <em>American Journal of
+Mathematics</em>, 58: 345&ndash;363.</li>
+
+<li>&ndash;&ndash;&ndash;, 1936b, &ldquo;A Note on the
+Entscheidungsproblem&rdquo;, <em>Journal of Symbolic Logic</em>, 1:
+40&ndash;41.</li>
+
+<li>&ndash;&ndash;&ndash;, 1937a, Review of Turing 1936, <em>Journal
+of Symbolic Logic</em>, 2: 42&ndash;43.</li>
+
+<li>&ndash;&ndash;&ndash;, 1937b, Review of Post 1936, <em>Journal of
+Symbolic Logic</em>, 2: 43.</li>
+
+<li>&ndash;&ndash;&ndash;, 1941, <em>The Calculi of
+Lambda-Conversion</em>, Princeton: Princeton University Press.</li>
+
+<li>Churchland, P.M. and P.S. Churchland, 1983, &ldquo;Stalking the
+Wild Epistemic Engine&rdquo;, <em>No&ucirc;s</em>, 17:
+5&ndash;18.</li>
+
+<li>&ndash;&ndash;&ndash;, 1990, &ldquo;Could a Machine Think?&rdquo;,
+<em>Scientific American</em>, 262 (Jan.): 26&ndash;31.</li>
+
+<li>Copeland, B.J., 1997, &ldquo;The Broad Conception of
+Computation&rdquo;, <em>American Behavioral Scientist</em>, 40:
+690&ndash;716.</li>
+
+<li>&ndash;&ndash;&ndash;, 1998a, &ldquo;Even Turing Machines Can
+Compute Uncomputable Functions&rdquo;, in C. Calude, J. Casti, and M.
+Dinneen (eds.) 1998, <em>Unconventional Models of Computation</em>,
+London: Springer-Verlag: 150&ndash;164.</li>
+
+<li>&ndash;&ndash;&ndash;, 1998b, &ldquo;Super Turing-Machines&rdquo;,
+<em>Complexity</em>, 4: 30&ndash;32.</li>
+
+<li>&ndash;&ndash;&ndash;, 1998c, &ldquo;Turing&rsquo;s O-machines,
+Penrose, Searle, and the Brain&rdquo;, <em>Analysis</em>, 58:
+128&ndash;138.</li>
+
+<li>&ndash;&ndash;&ndash;, 2000, &ldquo;Narrow Versus Wide
+Mechanism&rdquo;, <em>Journal of Philosophy</em>, 97: 5&ndash;32.</li>
+
+<li>&ndash;&ndash;&ndash;, 2002a, &ldquo;Accelerating Turing
+Machines&rdquo;, <em>Minds and Machines</em>, 12: 281&ndash;300. (A
+special issue on the Church-Turing thesis, edited by C. Cleland)</li>
+
+<li>&ndash;&ndash;&ndash;, 2002b, &ldquo;Hypercomputation&rdquo;,
+<em>Minds and Machines</em>, 12: 461&ndash;502.</li>
+
+<li>&ndash;&ndash;&ndash;, 2004a, &ldquo;Hypercomputation:
+Philosophical Issues&rdquo;, <em>Theoretical Computer Science</em>,
+317: 251&ndash;267.</li>
+
+<li>&ndash;&ndash;&ndash;, 2004b, <em>The Essential Turing: Seminal
+Writings in Computing, Logic, Philosophy, Artificial Intelligence, and
+Artificial Life</em>, Oxford: Oxford University Press.</li>
+
+<li>&ndash;&ndash;&ndash;, 2006, &ldquo;Turing&rsquo;s Thesis&rdquo;,
+in Olszewski, Wolenski, and Janusz 2006: 147&ndash;174.</li>
+
+<li>Copeland, B.J., C. Posy, and O. Shagrir (eds), 2013,
+<em>Computability: Turing, G&ouml;del, Church and Beyond</em>,
+Cambridge, MA: MIT Press.</li>
+
+<li>Copeland, B.J. and D. Proudfoot, 1999a, &ldquo;Alan Turing&rsquo;s
+Forgotten Ideas in Computer Science&rdquo;, <em>Scientific
+American</em>, 280 (April): 76&ndash;81.</li>
+
+<li>&ndash;&ndash;&ndash;, 1999b, &ldquo;The Legacy of Alan
+Turing&rdquo;, <em>Mind</em>, 108: 187&ndash;195.</li>
+
+<li>&ndash;&ndash;&ndash;, 2000, &ldquo;What Turing Did After He
+Invented the Universal Turing Machine&rdquo;, <em>Journal of Logic,
+Language, and Information</em>, 9: 491&ndash;509.</li>
+
+<li>&ndash;&ndash;&ndash;, 2012, &ldquo;Artificial
+Intelligence&rdquo;, in E. Margolis, R. Samuels, and S.P. Stich (eds),
+2012, <em>Oxford Handbook of Philosophy of Cognitive Science</em>, New
+York: Oxford University Press: 147&ndash;182.</li>
+
+<li>Copeland, B.J. and O. Shagrir, 2007, &ldquo;Physical Computation:
+How General are Gandy&rsquo;s Principles for Mechanisms&rdquo;,
+<em>Minds and Machines</em>, 17: 217&ndash;231.</li>
+
+<li>&ndash;&ndash;&ndash;, 2011, &ldquo;Do Accelerating Turing
+Machines Compute the Uncomputable?&rdquo;, <em>Minds and
+Machines</em>, 21: 221&ndash;239.</li>
+
+<li>&ndash;&ndash;&ndash;, 2013, &ldquo;Turing versus G&ouml;del on
+Computability and the Mind&rdquo;, in Copeland, Posy, and Shagrir
+2013: 1&ndash;33.</li>
+
+<li>Copeland, B.J. and R. Sylvan, 1999, &ldquo;Beyond the Universal
+Turing Machine&rdquo;, <em>Australasian Journal of Philosophy</em>,
+77: 46&ndash;66.</li>
+
+<li>Curry, H.B., 1929, &ldquo;An Analysis of Logical
+Substitution&rdquo;, <em>American Journal of Mathematics</em>, 51:
+363&ndash;384.</li>
+
+<li>&ndash;&ndash;&ndash;, 1930, &ldquo;Grundlagen der
+kombinatorischen Logik&rdquo;, <em>American Journal of
+Mathematics</em>, 52: 509&ndash;536, 789&ndash;834.</li>
+
+<li>&ndash;&ndash;&ndash;, 1932, &ldquo;Some Additions to the Theory
+of Combinators&rdquo;, <em>American Journal of Mathematics</em>, 54:
+551&ndash;558.</li>
+
+<li>da Costa, N.C.A. and F.A. Doria, 1991, &ldquo;Classical Physics
+and Penrose&rsquo;s Thesis&rdquo;, <em>Foundations of Physics
+Letters</em>, 4: 363&ndash;374.</li>
+
+<li>&ndash;&ndash;&ndash;, 1994, &ldquo;Undecidable Hopf Bifurcation
+with Undecidable Fixed Point&rdquo;, <em>International Journal of
+Theoretical Physics</em>, 33: 1913&ndash;1931.</li>
+
+<li>Davis, M., 1958, <em>Computability and Unsolvability</em>, New
+York: McGraw-Hill.</li>
+
+<li>&ndash;&ndash;&ndash; (ed.), 1965, <em>The Undecidable: Basic
+Papers on Undecidable Propositions, Unsolvable Problems and Computable
+Functions</em>, New York: Raven.</li>
+
+<li>Dennett, D.C., 1978, <em>Brainstorms: Philosophical Essays on Mind
+and Psychology</em>, Brighton: Harvester.</li>
+
+<li>&ndash;&ndash;&ndash;, 1991, <em>Consciousness Explained</em>,
+Boston: Little, Brown.</li>
+
+<li>Dershowitz, N. and Y. Gurevich, 2008, &ldquo;A Natural
+Axiomatization of Computability and Proof of Church&rsquo;s
+Thesis&rdquo;, <em>Bulletin of Symbolic Logic</em>, 14:
+299&ndash;350.</li>
+
+<li>Deutsch, D., 1985, &ldquo;Quantum Theory, the Church-Turing
+Principle and the Universal Quantum Computer&rdquo;, <em>Proceedings
+of the Royal Society</em> (Series A), 400: 97&ndash;117.</li>
+
+<li>Doyle, J., 1982, &ldquo;What is Church&rsquo;s Thesis? An
+Outline&rdquo;, Laboratory for Computer Science, MIT.</li>
+
+<li>&ndash;&ndash;&ndash;, 2002, &ldquo;What is Church&rsquo;s Thesis?
+An Outline&rdquo;, <em>Minds and Machines</em>, 12:
+519&ndash;520.</li>
+
+<li>Etesi, G. and I. N&eacute;meti, 2002, &ldquo;Non-Turing
+Computations via Malament-Hogarth Space-Times&rdquo;,
+<em>International Journal of Theoretical Physics</em>, 41:
+341&ndash;370.</li>
+
+<li>Feferman, S. et al. (eds.) 1990, <em>Kurt G&ouml;del: Collected
+Works</em> (Volume 2), Oxford: Oxford University Press.</li>
+
+<li>Feferman, S. et al. (eds.) 1995, <em>Kurt G&ouml;del: Collected
+Works</em> (Volume 3), Oxford: Oxford University Press.</li>
+
+<li>Fodor, J.A., 1981, &ldquo;The Mind-Body Problem&rdquo;,
+<em>Scientific American</em>, 244 (Jan.): 124&ndash;32.</li>
+
+<li>Gandy, R., 1980, &ldquo;Church&rsquo;s Thesis and Principles for
+Mechanisms&rdquo;, in J. Barwise, H.J. Keisler, and K. Kunen (eds.),
+1980, <em>The Kleene Symposium</em>, Amsterdam: North-Holland: 123&ndash;148.</li>
+
+<li>&ndash;&ndash;&ndash;, 1988, &ldquo;The Confluence of Ideas in
+1936&rdquo;, in R. Herken (ed.), 1988, <em>The Universal Turing
+Machine: A Half-Century Survey</em>, Oxford: Oxford University Press: 51&ndash;102.</li>
+
+<li>Geroch, R. and, J.B. Hartle, 1986, &ldquo;Computability and
+Physical Theories&rdquo;, <em>Foundations of Physics</em>, 16:
+533&ndash;550.</li>
+
+<li>G&ouml;del, K., 1934, &ldquo;On Undecidable Propositions of Formal
+Mathematical Systems&rdquo;, Lecture notes taken by Kleene and Rosser
+at the Institute for Advanced Study; reprinted in Davis 1965: 39&ndash;74.</li>
+
+<li>&ndash;&ndash;&ndash;, 1936, &ldquo;&Uuml;ber die Lange von
+Beweisen&rdquo;, <em>Ergebnisse eines mathematischen Kolloquiums</em>,
+7: 23&ndash;24.</li>
+
+<li>&ndash;&ndash;&ndash;, 193?, &ldquo;Undecidable Diophantine 
+Propositions&rdquo;, in Feferman et al. 1995: 164&ndash;175.</li>
+
+<li>&ndash;&ndash;&ndash;, 1946, &ldquo;Remarks Before the Princeton
+Bicentennial Conference&rdquo;, in Feferman et al. 1990: 150&ndash;153.</li>
+
+<li>&ndash;&ndash;&ndash;, 1951, &ldquo;Some Basic Theorems on the
+Foundations of Mathematics and Their Implications&rdquo;, in Feferman
+et al. 1995: 304&ndash;323.</li>
+
+<li>Gregory, R.L., 1987, <em>The Oxford Companion to the Mind</em>,
+Oxford: Oxford University Press.</li>
+
+<li>Guttenplan, S., 1994, <em>A Companion to the Philosophy of
+Mind</em>, Oxford: Blackwell.</li>
+
+<li>Henry, G.C., 1993, <em>The mechanism and freedom of logic</em>,
+Lanham: University Press of America.</li>
+
+<li>Herbrand, J., 1932, &ldquo;Sur la non-contradiction de
+l&rsquo;arithmetique&rdquo;, <em>Journal fur die reine und angewandte
+Mathematik</em>, 166: 1&ndash;8.</li>
+
+<li>Hilbert, D. and W. Ackermann, 1928, <em>Grundz&uuml;ge der
+Theoretischen Logik</em>, Berlin: Springer.</li>
+
+<li>Hogarth, M.L., 1994, &ldquo;Non-Turing Computers and Non-Turing
+Computability&rdquo;, <em>Proceedings of the Philosophy of Science
+Association</em>, 1: 126&ndash;138.</li>
+
+<li>&ndash;&ndash;&ndash;, 2004, &ldquo;Deciding Arithmetic Using SAD
+Computers&rdquo;, <em>British Journal for the Philosophy of
+Science</em>, 55: 681&ndash;691.</li>
+
+<li>Johnson-Laird, P., 1987, &ldquo;How Could Consciousness Arise from
+the Computations of the Brain?&rdquo;, in C. Blakemore and S.
+Greenfield (eds.) 1987, <em>Mindwaves</em>, Oxford: Basil Blackwell: 247&ndash;257.
+</li>
+
+<li>Kalm&aacute;r, L., 1959, &ldquo;An Argument Against the
+Plausibility of Church&rsquo;s Thesis&rdquo;, in A. Heyting (ed.),
+1959, <em>Constructivity in Mathematics</em>, Amsterdam:
+North-Holland: 72&ndash;80.</li>
+
+<li>Kennedy, J., 2013, &ldquo;On Formalism Freeness: Implementing
+G&ouml;del&rsquo;s 1946 Princeton Bicentennial Lecture&rdquo;,
+<em>Bulletin of Symbolic Logic</em>, 19: 351&ndash;393.</li>
+
+<li>Kleene, S.C., 1935, &ldquo;A Theory of Positive Integers in Formal
+Logic&rdquo;, <em>American Journal of Mathematics</em>, 57:
+153&ndash;173, 219&ndash;244.</li>
+
+<li>&ndash;&ndash;&ndash;, 1936, &ldquo;Lambda-Definability and
+Recursiveness&rdquo;, <em>Duke Mathematical Journal</em>, 2:
+340&ndash;353.</li>
+
+<li>&ndash;&ndash;&ndash;, 1952, <em>Introduction to
+Metamathematics</em>, Amsterdam: North-Holland.</li>
+
+<li>&ndash;&ndash;&ndash;, 1967, <em>Mathematical Logic</em>, New
+York: Wiley.</li>
+
+<li>&ndash;&ndash;&ndash;, 1981, &ldquo;Origins of Recursive Function
+Theory&rdquo;, <em>Annals of the History of Computing</em>, 3:
+52&ndash;67.</li>
+
+<li>Kreisel, G., 1967, &ldquo;Mathematical Logic: What Has it Done For
+the Philosophy of Mathematics?&rdquo;, in R. Schoenman (ed.) 1967,
+<em>Bertrand Russell: Philosopher of the Century</em>, London: George
+Allen and Unwin: 201&ndash;272.</li>
+
+<li>&ndash;&ndash;&ndash;, 1974, &ldquo;A Notion of Mechanistic
+Theory&rdquo;, <em>Synthese</em>, 29: 11&ndash;26.</li>
+
+<li>&ndash;&ndash;&ndash;, 1982, Review of Pour-El and Richards 1979 and 1981, <em>Journal of Symbolic
+Logic</em>, 47: 900&ndash;902.</li>
+
+<li>Kripke, S.A., 2013, &ldquo;The Church-Turing &lsquo;Thesis&rsquo;
+as a Special Corollary of G&ouml;del&rsquo;s Completeness
+Theorem&rdquo;, in Copeland, Posy, and Shagrir 2013: 77&ndash;104.</li>
+
+<li>Langton, C.R., 1989, &ldquo;Artificial Life&rdquo;, in C.R.
+Langton (ed.), 1989, <em>Artificial Life</em>, Redwood City, CA:
+Addison-Wesley:  1&ndash;47.</li>
+
+<li>Markov, A.A., 1960, &ldquo;The Theory of Algorithms&rdquo;,
+<em>American Mathematical Society Translations</em> (Series 2), 15:
+1&ndash;14.</li>
+
+<li>Mendelson, E., 1963, &ldquo;On Some Recent Criticism of
+Church&rsquo;s Thesis&rdquo;, <em>Notre Dame Journal of Formal
+Logic</em>, 4: 201&ndash;205.</li>
+
+<li>&ndash;&ndash;&ndash;, 1964, <em>Introduction to Mathematical
+Logic</em>, New York: Van Nostrand.</li>
+
+<li>Newell, A., 1980, &ldquo;Physical Symbol Systems&rdquo;,
+<em>Cognitive Science</em>, 4: 135&ndash;183.</li>
+
+<li>N&eacute;meti, I. and G. D&aacute;vid, 2006, &ldquo;Relativistic
+Computers and the Turing Barrier&rdquo;, <em>Applied Mathematics and
+Computation</em>, 178: 118&ndash;142.</li>
+
+<li>Odifreddi, P., 1989, <em>Classical recursion theory</em>,
+Amsterdam: North-Holland.</li>
+
+<li>Olszewski, A., J. Wolenski, and R. Janusz (eds.), 2006,
+<em>Church&rsquo;s Thesis After 70 Years</em>, Frankfurt: Ontos
+Verlag.</li>
+
+<li>Pitowsky, I., 1990, &ldquo;The Physical Church Thesis and Physical
+Computational Complexity&rdquo;, <em>Iyyun</em>, 39: 81&ndash;99.</li>
+
+<li>Post, E.L., 1936, &ldquo;Finite Combinatory Processes &ndash;
+Formulation 1&rdquo;, <em>Journal of Symbolic Logic</em>, 1:
+103&ndash;105.</li>
+
+<li>&ndash;&ndash;&ndash;, 1943, &ldquo;Formal Reductions of the
+General Combinatorial Decision Problem&rdquo;, <em>American Journal of
+Mathematics</em>, 65: 197&ndash;215.</li>
+
+<li>&ndash;&ndash;&ndash;, 1946, &ldquo;A Variant of a Recursively
+Unsolvable Problem&rdquo;, <em>Bulletin of the American Mathematical
+Society</em>, 52: 264&ndash;268.</li>
+
+<li>Pour-El, M.B. and I. Richards, 1979, &ldquo;A Computable Ordinary
+Differential Equation Which Possesses No Computable Solution&rdquo;,
+<em>Annals of Mathematical Logic</em>, 17: 61&ndash;90.</li>
+
+<li>&ndash;&ndash;&ndash;, 1981, &ldquo;The Wave Equation with
+Computable Initial Data such that its Unique Solution is not
+Computable&rdquo;, <em>Advances in Mathematics</em>, 39:
+215&ndash;239.</li>
+
+<li>Scarpellini, B., 1963, &ldquo;Zwei Unentscheitbare Probleme der
+Analysis&rdquo;, <em>Zeitschrift fur mathematische Logik und
+Grundlagen der Mathematik</em>, 9: 265&ndash;289.</li>
+
+<li>&ndash;&ndash;&ndash;, 2003, &ldquo;Comments on &lsquo;Two
+Undecidable Problems of Analysis&rsquo;&rdquo;, <em>Minds and
+Machines</em>, 13: 79&ndash;85.</li>
+
+<li>Sch&ouml;nfinkel, M., 1924, &ldquo;Uber die Bausteine der
+mathematischen&rdquo;, <em>Mathematische Annalen</em>, 92:
+305&ndash;316.</li>
+
+<li>Searle, J., 1992, <em>The Rediscovery of the Mind</em>, Cambridge,
+MA: MIT Press.</li>
+
+<li>&ndash;&ndash;&ndash;, 1997, <em>The Mystery of
+Consciousness</em>, New York: New York Review of Books.</li>
+
+<li>Shagrir, O., 2006, &ldquo;G&ouml;del on Turing on
+Computability&rdquo;, in Olszewski, Wolenski, and Janusz 2006: 393&ndash;419.</li>
+
+<li>Shagrir, O. and I. Pitowsky, 2003, &ldquo;Physical
+Hypercomputation and the Church-Turing Thesis&rdquo;, <em>Minds and
+Machines</em>, 13: 87&ndash;10.</li>
+
+<li>Shepherdson, J.C. and H.E. Sturgis, 1963, &ldquo;Computability of
+Recursive Functions&rdquo;, <em>Journal of the Association of
+Computing Machinery</em>, 10: 217&ndash;255.</li>
+
+<li>Sieg, W., 2002, &ldquo;Calculations by man and machine: Conceptual
+analysis&rdquo;, in W. Sieg, R. Sommer, and C. Talcott (eds), 2002,
+<em>Reflections on the Foundations of Mathematics. Essays in Honor of
+Solomon Feferman</em> (Lecture Notes in Logic: Volume 15), Natick, MA:
+Association for Symbolic Logic: 396&ndash;415.</li>
+
+<li>&ndash;&ndash;&ndash;, 2008, &ldquo;Church Without Dogma: Axioms
+for Computability&rdquo;, in B. Lowe, A. Sorbi, and B. Cooper (eds),
+2008, <em>New Computational Paradigms</em>, New York: Springer Verlag: 139&ndash;152.</li>
+
+<li>&ndash;&ndash;&ndash;, 2013, &ldquo;G&ouml;del&rsquo;s
+Philosophical Challenge (to Turing)&rdquo;, in Copeland, Posy, and
+Shagrir 2013: 183&ndash;202.</li>
+
+<li>Siegelmann, H.T., 2003, &ldquo;Neural and Super-Turing
+Computing&rdquo;, <em>Minds and Machines</em>, 13: 103&ndash;114.</li>
+
+<li>Siegelmann, H.T. and E.D. Sontag, 1992, &ldquo;On the
+Computational Power of Neural Nets&rdquo;, <em>Proceedings of the 5th
+Annual ACM Workshop on Computational Learning Theory</em>,
+440&ndash;449.</li>
+
+<li>&ndash;&ndash;&ndash;, 1994, &ldquo;Analog Computation via Neural
+Networks&rdquo;, <em>Theoretical Computer Science</em>, 131:
+331&ndash;360.</li>
+
+<li>Smolensky, P., 1988, &ldquo;On the Proper Treatment of
+Connectionism&rdquo;, <em>Behavioral and Brain Sciences</em>, 11:
+1&ndash;23.</li>
+
+<li>Stannett, M., 1990, &ldquo;X-Machines and the Halting Problem:
+Building a Super-Turing Machine&rdquo;, <em>Formal Aspects of
+Computing</em>, 2: 331&ndash;341.</li>
+
+<li>Stewart, I., 1991, &ldquo;Deciding the Undecidable&rdquo;,
+<em>Nature</em>, 352: 664&ndash;5.</li>
+
+<li>Syropoulos, A., 2008, <em>Hypercomputation</em>, New York:
+Springer.</li>
+
+<li>Turing, A.M., 1936, &ldquo;On Computable Numbers, with an
+Application to the Entscheidungsproblem&rdquo;, <em>Proceedings of the
+London Mathematical Society</em> (Series 2), 42 (1936&ndash;37):
+230&ndash;265; reprinted in Copeland 2004b: 58&ndash;90 
+(page references in the text are to
+this edition).</li>
+
+<li>&ndash;&ndash;&ndash;, 1937, &ldquo;Computability and
+&lambda;-Definability&rdquo;, <em>Journal of Symbolic Logic</em>, 2:
+153&ndash;163.</li>
+
+<li>&ndash;&ndash;&ndash;, 1939, &ldquo;Systems of Logic Based on
+Ordinals&rdquo;, <em>Proceedings of the London Mathematical
+Society</em> (Series 2), 45: 161&ndash;228; reprinted in Copeland
+2004b:  146&ndash;204.</li>
+
+<li>&ndash;&ndash;&ndash;, 1945, &ldquo;Proposed Electronic
+Calculator&rdquo;, in B.J. Copeland 2005, <em>Alan Turing&rsquo;s
+Automatic Computing Engine</em>, Oxford: Oxford University Press: 369&ndash;454.</li>
+
+<li>&ndash;&ndash;&ndash;, 1947, &ldquo;Lecture on the Automatic
+Computing Engine&rdquo;, in Copeland 2004b: 378&ndash;394.</li>
+
+<li>&ndash;&ndash;&ndash;, 1948, &ldquo;Intelligent Machinery&rdquo;,
+National Physical Laboratory Report, in Copeland 2004b: 410&ndash;432.</li>
+
+<li>&ndash;&ndash;&ndash;, 1950, &ldquo;Computing Machinery and
+Intelligence&rdquo;, <em>Mind</em>, 59: 433&ndash;460; reprinted in
+Copeland 2004b: 441&ndash;464 (page
+references in the text are to this edition).</li>
+
+<li>&ndash;&ndash;&ndash;, <em>c</em>1950, <em>Programmers&rsquo;
+Handbook for Manchester Electronic Computer Mark II</em>, Computing
+Machine Laboratory, University of Manchester.
+ [<a href="http://www.alanturing.net/programmers_handbook" target="other">Turing c1950 available online in <i>The Turing Archive for the History of Computing</i></a>]</li>
+ 
+<li>&ndash;&ndash;&ndash;, 1954, &ldquo;Solvable and Unsolvable
+Problems&rdquo;, <em>Science News</em>, 31: 7&ndash;23; reprinted in
+Copeland 2004b: 582&ndash;595 (page
+references in the text are to this edition).</li>
+
+<li> Wang, H., 1974, <em>From Mathematics to Philosophy</em>, New
+York: Humanities Press.</li>
+
+<li>&ndash;&ndash;&ndash;, 1996, <em>A Logical Journey: From
+G&ouml;del to Philosophy</em>, Cambridge, MA: MIT Press.</li>
+
+<li>Wittgenstein, L., 1947 [1980], <em>Remarks on the Philosophy of
+Psychology</em> (Volume 1), G.E.M. Anscombe, H. Nyman, and G.H. von
+Wright (eds), Oxford: Blackwell, 1980.</li>
+
+</ul>
+
+</div> 
+<div id="academic-tools">
+
+<h2 id="Aca">Academic Tools</h2>
+
+<blockquote>
+<table class="vert-top">
+<tr>
+<td><img src="../../symbols/sepman-icon.jpg" alt="sep man icon" /></td>
+<td><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=church-turing" target="other">How to cite this entry</a>.</td>
+</tr>
+
+<tr>
+<td><img src="../../symbols/sepman-icon.jpg" alt="sep man icon" /></td>
+<td><a href="https://leibniz.stanford.edu/friends/preview/church-turing/" target="other">Preview the PDF version of this entry</a> at the
+ <a href="https://leibniz.stanford.edu/friends/" target="other">Friends of the SEP Society</a>.</td>
+</tr>
+
+<tr>
+<td><img src="../../symbols/inpho.png" alt="inpho icon" /></td>
+<td><a href="https://www.inphoproject.org/entity?sep=church-turing&amp;redirect=True" target="other">Look up topics and thinkers related to this entry</a>
+ at the Internet Philosophy Ontology Project (InPhO).</td>
+</tr>
+
+<tr>
+<td><img src="../../symbols/pp.gif" alt="phil papers icon" /></td>
+<td><a href="http://philpapers.org/sep/church-turing/" target="other">Enhanced bibliography for this entry</a>
+at <a href="http://philpapers.org/" target="other">PhilPapers</a>, with links to its database.</td>
+</tr>
+
+</table>
+</blockquote>
+
+</div>
+
+<div id="other-internet-resources">
+
+<h2 id="Oth">Other Internet Resources</h2>
+
+<!-- 
+<p>[Please contact the author with suggestions.]</p>
+-->
+
+<ul>
+
+<li><a href="http://www.alanturing.net/" target="other">The Turing Archive for the History of Computing</a></li>
+
+ </ul>
+
+</div>
+
+<div id="related-entries">
+
+<h2 id="Rel">Related Entries</h2>
+
+<p>
+
+ <a href="../church/index.html">Church, Alonzo</a> |
+ <a href="../computability/index.html">computability and complexity</a> |
+ <a href="../computation-physicalsystems/index.html">computation: in physical systems</a> |
+ <a href="../computer-science/index.html">computer science, philosophy of</a> |
+ <a href="../computing-history/index.html">computing: modern history of</a> |
+ <a href="../goedel-incompleteness/index.html">G&ouml;del, Kurt: incompleteness theorems</a> |
+ <a href="../computational-mind/index.html">mind: computational theory of</a> |
+ <a href="../turing/index.html">Turing, Alan</a> |
+ <a href="../turing-machine/index.html">Turing machines</a>
+
+</p>
+
+</div>
+<script type="text/javascript" src="local.js"></script>
+<script type="text/javascript" src="../../MathJax/MathJaxdda6.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</div><!-- #aueditable --><!--DO NOT MODIFY THIS LINE AND BELOW-->
+
+<!-- END ARTICLE HTML -->
+
+</div> <!-- End article-content -->
+
+  <div id="article-copyright">
+    <p>
+ <a href="../../info.html#c">Copyright &copy; 2017</a> by
+
+<br />
+<a href="https://www.canterbury.ac.nz/arts/contact-us/people/jack-copeland.html" target="other">B. Jack Copeland</a>
+&lt;<a href="m&#97;ilto:jack&#37;2ecopeland&#37;40canterbury&#37;2eac&#37;2enz"><em>jack<abbr title=" dot ">&#46;</abbr>copeland<abbr title=" at ">&#64;</abbr>canterbury<abbr title=" dot ">&#46;</abbr>ac<abbr title=" dot ">&#46;</abbr>nz</em></a>&gt;
+    </p>
+  </div>
+
+</div> <!-- End article -->
+
+<!-- NOTE: article banner is outside of the id="article" div. -->
+<div id="article-banner" class="scroll-block">
+  <div id="article-banner-content">
+    <a href="../../fundraising/index.html">
+    Open access to the SEP is made possible by a world-wide funding initiative.<br />
+    The Encyclopedia Now Needs Your Support<br />
+    Please Read How You Can Help Keep the Encyclopedia Free</a>
+  </div>
+</div> <!-- End article-banner -->
+
+    </div> <!-- End content -->
+
+    <div id="footer">
+
+      <div id="footer-menu">
+        <div class="menu-block">
+          <h4><i class="icon-book"></i> Browse</h4>
+          <ul role="menu">
+            <li><a href="../../contents.html">Table of Contents</a></li>
+            <li><a href="../../new.html">What's New</a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+            <li><a href="../../published.html">Chronological</a></li>
+            <li><a href="../../archives/index.html">Archives</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-info-sign"></i> About</h4>
+          <ul role="menu">
+            <li><a href="../../info.html">Editorial Information</a></li>
+            <li><a href="../../about.html">About the SEP</a></li>
+            <li><a href="../../board.html">Editorial Board</a></li>
+            <li><a href="../../cite.html">How to Cite the SEP</a></li>
+            <li><a href="../../special-characters.html">Special Characters</a></li>
+            <li><a href="../../tools/index.html">Advanced Tools</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-leaf"></i> Support SEP</h4>
+          <ul role="menu">
+            <li><a href="../../support/index.html">Support the SEP</a></li>
+            <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+            <li><a href="../../support/donate.html">Make a Donation</a></li>
+            <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+          </ul>
+        </div>
+      </div> <!-- End footer menu -->
+
+      <div id="mirrors">
+        <div id="mirror-info">
+          <h4><i class="icon-globe"></i> Mirror Sites</h4>
+          <p>View this site from another server:</p>
+        </div>
+        <div class="btn-group open">
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="https://plato.stanford.edu/">
+            <span class="flag flag-usa"></span> USA (Main Site) <span class="caret"></span>
+            <span class="mirror-source">Philosophy, Stanford University</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../mirrors.html">Info about mirror sites</a></li>
+          </ul>
+        </div>
+      </div> <!-- End mirrors -->
+      
+      <div id="site-credits">
+        <p>The Stanford Encyclopedia of Philosophy is <a href="../../info.html#c">copyright &copy; 2021</a> by <a href="http://mally.stanford.edu/">The Metaphysics Research Lab</a>, Department of Philosophy, Stanford University</p>
+        <p>Library of Congress Catalog Data: ISSN 1095-5054</p>
+      </div> <!-- End site credits -->
+
+    </div> <!-- End footer -->
+
+  </div> <!-- End container -->
+
+   <!-- NOTE: Script required for drop-down button to work (mirrors). -->
+  <script>
+    $('.dropdown-toggle').dropdown();
+  </script>
+
+</body>
+
+<!-- Mirrored from seop.illc.uva.nl/entries/church-turing/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 19:42:13 GMT -->
+</html>

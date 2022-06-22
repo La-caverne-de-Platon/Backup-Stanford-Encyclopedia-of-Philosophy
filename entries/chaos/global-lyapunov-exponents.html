@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 ie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 ie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 ie"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 ie"> <![endif]-->
+<!--[if !IE]> --> <html> <!-- <![endif]-->
+
+<!-- Mirrored from seop.illc.uva.nl/entries/chaos/global-lyapunov-exponents.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 20:09:41 GMT -->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>
+Chaos &gt; Appendix: Global Lyapunov Exponents (Stanford Encyclopedia of Philosophy)
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive, noodp" />
+<meta name="DCTERMS.ispartof" content="https://plato.stanford.edu/entries/chaos/" />
+
+<!-- NOTE: Import webfonts using this link: -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,200&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" href="../../css/font-awesome-ie7.min.css"> <![endif]-->
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../css/print.css" />
+<link rel="stylesheet" type="text/css" href="../../css/entry.css" />
+<!--[if IE]> <link rel="stylesheet" type="text/css" href="../../css/ie.css" /> <![endif]-->
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+
+<!-- NOTE: Javascript for sticky behavior needed on article and ToC pages -->
+<script type="text/javascript" src="../../js/jquery-scrolltofixed-min.js"></script>
+<script type="text/javascript" src="../../js/entry.js"></script>
+
+<!-- SEP custom script -->
+<script type="text/javascript" src="../../js/sep.js"></script>
+</head>
+
+<!-- NOTE: The nojs class is removed from the page if javascript is enabled. Otherwise, it drives the display when there is no javascript. -->
+<body class="nojs article" id="pagetopright">
+<div id="container">
+<div id="header-wrapper">
+  <div id="header">
+    <div id="branding">
+      <div id="site-logo"><a href="../../index.html"><img src="../../symbols/sep-man-red.png" alt="SEP logo" /></a></div>
+      <div id="site-title"><a href="../../index.html">Stanford Encyclopedia of Philosophy</a></div>
+    </div>
+    <div id="navigation">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <button class="btn btn-navbar collapsed" data-target=".collapse-main-menu" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Menu </button>
+            <div class="nav-collapse collapse-main-menu in collapse">
+              <ul class="nav">
+                <li class="dropdown open"><a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-book"></i> Browse</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                    <li><a href="../../contents.html">Table of Contents</a></li>
+                    <li><a href="../../new.html">What's New</a></li>
+                    <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+                    <li><a href="../../published.html">Chronological</a></li>
+                    <li><a href="../../archives/index.html">Archives</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-info-sign"></i> About</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                    <li><a href="../../info.html">Editorial Information</a></li>
+                    <li><a href="../../about.html">About the SEP</a></li>
+                    <li><a href="../../board.html">Editorial Board</a></li>
+                    <li><a href="../../cite.html">How to Cite the SEP</a></li>
+                    <li><a href="../../special-characters.html">Special Characters</a></li>
+                    <li><a href="../../tools/index.html">Advanced Tools</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-leaf"></i> Support SEP</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                    <li><a href="../../support/index.html">Support the SEP</a></li>
+                    <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+                    <li><a href="../../support/donate.html">Make a Donation</a></li>
+                    <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End navigation -->
+    
+    <div id="search">
+      <form id="search-form" method="get" action="https://seop.illc.uva.nl/search/searcher.py">
+        <input type="search" name="query" placeholder="Search SEP" />
+        <div class="search-btn-wrapper"><button class="btn search-btn" type="submit"><i class="icon-search"></i></button></div>
+      </form>
+    </div>
+    <!-- End search --> 
+    
+  </div>
+  <!-- End header --> 
+</div>
+<!-- End header wrapper -->
+
+<div id="content">
+
+<!-- Begin article sidebar -->
+<div id="article-sidebar" class="sticky">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <button class="btn btn-navbar" data-target=".collapse-sidebar" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Entry Navigation </button>
+        <div id="article-nav" class="nav-collapse collapse-sidebar in collapse">
+          <ul class="nav">
+            <li><a href="index.html">Back to Entry <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#toc">Entry Contents <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#Bib">Entry Bibliography <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#Aca">Academic Tools <i class="icon-external-link"></i></a></li>
+            <li><a href="https://leibniz.stanford.edu/friends/preview/chaos/">Friends PDF Preview <i class="icon-external-link"></i></a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=chaos">Author and Citation Info <i class="icon-external-link"></i></a> </li>
+            <li><a href="#pagetopright" class="back-to-top">Back to Top <i class="icon-angle-up icon2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End article sidebar --> 
+
+<!-- NOTE: Article content must have two wrapper divs: id="article" and id="article-content" -->
+<div id="article">
+<div id="article-content">
+
+<!-- BEGIN ARTICLE HTML -->
+<h4 id="supphead">Supplement to <a href="index-2.html">Chaos</a></h4>
+
+<div id="aueditable">
+<!--DO NOT MODIFY THIS LINE AND ABOVE--> 
+<h2><a name="AppGloLyaExp">Appendix: Global Lyapunov Exponents</a></h2>
+
+<p>
+One way to get a handle on global Lyapunov exponents is to see how
+they arise out of linear stability analysis of the trajectories of
+evolution equations. Consider the first-order, ordinary differential
+equation system \(d\bx/dt = \bF\bx\) and suppose
+that \(\bx^*\) is a steady point, i.e. a point at which
+\(\bF(\bx^*) = 0\). We can study the behavior of
+trajectories near \(\bx^*\) by considering
+\(\bx(t) = \bx^* + \varepsilon(t)\), where
+\(\varepsilon(t)\) is an infinitesimal perturbation to every component
+of \(\bx\). Substituting back into \(\bF\) and
+expanding to first order in \(\varepsilon(t)\) (considering only the
+perturbations at \(t = 0\) and dropping the explicit dependence on
+\(t\) from \(\varepsilon)\) yields
+</p>
+
+\[\tag{A1}
+\bF(\bx^* + \varepsilon) = \bF(\bx^*) + \bJ(\bx^*)\varepsilon + O(\varepsilon^2),
+\]
+
+<p>
+where the matrix
+\(\bJ(\bx)\) is the
+\(n\times n\) Jacobian matrix of partial derivatives of
+\(\bF\) evaluated at the point
+\(\bx\). We then obtain an equation for the time dependence
+of the perturbation of \(\bx\), namely
+</p>
+
+\[\tag{A2}
+\frac{d\varepsilon}{dt} = \bJ(\bx^*)\varepsilon + O(\varepsilon^2).
+\]
+
+<p>
+A linear stability analysis results if we neglect terms of
+\(\varepsilon^{2}\) or higher powers in (A2). If
+\(\varepsilon\) is a real-valued vector and
+\(\bJ\) a real-valued matrix (i.e., having no
+complex values), and we assume a solution of the form
+\(\varepsilon = \lambda e^{st}\), (A2) reduces to
+the eigenvalue equation
+</p>
+
+\[\tag{A3}
+\bJ\lambda = s\lambda.
+\]
+
+<p>
+Linear stability analysis can be used to characterize Lyapunov
+exponents for nonlinear systems of equations. Consider the initial
+condition \(\bx(0)\) for our first-order system of
+differential equations and an infinitesimal displacement from
+\(\bx(0)\) in the direction of some tangent vector,
+\(\by(0)\). Then the evolution of
+\(\by\) according to (A2) is given by
+</p>
+
+\[\tag{A4}
+\frac{d\by}{dt} = \bJ(\bx)\cdot\by,
+\]
+
+<p>
+valid for only an infinitesimal neighborhood about
+\(\bx\)(0). So the value of the vector
+\(\by\) changes in time according to the values
+\(\bJ\) takes on over time. Here
+\(\by/|\by|\) gives the
+direction of the infinitesimal displacement from
+\(\bx\), where the bars indicate absolute
+magnitude. Additionally, \(|\by|/|\by(0)|\) gives
+the factor by which the infinitesimal displacement grows
+(|\(\by|\gt |\by\)(0)|) or
+shrinks
+(|\(\by|\lt |\by\)(0)|).
+The Lyapunov exponent is now defined with respect to initial condition
+\(\bx\)(0) and initial orientation of the
+infinitesimal
+displacement \(\by(0)/|\by(0)|\)
+as
+</p>
+
+
+\[\begin{align*}\tag{A5}
+\lambda(\bx(0), \frac{\by}{\by(0)}) &amp;= \lim_{t\rightarrow \infty} t^{-1}
+  \ln\left(\frac{d\by/dt}{\by(0)}\right) \\
+&amp;= \lim_{t\rightarrow \infty} t^{-1}
+  \ln\left(\frac{\bJ(x)\cdot\by}{\by(0)}\right)
+\end{align*}\]
+
+<p>
+
+For an \(n\)-dimensional system, there will be at most
+\(n\) distinct Lyapunov exponents for a given
+\(\bx\)(0), and the relevant exponent is picked out
+by the initial orientation \(\by(0)/ |\by(0)|\). The infinite time limit plays an
+important role in this analysis as it indicates that the Lyapunov
+exponents represent time-averaged quantities (meaning that transient
+behavior has decayed). The existence of this limit is guaranteed by
+Oseledec&rsquo;s (1969) multiplicative ergodic theorem, which holds
+under mild conditions. In addition, \(\bJ\) is a
+constant in space in this limit (otherwise its value varies in space),
+and the Lyapunov exponents obtained from (A5) are then the same for
+almost every value of \(\bx(0)\). Hence, one often
+drops the dependence on the initial condition in (A5). Such exponents
+are usually called <em>global</em> Lyapunov exponents.
+</p>
+
+<script type="text/javascript" src="local.js"></script>
+<script type="text/javascript" src="../../MathJax/MathJaxdda6.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</div><!-- #aueditable --><!--DO NOT MODIFY THIS LINE AND BELOW-->
+
+<!-- END ARTICLE HTML -->
+
+</div> <!-- End article-content -->
+
+  <div id="article-copyright">
+    <p>
+ <a href="../../info.html#c">Copyright &copy; 2015</a> by
+
+<br />
+<a href="http://www.wheaton.edu/physics/faculty/bishop/bishop.html" target="other">Robert Bishop</a>
+&lt;<a href="m&#97;ilto:Robert&#37;2eC&#37;2eBishop&#37;40wheaton&#37;2eedu"><em>Robert<abbr title=" dot ">&#46;</abbr>C<abbr title=" dot ">&#46;</abbr>Bishop<abbr title=" at ">&#64;</abbr>wheaton<abbr title=" dot ">&#46;</abbr>edu</em></a>&gt;
+    </p>
+  </div>
+
+</div> <!-- End article -->
+
+<!-- NOTE: article banner is outside of the id="article" div. -->
+<div id="article-banner" class="scroll-block">
+  <div id="article-banner-content">
+    <a href="../../fundraising/index.html">
+    Open access to the SEP is made possible by a world-wide funding initiative.<br />
+    The Encyclopedia Now Needs Your Support<br />
+    Please Read How You Can Help Keep the Encyclopedia Free</a>
+  </div>
+</div> <!-- End article-banner -->
+
+    </div> <!-- End content -->
+
+    <div id="footer">
+
+      <div id="footer-menu">
+        <div class="menu-block">
+          <h4><i class="icon-book"></i> Browse</h4>
+          <ul role="menu">
+            <li><a href="../../contents.html">Table of Contents</a></li>
+            <li><a href="../../new.html">What's New</a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+            <li><a href="../../published.html">Chronological</a></li>
+            <li><a href="../../archives/index.html">Archives</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-info-sign"></i> About</h4>
+          <ul role="menu">
+            <li><a href="../../info.html">Editorial Information</a></li>
+            <li><a href="../../about.html">About the SEP</a></li>
+            <li><a href="../../board.html">Editorial Board</a></li>
+            <li><a href="../../cite.html">How to Cite the SEP</a></li>
+            <li><a href="../../special-characters.html">Special Characters</a></li>
+            <li><a href="../../tools/index.html">Advanced Tools</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-leaf"></i> Support SEP</h4>
+          <ul role="menu">
+            <li><a href="../../support/index.html">Support the SEP</a></li>
+            <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+            <li><a href="../../support/donate.html">Make a Donation</a></li>
+            <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+          </ul>
+        </div>
+      </div> <!-- End footer menu -->
+
+      <div id="mirrors">
+        <div id="mirror-info">
+          <h4><i class="icon-globe"></i> Mirror Sites</h4>
+          <p>View this site from another server:</p>
+        </div>
+        <div class="btn-group open">
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="https://plato.stanford.edu/">
+            <span class="flag flag-usa"></span> USA (Main Site) <span class="caret"></span>
+            <span class="mirror-source">Philosophy, Stanford University</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../mirrors.html">Info about mirror sites</a></li>
+          </ul>
+        </div>
+      </div> <!-- End mirrors -->
+      
+      <div id="site-credits">
+        <p>The Stanford Encyclopedia of Philosophy is <a href="../../info.html#c">copyright &copy; 2021</a> by <a href="http://mally.stanford.edu/">The Metaphysics Research Lab</a>, Department of Philosophy, Stanford University</p>
+        <p>Library of Congress Catalog Data: ISSN 1095-5054</p>
+      </div> <!-- End site credits -->
+
+    </div> <!-- End footer -->
+
+  </div> <!-- End container -->
+
+   <!-- NOTE: Script required for drop-down button to work (mirrors). -->
+  <script>
+    $('.dropdown-toggle').dropdown();
+  </script>
+
+</body>
+
+<!-- Mirrored from seop.illc.uva.nl/entries/chaos/global-lyapunov-exponents.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 20:09:42 GMT -->
+</html>

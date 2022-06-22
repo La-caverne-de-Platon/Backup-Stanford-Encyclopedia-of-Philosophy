@@ -1,0 +1,2558 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 ie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 ie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 ie"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 ie"> <![endif]-->
+<!--[if !IE]> --> <html> <!-- <![endif]-->
+
+<!-- Mirrored from seop.illc.uva.nl/entries/logic-epistemic/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 19:51:46 GMT -->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>
+Epistemic Logic (Stanford Encyclopedia of Philosophy)
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive, noodp" />
+<meta property="citation_title" content="Epistemic Logic" />
+<meta property="citation_author" content="Rendsvig, Rasmus" />
+<meta property="citation_author" content="Symons, John" />
+<meta property="citation_publication_date" content="2019/06/07" />
+<meta name="DC.title" content="Epistemic Logic" />
+<meta name="DC.creator" content="Rendsvig, Rasmus" />
+<meta name="DC.creator" content="Symons, John" />
+<meta name="DCTERMS.issued" content="2019-06-07" />
+<meta name="DCTERMS.modified" content="2019-06-07" />
+
+<!-- NOTE: Import webfonts using this link: -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,200&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" href="../../css/font-awesome-ie7.min.css"> <![endif]-->
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../css/print.css" />
+<link rel="stylesheet" type="text/css" href="../../css/entry.css" />
+<!--[if IE]> <link rel="stylesheet" type="text/css" href="../../css/ie.css" /> <![endif]-->
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+
+<!-- NOTE: Javascript for sticky behavior needed on article and ToC pages -->
+<script type="text/javascript" src="../../js/jquery-scrolltofixed-min.js"></script>
+<script type="text/javascript" src="../../js/entry.js"></script>
+
+<!-- SEP custom script -->
+<script type="text/javascript" src="../../js/sep.js"></script>
+</head>
+
+<!-- NOTE: The nojs class is removed from the page if javascript is enabled. Otherwise, it drives the display when there is no javascript. -->
+<body class="nojs article" id="pagetopright">
+<div id="container">
+<div id="header-wrapper">
+  <div id="header">
+    <div id="branding">
+      <div id="site-logo"><a href="../../index.html"><img src="../../symbols/sep-man-red.png" alt="SEP logo" /></a></div>
+      <div id="site-title"><a href="../../index.html">Stanford Encyclopedia of Philosophy</a></div>
+    </div>
+    <div id="navigation">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <button class="btn btn-navbar collapsed" data-target=".collapse-main-menu" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Menu </button>
+            <div class="nav-collapse collapse-main-menu in collapse">
+              <ul class="nav">
+                <li class="dropdown open"><a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-book"></i> Browse</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                    <li><a href="../../contents.html">Table of Contents</a></li>
+                    <li><a href="../../new.html">What's New</a></li>
+                    <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+                    <li><a href="../../published.html">Chronological</a></li>
+                    <li><a href="../../archives/index.html">Archives</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-info-sign"></i> About</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                    <li><a href="../../info.html">Editorial Information</a></li>
+                    <li><a href="../../about.html">About the SEP</a></li>
+                    <li><a href="../../board.html">Editorial Board</a></li>
+                    <li><a href="../../cite.html">How to Cite the SEP</a></li>
+                    <li><a href="../../special-characters.html">Special Characters</a></li>
+                    <li><a href="../../tools/index.html">Advanced Tools</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-leaf"></i> Support SEP</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                    <li><a href="../../support/index.html">Support the SEP</a></li>
+                    <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+                    <li><a href="../../support/donate.html">Make a Donation</a></li>
+                    <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End navigation -->
+    
+    <div id="search">
+      <form id="search-form" method="get" action="https://seop.illc.uva.nl/search/searcher.py">
+        <input type="search" name="query" placeholder="Search SEP" />
+        <div class="search-btn-wrapper"><button class="btn search-btn" type="submit"><i class="icon-search"></i></button></div>
+      </form>
+    </div>
+    <!-- End search --> 
+    
+  </div>
+  <!-- End header --> 
+</div>
+<!-- End header wrapper -->
+
+<div id="content">
+
+<!-- Begin article sidebar -->
+<div id="article-sidebar" class="sticky">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <button class="btn btn-navbar" data-target=".collapse-sidebar" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Entry Navigation </button>
+        <div id="article-nav" class="nav-collapse collapse-sidebar in collapse">
+          <ul class="nav">
+            <li><a href="#toc">Entry Contents</a></li>
+            <li><a href="#Bib">Bibliography</a></li>
+            <li><a href="#Aca">Academic Tools</a></li>
+            <li><a href="https://leibniz.stanford.edu/friends/preview/logic-epistemic/">Friends PDF Preview <i class="icon-external-link"></i></a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=logic-epistemic">Author and Citation Info <i class="icon-external-link"></i></a> </li>
+            <li><a href="#pagetopright" class="back-to-top">Back to Top <i class="icon-angle-up icon2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End article sidebar --> 
+
+<!-- NOTE: Article content must have two wrapper divs: id="article" and id="article-content" -->
+<div id="article">
+<div id="article-content">
+
+<!-- BEGIN ARTICLE HTML -->
+
+
+<div id="aueditable"><!--DO NOT MODIFY THIS LINE AND ABOVE-->
+
+<h1>Epistemic Logic</h1><div id="pubinfo"><em>First published Fri Jun 7, 2019</em></div>
+
+<div id="preamble">
+
+<p>
+Epistemic logic is a subfield of epistemology concerned with logical
+approaches to knowledge, belief and related notions. Though any logic
+with an epistemic interpretation may be called an <em>epistemic
+logic</em>, the most widespread type of epistemic logics in use at
+present are modal logics. Knowledge and belief are represented via the
+modal operators <i>K</i> and <i>B</i>, often with a subscript
+indicating the agent that holds the attitude. Formulas
+\(K_{a}\varphi\) and \(B_{a}\varphi\) are then read &ldquo;agent
+<i>a</i> knows that phi&rdquo; and &ldquo;agent <i>a</i> believes that
+phi&rdquo;, respectively. Epistemic logic allows the formal
+exploration of the implications of epistemic principles. For example,
+the formula \(K_{a}\varphi\rightarrow\varphi\) states that what is
+known is true, while \(K_{a}\varphi\rightarrow K_{a}K_{a}\varphi\)
+states that what is known is known to be known. The semantics of
+epistemic logic are typically given in terms of possible worlds
+<em>via</em> Kripke models such that the formula \(K_{a}\varphi\) is
+read to assert that \(\varphi\) is true in all worlds agent <i>a</i>
+considers epistemically possible relative to its current information.
+The central problems that have concerned epistemic logicians include,
+for example, determining which epistemic principles are most
+appropriate for characterizing knowledge and belief, the logical
+relations between different conceptions of knowledge and belief, and
+the epistemic features of groups of agents. Beyond philosophy proper,
+epistemic logic flourishes in theoretical computer science, economics,
+and related fields.</p>
+</div>
+
+<div id="toc">
+<!--Entry Contents-->
+<ul>
+<li><a href="#Intr">1. Introduction</a></li>
+<li><a href="#ModaApprKnow">2. The Modal Approach to Knowledge</a>
+   <ul>
+   <li><a href="#FormLangEpisLogi">2.1 The Formal Language of Epistemic Logic</a></li>
+   <li><a href="#HighOrdeAtti">2.2 Higher-Order Attitudes</a></li>
+   <li><a href="#PartPrinModaSema">2.3 The Partition Principle and Modal Semantics</a></li>
+   <li><a href="#KripModeIndiInteKnow">2.4 Kripke Models and The Indistinguishability Interpretation of Knowledge</a></li>
+   <li><a href="#EpisPrinEpisLogi">2.5 Epistemological Principles in Epistemic Logic</a></li>
+   <li><a href="#PrinKnowBeli">2.6 Principles of Knowledge and Belief</a></li>
+   </ul></li>
+<li><a href="#KnowGrou">3. Knowledge in Groups</a>
+   <ul>
+   <li><a href="#MultAgenLangMode">3.1 Multi-Agent Languages and Models</a></li>
+   <li><a href="#NotiGrouKnow">3.2 Notions of Group Knowledge</a></li>
+   </ul></li>
+<li><a href="#LogiOmni">4. Logical Omniscience</a></li>
+<li><a href="#Bib">Bibliography</a></li>
+<li><a href="#Aca">Academic Tools</a></li>
+<li><a href="#Oth">Other Internet Resources</a></li>
+<li><a href="#Rel">Related Entries</a></li>
+</ul>
+<!--Entry Contents-->
+<hr />
+
+</div>
+
+<div id="main-text">
+
+<h2 id="Intr">1. Introduction</h2>
+
+<p>
+Aristotelian texts set the groundwork for discussions of the logic of
+knowledge and belief, particularly <em>De Sophisiticis Elenchis</em>
+as well as the <em>Prior</em> and <em>Posterior Analytics</em>. While
+Aristotle addressed the four alethic modes of possibility, necessity,
+impossibility, and contingency, Buridan, Pseudo Scotus, Ockham, and
+Ralph Strode, helped to extend Aristotle&rsquo;s insights to epistemic
+themes and problems (Boh 1993; Knuuttila 1993). During this period,
+the Pseudo-Scot and William of Ockham supplemented Aristotle&rsquo;s
+study of mental acts of cognition and volition (see Boh 1993: 130).
+Ivan Boh&rsquo;s studies of the history of fourteenth and fifteenth
+century investigations into epistemic logic provide a excellent
+coverage of the topic, especially his <em>Epistemic Logic in the Later
+Middle Ages</em> (1993).</p>
+
+<p>
+According to Boh, the English philosopher Ralph Strode formulated a
+fully general system of propositional epistemic rules in his
+influential 1387 book <em>Consequences</em> (Boh 1993: 135).
+Strode&rsquo;s presentation built on the earlier logical treatises of
+Ockham and Burley. Problems of epistemic logic were also discussed
+between the 1330s and 1360s by the so-called Oxford Calculators, most
+prominently by William Heytesbury and Richard Kilvington. By the
+fifteenth century, Paul of Venice and other Italian philosophers also
+engaged in sophisticated reflection on the relationship between
+knowledge, truth, and ontology.</p>
+
+<p>
+Discussions of epistemic logic during the medieval period share a
+similar set of foundational assumptions with contemporary discussions.
+Most importantly, medieval philosophers explored the connection
+between knowledge and veracity: If I know <i>p</i>, then <i>p</i> is
+true. Furthermore, many medieval discussions begin with an assumption
+similar to G.E. Moore&rsquo;s observation that an epistemic agent
+cannot coherently assert &ldquo;<i>p</i> but I do not believe (know)
+<i>p</i>&rdquo;. Sentences of this form are generally referred to as
+<em>Moore sentences</em>.</p>
+
+<p>
+Modern treatments of the logic of knowledge and belief grew out of the
+work of philosophers and logicians writing from 1948 through the
+1950s. Rudolf Carnap, Jerzy &#321;o&#347;, Arthur Prior, Nicholas
+Rescher, G.H. von Wright and others recognized that our discourse
+concerning knowledge and belief admits of an axiomatic-deductive
+treatment. Among the many important papers that appeared in the 1950s,
+von Wright&rsquo;s seminal work (1951) is widely acknowledged as
+having initiated the formal study of epistemic logic as we know it
+today. Von Wright&rsquo;s insights were extended by Jaakko Hintikka in
+his book <em>Knowledge and Belief: An Introduction to the Logic of the
+Two Notions</em> (1962). Hintikka provided a way of interpreting
+epistemic concepts in terms of possible world semantics and as such it
+has served as the foundational text for the study of epistemic logic
+ever since.</p>
+
+<p>
+In the 1980s and 1990s, epistemic logicians focused on the logical
+properties of systems containing groups of knowers and later still on
+the epistemic features of so-called &ldquo;multi-modal&rdquo;
+contexts. Since the 1990s work in
+ <a href="../dynamic-epistemic/index.html">dynamic epistemic logic</a>
+ has extended traditional epistemic logic by modeling the dynamic
+process of knowledge acquisition and belief revision.
+<strong></strong> In the past two decades, epistemic logic has come to
+comprise a broad set of formal approaches to the interdisciplinary
+study of knowledge and belief.</p>
+
+<p>
+Interest in epistemic logic extends well beyond philosophers. Recent
+decades have seen a great deal of interdisciplinary attention to
+epistemic logic with economists and computer scientists actively
+developing the field together with logicians and philosophers. In 1995
+two important books signaled the fertile interplay between computer
+science and epistemic logic: Fagin, Halpern, Moses, and Vardi (1995)
+and Meyer and van der Hoek (1995). Work by computer scientists has
+become increasingly central to epistemic logic in the intervening
+years.</p>
+
+<p>
+Among philosophers, there is increased attention to the interplay
+between these formal approaches and traditional epistemological
+problems (See for example, van Benthem 2006; Hendricks &amp; Symons
+2006; Stalnaker 2006; Holliday 2018).</p>
+
+<p>
+Several introductory texts on epistemic logic exist, e.g., van Benthem
+(2011); Ditmarsch, Hoek, and Kooi (2007); Ditmarsch et al. (2015);
+Gochet and Gribomont (2006); and Meyer (2001) with Lenzen (1980)
+providing an overview of early developments.</p>
+
+<h2 id="ModaApprKnow">2. The Modal Approach to Knowledge</h2>
+
+<p>
+Until relatively recently, epistemic logic focused almost exclusively
+on propositional knowledge. In cases of propositional knowledge, an
+agent or a group of agents bears the propositional attitude of knowing
+towards some proposition. For example, when one says: &ldquo;Zoe knows
+that there is a hen in the yard&rdquo;, one asserts that Zoe is the
+agent who bears the propositional attitude <em>knowing</em> towards
+the proposition expressed by the English sentence &ldquo;there is a
+hen in the yard&rdquo;. Now imagine that Zoe does not know whether
+there is a hen in the yard. For example, it might be the case that she
+has no access to information about whether there is or is not a hen in
+the yard. In this case her lack of information means that she will
+consider two scenarios as being possible, one in which there is a hen
+in the yard and one in which there is not.</p>
+
+<p>
+Perhaps she has some practical decision that involves not only hens
+but also the presence of frightening dogs in the yard. She might wish
+to feed the hens but will only do so if there is no dog in the yard.
+If she were ignorant of whether there is a dog in the yard, the number
+of scenarios she must consider in her deliberations grows to four.
+Clearly, one needs to consider epistemic alternatives when one does
+not have complete information concerning the situations that are
+relevant to one&rsquo;s decisions. As we shall see below, possible
+worlds semantics has provided a useful framework for understanding the
+manner in which agents can reason about epistemic alternatives.</p>
+
+<p>
+While epistemic logicians had traditionally focused on <em>knowing
+that,</em> one finds a range of other uses of knowledge in natural
+language. As Wang (2015) points out, the expressions <em>knowing
+how</em>, <em>knowing what</em>, <em>knowing why</em> are very common,
+appearing almost just as frequently (sometimes more frequently) in
+spoken and written language as <em>knowing that</em>. Recently
+non-standard epistemic logics of such expressions have been developed,
+though <em>knowing who</em> constructions are present in
+Hintikka&rsquo;s <em>Knowledge and Belief</em> (1962; see also
+Bo&euml;r &amp; Lycan 1986; Rendsvig 2012). Thus, beyond propositional
+knowledge, epistemic logic also suggests ways to systematize the logic
+of questions and answers (Brendan knows why the dog barked). It also
+provides insight into the relationships between multiple modes of
+identification (Zoe knows that this man is the president). Here, the
+agent can be said to know a fact relating multiple modes of
+identification insofar as she correctly identifies the president, who
+she might know from stories in the newspaper with the man she sees
+standing in front of her, who she identifies as an object in her
+visual field (Hintikka &amp; Symons 2003). Epistemic logic may also
+provide insight into questions of procedural &ldquo;know-how&rdquo;
+(Brendan knows how to change a fuse). For example, knowing how to
+\(\varphi\) can be understood to be equivalent to the claim that there
+exists a way such that an agent knows that it is a way to ensure that
+\(\varphi\) (see Wang 2015, 2018). Work concerning the justifications
+of knowledge have also been undertaken by combinations of
+<em>justification logic</em> with epistemic logic (see, e.g., Artemov
+&amp; Nogina 2005; Renne 2008). There is ongoing work on these and
+other topics, and new developments are appearing steadily.</p>
+
+<h3 id="FormLangEpisLogi">2.1 The Formal Language of Epistemic Logic</h3>
+
+<p>
+Recent work in epistemic logic relies on a modal conception of
+knowledge. In order to be clear about the role of modality in
+epistemic logic it is helpful to introduce the basic elements of the
+modern formalism. For the sake of simplicity we begin with the case of
+knowledge and belief for a single agent, postponing consideration of
+multiple agents to
+ <a href="#KnowGrou">Section 3</a>,</p>
+ 
+<p>
+A prototypical epistemic logic language is given by first fixing a set
+of <em>propositional variables</em> \(p_{1}\), \(p_{2}\),&hellip;. In
+applications of epistemic logic, propositional variables are given
+specific interpretations: For example, \(p_{1}\) could be taken to
+represent the proposition &ldquo;there is a hen in the yard&rdquo; and
+\(p_{2}\) the proposition &ldquo;there is a dog in the yard&rdquo;,
+etc. The propositional variables represent propositions which are
+represented in no finer detail in the formal language. As such, they
+are therefore often referred to as <em>atomic propositions</em> or
+simply <em>atoms</em>. Let <i>Atom</i> denote the set of atomic
+propositions.</p>
+
+<p>
+Apart from the atomic propositions, epistemic logic supplements the
+language of propositional logic with a modal operator, \(K_{a}\), for
+knowledge and \(B_{a}\), for belief.</p>
+
+<div class="indent">
+
+<p>
+\(K_{a}\varphi\) reads &ldquo;Agent <i>a</i> knows that
+\(\varphi\)&rdquo;</p>
+</div>
+
+<p>
+and similarly</p>
+
+<div class="indent">
+
+<p>
+\(B_{a}\varphi\) reads &ldquo;Agent <i>a</i> believes that
+\(\varphi\)&rdquo;.</p>
+</div>
+
+<p>
+In many recent publications on epistemic logic, the full set of
+formulas in the language is given using a so-called <em>Backus-Naur
+Form</em> (BNF). This is simply a notational technique derived from
+computer science that provides a recursive definition of the formulas
+deemed grammatically &ldquo;correct&rdquo;, i.e., the set
+of <em>well-formed formulas</em>:</p>
+
+\[\varphi:=p \mid \neg\varphi\mid (\varphi\wedge\varphi)\mid
+K_{a}\varphi\mid B_{a}\varphi,\text{ for } p\in\textit{Atom}.\]
+
+<p>
+It should noted that the Greek letter \(\varphi\) stands for
+the <em>syntactic category</em> of formula. So this definition says:
+an atom <i>p</i> is a formula; \(\neg\varphi\) is a formula if
+\(\varphi\) is a formula (read \(\neg\) as &lsquo;it is not the case
+that&rsquo;); \((\varphi\wedge\varphi)\) is a formula whenever any two
+formulas are connected by the \(\wedge\) symbol (read \(\wedge\) as
+&lsquo;and&rsquo;); and \(K_{a}\varphi\) and \(B_{a}\varphi\) are
+formulas whenever \(\varphi\) is a formula (the readings were
+indicated above).  Note that in a non-BNF recursive specification of
+the language, the Greek variable \(\varphi\) would be used
+a <em>metavariable</em> ranging over formulas, and one would normally
+state the clause for conjunctions as: \((\varphi \wedge \psi)\) is a
+formula whenever \(\varphi\) and \(\psi\) are formulas. But the BNF
+let's us get away with just using \(\varphi\) to get the same
+effect.</p>
+
+<p>
+We will call this basic language that includes both
+a <em>K</em>nowledge and a <em>B</em>elief operator,
+\(\mathcal{L}_{KB}\). As in propositional logic, additional
+connectives are defined from \(\neg\) and \(\wedge\): Typical notation
+is &lsquo;\(\vee\)&rsquo; for &lsquo;or&rsquo;,
+&lsquo;\(\rightarrow\)&rsquo; for &lsquo;if&hellip;, then
+&hellip;&rsquo; and &lsquo;\(\leftrightarrow\)&rsquo; for
+&lsquo;&hellip; if, and only if, &hellip;&rsquo;. Also typically
+\(\top\) (&lsquo;top&rsquo;) and \(\bot\) (&lsquo;bottom&rsquo;) is
+used to denote the constantly true proposition and the constantly
+false proposition, respectively.</p>
+
+<p>
+As we shall see below, \(K_{a}\varphi\) is read as stating that
+\(\varphi\) holds in <em>all</em> of the worlds accessible to
+<i>a</i>. In this sense, <i>K</i> can be regarded as behaving
+similarly to the &lsquo;box&rsquo; operator, \(\square\), often used
+to denote necessity. In evaluating \(K_{a}\varphi\) at a possible
+world <i>w</i>, one is in effect evaluating a <em>universal
+quantification</em> over all the worlds accessible from <i>w</i>. The
+universal quantifier \(\forall\) in first-order logic has the
+existential quantifier \(\exists\) as its <em>dual</em>: This means
+that the quantifiers are mutually definable by taking either
+\(\forall\) as primitive and defining \(\exists x\varphi\) as short
+for \(\neg\forall x\neg\varphi\) or by taking \(\exists\) as primitive
+and defining \(\forall x\varphi\) as \(\neg\exists x\neg\varphi\). In
+the case of \(K_{a}\), it may be seen that the formula \(\neg
+K_{a}\neg\varphi\) makes an <em>existential quantification</em>: It
+says that there <em>exists</em> an accessible world that satisfies
+\(\varphi\). In the literature, a dual operator for \(K_{a}\) is often
+introduced. The typical notation for \(\neg K_{a}\neg\) includes
+\(\langle K_{a}\rangle\) and \(\widehat{K}_{a}\). This notation mimics
+the diamond-shape \(\lozenge\), which is the standard dual operator to
+the box \(\square\), which in turn is standard notation for the
+universally quantifying modal operator (see the entry on
+ <a href="../logic-modal/index.html">modal logic</a>).</p>
+ 
+<p>
+More expressive languages in epistemic logic involve the addition of
+operators for various notions of group knowledge (see
+ <a href="#KnowGrou">Section 3</a>).
+ For example, as we discuss below, the <em>common knowledge</em>
+operator and so-called <em>dynamic</em> operators are important
+additions to the language of epistemic logic. Dynamic operators can
+indicate for example the <em>truthful public announcement</em> of
+\(\varphi\): \([\varphi!]\). A formula \([\varphi!]\psi\) is read
+&ldquo;if \(\varphi\) is truthfully announced to everybody, then after
+the announcement, \(\psi\) is the case&rdquo;. The question of what
+kinds of expressive power is added with the addition of operators is a
+research topic that is actively being investigated in
+ <a href="../dynamic-epistemic/index.html">dynamic epistemic logic</a>.
+ So, for example, adding \([\varphi!]\) by itself to
+\(\mathcal{L}_{KB}\) does <em>not</em> add expressive power, but in a
+language that also includes common knowledge, it does.</p>
+
+<h3 id="HighOrdeAtti">2.2 Higher-Order Attitudes</h3>
+
+<p>
+Notice that for example \(K_{a}K_{a}p\) is a formula in the language
+we introduced above. It states that agent <i>a</i> knows that agent
+<i>a</i> knows that <i>p</i> is the case. Formula with <em>nested</em>
+epistemic operators of this kind express a <em>higher-order</em>
+attitude: an attitude concerning the the attitude of some agent.</p>
+
+<p>
+Higher-order attitudes is a recurring theme in epistemic logic. The
+aforementioned Moore sentences, e.g., \(B_{a}(p\wedge B_{a}\neg p)\)
+express a higher-order attitude. So do many of the epistemic
+principles discussed in the literature and below. Consider the
+following prominent epistemic principle involving higher-order
+knowledge: \(K_{a}\varphi\rightarrow K_{a}K_{a}\varphi\). Is it
+reasonable to require that knowledge satisfies this scheme, i.e., that
+if somebody knows \(\varphi\), then they know that they know
+\(\varphi\)? In part, we might hesitate before accepting this
+principle in virtue of the higher-order attitude involved. This is a
+matter of ongoing discussion in epistemic logic and epistemology.</p>
+
+<h3 id="PartPrinModaSema">2.3 The Partition Principle and Modal Semantics</h3>
+
+<p>
+The semantics of the formal language introduced above is generally
+presented in terms of so-called possible worlds. In epistemic logic
+possible worlds are interpreted as epistemic alternatives. Hintikka
+was the first to explicitly articulate such an approach (1962). This
+is another central feature of his approach to epistemology which
+continues to inform developments today. It may be stated,
+ simplified,<sup>[<a href="notes.html#note-1" id="ref-1">1</a>]</sup>
+ as follows:</p>
+
+<div class="indent">
+
+<p>
+<strong>Partition Principle:</strong> Any propositional attitude
+partitions the set of possible worlds into those that are in
+accordance with the attitude and those that are not.</p>
+</div>
+
+<p>
+The partition principle may be used to provide a semantics for the
+knowledge operator. Informally,</p>
+
+<div class="indent">
+
+<p>
+\(K_{a}\varphi\) is true in world <i>w</i> if, and only if,
+\(\varphi\) is true in every world \(w'\) compatible with what
+<i>a</i> knows at <i>w</i>.</p>
+</div>
+
+<p>
+Here, agent <i>a</i> knows that \(\varphi\) just in case the agent has
+information that rules out every possibility of error and rules out every
+case where \(\neg\varphi\).</p>
+
+
+
+
+<h3 id="KripModeIndiInteKnow">2.4 Kripke Models and The Indistinguishability Interpretation of Knowledge</h3>
+
+<p>
+Since the 1960s <em>Kripke models</em>, defined below, have
+served as the basis of the most widely used semantics for all
+varieties of modal logic. The use of Kripke models in the
+representation of epistemic concepts involves taking a philosophical
+stance with respect to those concepts. One widespread interpretation,
+especially in theoretical economics and theoretical computer science,
+understands knowledge in terms of informational indistinguishability
+between possible worlds. What we will refer to here as the
+<em>indistinguishability interpretation</em> goes back at least to
+Lehmann (1984).</p>
+
+<p>
+As the indistinguishability interpretation concerns knowledge, but not
+belief, we will be working with a language without belief operators.
+Therefore, let the language \(\mathcal{L}_{K}\) be given by the
+Backus-Naur form </p> 
+
+\[\varphi:=p\mid \neg\varphi\mid (\varphi\wedge\varphi)\mid
+K_{a}\varphi\text{ for } p\in \textit{Atom}.\]
+
+<p>
+As we shall see, the indistinguishability interpretation involves very
+stringent requirements in order for something to qualify as knowledge.
+We introduce it here for pedagogical purposes, putting the formal
+details of the interpretation in place so as to introduce and explain
+relatively less extreme positions thereafter.</p>
+
+<p>
+Consider again the case of Zoe, the hen, and the dog. The example
+involves two propositions, which we will identify with the formal
+atoms:</p>
+
+<div class="indent">
+
+<p>
+<i>p</i> read as &ldquo;there is a hen in the yard&rdquo;.</p>
+
+<p>
+and</p>
+
+<p>
+<i>q</i> read as &ldquo;there is a dog in the yard&rdquo;.</p>
+</div>
+
+<p>
+It is worth emphasizing that for the purposes of our formalization of
+this scenario, these two are the <em>only</em> propositions of
+interest. We are restricting our attention to
+\(\textit{Atom}=\{p,q\}\). In early presentations of epistemic logic
+and in much of standard epistemic logic at present, <em>all</em> the
+atoms of interest are included from the outset. Obviously, this is an
+idealized scenario. It is important to notice what this approach
+leaves out. Considerations that are not captured in this way include
+the appearance of novel atoms; the idea that other atomic propositions
+might be introduced at some future state via some process of learning
+for example, or the question of an agent&rsquo;s awareness of
+propositions; the scenario in which an agent might be temporarily
+<em>unaware</em> of some atom due to some psychological or other
+factor (see
+ <a href="#LogiOmni">Section 4</a>
+ for references to so-called <em>awareness logic</em>). For now, the
+main point is that standard epistemic logic begins with the assumption
+that the set <i>Atom</i> exhausts the space of propositions for the
+agent.</p>
+
+<p>
+With two atoms, there are four different ways a world could
+consistently be. We can depict each by a box:</p>
+
+<div class="figure center">
+<img style="width:110%" src="fig1.svg" class="nocaption" alt="Basic Four Worlds: four boxes in a row with some space between them. The first labeled w1 and contains the pair: p, q. The second labeled w2 with the pair: p not q. The third, w3, with the pair: not p, q. The fourth, w4, with the pair: not p, not q. Almost all the subsequent images contain the same with some slight modifications." />
+</div>
+
+<p>
+The four boxes may be formally represented by a set
+\(W=\{w_{1},w_{2},w_{3},w_{4}\}\), typically called a set of
+<strong><em>possible worlds</em></strong>. Each world is further
+labeled with the atoms true at that world. They are labeled by a
+function <i>V</i>, the <strong><em>valuation</em></strong>. The
+valuation specifies which atoms are true at each world in the
+following way: Given an atom <i>p</i>, \(V(p)\) is the subset of
+worlds at which <i>p</i> is
+ true.<sup>[<a href="notes.html#note-2" id="ref-2">2</a>]</sup>
+ That \(w_{1}\) is labeled with <i>p</i> and <i>q</i> thus means that
+\(w_{1}\in V(p)\) and \(w_{1}\in V(q)\). In the illustration,
+\(V(p)=\{w_{1},w_{2}\}\) and \(V(q)=\{w_{1},w_{3}\}\).</p>
+
+<p>
+For presentational purposes, assume that there really is a hen in the
+yard, but no dog. Then \(w_{2}\) would represent the
+<strong><em>actual world</em></strong> of the model. In illustrations,
+the actual world is commonly highlighted:</p>
+
+<div class="figure center">
+<img style="width:110%" src="fig2.svg" class="nocaption" alt="Basic Four Worlds except w2 is highlighted with a double line instead of a single line for the box." />
+</div>
+
+<p>
+Now, assume that the hen is always clucking, but that the dog never
+barks, and that although Zoe has acute hearing, she cannot see the
+yard. Then there are certain possible worlds that Zoe cannot
+<em>distinguish</em>: possible ways things may be which she cannot
+tell apart. For example, being in the world with only a hen \((p,\neg
+q)\), Zoe cannot tell if she is in the world with both hen and dog
+\((p,q)\): her situation is such that Zoe is aware of two ways things
+could be but her information does not allow her to eliminate
+either.</p>
+
+<p>
+To illustrate that one possible world cannot be distinguished from
+another, an arrow is typically drawn from the former to the
+latter:</p>
+
+<div class="figure center">
+<img style="width:110%" src="fig3.svg" class="nocaption" alt="Basic Four Worlds except w2 is highlighted and an arrow points from w2 to w1." />
+</div>
+
+<p>
+Here, arrows represent a <em>binary relation</em> on possible worlds.
+In modal logic in general, it is referred to as the
+<strong><em>accessibility relation</em></strong>. Under the
+indistinguishability interpretation of epistemic logic, it is
+sometimes called the <strong><em>indistinguishability
+relation</em></strong>. Formally, denote the relation \(R_{a}\), with
+the subscript showing the relation belongs to agent <i>a</i>. The
+relation is a subset of the set of <em>ordered pairs</em> of possible
+worlds, \(\{(w,w')\colon w,w'\in W\}\). One world <i>w</i>
+&ldquo;points&rdquo; to another \(w'\) if <span style="font-variant: small-caps;">\((w,w')\in
+R_{a}\).</span> In this case, \(w'\) is said
+to be <em>accessible</em> (<em>indistinguishable</em>) from <i>w</i>.
+In the literature, this is often written \(wR_{a}w'\) or \(R_{a}ww'\).
+The notation &lsquo;\(w'\in R_{a}(w)\)&rsquo; is also common: the set
+\(R_{a}(w)\) is then the worlds accessible from <i>w</i>, i.e., </p>
+
+\[R_{a}(w):=\{w'\in W:(w,w')\in R_{a}\}.\]
+
+<p>
+A final note: the set \(\{(w,w')\colon w,w'\in W\}\) is often written
+\(W\times W\), the <em>Cartesian product</em> of <i>W</i> with
+itself.</p>
+
+<p>
+For \(R_{a}\) to faithfully represent a relation of
+indistinguishability, what worlds should it relate? If Zoe was plunged
+in \(w_{1}\) for example, could she tell that she is not in \(w_{2}\)?
+No: the relation of indistinguishability is <em>symmetric</em>if one
+cannot tell <i>a</i> from <i>b</i>, neither can one tell <i>b</i> from
+<i>a</i>. That a relation is symmetric is typically drawn by omitting
+arrow-heads altogether or by putting them in both directions:</p>
+
+<div class="figure center">
+<img style="width:110%" src="fig4.svg" class="nocaption" alt="Basic Four Worlds except w2 is highlighted and a double headed arrow connects w2 and w1." />
+</div>
+
+<p>
+Which of the remaining worlds are indistinguishable? Given that the
+hen is always clucking, Zoe has information that allows her to
+distinguish \(w_{1}\) and \(w_{2}\) from \(w_{3}\) and \(w_{4}\) and
+<em>vice versa</em>, cf. symmetry. Hence, no arrows between these. The
+worlds \(w_{3}\) and \(w_{4}\) are indistinguishable. This brings us
+to the following representation:</p>
+
+<div class="figure center">
+<img style="width:110%" src="fig5.svg" class="nocaption" alt="Basic Four Worlds except w2 is highlighted and a double headed arrow connects w2 and w1 and another double headed arrow connects w3 and w4." />
+</div>
+
+<p>
+Since no information will ever allow Zoe to distinguish something from
+itself, any possible world is thus related to itself and the
+indistinguishability relation is <em>reflexive</em>:</p>
+
+<div class="figure center">
+<img style="width:110%" src="fig6.svg" class="nocaption" alt="Basic Four Worlds except w2 is highlighted and a double headed arrow connects w2 and w1 and another double headed arrow connects w3 and w4. Each world also has an arrow that loops back to the same world." />
+</div>
+
+<p>
+The standard interpretation of the Zoe example in terms of a possible
+worlds model is now complete. Before turning to a general presentation
+of the indistinguishability interpretation, let us look at what Zoe
+knows.</p>
+
+<p>
+Recall the informal modal semantics of the knowledge operator from
+above:</p>
+
+<div class="indent">
+
+<p>
+\(K_{a}\varphi\) is true in world <i>w</i> if, and only if,
+\(\varphi\) is true in every world \(w'\) compatible with the
+information <i>a</i> has at <i>w</i>.</p>
+</div>
+
+<p>
+To approach a formal definition, take &lsquo;\(w\vDash\varphi\)&rsquo;
+to mean that \(\varphi\) is true in world <i>w</i>. Thus we can,
+define truth of \(K_{a}\varphi\) in <i>w</i> by</p>
+
+<div class="indent">
+
+<p>
+\(w\vDash K_{a}\varphi\) iff \(w'\vDash\varphi\) for all \(w'\) such
+that \(wR_{a}w'\).</p>
+</div>
+
+<p>
+This definition states that <i>a</i> knows \(\varphi\) in world
+<i>w</i> if, and only if, \(\varphi\) is the case in all the worlds
+\(w'\) which <i>a</i> cannot distinguish from
+ <span style="font-variant: small-caps;"><i>w</i></span>.</p>
+
+<p>
+So, where does that leave Zoe? First off, the definition allows us to
+evaluate her knowledge in each of the worlds, but seeing as \(w_{2}\)
+is the actual world, it is the world of interest. Here are some
+examples of what we can say about Zoe&rsquo;s knowledge in
+\(w_{2}\):</p>
+
+<ol>
+
+<li>\(w_{2}\vDash K_{a}p\). Zoe knows that the hen is in the yard as
+all the worlds indistinguishable from \(w_{2}\) that would be
+\(w_{1}\) and \(w_{2}\) make <i>p</i> true.</li>
+
+<li>\(w_{2}\vDash\neg K_{a}q\). Zoe does not know that the dog is in
+the yard, as one of the indistinguishable worlds in fact \(w_{2}\)
+itself makes <i>q</i> false.</li>
+
+<li>\(w_{2}\vDash K_{a}K_{a}p\). Zoe knows that she knows <i>p</i>
+because \(a)\) \(w_{2}\vDash K_{a}p\) (cf. 1.) and \(b)\)
+\(w_{1}\vDash K_{a}p\).</li>
+
+<li>\(w_{2}\vDash K_{a}\neg K_{a}q\). Zoe knows that she does not know
+<i>q</i> because \(a)\) \(w_{2}\vDash\neg K_{a}q\) (cf. 2.) and \(b)\)
+\(w_{1}\vDash\neg K_{a}q\).</li>
+</ol>
+
+<p>
+We could say a lot more about Zoe&rsquo;s knowledge: every formula of
+the epistemic language without belief operators may be evaluated in
+the model. It thus represents all Zoe&rsquo;s higher-order information
+about her own knowledge of which points 3. and 4. are the first
+examples.</p>
+
+<p>
+One last ingredient is required before we can state the
+indistinguishability interpretation in its full generality. In the
+example above, it was shown that the indistinguishability relation was
+both <em>symmetric</em> and <em>reflexive</em>. Formally, these
+properties may be defined as follows:</p>
+
+<div class="indent">
+
+<p>
+<strong>Definition:</strong> A binary relation \(R\subseteq W\times
+W\) is</p>
+
+<ol type="a">
+
+<li><strong><em>reflexive</em></strong> iff for all \(w\in W,wRw\),</li>
+
+<li><strong><em>symmetric</em></strong> iff for all \(w,w'\in W,\) if
+\(wRw'\), then \(w'Rw\).</li>
+</ol>
+</div>
+
+<p>
+The missing ingredient is then the relational property of
+<em>transitivity</em>. &rsquo;Shorter than&rsquo; is an example of a
+transitive property: Let <i>x</i> be shorter than <i>y</i>, and let
+<i>y</i> be shorter than <i>z</i>. Then <i>x</i> must be shorter than
+<i>z</i>. So, given \(w_{1},w_{2}\) and \(w_{3}\), if the relation
+<i>R</i> holds between \(w_{1}\) and \(w_{2}\) and between \(w_{2}\)
+and \(w_{3}\), then the arrow between \(w_{1}\) and \(w_{3}\) is the
+consequence of requiring the relation to be transitive:</p>
+
+<div class="figure center">
+<img style="width:100%" src="fig8.svg" class="nocaption" alt="A diagram of three nodes: w1, w2, and w3. An arrow, labeled 'assumed' goes from w1 to w2 and another arrow with the same label goes from w2 to w3. A third arrow, labeled 'implied' goes from w1 to w3." />
+</div>
+
+<p>
+Formally, transitivity is defined as follows:</p>
+
+<div class="indent">
+
+<p>
+<strong>Definition:</strong> A binary relation \(R\subseteq W\times
+W\) is <strong><em>transitive</em></strong> iff for all \(w,w',w''\in
+W,\) if \(wRw'\) and \(w'Rw''\), then \(wRw''\)</p>
+</div>
+
+<p>
+A relation that is both reflexive, symmetric and transitive is called
+an <strong><em>equivalence relation</em></strong>.</p>
+
+<p>
+With all the components in place, let us now define the Kripke
+model:</p>
+
+<div class="indent">
+
+<p>
+<strong>Definition:</strong> A <strong><em>Kripke model</em></strong>
+for \(\mathcal{L}_{K}\) is a tuple \(M=(W,R,V)\) where</p>
+
+<ul>
+
+<li><i>W</i> is a non-empty set of possible worlds,</li>
+
+<li><i>R</i> is a binary relation on <i>W</i>, and</li>
+
+<li>\(V\colon \textit{Atom} \longrightarrow\mathcal{P}(W)\) is a
+valuation.</li>
+</ul>
+</div>
+
+<p>
+In the definition, &lsquo;\(\mathcal{P}(W)\)&rsquo; denotes the
+<em>powerset</em> of <i>W</i>: It consists of all the subsets of
+<i>W</i>. Hence \(V(p)\), the valuation of atom <i>p</i> in the model
+<i>M</i>, is some subset of the possible worlds: Those where <i>p</i>
+is true. In this general definition, <i>R</i> can be any relation on
+<i>W</i>.</p>
+
+<p>
+To specify which world is actual, one last parameter is added to the
+model. When the actual world is specified a Kripke model is commonly
+called <em>pointed</em>:</p>
+
+<div class="indent">
+
+<p>
+<strong>Definition:</strong> A <strong><em>pointed Kripke
+model</em></strong> for \(\mathcal{L}_{K}\) is a pair \((M,w)\)
+where</p>
+
+<ul>
+
+<li>\(M=(W,R,V)\) is a Kripke model, and</li>
+
+<li>\(w\in W\).</li>
+</ul>
+</div>
+
+<p>
+Finally, we may formally define the semantics that was somewhat
+loosely expressed above. This is done by defining a relation between
+pointed Kripke models and the formulas of the formal language. The
+relation is denoted &lsquo;\(\vDash\)&rsquo; and is often called the
+<strong><em>satisfaction relation</em></strong>.</p>
+
+<p>
+The definition then goes as follows:</p>
+
+<div class="indent">
+
+<p>
+<strong>Definition:</strong> Let \(M=(W,R_{a},V)\) be a Kripke model
+for \(\mathcal{L}_{K}\) and let \((M,w)\) be a pointed Kripke model.
+Then for all \(p\in \textit{Atom}\) and all
+\(\varphi,\psi\in\mathcal{L}_{K}\)</p> 
+
+<!--pdf include <div class="smaller"> pdf include-->
+\[
+\begin{align}
+(M,w)&amp;\vDash p  &amp; \textrm{ iff }&amp; w\in V(p)\\
+
+(M,w)&amp;\vDash\neg\varphi&amp; \textrm{ iff }&amp; \textrm{not } (M,w)\vDash\varphi\\
+
+(M,w)&amp;\vDash(\varphi\wedge\psi)&amp; \textrm{ iff }&amp; (M,w)\vDash\varphi \textrm{ and }(M,w)\vDash\psi\\
+
+(M,w)&amp;\vDash K_{a}\varphi &amp;\textrm{ iff }&amp; (M,w')\vDash\varphi \textrm{ for all } w'\in W \textrm{ such that } wR_{a}w'.  
+\end{align}
+\]
+<!--pdf include </div> pdf include-->
+
+<p>
+The formula \(\varphi\) is <strong><em>satisfied</em></strong> in the
+pointed model \((M,w)\) iff \((M,w)\vDash\varphi\).</p>
+</div>
+
+<p>
+In full generality, the indistinguishability interpretation holds that
+for \(K_{a}\) to capture knowledge, the relation \(R_{a}\) must be an
+equivalence relation. A pointed Kripke model for which this is
+satisfied is often referred to as an <strong><em>epistemic
+state</em></strong>. In epistemic states, the relation is denoted by a
+tilde with subscript: \(\sim_{a}\).</p>
+
+<p>
+Given pointed Kripke models and the indistinguishability
+interpretation, we have a semantic specification of one concept of
+knowledge. With this approach, we can build models of situations
+involving knowledge as we did with the toy example of Zoe and the
+hens. We can use these models to determine what the agent does or does
+not know. We also have the formal foundations in place to begin asking
+questions concerning how the agent&rsquo;s knowledge or uncertainty
+develops when it receives <em>new information</em>, a topic studied in
+ <a href="../dynamic-epistemic/index.html">dynamic epistemic logic</a>.</p>
+ 
+<p>
+We may also ask more general questions concerning the concept of
+knowledge modeled using pointed Kripke models with indistinguishability
+relations: Instead of looking at a particular model at the time and
+asking which formulas the model makes true, we can ask which general
+principles all such models agree on.</p>
+
+<h3 id="EpisPrinEpisLogi">2.5 Epistemological Principles in Epistemic Logic</h3>
+
+<p>
+Settling on the correct formal representation of knowledge involves
+reflecting carefully on the epistemological principles to which one is
+committed. An uncontroversial example of such a principle which most
+philosophers will accept is veridicality:</p>
+
+<div class="indent">
+
+<p>
+<em>If a proposition is known, then it is true</em>.</p> 
+
+\[K_{a}\varphi\rightarrow\varphi.\]
+
+</div>
+
+<p>
+In a formal context this principle can be understood to say that if
+\(\varphi\) is known then it should always be satisfied in one&rsquo;s
+models. If it turns out that some of one&rsquo;s chosen models falsify
+the veridicality principle, then most philosophers would simply deem
+those models unacceptable.</p>
+
+<p>
+Returning to pointed Kripke models, we can now ask which principles
+these models commit one to. In order to begin answering this question,
+we need to understand the most general features of our formalism. The
+strategy in modal logic in general (see Blackburn, de Rijke, &amp;
+Venema 2001) is to abstract away from any given model&rsquo;s
+<em>contingent</em> features. Contingent features would include, for
+example, the specific number of worlds under consideration, the
+specific valuation of the atoms, and the choice of an actual world. In
+this case, the only features that are not contingent are those
+required by the general definition of a pointed Kripke model.</p>
+
+<p>
+To abstract suitably, take a pointed Kripke model \((M,w)=(W,R,V,w)\).
+To determine whether the relation of this model is an equivalence
+relation we only need to consider the worlds and the relation. The
+pair of these elements constitute the fundamental level of the model
+and is called the <em>frame</em> of the model:</p>
+
+<div class="indent">
+
+<p>
+<strong>Definition:</strong> Let \((M,w)=(W,R,V,w)\) be a pointed
+Kripke model. Then the pair \((W,R)\) is called the
+<strong><em>frame</em></strong> of \((M,w)\). Any model \((M',w')\)
+which shares the frame \((W,R)\) is said to be <strong><em>built
+on</em></strong> \((W,R)\).</p>
+</div>
+
+<p>
+Consider again the epistemic state for Zoe from above:</p>
+
+<div class="figure center">
+<img style="width:110%" src="fig9.svg" class="nocaption" alt="Basic Four Worlds except w2 is highlighted and a double headed arrow connects w2 and w1 and another double headed arrow connects w3 and w4. Each world also has an arrow that loops back to the same world." />
+</div>
+
+<p>
+Several other models may be built on the same frame. The following are
+two examples:</p>
+
+<div class="figure center">
+<img style="width:110%" src="fig10.svg" class="nocaption"  alt="Basic Four Worlds except w3 (instead of w2) is highlighted and a double headed arrow connects w2 and w1 and another double headed arrow connects w3 and w4. Each world also has an arrow that loops back to the same world. In addition w2 has the pair: p, q instead of p, not q." />
+<img style="width:110%" src="fig11.svg" class="nocaption" alt="Basic Four Worlds except w4 (instead of w2 or w3) is highlighted and a double headed arrow connects w2 and w1 and another double headed arrow connects w3 and w4. Each world also has an arrow that loops back to the same world. In addition w1 has the pair: not p, not q; w2, w3, and w4 each has the pair: p, q" />
+</div>
+
+<p>
+With the notion of a frame, we may define the notion of validity of
+interest. It is the second term defined in the following:</p>
+
+<div class="indent">
+
+<p>
+<strong>Definition:</strong> A formula \(\varphi\) is said to be
+<strong><em>valid in the frame</em></strong> \(F=(W,R)\) iff every
+pointed Kripke model build on <i>F</i> satisfies \(\varphi\), i.e.,
+iff for every \((M,w)=(F,V,w)=(W,R,V,w)\), \((M,w)\vDash\varphi\). A
+formula \(\varphi\) is <strong><em>valid on the class of
+frames</em></strong> \(\mathsf{F}\) (written
+\(\mathsf{F}\vDash\varphi\)) iff \(\varphi\) is valid in every frame
+<i>F</i> in \(\mathsf{F}\).</p>
+</div>
+
+<p>
+The set of formulas valid on a class of frames \(\mathsf{F}\) is
+called the <strong><em>logic</em></strong> of \(\mathsf{F}\). Denote
+this logic that is, the set
+\(\{\varphi\in\mathcal{L}_{K}\colon\mathsf{F}\vDash\varphi\}\) by
+\(\Lambda_{\mathsf{F}}\). This is a <em>semantic</em> approach to
+defining logics, each just a set of formulas. One may also define
+logics <em>proof-theoretically</em> by defining a logic as the set of
+formulas provable in some system. With logics as just sets of
+formulas, <em>soundness</em> and <em>completeness</em> results may
+then be expressed using set inclusion. To exemplify, let
+\(\mathsf{A}\) be a set of axioms and write
+\(\mathsf{A}\vdash\varphi\) when \(\varphi\) is provable from
+\(\mathsf{A}\) using some given set of deduction rules. Let the
+resulting logic the set of theorems be denoted
+\(\Lambda_{\mathsf{A}}\). It is the set of formulas from
+\(\mathcal{L}_{K}\) provable from \(\mathsf{A}\), i.e., the set
+\(\{\varphi\in\mathcal{L}_{K}\colon\mathsf{A}\vdash\varphi\}\). The
+logic \(\Lambda_{\mathsf{A}}\) is sound with respect to \(\mathsf{F}\)
+iff \(\Lambda_{\mathsf{A}}\subseteq\Lambda_{\mathsf{F}}\) and complete
+with respect to \(\mathsf{F}\) iff
+
+\(\Lambda_{\mathsf{F}}\subseteq\Lambda_{\mathsf{A}}\).<sup>[<a href="notes.html#note-3" id="ref-3">3</a>]</sup></p>
+ 
+
+<p>
+Returning to the indistinguishability interpretation of knowledge, we
+may then seek to find the epistemological principles which the
+interpretation is committed to. There is a trivial answer of little
+direct interest: Let \(\mathsf{EQ}\) be the class of frames with
+equivalence relations. Then the logic of the indistinguishability
+interpretation is the set of formulas of \(\mathcal{L}_{K}\) which are
+valid over \(\mathsf{EQ}\), i.e., the set
+\(\Lambda_{\mathsf{EQ}}:=\{\varphi\in\mathcal{L}_{K}\colon\mathsf{EQ}\vDash\varphi\}\).
+Not very informative.</p>
+
+<p>
+Taking an <em>axiomatic</em> approach to specifying the logic,
+however, yields a presentation in terms of easy to grasp principles.
+To start with the simplest, then the principle T states that knowledge
+is <em>factual</em>: If the agent knows \(\varphi\), then \(\varphi\)
+must be true. The more cumbersome K states that if the agent knows an
+implication, then if the agent knows the antecedent, it also knows the
+consequent. I.e., if we include the derivation rule <em>modus
+ponens</em> (from \(\varphi\rightarrow\psi\) and \(\varphi\), conclude
+\(\psi\)) as rule of our logic of knowledge, K states that knowledge
+is <em>closed under implication</em>. The principle B states that if
+\(\varphi\) is true, then the agent knows that it considers
+\(\varphi\) possible. Finally, 4 states that if the agent knows
+\(\varphi\), then it knows that it knows \(\varphi\). T, B and 4 in
+the table below (the names are historical and not all meaningful).</p>
+
+\[
+\begin{align}
+\textrm{K} &amp; &amp; (K_{a}(\varphi\rightarrow\psi) &amp; \rightarrow(K_{a}\varphi\rightarrow K_{a}\psi)\\
+\textrm{T} &amp; &amp; K_{a}\varphi &amp; \rightarrow\varphi\\
+\textrm{B} &amp; &amp; \varphi &amp; \rightarrow K_{a}\widehat{K}_{a}\varphi\\
+\textrm{4} &amp; &amp;  K_{a}\varphi &amp; \rightarrow K_{a}K_{a}\varphi\\
+\end{align}
+\]
+
+<p>
+In lieu of epistemological intuitions, we could discuss a concept of
+knowledge by discussing these and other principles. Should we accept T
+as a principle that knowledge follows? What about the others? Before
+we proceed, let us first make clear how the four above principles
+relate to the indistinguishability interpretation. To do so, we need
+the notion of a <em>normal modal logic</em>. In the below definition,
+as in the above principles, we are technically using <em>formula
+schemas</em>. For example, in \(K_{a}\varphi\rightarrow\varphi\), the
+\(\varphi\) is a variable ranging over formulas in
+\(\mathcal{L}_{K}\). Thus, strictly speaking,
+\(K_{a}\varphi\rightarrow\varphi\) is not a formula, but a
+<em>scheme</em> for obtaining a formula. A <em>modal instance</em> of
+\(K_{a}\varphi\rightarrow\varphi\) is then the formula obtained by
+letting \(\varphi\) be some concrete formula from \(\mathcal{L}_{K}\).
+For example, \(K_{a}p\rightarrow p\) and \(K_{a}(p\wedge
+K_{a}q)\rightarrow(p\wedge K_{a}q)\) are both modal instances of
+T.</p>
+
+<div class="indent">
+
+<p>
+<strong>Definition:</strong> Let \(\Lambda\subseteq\mathcal{L}_{K}\)
+be a set of modal formulas. Then \(\Lambda\) is a <strong><em>normal
+modal logic</em></strong> iff \(\Lambda\) satisfies all of the
+following:</p>
+
+<ol>
+
+<li>\(\Lambda\) contains all modal instances of the classical
+propositional tautologies.</li>
+
+<li>\(\Lambda\) contains all modal instances of K.</li>
+
+<li>\(\Lambda\) is closed under <em>modus ponens</em>: If
+\(\varphi\in\Lambda\) and \(\varphi\rightarrow\psi\in\Lambda\), then
+\(\psi\in\Lambda\).</li>
+
+<li>\(\Lambda\) is closed under <em>generalization</em> (a.k.a.
+<em>necessitation</em>): If \(\varphi\in\Lambda\), then
+\(K_{a}\varphi\in\Lambda\).</li>
+</ol>
+</div>
+
+<p>
+There is a unique <em>smallest</em> normal modal logic (given the set
+<i>Atom</i>)that which contains exactly what is required by the
+definition and <em>nothing more</em>. It is often called the
+<strong><em>minimal normal modal logic</em></strong> and is
+denoted by the boldface <strong>K</strong> (not to be confused with
+the non-boldface K denoting the schema).</p>
+
+<p>
+The logic <strong>K</strong> is just a set of formulas from
+\(\mathcal{L}_{K}\). I.e.,
+<strong>K</strong>&nbsp;\(\subseteq\mathcal{L}_{K}\). Points 1.4.
+gives a perspective on this set: They provide an
+<em>axiomatization</em>. Often, as below, the schema K is referred to
+as an axiom, though really the instantiations of K are axioms.</p>
+
+<p>
+To <strong>K</strong>, we can add additional principles as axioms
+(axiom schemes) to obtain stronger logics (logics that have additional
+theorems: Logics \(\Lambda\) for which
+<strong>K&nbsp;</strong>\(\subseteq\Lambda\)). Of immediate interest
+is the logic called <strong>S5</strong>:</p>
+
+<div class="indent">
+
+<p>
+<strong>Definition:</strong> The logic <strong>S5</strong> is the
+smallest normal modal logic containing all modal instances of T, B,
+and 4.</p>
+</div>
+
+<p>
+Here, then, is the relationship between the above four principles and
+the indistinguishability interpretation:</p>
+
+<div class="indent">
+
+<p>
+<strong>Theorem 1:</strong> The logic <strong>S5</strong> is the logic
+of the class of pointed Kripke models build on frames with equivalence
+relations. I.e., \(\textbf{S5} =\Lambda_{\mathsf{EQ}}\).</p>
+</div>
+
+<p>
+What does this theorem tell us with respect to the principles of
+knowledge, then? In one direction it tells us that if one accepts the
+indistinguishability interpretation, then one has implicitly accepted the
+principles K, T, B and 4 as reasonable for knowledge. In the other
+direction, it tells us that if one finds that <strong>S5</strong> is
+the appropriate logic of knowledge <em>and</em> one finds that pointed
+Kripke models are the right way to semantically represent knowledge,
+then one must use an equivalence relation. Whether one should
+interpret this relation in terms of indistinguishability, though, is a
+matter on which logic is silent.</p>
+
+<p>
+In discussing principles for knowledge, it may be that some of the
+four above seem acceptable, while others do not: One may disagree with
+the acceptability of B and 4, say, while accepting K and T. In
+understanding the relationship between <strong>S5</strong> and
+equivalence relations, a more fine-grained perspective is beneficial:
+Theorem 1 may be chopped into smaller pieces reflecting the
+contribution of the individual principles K, T, 4 and B to the
+equivalence requirementi.e., that the relation should be at the same
+time reflexive, symmetric and transitive.</p>
+
+<div class="indent">
+
+<p>
+<strong>Theorem 2:</strong> Let \(F=(W,R)\) be a frame. Then:</p>
+
+<ul>
+
+<li>All modal instances of K are valid in <i>F</i>.</li>
+
+<li>All modal instances of T are valid in <i>F</i> iff <i>R</i> is
+reflexive.</li>
+
+<li>All modal instances of B are valid in <i>F</i> iff <i>R</i> is
+symmetric.</li>
+
+<li>All modal instances of 4 are valid in <i>F</i> iff <i>R</i> is
+transitive.</li>
+</ul>
+</div>
+
+<p>
+There are a number of insights to gain from Theorem 2. First, if one
+wants to use <em>any</em> type of Kripke model to capture knowledge,
+then one must accept K. Skipping some details, one must in fact accept
+the full logic <strong>K</strong> as this is the logic of the class of
+<em>all</em> Kripke models (see, e.g., Blackburn, de Rijke, &amp;
+Venema 2001).</p>
+
+<p>
+Second, the theorem shows that there is an intimate relationship
+between the individual epistemic principles and the properties on the
+relation. This, in turn, means that one, in general, may approach the
+&ldquo;logic&rdquo; in epistemic logic from two sides from intuitions
+about the accessibility relation or from intuitions about epistemic
+principles.</p>
+
+<p>
+Several normal modal logical systems weaker than <strong>S5</strong>
+have been suggested in the literature. Here, we specify the logics by
+the set of their modal axioms. For example, the logic
+<strong>K</strong> is given by \(\{\text{K}\}\), while
+<strong>S5</strong> is given by
+\(\{\text{K},\text{T},\text{B},\text{4}\}\). To establish
+nomenclature, the following table contains a selection of principles
+from the literature with the frame properties they characterize, cf.
+Aucher (2014) and Blackburn, de Rijke, &amp; Venema (2001), on the
+line below them. The frame conditions are not all straightforward.</p>
+
+<p>
+In Table 1, the subscript on \(R_{a}\) is omitted to ease readability,
+and so is the domain of quantification <i>W</i> over which the worlds
+variables \(x,y,z\) range.</p>
+
+<!--pdf include  <div class="pagebreak">
+</div> pdf include-->
+
+<div class="figure">
+
+<table class="cellpad-small vert-top two-hrules">
+<tr>
+  <td>K</td>
+ 
+<td>\(K_{a}(\varphi\rightarrow\psi)\rightarrow(K_{a}\varphi\rightarrow
+K_{a}\psi)\)
+<br />
+None: <em>Not applicable</em></td> </tr>
+<tr>
+  <td>D</td>
+  <td>\(K_{a}\varphi\rightarrow\widehat{K}_{a}\varphi\)
+<br />
+Serial: \(\forall x\exists y,xRy\).</td></tr>
+<tr>
+  <td>T </td>
+  <td> \(K_{a}\varphi\rightarrow\varphi\)
+<br />
+Reflexive: \(\forall x,xRx\).</td></tr>
+<tr>
+  <td>4 </td>
+  <td> \(K_{a}\varphi\rightarrow K_{a}K_{a}\varphi\)
+<br />
+Transitive: \(\forall x,y,z,\text{if }xRy\text{ and }yRz\text{, then
+}xRz\).</td></tr>
+<tr>
+  <td>B </td>
+  <td> \(\varphi\rightarrow K_{a}\widehat{K}_{a}\varphi\)
+<br />
+Symmetric: \(\forall x,y,\text{if }xRy\text{, then }yRx\).</td></tr>
+<tr>
+  <td>5 </td>
+  <td> \(\neg K_{a}\varphi\rightarrow K_{a}\neg K_{a}\varphi\)
+<br />
+Euclidean: \(\forall x,y,z,\text{if }xR_{a}y\text{ and }xR_{a}z\text{,
+then }yRz\).</td></tr>
+<tr>
+  <td>.2 </td>
+  <td> \(\widehat{K}_{a}K_{a}\varphi\rightarrow
+K_{a}\widehat{K}_{a}\varphi\)
+<br />
+Confluent: \(\forall x,y,\text{if }xRy\text{ and }xRy',\text{ then
+}\exists z,yRz\text{ and }y'Rz\).</td></tr>
+<tr>
+  <td>.3 </td>
+  <td>
+\((\widehat{K}_{a}\varphi\wedge\widehat{K}_{a}\psi)\rightarrow(\widehat{K}_{a}(\varphi\wedge\widehat{K}_{a}\psi)\vee\widehat{K}_{a}(\varphi\wedge\psi)\vee\widehat{K}_{a}(\psi\wedge\widehat{K}_{a}\varphi))\)
+<br />
+No branching to the right: \(\forall x,y,z,\text{if }xRy\text{ and
+}xRz,\text{then }yRz\text{ or }y=z\text{ or }zRy\)</td></tr>
+<tr>
+  <td>.3.2 </td>
+  <td>
+\((\widehat{K}_{a}\varphi\wedge\widehat{K}_{a}K_{a}\psi)\rightarrow
+K_{a}(\widehat{K}_{a}\varphi\vee\psi)\)
+<br />
+Semi-Euclidean: \(\forall x,y,z,\) if \(xRy\) and \(xRz\), then
+\(zRx\) or \(yRz\).</td></tr>
+<tr>
+  <td>.4 </td>
+  <td> \((\varphi\wedge\widehat{K}_{a}K_{a}\varphi)\rightarrow
+K_{a}\varphi\)
+<br />
+Unknown to authors: <em>Not applicable</em></td></tr>
+</table>
+
+<p class="center">
+<span class="figlabel">Table 1.</span> Epistemic Principles and their
+frame conditions.</p>
+</div>
+
+<p>
+Adding epistemic principles as axioms to the basic minimal normal
+modal logic <strong>K</strong> yields new, normal modal logics. A
+selection is:</p>
+
+<div class="figure">
+
+<table class="cellpad-small-dense two-hrules">
+<tr>
+  <td> <strong>K</strong></td>
+  <td> \(\{\text{K}\}\)</td></tr>
+<tr>
+  <td> <strong>T</strong></td>
+  <td> \(\{\text{K},\text{T}\}\)</td></tr>
+<tr>
+  <td> <strong>D</strong></td>
+  <td> \(\{\text{K},\text{D}\}\)</td></tr>
+<tr>
+  <td> <strong>KD4</strong></td>
+  <td> \(\{\text{K},\text{D},\text{4}\}\)</td></tr>
+<tr>
+  <td> <strong>KD45</strong></td>
+  <td> \(\{\text{K},\text{D},\text{4},\text{5}\}\)</td></tr>
+<tr>
+  <td> <strong>S4</strong></td>
+  <td> \(\{\text{K},\text{T},\text{4}\}\)</td></tr>
+<tr>
+  <td> <strong>S4.2</strong></td>
+  <td> \(\{\text{K},\text{T},\text{4},\text{.2}\}\)</td></tr>
+<tr>
+  <td> <strong>S4.3</strong></td>
+  <td> \(\{\text{K},\text{T},\text{4},\text{.3}\}\)</td></tr>
+<tr>
+  <td> <strong>S4.4</strong></td>
+  <td> \(\{\text{K},\text{T},\text{4},\text{.4}\}\)</td></tr>
+<tr>
+  <td> <strong>S5</strong></td>
+  <td> \(\{\text{K},\text{T},\text{5}\}\)</td></tr>
+</table>
+
+<p class="center">
+<span class="figlabel">Table 2.</span> Logic names and axioms</p>
+</div>
+
+<p>
+Different axiomatic specifications may produce the same logic. Notice,
+e.g., that the table&rsquo;s axiomatic specification
+\(\{\text{K},\text{T},\text{5}\}\) of <strong>S5</strong> does not
+match that given in the definition preceding Theorem 1,
+\(\{\text{K},\text{T},\text{B},\text{4}\}\). Note also, there is more
+than one axiomatization of <strong>S5</strong>: the axioms
+\(\{\text{K},\text{T},\text{5}\}\),
+\(\{\text{K},\text{T},\text{B},\text{4}\}\),
+\(\{\text{K},\text{D},\text{B},\text{4}\}\) and
+\(\{\text{K},\text{D},\text{B},\text{5}\}\) all give the
+<strong>S5</strong> logic (cf., e.g., Chellas 1980). An often seen
+variant is \(\{\text{K},\text{T},\text{4},\text{5}\}\). However, it is
+redundant to add it as all its instances can be proven from K, T and
+5. But as both 4 and 5 capture important epistemic principles (see
+ <a href="#PrinKnowBeli">Section 2.6</a>),
+ 4 is often sometimes included for the sake of philosophical
+transparency. For more equivalences between modal logics, see, e.g.,
+the entry on
+ <a href="../logic-modal/index.html">modal logic</a>
+ or Chellas (1980) or Blackburn, de Rijke, and Venema (2001).</p>
+
+<p>
+Logics may be stronger or weaker than each other, and knowing the
+frame properties of their axioms may help us to understand their
+relationship. For example, as 4 is derivable from
+\(\{\text{K},\text{T},\text{5}\}\), all the theorems of
+<strong>S4</strong> are derivable in <strong>S5</strong>.
+<strong>S5</strong> is thus <em>at least as strong</em> as
+<strong>S4</strong>. In fact, <strong>S5</strong> is also <em>strictly
+stronger</em>: It can prove things which <strong>S4</strong>
+cannot.</p>
+
+<p>
+That <strong>S5</strong> may be axiomatized both by
+\(\{\text{K},\text{T},\text{B},\text{4}\}\) and
+\(\{\text{K},\text{T},\text{5}\}\) may be seen through the frame
+properties of the axioms: every reflexive and euclidean relation (T
+and 5) is an equivalence relation (T, B, and 4). This also shows the
+redundancy of 4: If one has assumed a relation reflexive and
+euclidean, then it adds nothing new to additionally assume it to be
+transitive. In general, having an understanding of the interplay
+between relational properties is of great aid in seeing relationships
+between modal logics. For example, noticing that every reflexive
+relation is also serial means that all formulas valid on the class of
+serial models are also valid on the class of reflexive models. Hence,
+every theorem of <strong>D</strong> is thus a theorem of
+<strong>T</strong>. Hence <strong>T</strong> is at least as strong as
+<strong>D</strong> (i.e., \(\textbf{D}\subseteq\textbf{T}\)). That
+<strong>T</strong> is also strictly stronger (not
+\(\textbf{T}\subseteq\textbf{D}\)) can be shown by finding a serial,
+non-reflexive model which does not satisfy some theorem of
+<strong>T</strong> (for example \(K_{a}p\rightarrow p\)).</p>
+
+<h3 id="PrinKnowBeli">2.6 Principles of Knowledge and Belief</h3>
+
+<p>
+With the formal background of epistemic logic in place, it is
+straightforward to slightly vary the framework in order to accommodate
+the concept of belief. Return to the language \(\mathcal{L}_{KB}\) of
+both knowledge and belief:</p> 
+
+\[\varphi:=p\mid \neg\varphi\mid (\varphi\wedge\varphi)\mid K_{a}\psi\mid B_{a}\psi,\text{ for } p\in \textit{Atom}.\]
+
+<p>
+To interpret knowledge and belief formulas together in pointed Kripke
+models, all that is needed is an additional relation between possible
+worlds:</p>
+
+<div class="indent">
+
+<p>
+<strong>Definition:</strong> A <strong><em>pointed Kripke
+model</em></strong> for \(\mathcal{L}_{KB}\) is a tuple
+\((M,w)=(W,R_{K},R_{B},V,w)\) where</p>
+
+<ul>
+
+<li><i>W</i> is a non-empty set of possible worlds,</li>
+
+<li>\(R_{K}\) and \(R_{B}\) are a binary relations on <i>W</i>,</li>
+
+<li>\(V\colon \textit{Atom}\longrightarrow\mathcal{P}(W)\) is a
+valuation, and</li>
+
+<li>\(w\in W\).</li>
+</ul>
+</div>
+
+<p>
+\(R_{K}\) is the relation for the knowledge operator and \(R_{B}\) the
+relation for the belief operator. The definition makes no further
+assumptions about their properties. In the figure below we provide an
+illustration, where the arrows are labeled in accordance with the
+relation they correspond to. The reflexive loop at \(w_{3}\) is a
+label indicating that it belongs to both relations, i.e.,
+\((w_{3},w_{3})\in R_{K}\) and \((w_{3},w_{3})\in R_{B}\).</p>
+
+<div class="figure center">
+<img style="width:110%" src="fig12.svg" class="nocaption" alt="Four boxes labeled w1 (containing 'p'), w2 (containing 'not p'), w3 (containing 'p') and w4 (containing 'not p'). w1 is highlighted and an arrow, labeled 'K', goes from it to w2. w2 has arrows, each labeled 'B', pointing to w3 and w4. w3 has an arrow, labeled 'K,B', looping back to it. " />
+</div>
+
+<p>
+The satisfaction relation is defined as above, but with the obvious
+changes for knowledge and belief:</p>
+
+<div class="indent">
+
+<p>
+\((M,w)\vDash K_{a}\varphi\) iff \((M,w')\vDash\varphi\) for all
+\(w'\in W\) such that \(wR_{K}w'\).</p>
+
+<p>
+\((M,w)\vDash B_{a}\varphi\) iff \((M,w')\vDash\varphi\) for all
+\(w'\in W\) such that \(wR_{B}w'\).</p>
+</div>
+
+<p>
+The indistinguishability interpretation puts very strong requirements
+on the accessibility relation for knowledge. These have now been
+stripped away and so has any commitment to the principles T, B, D, 4
+and 5. Taking Kripke models as basic semantics, we are still committed
+to K, though this principle is not unproblematic as we shall see below
+in our discussion of the problem of logical omniscience.</p>
+
+<p>
+Of the principles from Table 1, T, D, B, 4 and 5 have been discussed
+most extensively in the literature on epistemic logic, both as
+principles for knowledge and as principles for belief. The principle T
+for knowledge</p> 
+
+\[
+K_{a}\varphi\rightarrow\varphi
+\]
+
+<p>
+is broadly accepted. Knowledge is commonly taken to be
+<em>veridical</em>only true proposition can be known. For, e.g.,
+Hintikka (1962) and Fagin et al. (1995), the failure of T for belief
+is the defining difference between the two notions.</p>
+
+<p>
+Though belief is not commonly taken to be veridical, believes are
+typically taken to be <em>consistent</em>. I.e., agents are taken to
+<em>never</em> believe the contradiction that is, any formula
+equivalent with \((p\wedge\neg p)\) or \(\bot\), for short. That
+believes should be consistent is then captured by the principle</p>
+
+\[\neg B_{a}\bot.\]
+
+<p>
+The principle \(\neg B_{a}\bot\) is, on Kripke models, equivalent with
+the principle D, \(B_{a}\varphi\rightarrow\widehat{B}_{a}\varphi\).
+Hence the validity of \(\neg B_{a}\bot\) requires serial frames.
+Witness, e.g., its failure in \(w_{1}\) above: As there are no worlds
+accessible through \(R_{B}\), <em>all</em> accessible worlds satisfy
+\(\bot\). Hence \(w_{1}\) satisfies \(B_{a}\bot\), violating
+consistency. Notice also that \(\neg B_{a}\bot\) may be re-written to
+\(\widehat{B}_{a}\top\), which is true at a world just in case some
+world is accessible through \(R_{B}\). Its validity thus ensures
+seriality.</p>
+
+<p>
+Notice that the veridicality of knowledge ensures its consistency: Any
+reflexive frame is automatically serial. Hence accepting
+\(K_{a}\varphi\rightarrow\varphi\) implies accepting \(\neg
+K_{a}\bot\).</p>
+
+<p>
+Of the principles D, 4 and 5, the two latter have received far the
+most attention, both for knowledge and for belief. They are commonly
+interpreted as governing of <em>principled access</em> to own mental
+states. The 4 principles</p> 
+
+\[
+\begin{align}
+K_{a}\varphi &amp; \rightarrow K_{a}K_{a}\varphi\\
+B_{a}\varphi &amp; \rightarrow B_{a}B_{a}\varphi\\
+\end{align}
+\]
+
+<p>
+are often referred to as <em>principles of positive
+introspection</em>, or for knowledge the <em>&lsquo;KK&rsquo;
+principle</em>. Both principles are deemed acceptable by, e.g.,
+Hintikka (1962) on grounds <em>different</em> from introspection. He
+argues based on an autoepistemic analysis of knowledge, using a
+non-Kripkean possible worlds semantics called <em>model systems</em>.
+Hintikka holds that when an agent commits to knowing \(\varphi\), the
+agent commits to holding the same attitude no matter what new
+information the agent will encounter in future. This entails that in
+all the agent&rsquo;s epistemic alternatives for Hintikka, all the
+model sets (partial descriptions of possible worlds) where the agent
+knows at least as much they now do the agent still knows \(\varphi\).
+As \(K_{a}\varphi\) thus holds in all the agent&rsquo;s epistemic
+alternatives, Hintikka concludes that \(K_{a}K_{a}\varphi\). Likewise
+Hintikka endorses 4 for belief, but Lenzen raises objections (Lenzen
+1978: ch. 4).</p>
+
+<p>
+Williamson argues against the general acceptability of the principle
+(Williamson 2000: ch. 5) for a concept of knowledge based on slightly
+inexact observations, a so-called <em>margin of error principle</em>
+(see, e.g., Aucher 2014 for a short summary).</p>
+
+<p>
+The 5 principles</p> 
+
+\[
+\begin{align}
+\neg K_{a}\varphi &amp;\rightarrow K_{a}\neg K_{a}\varphi\\
+\neg B_{a}\varphi &amp;\rightarrow B_{a}\neg B_{a}\varphi\\
+\end{align}
+\]
+
+<p>
+are often referred to as <em>principles of negative
+introspection</em>. Negative introspection is quite controversial as
+it poses very high demands on knowledge and belief. The schema 5 may
+be seen as a <em>closed world assumption</em> (Hendricks 2005): The
+agent has complete overview of all the possible worlds and own
+information. If \(\neg\psi\) is considered possible
+(\(\widehat{K}_{a}\neg\psi\), i.e., \(\neg K_{a}\psi\)), then the
+agent knows it is considered possible (\(K_{a}\neg K_{a}\psi\)). Such
+a closed world assumption is natural when constructing hyper-rational
+agents in, e.g., computer science or game theory, where the agents are
+assumed to reason as hard as logically possible about their own
+information when making decisions.</p>
+
+<p>
+Arguing against 5 is Hintikka (1962), using his conception of
+epistemic alternatives. Having accepted T for knowledge, 5 stands or
+falls with the assumption of a symmetric accessibility relation. But,
+Hintikka argues, the accessibility relation is not symmetric: If the
+agent possess some amount of information at model set \(s_{1}\), then
+the model set \(s_{2}\) where the agent has learned something more
+will be an epistemic alternative to \(s_{1}\). But \(s_{1}\) will not
+be an epistemic alternative to \(s_{2}\), because in \(s_{1}\), the
+agent does by hypothesis not know as much as it does in \(s_{2}\).
+Hence the relation is not symmetric, so 5 is not a principle of
+knowledge, on Hintikka&rsquo;s account.</p>
+
+<p>
+Given Hintikka&rsquo;s non-standard semantics, it is a bit difficult
+to pin down whether he would accept a normal modal logic as the logics
+of knowledge and belief, but if so, then <strong>S4</strong> and
+<strong>KD4</strong> would be the closest candidates (see Hendricks
+&amp; Rendsvig 2018 for this point). By contrast, for knowledge von
+Kutschera argued for <strong>S4.4</strong> (1976), Lenzen suggested
+<strong>S4.2</strong> (1978), van der Hoek argued for
+<strong>S4.3</strong> (1993), and Fagin, Halpern, Moses, and Vardi
+(1995) and many others use <strong>S5</strong> for knowledge and
+<strong>KD45</strong> for belief.</p>
+
+<p>
+Beyond principles governing knowledge and principles governing belief,
+one may also consider principles governing the interplay between
+knowledge and belief. Three principles of interest are</p>
+
+\[\begin{align}
+\tag*{KB1} K_{a}\varphi &amp; \rightarrow B_{a}\varphi\\
+\tag*{KB2} B_{a}\varphi &amp; \rightarrow K_{a}B_{a}\varphi\\
+\tag*{KB3} B_{a}\varphi &amp; \rightarrow B_{a}K_{a}\varphi\\
+\end{align}
+\]
+
+<p>
+The principles KB1 and KB2 were introduced by Hintikka, who endorses
+both Hintikka (1962) noting that Plato is also committed to KB1 in
+<em>Theatetus</em>. The first principle, KB1, captures the intuition
+that knowledge is a stronger notion than belief. The second like 4 and
+5captures the idea that one has privileged access to one&rsquo;s own
+beliefs. The third, stemming from Lenzen (1978), captures the notion
+that beliefs are held with some kind of conviction: if something is
+believed, it is believed to be known.</p>
+
+<p>
+Though the interaction principles KB1KB3 may look innocent on their
+own, they may lead to counterintuitive conclusions when combined with
+specific logics of knowledge and belief. First, Voorbraak (1993) shows
+that combining 5 for knowledge and D for belief with KB1, implies
+that</p> 
+
+\[B_{a}K_{a}\varphi\rightarrow K_{a}\varphi\]
+
+<p>
+is a theorem of the resulting logic. Assuming that knowledge is
+truthful, this theorem entails that agents cannot believe to know
+something which happens to be false.</p>
+
+<p>
+If additionally KB3 is added, the notions of knowledge and belief
+<em>collapse.</em> I.e., it may be proven that
+\(B_{a}\varphi\rightarrow K_{a}\varphi\), which, in combination with
+KB1 entails that</p> 
+
+\[B_{a}\varphi\leftrightarrow K_{a}\varphi.\]
+
+<p>
+Hence, the two notions have collapsed to one. This was stated in 1986,
+by Kraus and Lehmann.</p>
+
+<p>
+If one is not interested in knowledge and belief collapsing, one must
+thus give something up: One cannot have both 5 for knowledge, D for
+belief and KB1 and KB3 governing their interaction. Again, results
+concerning correspondence between principles and relation properties
+may assist: In 1993, van der Hoek showed based on a semantic analysis
+that where the four principles are jointly sufficient for collapse,
+<em>no subset of them is, too</em>. Giving up any one principle will
+thus eliminate the collapse. Weakening KB1 to hold only for non-modal
+formulas is also sufficient to avoid collapse (cf. Halpern 1996).</p>
+
+<p>
+For more on epistemic interaction principles, the principles .2, .3,
+.3.2. and .4, and relations to so-called <em>conditional beliefs</em>,
+see Aucher (2014). For an introduction to conditional beliefs and
+relations to several other types of knowledge from the philosophical
+literature, see Baltag and Smets (2008). The latter also includes
+discussion concerning the interdefinability of various notions, as
+does Halpern, Samet, and Segev (2009) for knowledge and
+(non-conditional) belief.</p>
+
+<h2 id="KnowGrou">3. Knowledge in Groups</h2>
+
+<p>
+We human beings are preoccupied with the epistemic states of other
+agents. In ordinary life, we reason with varying degrees of success
+about what others know. We are especially concerned with what others
+know about us, and often specifically about what they know about what
+we know.</p>
+
+<div class="indent">
+
+<p>
+Does she know that I know where she buried the treasure?</p>
+
+<p>
+Does she know that I know that she knows?</p>
+
+<p>
+And so on.</p>
+</div>
+
+<p>
+Epistemic logic can reveal interesting epistemic features of systems
+involving groups of agents. In some cases, for example, emergent
+social phenomena depend on agents reasoning in particular ways about
+the knowledge and beliefs of other agents. As we have seen,
+traditional systems of epistemic logic applied only to single-agent
+cases. However, they can be extended to groups or multi-agent systems
+in a relatively straightforward manner.</p>
+
+<p>
+As David Lewis noted in his book <em>Convention</em> (1969) many
+prominent features of social life depend on agents assuming that the
+rules of some practice are matters of <em>common knowledge</em>. For
+example, drivers know that a red traffic light indicates that they
+should stop at an intersection. However, for the convention of traffic
+lights to be in place at all, it is first necessary that drivers must
+also know that other drivers know that <em>red</em> means
+<em>stop</em>. In addition, drivers must also know that everyone knows
+that everyone knows that &hellip;. The conventional role of traffic
+lights relies on all drivers knowing that all drivers know the rule,
+that the rule is a piece of
+ <a href="../common-knowledge/index.html">common knowledge</a>.</p>
+ 
+
+<p>
+A variety of norms, social and linguistic practices, agent
+interactions and games presuppose common knowledge, first formalized
+by Aumann (1976) and with earliest epistemic logical treatments by
+Lehmann (1984) and by Halpern and Moses (1984). In order to see how
+epistemic logic sheds light on these phenomena, it is necessary to
+introduce a little more formalism. Following the standard treatment
+(see, e.g., Fagin et al. 1995), we can syntactically augment the
+language of propositional logic with <i>n</i> knowledge operators, one
+for each agent involved in the group of agents under consideration.
+The primary difference between the semantics given for a mono-agent
+and a multi-agent semantics is roughly that <i>n</i> accessibility
+relations are introduced. A modal system for <i>n</i> agents is
+obtained by joining together <i>n</i> modal logics where for
+simplicity it may be assumed that the agents are homogenous in the
+sense that they may all be described by the same logical system. An
+epistemic logic for <i>n</i> agents consists of <i>n</i> copies of a
+certain modal logic. In such an extended epistemic logic it is
+possible to express that some agent in the group knows a certain fact
+that an agent knows that another agent knows a fact etc. It is
+possible to develop the logic even further: Not only may an agent know
+that another agent knows a fact, but they may all know this fact
+simultaneously.</p>
+
+<h3 id="MultAgenLangMode">3.1 Multi-Agent Languages and Models</h3>
+
+<p>
+To represent knowledge for a set \(\mathcal{A}\) of <i>n</i> agents,
+first let&rsquo;s stipulate a language. Let \(\mathcal{L}_{Kn}\) be
+given by the <em>Backus-Naur form</em></p> 
+
+\[\varphi:=p\mid \neg\varphi\mid (\varphi\wedge\varphi)\mid K_{i}\varphi\,\text{ for } p\in\textit{Atom},i\in\mathcal{A}.\]
+
+<p>
+To represent knowledge for all <i>n</i> agents jointly in pointed
+Kripke models, all that is needed is to add suitably many
+relations:</p>
+
+<div class="indent">
+
+<p>
+<strong>Definition:</strong> A <strong><em>pointed Kripke
+model</em></strong> for \(\mathcal{L}_{Kn}\) is a tuple
+\((M,w)=(W,\{R_{i}\}_{i\in\mathcal{A}},V,w)\) where</p>
+
+<ul>
+
+<li><i>W</i> is a non-empty set of possible worlds,</li>
+
+<li>For every \(i\in\mathcal{A}\), \(R_{i}\) is a binary relation on
+<i>W</i>,</li>
+
+<li>\(V\colon \textit{Atom}\longrightarrow\mathcal{P}(W)\) is a
+valuation, and</li>
+
+<li>\(w\in W\).</li>
+</ul>
+</div>
+
+<p>
+To also incorporate beliefs, simply apply the same move as in the
+single agent case: augment the language and let there be two relations
+for each agent.</p>
+
+<p>
+The definition uses a family of relations
+\(\{R_{i}\}_{i\in\mathcal{A}}\). In the literature, the same is
+denoted \((W,R_{i},V,w)_{i\in\mathcal{A}}\). Alternatively, <i>R</i>
+is taken to be a function sending agents to relations, i.e.,
+\(R:\mathcal{A\rightarrow}\mathcal{P}(W\times W)\). Then for each
+\(i\in\mathcal{A}\), \(R(i)\) is a relation on <i>W</i>, often denoted
+\(R_{i}\). These are stylistic choices.</p>
+
+<p>
+When considering only a single agent, it is typically not relevant to
+include more worlds in <i>W</i> than there are possible valuations of
+atoms. In multi-agent cases, this is not the case: to express the
+different forms of available higher-order knowledge, many copies of
+&ldquo;the same&rdquo; world are needed. Let us exemplify for
+\(\mathcal{A}=\{a,b\}\), \(\textit{Atom}=\{p\}\) and each
+\(R_{i},i\in\mathcal{A},\) an equivalence relation. Let us represent
+that both <i>a</i> and <i>b</i> know <i>p</i>, but <i>b</i> does not
+know that <i>a</i> knows <i>p</i> , i.e., \(K_{a}p\wedge
+K_{b}p\wedge\neg K_{b}K_{a}p\). Then we need three worlds:</p>
+
+<div class="figure center">
+<img style="width:110%" src="fig13.svg" class="nocaption" alt="Three boxes labeled w1 (containing 'p'), w2 (containing 'p'), and w3 (containing 'not p'). Each box has an arrow labeled 'a,b' looping back to it. w1 is highlighted and is connected to w2 by a double headed arrow labeled 'b'. w2 is connected to w3 by a double headed arrow labeled 'a'." />
+</div>
+
+<p>
+If we try to let \(w_{1}\) play the role of \(w_{2}\), then <i>a</i>
+would lose knowledge in <i>p</i>: both <i>p</i> worlds are needed. In
+general, if <i>W</i> is assumed to have any fixed, finite size, there
+will be some higher-order information formula that cannot be satisfied
+in it.</p>
+
+<h3 id="NotiGrouKnow">3.2 Notions of Group Knowledge</h3>
+
+<p>
+Multi-agent systems are interesting for other reasons than to
+represent higher-order information. The individual agents&rsquo;
+information may also be pooled to capture what the agents know
+jointly, as group knowledge (see Baltag, Boddy, &amp; Smets 2018 for a
+recent discussion). A standard notion is this style is <em>distributed
+knowledge</em>: The knowledge the group <em>would have</em> if the
+agents share all their individual knowledge. To represent it, augment
+the language \(\mathcal{L}_{Kn}\) with operators </p> 
+
+\[D_{G}\text{ for }G\subseteq\mathcal{A},\]
+
+<p>
+to make \(D_{G}\varphi\) a well-formed formula. Where
+\(G\subseteq\mathcal{A}\) is a group of agents, the formula
+\(D_{G}\varphi\) reads that it is <em>distributed knowledge in the
+group <i>G</i> that \(\varphi\)</em>.</p>
+
+<p>
+To evaluate \(D_{G}\varphi\), we define a new relation from those
+already present in the model. The idea behind the definition is that
+if some one agent has eliminated a world as an epistemic alternative,
+then so will the group. Define the relation as the intersection of the
+individual agents&rsquo; relations:</p> 
+
+\[R_{G}^{D}=\bigcap_{i\in G}R_{i}\]
+
+<p>
+In the three state model, \(R_{G}^{D}\) contains only the three loops.
+To evaluate a distributed knowledge formula, use the same form as for
+other modal operators: </p> 
+
+\[(M,w)\vDash D_{G}\varphi\text{ iff }(M,w')\vDash\varphi\text{ for all }w'\in W\text{ such that }wR_{G}^{D}w'.\]
+
+<p>
+It may be the case that some very knowing agent knows all that is
+distributed knowledge in <i>G</i>, but it is not guaranteed. To
+capture that all the agents know \(\varphi\), we could use the
+conjunction of the formulas \(K_{i}\varphi\) for \(\in\mathcal{A}\),
+i.e., \(\bigwedge_{i\in\mathcal{A}}K_{i}\varphi\). This is a
+well-defined formula if \(\mathcal{A}\) is finite (which it typically
+is). If \(\mathcal{A}\) is not finite, then
+\(\bigwedge_{i\in\mathcal{A}}K_{i}\varphi\) is not a formula in
+\(\mathcal{L}_{Kn}\), as it has only finite conjunctions. As a
+shorthand for \(\bigwedge_{i\in\mathcal{A}}K_{i}\varphi\), it is
+standard to introduce the <em>everybody knows</em> operator,
+\(E_{G}\):</p> 
+
+\[E_{G}\varphi:=\bigwedge_{i\in\mathcal{A}}K_{i}\varphi.\]
+
+<p>
+In the three world model, \(K_{a}p\wedge K_{b}p\), so
+\(E_{\{a,b\}}p\).</p>
+
+<p>
+That everybody knows something does not mean that this knowledge is
+shared between the members of the group. The three world model
+exemplifies this: Though \(E_{\{a,b\}}p\), it also the case that
+\(\neg K_{b}E_{\{a,b\}}p\).</p>
+
+<p>
+To capture that there is no uncertainty in the group about \(\varphi\)
+nor <em>any higher-order</em> uncertainty about \(\varphi\) being
+known by all agents, no formula in the language \(\mathcal{L}_{Kn}\)
+is enough. Consider the formula </p> 
+
+\[E_{G}^{k}\varphi\]
+
+<p>
+where \(E_{G}^{k}\) is short for <i>k</i> iterations of the \(E_{G}\)
+operator. Then for no natural number <i>k</i> will the formula
+\(E_{G}^{k}\varphi\) be enough: it could be the case that <i>b</i>
+doesn&rsquo;t know it! To rectify this situation, one could try </p>
+
+\[\bigwedge_{k\in\mathbb{N}}E_{G}^{k}\varphi\]
+
+<p>
+but this is not a formula as \(\mathcal{L}_{Kn}\) only contains finite
+conjunctions.</p>
+
+<p>
+Hence, though the \(E_{G}\) operator is definable in the language
+\(\mathcal{L}_{Kn}\), a suitable notion of <em>common knowledge</em>
+is not. For that, we again need to define a new relation on our model.
+This time, we are interested in capturing that nobody considers
+\(\varphi\) epistemically possible <em>anywhere</em>. To build the
+relation, we therefore first take the union the relations of all the
+agents in <i>G</i>, but this is not quite enough: to use the standard
+modal semantic clause, we must also be able to reach all of the worlds
+in this relation <em>in a single step</em>. Hence, let </p>
+
+\[R_{G}^{C}:=\left(\bigcup_{i\in G}R_{i}\right)^{*}\]
+
+<p>
+where \((\cdotp)^{*}\) is the operation of taking the <em>transitive
+closure.</em> If <i>R</i> is a relation, then \((R)^{*}\) is <i>R</i>
+plus all the pairs missing to make <i>R</i> a transitive relation.
+Consider the three world model: With the relation
+\(\bigcup_{i\in\{a,b\}}R_{i}\), we can reach \(w_{3}\) from \(w_{1}\)
+in two steps, stopping over at \(w_{2}\). With
+\((\bigcup_{i\in\{a,b\}}R_{i})^{*}\), \(w_{3}\) is reachable in one
+step: By the newly added transitive link from \(w_{1}\) to
+\(w_{3}\).</p>
+
+<p>
+To represent common knowledge, augment the <em>Backus-Naur form</em>
+of \(\mathcal{L}_{Kn}\) with operators </p> 
+
+\[C_{G}\text{ for }G\subseteq\mathcal{A},\]
+
+<p>
+to make \(C_{G}\varphi\) a well-formed formula. Evaluate such formulas
+by the semantic clause </p> 
+
+\[(M,w)\vDash C_{G}\varphi\text{ iff }(M,w')\vDash\varphi\text{ for all }w'\in W\text{ such that }wR_{G}^{C}w'.\]
+
+<p>
+Varying the properties of the accessibility relations
+\(R_{1},R_{2},\ldots,R_{n}\), as described above results in different
+epistemic logics. For instance system <strong>K</strong> with common
+knowledge is determined by all frames, while system
+<strong>S4</strong> with common knowledge is determined by all
+reflexive and transitive frames. Similar results can be obtained for
+the remaining epistemic logics (Fagin et al. 1995). For more, consult
+ <a href="../common-knowledge/index.html">the entry on common knowledge</a>.</p>
+ 
+
+<h2 id="LogiOmni">4. Logical Omniscience</h2>
+
+<p>
+The principal complaint against the approach taken by epistemic
+logicians is that it is committed to an excessively idealized picture
+of human reasoning. Critics have worried that the relational semantics
+of epistemic logic commits one to a closure property for an
+agent&rsquo;s knowledge that is implausibly strong given actual human
+reasoning abilities. The closure properties give rise to what has come
+to be called the problem of logical omniscience:</p>
+
+<div class="indent">
+
+<p>
+Whenever an agent <i>c</i> knows all of the formulas in a set
+\(\Gamma\) and <i>A</i> follows logically from \(\Gamma\),
+then <i>c</i> also knows <i>A</i>.</p>
+</div>
+
+<p>
+In particular, <i>c</i> knows all theorems (letting
+\(\Gamma=\emptyset\)), and knows all the logical consequences of any
+formula that the agent knows (letting \(\Gamma\) consist of a single
+formula). The concern here is that finite agents are constrained by
+limits on their cognitive capacities and reasoning abilities.
+&nbsp;The account of knowledge and belief that epistemic logic seems
+committed to involves superhuman abilities like knowing all the
+tautologies. Thus, the concern is that epistemic logic is simply
+unsuited to capturing actual knowledge and belief as these notions
+figure in ordinary human life.</p>
+
+<p>
+Hintikka recognized a discrepancy between the rules of epistemic logic
+and the way the verb &ldquo;to know&rdquo; is ordinarily used already
+in the early pages of <em>Knowledge and Belief</em>. He pointed out
+that </p>
+
+<blockquote>
+
+<p>
+it is clearly inadmissible to infer &ldquo;he knows that
+<i>q</i>&rdquo; from &ldquo;he knows that <i>p</i>&rdquo; solely on
+the basis that <i>q</i> follows logically from <i>p</i>, for the
+person in question may fail to see that <i>p</i> entails <i>q</i>,
+particularly if <i>p</i> and <i>q</i> are relatively complicated
+statements. (1962: 30-31) </p>
+</blockquote>
+
+<p>
+Hintikka&rsquo;s first reaction to what came to be called the problem
+of logical omniscience was to see the discrepancy between ordinary
+usage of terms like &ldquo;consistency&rdquo; and formal treatments of
+knowledge as indicating a problem with our ordinary terminology. If a
+person knows the axioms of a mathematical theory but is unable to
+state the distant consequences of the theory, Hintikka denied that it
+is appropriate to call that person inconsistent. &nbsp;In ordinary
+human affairs, Hintikka claimed, the charge of inconsistency when
+directed towards an agent has the connotation of being irrational or
+dishonest. &nbsp;Thus, from Hintikka&rsquo;s perspective we should
+choose some other term to capture the situation of someone who is
+rational and amenable to persuasion or correction but not logically
+omniscient. Non-omniscient, rational agents can be in a position to
+say that &ldquo;I know that <i>p</i> but I don&rsquo;t know whether
+<i>q</i>&rdquo; even in case <i>q</i> can <i>p</i>. He then suggests
+that <i>q</i> should be regarded as <em>defensible</em> given the
+agent&rsquo;s knowledge and the denial of <i>q</i> should be regarded
+as <em>indefensible</em>. This choice of terminology was criticized
+insofar as it attaches the pejorative <em>indefensible</em> to some
+set of proposition, even though the fault actually lies in the
+agent&rsquo;s cognitive capacities (Chisholm 1963; Hocutt 1972; Jago
+2007).</p>
+
+<p>
+Hintikka&rsquo;s early epistemic logic can be understood as a way of
+reasoning about what is implicit in an agent&rsquo;s knowledge even in
+cases where the agent itself is unable to determine what is implicit.
+Such an approach risks being excessively idealized and its relevance
+for understanding human epistemic circumstances can be challenged on
+these grounds.</p>
+
+<p>
+Few philosophers were satisfied with Hintikka&rsquo;s attempt to
+revise our ordinary use of the term &ldquo;consistent&rdquo; as he
+presented it in <em>Knowledge and Belief. &nbsp;</em>However, he and
+others soon provided more popular ways of dealing with logical
+omniscience. In the 1970s responses to the problem of logical
+omniscience introduced semantical entities that explain why the agent
+appears to be, but in fact is not really guilty of logical
+omniscience. Hintikka called these entities &ldquo;impossible possible
+worlds&rdquo; (1979; see also the entry on
+ <a href="../impossible-worlds/index.html">impossible worlds</a>
+ and Jago 2014). The basic idea is that an agent may mistakenly count
+among the worlds consistent with its knowledge, some worlds containing
+logical contradictions. The mistake is simply a product of the
+agent&rsquo;s limited resources; the agent may not be in a position to
+detect the contradiction and may erroneously count them as genuine
+possibilities. In some respects, this approach can be understood as an
+extension of the aforementioned response to logical omniscience that
+Hintikka had already outlined in <em>Knowledge and Belief.</em></p>
+
+<p>
+In the same spirit, entities called &ldquo;seemingly possible&rdquo;
+worlds are introduced by Rantala (1975) in his urn-model analysis of
+logical omniscience. Allowing impossible possible worlds or seemingly
+possible worlds in which the semantic valuation of the formulas is
+arbitrary to a certain extent provides a way of making the appearance
+of logical omniscience less threatening. After all, on any realistic
+account of epistemic agency, the agent is likely to consider (albeit
+inadvertently) worlds in which the laws of logic do not hold. Since no
+real epistemic principles hold broadly enough to encompass impossible
+and seemingly possible worlds, some conditions must be applied to
+epistemic models such that they cohere with epistemic principles (for
+criticism of this approach see Jago 2007: 336-337).</p>
+
+<p>
+Alternatively to designing logics in which the knowledge operators do
+not exhibit logical omniscience, <em>awareness logic</em> offers an
+alternative: Change the interpretation of \(K_{a}\varphi\) from
+&ldquo;<i>a</i> knows that \(\varphi\)&rdquo; to &ldquo;<i>a</i>
+<em>implicitly</em> knows that \(\varphi\)&rdquo; and take
+<em>explicit</em> knowledge that \(\varphi\) to be implicit knowledge
+that \(\varphi\) <em>and</em> awareness of \(\varphi\). With awareness
+not closed under logical consequence, such a move allows for notion of
+explicit knowledge not logically omniscient. As agents neither have to
+compute their implicit knowledge nor can they be held responsible for
+answering queries based on it, logical omniscience is problematic only
+for explicit knowledge, the <em>problem</em> of logical omniscience is
+thus averted. Though logical omniscience is an epistemological
+condition for implicit knowledge, the agent itself may actually fail
+to realize this condition. For more on awareness logic, see, e.g., the
+seminal Fagin &amp; Halpern (1987) or Velazquez-Quesada (2011) and
+Schipper (2015) for overviews.</p>
+
+<p>
+Debates about the various kinds of idealization involved in epistemic
+logic are ongoing in both philosophical and interdisciplinary
+contexts.</p>
+
+</div>
+
+<div id="bibliography">
+
+<h2 id="Bib">Bibliography</h2>
+
+<ul class="hanging">
+
+<li>Arl&oacute;-Costa, Horacio, Vincent F. Hendricks, and Johan van
+Benthem (eds.), 2016, <em>Readings in Formal Epistemology</em>, Cham:
+Springer International Publishing. doi:10.1007/978-3-319-20451-2</li>
+
+<li>Artemov, Sergei and Elena Nogina, 2005, &ldquo;Introducing
+Justification into Epistemic Logic&rdquo;, <em>Journal of Logic and
+Computation</em>, 15(6): 1059&ndash;1073. doi:10.1093/logcom/exi053</li>
+
+<li>Aucher, Guillaume, 2014, &ldquo;Principles of Knowledge, Belief
+and Conditional Belief&rdquo;, in <em>Interdisciplinary Works in
+Logic, Epistemology, Psychology and Linguistics: Dialogue,
+Rationality, and Formalism</em>, Manuel Rebuschi, Martine Batt,
+Gerhard Heinzmann, Franck Lihoreau, Michel Musiol, and Alain Trognon
+(eds.), Cham: Springer International Publishing, 97&ndash;134.
+doi:10.1007/978-3-319-03044-9_5</li>
+
+<li>Aumann, Robert J., 1976, &ldquo;Agreeing to Disagree&rdquo;,
+<em>The Annals of Statistics</em>, 4(6): 1236&ndash;1239. Reprinted in
+Arl&oacute;-Costa, Hendricks, and van Benthem 2016: 859&ndash;862.
+doi:10.1214/aos/1176343654, doi:10.1007/978-3-319-20451-2_40</li>
+
+<li>Baltag, A., R. Boddy, and S. Smets, 2018, &ldquo;Group Knowledge
+in Interrogative Epistemology&rdquo;, in van Ditmarsch and Sandu 2018:
+131&ndash;164. doi:10.1007/978-3-319-62864-6_5</li>
+
+<li>Baltag, Alexandru and Sonja Smets, 2008, &ldquo;A Qualitative
+Theory of Dynamic Interactive Belief Revision&rdquo;, in <em>Logic and
+the Foundations of Game and Decision Theory (LOFT 7)</em>, G. Bonanno,
+W. van der Hoek, and M. Wooldridge (eds.) (Texts in Logic and Games,
+Vol. 3), Amsterdam: Amsterdam University Press, 9&ndash;58.</li>
+
+<li>Benthem, Johan van, 2006, &ldquo;Epistemic Logic and Epistemology:
+The State of Their Affairs&rdquo;, <em>Philosophical Studies</em>,
+128(1): 49&ndash;76. doi:10.1007/s11098-005-4052-0</li>
+
+<li>&ndash;&ndash;&ndash;, 2011, <em>Logical Dynamics of Information
+and Interaction</em>, Cambridge: Cambridge University Press.
+doi:10.1017/CBO9780511974533</li>
+
+<li>Blackburn, Patrick, Maarten de Rijke, and Yde Venema, 2001,
+<em>Modal Logic</em>, Cambridge: Cambridge University Press.
+doi:10.1017/CBO9781107050884</li>
+
+<li>Bo&euml;r, Steven E. and William G. Lycan, 1986, <em>Knowing
+Who</em>, Cambridge, MA: MIT Press.</li>
+
+<li>Boh, Ivan, 1993, <em>Epistemic Logic in the Later Middle
+Ages</em>, (Topics in Medieval Philosophy), London/New York:
+Routledge.</li>
+
+<li>Chellas, Brian F., 1980, <em>Modal Logic: An Introduction</em>,
+Cambridge: Cambridge University Press.</li>
+
+<li>Chisholm, Roderick M., 1963, &ldquo;The Logic of Knowing&rdquo;,
+<em>The Journal of Philosophy</em>, 60(25): 773&ndash;795.
+doi:10.2307/2022834</li>
+
+<li>Ditmarsch, Hans van, Joseph Y. Halpern, Wiebe van der Hoek, and
+Barteld Kooi (eds.), 2015, <em>Handbook of Epistemic Logic</em>,
+London: College Publications.</li>
+
+<li>Ditmarsch, Hans van, Wiebe van der Hoek, and Barteld Kooi, 2007,
+<em>Dynamic Epistemic Logic</em>, Dordrecht: Springer Netherlands.
+doi:10.1007/978-1-4020-5839-4</li>
+
+<li>Ditmarsch, Hans van and Gabriel Sandu (eds.), 2018, <em>Jaakko
+Hintikka on Knowledge and Game-Theoretical Semantics</em>,
+(Outstanding Contributions to Logic, 12), Cham: Springer International
+Publishing. doi:10.1007/978-3-319-62864-6</li>
+
+<li>Fagin, Ronald and Joseph Y. Halpern, 1987, &ldquo;Belief,
+Awareness, and Limited Reasoning&rdquo;, <em>Artificial
+Intelligence</em>, 34(1): 39&ndash;76.
+doi:10.1016/0004-3702(87)90003-8</li>
+
+<li>Fagin, Ronald, Joseph Y. Halpern, Yoram Moses, and Moshe Y. Vardi,
+1995, <em>Reasoning About Knowledge</em>, Cambridge, MA: The MIT
+Press.</li>
+
+<li>Gochet, Paul and Pascal Gribomont, 2006, &ldquo;Epistemic
+Logic&rdquo;, in <em>Handbook of the History of Logic, 7</em>,
+Amsterdam: Elsevier, 99&ndash;195. doi:10.1016/S1874-5857(06)80028-2</li>
+
+<li>Halpern, Joseph Y., 1996, &ldquo;Should Knowledge Entail
+Belief?&rdquo;, <em>Journal of Philosophical Logic</em>, 25(5):
+483&ndash;494. doi:10.1007/BF00257382</li>
+
+<li>Halpern, Joseph Y., Dov Samet, and Ella Segev, 2009,
+&ldquo;Defining Knowledge in Terms of Belief: The Modal Logic
+Perspective&rdquo;, <em>The Review of Symbolic Logic</em>, 2(3):
+469&ndash;487. doi:10.1017/S1755020309990141</li>
+
+<li>Halpern, Joseph Y. and Yoram Moses, 1984, &ldquo;Knowledge and
+Common Knowledge in a Distributed Environment&rdquo;, in
+<em>Proceedings of the Third Annual ACM Symposium on Principles of
+Distributed Computing (PODC &rsquo;84)</em>, Vancouver, British Columbia,
+Canada, ACM Press, 50&ndash;61. doi:10.1145/800222.806735</li>
+
+<li>Hendricks, Vincent F., 2005, <em>Mainstream and Formal
+Epistemology</em>, Cambridge: Cambridge University Press.
+doi:10.1017/CBO9780511616150</li>
+
+<li>Hendricks, Vincent F. and Rasmus K. Rendsvig, 2018,
+&ldquo;Hintikka&rsquo;s Knowledge and Belief in Flux&rdquo;, in van
+Ditmarsch and Sandu 2018: 317&ndash;337.
+doi:10.1007/978-3-319-62864-6_13</li>
+
+<li>Hendricks, Vincent F. and John Symons, 2006, &ldquo;Where&rsquo;s the
+Bridge? Epistemology and Epistemic Logic&rdquo;, <em>Philosophical
+Studies</em>, 128(1): 137&ndash;167. doi:10.1007/s11098-005-4060-0</li>
+
+<li>Hintikka, Jaakko, 1962 [2005], <em>Knowledge and Belief: An
+Introduction to the Logic of the Two Notions</em>, second edition,
+Vincent F. Hendriks and John Symons (eds.), (Texts in Philosophy, 1),
+London: College Publications.</li>
+
+<li>&ndash;&ndash;&ndash;, 1969, &ldquo;Semantics for Propositional
+Attitudes&rdquo;, in <em>Philosophical Logic</em>, J. W. Davis, D. J.
+Hockney, and W. K. Wilson (eds.), Dordrecht: Springer Netherlands,
+21&ndash;45. doi:10.1007/978-94-010-9614-0_2</li>
+
+<li>&ndash;&ndash;&ndash;, 1978, &ldquo;Impossible Possible Worlds
+Vindicated&rdquo;, in <em>Game-Theoretical Semantics</em>, Esa
+Saarinen (ed.) (SLAP 5), Dordrecht: Springer Netherlands, 367&ndash;379.
+doi:10.1007/978-1-4020-4108-2_13</li>
+
+<li>&ndash;&ndash;&ndash;, 2007, &ldquo;Epistemology without Knowledge
+and without Belief&rdquo;, in <em>Socratic Epistemology: Explorations
+of Knowledge-Seeking by Questioning</em> , Cambridge: Cambridge
+University Press, 11&ndash;37. doi:10.1017/CBO9780511619298.002</li>
+
+<li>Hintikka, Jaakko and John Symons, 2003, &ldquo;Systems of Visual
+Identification in Neuroscience: Lessons from Epistemic Logic&rdquo;,
+<em>Philosophy of Science</em>, 70(1): 89&ndash;104.
+doi:10.1086/367871</li>
+
+<li>Hocutt, Max O., 1972, &ldquo;Is Epistemic Logic Possible?&rdquo;,
+<em>Notre Dame Journal of Formal Logic</em>, 13(4): 433&ndash;453.
+doi:10.1305/ndjfl/1093890705</li>
+
+<li>Hoek, Wiebe van der, 1993, &ldquo;Systems for Knowledge and
+Belief&rdquo;, <em>Journal of Logic and Computation</em>, 3(2):
+173&ndash;195. doi:10.1093/logcom/3.2.173</li>
+
+<li>Holliday, Wesley H., 2018, &ldquo;Epistemic Logic and
+Epistemology&rdquo;, in <em>Introduction to Formal Philosophy</em>,
+Sven Ove Hansson and Vincent F. Hendricks (eds.), Cham: Springer
+International Publishing, 351&ndash;369.
+doi:10.1007/978-3-319-77434-3_17</li>
+
+<li>Jago, Mark, 2007, &ldquo;Hintikka and Cresswell on Logical
+Omniscience&rdquo;, <em>Logic and Logical Philosophy</em>, 15(4):
+325&ndash;354. doi:10.12775/LLP.2006.019</li>
+
+<li>&ndash;&ndash;&ndash;, 2014, <em>The Impossible: An Essay on
+Hyperintensionality</em>, Oxford: Oxford University Press.
+doi:10.1093/acprof:oso/9780198709008.001.0001</li>
+
+<li>Knuuttila, Simo, 1993, <em>Modalities in Medieval Philosophy</em>,
+(Topics in Medieval Philosophy), New York: Routledge.</li>
+
+<li>Kraus, Sarit and Daniel Lehmann, 1986, &ldquo;Knowledge, Belief
+and Time&rdquo;, in <em>Automata, Languages and Programming</em>,
+Laurent Kott (ed.), Berlin, Heidelberg: Springer Berlin Heidelberg,
+186&ndash;195.</li>
+
+<li>Kutschera, Franz von, 1976, <em>Einf&uuml;hrung in Die
+Intensionale Semantik</em>, (De Gruyter Studienbuch&#8239;: Grundlagen Der
+Kommunikation), Berlin/New York: De Gruyter.</li>
+
+<li>Lehmann, Daniel, 1984, &ldquo;Knowledge, Common Knowledge and
+Related Puzzles (Extended Summary)&rdquo;, <em>Proceedings of the
+Third Annual ACM Symposium on Principles of Distributed Computing
+(PODC &rsquo;84)</em>, 62&ndash;67. doi:10.1145/800222.806736</li>
+
+<li>Lenzen, Wolfgang, 1978, <em>Recent Work in Epistemic Logic</em>,
+(Acta Philosophica Fennica, 30), Amsterdam: North Holland Publishing
+Company.</li>
+
+<li>&ndash;&ndash;&ndash;, 1980, <em>Glauben, Wissen Und
+Wahrscheinlichkeit: Systeme Der Epistemischen Logik</em>, (Library of
+Exact Philosophy, 12), Wien: Springer.</li>
+
+<li>Lewis, David K., 1969, <em>Convention: A Philosophical Study</em>,
+Cambridge, MA: Harvard University Press.</li>
+
+<li>Meyer, John-Jules Ch, 2001, &ldquo;Epistemic Logic&rdquo;, in
+<em>The Blackwell Guide to Philosophical Logic</em>, Lou Goble (ed.),
+Oxford: John Wiley &amp; Sons, 183&ndash;202.</li>
+
+<li>Meyer, John-Jules Ch. and Wiebe van der Hoek, 1995, <em>Epistemic
+Logic for AI and Computer Science</em>, (Cambridge Tracts in
+Theoretical Computer Science, 41), Cambridge: Cambridge University
+Press.</li>
+
+<li>Rantala, Veikko, 1975, &ldquo;Urn Models: A New Kind of
+Non-Standard Model for First-Order Logic&rdquo;, <em>Journal of
+Philosophical Logic</em>, 4(4): 455&ndash;474. doi:10.1007/BF00558760</li>
+
+<li>Rendsvig, Rasmus K., 2012, &ldquo;Modeling Semantic Competence: A
+Critical Review of Frege&rsquo;s Puzzle about Identity&rdquo;, in <em>New
+Directions in Logic, Language and Computation</em>, Daniel Lassiter
+and Marija Slavkovik (eds.), Berlin/Heidelberg: Springer Berlin
+Heidelberg, 140&ndash;157. doi:10.1007/978-3-642-31467-4_10</li>
+
+<li>Renne, Bryan, 2008, &ldquo;Dynamic Epistemic Logic with
+Justification&rdquo;, Ph.D. Thesis, New York: City University of New
+York.</li>
+
+<li>Schipper, Burkhard C., 2015, &ldquo;Awareness&rdquo;, in Ditmarsch
+et al. 2015: 77&ndash;146.</li>
+
+<li>Stalnaker, Robert, 2006, &ldquo;On Logics of Knowledge and
+Belief&rdquo;, <em>Philosophical Studies</em>, 128(1): 169&ndash;199.
+doi:10.1007/s11098-005-4062-y</li>
+
+<li>Velazquez-Quesada Fernando Raymundo, 2011, &ldquo;Small Steps in
+Dynamics of Information&rdquo;, Ph.D. Thesis, Institute for Logic,
+Language and Computation, University of Amsterdam.</li>
+
+<li>Voorbraak, Franciscus Petrus Johannes Maria, 1993, &ldquo;As Far
+as I Know: Epistemic Logic and Uncertainty&rdquo;, Ph.D. Thesis,
+Department of Philosophy, Utrecht University.</li>
+
+<li>Wang, Yanjing, 2015, &ldquo;A Logic of Knowing How&rdquo;, in
+<em>Logic, Rationality, and Interaction</em>, Wiebe van der Hoek,
+Wesley H. Holliday, and Wen-fang Wang (eds.), Berlin, Heidelberg:
+Springer Berlin Heidelberg, 392&ndash;405.
+doi:10.1007/978-3-662-48561-3_32</li>
+
+<li>&ndash;&ndash;&ndash;, 2018, &ldquo;Beyond Knowing That: A New
+Generation of Epistemic Logics&rdquo;, in van Ditmarsch and Sandu
+2018: 499&ndash;533. doi:10.1007/978-3-319-62864-6_21</li>
+
+<li>Williamson, Timothy, 2000, <em>Knowledge and Its Limits</em>,
+Oxford: Oxford University Press. doi:10.1093/019925656X.001.0001</li>
+
+<li>Wright, Georg Henrik von, 1951, <em>An Essay in Modal Logic</em>,
+(Studies in Logic and the Foundations of Mathematics), Amsterdam:
+North-Holland Publishing Company.</li>
+</ul>
+
+</div>
+
+<div id="academic-tools">
+
+<h2 id="Aca">Academic Tools</h2>
+
+<blockquote>
+<table class="vert-top">
+<tr>
+<td><img src="../../symbols/sepman-icon.jpg" alt="sep man icon" /></td>
+<td><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=logic-epistemic" target="other">How to cite this entry</a>.</td>
+</tr>
+
+<tr>
+<td><img src="../../symbols/sepman-icon.jpg" alt="sep man icon" /></td>
+<td><a href="https://leibniz.stanford.edu/friends/preview/logic-epistemic/" target="other">Preview the PDF version of this entry</a> at the
+ <a href="https://leibniz.stanford.edu/friends/" target="other">Friends of the SEP Society</a>.</td>
+</tr>
+
+<tr>
+<td><img src="../../symbols/inpho.png" alt="inpho icon" /></td>
+<td><a href="https://www.inphoproject.org/entity?sep=logic-epistemic&amp;redirect=True" target="other">Look up topics and thinkers related to this entry</a>
+ at the Internet Philosophy Ontology Project (InPhO).</td>
+</tr>
+
+<tr>
+<td><img src="../../symbols/pp.gif" alt="phil papers icon" /></td>
+<td><a href="http://philpapers.org/sep/logic-epistemic/" target="other">Enhanced bibliography for this entry</a>
+at <a href="http://philpapers.org/" target="other">PhilPapers</a>, with links to its database.</td>
+</tr>
+
+</table>
+</blockquote>
+
+</div>
+
+<div id="other-internet-resources">
+
+<h2 id="Oth">Other Internet Resources</h2>
+
+<ul>
+
+<li><a href="http://hintikkasworld.irisa.fr/" target="other">Hintikka&rsquo;s World</a>,
+ a graphical, pedagogical tool for learning about epistemic logic, 
+higher-order reasoning and knowledge dynamics.</li>
+
+<li><a href="https://github.com/rkirsling/modallogic" target="other">Modal Logic Playground</a>,
+a graphical interface for drawing and evaluating formulas of
+modal propositional logic.</li>
+
+<li>Hendricks, Vincent and John Symons, &ldquo;Epistemic Logic&rdquo;,
+ <em>Stanford Encyclopedia of Philosophy</em> (Spring 2019 Edition),
+Edward N. Zalta (ed.), URL =
+ &lt;<a href="https://plato.stanford.edu/archives/spr2019/entries/logic-epistemic/">https://plato.stanford.edu/archives/spr2019/entries/logic-epistemic/</a>&gt;.
+ [This was the previous entry on this topic in the <em>Stanford
+Encyclopedia of Philosophy</em> &mdash; see the
+<a href="https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=logic-epistemic" class="plain" target="other">version history</a>.]</li>
+
+</ul>
+
+</div>
+
+<div id="related-entries">
+
+<h2 id="Rel">Related Entries</h2>
+
+<p>
+
+ <a href="../common-knowledge/index.html">common knowledge</a> |
+ <a href="../heytesbury/index.html">Heytesbury, William</a> |
+ <a href="../impossible-worlds/index.html">impossible worlds</a> |
+ <a href="../logic-information/index.html">logic: and information</a> |
+ <a href="../dynamic-epistemic/index.html">logic: dynamic epistemic</a> |
+ <a href="../logic-justification/index.html">logic: justification</a> |
+ <a href="../logic-modal/index.html">logic: modal</a> |
+ <a href="../logic-belief-revision/index.html">logic: of belief revision</a> |
+ <a href="../phil-multimodallogic/index.html">multi-modal logic, philosophical aspects of</a>
+
+</p>
+
+</div>
+
+<script type="text/javascript" src="local.js"></script>
+<script type="text/javascript" src="../../MathJax/MathJaxb198.js?config=TeX-MML-AM_CHTML"></script>
+
+
+</div><!-- #aueditable --><!--DO NOT MODIFY THIS LINE AND BELOW-->
+
+<!-- END ARTICLE HTML -->
+
+</div> <!-- End article-content -->
+
+  <div id="article-copyright">
+    <p>
+ <a href="../../info.html#c">Copyright &copy; 2019</a> by
+
+<br />
+<a href="http://www.fil.lu.se/en/person/RasmusRendsvig/" target="other">Rasmus Rendsvig</a>
+&lt;<a href="m&#97;ilto:rendsvig&#37;40gmail&#37;2ecom"><em>rendsvig<abbr title=" at ">&#64;</abbr>gmail<abbr title=" dot ">&#46;</abbr>com</em></a>&gt;<br />
+<a href="http://www.johnsymons.net/" target="other">John Symons</a>
+&lt;<a href="m&#97;ilto:johnsymons&#37;40ku&#37;2eedu"><em>johnsymons<abbr title=" at ">&#64;</abbr>ku<abbr title=" dot ">&#46;</abbr>edu</em></a>&gt;
+    </p>
+  </div>
+
+</div> <!-- End article -->
+
+<!-- NOTE: article banner is outside of the id="article" div. -->
+<div id="article-banner" class="scroll-block">
+  <div id="article-banner-content">
+    <a href="../../fundraising/index.html">
+    Open access to the SEP is made possible by a world-wide funding initiative.<br />
+    The Encyclopedia Now Needs Your Support<br />
+    Please Read How You Can Help Keep the Encyclopedia Free</a>
+  </div>
+</div> <!-- End article-banner -->
+
+    </div> <!-- End content -->
+
+    <div id="footer">
+
+      <div id="footer-menu">
+        <div class="menu-block">
+          <h4><i class="icon-book"></i> Browse</h4>
+          <ul role="menu">
+            <li><a href="../../contents.html">Table of Contents</a></li>
+            <li><a href="../../new.html">What's New</a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+            <li><a href="../../published.html">Chronological</a></li>
+            <li><a href="../../archives/index.html">Archives</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-info-sign"></i> About</h4>
+          <ul role="menu">
+            <li><a href="../../info.html">Editorial Information</a></li>
+            <li><a href="../../about.html">About the SEP</a></li>
+            <li><a href="../../board.html">Editorial Board</a></li>
+            <li><a href="../../cite.html">How to Cite the SEP</a></li>
+            <li><a href="../../special-characters.html">Special Characters</a></li>
+            <li><a href="../../tools/index.html">Advanced Tools</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-leaf"></i> Support SEP</h4>
+          <ul role="menu">
+            <li><a href="../../support/index.html">Support the SEP</a></li>
+            <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+            <li><a href="../../support/donate.html">Make a Donation</a></li>
+            <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+          </ul>
+        </div>
+      </div> <!-- End footer menu -->
+
+      <div id="mirrors">
+        <div id="mirror-info">
+          <h4><i class="icon-globe"></i> Mirror Sites</h4>
+          <p>View this site from another server:</p>
+        </div>
+        <div class="btn-group open">
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="https://plato.stanford.edu/">
+            <span class="flag flag-usa"></span> USA (Main Site) <span class="caret"></span>
+            <span class="mirror-source">Philosophy, Stanford University</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../mirrors.html">Info about mirror sites</a></li>
+          </ul>
+        </div>
+      </div> <!-- End mirrors -->
+      
+      <div id="site-credits">
+        <p>The Stanford Encyclopedia of Philosophy is <a href="../../info.html#c">copyright &copy; 2021</a> by <a href="http://mally.stanford.edu/">The Metaphysics Research Lab</a>, Department of Philosophy, Stanford University</p>
+        <p>Library of Congress Catalog Data: ISSN 1095-5054</p>
+      </div> <!-- End site credits -->
+
+    </div> <!-- End footer -->
+
+  </div> <!-- End container -->
+
+   <!-- NOTE: Script required for drop-down button to work (mirrors). -->
+  <script>
+    $('.dropdown-toggle').dropdown();
+  </script>
+
+</body>
+
+<!-- Mirrored from seop.illc.uva.nl/entries/logic-epistemic/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 19:51:49 GMT -->
+</html>

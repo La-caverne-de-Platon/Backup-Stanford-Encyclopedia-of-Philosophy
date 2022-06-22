@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 ie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 ie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 ie"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 ie"> <![endif]-->
+<!--[if !IE]> --> <html> <!-- <![endif]-->
+
+<!-- Mirrored from seop.illc.uva.nl/entries/transmission-justification-warrant/formalisations.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 20:12:39 GMT -->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>
+Transmission of Justification and Warrant &gt; Bayesian Formalisations of the Information-Dependence Template (Stanford Encyclopedia of Philosophy)
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive, noodp" />
+<meta name="DCTERMS.ispartof" content="https://plato.stanford.edu/entries/transmission-justification-warrant/" />
+
+<!-- NOTE: Import webfonts using this link: -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,200&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" href="../../css/font-awesome-ie7.min.css"> <![endif]-->
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../css/print.css" />
+<link rel="stylesheet" type="text/css" href="../../css/entry.css" />
+<!--[if IE]> <link rel="stylesheet" type="text/css" href="../../css/ie.css" /> <![endif]-->
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+
+<!-- NOTE: Javascript for sticky behavior needed on article and ToC pages -->
+<script type="text/javascript" src="../../js/jquery-scrolltofixed-min.js"></script>
+<script type="text/javascript" src="../../js/entry.js"></script>
+
+<!-- SEP custom script -->
+<script type="text/javascript" src="../../js/sep.js"></script>
+</head>
+
+<!-- NOTE: The nojs class is removed from the page if javascript is enabled. Otherwise, it drives the display when there is no javascript. -->
+<body class="nojs article" id="pagetopright">
+<div id="container">
+<div id="header-wrapper">
+  <div id="header">
+    <div id="branding">
+      <div id="site-logo"><a href="../../index.html"><img src="../../symbols/sep-man-red.png" alt="SEP logo" /></a></div>
+      <div id="site-title"><a href="../../index.html">Stanford Encyclopedia of Philosophy</a></div>
+    </div>
+    <div id="navigation">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <button class="btn btn-navbar collapsed" data-target=".collapse-main-menu" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Menu </button>
+            <div class="nav-collapse collapse-main-menu in collapse">
+              <ul class="nav">
+                <li class="dropdown open"><a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-book"></i> Browse</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                    <li><a href="../../contents.html">Table of Contents</a></li>
+                    <li><a href="../../new.html">What's New</a></li>
+                    <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+                    <li><a href="../../published.html">Chronological</a></li>
+                    <li><a href="../../archives/index.html">Archives</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-info-sign"></i> About</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                    <li><a href="../../info.html">Editorial Information</a></li>
+                    <li><a href="../../about.html">About the SEP</a></li>
+                    <li><a href="../../board.html">Editorial Board</a></li>
+                    <li><a href="../../cite.html">How to Cite the SEP</a></li>
+                    <li><a href="../../special-characters.html">Special Characters</a></li>
+                    <li><a href="../../tools/index.html">Advanced Tools</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-leaf"></i> Support SEP</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                    <li><a href="../../support/index.html">Support the SEP</a></li>
+                    <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+                    <li><a href="../../support/donate.html">Make a Donation</a></li>
+                    <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End navigation -->
+    
+    <div id="search">
+      <form id="search-form" method="get" action="https://seop.illc.uva.nl/search/searcher.py">
+        <input type="search" name="query" placeholder="Search SEP" />
+        <div class="search-btn-wrapper"><button class="btn search-btn" type="submit"><i class="icon-search"></i></button></div>
+      </form>
+    </div>
+    <!-- End search --> 
+    
+  </div>
+  <!-- End header --> 
+</div>
+<!-- End header wrapper -->
+
+<div id="content">
+
+<!-- Begin article sidebar -->
+<div id="article-sidebar" class="sticky">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <button class="btn btn-navbar" data-target=".collapse-sidebar" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Entry Navigation </button>
+        <div id="article-nav" class="nav-collapse collapse-sidebar in collapse">
+          <ul class="nav">
+            <li><a href="index.html">Back to Entry <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#toc">Entry Contents <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#Bib">Entry Bibliography <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#Aca">Academic Tools <i class="icon-external-link"></i></a></li>
+            <li><a href="https://leibniz.stanford.edu/friends/preview/transmission-justification-warrant/">Friends PDF Preview <i class="icon-external-link"></i></a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=transmission-justification-warrant">Author and Citation Info <i class="icon-external-link"></i></a> </li>
+            <li><a href="#pagetopright" class="back-to-top">Back to Top <i class="icon-angle-up icon2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End article sidebar --> 
+
+<!-- NOTE: Article content must have two wrapper divs: id="article" and id="article-content" -->
+<div id="article">
+<div id="article-content">
+
+<!-- BEGIN ARTICLE HTML -->
+<h4 id="supphead">Supplement to <a href="index-2.html">Transmission of Justification and Warrant</a></h4>
+
+<div id="aueditable">
+<!--DO NOT MODIFY THIS LINE AND ABOVE--> 
+<h2>Bayesian Formalisations of the <i>Information-Dependence Template</i></h2>
+
+<p>
+Bayesian epistemologists have attempted to formalise extant
+explanations of transmissivity and non-transmissivity of
+justification; they have concentrated on the <i>information-dependence
+template</i>. Many epistemologists would claim that an acceptable
+Bayesian formalisation of this template would illuminate its rational
+structure and, in some sense, validate the explanation of
+non-transmissivity resting on it. In this section we present models
+put forward by Okasha (2004), Chandler (2010) and Moretti
+(2012). (Chandler 2013 also provides a belief revision AGM-style model
+that we will not survey in this entry.)</p>
+
+<p>
+The Bayesian assumes that rational belief comes in degrees and that
+degrees of rational belief or credences obey the probability
+calculus. Consider any proposition <i>x</i>. The expression Pr
+(<i>x</i>)&mdash;called the <i>unconditional probability</i>
+of <i>x</i>&mdash;is interpreted by the Bayesian as supplying the
+degree of credence of a rational subject <i>s</i> in <i>x</i>. In
+probability theory the expression Pr(<i>x</i>|<i>y</i>)&mdash;called
+the <i>conditional probability</i> of <i>x</i> given a
+proposition <i>y</i>&mdash;is customarily defined as Pr
+(<i>x</i>&amp;<i>y</i>) / Pr(<i>y</i>) provided that Pr(<i>y</i>)
+&gt; 0. (Hereafter whenever we use an expression with form Pr
+(&hellip;|<i>y</i>) we will always assume that Pr(<i>y</i>) &gt; 0.)
+Pr(<i>x</i>|<i>y</i>) is interpreted by the Bayesian as supplying the
+degree of credence that <i>s</i> would have in <i>x</i> if the truth
+of <i>y</i> were given to her. The Bayesian says that <i>y</i>
+(incrementally) <em>confirms</em> <i>x</i> if and only if Pr
+(<i>x</i>|<i>y</i>) &gt; Pr(<i>x</i>). Furthermore the Bayesian says
+that <i>y</i> (incrementally) confirms <i>x</i> <em>conditional
+on</em> a proposition <i>z</i> if and only if Pr
+(<i>x</i>|<i>y</i>&amp;<i>z</i>) &gt; Pr(<i>x</i>|<i>z</i>). All
+Bayesian models for transmissivity and non-transmissivity that we
+consider here assume that there exists a very close relation between
+degrees of epistemic justification and degrees of rational belief, so
+that the latter can faithfully represent the former.</p>
+
+<p>
+Okasha&rsquo;s (2004) framework rests on two further modelling
+assumptions:</p>
+
+<blockquote>
+
+<p>
+(A1) the claim
+that <i>s</i>&rsquo;<em>s</em> <em>learning</em> <i>y</i> <em>would
+provide</em> <i>s</i> <em>with some degree of justification
+for</em> <i>x</i> and the claim
+that <i>y</i> <em>confirms</em> <i>x</i> translate into one
+another.</p>
+
+<p>
+(A2) the claim that <i>s</i>&rsquo;s learning <i>y</i> would
+provide <i>s</i> with some degree of justification
+for <i>x</i> <em>given background information</em> <i>z</i> and the
+claim that <i>y</i> confirms <i>x</i> <em>conditional on</em> <i>z</i>
+translate into one another.</p>
+</blockquote>
+
+<p>
+Okasha essentially proposes to translate the <i>information-dependence
+template</i> into the following triad:</p>
+
+<blockquote>
+
+<table>
+<tbody>
+<tr>
+  <td>(I)</td>
+  <td>Pr(<i>p</i>|<i>e</i> &amp; <i>q</i>) &gt; Pr(<i>p</i>|<i>q</i>).</td>
+  <td>(<i>e</i> confirms <i>p</i> conditional on <i>q</i>.)</td> </tr>
+<tr>
+  <td>(II)</td>
+  <td>Pr(<i>p</i>|<i>e</i>) &le; Pr(<i>p</i>).</td>
+  <td>(<i>e</i> does not confirm <i>p</i> otherwise.)</td> </tr>
+<tr>
+  <td>(III)</td>
+  <td><i>p</i> &#8866; <i>q</i>.</td>
+  <td>(<i>p</i> entails <i>q</i>.)</td> </tr> </tbody>
+</table>
+</blockquote>
+
+<p>
+On the axioms of probability and the definition of conditional
+probability, (I)&ndash;(III) jointly entail: </p>
+
+<blockquote>
+
+<table>
+<tbody>
+<tr>
+  <td>(IV)</td>
+  <td>Pr(<i>q</i>|<i>e</i>) &le; Pr(<i>q</i>).</td>
+  <td>(<i>e</i> does not confirm <i>q</i>.)</td> </tr> </tbody>
+</table>
+</blockquote>
+
+<p>
+When the overall formalism is interpreted as detailed above, the
+entailment of (IV) from (I)&ndash;(III) is meant to explain why no
+justification based on <i>e</i> can transmit from <i>p</i> to <i>q</i>
+whenever the <i>information-dependence template</i> is
+instantiated. More precisely, this framework seems to be meant to
+account for non-transmissivity of first-time and quantitatively
+strengthening justification. Suppose in fact
+the <i>information-dependence template </i>is satisfied so that
+(I)&ndash;(III) are true. Then (IV) is true too. Hence <i>e</i> can
+provide no degree of justification for <i>q</i>. Thus &ndash; one
+might infer &ndash; <i>q</i> cannot receive via
+transmission&nbsp;from <i>p</i> any first-time or quantitatively
+strengthening justification based on <i>e</i>. </p>
+
+<p>
+In spite of appearance, Okasha&rsquo;s formalism has been found
+problematic in different respects. To begin with, (I)&ndash;(III)
+appear unable to explain <i>non-trivial</i> cases of transmission
+failure that the <i>information-dependence template</i> is deemed to
+be able to explain. These are cases in which <i>e</i> does
+supply <i>s</i> with justification for <i>p</i> conditional
+on <i>q</i> because <i>q</i> is in background information,
+but <i>e</i> supplies <i>s</i> with no first-time or quantitatively
+strengthening justification for <i>q</i>. Note that since <i>q</i> is
+in background information, in these cases <i>e</i> supplies <i>s</i>
+with no first-time or&nbsp;quantitatively strengthening justification
+for <i>q</i> <em>given background information</em> <i>q</i>.&nbsp;</p>
+
+<p>
+The problem for&nbsp;Okasha&rsquo;s formalism is this: given (A2),
+Okasha is committed to translating the claim
+that&nbsp;<i>s</i>&rsquo;s learning <i>y</i> would provide <i>s</i>
+with no degree of&nbsp;justification for <i>x</i> <em>given background
+information</em> <i>z</i> as Pr(<i>x</i>|<i>y</i>
+&amp; <i>z</i>)&nbsp;&le; Pr(<i>x</i>|<i>z</i>). Thus Okasha should
+construe formally the proposition that&nbsp;<i>s</i>&rsquo;s
+learning <i>e</i> would supply <i>s</i> with no justification
+for <i>q</i> <em>given background information</em> <i>q</i> as:</p>
+
+<blockquote>
+(V) Pr(<i>q</i>|<i>e</i> &amp; <i>q</i>) &le; Pr(<i>q</i>|<i>q</i>).
+</blockquote>
+
+<p>
+Namely, <i>e</i> does not confirm <i>q</i> <i>conditional</i>
+on <i>q</i> (cf. Moretti 2012). If (V) were a part of Okasha&rsquo;s
+framework, the latter could perhaps account for the non-trivial cases
+of transmission failure mentioned before. But (V) is no part of
+Okasha&rsquo;s framework. Note furthermore that the truth of (I)-(III)
+appears <i>explanatorily irrelevant</i> for the truth of (V). This is
+so because for every <i>q</i> and <i>e</i> such that Pr(<i>e</i>
+&amp; <i>q</i>) &gt; 0, Pr(<i>q</i>|<i>e</i> &amp; <i>q</i>) = Pr
+(<i>q</i>|<i>q</i>) = 1 so that, <i>trivially</i>, Pr
+(<i>q</i>|<i>e</i> &amp; <i>q</i>) &le; Pr(<i>q</i>|<i>q</i>).</p>
+
+<p>
+Okasha&rsquo;s framework appears affected by a more general
+difficulty. Although this model doesn&rsquo;t specify any Bayesian
+principle of transmissivity of justification, the principle implicitly
+assumed by Okasha is presumably this:</p>
+
+<blockquote>
+(<i><i><i>O-Trans</i></i></i>) If Pr(<i>p</i>|<i>e</i>) &gt; Pr(<i>p</i>) and&nbsp;<i>p</i> &#8866; <i>q</i>, then Pr(<i>q</i>|<i>e</i>) &gt; Pr(<i>q</i>).
+</blockquote>
+
+<p>
+<i>O-Trans</i> says that if <i>e</i> confirms <i>p</i>, and <i>p</i>
+entails <i>q</i>, then <i>e</i> confirms <i>q</i>. If justification is
+represented as confirmation, a deductive argument with
+premise <i>p</i>, conclusion <i>q</i> and evidence <i>e</i>
+for <i>p</i> is <i>transmissive</i> (of some degree of justification)
+if and only if <i>O-Trans</i> is <i>non-vacuously</i> true. It&rsquo;s
+been known for a long time that <i>O-Trans</i> is not true in general;
+but that doesn&rsquo;t exclude its being true in some particular
+cases, which is what we&rsquo;re supposed to understand the question
+of transmission failure coming to, on Okasha&rsquo;s proposal.</p>
+
+<p>
+Once <i>O-Trans</i> is assumed, it is natural to think that
+the <i>non-transmissivity</i> of an argument of the same type will
+formally be certified by the
+argument&rsquo;s <i>falsifying</i> <i>O-Trans</i>. Yet note
+that <i>O-Trans</i> is, not false, but <i>vacuously true</i> when
+(I)-(IV) are satisfied. For <i>O-Trans</i>&rsquo; antecedent embeds
+the logical negation of (II) (cf. Chandler 2010). It is thus unclear
+whether Okasha&rsquo;s model actually supplies a formal account of
+non-transmissivity. (For further criticism see&nbsp;Chandler&nbsp;2010
+and Moretti&nbsp;2012.)</p>
+
+<p>
+Let us turn to Chandler&rsquo;s (2010) formalisation. This model
+intends to be as faithful as possible to the informal notion of
+justification that the epistemologists who analyse transmission and
+transmission failure typically presuppose. A proposition is justified,
+on this notion, just in case it is <i>rationally believable</i>
+or <i>acceptable</i>. Accordingly,&nbsp;Chandler&rsquo;s framework is
+based on the following modelling assumption:</p>
+
+<blockquote>
+
+<p>
+<i>s</i>&rsquo;s learning <i>y</i> would justify <i>x</i> if and only
+if <i>s</i>&rsquo;s learning <i>y</i> would raise her credence
+in <i>x</i> and would do so over a relevant probability
+threshold <i>t</i> &isin; [0, 1) sufficient for rational belief or
+acceptance, i.e. if and only if&nbsp;Pr(<i>x</i>|<i>y</i>) &gt; Pr
+(<i>x</i>) and Pr(<i>x</i>|<i>y</i>) &gt; <i>t</i>.</p>
+</blockquote>
+
+<p>
+The basic version of the principle of transmissivity of justification
+embedded is this model is the following:</p>
+
+<blockquote>
+(<i>C-Trans</i>) If Pr(<i>p</i>|<i>e</i>) &gt; Pr(<i>p</i>), Pr(<i>p</i>|<i>e</i>) &gt; <i>t</i> and <i>p</i> &#8866; <i>q</i>, then Pr(<i>q</i>|<i>e</i>) &gt; Pr(<i>q</i>).
+</blockquote>
+
+<p>
+<i>C-Trans</i> states that if <i>e</i> confirms <i>p</i> such
+that <i>p</i>&rsquo;s conditional probability given <i>e</i>
+exceeds <i>t</i>, and <i>p</i> entails <i>q</i>, then <i>e</i>
+confirms <i>q</i>. According to this model, a deductive argument with
+premise <i>p</i>, conclusion <i>q</i> and evidence <i>e</i>
+is <i>transmissive</i> of justification if and only if <i>C-Trans</i>
+is&nbsp;non-vacuously true.&nbsp;Note that Pr(<i>p</i>|<i>e</i>)
+&gt; <i>t</i> and <i>p</i> &#8866; <i>q</i> jointly entail Pr
+(<i>q</i>|<i>e</i>) &gt; <i>t</i>. Thus if <i>C-Trans</i> is
+non-vacuously true, <i>e</i> confirms <i>q</i> such
+that <i>q</i>&rsquo;s conditional probability given <i>e</i>
+exceeds <i>t</i>. A deductive argument with premise <i>p</i>,
+conclusion <i>q</i> and evidence <i>e</i> is <i>non-transmissive</i>
+of justification if and only if <i>C-Trans</i> is false.</p>
+
+<p>
+<i>C-Trans</i> seems to be meant to account formally for
+transmissivity of first-time and quantitatively strengthening
+justification, in the senses that any deductive argument with
+premise <i>p</i>, conclusion <i>q</i> and evidence <i>e</i> is
+transmissive of justification of either type if and only if it
+satisfies <i>C-Trans</i>. We have transmissivity of first-time
+justification only if Pr(<i>q</i>) &le; <i>t</i>. We have
+transmissivity of quantitatively strengthening justification only if
+Pr(<i>q</i>) &gt; <i>t</i>. Note that <i>C-Trans</i> can be false for
+some <i>e</i>, <i>p</i> and <i>q</i> because there are probability
+distributions that verify its antecedent while falsifying its
+consequent for any chosen <i>t</i> &isin; [0, 1). Thus <i>C-Trans</i>
+makes room for non-transmissivity of justification.</p>
+
+<p>
+In Chandler&rsquo;s model, the condition that the justification
+from <i>e</i> for <i>p</i> depends on <i>q</i> being in background
+information is interpreted as the condition that the justification
+from <i>e</i> for <i>p</i> depends on <i>q</i> being antecedently
+justified, which is translated into the following material
+conditional:</p>
+
+<blockquote>
+(<i>C</i>) If Pr(<i>p</i>|<i>e</i>) &gt; <i>t</i> then Pr(<i>q</i>) &gt; <i>t</i>.
+</blockquote>
+
+<p>
+The <i>information-dependence template</i> is formalised by conjoining
+the antecedent of <i>C-Trans</i> and the above conditional. The
+resulting proposition is equivalent to the following:</p>
+
+<blockquote>
+(<i>C-Fail</i>) The antecedent of <i>C-Trans</i> is true and Pr(<i>q</i>) &gt; <i>t</i>.
+</blockquote>
+
+<p>
+<i>C-Trans</i> and <i>C-Fail</i> actually capture some feature of
+Wright&rsquo;s informal framework (cf. Chandler 2010, 338). However,
+while the satisfaction of the information-dependence template is meant
+to <i>suffice</i> for non-transmissivity, the fulfilment
+of <i>C-Fail</i> is only <i>necessary</i> for non-transmissivity
+but <i>not</i> sufficient for it. For it can be shown that,
+necessarily, <i>C-Fail</i> is true if <i>C-Trans</i> is false, but
+there are probability distributions that make <i>C-Fail</i>
+and <i>C-Trans</i> true at the same time for any chosen <i>t</i>
+&isin; [0, 1).</p>
+
+<p>
+With the purpose to improve on Chandler&rsquo;s model, Moretti (2012)
+suggests turning <i>C-Trans</i> into this principle:</p>
+
+<blockquote>
+(<i>M-Trans</i>) If Pr(<i>p</i>) &le; <i>t</i>, Pr(<i>p</i>|<i>e</i>) &gt; <i>t</i> and <i>p</i> &#8866; <i>q</i>, then Pr(<i>q</i>) &le; <i>t</i>.
+</blockquote>
+
+<p>
+Accepting <i>M-Trans</i> involves turning <i>C-Fail</i> into this
+condition:</p>
+
+<blockquote>
+(<i>M-Fail</i>) The antecedent of <i>M-Trans</i> is true and Pr(<i>q</i>) &gt; <i>t</i>.
+</blockquote>
+
+<p>
+<i>M-Trans</i> says that if <i>p</i>&rsquo;s unconditional probability
+does not exceed t while the conditional probability of <i>p</i>
+given <i>e</i> does, and <i>p</i> entails <i>q</i>,
+then <i>q</i>&rsquo;s unconditional probability does not
+exceed <i>t</i>. <i>M-Trans</i> accounts formally for transmissivity
+of first-time justification in the sense that any deductive argument
+with premise <i>p</i>, conclusion <i>q</i> and evidence <i>e</i>
+is <i>transmissive of first-time justification</i> if and only
+if <i>M-Trans</i> is non-vacuously true. (Note again that Pr
+(<i>p</i>|<i>e</i>) &gt; <i>t</i> and <i>p</i> &#8866; <i>q</i> entail Pr
+(<i>q</i>|<i>e</i>) &gt; <i>t</i>.) Since <i>M-Fail</i> is just the
+condition of falsehood of <i>M-Trans</i>, <i>M-Fail</i> provides a
+formal condition <i>sufficient</i> for non-transmissivity of
+first-time justification.</p>
+
+<p>
+As we have seen in Sect 3.2, the satisfaction of
+the <i>information-dependence template</i> might turn out to be a
+sufficient condition for non-transmissivity of both first-time and
+quantitatively strengthening justification. Yet note that
+if <i>M-Fail</i> were sufficient for non-transmissivity of
+quantitatively strengthening justification, <i>M-Fail</i> would
+prevent <i>any</i> deductive argument whatsoever concluding
+in <i>q</i> from being transmissive of quantitatively strengthening
+justification. For the clause in <i>M-Fail</i> according to which Pr
+(<i>q</i>) &gt; <i>t</i> is intuitively a <i>necessary</i> condition
+for transmission of quantitatively strengthening justification
+to <i>q</i>. This would be an unpalatable result because (as we have
+seen in Sect. 2) some deductive arguments appear capable of
+transmitting quantitatively strengthening justification (cf. Moretti
+2012).</p>
+
+<p>
+Moretti tentatively proposes a new Bayesian formalisation including a
+condition alternative to <i>M-Fail</i> that appears sufficient for
+non-transmissivity of both first-time and quantitatively strengthening
+justification. See Moretti (2012) for details.</p>
+
+
+</div><!-- #aueditable --><!--DO NOT MODIFY THIS LINE AND BELOW-->
+
+<!-- END ARTICLE HTML -->
+
+</div> <!-- End article-content -->
+
+  <div id="article-copyright">
+    <p>
+ <a href="../../info.html#c">Copyright &copy; 2018</a> by
+
+<br />
+<a href="http://lucamoretti.org/" target="other">Luca Moretti</a>
+&lt;<a href="m&#97;ilto:l&#37;2emoretti&#37;40abdn&#37;2eac&#37;2euk"><em>l<abbr title=" dot ">&#46;</abbr>moretti<abbr title=" at ">&#64;</abbr>abdn<abbr title=" dot ">&#46;</abbr>ac<abbr title=" dot ">&#46;</abbr>uk</em></a>&gt;<br />
+Tommaso Piazza
+&lt;<a href="m&#97;ilto:tommaso&#37;2epiazza&#37;40unipv&#37;2eit"><em>tommaso<abbr title=" dot ">&#46;</abbr>piazza<abbr title=" at ">&#64;</abbr>unipv<abbr title=" dot ">&#46;</abbr>it</em></a>&gt;
+    </p>
+  </div>
+
+</div> <!-- End article -->
+
+<!-- NOTE: article banner is outside of the id="article" div. -->
+<div id="article-banner" class="scroll-block">
+  <div id="article-banner-content">
+    <a href="../../fundraising/index.html">
+    Open access to the SEP is made possible by a world-wide funding initiative.<br />
+    The Encyclopedia Now Needs Your Support<br />
+    Please Read How You Can Help Keep the Encyclopedia Free</a>
+  </div>
+</div> <!-- End article-banner -->
+
+    </div> <!-- End content -->
+
+    <div id="footer">
+
+      <div id="footer-menu">
+        <div class="menu-block">
+          <h4><i class="icon-book"></i> Browse</h4>
+          <ul role="menu">
+            <li><a href="../../contents.html">Table of Contents</a></li>
+            <li><a href="../../new.html">What's New</a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+            <li><a href="../../published.html">Chronological</a></li>
+            <li><a href="../../archives/index.html">Archives</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-info-sign"></i> About</h4>
+          <ul role="menu">
+            <li><a href="../../info.html">Editorial Information</a></li>
+            <li><a href="../../about.html">About the SEP</a></li>
+            <li><a href="../../board.html">Editorial Board</a></li>
+            <li><a href="../../cite.html">How to Cite the SEP</a></li>
+            <li><a href="../../special-characters.html">Special Characters</a></li>
+            <li><a href="../../tools/index.html">Advanced Tools</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-leaf"></i> Support SEP</h4>
+          <ul role="menu">
+            <li><a href="../../support/index.html">Support the SEP</a></li>
+            <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+            <li><a href="../../support/donate.html">Make a Donation</a></li>
+            <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+          </ul>
+        </div>
+      </div> <!-- End footer menu -->
+
+      <div id="mirrors">
+        <div id="mirror-info">
+          <h4><i class="icon-globe"></i> Mirror Sites</h4>
+          <p>View this site from another server:</p>
+        </div>
+        <div class="btn-group open">
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="https://plato.stanford.edu/">
+            <span class="flag flag-usa"></span> USA (Main Site) <span class="caret"></span>
+            <span class="mirror-source">Philosophy, Stanford University</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../mirrors.html">Info about mirror sites</a></li>
+          </ul>
+        </div>
+      </div> <!-- End mirrors -->
+      
+      <div id="site-credits">
+        <p>The Stanford Encyclopedia of Philosophy is <a href="../../info.html#c">copyright &copy; 2021</a> by <a href="http://mally.stanford.edu/">The Metaphysics Research Lab</a>, Department of Philosophy, Stanford University</p>
+        <p>Library of Congress Catalog Data: ISSN 1095-5054</p>
+      </div> <!-- End site credits -->
+
+    </div> <!-- End footer -->
+
+  </div> <!-- End container -->
+
+   <!-- NOTE: Script required for drop-down button to work (mirrors). -->
+  <script>
+    $('.dropdown-toggle').dropdown();
+  </script>
+
+</body>
+
+<!-- Mirrored from seop.illc.uva.nl/entries/transmission-justification-warrant/formalisations.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 20:12:39 GMT -->
+</html>

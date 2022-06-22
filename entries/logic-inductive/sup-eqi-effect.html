@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 ie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 ie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 ie"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 ie"> <![endif]-->
+<!--[if !IE]> --> <html> <!-- <![endif]-->
+
+<!-- Mirrored from seop.illc.uva.nl/entries/logic-inductive/sup-eqi-effect.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 20:12:28 GMT -->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>
+Inductive Logic &gt; The Effect on EQI of Partitioning the Outcome Space More Finely&mdash;Including Proof of the Nonnegativity of EQI (Stanford Encyclopedia of Philosophy)
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive, noodp" />
+<meta name="DCTERMS.ispartof" content="https://plato.stanford.edu/entries/logic-inductive/" />
+
+<!-- NOTE: Import webfonts using this link: -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,200&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" href="../../css/font-awesome-ie7.min.css"> <![endif]-->
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../css/print.css" />
+<link rel="stylesheet" type="text/css" href="../../css/entry.css" />
+<!--[if IE]> <link rel="stylesheet" type="text/css" href="../../css/ie.css" /> <![endif]-->
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+
+<!-- NOTE: Javascript for sticky behavior needed on article and ToC pages -->
+<script type="text/javascript" src="../../js/jquery-scrolltofixed-min.js"></script>
+<script type="text/javascript" src="../../js/entry.js"></script>
+
+<!-- SEP custom script -->
+<script type="text/javascript" src="../../js/sep.js"></script>
+</head>
+
+<!-- NOTE: The nojs class is removed from the page if javascript is enabled. Otherwise, it drives the display when there is no javascript. -->
+<body class="nojs article" id="pagetopright">
+<div id="container">
+<div id="header-wrapper">
+  <div id="header">
+    <div id="branding">
+      <div id="site-logo"><a href="../../index.html"><img src="../../symbols/sep-man-red.png" alt="SEP logo" /></a></div>
+      <div id="site-title"><a href="../../index.html">Stanford Encyclopedia of Philosophy</a></div>
+    </div>
+    <div id="navigation">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <button class="btn btn-navbar collapsed" data-target=".collapse-main-menu" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Menu </button>
+            <div class="nav-collapse collapse-main-menu in collapse">
+              <ul class="nav">
+                <li class="dropdown open"><a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-book"></i> Browse</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                    <li><a href="../../contents.html">Table of Contents</a></li>
+                    <li><a href="../../new.html">What's New</a></li>
+                    <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+                    <li><a href="../../published.html">Chronological</a></li>
+                    <li><a href="../../archives/index.html">Archives</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-info-sign"></i> About</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                    <li><a href="../../info.html">Editorial Information</a></li>
+                    <li><a href="../../about.html">About the SEP</a></li>
+                    <li><a href="../../board.html">Editorial Board</a></li>
+                    <li><a href="../../cite.html">How to Cite the SEP</a></li>
+                    <li><a href="../../special-characters.html">Special Characters</a></li>
+                    <li><a href="../../tools/index.html">Advanced Tools</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-leaf"></i> Support SEP</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                    <li><a href="../../support/index.html">Support the SEP</a></li>
+                    <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+                    <li><a href="../../support/donate.html">Make a Donation</a></li>
+                    <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End navigation -->
+    
+    <div id="search">
+      <form id="search-form" method="get" action="https://seop.illc.uva.nl/search/searcher.py">
+        <input type="search" name="query" placeholder="Search SEP" />
+        <div class="search-btn-wrapper"><button class="btn search-btn" type="submit"><i class="icon-search"></i></button></div>
+      </form>
+    </div>
+    <!-- End search --> 
+    
+  </div>
+  <!-- End header --> 
+</div>
+<!-- End header wrapper -->
+
+<div id="content">
+
+<!-- Begin article sidebar -->
+<div id="article-sidebar" class="sticky">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <button class="btn btn-navbar" data-target=".collapse-sidebar" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Entry Navigation </button>
+        <div id="article-nav" class="nav-collapse collapse-sidebar in collapse">
+          <ul class="nav">
+            <li><a href="index.html">Back to Entry <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#toc">Entry Contents <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#Bib">Entry Bibliography <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#Aca">Academic Tools <i class="icon-external-link"></i></a></li>
+            <li><a href="https://leibniz.stanford.edu/friends/preview/logic-inductive/">Friends PDF Preview <i class="icon-external-link"></i></a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=logic-inductive">Author and Citation Info <i class="icon-external-link"></i></a> </li>
+            <li><a href="#pagetopright" class="back-to-top">Back to Top <i class="icon-angle-up icon2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End article sidebar --> 
+
+<!-- NOTE: Article content must have two wrapper divs: id="article" and id="article-content" -->
+<div id="article">
+<div id="article-content">
+
+<!-- BEGIN ARTICLE HTML -->
+<h4 id="supphead">Supplement to <a href="index-2.html">Inductive Logic</a></h4>
+
+<div id="aueditable">
+<!--DO NOT MODIFY THIS LINE AND ABOVE--> 
+<h2>The Effect on EQI of Partitioning the Outcome Space More Finely&mdash;Including Proof of the Nonnegativity of EQI</h2>
+
+<p>
+Given some experiment or observation (or series of them) <i>c</i>, is
+there any special advantage to parsing the space of possible outcomes
+<i>O</i> into more alternatives rather than fewer alternatives?
+Couldn&rsquo;t we do as well at evidentially evaluating hypotheses by
+parsing the space of outcomes into just a few alternatives&mdash;e.g.,
+one possible outcome that \(h_i\) says is very likely and \(h_j\) says
+is rather unlikely, one that \(h_i\) says is rather unlikely and
+\(h_j\) says is very likely, and perhaps a third outcome on which
+\(h_i\) and \(h_j\) pretty much agree? The answer is
+&ldquo;<em>No!</em>&rdquo;. Parsing the space of outcomes into a
+larger number of empirically distinct possible outcomes always
+provides a better measure of evidential support. </p>
+
+<p>
+To see this intuitively, suppose some outcome description <i>o</i> can
+be parsed into two distinct outcome descriptions, \(o_1\) and \(o_2\),
+where <i>o</i> is equivalent to \((o_1\vee o_2)\), and suppose that
+\(h_i\) differs from \(h_j\) much more on the likelihood of \(o_1\)
+than on the likelihood of \(o_2\). Then, intuitively, when <i>o</i> is
+found to be true, whichever of the more precise descriptions, \(o_1\)
+or \(o_2\), is true should make a difference as to how strong the
+comparative support for the two hypotheses turns out to be. Reporting
+whichever of \(o_1\) or \(o_2\) occurs will be more informative than
+simply reporting <i>o</i>. That is, if the outcome of the experiment
+is only described as <i>o</i>, relevant information is lost. </p>
+
+<p>
+It turns out that EQI measures how well possible outcomes can
+distinguish between hypotheses in a way that reflects the intuition
+that a finer partition of the possible outcomes is more informative.
+The numerical value of EQI is always made larger by parsing the
+outcome space more finely, provided that the likelihoods for outcomes
+in the finer parsing differ at least a bit from some of the
+likelihoods for outcomes of the less refined parsing. This is
+important for our main convergence result because in that theorem we
+want the average value of EQI for the whole sequence of experiments
+and observations to be positive, and the larger the better.</p>
+
+<p>
+The following <strong>Partition Theorem</strong> implies the
+<strong>Nonnegativity of EQI</strong> result as well. It show that
+each \(\EQI[c_k \pmid h_i /h_j \pmid b]\) must be non-negative; and it
+will be positive <em>just in case</em> for at least one possible
+outcome </p> 
+
+\[o_{ku}, P[o_{ku} \pmid  h_{j}\cdot b\cdot c_{k}]  \ne P[o_{ku} \pmid  h_{i}\cdot b\cdot c_{k}].\]
+
+<p>
+This theorem will also show that \(\EQI[c_k \pmid h_i /h_j \pmid b]\)
+generally becomes larger whenever the outcome space is partitioned
+more finely. It follows immediately that the average value of EQI for
+a sequence of experiments or observations, \(\bEQI[c^n \pmid h_i /h_j
+\pmid b]\), averaged over the sequence of observations
+<em>c\(^n\)</em>, is non-negative, and must be positive if for even
+one of the \(c_k\) that contribute to it, at least one possible
+outcome \(o_{ku}\) distinguishes between the two hypotheses by
+making</p> 
+
+ \[P[o_{ku} \pmid  h_{j}\cdot b\cdot c_{k}]  \ne P[o_{ku} \pmid  h_{i}\cdot b\cdot c_{k}].\]
+
+<p>
+<strong>Partition Theorem</strong>:
+<br />
+For any positive real numbers \(r_1, r_2, s_1, s_2\): </p>
+
+<ul class="sentag tag2em">
+
+<li><span class="tag">(1)</span><span class="sen"> if \(r_1 /s_1 \gt
+(r_1 +r_2)/(s_1 +s_2)\), then 
+
+\[(r_1 +r_2)\times\log\left[\frac{(r_1 +r_2)}{(s_1 +s_2)}\right] \lt r_1\times\log\left[\frac{r_1}{s_1}\right] + r_2\times\log\left[\frac{r_2}{s_2}\right];\]
+
+ </span></li>
+</ul>
+
+<p>
+and</p>
+
+<ul class="sentag tag2em">
+
+<li><span class="tag">(2)</span><span class="sen"> if \(r_1 /s_1 =
+(r_1 +r_2)/(s_1 +s_2)\), then 
+
+\[
+r_1\times\log\left[\frac{r_1}{s_1}\right] + r_2\times\log\left[\frac{r_2}{s_2}\right] = (r_1 +r_2)\times\log\left[\frac{(r_1 +r_2)}{(s_1 +s_2)}\right].\]
+
+ </span></li>
+</ul>
+
+<p>
+To prove this theorem first notice that </p> 
+
+\[
+\begin{align}
+  \frac{r_1}{s_1} = \frac{(r_1 +r_2)}{(s_1 +s_2)}  &amp;  \ifft   r_1 s_1 + r_1 s_2 = s_1 r_1 + s_1 r_2 \\
+   &amp; \ifft   \frac{r_1}{s_1} = \frac{r_2}{s_2}. 
+\end{align}
+\]
+
+<p>
+We&rsquo;ll draw on this little result immediately below. It is
+clearly relevant to the antecedent of case (2) of the theorem we want
+to prove.</p>
+
+<p>
+We establish case (2) first. Suppose the antecedent of case (2) holds.
+Then, from the little result just proved, we have</p> 
+
+\[
+\begin{align}
+r_1 \log\left[\frac{r_1}{s_1}\right] + r_2 \log\left[\frac{r_2}{s_2}\right]
+ &amp; =  r_1 \log\left[\frac{(r_1 +r_2)}{(s_1 +s_2)}\right] + r_2 \log\left[\frac{(r_1 +r_2)}{(s_1 +s_2)}\right] \\
+&amp;  =  (r_1 + r_2) \log\left[\frac{(r_1 +r_2)}{(s_1 +s_2)}\right]. 
+\end{align}
+\]
+
+<p>
+That establishes case (2).</p>
+
+<p>
+To get case (1), consider the following function of <i>p</i>: </p>
+
+<div class="indent">
+
+\[
+f(p) = p \log\left[\frac{p}{u}\right] + (1-p) \log\left[\frac{(1-p)}{v}\right],
+\]
+
+<p>
+where we only assume that \(u \gt 0\), \(v \gt 0\), and \(0 \lt p \lt
+1\).</p>
+</div>
+
+<p>
+This function has its minimum value when \(p = u/(u+v)\). (This is
+easily verified by setting the derivative of \(f(p)\) with respect to
+<i>p</i> equal to 0 to find the minimum value of \(f(p)\); and it is
+easy to verified that this is a minimum rather than a maximum value.)
+At this minimum, where \(p = u/(u+v)\), we have</p> 
+
+\[
+\begin{align}
+  f(p) &amp; =  -\frac{u}{(u+v)} \log[u+v] - \frac{v}{(u+v)} \log[u+v] \\[1ex]
+&amp;  =  -\log [u+v]. 
+\end{align}
+\]
+
+<p>
+Thus, for all values of <i>p</i> other than \(u/(u+v)\), </p>
+
+\[
+\begin{align}
+  -\log [u+v] &amp;   \lt   f(p) \\
+&amp;  =   p \log\left[\frac{p}{u}\right] + (1-p) \log\left[\frac{(1-p)}{v}\right]. 
+\end{align}
+\]
+
+<p>
+That is, if \(p \ne u/(u+v)\), </p> 
+
+\[
+-\log[u+v] \lt p \log\left[\frac{p}{u}\right] + (1-p) \log\left[\frac{(1-p)}{v}\right]. 
+\]
+
+<p>
+Now, let \(p = r_1 /(r_1 +r_2)\), let \(u = s_1 /(r_1 +r_2)\), and let
+\(v = s_2 /(r_1 +r_2)\). Plugging into the previous formula, and
+multiplying both sides by \((r_1 +r_2)\), we get: </p>
+
+<div class="indent">
+
+<p>
+if</p> 
+
+\[ \frac{r_1}{(r_1 +r_2)} \ne \frac{s_1}{(s_1 +s_2)}\]
+
+<p>
+(i.e., equivalently, if \(r_1 /s_1 \ne (r_1 +r_2)/(s_1 +s_2)\)), </p>
+
+<p>
+then</p> 
+
+\[\begin{multline}
+\log\left[\frac{(r_1 +r_2)}{(s_1 +s_2)}\right] \\
+\lt \left[\frac{r_1}{(r_1 +r_2)}\right] \log\left[\frac{r_1}{s_1}\right] + \left(1-\left[\frac{r_1}{(r_1 +r_2)}\right]\right) \log\left[\frac{r_2}{s_2}\right]
+\end{multline}\]
+
+<p>
+(i.e., equivalently, \( (r_1 +r_2) \log\left[\frac{(r_1 +r_2)}{(s_1
++s_2)}\right] \lt r_1 \log\left[\frac{r_1}{s_1}\right] + r_2
+\log\left[\frac{r_2}{s_2}\right]. \))</p>
+</div>
+
+<p>
+Thus, from the two equivalents, we&rsquo;ve proved case 2:</p>
+
+<div class="indent">
+
+<p>
+if</p> 
+
+\[ \frac{r_1}{s_1} \ne \frac{(r_1 +r_2)}{(s_1 +s_2)},\]
+
+<p>
+then</p> 
+
+\[
+ (r_1 +r_2) \log\left[\frac{(r_1 +r_2)}{(s_1 +s_2)}\right] \lt r_1 \log\left[\frac{r_1}{s_1}\right] + r_2 \log\left[\frac{r_2}{s_2}\right].
+\]
+
+</div>
+
+<p>
+This completes the proof of the theorem.</p>
+
+<p>
+To apply this result to \(\EQI[c_k \pmid h_i /h_j \pmid b]\) recall
+that</p> 
+
+\[
+\begin{multline}
+\EQI[c_k \pmid  h_i /h_j \pmid  b]
+  =
+  \sum_{\{u: P[o_{ku} \pmid  h_{j}\cdot b\cdot c_{k}] \gt 0\}}
+ \log\left[\frac{P[o_{ku} \pmid  h_{i}\cdot b\cdot c_k]}{P[o_{ku} \pmid  h_j\cdot b\cdot c_{k}]}\right]\\
+\times P[o_{ku} \pmid  h_{i}\cdot b\cdot c_{k}].  
+\end{multline}
+\]
+
+<p>
+Suppose \(c_k\) has <i>m</i> alternative outcomes \(o_{ku}\) on which
+both</p> 
+
+\[
+P[o_{ku} \pmid  h_{j}\cdot b\cdot c_{k}] \gt 0 \textrm{ and } P[o_{ku} \pmid  h_{i}\cdot b\cdot c_{k}] \gt 0.
+\]
+
+<p>
+Let&rsquo;s label their likelihoods relative to \(h_i\) (i.e., their
+likelihoods \(P[o_{ku} \pmid h_{i}\cdot b\cdot c_{k}]\)) as \(r_1\),
+\(r_2\), &hellip;, \(r_{m}\). And let&rsquo;s label their likelihoods
+relative to \(h_j\) as \(s_1\), \(s_2\),&hellip; ,\(s_m\). In terms of
+this notation,</p> 
+
+\[
+\EQI[c_k \pmid  h_i /h_j \pmid  b] 
+  = \sum^{m}_{u = 1}
+   r_u\times\log \left[\frac{r_u}{s_u}\right].  
+\]
+
+<p>
+Notice also that </p> 
+
+\[(r_1 +r_2 +r_3 +\ldots +r_m) = 1\]
+
+<p>
+and</p> 
+
+ \[(s_1 +s_2 +s_3 +\ldots +s_m) = 1.\]
+
+<p>
+Now, think of \(\EQI[c_k \pmid h_i /h_j \pmid b]\) as generated by
+applying the theorem in successive steps:</p> 
+
+\[
+\begin{align}
+  0  &amp; =   1\times \log\left[\frac{1}{1}\right]  \\
+&amp;  =   (r_1 +r_2 +r_3 +\ldots +r_{m})\times\log \left[\frac{(r_1 +r_2 +r_3 +\ldots +r_{m})}{(s_1 +s_2 +s_3 +\ldots +s_{m})}\right] \\
+&amp;  \le   r_1\times\log \left[\frac{r_1}{s_1}\right]
+     + (r_2 +r_3 +\ldots +r_{m})\times \log\left[\frac{(r_2 +r_3 +\ldots +r_{m})}{(s_2 +s_3 +\ldots +s_{m})}\right] \\
+&amp; \le   r_1\times\log \left[\frac{r_1}{s_1}\right] + r_2\times\log \left[\frac{r_2}{s_2}\right] \\
+&amp;\qquad + (r_3 +\ldots +r_{m}) \times\log \left[\frac{(r_3 +\ldots +r_{m})}{(s_3 +\ldots +s_{m})}\right] \\
+&amp;   \le \ldots \\
+&amp;  \le \sum^{m}_{u = 1}    r_u\times\log \left[\frac{r_u}{s_u}\right]  \\
+&amp;  =   \EQI[c_k \pmid  h_i /h_j \pmid  b]. 
+\end{align}
+\]
+
+<p>
+The theorem also says that <em>at each step</em> equality holds just
+in case </p> 
+
+\[
+\frac{r_u}{s_u} = \frac{(r_{u}+r_{u+1}+\ldots +r_{m})}{(s_u +s_{u+1}+\ldots +s_m)},
+\]
+
+<p>
+which itself holds just in case</p> 
+
+\[
+\frac{r_u}{s_u} = \frac{(r_{u+1}+\ldots +r_{m})}{(s_{u+1}+\ldots +s_{m})}.
+\]
+
+<p>
+So,</p> 
+
+\[
+\EQI[c_k \pmid  h_i /h_j \pmid  b] = 0
+\]
+
+<p>
+just in case</p> 
+
+\[
+\begin{align}
+  1  &amp;=   \frac{(r_1 +r_2 +r_3 +\ldots +r_{m})}{(s_1 +s_2 +s_3 +\ldots +s_{m})} \\
+  &amp;=  \frac{r_1}{s_1} \\
+  &amp;=  \frac{(r_2 +r_3 +\ldots +r_{m})}{(s_2 +s_3 +\ldots +s_m)} \\
+  &amp;=  \frac{r_2}{s_2} \\
+  &amp;=  \frac{(r_3 +\ldots +r_{m})}{(s_3 +\ldots +s_{m})} \\
+  &amp;=   r_3 /s_3 \\
+  &amp;= \ldots \\
+  &amp;=  \frac{r_{m}}{s_{m}}. \\
+\end{align}
+\]
+
+<p>
+That is,</p> 
+
+\[
+\EQI[c_k \pmid  h_i /h_{j} \pmid  b] = 0
+\]
+
+<p>
+just in case for all \(o_{ku}\) such that \(P[o_{ku} \pmid h_j\cdot b]
+\gt 0\) and \(P[o_{ku} \pmid h_i\cdot b] \gt 0\), </p> 
+
+\[
+\frac{P[o_{ku} \pmid  h_{i}\cdot b\cdot c_{k}]}{P[o_{ku} \pmid  h_j\cdot b\cdot c_k]} = 1.
+\]
+
+<p>
+Otherwise,</p> 
+
+\[
+\EQI[c_k \pmid  h_i /h_j \pmid  b] \gt 0;
+\]
+
+<p>
+and for each successive step in partitioning the outcome space to
+generate \(\EQI[c_k \pmid h_i /h_j \pmid b]\), if</p> 
+
+\[
+r_u /s_u \ne \frac{(r_{u}+r_{u+1}+\ldots +r_{m})}{(s_u +s_{u+1}+\ldots +s_{m})},
+\]
+
+<p>
+we have the strict inequality:</p> 
+
+\[
+\begin{multline}
+(r_{u}+r_{u+1}+\ldots +r_{m}) \times \log\left[\frac{(r_{u}+r_{u+1}+\ldots +r_{m})}{(s_u +s_{u+1}+\ldots +s_{m})}\right] \\
+\lt
+ r_u\times\log \left[\frac{r_u}{s_u}\right] + (r_{u+1}+\ldots +r_{m})\times\log \left[\frac{(r_{u+1}+\ldots +r_{m})}{(s_{u+1}+\ldots +s_{m})}\right].
+\end{multline}
+\]
+
+<p>
+So each such division of \((o_{ku}\vee o_{ku+1}\vee \ldots \vee
+o_{km})\) into two separate statements, \(o_{ku}\) and \((o_{ku+1}\vee
+\ldots \vee o_{km})\), adds a strictly positive contribution to the
+size of \(\EQI[c_k \pmid h_i /h_j \pmid b]\) <em>just when</em></p>
+
+ \[
+\frac{P[o_{ku} \pmid  h_{i}\cdot b\cdot c_{k}]}{P[o_{ku} \pmid  h_j\cdot b\cdot c_k]}  \ne \frac{P[(o_{ku+1}\vee \ldots \vee o_{km}) \pmid  h_{i}\cdot b\cdot c_{k}]}{P[(o_{ku+1}\vee \ldots \vee o_{km}) \pmid  h_j\cdot b\cdot c_k]}.
+\]
+
+<!--pdf exclude begin-->
+
+<p>
+ [<a href="index-2.html#s-6">Back to Text</a>]</p>
+ 
+<!--pdf exclude end-->
+<script type="text/javascript" src="local.js"></script>
+<script type="text/javascript" src="../../MathJax/MathJaxb198.js?config=TeX-MML-AM_CHTML"></script>
+
+
+</div><!-- #aueditable --><!--DO NOT MODIFY THIS LINE AND BELOW-->
+
+<!-- END ARTICLE HTML -->
+
+</div> <!-- End article-content -->
+
+  <div id="article-copyright">
+    <p>
+ <a href="../../info.html#c">Copyright &copy; 2018</a> by
+
+<br />
+<a href="http://james-hawthorne.oucreate.com/" target="other">James Hawthorne</a>
+&lt;<a href="m&#97;ilto:hawthorne&#37;40ou&#37;2eedu"><em>hawthorne<abbr title=" at ">&#64;</abbr>ou<abbr title=" dot ">&#46;</abbr>edu</em></a>&gt;
+    </p>
+  </div>
+
+</div> <!-- End article -->
+
+<!-- NOTE: article banner is outside of the id="article" div. -->
+<div id="article-banner" class="scroll-block">
+  <div id="article-banner-content">
+    <a href="../../fundraising/index.html">
+    Open access to the SEP is made possible by a world-wide funding initiative.<br />
+    The Encyclopedia Now Needs Your Support<br />
+    Please Read How You Can Help Keep the Encyclopedia Free</a>
+  </div>
+</div> <!-- End article-banner -->
+
+    </div> <!-- End content -->
+
+    <div id="footer">
+
+      <div id="footer-menu">
+        <div class="menu-block">
+          <h4><i class="icon-book"></i> Browse</h4>
+          <ul role="menu">
+            <li><a href="../../contents.html">Table of Contents</a></li>
+            <li><a href="../../new.html">What's New</a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+            <li><a href="../../published.html">Chronological</a></li>
+            <li><a href="../../archives/index.html">Archives</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-info-sign"></i> About</h4>
+          <ul role="menu">
+            <li><a href="../../info.html">Editorial Information</a></li>
+            <li><a href="../../about.html">About the SEP</a></li>
+            <li><a href="../../board.html">Editorial Board</a></li>
+            <li><a href="../../cite.html">How to Cite the SEP</a></li>
+            <li><a href="../../special-characters.html">Special Characters</a></li>
+            <li><a href="../../tools/index.html">Advanced Tools</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-leaf"></i> Support SEP</h4>
+          <ul role="menu">
+            <li><a href="../../support/index.html">Support the SEP</a></li>
+            <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+            <li><a href="../../support/donate.html">Make a Donation</a></li>
+            <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+          </ul>
+        </div>
+      </div> <!-- End footer menu -->
+
+      <div id="mirrors">
+        <div id="mirror-info">
+          <h4><i class="icon-globe"></i> Mirror Sites</h4>
+          <p>View this site from another server:</p>
+        </div>
+        <div class="btn-group open">
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="https://plato.stanford.edu/">
+            <span class="flag flag-usa"></span> USA (Main Site) <span class="caret"></span>
+            <span class="mirror-source">Philosophy, Stanford University</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../mirrors.html">Info about mirror sites</a></li>
+          </ul>
+        </div>
+      </div> <!-- End mirrors -->
+      
+      <div id="site-credits">
+        <p>The Stanford Encyclopedia of Philosophy is <a href="../../info.html#c">copyright &copy; 2021</a> by <a href="http://mally.stanford.edu/">The Metaphysics Research Lab</a>, Department of Philosophy, Stanford University</p>
+        <p>Library of Congress Catalog Data: ISSN 1095-5054</p>
+      </div> <!-- End site credits -->
+
+    </div> <!-- End footer -->
+
+  </div> <!-- End container -->
+
+   <!-- NOTE: Script required for drop-down button to work (mirrors). -->
+  <script>
+    $('.dropdown-toggle').dropdown();
+  </script>
+
+</body>
+
+<!-- Mirrored from seop.illc.uva.nl/entries/logic-inductive/sup-eqi-effect.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 20:12:28 GMT -->
+</html>

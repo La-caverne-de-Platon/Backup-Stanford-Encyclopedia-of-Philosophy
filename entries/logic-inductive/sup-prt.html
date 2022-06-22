@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 ie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 ie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 ie"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 ie"> <![endif]-->
+<!--[if !IE]> --> <html> <!-- <![endif]-->
+
+<!-- Mirrored from seop.illc.uva.nl/entries/logic-inductive/sup-prt.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 20:12:27 GMT -->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>
+Inductive Logic &gt; Proof of the Probabilistic Refutation Theorem (Stanford Encyclopedia of Philosophy)
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive, noodp" />
+<meta name="DCTERMS.ispartof" content="https://plato.stanford.edu/entries/logic-inductive/" />
+
+<!-- NOTE: Import webfonts using this link: -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,200&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" href="../../css/font-awesome-ie7.min.css"> <![endif]-->
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../css/print.css" />
+<link rel="stylesheet" type="text/css" href="../../css/entry.css" />
+<!--[if IE]> <link rel="stylesheet" type="text/css" href="../../css/ie.css" /> <![endif]-->
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+
+<!-- NOTE: Javascript for sticky behavior needed on article and ToC pages -->
+<script type="text/javascript" src="../../js/jquery-scrolltofixed-min.js"></script>
+<script type="text/javascript" src="../../js/entry.js"></script>
+
+<!-- SEP custom script -->
+<script type="text/javascript" src="../../js/sep.js"></script>
+</head>
+
+<!-- NOTE: The nojs class is removed from the page if javascript is enabled. Otherwise, it drives the display when there is no javascript. -->
+<body class="nojs article" id="pagetopright">
+<div id="container">
+<div id="header-wrapper">
+  <div id="header">
+    <div id="branding">
+      <div id="site-logo"><a href="../../index.html"><img src="../../symbols/sep-man-red.png" alt="SEP logo" /></a></div>
+      <div id="site-title"><a href="../../index.html">Stanford Encyclopedia of Philosophy</a></div>
+    </div>
+    <div id="navigation">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <button class="btn btn-navbar collapsed" data-target=".collapse-main-menu" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Menu </button>
+            <div class="nav-collapse collapse-main-menu in collapse">
+              <ul class="nav">
+                <li class="dropdown open"><a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-book"></i> Browse</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                    <li><a href="../../contents.html">Table of Contents</a></li>
+                    <li><a href="../../new.html">What's New</a></li>
+                    <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+                    <li><a href="../../published.html">Chronological</a></li>
+                    <li><a href="../../archives/index.html">Archives</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-info-sign"></i> About</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                    <li><a href="../../info.html">Editorial Information</a></li>
+                    <li><a href="../../about.html">About the SEP</a></li>
+                    <li><a href="../../board.html">Editorial Board</a></li>
+                    <li><a href="../../cite.html">How to Cite the SEP</a></li>
+                    <li><a href="../../special-characters.html">Special Characters</a></li>
+                    <li><a href="../../tools/index.html">Advanced Tools</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-leaf"></i> Support SEP</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                    <li><a href="../../support/index.html">Support the SEP</a></li>
+                    <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+                    <li><a href="../../support/donate.html">Make a Donation</a></li>
+                    <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End navigation -->
+    
+    <div id="search">
+      <form id="search-form" method="get" action="https://seop.illc.uva.nl/search/searcher.py">
+        <input type="search" name="query" placeholder="Search SEP" />
+        <div class="search-btn-wrapper"><button class="btn search-btn" type="submit"><i class="icon-search"></i></button></div>
+      </form>
+    </div>
+    <!-- End search --> 
+    
+  </div>
+  <!-- End header --> 
+</div>
+<!-- End header wrapper -->
+
+<div id="content">
+
+<!-- Begin article sidebar -->
+<div id="article-sidebar" class="sticky">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <button class="btn btn-navbar" data-target=".collapse-sidebar" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Entry Navigation </button>
+        <div id="article-nav" class="nav-collapse collapse-sidebar in collapse">
+          <ul class="nav">
+            <li><a href="index.html">Back to Entry <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#toc">Entry Contents <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#Bib">Entry Bibliography <i class="icon-external-link"></i></a></li>
+            <li><a href="index.html#Aca">Academic Tools <i class="icon-external-link"></i></a></li>
+            <li><a href="https://leibniz.stanford.edu/friends/preview/logic-inductive/">Friends PDF Preview <i class="icon-external-link"></i></a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=logic-inductive">Author and Citation Info <i class="icon-external-link"></i></a> </li>
+            <li><a href="#pagetopright" class="back-to-top">Back to Top <i class="icon-angle-up icon2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End article sidebar --> 
+
+<!-- NOTE: Article content must have two wrapper divs: id="article" and id="article-content" -->
+<div id="article">
+<div id="article-content">
+
+<!-- BEGIN ARTICLE HTML -->
+<h4 id="supphead">Supplement to <a href="index-2.html">Inductive Logic</a></h4>
+
+<div id="aueditable">
+<!--DO NOT MODIFY THIS LINE AND ABOVE--> 
+<h2>Proof of the Probabilistic Refutation Theorem</h2>
+
+<p>
+The proof of Convergence Theorem 2 requires the introduction of one
+more concept, that of the <em>variance in the quality of
+information</em> for a sequence of experiments or observations,
+\(\VQI[c^n \pmid h_i /h_j \pmid b]\). The quality of the information
+QI from a specific outcome sequence \(e^n\) may vary somewhat from the
+<em>expected quality of information</em> for conditions \(c^n\). A
+common statistical measure of how widely individual values tend to
+vary from an expected value is given by the <em>expected squared
+distance from the expected value</em>, which is called the
+<em>variance</em>.</p>
+
+<div class="indent">
+<strong>Definition: VQI&mdash;the Variance in the Quality of
+Information.</strong>
+<br />
+For \(h_j\) outcome-compatible with \(h_i\) on \(c_k\), define
+
+\[
+\begin{multline}
+\VQI[c_k \pmid  h_i /h_j \pmid  b] =\\
+  \sum_u (\QI[o_{ku} \pmid  h_i /h_j \pmid  b\cdot c_k] - \EQI[c_k \pmid  h_i /h_j \pmid  b])^2 \\
+\times P[o_{ku} \pmid  h_{i}\cdot b\cdot c_{k}].
+\end{multline} 
+\]
+
+<p>
+For a sequence \(c^n\) of observations on which \(h_j\) is
+outcome-compatible with \(h_i\), define</p> 
+
+\[
+\begin{multline}
+\VQI[c^n \pmid  h_i /h_j \pmid  b] =\\
+  \sum_{\{e^n\}} (\QI[e^n \pmid  h_i /h_j \pmid  b\cdot c^n] - \EQI[c^n \pmid  h_i /h_j \pmid  b])^2 \\
+\times P[e^n \pmid  h_{i}\cdot b\cdot c^{n}].
+\end{multline} 
+\]
+
+<p>
+Clearly VQI will be positive unless \(h_i\) and \(h_j\) agree on the
+likelihoods of all possible outcome sequences in the evidence stream,
+in which case both \(\EQI[c^n \pmid h_i /h_j \pmid b]\) and \(\VQI[c^n
+\pmid h_i /h_j \pmid b]\) equal 0.</p>
+
+<p>
+When both <em>Independent Evidence Conditions</em> hold, \(\VQI[c^n
+\pmid h_i /h_j \pmid b]\) decompose into the sum of the VQI for
+individual experiments or observations \(c_k\).</p>
+
+<!--pdf include <div class="pagebreak"></div> pdf include-->
+<div class="indent">
+
+<p>
+<strong>Theorem: The VQI Decomposition Theorem for Independent
+Evidence on Each Hypothesis: </strong>
+<br />
+Suppose both <em>condition independence</em> and
+<em>result-independence</em> hold. Then</p> 
+
+\[
+  \VQI[c^n \pmid  h_i /h_j \pmid  b]   = \sum^{n}_{k=1}   \VQI[c_k \pmid h_i /h_j \pmid  b]. 
+\]
+
+</div>
+
+<p>
+For the Proof, we employ the following abbreviations: </p> 
+
+\[
+\begin{align}
+  \Q[e_k] &amp;=   \QI[e_k \pmid  h_i /h_j \pmid  b\cdot c_k] \\
+  \Q[e^k] &amp;=   \QI[e^k \pmid  h_i /h_j \pmid  b\cdot c^k] \\
+  \E[c_k] &amp;=   \EQI[c_k \pmid  h_i /h_j \pmid  b] \\
+  \E[c^k] &amp;=   \EQI[c^k \pmid  h_i /h_j \pmid  b] \\
+  \V[c_k] &amp;=    \VQI[c_k \pmid  h_i /h_j \pmid  b] \\
+  \V[c^k] &amp;=   \VQI[c^k \pmid  h_i /h_j \pmid  b] \\
+\end{align}
+\]
+
+<p>
+The equation stated by the theorem may be derived as follows:</p>
+
+<p>
+\( \begin{align} \V[c^n] &amp;= \sum_{\{e^n\}} (\Q[e^n] - \E[c^n])^2
+\times P[e^n \pmid h_{i}\cdot b\cdot c^{n}] \\ \end{align}\)</p>
+
+<p>
+\(\begin{align}\phantom{\V[c^n]} &amp;= \sum_{\{e^n\}}
+((\Q[e_n]+\Q[e^{n-1}]) - (\E[c_n]+\E[c^{n-1}]))^2 \\ &amp;
+\qquad\qquad \times P[e_n \pmid h_{i}\cdot b\cdot c_n]\\ 
+
+  &amp; \qquad\qquad  \times P[e^{n-1} \pmid  h_i\cdot b\cdot c^{n-1}]  \\[2ex]
+
+\end{align}\)</p><p>\(\begin{align}\phantom{\V[c^n]}
+
+ &amp;=   \sum_{\{e^{n-1}\} } \sum_{\{e_n\}} ((\Q[e_n]-\E[c_n]) + (\Q[e^{n-1}]-\E[c^{n-1}]))^2\\
+        &amp; \qquad\qquad  \times P[e_n \pmid  h_{i}\cdot b\cdot c_n]\times P[e^{n-1} \pmid  h_i\cdot b\cdot c^{n-1}] \\[2ex]
+
+\end{align}\)</p><p>\(\begin{align}\phantom{\V[c^n]}
+
+ &amp;=   \sum_{\{e^{n-1}\} } \sum_{\{e_n\}} \left(\begin{split} 
+&amp;(\Q[e_n]-E[c_n])^2 + (\Q[e^{n-1}]-\E[c^{n-1}])^2 \\
+&amp;+ 2 \times(\Q[e_n]-\E[c_n])\times(\Q[e^{n-1}]-\E[c^{n-1}])
+\end{split} \right)\\
+&amp;\qquad\qquad \times P[e_n \pmid  h_{i}\cdot b\cdot c_n]\times P[e^{n-1} \pmid  h_i\cdot b\cdot c^{n-1}] \\[2ex]
+
+\end{align}\)</p><p>\(\begin{align}\phantom{\V[c^n]}
+
+ &amp;=   \sum_{\{e^{n-1}\} } \sum_{\{e_n\}} (\Q[e_n]-\E[c_n])^2 \times P[e_n \pmid  h_{i}\cdot b\cdot c_n]\\
+&amp; \qquad\quad\qquad\times P[e^{n-1} \pmid  h_i\cdot b\cdot c^{n-1}]\\
+&amp; \qquad\quad + \sum_{\{e^{n-1}\} } \sum_{\{e_n\}}(\Q[e^{n-1}]-\E[c^{n-1}])^2 \times P[e_n \pmid  h_{i}\cdot b\cdot c_n]\\
+&amp; \qquad\quad\qquad \times P[e^{n-1} \pmid  h_i\cdot b\cdot c^{n-1}] \\
+&amp; \qquad\quad + \sum_{\{e^{n-1}\} } \sum_{\{e_n\} } 2\times(\Q[e_n]-\E[c_n])\cdot(\Q[e^{n-1}]-\E[c^{n-1}]) \\
+&amp; \qquad\quad\qquad \times   P[e_n \pmid  h_{i}\cdot b\cdot c_n] \times P[e^{n-1} \pmid  h_i\cdot b\cdot c^{n-1}] \\[2ex]
+
+\end{align}\)</p><p>\(\begin{align}\phantom{\V[c^n]}
+
+ &amp;=   \V[c_n] + \V[c^{n-1}] \\
+&amp; \qquad\qquad + 2\times \sum_{\{e^{n-1}\} } \sum_{\{e_n\}}
+\left(\begin{aligned} 
+\Q[e_n]\times\Q[e^{n-1}] \\
+- \Q[e_n]\times\E[c^{n-1}] \\
+- \E[c_n]\times\Q[e^{n-1}]  \\
++ \E[c_n]\times\E[c^{n-1}]
+\end{aligned}\right) \\
+&amp; \qquad\qquad \times P[e_n \pmid  h_{i}\cdot b\cdot c_n]\times P[e^{n-1} \pmid  h_i\cdot b\times c^{n-1}] \\[2ex]
+
+\end{align}\)</p><p>\(\begin{align}\phantom{\V[c^n]}
+
+ &amp;=   \V[c_n] + \V[c^{n-1}] \\
+&amp; \qquad +  2\times \left(
+\begin{aligned}
+\sum_{\{e^{n-1}\} } \sum_{\{e_n\}} \Q[e_n]
+&amp; \times\Q[e^{n-1}]\\
+&amp;\times P[e_n \pmid  h_{i}\cdot b\cdot c_n]\\
+&amp;\times P[e^{n-1} \pmid  h_i\cdot b \times c^{n-1}] \\
+
+- \sum_{\{e^{n-1}\} } \sum_{\{e_n\}} \Q[e_n] 
+&amp; \times\E[c^{n-1}]\\
+&amp; \times P[e_n \pmid  h_{i}\cdot b\cdot c_n]\\
+&amp; \times P[e^{n-1} \pmid  h_i\cdot b\times c^{n-1}] \\
+
+-\sum_{\{e^{n-1}\} } \sum_{\{e_n\}} \E[c_n] &amp; \times\Q[e^{n-1}]\\
+&amp; \times P[e_n \pmid  h_{i}\cdot b\cdot c_n]\\
+&amp; \times P[e^{n-1} \pmid  h_i\cdot b\times c^{n-1}] \\
+
+ +\sum_{\{e^{n-1}\} } \sum_{\{e_n\}} \E[c_n] &amp; \times\E[c^{n-1}] \\
+&amp; \times P[e_n \pmid  h_{i}\cdot b\cdot c_n]\\
+&amp; \times P[e^{n-1} \pmid  h_i\cdot b\times c^{n-1}] 
+\end{aligned}\right) \\
+
+\end{align}\)</p><p>\(\begin{align}\phantom{\V[c^n]}
+
+ &amp;=   \V[c_n] + \V[c^{n-1}] \\
+&amp; \qquad\qquad +2 \times 
+\left(\begin{aligned}
+\E[c_n]\times\E[c^{n-1}] \\
+- \E[c_n]\times\E[c^{n-1}] \\
+- \E[c_n]\times\E[c^{n-1}] \\
++ \E[c_n]\times\E[c^{n-1}]
+\end{aligned}\right) \\[2ex]
+
+\end{align}\)</p><p>\(\begin{align}\phantom{\V[c^n]}
+
+ &amp;=   \V[c_n] + \V[c^{n-1}] \\
+ &amp;=    \ldots\\
+ &amp;=    \sum^{n}_{k = 1}  \VQI[c_k \pmid  h_i /h_j \pmid  b]. 
+\end{align}
+\)
+</p>
+
+<p>
+By averaging the values of \(\VQI[c^n \pmid  h_i /h_j \pmid  b]\) over the number of observations <i>n</i> we obtain a measure of the <em>average variance in the quality of the information</em> due to \(c^n\). We represent this average by overlining &lsquo;VQI&rsquo;.</p>
+
+<div class="indent">
+<p><strong>Definition: The Average Variance in the Quality of Information</strong></p>
+
+\[
+\bVQI[c^n \pmid  h_i /h_j \pmid  b] = \frac{\VQI[c^n \pmid  h_i /h_j \pmid  b]}{n}.
+\]
+
+</div> <p> We are now in a position to state a very general version of
+the second part of the <em>Likelihood Ratio Convergence Theorem</em>.
+It applies to all evidence streams not containing <em>possibly
+falsifying outcomes</em> for \(h_j\). That is, it applies to all
+evidence streams for which \(h_j\) is <em>fully
+outcome-compatible</em> with \(h_i\) on each \(c_k\) in the evidence
+stream. This theorem is essentially a specialized version of
+Chebyshev&rsquo;s Theorem, which is a <em>Weak Law of Large
+Numbers</em>.</p>
+
+<p>
+<strong>Likelihood Ratio Convergence Theorem 2*&mdash;The
+Probabilistic Refutation Theorem.</strong>
+<br />
+Suppose the evidence stream \(c^n\) contains only experiments or
+observations on which \(h_j\) is <em>fully outcome-compatible</em>
+with \(h_i\)&mdash;i.e., suppose that for each condition \(c_k\) in
+sequence \(c^n\), for each of its possible outcomes possible outcomes
+\(o_{ku}\), either \(P[o_{ku}\pmid h_{i}\cdot b\cdot c_{k}] = 0\) or
+\(P[o_{ku} \pmid h_{j}\cdot b\cdot c_{k}] \gt 0\). And suppose that
+the <em>Independent Evidence Conditions</em> hold for evidence stream
+\(c^n\) with respect to each of these hypotheses. Now, choose any
+positive \(\varepsilon \lt 1\), as small as you like, but large enough
+(for the number of observations <i>n</i> being contemplated) that the
+value of \(\bEQI[c^n \pmid h_i /h_j \pmid b] \gt -\frac{(\log
+\varepsilon)}{n}\). Then:</p> 
+
+\[
+\begin{multline}
+P\left[\vee \left\{e^n : \frac{P[e^n \pmid  h_{j}\cdot b\cdot c^{n}]}{P[e^n \pmid  h_{i}\cdot b\cdot c^n]} \lt \varepsilon \right\} \pmid  h_i\cdot b\cdot c^{n}\right] \\
+  \gt 1    -   \frac{1}{n}   \times
+   \frac{\bVQI[c^n \pmid  h_i /h_j \pmid  b]}{(\bEQI[c^n \pmid  h_i /h_j \pmid  b] + (\log \varepsilon)/n )^2}
+\end{multline}
+\]
+
+</div>
+
+<p>
+Thus, provided that the average expected quality of the information,
+\(\bEQI[c^n \pmid h_i /h_j \pmid b]\), for the stream of experiments
+and observations\( c^n\) doesn&rsquo;t get too small (as <i>n</i>
+increases), and provided that the average variance, \(\bVQI[c^n \pmid
+h_i /h_j \pmid b]\), doesn&rsquo;t blow up (e.g., it is bounded
+above), hypothesis \(h_i\) (together with \(b\cdot c^n\))
+<em>says</em> it is highly likely that outcomes of \(c^n\) will be
+such as to make the likelihood ratio against \(h_j\) as compared to
+\(h_i\) as small as you like, as <i>n</i> increases.</p>
+
+<p>
+<strong>Proof:</strong> Let </p> 
+
+\[
+\begin{align}
+  \V &amp;  =  \VQI[c^n \pmid  h_i /h_j \pmid  b] \\
+  \E &amp; =   \EQI[c^n \pmid  h_i /h_j \pmid  b] \\
+  \Q[e^n]  &amp; =  \QI[e^n \pmid  h_i /h_j \pmid  b\cdot c^n] \\
+&amp; = \log\left(\frac{P[e^n \pmid  h_{i}\cdot b\cdot c^n]}{P[e^n \pmid  h_j\cdot b\cdot c^{n}]}\right) 
+\end{align}
+\]
+
+<p>
+Choose any small \(\varepsilon \gt 0\), and suppose (for <i>n</i>
+large enough) that \(\E \gt -(\log \varepsilon)/n\). Then we have</p>
+
+\[
+\begin{align}
+  V &amp;  =  \sum_{\{e^n : P[e^n  \pmid  h_{j}\cdot b\cdot c^{n}] \gt 0\}}
+ (\E - \Q)^2 \times P[e^n \pmid  h_{i}\cdot b\cdot c^{n}]\\
+ &amp; \ge   \sum_{\substack{\{e^n : P[e^n \pmid h_{j}\cdot b\cdot c^{n}] \gt 0\\ \amp\  \Q[e^n] \le -(\log \varepsilon)\}}} 
+(\E - \Q)^2 \times P[e^n \pmid  h_{i}\cdot b\cdot c^{n}]\\
+&amp;  \ge  (\E + (\log \varepsilon))^2 \times 
+\sum_{\substack{\{e^n : P[e^{n}h_j\cdot b\cdot c^{n}] \gt 0\\ \amp\ \Q[e^n] \le -(\log \varepsilon)\}}}
+ P[e^n \pmid  h_{i}\cdot b\cdot c^{n}]\\
+
+&amp;  =  (\E + (\log \varepsilon))^2 \times P\left[
+\vee 
+\left\{
+\begin{aligned}
+e^n : P[e^n \pmid  h_{j}\cdot b\cdot c^{n}] \\
+\gt 0 \amp \Q[e^n]\\
+\le\log(1/\varepsilon)
+\end{aligned}
+\right\} 
+\pmid  h_{i}\cdot b\cdot c^{n}
+\right]\\
+
+&amp;  =  (\E + (\log \varepsilon))^2 \times P\left[\vee \left\{e^n : \frac{P[e^n \pmid  h_{j}\cdot b\cdot c^n]}{P[e^n \pmid  h_i\cdot b\cdot c^n]} \ge \varepsilon \right\} \pmid  h_i\cdot b\cdot c^{n}\right]
+\end{align}
+\]
+
+<p>
+So,</p> 
+
+\[
+\begin{multline}
+   \frac{\bV}{n\times\left(\bE + \frac{\log \varepsilon}{n}\right)^2}
+  =  \frac{V}{(\E + (\log \varepsilon))^2}\\
+   \ge P\left[\vee \left\{e^n : \frac{P[e^n \pmid  h_{j}\cdot b\cdot c^n]}{P[e^n \pmid  h_i\cdot b\cdot c^n]} \ge \varepsilon \right\} \pmid  h_i\cdot b\cdot c^{n}\right]\\
+ = 1 - P\left[\vee \left\{e^n : \frac{P[e^n \pmid  h_{j}\cdot b\cdot c^n]}{P[e^n \pmid  h_i\cdot b\cdot c^n]} \lt \varepsilon \right\} \pmid  h_i\cdot b\cdot c^{n}\right]
+\end{multline}
+\]
+
+<p>
+Thus, for any small \(\varepsilon \gt 0\),</p> 
+
+\[
+\begin{multline}
+  P\left[\vee \left\{e^n : \frac{P[e^n \pmid  h_{j}\cdot b\cdot c^n]}{P[e^n \pmid  h_i\cdot b\cdot c^n]} \lt \varepsilon \right\} \pmid  h_i\cdot b\cdot c^{n}\right]\\
+\ge   1  -   \frac{\bV}{n\times\left(\bE + \frac{(\log \varepsilon)}{n}\right)^2}
+\end{multline}
+\]
+
+<p>
+(End of Proof)</p>
+
+<p>
+This theorem shows that when \(\bVQI\) is bounded above and \(\bEQI\) has a
+positive lower bound, a sufficiently long stream of evidence will very
+likely result in the refutation of false competitors of a true
+hypothesis. We can show that \(\bVQI\) will indeed be bounded above when a
+very simple condition is satisfied. This gives us the version of the
+theorem stated in the main text.</p>
+
+<p>
+<strong>Likelihood Ratio Convergence Theorem 2&mdash;The Probabilistic
+Refutation Theorem.</strong>
+<br />
+Suppose the evidence stream \(c^n\) contains only experiments or
+observations on which \(h_j\) is <em>fully outcome-compatible</em>
+with \(h_i\)&mdash;i.e., suppose that for each condition \(c_k\) in
+sequence \(c^n\), for each of its possible outcomes possible outcomes
+\(o_{ku}\), either \(P[o_{ku} \pmid h_{i}\cdot b\cdot c_{k}] = 0\) or
+\(P[o_{ku} \pmid h_{j}\cdot b\cdot c_{k}] \gt 0\). In addition (as a
+slight strengthening of the previous supposition), for some \(\gamma
+\gt 0\) a number smaller than \(1/e^2 (\approx .135\); where
+&lsquo;<i>e</i>&rsquo; is the base of the natural logarithm), suppose
+that for each possible outcome \(o_{ku}\) of each observation
+condition \(c_k\) in \(c^n\), either \(P[o_{ku} \pmid h_{i}\cdot
+b\cdot c_{k}] = 0\) or \(P[o_{ku} \pmid h_{j}\cdot b\cdot c_{k}] /
+P[o_{ku} \pmid h_{i}\cdot b\cdot c_{k}] \ge \gamma\). And suppose that
+the <em>Independent Evidence Conditions</em> hold for evidence stream
+\(c^n\) with respect to each of these hypotheses. Now, choose any
+positive \(\varepsilon \lt 1\), as small as you like, but large enough
+(for the number of observations <i>n</i> being contemplated) that the
+value of \(\bEQI[c^n \pmid h_i /h_j \pmid b] \gt -(\log
+\varepsilon)/n\). Then:</p> 
+
+\[
+\begin{multline}
+P\left[\vee \left\{ e^n : \frac{P[e^n \pmid  h_{j}\cdot b\cdot c^{n}]}{P[e^n \pmid  h_{i}\cdot b\cdot c^n]} \lt \varepsilon \right\} \pmid  h_i\cdot b\cdot c^{n}\right]\\
+  \gt 1    - \frac{1}{n}  \times \frac{(\log \gamma)^2}{(\bEQI[c^n \pmid  h_i /h_j \pmid  b] + (\log \varepsilon)/n )^2} 
+\end{multline}
+\]
+
+<p>
+<strong>Proof</strong>: This follows from Theorem 2* together with the
+following observation:</p>
+
+<p>
+If for each \(c_k\) in \(c^n\), for each of its possible outcomes
+\(o_{ku}\), either \(P[o_{ku} \pmid h_{j}\cdot b\cdot c_{k}] = 0\) or
+\(P[o_{ku} \pmid h_{j}\cdot b\cdot c_k]/P[o_{ku} \pmid h_i\cdot b\cdot
+c_{k}] \ge \gamma \gt 0\), for some lower bound \(\gamma \lt 1/e^2
+(\approx .135\); where &lsquo;<i>e</i>&rsquo; is the base of the
+natural logarithm), then \(\bV = \bVQI[c^n \pmid h_i /h_j \pmid b] \le
+(\log \gamma)^2\). </p>
+
+<p>
+To see that this observation holds, assume its antecedent.</p>
+
+<ol>
+
+<li>First notice that when \(0 \lt P[e_k \pmid h_{j}\cdot b\cdot c_k]
+\lt P[e_k \pmid h_i\cdot b\cdot c_{k}]\) we have 
+
+  \[
+  \begin{multline}
+\left(\log\left[\frac{P[e_k \pmid  h_{i}\cdot b\cdot c_k]}{P[e_k \pmid  h_j\cdot b\cdot c_k]}\right]\right)^2 \times P[e_k \pmid  h_i\cdot b\cdot c_{k}]\\
+ \le (\log \gamma)^2 \times P[e_k \pmid  h_{i}\cdot b\cdot c_{k}].
+\end{multline}
+\]
+
+<p>
+So we only need establish that when \(P[e_k \pmid h_{j}\cdot b\cdot
+c_k] \gt P[e_k \pmid h_i\cdot b\cdot c_{k}] \gt 0\), we will also have
+this relationship&mdash;i.e., we will also have</p> 
+
+\[
+  \begin{multline}
+\left(\log\left[\frac{P[e_k \pmid  h_{i}\cdot b\cdot c_k]}{P[e_k \pmid  h_j\cdot b\cdot c_k]}\right]\right)^2 \times P[e_k \pmid  h_i\cdot b\cdot c_{k}]\\
+ \le (\log \gamma)^2 \times P[e_k \pmid  h_{i}\cdot b\cdot c_{k}].
+\end{multline}
+\]
+
+<p>
+(Then it will follow easily that \(\bVQI[c^n \pmid h_i /h_j \pmid b]
+\le(\log \gamma)^2\), and we&rsquo;ll be done.)</p> </li>
+
+<li>To establish the needed relationship, suppose that \(P[e_k \pmid
+h_{j}\cdot b\cdot c_{k}] \gt P[e_k \pmid h_{i}\cdot b\cdot c_{k}] \gt
+0\). Notice that for all \(p \le q\), <i>p</i> and <i>q</i> between 0
+and 1, the function \(g(p) = (\log(p/q))^2 \times p\) has a minimum at
+\(p = q\), where \(g(p) = 0\), and (for \(p \lt q)\) has a maximum
+value at \(p = q/e^2\)&mdash;i.e., at \(p/q = 1/e^2\). (To get this,
+take the derivative of \(g(p)\) with respect to <i>p</i> and set it
+equal to 0; this gives a maximum for \(g(p)\) at \(p = q/e^2\).)
+
+<p>
+So, for \(0 \lt P[e_k \pmid h_{i}\cdot b\cdot c_k] \lt P[e_k \pmid
+h_j\cdot b\cdot c_{k}]\) we have</p> 
+
+\[
+\begin{multline}
+\left(\log\left(\frac{P[e_k \pmid  h_{i}\cdot b\cdot c_k]}{P[e_k \pmid  h_j\cdot b\cdot c_k]}\right)\right)^2 \times P[e_k \pmid  h_i\cdot b\cdot c_{k}]\\
+\le (\log(1/e^2))^2 \times P[e_k \pmid  h_{j}\cdot b\cdot c_{k}] \\
+\le(\log \gamma)^2 \times P[e_k \pmid  h_{j}\cdot b\cdot c_{k}]
+\end{multline}
+\]
+
+<p>
+(since, for \(\gamma \le 1/e^2\) we have \(\log \gamma \le \log(1/e^2)
+\lt 0\); so \((\log \gamma)^2 \ge(\log(1/e^2))^2 \gt 0)\).</p> </li>
+
+<li>Now (assuming the antecedent of the theorem), for each \(c_k\),
+
+\[
+\begin{align}
+\VQI[c_k \pmid  h_i /h_j \pmid  b]  
+&amp; =  \sum_{\{o_{ku}: P[o_{ku} \pmid  h_j\cdot b\cdot c_k ] \gt 0\}} (\EQI[c_k] - \QI[c_k])^2 \\
+&amp;\quad\qquad \times P[o_{ku} \pmid  h_{i}\cdot b\cdot c_{k}] \\[1ex]
+
+&amp; =  \sum_{\{o_{ku}: P[o_{ku} \pmid  h_{j}\cdot b\cdot c_{k}] \gt 0\}} 
+\left(\begin{aligned}
+&amp; \EQI[c_k]^2  \\
+&amp;- 2\times\QI[c_k]\times\EQI[c_k]\\
+&amp; + \QI[c_k]^2
+\end{aligned}\right) \\
+&amp;\quad\qquad \times P[o_{ku} \pmid  h_{i}\cdot b\cdot c_{k}] \\[1ex]
+
+&amp; =  \sum_{\{o_{ku}: P[o_{ku} \pmid  h_{j}\cdot b\cdot c_{k}] \gt 0\}} \EQI[c_k]^2\times P[o_{ku} \pmid  h_{i}\cdot b\cdot c_{k}] \\
+&amp; \quad - 2\times\EQI[c_k]  \\
+&amp;\quad\ \times 
+\sum_{\{o_{ku}: P[o_{ku} \pmid  h_{j}\cdot b\cdot c_{k}] \gt 0\}} 
+\left(\begin{aligned}
+&amp;\QI[c_k]\\
+&amp;\times P[o_{ku} \pmid  h_{i}\cdot b\cdot c_{k}]
+\end{aligned}\right) \\
+&amp; \quad+\sum_{\{o_{ku}: P[o_{ku} \pmid  h_{j}\cdot b\cdot c_{k}] \gt 0\}} 
+\left(\begin{aligned}
+&amp;\QI[c_k]^2 \\
+&amp;\times P[o_{ku} \pmid  h_{i}\cdot b\cdot c_{k}] \\
+\end{aligned}\right) \\
+
+&amp; =  \sum_{\{o_{ku}: P[o_{ku} \pmid  h_{j}\cdot b\cdot c_{k}] \gt 0\}} \QI[c_k]^2 \times P[o_{ku} \pmid  h_{i}\cdot b\cdot c_{k}]\\
+&amp;\quad - \EQI[c_k]^2 \\
+&amp;  \le   \sum_{\{o_{ku}: P[o_{ku} \pmid  h_{j}\cdot b\cdot c_{k}] \gt 0\}} \QI[c_k]^2 \times P[o_{ku} \pmid  h_{i}\cdot b\cdot c_{k}] \\
+&amp;  \le  \sum_{\{o_{ku}: P[o_{ku} \pmid  h_{j}\cdot b\cdot c_{k}] \gt 0\}} (\log \gamma)^2 \times P[o_{ku} \pmid  h_{i}\cdot b\cdot c_{k}] \\
+&amp;  \le  (\log \gamma)^2. \\
+
+\end{align}
+\]
+
+ </li>
+</ol>
+
+<p>
+So, </p> 
+
+\[
+   \bVQI[c_k \pmid  h_i /h_j \pmid  b] 
+ =
+  (1/n)
+  \times
+\sum^{n}_{k = 1}
+   \VQI[c_k \pmid h_i /h_j \pmid  b]  
+ 
+  \le
+   (\log \gamma)^2.  
+
+\]
+
+<!--pdf exclude begin-->
+
+<p>
+ [<a href="index-2.html#s-7">Back to Text</a>]</p>
+ 
+<!--pdf exclude end-->
+<script type="text/javascript" src="local.js"></script>
+<script type="text/javascript" src="../../MathJax/MathJaxb198.js?config=TeX-MML-AM_CHTML"></script>
+
+
+</div><!-- #aueditable --><!--DO NOT MODIFY THIS LINE AND BELOW-->
+
+<!-- END ARTICLE HTML -->
+
+</div> <!-- End article-content -->
+
+  <div id="article-copyright">
+    <p>
+ <a href="../../info.html#c">Copyright &copy; 2018</a> by
+
+<br />
+<a href="http://james-hawthorne.oucreate.com/" target="other">James Hawthorne</a>
+&lt;<a href="m&#97;ilto:hawthorne&#37;40ou&#37;2eedu"><em>hawthorne<abbr title=" at ">&#64;</abbr>ou<abbr title=" dot ">&#46;</abbr>edu</em></a>&gt;
+    </p>
+  </div>
+
+</div> <!-- End article -->
+
+<!-- NOTE: article banner is outside of the id="article" div. -->
+<div id="article-banner" class="scroll-block">
+  <div id="article-banner-content">
+    <a href="../../fundraising/index.html">
+    Open access to the SEP is made possible by a world-wide funding initiative.<br />
+    The Encyclopedia Now Needs Your Support<br />
+    Please Read How You Can Help Keep the Encyclopedia Free</a>
+  </div>
+</div> <!-- End article-banner -->
+
+    </div> <!-- End content -->
+
+    <div id="footer">
+
+      <div id="footer-menu">
+        <div class="menu-block">
+          <h4><i class="icon-book"></i> Browse</h4>
+          <ul role="menu">
+            <li><a href="../../contents.html">Table of Contents</a></li>
+            <li><a href="../../new.html">What's New</a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+            <li><a href="../../published.html">Chronological</a></li>
+            <li><a href="../../archives/index.html">Archives</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-info-sign"></i> About</h4>
+          <ul role="menu">
+            <li><a href="../../info.html">Editorial Information</a></li>
+            <li><a href="../../about.html">About the SEP</a></li>
+            <li><a href="../../board.html">Editorial Board</a></li>
+            <li><a href="../../cite.html">How to Cite the SEP</a></li>
+            <li><a href="../../special-characters.html">Special Characters</a></li>
+            <li><a href="../../tools/index.html">Advanced Tools</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-leaf"></i> Support SEP</h4>
+          <ul role="menu">
+            <li><a href="../../support/index.html">Support the SEP</a></li>
+            <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+            <li><a href="../../support/donate.html">Make a Donation</a></li>
+            <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+          </ul>
+        </div>
+      </div> <!-- End footer menu -->
+
+      <div id="mirrors">
+        <div id="mirror-info">
+          <h4><i class="icon-globe"></i> Mirror Sites</h4>
+          <p>View this site from another server:</p>
+        </div>
+        <div class="btn-group open">
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="https://plato.stanford.edu/">
+            <span class="flag flag-usa"></span> USA (Main Site) <span class="caret"></span>
+            <span class="mirror-source">Philosophy, Stanford University</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../mirrors.html">Info about mirror sites</a></li>
+          </ul>
+        </div>
+      </div> <!-- End mirrors -->
+      
+      <div id="site-credits">
+        <p>The Stanford Encyclopedia of Philosophy is <a href="../../info.html#c">copyright &copy; 2021</a> by <a href="http://mally.stanford.edu/">The Metaphysics Research Lab</a>, Department of Philosophy, Stanford University</p>
+        <p>Library of Congress Catalog Data: ISSN 1095-5054</p>
+      </div> <!-- End site credits -->
+
+    </div> <!-- End footer -->
+
+  </div> <!-- End container -->
+
+   <!-- NOTE: Script required for drop-down button to work (mirrors). -->
+  <script>
+    $('.dropdown-toggle').dropdown();
+  </script>
+
+</body>
+
+<!-- Mirrored from seop.illc.uva.nl/entries/logic-inductive/sup-prt.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 20:12:27 GMT -->
+</html>

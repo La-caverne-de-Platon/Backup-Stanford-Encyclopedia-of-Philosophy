@@ -1,0 +1,2556 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 ie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 ie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 ie"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 ie"> <![endif]-->
+<!--[if !IE]> --> <html> <!-- <![endif]-->
+
+<!-- Mirrored from seop.illc.uva.nl/entries/qm-consistent-histories/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 19:54:26 GMT -->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>
+The Consistent Histories Approach to Quantum Mechanics (Stanford Encyclopedia of Philosophy)
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive, noodp" />
+<meta property="citation_title" content="The Consistent Histories Approach to Quantum Mechanics" />
+<meta property="citation_author" content="Griffiths, Robert B." />
+<meta property="citation_publication_date" content="2014/08/07" />
+<meta name="DC.title" content="The Consistent Histories Approach to Quantum Mechanics" />
+<meta name="DC.creator" content="Griffiths, Robert B." />
+<meta name="DCTERMS.issued" content="2014-08-07" />
+<meta name="DCTERMS.modified" content="2019-06-06" />
+
+<!-- NOTE: Import webfonts using this link: -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,200&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" href="../../css/font-awesome-ie7.min.css"> <![endif]-->
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../css/print.css" />
+<link rel="stylesheet" type="text/css" href="../../css/entry.css" />
+<!--[if IE]> <link rel="stylesheet" type="text/css" href="../../css/ie.css" /> <![endif]-->
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+
+<!-- NOTE: Javascript for sticky behavior needed on article and ToC pages -->
+<script type="text/javascript" src="../../js/jquery-scrolltofixed-min.js"></script>
+<script type="text/javascript" src="../../js/entry.js"></script>
+
+<!-- SEP custom script -->
+<script type="text/javascript" src="../../js/sep.js"></script>
+</head>
+
+<!-- NOTE: The nojs class is removed from the page if javascript is enabled. Otherwise, it drives the display when there is no javascript. -->
+<body class="nojs article" id="pagetopright">
+<div id="container">
+<div id="header-wrapper">
+  <div id="header">
+    <div id="branding">
+      <div id="site-logo"><a href="../../index.html"><img src="../../symbols/sep-man-red.png" alt="SEP logo" /></a></div>
+      <div id="site-title"><a href="../../index.html">Stanford Encyclopedia of Philosophy</a></div>
+    </div>
+    <div id="navigation">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <button class="btn btn-navbar collapsed" data-target=".collapse-main-menu" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Menu </button>
+            <div class="nav-collapse collapse-main-menu in collapse">
+              <ul class="nav">
+                <li class="dropdown open"><a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-book"></i> Browse</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                    <li><a href="../../contents.html">Table of Contents</a></li>
+                    <li><a href="../../new.html">What's New</a></li>
+                    <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+                    <li><a href="../../published.html">Chronological</a></li>
+                    <li><a href="../../archives/index.html">Archives</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-info-sign"></i> About</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                    <li><a href="../../info.html">Editorial Information</a></li>
+                    <li><a href="../../about.html">About the SEP</a></li>
+                    <li><a href="../../board.html">Editorial Board</a></li>
+                    <li><a href="../../cite.html">How to Cite the SEP</a></li>
+                    <li><a href="../../special-characters.html">Special Characters</a></li>
+                    <li><a href="../../tools/index.html">Advanced Tools</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-leaf"></i> Support SEP</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                    <li><a href="../../support/index.html">Support the SEP</a></li>
+                    <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+                    <li><a href="../../support/donate.html">Make a Donation</a></li>
+                    <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End navigation -->
+    
+    <div id="search">
+      <form id="search-form" method="get" action="https://seop.illc.uva.nl/search/searcher.py">
+        <input type="search" name="query" placeholder="Search SEP" />
+        <div class="search-btn-wrapper"><button class="btn search-btn" type="submit"><i class="icon-search"></i></button></div>
+      </form>
+    </div>
+    <!-- End search --> 
+    
+  </div>
+  <!-- End header --> 
+</div>
+<!-- End header wrapper -->
+
+<div id="content">
+
+<!-- Begin article sidebar -->
+<div id="article-sidebar" class="sticky">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <button class="btn btn-navbar" data-target=".collapse-sidebar" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Entry Navigation </button>
+        <div id="article-nav" class="nav-collapse collapse-sidebar in collapse">
+          <ul class="nav">
+            <li><a href="#toc">Entry Contents</a></li>
+            <li><a href="#Bib">Bibliography</a></li>
+            <li><a href="#Aca">Academic Tools</a></li>
+            <li><a href="https://leibniz.stanford.edu/friends/preview/qm-consistent-histories/">Friends PDF Preview <i class="icon-external-link"></i></a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=qm-consistent-histories">Author and Citation Info <i class="icon-external-link"></i></a> </li>
+            <li><a href="#pagetopright" class="back-to-top">Back to Top <i class="icon-angle-up icon2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End article sidebar --> 
+
+<!-- NOTE: Article content must have two wrapper divs: id="article" and id="article-content" -->
+<div id="article">
+<div id="article-content">
+
+<!-- BEGIN ARTICLE HTML -->
+
+
+<div id="aueditable"><!--DO NOT MODIFY THIS LINE AND ABOVE-->
+
+<h1>The Consistent Histories Approach to Quantum Mechanics</h1><div id="pubinfo"><em>First published Thu Aug 7, 2014; substantive revision Thu Jun 6, 2019</em></div>
+
+<div id="preamble">
+
+<p>The consistent histories, also known as decoherent histories,
+approach to quantum interpretation is broadly compatible with standard
+quantum mechanics as found in textbooks. However, the concept
+of <em>measurement</em> by which probabilities are introduced in
+standard quantum theory no longer plays a fundamental
+role. Instead, <em>all</em> quantum time dependence is probabilistic
+(stochastic), with probabilities given by the Born rule or its
+extensions. By requiring that the description of a quantum system be
+carried out using a well-defined probabilistic sample space (called a
+&ldquo;framework&rdquo;) this approach resolves all the well-known
+quantum paradoxes of quantum foundations. In particular, quantum
+mechanics is local and consistent with special relativity. Classical
+mechanics emerges as a useful approximation to the more fundamental
+quantum mechanics under suitable conditions. The price to be paid for
+this is a set of rules for reasoning resembling, but also
+significantly different from, those which comprise quantum logic. An
+important philosophical implication is the lack of a single
+universally-true state of affairs at each instant of time. However,
+there is a correspondence limit in which the new quantum logic becomes
+standard logic in the macroscopic world of everyday experience.</p>
+
+<p>In the article that follows the term &lsquo;consistent
+histories&rsquo; will generally be abbreviated to
+&lsquo;histories&rsquo;, since the &lsquo;decoherent&rsquo; and
+&lsquo;consistent&rsquo; interpretations are very similar; when in
+doubt insert &lsquo;consistent&rsquo; before
+&lsquo;histories&rsquo;. The reader is assumed familiar with, and
+probably a bit confused by and frustrated with, the fundamentals of
+quantum mechanics found in introductory textbooks.</p>
+
+</div>
+
+<div id="toc">
+<!--Entry Contents-->
+<ul>
+<li><a href="#Int">1. Introduction</a></li>
+<li><a href="#QuaPro">2. Quantum Properties</a>
+   <ul>
+   <li><a href="#IndProNeg">2.1 Indicators, projectors, negation</a></li>
+   <li><a href="#ConDis">2.2 Conjunction and Disjunction</a></li>
+   <li><a href="#ExaSpiHal">2.3 Example of spin half</a></li>
+   </ul></li>
+<li><a href="#QuaProb">3. Quantum Probabilities</a>
+   <ul>
+   <li><a href="#ProMod">3.1 Probabilistic models</a></li>
+   <li><a href="#ProQuaMec">3.2 Probabilities in quantum mechanics</a></li>
+   <li><a href="#QuaObs">3.3 Quantum observables</a></li>
+   <li><a href="#RefCoaSinFraRul">3.4 Refinement, coarsening, and the single framework rule</a></li>
+   <li><a href="#QuaStaPrePro">3.5 Quantum states as pre-probabilities</a></li>
+   </ul></li>
+<li><a href="#QuaTimDev">4. Quantum Time Development</a>
+   <ul>
+   <li><a href="#Kin">4.1 Kinematics</a></li>
+   <li><a href="#Dyn">4.2 Dynamics</a></li>
+   </ul></li>
+<li><a href="#QuaRea">5. Quantum Reasoning</a>
+   <ul>
+   <li><a href="#GenPri">5.1 General principles</a></li>
+   <li><a href="#CouRea">5.2 Counterfactual reasoning</a></li>
+   </ul></li>
+<li><a href="#ClaPhy">6. Classical Physics</a></li>
+<li><a href="#MeaPre">7. Measurement and Preparation</a>
+   <ul>
+   <li><a href="#SchMod">7.1 Schematic model</a></li>
+   <li><a href="#Mea">7.2 Measurement</a></li>
+   <li><a href="#PreWavFunCol">7.3 Preparation and wave function collapse</a></li>
+   <li><a href="#GeneWeakMeas">7.4 Generalized and Weak Measurements</a></li>
+   <li><a href="#ConRem">7.5 Concluding remarks</a></li>
+   </ul></li>
+<li><a href="#LocSpeRel">8. Locality and Special Relativity</a>
+   <ul>
+   <li><a href="#SinStaSpiHalPar">8.1 Singlet state of spin-half particles</a></li>
+   <li><a href="#BelIneEinLoc">8.2 Bell inequalities and Einstein locality</a></li>
+   </ul></li>
+<li><a href="#QuaInf">9. Quantum Information</a></li>
+<li><a href="#ParRes">10. Paradoxes Resolved</a>
+   <ul>
+   <li><a href="#SchCat">10.1 Schr&ouml;dinger&rsquo;s cat</a></li>
+   <li><a href="#IntPar">10.2 Interference paradoxes</a></li>
+   <li><a href="#IncPar">10.3 Incompatibility paradoxes</a></li>
+   <li><a href="#CouPar">10.4 Counterfactual paradoxes</a></li>
+   <li><a href="#NonPar">10.5 Nonlocality paradoxes</a></li>
+   </ul></li>
+<li><a href="#DifObj">11. Difficulties and Objections</a>
+   <ul>
+   <li><a href="#IntCon">11.1 Internal consistency</a></li>
+   <li><a href="#SinFraRul">11.2 Single framework rule</a></li>
+   <li><a href="#NonQuaFra">11.3 Nonuniqueness of quasiclassical frameworks</a></li>
+   <li><a href="#Uni">11.4 Unicity</a></li>
+   </ul></li>
+<li><a href="#Bib">Bibliography</a></li>
+<li><a href="#Aca">Academic Tools</a></li>
+<li><a href="#Oth">Other Internet Resources</a></li>
+<li><a href="#Rel">Related Entries</a></li>
+</ul>
+
+<!--Entry Contents-->
+
+<hr />
+</div>
+
+<div id="main-text">
+
+<h2><a id="Int">1. Introduction</a></h2>
+
+<p>The consistent histories interpretation of quantum mechanics was
+introduced by <span class="citation">Griffiths (1984)</span>, and
+discussed by Omn&egrave;s in a series of papers beginning
+with <span class="citation">(Omn&egrave;s 1988)</span>. The decoherent
+histories approach that first appeared
+in <span class="citation">Gell-Mann &amp; Hartle (1990)</span>
+contains similar ideas. The single term &ldquo;histories&rdquo; will
+be employed below, with the understanding that at points where the
+&ldquo;consistent&rdquo; and &ldquo;decoherent&rdquo; approaches might
+be slightly different, the former is intended.</p>
+
+<p>The histories approach extends the calculational methods found in
+standard textbooks and gives them a microscopic physical
+interpretation which the textbooks lack. It is not intended as an
+alternative, but as a fully consistent and clear statement of basic
+quantum mechanics, &ldquo;Copenhagen done right&rdquo;. In particular,
+measurements are treated in the same way as all other physical
+processes and play no special role in the interpretation. Thus there
+is no measurement problem, and under appropriate conditions one can
+discuss the microscopic properties revealed by measurements.</p>
+
+<p>All the standard quantum paradoxes (double slit, Schr&ouml;dinger cat,
+Hardy, three box, etc.) are resolved using the histories approach, or
+one might better say &ldquo;tamed&rdquo;: they are no longer unsolved
+difficulties casting doubt upon the reliability and completeness of
+the quantum formalism, but instead they illustrate striking
+differences between quantum and classical physics. In particular,
+there is no conflict between quantum theory and relativity:
+superluminal influences cannot carry information or anything else for
+the simple reason that they do not exist. In appropriate regimes
+(large systems, strong decoherence) the laws of classical physics
+provide a very good approximation, valid for all practical purposes,
+to the more fundamental and more exact laws of quantum mechanics.</p>
+
+<p>But at what price? The histories approach introduces a variety of
+concepts that go beyond textbook quantum theory, and these can be
+summarized under two headings. First, quantum dynamics is treated as
+stochastic or probabilistic. Not just when measurements are carried
+out, but <em>always</em>. Born&rsquo;s rule, together with its extensions,
+is a fundamental axiom of quantum theory. The task of Schr&ouml;dinger&rsquo;s
+time-dependent equation is to assist in assigning
+probabilities. Second, following Sec. III.5
+of <span class="citation">J. von Neumann (1932)</span>, quantum
+properties, which are what the probabilities refer to, are associated
+with subspaces of the quantum Hilbert space. But then new logical
+principles are required to consistently deal with the difference
+between the quantum Hilbert space and a classical phase space. These
+principles are related to, but not identical with, those of the
+quantum logic initiated by <span class="citation">Birkhoff &amp;
+Neumann (1936)</span>.</p>
+
+<p>Since textbook quantum mechanics already contains certain rules for
+calculating probabilities, the first innovation of the histories
+approach, stochastic dynamics, is not very startling and by itself
+causes few conceptual difficulties. It is the second innovation, in
+the domain of logic and ontology, that represents the most radical
+departure from classical thinking. However, the new quantum logic
+reduces to the old familiar classical propositional logic in the same
+domain where classical mechanics is a good approximation to quantum
+mechanics. That is to say, the old logic is perfectly good for all
+practical purposes in the same domain where classical mechanics is
+perfectly good for all practical purposes, and a consistent, fully
+quantum analysis explains why this is so.</p>
+
+<h2><a id="QuaPro">2. Quantum Properties</a></h2>
+
+<h3><a id="IndProNeg">2.1 Indicators, projectors, negation</a></h3>
+
+<p>A classical mechanical system can be described using a <em>phase
+space</em> \(\Gamma\) with points denoted by \(\gamma\). A
+classical <em>property</em> \(P\) is a collection of points \(\PC\) from
+the phase space, and can be conveniently described by an <em>indicator
+function</em> \(P(\gamma)\) which is equal to 1 if \(\gamma \in \PC\) and
+0 otherwise. It will cause no confusion to use \(P\) for both the
+property and its indicator function. The <em>negation</em> \(\lnot P\)
+of a property \(P\) corresponds to the complement \(\PC^c\) of the set
+\(\PC\), consisting of points in \(\Gamma\) that are not in \(\PC\). Its
+indicator is \(I-P\), where the <em>identity</em> indicator \(I(\gamma)
+=1\) for all \(\gamma\). For example, the phase space of a
+one-dimensional harmonic oscillator is the real plane with a point
+\(\gamma = (x,p)\) indicating that the particle is at \(x\) and has
+momentum \(p\). The property that its energy</p>
+
+\[
+E=p^2/2m + (1/2) m\omega^2 x^2
+\label{eqn1}
+\]
+
+<p>is less than some fixed value \(E_r\) corresponds to the set of
+points contained in the ellipse \(E=E_r\) centered at the origin of the
+\(x,p\) plane, and the indicator is the function that is 1 on the points
+inside (and on the boundary) of the ellipse and 0 outside. Its
+negation, the property that the energy is greater than \(E_r\),
+corresponds to all the points lying outside this ellipse.</p>
+
+<p>The quantum counterpart of a phase space is a Hilbert space \(\HC\):
+a complex vector space with an inner product. If infinite dimensional
+it must be complete&mdash;Cauchy sequences have limits. But for our
+purposes finite-dimensional spaces will suffice for discussing the
+major conceptual difficulties of quantum theory and how the histories
+approach resolves them. (Some examples use a harmonic oscillator with
+an infinite dimensional Hilbert space simply because it is relatively
+simple and familiar.) We use Dirac notation in which an element of
+\(\HC\), a &ldquo;ket&rdquo;, is denoted by \(\ket{\psi}\), where \(\psi\)
+is a label, and \(\inpd{\phi}{\psi}\) denotes the inner product of
+\(\ket{\phi}\) with \(\ket{\psi}\). The simplest quantum physical
+property, the counterpart of a point \(\gamma\) in the classical phase
+space, is a one-dimensional <em>subspace</em> of the Hilbert space,
+or <em>ray</em>, consisting of all multiples \(c\ket{\psi}\) of some
+nonzero \(\ket{\psi}\), with \(c\) an arbitrary complex number. The ray
+uniquely determines and is uniquely determined by the
+corresponding <em>projector</em></p>
+
+<p>\[P = [\psi] = \dya{\psi}, \label{eqn2}\]</p>
+
+<p>assuming \(\ket{\psi}\) is normalized, \(\inp{\psi}=1\). In Dirac
+notation \(\dyad{a}{b}\) is an operator which when applied to an
+arbitrary ket \(\ket{\phi}\) yields the ket
+\(\ket{a}\inpd{b}{\phi}=(\inpd{b}{\phi}) \ket{a}\). The square bracket
+in \eqref{eqn2} is not standard Dirac notation, but is very convenient
+and will be used later.</p>
+
+<p>In addition to rays, a Hilbert space of dimension \(d\) also contains
+subspaces of dimension 2, 3, etc., up to \(d\) (the entire space). These
+larger subspaces also represent quantum properties and are the
+analogues of sets of more than one point in a classical phase
+space. Each subspace \(\PC\) corresponds to a unique projector \(P\), a
+Hermitian operator \(P=P^\dagger =P^2\) such that
+\(P\ket{\phi}=\ket{\phi}\) if and only if \(\ket{\phi}\) belongs to
+\(\PC\). A quantum projector behaves in many ways like a classical
+indicator function, e.g., its eigenvalues can only be 0 or 1. Using
+the same symbol \(P\) for the property and the projector should cause no
+confusion. Following Sec. III.5 of <span class="citation">J. von
+Neumann (1932)</span>, we identify the <em>negation</em> \(\lnot P\) of
+a quantum property \(P\), subspace \(\PC\), with the <em>orthogonal
+complement</em> \(\PC^\perp\) consisting of the kets in \(\HC\) which are
+orthogonal to all the kets in \(\PC\). The projector on \(\PC^\perp\) is
+\(I-P\), again analogous to the classical case.</p>
+
+<p>Consider the example of a one-dimensional quantum harmonic
+oscillator. As is well known, its energy \(E\) can take on only discrete
+values \((n+1/2)\hbar\omega\), where \(n=0, 1,\ldots\) is any nonnegative
+integer and \(\omega\) is its angular frequency, as in \eqref{eqn1}. We
+denote the corresponding normalized ket by \(\ket{n}\). The projector
+\([n]=\dya{n}\) then represents the property that the energy is equal to
+\((n+1/2)\hbar\omega\). The property that the energy is less than or
+equal to \((N+1/2)\hbar\omega\) for some integer \(N\) is given by the
+projector</p>
+
+<p>\[P = \sum_{n=0}^N [n] = \sum_{n=0}^N\dya{n}, \label{eqn3}\]</p>
+
+<p>while the corresponding sum from \(n=N+1\) to \(\infty\) represents its
+negation, \(I-P\), the property that \(E\) is greater than
+\((N+1/2)\hbar\omega\).</p>
+
+<p>Despite the close analogy between classical and quantum properties
+there is actually a profound difference. For a particular classical
+property \(P\), every point \(\gamma\) in the phase space lies either
+inside the set \(\PC\), so that the property is true for this \(\gamma\),
+or else it lies in the complementary set \(\PC^c\), and the property \(P\)
+is false. However, given a nontrivial (neither 0 nor the entire space)
+subspace \(\PC\) of the quantum Hilbert space \(\HC\), there are always
+kets \(\ket{\phi}\) with corresponding rays \(\{c\ket{\phi}\}\) which lie
+neither in \(\PC\) nor in \(\PC^\perp\). For example, \(\ket{\phi} =
+\ket{N} + \ket{N+1}\) for \(P\) given by \eqref{eqn3}. How is one to
+think about these? That is a key question in quantum foundations.</p>
+
+<h3><a id="ConDis">2.2 Conjunction and Disjunction</a></h3>
+
+<p>The conjunction \(P\land Q\), or \(P\) AND \(Q\), of two classical
+properties corresponds to the intersection \(\PC\cap\QC\) of the sets
+that represent them on the phase space, and the indicator for this set
+is the product \(P(\gamma)Q(\gamma)\) of the two indicator
+functions. What about the quantum case? In quantum logic \(P\land Q\) is
+identified with the intersection \(\PC\cap\QC\) of the two Hilbert
+subspaces, which is itself a subspace and thus a quantum property. The
+histories interpretation identifies \(P\land Q\) with the product \(PQ\)
+of the projectors \(P\) and \(Q\) <em>provided</em> the two
+projectors <em>commute</em>, that is, provided \(PQ=QP\). When and only
+when this condition is fulfilled is the product \(PQ\) itself a
+projector, and it projects onto the subspace \(\PC\cap\QC\), in
+agreement with quantum logic. However, if \(PQ\neq QP\) the conjunction
+\(P\land Q\) is <em>undefined</em> or <em>meaningless</em> in the sense
+that the histories interpretation assigns it no meaning. In the same
+way the disjunction \(P\lor Q\), the nonexclusive \(P\) OR \(Q\), is
+represented by the projector \(P+Q-PQ\) when \(PQ=QP\), but is otherwise
+undefined.</p>
+
+<p>The refusal to define the conjunction or disjunction when \(PQ\neq
+QP\) should be thought of as a syntactical rule, analogous to that in
+ordinary logic that says an expression like \(P\land\lor\, Q\) is
+meaningless because it has not been formed according to the rules used
+to construct meaningful sentences. In this connection it is important
+to distinguish &ldquo;meaningless&rdquo; from &ldquo;false&rdquo;. A
+proposition which is false is meaningful and its negation is true,
+whereas the negation of a meaningless statement is equally
+meaningless. Once the commutativity restriction for meaningful
+combinations of quantum propositions or properties is in place the
+usual logical rules apply together with the intuition that goes along
+with them. This will be further codified using the single framework
+rule defined in <a href="#RefCoaSinFraRul">subsection 3.4</a>
+below.</p>
+
+<h3><a id="ExaSpiHal">2.3 Example of spin half</a></h3>
+
+<p>Let us apply these ideas to a specific example, that of the spin
+degree of freedom of a spin-half particle, such as an electron or a
+proton, or a silver atom in its electronic ground state. The operator
+\(S_z\) for the \(z\) component of spin angular momentum acts on a
+2-dimensional Hilbert space and has eigenvalues \(+1/2\) and \(-1/2\) in
+units of \(\hbar\). If \(\ket{z^+}\) and \(\ket{z^-}\) are the corresponding
+eigenkets, the projectors corresponding to \(S_z=\pm 1/2\) are \([z^+]
+=\dya{z^+}\) and \([z^-] =\dya{z^-}\). The product of these projectors in
+either order is the zero operator \(0\), which is the property that is
+always false, the quantum counterpart of the empty subset of a
+classical phase space. Their sum \([z^+] + [z^-] =I\) is the identity
+operator, the property that is always true. In physical terms, \(S_z\)
+is either positive or negative: it cannot be both (\([z^+]\cdot [z^-]
+=0\)), and it must be one or the other (\([z^+] + [z^-] =I\)). This
+explains the outcome of the Stern-Gerlach experiment.</p>
+
+<p>In the same way the \(x\) component \(S_x\) of angular momentum can
+take only two values \(+1/2\) or \(-1/2\), corresponding to the projectors
+\([x^+] = \dya{x^+}\) and \([x^-] = \dya{x^-}\) formed from its eigenkets
+\(\ket{x^+}\) and \(\ket{x^-}\). Consequently, what was stated in the
+previous paragraph about \(S_z\) can also be said about
+\(S_x\). However&mdash;here we arrive at a central feature of the
+histories interpretation&mdash;it is <em>not meaningful</em>
+to <em>combine</em> discussions of \(S_z\) with discussions of \(S_x\),
+because neither \([x^+]\) nor \([x^-]\) commutes with \([z^+]\) or
+\([z^-]\). There is no way of associating the property &ldquo;\(S_z=+1/2\)
+AND \(S_x=+1/2\)&rdquo; with a subspace of the two-dimensional quantum
+Hilbert space. One way to see this is that every one-dimensional
+subspace of this Hilbert space has a physical interpretation:
+\(S_w=+1/2\) for some direction \(w\) in space, so there are no
+possibilities left over which could correspond to &ldquo;\(S_z=+1/2\)
+AND \(S_x=+1/2\)&rdquo;. But might one assign the zero-dimensional
+subspace, the proposition that is always false, to &ldquo;\(S_z=+1/2\)
+AND \(S_x=+1/2\)&rdquo;? This is the approach of quantum logic. However,
+taking the negation of this proposition that is always false has the
+consequence that the proposition &ldquo;\(S_z=-1/2\) OR
+\(S_x=-1/2\)&rdquo; is <em>always true</em>, which to a physicist seems
+extremely odd. See the
+ <a href="reading.html">Further Reading</a> supplement
+for more details.</p>
+
+<p>For a more detailed discussion of the logic associated with the
+histories approach, see <span class="citation">(Griffiths
+2014)</span>.</p>
+
+<h2><a id="QuaProb">3. Quantum Probabilities</a></h2>
+
+<p>Probabilities in the histories interpretation of quantum mechanics
+are standard Kolmogorov probabilities, not some new
+invention that, for example, allows negative probabilities. But these
+standard probabilities must be associated with a well-defined sample
+space. While this is also true in classical applications of
+probability theory, in quantum mechanics the penalty for carelessness
+can be severe: confusion and unresolved paradoxes. The following
+discussion indicates what steps need to be taken to construct
+consistent probabilities and stay out of trouble. For more details see
+Ch. 5 of <span class="citation">Griffiths (2002a)</span>.</p>
+
+<h3><a id="ProMod">3.1 Probabilistic models</a></h3>
+
+<p>A <em>probabilistic model</em> as used in classical physics and
+other sciences can be thought of as a triple \((\SC,\EC,\MC)\),
+a <em>sample space</em> \(\SC\), an <em>event algebra</em> \(\EC\) and
+a <em>probability measure</em> \(\MC\). When a die is rolled the sample
+space \(\SC\) consists of six mutually exclusive possibilities, one and
+only one of which actually occurs. The event algebra can be set equal
+to the collection of all \(2^6\) subsets of \(\SC\), including the empty
+set and \(\SC\) itself; it forms a Boolean algebra under complements and
+intersections. Finally, \(\MC\) assigns probabilities, real numbers
+between 0 and 1, to the different sets in \(\EC\) according to certain
+rules. Again we need only consider the simplest situation in which
+\(\SC\) is finite or countable, and a nonnegative number \(p_j\) is
+assigned to each \(j\in\SC\) in such a manner that \(\sum_j p_j = 1\). The
+probability for some \(E\in \EC\) is then given by the formula</p>
+
+<p>\[\Pr(E) = \sum_{j\in E} p_j.  \label{eqn4}\]</p>
+
+<p>Note that the mathematical rules of probability theory do not
+constrain the choice of the \(p_j\), aside from the requirement that
+they be nonnegative and sum to 1. It is up to the scientist
+constructing the model to come up with appropriate values, which may
+be done using a variety of considerations; among them pure guesswork,
+as well as carefully fitting parameters using results of previous
+experiments.</p>
+
+<h3><a id="ProQuaMec">3.2 Probabilities in quantum mechanics</a></h3>
+
+<p>The histories interpretation of quantum mechanics employs
+probability theory in exactly the same way as in the other
+sciences <em>once a sample space \(\SC\) has been specified</em>. A
+quantum sample space \(\SC\) is always a <em>projective decomposition of
+the identity operator \(I\)</em>, hereafter referred to as a
+&ldquo;projective decomposition&rdquo; (or
+&ldquo;decomposition&rdquo;), on the quantum Hilbert space \(\HC\) used
+to model the situation of interest. That is to say, a collection
+\(\{P_j\}\) of projectors (\(P^{}_j = P_j^\dagger =P_j^2)\) which are
+mutually orthogonal (\(P_jP_k = 0\) for \(j\neq k\)) and sum to the
+identity</p>
+
+<p>\[I = \sum_j P_j.  \label{eqn5}\]</p>
+
+<p>These projectors represent <em>mutually exclusive</em> properties
+(implied by orthogonality), one of which is true (implied by the sum
+equal to \(I\)) in any given experiment or situation to which the model
+is being applied.</p>
+
+<p>The event algebra \(\EC\) consists of all projectors formed by taking
+sums of some of the \(P_j\) in the collection; i.e., \(\sum_j\pi_j P_j\),
+where each \(\pi_j\) is either 0 or 1. This includes the identity
+operator \(I\) and the zero operator 0 along with such things as \(P_2\)
+or \(P_1+P_3\). The event algebra is a Boolean algebra in the sense that
+the complement \(I-P\) of any projector and the product \(PQ\) of any two
+projectors belonging to \(\EC\) is an element of \(\EC\). The
+term <em>framework</em> can refer to either the sample space or the
+event algebra constructed from it in this way, since there is a
+one-to-one correspondence between the two. Quantum theory does not in
+general specify the probability \(p_j\) to be assigned to the projector
+\(P_j\) in \(\SC\), apart from the requirement that it be nonnegative, and
+that the \(p_j\) sum to 1 (but see <a href="#Dyn">subsection 4.2</a>
+concerning time dependence). Thus, for example, to the element
+\(P_1+P_3\) of \(\EC\) one assigns the probability
+\(p_1+p_3\). The <em>intuitive interpretation</em> of probabilities
+introduced in this way is the same as in the other sciences which
+employ probability theory as long as a single framework is in
+view. What is distinctly different in the quantum case is the
+existence of multiple incompatible frameworks; given these consistency
+requires that one adopt the single framework
+rule, <a href="#RefCoaSinFraRul">subsection 3.4</a>.</p>
+
+<h3><a id="QuaObs">3.3 Quantum observables</a></h3>
+
+<p>Quantum observables, represented by Hermitian operators, are the
+counterpart of real-valued functions on a classical phase space. The
+spectral decomposition</p>
+
+<p>\[A = \sum a_j P_j \label{eqn6}\]</p>
+
+<p>of an observable \(A\), where each eigenvalue \(a_j\) of \(A\) occurs but
+once in the sum, \(j\neq k\) implies \(a_j\neq a_k\), associates with \(A\)
+a unique decomposition of the identity of the form \eqref{eqn5}. Thus
+\(A\) takes on or has the value \(a_j\) if and only if \(P_j\) is true, and
+the probability that \(A\) has the value \(a_j\) is given by the
+probability \(p_j\) assigned to \(P_j\). Hence <em>measuring</em> \(A\) is
+equivalent to measuring the corresponding decomposition in the sense
+of determining which of the mutually-exclusive properties \(P_j\) is
+true. (The subject of quantum measurements is taken up below
+in <a href="#MeaPre">section 7</a>.) The property that the value of
+\(A\) lies between \(a\) and \(a'\) corresponds to the sum of the projectors
+\(P_j\) for which the corresponding \(a_j\) falls in this interval, which
+is a projector belong to the corresponding event algebra, and its
+probability is the sum of the corresponding \(p_j\) values.</p>
+
+<h3><a id="RefCoaSinFraRul">3.4 Refinement, coarsening, and the single framework rule</a></h3>
+
+<p>A <em>refinement</em> of a sample space is obtained by replacing
+one or more of its projectors with other projectors which add up to
+it; conversely a <em>coarsening</em> or coarse graining is obtain by
+adding together two or more projectors in the projective decomposition
+and using the sum as one of the elements in a new decomposition. Given
+the connection between sample spaces and event algebras as defined
+above, one sees that the event algebra of a refined sample space is
+larger than the original event algebra: i.e., it contains all the
+original projectors and others in addition; conversely, a coarsening
+leads to a new event algebra which is a subset of the old event
+algebra.</p>
+
+<p>Two quantum sample spaces (projective decompositions) \(\{P_j\}\) and
+\(\{Q_k\}\) associated with the same Hilbert space are said to
+be <em>compatible</em> provided all the projectors in one
+decomposition commute with all the projectors in the other
+decomposition: \(P_jQ_k = Q_k P_j\) for all \(j\) and \(k\). Otherwise they
+are <em>incompatible</em>. Note that all projectors in the two event
+algebras commute if and only if this is true for the sample spaces, so
+it makes sense to talk about compatible and incompatible
+frameworks. When the frameworks are compatible one can combine
+them. In particular, the <em>coarsest common refinement</em> is given
+by the sample space or decomposition formed by all nonzero products of
+the form \(P_jQ_k\), and the corresponding event algebra contains all
+the projectors in the original algebras along with the additional ones
+constructed from their products.</p>
+
+<p>The <em>single framework rule</em> says that a specific quantum
+probabilistic model employs just one sample space and its associated
+event algebra, and in particular two incompatible
+frameworks <em>cannot be combined</em>. This rule, together with its
+extension to quantum dynamics, see <a href="#Dyn">subsection 4.2</a>,
+is a central principle of histories quantum mechanics. It provides a
+guide for quantum reasoning that prevents one from falling into
+paradoxes; conversely, most quantum paradoxes are constructed by
+violating the single framework rule in some way.</p>
+
+<p>As an illustration, consider the one-dimensional harmonic
+oscillator of <a href="#IndProNeg">subsection 2.1</a> and a sample
+space</p>
+
+<p>\[\SC_a = \{P,I-P\};\quad P = [0] + [1], \label{eqn7}\]</p>
+
+<p>containing two projectors, where \(P\) corresponds to the case \(N=1\)
+in \eqref{eqn3}. The physical interpretation of \(P\) is that the energy
+of the oscillator is no greater than \((3/2)\hbar\omega\), whereas \(I-P\)
+means the energy is at least \((5/2)\hbar\omega\). If \(P\) is true it
+might seem reasonable to conclude that either \(n=0\) and the energy is
+\((1/2)\hbar\omega\), or else \(n=1\) and the energy is
+\((3/2)\hbar\omega\). After all, the energy can only take values
+\((n+1/2)\hbar\omega\), so does it not follow from the truth of \(P\) that
+\(n=0\) or \(n=1\)? No it does not, and understanding <em>why</em> it does
+not will expose an important principle of quantum reasoning. The point
+is that probabilistic reasoning, in quantum mechanics or in other
+disciplines, does not allow one to make inferences about matters which
+are outside the scope of discussion, i.e., which are not contained in
+the event algebra. The event algebra \(\EC_a\) corresponding to the
+sample space \(\SC_a\) in \eqref{eqn7} contains \(P\) and \(I-P\), but does
+not contain either \([0]\) or \([1]\), the projectors that correspond to
+the two lowest energy eigenstates. Consequently, this framework
+does <em>not</em> allow for the statement of a result which might seem
+intuitively obvious.</p>
+
+<p>A solution is readily at hand. In place of \(\SC_a\) use a
+refinement</p>
+
+<p>\[\SC_b = \{[0],[1],I-P\};\quad P = [0] + [1].  \label{eqn8}\]</p>
+
+<p>Now because \([0]\) and \([1]\) belong to the event algebra \(\EC_b\)
+they can be discussed, and the truth of \(P\) indeed implies that either
+\([0]\) or \([1]\) is true: if the energy is not greater than
+\((3/2)\hbar\omega\) then it is either \(1/2\) or \(3/2\) \(\hbar\omega\). But
+is not this insistence that \(\SC_b\) be used in place of \(\SC_a\) a
+piece of sophistry irrelevant to the needs of the working scientist?
+No, not if the scientist&rsquo;s work involves quantum mechanics. To see
+why, consider an alternative refinement</p>
+
+<p>\[\SC_c = \{[+],[-],I-P\};\quad P = [+] + [-] = [0]+[1]
+\label{eqn9}\]</p>
+
+<p>of \(\SC_a\), where</p>
+
+<p>\[\ket{+} = (\ket{0} + \ket{1})/\sqrt{2},\quad \ket{-} = (\ket{0} -
+\ket{1})/\sqrt{2}.  \label{eqn10}\]</p>
+
+<p>Since the event algebra \(\EC_c\) contains \(P\) along with \([+]\) and
+\([-]\), in this framework the truth of \(P\) implies that the oscillator
+is either in the state \([+]\) or the state \([-]\). But neither of these
+are energy eigenstates, and these projectors do not commute with \([0]\)
+and \([1]\); the relationship is formally the same as that between
+eigenstates of \(S_x\) and those of \(S_z\) for a spin-half
+particle, <a href="#ExaSpiHal">subsection 2.3</a>. Consequently, if
+results using frameworks \(\EC_b\) and \(\EC_c\) are carelessly combined,
+it is possible to infer for the oscillator something quite analogous
+to the meaningless assertions combining properties of \(S_x\) and
+\(S_z\). Hence the importance of the single framework rule which
+prohibits combining \(\EC_b\) and \(\EC_c\) (equivalently, \(\SC_b\) and
+\(\SC_c\)).</p>
+
+<p>If \(\EC_b\) and \(\EC_c\) cannot be combined, which is
+the <em>correct</em> framework to use in describing a harmonic
+oscillator? The answer, again a key point in the histories
+interpretation, which will be discussed in more detail
+in <a href="#QuaRea">section 5</a>, and also <a href="#DifObj">section
+11</a>, is that in the quantum world there is never a single correct
+framework, there are always many possibilities, something rather
+strange from the perspective of classical physics. The single
+framework rule prohibits <em>combining</em> incompatible frameworks;
+it does <em>not</em> assert that there is just one correct framework
+to use in modeling a particular physical situation.</p>
+
+<p>One may add that in the early days of quantum theory there was a
+tendency among the practitioners to think that quantum systems must
+always be in states of well-defined energy, and this led to various
+conundrums. Nowadays states which are superpositions of the ground
+state and an excited state of an atom are produced routinely in
+quantum optics experiments, and thus analogs of \(\EC_c\) can be quite
+relevant for a quantum description of what goes on in the
+laboratory.</p>
+
+<h3><a id="QuaStaPrePro">3.5 Quantum states as pre-probabilities</a></h3>
+
+<p>Once a quantum sample space has been chosen the question arises of
+how probabilities are to be assigned to the different projectors of
+which it is composed. As in other applications of probability theory
+such assignments may represent pure guesswork, or contain parameters
+which are to be adjusted according to experimental data, or be based
+upon some other information about the system, such as prior
+preparation or a later measurement. Information about the preparation
+of a quantum system is often expressed using a <em>density
+operator</em> \(\rho\), a positive semidefinite operator (Hermitian with
+nonnegative eigenvalues) with trace (sum of the eigenvalues) equal to
+1, used as a <em>pre-probability</em> in the terminology of Sec. 9.4
+of <span class="citation">Griffiths (2002a)</span>, a mathematical
+object that can be used to generate a probability distribution. In
+particular if \(\{P_j\}\) is a projective decomposition of the identity,
+a quantum sample space, one assigns a probability</p>
+
+<p>\[p_j = \text{Tr}(\rho P_j) \label{eqn11}\]</p>
+
+<p>to the property \(P_j\). Very often \(\rho\) is referred to as the
+&ldquo;quantum state&rdquo;, since it is somewhat analogous to a
+probability distribution, e.g., a &ldquo;Gibbs state&rdquo;, in
+classical statistical mechanics. The name
+&ldquo;pre-probability&rdquo; refers to the fact that \(\rho\) can be
+used to generate many different probability distributions for
+different choices of the sample space.</p>
+
+<p>Whereas the distinction between quantum properties and quantum
+states in the sense of pre-probabilities is often evident from the
+context and the use of different symbols, the case of a &ldquo;pure
+state&rdquo; in which the density operator can be written as a rank
+one projector or dyad, \(\rho =\dya{\psi}\), can lead to confusion in
+that the same mathematical object can represent either a
+pre-probability or a property. Indeed, there is a close connection in
+that if for such a \(\rho\) one introduces a sample space
+\(\{[\psi],I-]\psi]\}\), the probability of the property \([\psi]\) is 1,
+which is to say that <em>if one uses this particular sample space</em>
+the quantum system certainly has the property \([\psi]\). But if this
+same \(\rho\) is used as a pre-probability for some other sample space,
+and if one ignores the single framework rule, it is easy to fall into
+the trap of thinking that \([\psi]\) and some other incompatible
+property corresponding to a projector that does not commute with
+\([\psi]\) can both be true, which makes no sense. The best known
+example of the confusion that results is Schr&ouml;dinger&rsquo;s infamous
+dead-and-alive cat, <a href="#SchCat">subsection 10.1</a>.</p>
+
+<h2><a id="QuaTimDev">4. Quantum Time Development</a></h2>
+
+<h3><a id="Kin">4.1 Kinematics</a></h3>
+
+<p>Suppose a coin is tossed three times in succession, with results
+heads (\(H\)) or tails (\(T\)). In the theory of stochastic processes one
+constructs a sample space \(\SC\) containing 8 events, let us call
+them <em>histories</em>: \(HHH\), \(HHT\), \(HTH\), &hellip;. Notice that
+formally the same sample space is obtained if instead of a coin tossed
+three times in a row, three different coins are tossed
+simultaneously. Since in quantum mechanics the Hilbert space of
+several separate systems is constructed as a tensor product of the
+individual Hilbert spaces, this suggests that the Hilbert space for a
+system at a sequence of times, the <em>histories</em> Hilbert space,
+can be constructed as the tensor product of copies of the Hilbert
+space for a single time. We write it as</p>
+
+<p>\[\breve \HC = \HC_1\odot\HC_2\cdots\odot\HC_f \label{eqn12}\]</p>
+
+<p>for times \(t_1 &lt;t_2 &lt;\cdots &lt; t_f\), where \(\odot\) is
+employed in place of the usual \(\otimes\) simply to emphasize that a
+sequence of times is involved.</p>
+
+<p>A single quantum history will typically correspond to a
+projector</p>
+
+<p>\[Y^\alpha = P_1^{\alpha_1}\odot P_2^{\alpha_2}\odot\cdots
+P_f^{\alpha_f}, \label{eqn13}\]</p>
+
+<p>where the superscript \(\alpha_m\) labels different possible
+projectors at time \(t_m\), and \(\alpha =
+(\alpha_1,\alpha_2,\ldots\alpha_f)\) is a composite label for the
+entire history. (Since the square of a projector is the same as the
+projector, the superscript position is not needed for exponents, and
+it is convenient to reserve the subscript to indicate the time.) If
+for each time \(t_m\) it is the case that \(\sum_{\alpha_m}
+P_m^{\alpha_m} = I_m\) it follows that \(\sum_\alpha Y^\alpha = \breve
+I\), the identity operator on \(\breve\HC\); thus the \(\{Y^\alpha\}\) form
+a projective decomposition of the identity \(\breve I\), a quantum
+sample space or <em>family</em> of histories, one and only one of
+which will actually occur in any given experimental run. The physical
+interpretation of \eqref{eqn13} is that the property \(P_1^{\alpha_1}\)
+occurs or is true at time \(t_1\), \(P_2^{\alpha_2}\) at time \(t_2\), and
+so forth. Indeed, since we live in a quantum world, the
+&ldquo;classical&rdquo; coin-tossing history \(THT\) can be written in
+the form \eqref{eqn13} using appropriate projectors to represent \(T\)
+and \(H\). As will be discussed later in <a href="#ClaPhy">section
+6</a>, the histories approach employs the same mathematical procedures
+for both microscopic and macroscopic physics, consistent with the
+belief of most physicists that quantum theory applies to phenomena of
+any size.</p>
+
+<p>Several comments are in order. First, the projective decompositions
+of the identity at different times need not be the same. Thus for a
+spin half particle one could have the \(S_z=\pm 1/2\) decomposition at
+one time and the \(S_x=\pm 1/2\) decomposition at some later
+time. And more complicated history-dependent decompositions of
+\(\breve I\) are possible; see the
+ <a href="reading.html">Further Reading</a> supplement.
+<!-- see the discussion in Sec. 14.4 of <span class="citation">Griffiths (2002a)</span>. -->
+Second, there is
+no reference to measurements. Events occur or do not occur; whether a
+measuring apparatus is involved is entirely irrelevant, although
+histories can be used to discuss what goes on in a measuring process;
+see <a href="#MeaPre">section 7</a>. Third, the projectors in a
+history can be coarse-grained and specify only a small amount of
+information, e.g., the spin degree of freedom of an atom without
+reference to its position; they do not and generally will not project
+onto pure states. Fourth, there is no direct connection between the
+choice of projectors entering a history and Schr&ouml;dinger&rsquo;s
+time-dependent equation, although in appropriate circumstances the
+latter can be used to assign probabilities to the different histories
+in a family, as discussed next.</p>
+
+<h3><a id="Dyn">4.2 Dynamics</a></h3>
+
+<p>Classical mechanics yields a deterministic dynamics only in the
+case of a <em>closed</em> or <em>isolated</em> system, since an exact
+prediction of the future or past for a system interacting with an
+unknown environment is not possible. But even if one is interested in
+the approximate dynamics of an open classical system it helps to start
+off with the idealization that the environment and the system of
+interest are parts of a total system which is isolated, and therefore
+has a dynamics given by Hamilton&rsquo;s equations. Similarly, when
+constructing the intrinsically stochastic dynamics appropriate to
+quantum theory it is helpful to begin with a closed or isolated system
+with well-defined boundary conditions in which Schr&ouml;dinger&rsquo;s equation
+has well defined solutions and induces a unitary time development
+given by a collection of time-evolution operators \(T(t',t)\): if
+\(\ket{\psi(t)}\) is any solution to Schr&ouml;dinger&rsquo;s (time-dependent)
+equation, then \(\ket{\psi(t')} = T(t',t)\ket{\psi(t)}\). In the case of
+a time-independent Hamiltonian \(H\) one has \(T(t',t) =
+\exp[-i(t'-t)H/\hbar]\).</p>
+
+<p>Consider a family \(\FC=\{Y^\alpha\}\) of histories of a closed
+quantum system, for a finite (possibly very large) collection of times
+\(t_1, t_2, \ldots t_f\). Under appropriate conditions one can use
+\(T(t',t)\) to assign probabilities in a consistent way to the histories
+in \(\FC\), using a multi-time generalization of the Born rule. To
+simplify the exposition we restrict attention to situations in which
+all histories begin with the same normalized initial pure state
+\(\ket{\Psi_0}\) at a time \(t_0 &lt;t_1\), and modify the definition in
+\eqref{eqn13} so that it reads</p>
+
+<p>\[Y^\alpha = [\Psi_0]\odot P_1^{\alpha_1}\odot
+P_2^{\alpha_2}\odot\cdots P_f^{\alpha_f}.  \label{eqn14}\]</p>
+
+<p>In addition, add an extra history \(Y^0=(I-[\Psi_0])\odot I_1\odot
+I_2\cdots\) so that the sum of all the history projectors together is
+the identity \(\breve I\) on the Hilbert space
+\(\HC_0\odot\HC_1\odot\cdots\). (Here, consistent with the notation used
+elsewhere in this article, \([\Psi_0]\) denotes the projector
+\(\dya{\Psi_0}\).) Then define a collection of &ldquo;chain kets&rdquo;
+\(\ket{\Phi^\alpha}\),</p>
+
+<p>\[\ket{\Phi^\alpha} = P^{\alpha_f}_f T(t_f,t_{f-1})
+  P^{\alpha_{f-1}}_{f-1} T(t_{f-1},t_{f-2})\cdots P^{\alpha_1}_1
+  T(t_1,t_0) \ket{\Psi_0}, \label{eqn15}\]</p>
+
+<p>one for each history \(\alpha\). Provided the <em>consistency
+conditions</em></p>
+
+<p>\[\inpd{\Phi^\alpha}{\Phi^{\alpha'}} = 0 \text{ for }
+\alpha\neq\alpha', \label{eqn16}\]</p>
+
+<p>are satisfied, where \(\alpha\) and \(\alpha'\) are considered unequal
+if \(\alpha_m\neq \alpha'_m\) for at least one value of \(m\) between 1
+and \(f\), the history \(Y^\alpha\) is assigned the probability</p>
+
+<p>\[\Pr(Y^\alpha) = \inp{\Phi^\alpha}.  \label{eqn17}\]</p>
+
+<p>In the case \(f=1\) the consistency condition \eqref{eqn16} is
+automatically satisfied because the projectors at \(t_1\) are orthogonal
+to each other, and the probabilities \(\inp{\Phi^\alpha}\) are those
+given by the usual Born rule. For \(f=2\) or more the consistency
+conditions are not trivial, and when they are satisfied \eqref{eqn17}
+provides a <em>generalization</em> of the Born
+rule.<sup>[<a href="notes.html#note-1" id="ref-1">1</a>]</sup> Insight
+into the meaning of the consistency conditions is best obtained by
+working through examples;  see the 
+ <a href="reading.html">Further Reading</a> supplement.
+<!-- a number of these will be found in Chs. 12 and 13 of <span class="citation">Griffiths (2002a)</span>.-->
+Families
+for which the consistency conditions are satisfied are
+called <em>consistent families</em>, and it is only for this
+restricted class that the laws of quantum dynamics for a closed system
+can be used to assign a meaningful set of probabilities.</p>
+
+<p>Some additional comments. First, two consistent families \(\FC_a\)
+and \(\FC_b\) may be such that the (history) projectors in one commute
+with those in the other, but still the common coarsest refinement does
+not satisfy the dynamical consistency conditions, in which case they
+are said to be <em>incommensurate</em> and cannot be combined, at
+least if one wishes to use the dynamical laws of quantum mechanics to
+assign them probabilities. Second, <em>measurements</em> play no role
+in terms of the fundamental mathematical formulation or its physical
+interpretation. In classical physics there is never any difficulty in
+imagining events actually occurring inside a closed system, even with
+no observers or measuring apparatus present. The same is true for
+quantum physics once one removes &ldquo;measurement&rdquo; from its
+spurious role as an interpretive principle, and instead treats it like
+any other quantum process, see <a href="#MeaPre">section 7</a>. Third,
+the histories approach is <em>time symmetrical</em> in the sense that
+the rules for assigning probabilities do not single out a particular
+&ldquo;direction&rdquo; or sense of time. (This symmetry is evident in
+the more complete discussion in Ch. 10
+of <span class="citation">Griffiths (2002a)</span>, which allows more
+general types of family. That generality has been sacrificed here in
+the interests of a simpler and more intuitive exposition based on the
+assumption of a single pure state at the initial time.)</p>
+
+<h2><a id="QuaRea">5. Quantum Reasoning</a></h2>
+
+<h3><a id="GenPri">5.1 General principles</a></h3>
+
+<p>The histories interpretation of quantum mechanics, as noted
+earlier, is probabilistic, and hence the processes of reasoning are
+those that scientists generally use for probabilistic models. This
+requires a method of assigning probabilities along with procedures for
+drawing inferences, usually in the form of conditional
+probabilities. In both these respects quantum theory resembles other
+applications of probabilistic reasoning. The main difference is the
+necessity in the quantum case of paying close attention to the problem
+of choosing a sample space (which then determines the event algebra)
+or framework, and then confining the logical reasoning process, from
+assumptions to conclusions, to a <em>single</em> framework. We have
+already encountered some applications of this single framework rule,
+and additional ones are discussed later, but at this point it is
+useful to summarize some of the basic principles involved, which can
+be conveniently placed under four headings:</p>
+
+<ul class="sentag tag3em jfy">
+
+<li><span class="tag">(R1)</span>
+    <span class="sen">
+Liberty. The physicist is free to employ as many frameworks as desired
+when constructing descriptions of a particular quantum system,
+provided the principle R3 below is strictly observed.
+</span></li>
+
+<li><span class="tag">(R2)</span>
+    <span class="sen">
+Equality. No framework is more fundamental than any other; in
+particular, there is no &ldquo;true&rdquo; framework, no framework
+that is &ldquo;singled out by nature&rdquo;.</span></li>
+
+<li><span class="tag">(R3)</span>
+    <span class="sen">
+Incompatibility. The single framework rule: incompatible frameworks
+are <em>never</em> to be combined into a single quantum
+description. The (probabilistic) reasoning process starting from
+assumptions (or data) and leading to conclusions must be carried out
+using a <em>single</em> framework.</span></li>
+
+<li><span class="tag">(R4)</span>
+    <span class="sen">
+Utility. Some frameworks are more useful than others for answering
+particular questions about a quantum system.</span></li>
+
+</ul>
+
+<p>The reasoning process begins with some <em>initial data</em>, which
+may reflect some knowledge of the system under discussion or may be
+purely hypothetical. Here &ldquo;initial&rdquo; refers to the
+beginning of a logical argument, not necessarily to the initial state
+of a quantum system, though the latter is often included in the
+initial data. These data must then be expressed in appropriate quantum
+terms as some sort of property or properties, subspaces of an
+appropriate Hilbert space, which could be a space of histories, all
+belonging to a <em>single</em> framework or event algebra, principle
+R3. Generally there will be more than one framework that can contain
+the initial data, and the physicist is at liberty to choose among
+these possibilities, R1. However, the types of conclusions which can
+be drawn using a particular framework (and thus event algebra) will
+depend upon the framework, and for this reason the physicist&rsquo;s
+interests can, and in general will, influence the choice of
+framework. It is utility, R4, which determines this choice; from a
+fundamental point of view all frameworks are equally good, R2.</p>
+
+<p>The link between initial data and the conclusions one can draw from
+them will be probabilistic (sometimes with probabilities 0 or 1, hence
+deterministic). One might be concerned that the flexibility in
+framework choice provided by R1 and R2 could lead to different results
+when using different frameworks. However, it is straightforward to
+show, see Ch. 16 of <span class="citation">Griffiths (2002a)</span>,
+that as long as both frameworks contain all the events needed to
+express the initial data and also those needed for drawing
+conclusions, the probabilities linking data and conclusions will be
+identical even if the two frameworks in question are mutually
+incompatible. This ensures an overall consistency. The discussion of
+quantum preparation and measurement found in
+ <a href="#MeaPre">section 7</a> below will show how principles
+of quantum reasoning apply to
+measurements, a topic that has given rise to a lot of confusion.</p>
+
+<h3><a id="CouRea">5.2 Counterfactual reasoning</a></h3>
+
+<p>A counterfactual argument begins by imagining another world which
+resembles the actual world in certain respects and differs from it in
+others, and asking the question: &ldquo;What <em>would</em> be the
+case <em>if</em> instead of &hellip;it were true that
+&hellip;&rdquo;. For example, &ldquo;What would the weather be like in
+Pittsburgh in January if the city were 1000 kilometers closer to the
+equator?&rdquo; In general, counterfactual reasoning is not easy to
+analyze, and this gives rise to difficulties when trying to understand
+quantum paradoxes stated in counterfactual form. The basic principle
+governing counterfactual reasoning in the histories approach is the
+single framework rule, with the requirement that a comparison between
+the real and the counterfactual world be carried out using
+the <em>same</em> framework for both. For details, see the
+<a href="reading.html">Further Reading</a> supplement
+and the applications in <a href="#CouPar">Sec. 10.4</a> below.
+<!-- See the discussion in Ch. 19
+of <span class="citation">Griffiths 2002a</span> and the applications
+in <a href="#CouPar">Sec. 10.4</a> below.-->
+</p>
+
+<h2><a id="ClaPhy">6. Classical Physics</a></h2>
+
+<p>The histories approach assumes that the same fundamental quantum
+mechanical laws apply to systems of any size, from quarks to jaguars
+to quasars. Classical mechanics is a very good approximation to the
+more exact quantum laws in appropriate circumstances. The following
+remarks 
+provide only a broad outline of how the classical world
+emerges from quantum theory; see the 
+ <a href="reading.html">Further Reading</a> supplement for additional
+material.
+<!-- are based on ideas of <span class="citation">Gell-Mann &amp;
+Hartle (1993, 2007)</span> and <span class="citation">Hartle
+(2011)</span>, and are broadly consistent with those
+of <span class="citation">Omn&egrave;s (1999)</span>. They are
+discussed at somewhat greater length in Ch. 26
+of <span class="citation">Griffiths (2002a)</span>.-->
+</p>
+
+<p>The first task is to identify suitable <em>quasiclassical</em>
+frameworks, appropriate choices of projective decompositions of the
+identity at a single time corresponding to macroscopic properties,
+together with suitable quantum histories that involve such properties,
+with results which correspond closely to the time development of
+classical physics. The desired decompositions will be coarse grained,
+with individual projectors corresponding to subspaces of enormous
+dimension (e.g., 10 raised to the power \(10^{16}\)). In such a
+situation it is plausible that there are families containing quantum
+histories having a probability very close to 1, and which exhibit a
+time development that closely approximates that of classical
+mechanics.</p>
+
+<p>To be sure, the task of showing that classical laws emerge to a
+good approximation in this manner is a nontrivial one, and it cannot
+be claimed that it has been completed. However, the effort expended
+thus far has not revealed any fundamental difficulty which would
+undermine this approach. One also expects to find cases in which the
+relevant quantum probabilities are not close to 0 or 1; in particular
+in a regime where classical analysis predicts chaos (positive Lyapunov
+exponents) quantum &ldquo;fluctuations&rdquo; are likely to be
+amplified. But this is also a situation in which the deterministic
+aspect of classical time development is not to be taken too seriously,
+due to the sensitive dependence upon initial conditions, so there is
+no reason to suppose that an appropriate quantum description cannot be
+constructed, at least in principle.</p>
+
+<p>Understanding the emergence of classical physics from the quantum
+world does not require a unique quasiclassical framework; there are
+undoubtedly a large number of different possibilities, any one of
+which could for the circumstances of interest provide
+&ldquo;classical&rdquo; results within a suitable approximation
+(further comments on nonuniqueness will be found
+in <a href="#NonQuaFra">subsection 11.3</a> below). In constructing a
+quasiclassical description <em>decoherence</em> plays a useful role in
+the sense that it removes the effects of quantum interference which
+might otherwise render a quasiclassical family inconsistent,
+preventing the application of the Born rule and its
+generalizations. Once again, this statement can be supported by model
+calculations of an appropriate sort which make it plausible, but work
+still remains to be done in coming to a full understanding of
+decoherence in quantum terms. Invoking decoherence by itself outside
+the framework provided by the histories approach does not solve the
+conceptual difficulties of quantum theory; see,
+e.g., <span class="citation">Adler (2003)</span>.</p>
+
+<h2><a id="MeaPre">7. Measurement and Preparation</a></h2>
+
+<p>The principles discussed above provide a resolution of
+the <em>measurement problem</em> of quantum foundations: that is, how
+to discuss the measurement process itself in fully quantum mechanical
+terms. It is convenient to think of this as made up of two
+problems:</p>
+
+<ul class="sentag tag3em jfy">
+<li><span class="tag">(M1)</span>
+    <span class="sen">
+How can the macroscopic <em>outcome</em> of the measurement,
+traditionally thought of as a pointer position, be described in
+quantum terms?</span></li>
+
+<li><span class="tag">(M2)</span>
+    <span class="sen">
+How is this outcome related to the earlier microscopic property the
+apparatus was designed to measure?</span></li>
+
+</ul>
+
+<p>The reliable <em>preparation</em> of a microscopic system in a
+particular quantum state raises similar conceptual issues; indeed,
+what in textbooks are often called &ldquo;measurements&rdquo; would be
+better thought of as &ldquo;preparations&rdquo;. Both are discussed
+below.</p>
+
+<h3><a id="SchMod">7.1 Schematic model</a></h3>
+
+<p>The issues are most simply addressed by using a simple schematic
+quantum model of measurement and preparation that goes back
+to <span class="citation">J. von Neumann (1932: sec. VI.3)</span>. Let
+\(\HC_s\) be the Hilbert space of the system to be measured, henceforth
+referred to as a <em>particle</em>, and \(\HC_m\) that of the measuring
+device or <em>apparatus</em>. For example, \(\HC_s\) could be the
+2-dimensional Hilbert space of the spin of a spin-half particle,
+whereas the quantum description of its position might be included in
+\(\HC_m\), along with all the many degrees of freedom needed to describe
+the apparatus itself. Let \(\{\ket{s^j}\}\) be an orthonormal basis for
+\(\HC_s\), with states labeled by a superscript so subscripts can label
+time. Let</p>
+
+<p>\[\ket{s_0} = \sum_j c_j \ket{s^j},\quad \ket{m_0},\quad
+\ket{\Psi_0}=\ket{s_0}\otimes\ket{m_0} \label{eqn18}\]</p>
+
+<p>be the normalized initial states of the particle, the measuring
+device, and the total system at time \(t_0\). Here \(c_j\) are complex
+numbers satisfying \(\sum_j|c_j|^2=1\).</p>
+
+<p>Let \(T(t',t)\), <a href="#Dyn">subsection 4.2</a>, be the unitary
+time development operator for the total system, and assume it is
+trivial&mdash;equal to the identity operator \(I=I_s\otimes
+I_m\)&mdash;for \(t\) and \(t'\) both less than some \(t_1\) or both greater
+than \(t_2\), whereas for the interval from \(t_1\) to \(t_2\) during which
+the particle and the apparatus interact,</p>
+
+<p>\[T(t_2,t_1) \bigl( \ket{s^j}\otimes\ket{m_0}\bigr) =
+\ket{w^j}\otimes \ket{m^j}.  \label{eqn19}\]</p>
+
+<p>Here the \(\ket{m^j}\) are orthonormal states of the apparatus,
+\(\inpd{m^j}{m^k}=\delta_{jk}\), corresponding to different pointer
+positions, and the \(\ket{w^j}\) are normalized, \(\inp{w^j}=1\),
+but <em>not necessarily orthogonal</em>; it may be that
+\(\inpd{w^j}{w^k}\neq 0\) when \(j\neq k\). (In von Neumann&rsquo;s original
+model the \(\ket{w^j}\) were the same as the \(\ket{s^j}\), and this is
+also possible, but is not being assumed, for the situation we are
+considering.) The transformation \eqref{eqn19} can be extended to a
+unitary transformation on \(\HC_s\otimes\HC_m\), because the
+orthogonality of the \(\ket{m^j}\) ensures that the states on the right
+side of \eqref{eqn19} are normalized and mutually orthogonal. Unitary
+time development leads to states</p>
+
+\[
+
+\begin{align}
+\label{eqn20}
+\ket{\Psi_1} &amp;= T(t_1,t_0) \ket{\Psi_0} =\ket{\Psi_0}, \\
+\ket{\Psi_2} &amp;= T(t_2,t_1) \ket{\Psi_1} = \sum_j c_j\ket{w^j}\otimes\ket{m^j} \nonumber
+\end{align}
+
+\]
+
+<p>for the total system at times \(t_1\) and \(t_2\).</p>
+
+<h3><a id="Mea">7.2 Measurement</a></h3>
+
+<p>To study the physical implications of this model we need to
+introduce a family of histories. From a mathematical perspective the
+simplest such family is based solely on unitary time development and
+takes the form</p>
+
+<p>\[\FC_u:\;\;[\Psi_0]\;\odot\; \{[\Psi_1],I-[\Psi_1]\}\;\odot\;
+\{[\Psi_2], I-[\Psi_2]\}, \label{eqn21}\]</p>
+
+<p>where \([\Psi_1]\) and \([\Psi_2]\) are projectors onto the states
+\(\ket{\Psi_1}\) and \(\ket{\Psi_2}\) defined in \eqref{eqn20}, and the
+family \eqref{eqn21} should be interpreted as a set of four mutually
+exclusive histories obtained by choosing at \(t_1\) one of the
+projectors inside the first pair of curly brackets, and at \(t_2\) one
+inside the second pair. The corresponding chain
+kets, <a href="#Dyn">subsection 4.2</a>, are zero except for the
+single history \([\Psi_0]\odot [\Psi_1] \odot [\Psi_2]\), which is
+assigned probability 1 by \eqref{eqn17}.</p>
+
+<p>The family \(\FC_u\) is of no use for resolving the first measurement
+problem M1, because the family of histories does not include the
+projectors \(\{[m^j]\}\) for the pointer positions at time \(t_2\) needed
+to discuss the measurement outcome, nor can it be refined to include
+them, because \([\Psi_2]\) will not commute with some of the \([m^j]\),
+assuming at least two of the \(c_j\) in \eqref{eqn18} are nonzero. This
+is the basic reason why the first measurement problem M1 is an
+enormous difficulty for quantum interpretations in which the only
+possible time dependence for a closed quantum system is that given by
+Schr&ouml;dinger&rsquo;s equation. By contrast, the histories approach gives the
+physicist Liberty to use a different family</p>
+
+<p>\[\FC_1:\;\;[\Psi_0]\;\odot\;[\Psi_1] \;\odot\; \{[m^j]\}
+\label{eqn22}\]</p>
+
+<p>in place of \(\FC_u\). Note that \([m^j]\) is understood as
+\(I_s\otimes[m^j]\), using a common physicist&rsquo;s convention. In addition
+a projector \(R=I_m-\sum_j[m^j]\) should be included among the
+possibilities at the final time \(t_2\), but as it occurs with zero
+probability it can be ignored. The consistency of the family \(\FC_1\)
+is easily demonstrated, and the probability \(|c_j|^2\) for the final
+position \([m^j]\) is an immediate consequence of \eqref{eqn17}.</p>
+
+<p>However, the second measurement problem M2, relating the outcome of
+the measurement to the property of the particle before the
+measurement, cannot be solved using the family \(\FC_1\), because the
+properties of interest, the \([s^j]\), are not included among the
+possibilities at time \(t_1\). To discuss these requires another
+family</p>
+
+<p>\[\FC_2:\;\;[\Psi_0]\;\odot\; \{ [s^j]\}\;\odot\; \{[m^k]\}.
+\label{eqn23}\]</p>
+
+<p>Again, \([s^j]\) can be understood as \([s^j]\otimes I_m\), a property
+of the particle without reference to the apparatus. Showing that
+\(\FC_2\) is consistent is straightforward, as is calculating the joint
+probability distribution</p>
+
+<p>\[\Pr(\,[s^j]_1,[m^k]_2) = |c_j|^2 \delta_{jk} \label{eqn24}\]</p>
+
+<p>using \eqref{eqn17}. Here the subscripts refer to the time: the
+particle property at time \(t_1\) before the measurement takes place,
+and the outcome at \(t_2\) when the measurement is over. The marginal
+probabilities are</p>
+
+<p>\[\Pr([s^j]_1) = \Pr([m^j]_2) = |c_j|^2.  \label{eqn25}\]</p>
+
+<p>Thus for every case in which \(c_k\) is not zero (so \([m^k]\) occurs
+with finite probability) one has the conditional probability</p>
+
+<p>\[\Pr([s^j]_1 \boldsymbol{\mid} [m^k]_2) = \delta_{jk}.
+\label{eqn26}\]</p>
+
+<p>In other words, given a measurement outcome \([m^k]\) at \(t_2\) one
+can be certain that the prior state of the particle at \(t_1\) was
+\([s^k]\); i.e., the apparatus did what it was designed to do.</p>
+
+<h3><a id="PreWavFunCol">7.3 Preparation and wave function collapse</a></h3>
+
+<p>The reader may have noticed that the particle states \(\ket{w^j}\) in
+\eqref{eqn19} played no role in our discussion of measurement
+in <a href="#Mea">subsection 7.2</a>. Von Neumann&rsquo;s
+original <span class="citation">(1932: sec. VI.3)</span> presentation
+used \(\ket{w^j}=\ket{s^j}\), as he thought it important that a second
+measurement could confirm the first. This practice was followed in
+later textbooks, and has resulted in some confusion. The \(\ket{w^j}\)
+are in fact irrelevant when considering measurements, but they are
+useful when considering a <em>preparation procedure</em> in which
+macroscopic apparatus is used to produce a quantum system&mdash;again
+we shall speak of it as a particle&mdash;in some well-defined
+state. To see how this works let us again employ the model
+of <a href="#SchMod">subsection 7.1</a> with unitary development given
+by \eqref{eqn19}, but now introduce a family</p>
+
+<p>\[\FC_p:\;\;[\Psi_0]\;\odot\;[\Psi_1] \;\odot\;
+\{[v^l]\otimes[m^j]\} \label{eqn27}\]</p>
+
+<p>that is a refinement of \(\FC_1\) in \eqref{eqn22}, with \(I_s\)
+replaced by a projective decomposition onto some orthonormal basis
+\(\{\ket{v^j}\}\) of the particle Hilbert space \(\HC_s\). The joint
+probability distribution at time \(t_2\) of the particle and pointer
+states is then</p>
+
+\[
+
+\begin{align}
+\label{eqn28}
+\Pr([m^j],[v^l]) &amp;= \mte{\Psi_2}{[v^l]\otimes[m^j]} \\
+   &amp;= |c_j|^2 \mte{w^j}{[v^l]}  \nonumber \\
+   &amp;= |c_j|^2 |\inpd{v^l}{w^j}|^2. \nonumber
+\end{align}
+
+\]
+
+<p>Since \(\Pr([m^j]) = |c_j|^2\), \eqref{eqn25}, one obtains the
+conditional probability</p>
+
+<p>\[\Pr([v^l]\boldsymbol{\mid} [m^j]) = |\inpd{v^l}{w^j}|^2
+\label{eqn29}\]</p>
+
+<p>(assuming \(|c_j|^2\) is not 0). That is to say, if the measurement
+outcome is known to be \([m^j]\), then the probability of any property
+of the particle is precisely that given by assuming the particle is in
+the state \(\ket{w^j}\), with &ldquo;state&rdquo; having its usual
+meaning: a pre-probability from which the probability distribution for
+the properties represented by any projective decomposition of its
+identity can be calculated; see <a href="#QuaStaPrePro">subsection
+3.5</a>.</p>
+
+<p>Note that this discussion remains valid when \(\{\ket{w^j}\}\) is not
+a collection of orthogonal states, even though this means that the
+corresponding projectors \(\{[w^j]\}\) cannot all belong to the same
+projective decomposition of \(I_s\). The point is that \(\ket{w^j}\) is
+assigned to the particle only in association with the projector
+\([m^j]\), and the collection \(\{\ket{w^j}\otimes\ket{m^j}\}\) is
+orthogonal. In such circumstances the \([w^j]\) are what in Ch. 14
+of <span class="citation">Griffiths (2002a)</span> are referred to
+as <em>dependent</em> or <em>contextual</em>
+(&ldquo;conditional&rdquo; would be equally good) <em>properties</em>:
+they must be understood in conjunction with other properties, which in
+this case are the pointer positions \([m^j]\), when forming part of a
+quantum description or history.</p>
+
+<p>What has here been deduced from fundamental quantum principles,
+including the Born rule, is in textbooks stated as a mysterious and
+separate principle of &ldquo;wave function collapse&rdquo;: if the
+measurement outcome is \([m^j]\) then the particle state
+&ldquo;collapses&rdquo; onto a particular state associated with this
+outcome. To make closer contact with textbook discussions of this
+topic, let</p>
+
+<p>\[S = \sum_j \sigma_j [s^j] \label{eqn30}\]</p>
+
+<p>be a Hermitian operator with nondegenerate eigenvalues \(\sigma_j\),
+and let \(\ket{w^j}=\ket{s^j}\). Then the measurement outcome \([m^j]\)
+corresponds to measuring the eigenvalue \(\sigma_j\)&mdash;see the
+remarks in <a href="#QuaObs">subsection 3.3</a>&mdash;and
+\eqref{eqn29} and the remarks following it justify assigning to the
+particle at time \(t_2\) the ket \(\ket{w^j}=\ket{s^j}\). One may add that
+the more general form of wave function collapse embodied in the
+L&uuml;der&rsquo;s rule <span class="citation">(Busch &amp; Lahti 2009)</span> is
+likewise a consequence of the general quantum principles governing
+stochastic time development set forth in <a href="#QuaTimDev">section
+4</a>, so need not be added as an additional hypothesis.</p>
+
+<p>
+In any case there is no need to set \(\ket{w^j}\) equal to
+\(\ket{s^j}\) in order to discuss quantum measurements, and a better
+way of viewing the family \(\FC_p\) in \eqref{eqn27} is as a model of
+a quantum preparation process in which the macroscopic pointer
+position tells one the future rather than the past state of the
+particle. The conditional probability in \eqref{eqn29} refers
+specifically to properties at the time \(t_2\), but given the
+assumption that \(T(t',t)\) is trivial for times after \(t_2\), the
+argument leading to \eqref{eqn29} is easily extended to \([v^l]\) and
+\([m^j]\) at any times (not necessarily the same) later than \(t_2\).
+In general the outcome \([m^j]\) is random, and if the wrong \(j\)
+occurs \(\ket{w^j}\) may not be the desired state.  But then the
+preparer can throw the particle away (run it into a baffle) and repeat
+the experiment until the desired outcome occurs. There are more
+sophisticated ways to do preparations, but our model illustrates the
+general idea, and in fact discarding unwanted outcomes is a procedure
+often used in quantum optics.  The essential point is that an
+apparatus can be constructed using quantum principles to prepare a
+particle whose future state is known on the basis of macroscopic
+(pointer) information.</p>
+
+<h3><a id="GeneWeakMeas">7.4 Generalized and Weak Measurements</a></h3>
+
+<p>Von Neumann&rsquo;s measurement model in 
+ <a href="#SchMod">section 7.1</a>
+is often referred to as a &ldquo;projective measurement&rdquo;, since its outcome
+\(k\), see , indicates an earlier quantum property corresponding to
+the projector \([s^k]\). It is also called a &ldquo;strong measurement&rdquo; in
+contrast to a weak measurement as defined below. In practice one often
+uses a more general measurement model, referred to as
+a <em>generalized measurement</em> or POVM (positive operator value
+measure) where the measurement outcome corresponds not to a specific
+property but instead to a positive (semi-definite) operator for the
+measured system at an earlier time. 
+<!-- The histories approach has been
+applied to this more general type of measurement in Griffiths (2017a),
+and is summarized below.-->
+</p>
+
+<p>Generalized measurements are often thought of in the following
+way. Instead of interacting directly with the measurement apparatus,
+the system to be measured first interacts with another (microscopic)
+system, a <em>probe</em>, prepared in a known quantum state. Then the
+probe is subjected to a projective measurement, and from its outcome
+one learns something about the original system. If the interaction
+between the probe and the system of interest is very weak this is
+called a <em>weak measurement</em>. Sometimes a hybrid measurement is
+employed, in which, following its interaction with a probe, the
+original system is subjected to another (typically projective)
+measurement. Both the weak measurement and the hybrid are examples of
+generalized measurements, and can be discussed in the manner indicated
+below. A weak measurement must be carefully distinguished from
+a <em>weak value</em>; see the comment at the end of this section.</p>
+
+<p>
+The generalized measurement model starts, as in Sec.&nbsp;[sbct7.1], with a
+Hilbert space \({{\mathcal H}}={{\mathcal H}}_s\otimes{{\mathcal
+H}}_m\), where \({{\mathcal H}}_s\) represents the measured system
+(hereafter referred to as a particle), and \({{\mathcal H}}_m\) the
+measuring apparatus, including the probe if that is part of the
+arrangement. And as in and assume an initial state
+</p>
+
+\[
+{|\Psi_0\rangle }={|s_0\rangle }\otimes{|m_0\rangle }, \label{eqn31}
+\]
+
+<p>
+ and a unitary time development from \(t_0\) to later times \(t_1 &lt; t_2\) given by 
+</p>
+
+\[
+{|\Psi_1\rangle } = T(t_1,t_0) {|\Psi_0\rangle } ={|\Psi_0\rangle },\quad  
+{|\Psi_2\rangle } = T(t_2,t_1) {|\Psi_1\rangle }, \label{eqn32}
+\]
+
+<p>
+where, as previously, we are assuming that the time interval from
+\(t_0\) to \(t_1\) is so short that \(T(t_1,t_0)\) is the identity
+operator.</p>
+
+<p>
+But instead of introducing pure states \({|m^j\rangle }\) for the
+different positions of the measurement pointer, we assume a projective
+decomposition of the identity of \({{\mathcal H}}\),</p>
+
+\[I =\sum_k M^k,
+\label{eqn33}\]
+
+<p>
+where \(M^k\) projects onto the entire (macroscopic) subspace in which
+the apparatus pointer is in position \(k\). Since any two situations
+which are macroscopically distinct correspond to mutually orthogonal
+subspaces of the quantum Hilbert space, the \(M^k\) for different
+\(k\) will be orthogonal to each other. In addition one can include a
+special projector, say \(\hat M\), in the sum to represent any
+additional possibilities (e.g., the pointer has fallen off the
+apparatus), to make the sum add up to \(I\). The \({|m^j\rangle }\) of
+Sec.&nbsp;[sbct7.1] are related to the \(M^k\) through</p>
+
+\[M^k {|m^j\rangle } = {\delta }_{jk} {|m^j\rangle },  
+\label{eqn34}\]
+
+<p>
+i.e., \({|m^j\rangle }\) belongs to the subspace associated with
+\(M^j\).</p>
+
+<p>
+Since we are interested in what the measurement tells us about the
+particle, we can regard the initial apparatus state \({|m_0\rangle }\)
+in as fixed, and indicate the dependence of \({|\Psi_2\rangle }\) on
+\({|s_0\rangle }\) using the formula</p>
+
+\[{|\Psi_2\rangle } = J {|s_0\rangle },
+\label{eqn35}\]
+
+<p>
+where \(J\) is an isometry (it preserves inner products) that maps
+\({{\mathcal H}}_s\) onto a subspace of \({{\mathcal H}}\). This
+provides a convenient way to define operators</p>
+
+\[Q^k = J{^\dagger }M^k J.
+\label{eqn36}\]
+
+<p>
+acting on \({{\mathcal H}}_s\). Because the \(M^k\) are positive
+(semi-definite) operators, the same is true of the \(Q^k\), and
+because \(J{^\dagger }J= I_s\) (\(J{^\dagger }\) is the left inverse
+of \(J\)), it follows from that</p>
+
+\[\sum_k Q^k = I_s. \label{eqn37}\]
+
+<p>
+(We assume that \(\hat Q=J{^\dagger }\hat M J=0\) for the special
+projector \(\hat M\) introduced following .) Thus \(\{Q^k\}\) is a
+collection of positive operators which sum to the identity, which is
+the definition of a POVM.</p>
+
+<p>
+If every \(Q^k\) is a projector, then implies that they are mutually
+orthogonal, and form a projective decomposition of the identity of
+\({{\mathcal H}}_s\). This means we are dealing with a projective
+measurement, though more general than the von Neumann model of
+Sec.&nbsp;[sbct7.1], as the \(Q^k\) may project on subspaces of dimension
+greater than 1. However, in general \(Q^k\) is not a projector or
+proportional to a projector, but since it is Hermitian it can be
+written in the form</p>
+
+\[Q^k = \sum_j q_{jk} \xi^{jk}, \quad \sum_j \xi^{jk} = I_s,
+\label{eqn38}\]
+
+<p>
+where for a fixed \(k\) the \(\{\xi^{jk}\}\) form a projective
+decomposition of \(I_s\), and the \(\{q_{jk}\}\) are the nonnegative
+eigenvalues of \(Q^k\). It is then not hard to show that the family of
+histories</p>
+
+\[Y^{jk} = [s_0]\otimes[m_0] \odot \xi^{jk}\otimes I_m \odot M^k,
+\label{eqn39}\]
+
+<p>
+labeled by both \(j\) and \(k\), is consistent. It gives rise to
+conditional probabilities</p>
+
+\[\Pr(\xi^{jk}_1 {\boldsymbol{\mid}}M^k_2) = p_{jk} = q_{jk} \mte{s_0}{\xi^{jk}}/\mte{s_0}{Q^k},
+\label{eqn40}\]
+
+<p>
+where the subscripts 0, 1, and 2 indicate the time. In words, what
+tells us is that if at the end of a run the pointer is in position
+\(k\), then at the earlier time before the measurement took place the
+particle had a property represented by a projector \(\xi^{jk}\) for
+some value of \(j\). If in addition the initial state \({|s_0\rangle
+}\) is known, that can be used to assign a probability \(p_{jk}\),
+note that \(\sum_j p_{jk}=1\), to the property \(\xi^{jk}\) at time
+\(t_1\). While not as &ldquo;clean&rdquo; as in the case of a projective
+measurement, this can still be informative.</p>
+
+<p>
+Let us close this section with two additional remarks about weak
+measurements, including the hybrid case. First, there is an abundant
+literature in which weak measurements are discussed in terms of
+so-called <em>weak values</em> of certain quantum observables. The
+physical significance (if any) of weak values has been the subject of
+an ongoing controversy. Without entering that discussion it is worth
+pointing out that apart from exceptional cases a weak value has
+nothing to do with a quantum property in the sense used in the
+histories interpretation, related to some subspace of the quantum
+Hilbert space; e.g., one of the \(\xi^{jk}\) in .</p>
+
+<p>
+Second, a single weak measurement corresponding to a weak interaction
+between particle and probe will not yield much information about the
+particle, and hence it is usually assumed that such a measurement will
+be repeated a large number of times, with the particle prepared in the
+same initial state for each run, so that useful information can be
+extracted from the random outcomes. It is sometimes assumed that
+because the interaction is weak, in none of the runs will the state of
+the particle change significantly. However, that is not necessarily
+the case. Weakness of the interaction is also consistent with the
+particle&rsquo;s state being drastically altered in a number of runs,
+provided these are but a small fraction of the total. A useful example
+is provided by Feynman <span class="citation">(Feynman, Leighton,
+&amp; Sands: Chapter 1)</span> in his discussion of a weak light
+source used to determine which of two holes an electron passes through
+on its way to a distant screen where successive arrivals display a
+two-hole (double slit) interference pattern. If the light source is
+very weak, only for a small fraction of the runs does a scattered
+photon reveals which hole the electron went through. But if one
+collects data for these rare instances one finds a very large effect:
+in these runs the interference pattern is completely washed out.</p>
+
+<p>See the 
+ <a href="reading.html">Further Reading</a> supplement for additional
+details of the histories approach to generalized and weak
+measurements.</p>
+
+<h3><a id="ConRem">7.5 Concluding remarks</a></h3>
+
+<p>
+In summary, the histories approach resolves both quantum measurement problems
+M1 and M2 by <em>introducing appropriate stochastic families of histories</em>.
+In order to describe the measurement outcome as a pointer position one needs an
+appropriate projective decomposition of the identity&mdash;\(\{[m^j]\}\) in the
+simplest model or the more general \(\{M^k\}\) of 
+ <a href="#GeneWeakMeas">section 7.4</a>&mdash;associated
+with the pointer positions. Similarly, in order to discuss how properties of
+the microscopic particle before the measurement are related to measurement
+outcomes, one needs a decomposition at \(t_1\) that includes these properties,
+the \([s^j]\) in \eqref{eqn23} for the simple model or the \(\xi^{jk}\) in
+\eqref{eqn38} for a generalized measurement. There is no fundamental quantum
+principle that forces one to use these decompositions. The choice is based on
+utility, and illustrates the importance of principle R4 in 
+ <a href="#QuaRea">section 5</a>. If
+one wants to discuss measurements <em>as measurements</em>, one needs
+to adopt a framework in which the associated concepts make sense. And,
+since it is often misunderstood, it is worth emphasizing that neither
+the validity nor the utility of a particular framework is in any way
+reduced by the existence of other frameworks which are incompatible
+(or incommensurate) with it.</p>
+
+<p>
+The models employed here are a bit simplistic compared to the experimental
+situation in a laboratory. However, extending them to something more realistic
+poses difficulties no worse than those encountered when introducing
+quasiclassical descriptions. Thus, rather than a pure initial
+state \(\ket{m_0}\) for the apparatus it is more realistic to use a macroscopic
+projector of the type mentioned in 
+ <a href="#ClaPhy">section 6</a>, or else an initial density
+operator. These changes present no difficulty in principle, and some
+of them are discussed in Ch. 17 of Griffiths (2002a). The role of
+decoherence is to allow a consistent quasiclassical description, as
+noted in
+ <a href="#ClaPhy">section 6</a>. By itself decoherence does not
+resolve either of the measurement problems; see, e.g., Adler
+(2003).</p>
+
+<p>Finally, while wave function collapse is a legitimate calculational
+procedure when describing a preparation in quantum mechanical terms,
+it amounts to nothing more than a convenient way of calculating
+conditional probabilities useful in the quantum description of a
+preparation. Trying to view it as some sort of mysterious physical
+process leads to confusion and the incorrect notion that quantum
+mechanics is somehow inconsistent with special relativity, which is
+our next topic.</p>
+
+<h2><a id="LocSpeRel">8. Locality and Special Relativity</a></h2>
+
+<p>According to some interpretations of quantum
+mechanics, e.g., 
+<span class="citation"> d&rsquo;Espagnat (2006)</span>,
+<span class="citation">Maudlin (2011)</span>,
+the quantum world is infested with nonlocal influences:
+systems which are far apart, even spacelike separated in the sense of
+special relativity, can influence each other. This has given rise to
+the notion that quantum theory is incompatible with special
+relativity. No such nonlocal influences are present in the histories
+interpretation, which is perfectly compatible with special
+relativity. See the 
+<a href="reading.html">Further Reading</a> supplement for the detailed discussions
+underlying the following remarks.
+<!-- The following discussion is based on more detailed
+treatments found in Chs. 23 and 24 of <span class="citation">Griffiths
+(2002a)</span> and in <span class="citation">Griffiths (2002b, 2011a,
+2011b)</span>.-->
+</p>
+
+<h3><a id="SinStaSpiHalPar">8.1 Singlet state of spin-half particles</a></h3>
+
+<p>The Bohm version <span class="citation">(Bohm 1951: Chapter
+22)</span> of the Einstein-Podolsky-Rosen
+paradox <span class="citation">(Einstein, Podolsky, &amp; Rosen
+1935)</span> is based on the spin singlet state</p>
+
+<p>\[\ket{\psi_0} = \bigl( \ket{z^+_a,z^+_b} - \ket{z^-_a,z^-_b}
+\bigr) \label{eqn41}\]</p>
+
+<p>of two spin-half particles \(a\) and \(b\), using the same notation as
+in <a href="#ExaSpiHal">subsection 2.3</a>. This is said to be
+an <em>entangled</em> state because it is not a product state of the
+form \(\ket{a,b} = \ket{a}\otimes\ket{b}\). It is easy to show that the
+corresponding projector \([\psi_0]\) does not commute with any projector
+on a nontrivial property of particle \(a\), such as \([z^+_a]\), or on a
+nontrivial property of \(b\). (The trivial properties are the identity
+and the zero projector.) Thus a quantum description that contains
+\([\psi_0]\) as a property cannot at the same time ascribe any
+nontrivial properties to either of the particles.</p>
+
+<p>This is a mathematical fact which makes no reference to where the
+particles are located in space. It is true for the ground state of a
+hydrogen atom, in which the electron and proton are on top of each
+other, as well as for the situation we consider next in which particle
+\(a\) is in Alice&rsquo;s laboratory and \(b\) in Bob&rsquo;s laboratory some distance
+away. Suppose that Alice measures \(S_{az}\) for her particle and Bob
+measures \(S_{bz}\) for his. Then using \([\psi_0]\) <em>as a
+pre-probability</em>, <a href="#QuaStaPrePro">subsection 3.5</a>, one
+can show that the outcomes, although they are random, will always be
+opposite: if Alice obtains \(+1/2\) (in units of \(\hbar\)), Bob will find
+\(-1/2\); if Alice obtains \(-1/2\), Bob will find \(+1/2\).</p>
+
+<p>Correlated outcomes are by themselves not surprising once one
+accepts the idea that quantum mechanics is stochastic, not
+deterministic. Here is a classical analogy: Charlie in Chicago places
+a red slip of paper in an opaque envelope and a green slip in a second
+identical envelope, and after shuffling them chooses one at random and
+mails it to Alice in Atlanta and the other to Bob in Boston. Upon
+opening her envelope and finding a red slip, Alice can at once
+conclude from her knowledge of the protocol that Bob&rsquo;s envelope
+contains a green slip of paper. There is no need to invoke some
+superluminal influence to explain this.</p>
+
+<p>Her reasoning is exactly the same in the case where Charlie
+prepares a spin singlet state at the center of the laboratory and
+sends the two particles in opposite directions towards apparatuses
+constructed by Alice and Bob, both competent experimentalists, and
+Alice measures \(S_{az}\). From her measurement outcome and because she
+is a competent experimentalist she is entitled to conclude that before
+the measurement took place particle \(a\) possessed the value indicated
+later by the pointer position; see the discussion
+in <a href="#Mea">subsection 7.2</a>. Assume for the sake of
+discussion that this was \(S_{az} = +1/2\). Then from her knowledge of
+the protocol (initial singlet state) she can assign a state
+\(S_{bz}=-1/2\) to Bob&rsquo;s particle and use this (as a pre-probability) to
+assign a probability to the outcome of a measurement of \(S_{bz}\). She
+employs a scheme of probabilistic inference appropriate to the quantum
+world; there is no need to invoke wave function collapse except,
+perhaps, as a handy calculational tool.</p>
+
+<p>But suppose Bob rather than measuring \(S_{bz}\) measures some other
+component \(S_{bw}\) of the spin of particle \(b\), where \(w\) could be \(x\)
+or \(y\) or some arbitrary direction in space? Again, Alice on the basis
+of her measurement outcome can still assign an \(S_{bz}\) value to Bob&rsquo;s
+particle before measurement, and use it as a pre-probability to
+calculate a probability for Bob&rsquo;s measurement outcome. Conversely,
+given the outcome of his \(S_{bw}\) measurement (and knowledge of the
+protocol) Bob can assign a state \(S_{aw}\) to Alice&rsquo;s particle before
+it is measured, and use that to predict the outcome of a measurement
+of \(S_{az}\). Both reasoning processes follow the rules indicated above
+in <a href="#GenPri">subsection 5.1</a>, but when \(w\) is neither \(z\)
+nor \(-z\) the single framework rule means they cannot be combined. It
+is at this point that quantum principles must be used, unlike the
+analysis applicable to colored slips of paper, where one can employ
+the single quasiclassical framework (<a href="#ClaPhy">section 6</a>)
+appropriate for macroscopic physics.</p>
+
+<p>If Alice measured \(S_{az}\), then surely she <em>could</em> have
+instead measured \(S_{ax}\) perhaps making the choice between this and
+\(S_{az}\) at the very last instant, even after Bob has completed his
+measurement; what <em>would</em> have occurred in that situation? This
+is a counterfactual question of the form discussed
+in <a href="#CouRea">subsection 5.2</a>, 
+and we refer the reader to the references given there.</p>
+
+<h3><a id="BelIneEinLoc">8.2 Bell inequalities and Einstein locality</a></h3>
+
+<p>Quantum theory predicts correlations in the spin-singlet state that
+do not satisfy Bell inequalities <span class="citation">(Shimony
+2009)</span>, and by now there is ample evidence from experiments on
+the analogous property of pairs of correlated photons that quantum
+theory is correct, and therefore one or more of the assumptions that
+go into the derivation of a Bell inequality must be faulty. While the
+claim has been made that the key assumption is locality, and therefore
+a violation of Bell inequalities implies that the real (quantum) world
+is nonlocal, a histories analysis identifies the problem as a
+different assumption made by Bell: the existence of classical hidden
+variables that are inconsistent with Hilbert space quantum
+mechanics. For more details see the 
+ <a href="reading.html">Further Reading</a> supplement.
+<!-- For details see Chs. 23 and 24
+of <span class="citation">Griffiths (2002a)</span>;
+also <span class="citation">Griffiths (2011a, 2011b)</span>.-->
+</p>
+
+<p>In addition, the histories approach makes it possible to establish
+on the basis of quantum mechanics itself a principle of <em>Einstein
+locality</em> <span class="citation">(Griffiths 2011b)</span>:</p>
+
+<blockquote>
+<p>Objectively real internal properties of an isolated individual
+system do not change when something is done to another non-interacting
+system.</p>
+
+</blockquote>
+<p>This statement is to be understood in the following way. Let
+\(\HC_S\) be the Hilbert spaces of an isolated individual system \(S\),
+\(\HC_R\) that of the rest of the world, so \(\HC=\HC_S\otimes\HC_R\) is
+the Hilbert space of the total system. The properties of \(S\) must be
+represented by a projective decomposition of \(\HC_S\), or by a
+consistent family of such properties. That \(S\) is isolated means there
+is no interaction between \(S\) and \(R\), which is to say that for any
+two times \(t\) and \(t'\) during the period of interest the time
+development operator of the total system factors:</p>
+
+<p>\[T(t',t)=T_S(t',t)\otimes T_R(t',t).  \label{eqn42}\]</p>
+
+<p>Something done to another system might be, for example, the choice
+between measuring \(S_{bx}\) and \(S_{bz}\) for a particle \(b\) which is
+part of \(R\), with the measuring apparatus and whatever makes the
+measurement choice, e.g., a quantum
+coin <span class="citation">(Sec. 19.2 of Griffiths 2002a)</span> that
+is also part of \(R\).</p>
+
+<h2><a id="QuaInf">9. Quantum Information</a></h2>
+
+<p>Quantum information is at present a very active field of research,
+one in which quantum foundational issues continually arise. One reason
+for current interest is the hope of building quantum computers that
+are capable, assuming they can be made to work properly, of carrying
+out certain information-processing tasks faster and more efficiently
+than is possible using ordinary classical computers. To be sure, if
+the entire world is quantum mechanical then our current
+&ldquo;classical&rdquo; computers must in some real sense be quantum
+computers. So what is the difference? At least to a first
+approximation, classical computation is that kind where a single
+quasiclassical framework, <a href="#ClaPhy">section 6</a>, suffices
+for describing the carriers of information (e.g., on-off states of
+transistors) and the way information is processed, whereas quantum
+computation is what cannot be so described. Further clarifying this
+distinction is one of the tasks of quantum information theory.</p>
+
+<p>Classical information theory as developed by Shannon and his
+successors employs standard (Kolmogorov) probability theory. The
+histories approach to quantum mechanics also uses standard probability
+theory, and thus it is plausible that as long as one sticks to a
+single quantum framework, both the mathematical structure and the
+intuition associated with classical information theory can be directly
+translated into the quantum domain. This is indeed the case, and such
+a quantum framework is not limited to quasiclassical states; it can
+also include microscopic quantum states.</p>
+
+<p>This makes it possible for the histories approach to answer two
+questions raised by <span class="citation">J. S. Bell (1990)</span> as
+objections to using information theory to address foundational issues
+in quantum mechanics: &ldquo;<em>Whose</em> information? Information
+about <em>what</em>?&rdquo; The answers in reverse order: information
+is always <em>about</em> quantum properties or, more generally,
+properties at different times, thus histories. And it is
+possessed <em>by</em> someone who, like Alice
+in <a href="#SinStaSpiHalPar">subsection 8.1</a>, can build a reliable
+piece of apparatus and interpret the (macroscopic) outcome by applying
+consistent quantum principles.</p>
+
+<p>Not all problems in quantum information can be simply and
+immediately mapped in a useful way onto a single framework, and those
+that cannot are what make quantum information an interesting, as well
+as a rather difficult, field of research. Note that the single
+framework rule forbids <em>combining</em> incompatible frameworks, but
+allows one to compare them or work out relationships that hold between
+results in different frameworks. Therefore one can say that, at least
+in some general sense, problems at the frontiers of quantum
+information theory have to do with comparisons of incompatible
+frameworks. See the 
+ <a href="reading.html">Further Reading</a> supplement for additional discussions of these
+issues.
+<!-- For a  more extended discussion of these issues consult Sec. 7
+of <span class="citation">Griffiths (2013)</span>.-->
+</p>
+
+<p>In summary, the histories approach provides a consistent conceptual
+framework for the full scope of quantum information theory, including
+classical (Shannon) information as a special case.</p>
+
+<h2><a id="ParRes">10. Paradoxes Resolved</a></h2>
+
+<p>The histories approach resolves, or one might say
+&ldquo;tames&rdquo;, all the usual quantum paradoxes in the sense of
+providing a clear explanation of why certain results which seem
+peculiar from the perspective of classical physics are perfectly
+consistent with quantum theory, and can thus serve as useful
+illustrations of its basic principles. As the explanations have for
+the most part already been published, what is found below is mostly
+just a few comments along with references.</p>
+
+<h3><a id="SchCat">10.1 Schr&ouml;dinger&rsquo;s cat</a></h3>
+
+<p>The paradox of <span class="citation">Schr&ouml;dinger (1935)</span>&rsquo;s
+cat is a particularly striking way of stating the unresolved
+difficulties associated with the first measurement problem in standard
+(i.e., textbook) quantum mechanics. It corresponds to using the
+framework \(\FC_u\), \eqref{eqn21} in <a href="#Mea">subsection 7.2</a>,
+with \(\ket{\Psi_2}\) the superposition of dead and live cat states. The
+histories approach addresses this paradox by first noting that there
+is nothing wrong from the point of view of fundamental quantum theory
+(principle R2 of <a href="#GenPri">subsection 5.1</a>) with using
+\(\FC_u\), but it is a serious misunderstanding to suppose that
+\(\ket{\Psi_2}\) or the corresponding property \([\Psi_2]\) represents a
+cat which is both dead and alive. First, the projectors, let us call
+them \(P_d\) and \(P_a\), that correspond to the cat being dead and alive
+do not commute with \([\Psi_2]\), so they cannot, by the single
+framework rule, be brought into the discussion (and, indeed, it is
+doubtful that any projector associated with what one might call
+&ldquo;catness&rdquo; will commute with \([\Psi_2]\)). Second, since
+\(P_d P_a=0\) (distinct macroscopic states) 
+both properties cannot be true simultaneously, so it is false to say that the cat is
+both dead and alive. In addition the historian may
+remark that the existence of other frameworks in no way invalidates a
+discussion based on the quasiclassical one that lies behind the
+ordinary language discussion of cats, which is distinguished by its
+utility and not by some framework selection rule,
+see <a href="#NonQuaFra">subsection 11.3</a>. In this case a useful
+framework is the counterpart of \(\FC_1\), \eqref{eqn22}
+in <a href="#Mea">subsection 7.2</a>, with quasiclassical projectors
+\(P_d\) and \(P_a\) at time \(t_2\), and \(\ket{\Psi_2}\) understood not as a
+property but as a pre-probability useful for assigning probabilities
+that the cat is dead or alive. At this point the paradox has
+disappeared.</p>
+
+<p>A similar but somewhat more complex analysis can be applied
+to <span class="citation">Wigner (1961)</span>&rsquo;s friend; the solution
+is to use an appropriate framework.</p>
+
+<h3><a id="IntPar">10.2 Interference paradoxes</a></h3>
+
+<p>The best known of the interference paradoxes is the double
+slit. How can successive quantum particles passing through the slit
+system and later detected at specific points in the interference zone
+build up a pattern showing interference of a sort that depends on the
+separation of the slits, even though measurements carried out directly
+behind the slits will show that the particle passed through one or the
+other, but not both? Feynman&rsquo;s
+discussion <span class="citation">(Feynman, Leighton, &amp; Sands
+1965: Chapter 1, where two holes replace the two slits)</span> is
+superb. What is essentially the same paradox, but in a form somewhat
+easier to analyze, is the one in which a particle passes through the
+two arms of Mach-Zehnder interferometer. Chapter 13
+of <span class="citation">Griffiths (2002a)</span> provides an
+extensive discussion of how the histories approach deals with
+different possibilities in a consistent way that avoids paradoxes
+while producing analogs of all the interesting effects discussed by
+Feynman.</p>
+
+<h3><a id="IncPar">10.3 Incompatibility paradoxes</a></h3>
+
+<p>The Bell-Kochen-Specker family of
+paradoxes <span class="citation">(Bell 1966; Kochen &amp; Specker
+1967)</span> are based on a relatively simple idea, although its
+execution is sometimes complicated: if one chains together a
+sufficient number of incompatible frameworks it is possible to arrive
+at a logical contradiction. The chaining consists in finding a
+projector which belongs to two (or more) incompatible decompositions
+of the identity, and then assuming it has the same truth value in both
+frameworks, whereas in any single decomposition one and only one
+projector is true. The histories approach blocks paradoxes of this
+sort because they (obviously) violate the single framework rule. See
+the <a href="reading.html">Further Reading</a> supplement for details.
+<!-- For more details see Ch. 22 of <span class="citation">Griffiths (2002a)</span>.-->
+</p>
+
+<p>The three-box paradox of <span class="citation">Aharonov &amp;
+Vaidman (1991)</span> is similar to Bell-Kochen-Specker, except that
+in this case quantum dynamics is involved, and the issue has to do
+with incommensurate families of histories (combining them violates the
+consistency conditions) rather than incompatible sample spaces. Again,
+the histories resolution of the paradox, Sec. 22.5
+of <span class="citation">Griffiths (2002a)</span>, consists in
+applying the single framework rule: a contradiction can only be
+reached by violating quantum rules of reasoning.</p>
+
+<h3><a id="CouPar">10.4 Counterfactual paradoxes</a></h3>
+
+<p>In the histories approach the rule governing counterfactual
+reasoning, as indicated in <a href="#CouRea">subsection 5.2</a>, is
+that a single framework must be used for comparing the actual and
+counterfactual world. Counterfactual paradoxes are constructed by
+ignoring this rule. One of the best known is
+Wheeler&rsquo;s <span class="citation">(1978)</span> delayed choice paradox
+in which in a Mach-Zehnder interferometer the second beam splitter is
+or is not removed at a time when the quantum particle (or wave) has
+already passed the first beam splitter, so the particle is already
+physically present inside the interferometer. With the second beam
+splitter absent one can determine the arm through which the particle
+passed, whereas the interference exhibited when the beam splitter is
+present shows that the particle cannot have been in a particular
+arm. 
+<!-- For a discussion of precisely how the histories approach deals
+with this situation and avoids a paradox see Ch. 20
+of <span class="citation">Griffiths (2002a)</span>.-->
+There are several other paradoxes which hinge upon the
+(incorrect) use of counterfactuals, or at least include a
+counterfactual element in the way they are stated. Among these
+are <span class="citation">Hardy (1992)</span>&rsquo;s paradox
+<!-- , discussed in considerable detail in Ch. 25 of <span class="citation">Griffiths
+(2002a)</span>,-->
+and the somewhat similar Greenberger-Horne-Zeilinger
+paradox <span class="citation">(Greenberger, Horne, Shimony, &amp;
+Zeilinger 1990; Greenberger, Horne, &amp; Zeilinger 1989)</span>. 
+For comments on how the histories approach deals with these and 
+similar paradoxes, see the 
+ <a href="reading.html">Further Reading</a> supplement.
+<!-- (A more recent discussion of the use of counterfactuals in Hardy&rsquo;s
+paradox will be found in <span class="citation">(Griffiths 2012;
+Stapp 2012)</span>.)-->
+</p>
+
+<h3><a id="NonPar">10.5 Nonlocality paradoxes</a></h3>
+
+<p>As discussed in <a href="#LocSpeRel">section 8</a>, the Bohm (spin
+singlet) version of the Einstein-Podolsky-Rosen paradox has been
+interpreted, by Bell and others, as indicating that quantum theory is
+nonlocal. Similar conclusions have been drawn from the Hardy and the
+Greenberger-Horne-Zeilinger paradoxes stated in a form which involves
+measurements at distinct physical locations. One can add to this list
+the Elitzur-Vaidman indirect measurement
+paradox <span class="citation">(Elitzur &amp; Vaidman 1993)</span>,
+which again suggests some form of nonlocal influence. When critically
+examined using the tools provided by the histories interpretation all
+evidence for nonlocality vanishes, for reasons discussed in
+<a href="#BelIneEinLoc">subsection 8.2</a>.
+<!-- consistent with the demonstration
+of Einstein locality discussed in <a href="#BelIneEinLoc">subsection
+8.2</a>. Details are given in Chs. 21, 23, 24, and 25
+of <span class="citation">Griffiths (2002a)</span>.-->
+</p>
+
+<h2><a id="DifObj">11. Difficulties and Objections</a></h2>
+
+<p>Any physical theory can give rise to various kinds of conceptual
+difficulty. Problems may arise because of lack of familiarity with, or
+misunderstanding of, new ideas. Most students upon their first
+encounter with calculus or with special relativity have difficulties
+of this sort, which can be cleared up by additional study, working
+through examples, and the like. In addition theories may be internally
+inconsistent. This is often the case when they are relatively new and
+under development, but can also be true of more mature
+theories. Indeed certain theories turn out to be of great usefulness
+despite the fact that they contain serious flaws or
+inconsistencies. (Standard, which is to say textbook, quantum
+mechanics is a prime example!) And even theories which are properly
+understood and are internally consistent can be rejected, either by
+individual scientists or the community as a whole, because they are
+not &ldquo;good physics&rdquo;, a term whose importance should not be
+underestimated even if it cannot be given a precise definition. The
+histories interpretation of quantum theory has given rise to
+conceptual difficulties that fall in all of these areas, and while it
+is impossible in a few words to discuss each of them in detail, the
+following remarks are intended to indicate the general nature of some
+of the more serious issues raised by critics, along with responses
+made by advocates of the histories approach. 
+<!-- For a more detailed
+discussion both of quantum conceptual difficulties in general and
+those specific to the histories approach,
+see <span class="citation">Griffiths (2014)</span>.-->
+</p>
+
+<h3><a id="IntCon">11.1 Internal consistency</a></h3>
+
+<p>The issue of internal consistency has been raised
+by <span class="citation">Kent (1997)</span> and
+by <span class="citation">Bassi &amp; Ghirardi (1999, 2000)</span> on
+the grounds that the rules for reasoning using histories, summarized
+in <a href="#QuaRea">section 5</a>, lead to contradictions: certain
+assumptions allow one to derive both a proposition and its
+contradiction. Equivalently, a quantum property can be assigned, on
+the basis of the same initial data, probabilities of both 0 and
+1. These criticisms have been answered
+in <span class="citation">Griffiths &amp; Hartle (1998)</span> and in 
+<span class="citation">Griffiths (2000a, 2000b)</span>.
+In addition there is a general argument for the
+consistency of the histories approach in Ch. 16
+of <span class="citation">Griffiths (2002a)</span>. The key point,
+easily overlooked as it has no close analogy in classical physics, is
+the single framework rule R3 of <a href="#QuaRea">section 5</a>. In
+situations that involve quantum properties at a single time the use of
+a single framework means the use of a particular projective
+decomposition of the identity and the associated Boolean event
+algebra. When reasoning is restricted to this algebra the usual rules
+of propositional logic apply, so an inconsistency at this level would
+imply the inconsistency of standard logic. If the framework in
+question consists of a family of histories of a closed system, it
+cannot be assigned probabilities using the extended Born
+rule, <a href="#Dyn">subsection 4.2</a>, unless the consistency
+conditions are satisfied. But in those cases where probabilities can
+be assigned they satisfy the usual rules of probabilistic reasoning,
+thus ruling out contradictions.</p>
+
+<h3><a id="SinFraRul">11.2 Single framework rule</a></h3>
+
+<p>The single framework rule itself lies at the center of a large
+number of objections to the histories approach, which is hardly
+surprising since in an important sense it marks the boundary between
+classical and quantum physics. As it is absent from classical physics
+and from most quantum textbooks, the concept is unfamiliar, and one
+has to work through various examples in order to gain an intuitive as
+well as a formal understanding of how it deals with the various
+paradoxes and other conceptual difficulties of quantum theory. The
+four principles R1 to R4 found in <a href="#GenPri">subsection 5.1</a>
+should help in understanding how frameworks should be thought of and
+how they should be used. It is of particular importance that the
+single framework rule does <em>not</em> imply that there is only one
+way available to the physicist to think about or discuss a particular
+situation. What it forbids is not the construction of many, perhaps
+mutually incompatible, frameworks, but <em>combining</em> them in the
+fashion characteristic of the incompatibility paradoxes discussed
+above in <a href="#IncPar">subsection 10.3</a>. Indeed, the single
+framework rule rather than being a restriction actually extends the
+Liberty of the theoretical physicist to describe the quantum world in
+a consistent way without the danger of running into insoluble
+paradoxes. But Liberty is coupled to a denial of the unicity of the
+world, <a href="#Uni">subsection 11.4</a>, which is perhaps the most
+important philosophical implication of quantum mechanics from the
+histories perspective, as well as the principal stumbling block in the
+way of a wider acceptance of that approach as a satisfactory
+interpretation of quantum theory.</p>
+
+<h3><a id="NonQuaFra">11.3 Nonuniqueness of quasiclassical frameworks</a></h3>
+
+<p>An objection first raised by <span class="citation">Dowker &amp;
+Kent (1996)</span>, and subsequently repeated by 
+<span class="citation">Kent (1998)</span>,
+<span class="citation">Schlosshauer (2004)</span>,
+and <span class="citation">Wallace (2008)</span>, among others, is that
+quasiclassical frameworks are by no means the only possible consistent families
+of histories in a closed quantum system.  In particular, one can have
+consistent families in which there is quasiclassical behavior up to some time
+followed by something which is not at all quasiclassical at a later time.  This
+would be a serious objection if historians were claiming that there must be a
+unique family of histories which can be used to describe the world, but such is
+not the case.  The physicist is at Liberty to choose a family whose histories
+closely resemble those of classical mechanics, and the existence of alternative
+frameworks in no way diminishes the validity of such a quasiclassical
+description, for reasons indicated in section 4.2 of Griffiths (2013).
+One senses that underlying such criticisms is the expectation that any good
+physical theory must satisfy the principle of unicity, to which
+we now turn.</p>
+
+<h3><a id="Uni">11.4 Unicity</a></h3>
+
+<p>In a probabilistic theory the limiting cases of a probability equal
+to 1 or 0 are equivalent to asserting that the corresponding
+proposition (e.g., &ldquo;the system has property \(P\)&rdquo;) is,
+respectively, true or false. In the histories approach probabilities
+are linked to frameworks, and for this reason the notions of
+&ldquo;true&rdquo; and &ldquo;false&rdquo; are also framework
+dependent. This cannot lead to inconsistencies, a proposition being
+both true and false, because of the single framework rule. But it is
+contrary to a deeply rooted faith or intuition, shared by
+philosophers, physicists, and the proverbial man in the street, that
+at any point in time there is one and only one state of the universe
+which is &ldquo;true&rdquo;, and with which every true statement about
+the world must be consistent. In Sec. 27.3
+of <span class="citation">Griffiths (2002a)</span> this belief is
+referred to as <em>unicity</em>, and it is what must be abandoned if
+the histories interpretation of quantum theory is on the right
+track.</p>
+
+<p>As an example, consider the measurement model
+in <a href="#Mea">subsection 7.2</a>, where in the family \(\FC_u\) at
+time \(t_2\) the measurement apparatus is in a superposition state
+corresponding to a projector which is incompatible with the projectors
+representing different pointer positions, which are employed in the
+family \(\FC_1\). The histories approach says the physicist is at
+Liberty to employ either family, both of which are valid ways of
+describing the quantum world, but Incompatibility forbids combining
+them into a single description. The prohibition on combining families
+is based on the fact that certain quantum projectors do not commute,
+something quite specific to quantum mechanics with no classical
+counterpart. In classical mechanics the true state of affairs for a
+physical system is always represented by a single point in the phase
+space. It is this feature that has to be abandoned in quantum
+mechanics interpreted using histories. See the 
+<a href="reading.html">Further Reading</a> supplement for additional
+details.
+<!-- (For further comments, see Sec. 4.5 of  <span class="citation">Griffiths (2014)</span>.)-->
+</p>
+
+<p>Abandoning unicity is certainly a radical proposal, comparable in
+the history of science to the radical step our intellectual ancestors
+took when they replaced the centuries old notion of an immovable earth
+with the modern concept of a spinning planet in motion around the
+sun. In making that transition it was important to develop an
+understanding of why the earlier ideas worked so well; e.g., why one
+did not feel the earth was moving. By analogy it is helpful to note,
+as discussed in <a href="#ClaPhy">section 6</a>, that from a quantum
+perspective the macroscopic world of everyday experience can be
+understood for all, or almost all, practical purposes using a single
+quasiclassical framework. Within that framework the principle of
+unicity holds, and one can thus understand why it was quite
+satisfactory before the quantum revolution, and remains so in sciences
+where specific quantum effects do not need to be taken into
+account. See the 
+ <a href="reading.html">Further Reading</a> supplement for a more
+extended discussion.</p>
+
+</div>
+
+<div id="bibliography">
+
+<h2><a id="Bib">Bibliography</a></h2>
+
+<ul class="hanging">
+
+<li>Adler, S. L., 2003, &ldquo;Why decoherence has not solved the
+measurement problem: a response to P. W. Anderson&rdquo;, <em>Studies
+in History and Philosophy of Modern Physics</em>, 34:
+135&ndash;142.</li>
+
+<li>Aharonov, Y. &amp; L. Vaidman, 1991, &ldquo;Complete description
+of a quantum system at a given time&rdquo;, <em>Journal of Physics
+A</em>, 24: 2315&ndash;2318.</li>
+
+<li>Aharonov, Y., P.G. Bergmann, &amp; J. Lebowitz, 1964, &ldquo;Time
+symmetry in the quantum process of measurement&rdquo;, <em>Physical
+Review B</em>, 134: 1410&ndash;1416.</li>
+
+<li>Bassi, A. &amp; G. Ghirardi, 1999, &ldquo;Can the decoherent
+histories description of reality be considered
+satisfactory?&rdquo;, <em>Physics Letters A</em>, 257:
+247&ndash;263.</li>
+
+<li>&ndash;&ndash;&ndash;, 2000, &ldquo;Decoherent histories and
+realism&rdquo;, <em>Journal of Statistical Physics</em>, 98:
+457&ndash;494.</li>
+
+<li>Bell, J. S., 1966, &ldquo;On the problem of hidden variables in
+quantum mechanics&rdquo;, <em>Review of Modern Physics</em>, 38:
+447&ndash;452.</li>
+
+<li>&ndash;&ndash;&ndash;, 1990, &ldquo;Against measurement&rdquo;, in
+A. I. Miller (ed.), <em>Sixty-two years of uncertainty</em>, New York:
+Plenum Press, pp. 17&ndash;31.</li>
+
+<li>Birkhoff, G. &amp; J. von Neumann, 1936, &ldquo;The logic of
+quantum mechanics&rdquo;, <em>Annals of Mathematics</em>, 37:
+823&ndash;843.</li>
+
+<li>Bohm, D., 1951, <em>Quantum theory</em>, Englewood Cliffs, N.J.:
+Prentice Hall.</li>
+
+<li>Busch, P. &amp; P. Lahti, 2009, &ldquo;L&uuml;der&rsquo;s Rule&rdquo;, in
+D. Greenberger, K. Hentschel, &amp; F. Weinert (eds.), <em>Compendium
+of quantum physics</em>, Berlin: Springer-Verlag,
+pp. 356&ndash;358.</li>
+
+<li>d&rsquo;Espagnat, B., 2006, <em>On Physics and Philosophy</em>,
+Princeton: Princeton University Press.</li>
+
+<li>Dowker, F. &amp; A. Kent, 1996, &ldquo;On the consistent histories
+approach to quantum mechanics&rdquo;, <em>Journal of Statistical
+Physics</em>, 82: 1575&ndash;1646.</li>
+
+<li>Einstein, A., B. Podolsky, &amp; N. Rosen, 1935, &ldquo;Can
+quantum-mechanical description of physical reality be considered
+complete?&rdquo;, <em>Physical Review</em>, 47: 777&ndash;780.</li>
+
+<li>Elitzur, A. C. &amp; L. Vaidman, 1993, &ldquo;Quantum mechanical
+interaction-free measurements&rdquo;, <em>Foundations of Physics</em>,
+23: 987&ndash;997.</li>
+
+<li>Feynman, R.P., R.B. Leighton, &amp; M. Sands, 1965, <em>The
+Feynman lectures on physics</em> (Vol. III: Quantum Mechanics),
+Reading, Mass.: Addison-Wesley.</li>
+
+<li>Gell-Mann, M. &amp; J.B. Hartle, 1990, &ldquo;Quantum mechanics in
+the light of quantum cosmology&rdquo;, in W. H. Zurek
+(ed.), <em>Complexity, entropy and the physics of information.</em>
+Redwood City, Calif.: Addison-Wesley, pp. 425&ndash;458.</li>
+
+<li>&ndash;&ndash;&ndash;, 1993, &ldquo;Classical equations for
+quantum systems&rdquo;, <em>Physical Review D</em>, 47:
+3345&ndash;3382.</li>
+
+<li>&ndash;&ndash;&ndash;, 2007, &ldquo;Quasiclassical coarse graining
+and thermodynamic entropy&rdquo;, <em>Physical Review A</em>, 76:
+022104.</li>
+
+<li>Greenberger, D.M., M.A. Horne, A. Shimony, &amp; A. Zeilinger,
+1990, &ldquo;Bell&rsquo;s theorem without inequalities&rdquo;, <em>American
+Journal of Physics</em>, 58: 1131&ndash;1143.</li>
+
+<li>Greenberger, D. M., M. Horne, &amp; A. Zeilinger, 1989,
+&ldquo;Going beyond Bell&rsquo;s theorem&rdquo;, In M. Kafatos
+(ed.), <em>Bell&rsquo;s theorem, quantum theory and conceptions of the
+universe</em>, Dordrecht: Kluwer, pp. 69&ndash;72.</li>
+
+<li>Griffiths, R. B., 1984, &ldquo;Consistent histories and the
+interpretation of quantum mechanics&rdquo;, <em>Journal of Statistical
+Physics</em>, 36: 219&ndash;272.</li>
+
+<li>&ndash;&ndash;&ndash;, 2000a, &ldquo;Consistent histories, quantum
+truth functionals, and hidden variables&rdquo;, <em>Physics Letters
+A</em>, 265: 12&ndash;19.</li>
+
+<li>&ndash;&ndash;&ndash;, 2000b, &ldquo;Consistent quantum realism: A
+reply to Bassi and Ghirardi&rdquo;, <em>Journal of Statistical
+Physics</em>, 99: 1409&ndash;1425.</li>
+
+<li>&ndash;&ndash;&ndash;, 2002a, <em>Consistent quantum theory</em>,
+Cambridge, U.K.: Cambridge University Press.</li>
+
+<li>&ndash;&ndash;&ndash;, 2002b, &ldquo;Consistent resolution of some
+relativistic quantum paradoxes&rdquo;, <em>Physical Review A</em>, 66:
+062101.</li>
+
+<li>&ndash;&ndash;&ndash;, 2011a, &ldquo;EPR, Bell, and quantum
+locality&rdquo;, <em>American Journal of Physics</em>, 79:
+954&ndash;965.</li>
+
+<li>&ndash;&ndash;&ndash;, 2011b, &ldquo;Quantum
+locality&rdquo;, <em>Foundations of Physics</em>, 41:
+705&ndash;733.</li>
+
+<li>&ndash;&ndash;&ndash;, 2012, &ldquo;Quantum counterfactuals and
+locality&rdquo;, <em>Foundations of Physics</em>, 42:
+674&ndash;684.</li>
+
+<li>&ndash;&ndash;&ndash;, 2013, &ldquo;A consistent quantum
+ontology&rdquo;, <em>Studies in History and Philosophy of Modern
+Physics</em>, 44: 93&ndash;114.</li>
+
+<li>&ndash;&ndash;&ndash;, 2014, <em>The new quantum logic</em>,
+<em>Foundations of Physics</em>, 44(6): 610&ndash;640.</li>
+
+<li>&ndash;&ndash;&ndash;, 2017a, &ldquo;What quantum measurements measure&rdquo;,
+<em>Phys. Rev. A</em>, 96: 032110. ArXiv:1704.08725.</li>
+
+<li>&ndash;&ndash;&ndash;, 2017b, &ldquo;Quantum Information: What is
+it all about?&rdquo;, <em>Entropy</em> 19(12), 645.</li>
+
+<li>Griffiths, R. B., &amp; J.B. Hartle, 1998, &ldquo;Comment on
+&lsquo;Consistent sets yield contrary inferences in quantum
+theory&rsquo;&rdquo;, <em>Physical Review Letters</em>, 81: 1981.</li>
+
+<li>Hardy, L., 1992, &ldquo;Quantum mechanics, local realistic
+theories and Lorentz-invariant realistic theories&rdquo;, <em>Physical
+Review Letters</em>, 68: 2981&ndash;2984.</li>
+
+<li>Hartle, J. B., 2011, &ldquo;The quasiclassical realms of this
+quantum universe&rdquo;, <em>Foundations of Physics</em>, 41:
+982&ndash;1006.</li>
+
+<li>Kent, A., 1997, &ldquo;Consistent sets yield contrary inferences
+in quantum theory&rdquo;, <em>Physical Review Letters</em>, 78:
+2874&ndash;2877. 
+[<a href="http://arxiv.org/abs/gr-qc/9604012" target="other">Kent 1997 available online</a>]</li>
+
+<li>&ndash;&ndash;&ndash;, 1998, &ldquo;Quantum
+histories&rdquo;, <em>Physica Scripta</em>, T76:
+78&ndash;84. 
+[<a href="http://arxiv.org/abs/gr-qc/9809026" target="other">Kent 1998 available online</a>]</li>
+
+<li>Kochen, S. &amp; E.P. Specker, 1967, &ldquo;The problem of hidden
+variables in quantum mechanics&rdquo;, <em>Journal of Mathematics and
+Mechanics</em>, 17: 59&ndash;87.</li>
+
+<li>Maudlin, T., 2011, <em>Quantum Non-Locality and Relativity</em>, 3d edition,
+New York: Wiley-Blackwell.</li>
+
+<li>Omn&egrave;s, R., 1988, &ldquo;Logical reformulation of quantum mechanics
+I. Foundations&rdquo;, <em>Journal of Statistical Physics</em>, 53:
+893&ndash;932.</li>
+
+<li>&ndash;&ndash;&ndash;, 1999, <em>Understanding quantum
+mechanics</em>, Princeton: Princeton University Press.</li>
+
+<li>Schlosshauer, M., 2004, &ldquo;Decoherence, the measurement
+problem, and interpretations of quantum mechanics&rdquo;, <em>Reviews
+of Modern Physics</em>, 76: 1267&ndash;1305.</li>
+
+<li>Schr&ouml;dinger, E., 1935, &ldquo;Die gegenw&auml;rtige Situation in der
+Quantenmechanik&rdquo;, <em>Naturwissenschaften</em>, 23:
+807&ndash;812, 823&ndash;828, 844&ndash;849.</li>
+
+<li>Shimony, A., 2009, &ldquo;Bell&rsquo;s theorem&rdquo;, <em>Stanford
+ Encyclopedia of Philosophy</em> (Winter 2013 Edition), Edward
+ N. Zalta (ed.), URL =
+ &lt;<a href="https://plato.stanford.edu/archives/win2013/entries/bell-theorem/" target="other">https://plato.stanford.edu/archives/win2013/entries/bell-theorem/</a>&gt;.
+</li>
+
+<li>Stapp, H. P., 2012, &ldquo;Quantum locality?&rdquo; 
+<em>Foundations of Physics</em>, 42: 647&ndash;655.</li>
+
+<li>von Neumann, J., 1932, <em>Mathematische grundlagen der
+quantenmechanik</em>, Berlin: Springer-Verlag.</li>
+
+<li>Wallace, D., 2008, &ldquo;Philosophy of quantum mechanics&rdquo;
+in D. Ricckles (ed.), <em>The Ashgate Companion to Contemporary
+Philosophy of Physics</em>, Aldershot: Ashgate Publishing,
+pp. 16&ndash;98.</li>
+
+<li>Wheeler, J. A., 1978, &ldquo;The &lsquo;Past&rsquo; and the
+&lsquo;Delayed-Choice&rsquo; Double-Slit Experiment&rdquo;, in
+A. R. Marlow (ed.), <em>Mathematical foundations of quantum
+theory</em>, New York: Academic Press, pp. 9&ndash;48.</li>
+
+<li>Wigner, E. P., 1961, &ldquo;Remarks on the mind-body
+question&rdquo;, In I. J. Good (ed.), <em>The scientist
+speculates</em>, London: Heinemann, pp. 284&ndash;302.</li>
+
+<li>&ndash;&ndash;&ndash;, 1963, &ldquo;The problem of
+measurement&rdquo;, <em>American Journal of Physics</em>, 31:
+6&ndash;15.</li>
+
+</ul>
+
+</div>
+
+<div id="academic-tools">
+
+<h2 id="Aca">Academic Tools</h2>
+
+<blockquote>
+<table class="vert-top">
+<tr>
+<td><img src="../../symbols/sepman-icon.jpg" alt="sep man icon" /></td>
+<td><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=qm-consistent-histories" target="other">How to cite this entry</a>.</td>
+</tr>
+
+<tr>
+<td><img src="../../symbols/sepman-icon.jpg" alt="sep man icon" /></td>
+<td><a href="https://leibniz.stanford.edu/friends/preview/qm-consistent-histories/" target="other">Preview the PDF version of this entry</a> at the
+ <a href="https://leibniz.stanford.edu/friends/" target="other">Friends of the SEP Society</a>.</td>
+</tr>
+
+<tr>
+<td><img src="../../symbols/inpho.png" alt="inpho icon" /></td>
+<td><a href="https://www.inphoproject.org/entity?sep=qm-consistent-histories&amp;redirect=True" target="other">Look up topics and thinkers related to this entry</a>
+ at the Internet Philosophy Ontology Project (InPhO).</td>
+</tr>
+
+<tr>
+<td><img src="../../symbols/pp.gif" alt="phil papers icon" /></td>
+<td><a href="http://philpapers.org/sep/qm-consistent-histories/" target="other">Enhanced bibliography for this entry</a>
+at <a href="http://philpapers.org/" target="other">PhilPapers</a>, with links to its database.</td>
+</tr>
+
+</table>
+</blockquote>
+
+
+</div>
+
+<div id="other-internet-resources">
+
+<h2><a id="Oth">Other Internet Resources</a></h2>
+
+<ul>
+
+<li><a href="http://quantum.phys.cmu.edu/CHS/histories.html" target="other">Consistent Histories Home Page</a>,
+  maintained by Vlad Gheorghiu, Carnegie Mellon.</li>
+
+</ul>
+
+</div>
+
+<div id="related-entries">
+
+<h2><a id="Rel">Related Entries</a></h2>
+
+<p>
+
+ <a href="../bell-theorem/index.html">Bell&rsquo;s Theorem</a> |
+ <a href="../qm-decoherence/index.html">quantum mechanics: the role of decoherence in</a> |
+ <a href="../qt-issues/index.html">quantum theory: philosophical issues in</a> |
+ <a href="../qt-quantlog/index.html">quantum theory: quantum logic and probability theory</a> |
+ <a href="../qt-epr/index.html">quantum theory: the Einstein-Podolsky-Rosen argument in</a>
+
+</p>
+
+</div>
+
+<script type="text/javascript" src="local.js"></script>
+<script type="text/javascript" src="../../MathJax/MathJaxdda6.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+</div><!-- #aueditable --><!--DO NOT MODIFY THIS LINE AND BELOW-->
+
+<!-- END ARTICLE HTML -->
+
+</div> <!-- End article-content -->
+
+  <div id="article-copyright">
+    <p>
+ <a href="../../info.html#c">Copyright &copy; 2019</a> by
+
+<br />
+<a href="https://www.cmu.edu/physics/people/emeritus-faculty/griffithsrb.html" target="other">Robert B. Griffiths</a>
+&lt;<a href="m&#97;ilto:rgrif+&#37;40cmu&#37;2eedu"><em>rgrif+<abbr title=" at ">&#64;</abbr>cmu<abbr title=" dot ">&#46;</abbr>edu</em></a>&gt;
+    </p>
+  </div>
+
+</div> <!-- End article -->
+
+<!-- NOTE: article banner is outside of the id="article" div. -->
+<div id="article-banner" class="scroll-block">
+  <div id="article-banner-content">
+    <a href="../../fundraising/index.html">
+    Open access to the SEP is made possible by a world-wide funding initiative.<br />
+    The Encyclopedia Now Needs Your Support<br />
+    Please Read How You Can Help Keep the Encyclopedia Free</a>
+  </div>
+</div> <!-- End article-banner -->
+
+    </div> <!-- End content -->
+
+    <div id="footer">
+
+      <div id="footer-menu">
+        <div class="menu-block">
+          <h4><i class="icon-book"></i> Browse</h4>
+          <ul role="menu">
+            <li><a href="../../contents.html">Table of Contents</a></li>
+            <li><a href="../../new.html">What's New</a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+            <li><a href="../../published.html">Chronological</a></li>
+            <li><a href="../../archives/index.html">Archives</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-info-sign"></i> About</h4>
+          <ul role="menu">
+            <li><a href="../../info.html">Editorial Information</a></li>
+            <li><a href="../../about.html">About the SEP</a></li>
+            <li><a href="../../board.html">Editorial Board</a></li>
+            <li><a href="../../cite.html">How to Cite the SEP</a></li>
+            <li><a href="../../special-characters.html">Special Characters</a></li>
+            <li><a href="../../tools/index.html">Advanced Tools</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-leaf"></i> Support SEP</h4>
+          <ul role="menu">
+            <li><a href="../../support/index.html">Support the SEP</a></li>
+            <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+            <li><a href="../../support/donate.html">Make a Donation</a></li>
+            <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+          </ul>
+        </div>
+      </div> <!-- End footer menu -->
+
+      <div id="mirrors">
+        <div id="mirror-info">
+          <h4><i class="icon-globe"></i> Mirror Sites</h4>
+          <p>View this site from another server:</p>
+        </div>
+        <div class="btn-group open">
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="https://plato.stanford.edu/">
+            <span class="flag flag-usa"></span> USA (Main Site) <span class="caret"></span>
+            <span class="mirror-source">Philosophy, Stanford University</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../mirrors.html">Info about mirror sites</a></li>
+          </ul>
+        </div>
+      </div> <!-- End mirrors -->
+      
+      <div id="site-credits">
+        <p>The Stanford Encyclopedia of Philosophy is <a href="../../info.html#c">copyright &copy; 2021</a> by <a href="http://mally.stanford.edu/">The Metaphysics Research Lab</a>, Department of Philosophy, Stanford University</p>
+        <p>Library of Congress Catalog Data: ISSN 1095-5054</p>
+      </div> <!-- End site credits -->
+
+    </div> <!-- End footer -->
+
+  </div> <!-- End container -->
+
+   <!-- NOTE: Script required for drop-down button to work (mirrors). -->
+  <script>
+    $('.dropdown-toggle').dropdown();
+  </script>
+
+</body>
+
+<!-- Mirrored from seop.illc.uva.nl/entries/qm-consistent-histories/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Jun 2022 19:54:27 GMT -->
+</html>
